@@ -1,0 +1,4 @@
+name: local_server
+dependencies:
+  angel_framework: ^2.0.0-alpha
+  angel_hot: ^2.0.0
