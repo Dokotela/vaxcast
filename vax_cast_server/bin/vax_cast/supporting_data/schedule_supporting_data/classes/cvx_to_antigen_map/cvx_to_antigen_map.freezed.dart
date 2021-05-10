@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'cvx_to_antigen_map.dart';
 
@@ -8,6 +8,10 @@ part of 'cvx_to_antigen_map.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 CvxToAntigenMap _$CvxToAntigenMapFromJson(Map<String, dynamic> json) {
   return _CvxToAntigenMap.fromJson(json);
 }
@@ -16,29 +20,28 @@ CvxToAntigenMap _$CvxToAntigenMapFromJson(Map<String, dynamic> json) {
 class _$CvxToAntigenMapTearOff {
   const _$CvxToAntigenMapTearOff();
 
-// ignore: unused_element
-  _CvxToAntigenMap call({List<CvxMap> cvxMap}) {
+  _CvxToAntigenMap call({List<CvxMap>? cvxMap}) {
     return _CvxToAntigenMap(
       cvxMap: cvxMap,
     );
   }
 
-// ignore: unused_element
   CvxToAntigenMap fromJson(Map<String, Object> json) {
     return CvxToAntigenMap.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $CvxToAntigenMap = _$CvxToAntigenMapTearOff();
 
 /// @nodoc
 mixin _$CvxToAntigenMap {
-  List<CvxMap> get cvxMap;
+  List<CvxMap>? get cvxMap => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $CvxToAntigenMapCopyWith<CvxToAntigenMap> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $CvxToAntigenMapCopyWith<CvxToAntigenMap> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -46,7 +49,7 @@ abstract class $CvxToAntigenMapCopyWith<$Res> {
   factory $CvxToAntigenMapCopyWith(
           CvxToAntigenMap value, $Res Function(CvxToAntigenMap) then) =
       _$CvxToAntigenMapCopyWithImpl<$Res>;
-  $Res call({List<CvxMap> cvxMap});
+  $Res call({List<CvxMap>? cvxMap});
 }
 
 /// @nodoc
@@ -60,10 +63,13 @@ class _$CvxToAntigenMapCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object cvxMap = freezed,
+    Object? cvxMap = freezed,
   }) {
     return _then(_value.copyWith(
-      cvxMap: cvxMap == freezed ? _value.cvxMap : cvxMap as List<CvxMap>,
+      cvxMap: cvxMap == freezed
+          ? _value.cvxMap
+          : cvxMap // ignore: cast_nullable_to_non_nullable
+              as List<CvxMap>?,
     ));
   }
 }
@@ -75,7 +81,7 @@ abstract class _$CvxToAntigenMapCopyWith<$Res>
           _CvxToAntigenMap value, $Res Function(_CvxToAntigenMap) then) =
       __$CvxToAntigenMapCopyWithImpl<$Res>;
   @override
-  $Res call({List<CvxMap> cvxMap});
+  $Res call({List<CvxMap>? cvxMap});
 }
 
 /// @nodoc
@@ -91,17 +97,19 @@ class __$CvxToAntigenMapCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object cvxMap = freezed,
+    Object? cvxMap = freezed,
   }) {
     return _then(_CvxToAntigenMap(
-      cvxMap: cvxMap == freezed ? _value.cvxMap : cvxMap as List<CvxMap>,
+      cvxMap: cvxMap == freezed
+          ? _value.cvxMap
+          : cvxMap // ignore: cast_nullable_to_non_nullable
+              as List<CvxMap>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_CvxToAntigenMap implements _CvxToAntigenMap {
   _$_CvxToAntigenMap({this.cvxMap});
 
@@ -109,7 +117,7 @@ class _$_CvxToAntigenMap implements _CvxToAntigenMap {
       _$_$_CvxToAntigenMapFromJson(json);
 
   @override
-  final List<CvxMap> cvxMap;
+  final List<CvxMap>? cvxMap;
 
   @override
   String toString() {
@@ -128,6 +136,7 @@ class _$_CvxToAntigenMap implements _CvxToAntigenMap {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(cvxMap);
 
+  @JsonKey(ignore: true)
   @override
   _$CvxToAntigenMapCopyWith<_CvxToAntigenMap> get copyWith =>
       __$CvxToAntigenMapCopyWithImpl<_CvxToAntigenMap>(this, _$identity);
@@ -139,15 +148,17 @@ class _$_CvxToAntigenMap implements _CvxToAntigenMap {
 }
 
 abstract class _CvxToAntigenMap implements CvxToAntigenMap {
-  factory _CvxToAntigenMap({List<CvxMap> cvxMap}) = _$_CvxToAntigenMap;
+  factory _CvxToAntigenMap({List<CvxMap>? cvxMap}) = _$_CvxToAntigenMap;
 
   factory _CvxToAntigenMap.fromJson(Map<String, dynamic> json) =
       _$_CvxToAntigenMap.fromJson;
 
   @override
-  List<CvxMap> get cvxMap;
+  List<CvxMap>? get cvxMap => throw _privateConstructorUsedError;
   @override
-  _$CvxToAntigenMapCopyWith<_CvxToAntigenMap> get copyWith;
+  @JsonKey(ignore: true)
+  _$CvxToAntigenMapCopyWith<_CvxToAntigenMap> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 CvxMap _$CvxMapFromJson(Map<String, dynamic> json) {
@@ -158,9 +169,8 @@ CvxMap _$CvxMapFromJson(Map<String, dynamic> json) {
 class _$CvxMapTearOff {
   const _$CvxMapTearOff();
 
-// ignore: unused_element
   _CvxMap call(
-      {Cvx cvx, String shortDescription, List<Association> association}) {
+      {Cvx? cvx, String? shortDescription, List<Association>? association}) {
     return _CvxMap(
       cvx: cvx,
       shortDescription: shortDescription,
@@ -168,31 +178,31 @@ class _$CvxMapTearOff {
     );
   }
 
-// ignore: unused_element
   CvxMap fromJson(Map<String, Object> json) {
     return CvxMap.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $CvxMap = _$CvxMapTearOff();
 
 /// @nodoc
 mixin _$CvxMap {
-  Cvx get cvx;
-  String get shortDescription;
-  List<Association> get association;
+  Cvx? get cvx => throw _privateConstructorUsedError;
+  String? get shortDescription => throw _privateConstructorUsedError;
+  List<Association>? get association => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $CvxMapCopyWith<CvxMap> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $CvxMapCopyWith<CvxMap> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $CvxMapCopyWith<$Res> {
   factory $CvxMapCopyWith(CvxMap value, $Res Function(CvxMap) then) =
       _$CvxMapCopyWithImpl<$Res>;
-  $Res call({Cvx cvx, String shortDescription, List<Association> association});
+  $Res call(
+      {Cvx? cvx, String? shortDescription, List<Association>? association});
 }
 
 /// @nodoc
@@ -205,18 +215,23 @@ class _$CvxMapCopyWithImpl<$Res> implements $CvxMapCopyWith<$Res> {
 
   @override
   $Res call({
-    Object cvx = freezed,
-    Object shortDescription = freezed,
-    Object association = freezed,
+    Object? cvx = freezed,
+    Object? shortDescription = freezed,
+    Object? association = freezed,
   }) {
     return _then(_value.copyWith(
-      cvx: cvx == freezed ? _value.cvx : cvx as Cvx,
+      cvx: cvx == freezed
+          ? _value.cvx
+          : cvx // ignore: cast_nullable_to_non_nullable
+              as Cvx?,
       shortDescription: shortDescription == freezed
           ? _value.shortDescription
-          : shortDescription as String,
+          : shortDescription // ignore: cast_nullable_to_non_nullable
+              as String?,
       association: association == freezed
           ? _value.association
-          : association as List<Association>,
+          : association // ignore: cast_nullable_to_non_nullable
+              as List<Association>?,
     ));
   }
 }
@@ -226,7 +241,8 @@ abstract class _$CvxMapCopyWith<$Res> implements $CvxMapCopyWith<$Res> {
   factory _$CvxMapCopyWith(_CvxMap value, $Res Function(_CvxMap) then) =
       __$CvxMapCopyWithImpl<$Res>;
   @override
-  $Res call({Cvx cvx, String shortDescription, List<Association> association});
+  $Res call(
+      {Cvx? cvx, String? shortDescription, List<Association>? association});
 }
 
 /// @nodoc
@@ -240,25 +256,29 @@ class __$CvxMapCopyWithImpl<$Res> extends _$CvxMapCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object cvx = freezed,
-    Object shortDescription = freezed,
-    Object association = freezed,
+    Object? cvx = freezed,
+    Object? shortDescription = freezed,
+    Object? association = freezed,
   }) {
     return _then(_CvxMap(
-      cvx: cvx == freezed ? _value.cvx : cvx as Cvx,
+      cvx: cvx == freezed
+          ? _value.cvx
+          : cvx // ignore: cast_nullable_to_non_nullable
+              as Cvx?,
       shortDescription: shortDescription == freezed
           ? _value.shortDescription
-          : shortDescription as String,
+          : shortDescription // ignore: cast_nullable_to_non_nullable
+              as String?,
       association: association == freezed
           ? _value.association
-          : association as List<Association>,
+          : association // ignore: cast_nullable_to_non_nullable
+              as List<Association>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_CvxMap implements _CvxMap {
   _$_CvxMap({this.cvx, this.shortDescription, this.association});
 
@@ -266,11 +286,11 @@ class _$_CvxMap implements _CvxMap {
       _$_$_CvxMapFromJson(json);
 
   @override
-  final Cvx cvx;
+  final Cvx? cvx;
   @override
-  final String shortDescription;
+  final String? shortDescription;
   @override
-  final List<Association> association;
+  final List<Association>? association;
 
   @override
   String toString() {
@@ -298,6 +318,7 @@ class _$_CvxMap implements _CvxMap {
       const DeepCollectionEquality().hash(shortDescription) ^
       const DeepCollectionEquality().hash(association);
 
+  @JsonKey(ignore: true)
   @override
   _$CvxMapCopyWith<_CvxMap> get copyWith =>
       __$CvxMapCopyWithImpl<_CvxMap>(this, _$identity);
@@ -310,20 +331,21 @@ class _$_CvxMap implements _CvxMap {
 
 abstract class _CvxMap implements CvxMap {
   factory _CvxMap(
-      {Cvx cvx,
-      String shortDescription,
-      List<Association> association}) = _$_CvxMap;
+      {Cvx? cvx,
+      String? shortDescription,
+      List<Association>? association}) = _$_CvxMap;
 
   factory _CvxMap.fromJson(Map<String, dynamic> json) = _$_CvxMap.fromJson;
 
   @override
-  Cvx get cvx;
+  Cvx? get cvx => throw _privateConstructorUsedError;
   @override
-  String get shortDescription;
+  String? get shortDescription => throw _privateConstructorUsedError;
   @override
-  List<Association> get association;
+  List<Association>? get association => throw _privateConstructorUsedError;
   @override
-  _$CvxMapCopyWith<_CvxMap> get copyWith;
+  @JsonKey(ignore: true)
+  _$CvxMapCopyWith<_CvxMap> get copyWith => throw _privateConstructorUsedError;
 }
 
 Association _$AssociationFromJson(Map<String, dynamic> json) {
@@ -334,11 +356,10 @@ Association _$AssociationFromJson(Map<String, dynamic> json) {
 class _$AssociationTearOff {
   const _$AssociationTearOff();
 
-// ignore: unused_element
   _Association call(
-      {TargetDisease antigen,
-      String associationBeginAge,
-      String associationEndAge}) {
+      {TargetDisease? antigen,
+      String? associationBeginAge,
+      String? associationEndAge}) {
     return _Association(
       antigen: antigen,
       associationBeginAge: associationBeginAge,
@@ -346,24 +367,24 @@ class _$AssociationTearOff {
     );
   }
 
-// ignore: unused_element
   Association fromJson(Map<String, Object> json) {
     return Association.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Association = _$AssociationTearOff();
 
 /// @nodoc
 mixin _$Association {
-  TargetDisease get antigen;
-  String get associationBeginAge;
-  String get associationEndAge;
+  TargetDisease? get antigen => throw _privateConstructorUsedError;
+  String? get associationBeginAge => throw _privateConstructorUsedError;
+  String? get associationEndAge => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $AssociationCopyWith<Association> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $AssociationCopyWith<Association> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -372,9 +393,9 @@ abstract class $AssociationCopyWith<$Res> {
           Association value, $Res Function(Association) then) =
       _$AssociationCopyWithImpl<$Res>;
   $Res call(
-      {TargetDisease antigen,
-      String associationBeginAge,
-      String associationEndAge});
+      {TargetDisease? antigen,
+      String? associationBeginAge,
+      String? associationEndAge});
 }
 
 /// @nodoc
@@ -387,18 +408,23 @@ class _$AssociationCopyWithImpl<$Res> implements $AssociationCopyWith<$Res> {
 
   @override
   $Res call({
-    Object antigen = freezed,
-    Object associationBeginAge = freezed,
-    Object associationEndAge = freezed,
+    Object? antigen = freezed,
+    Object? associationBeginAge = freezed,
+    Object? associationEndAge = freezed,
   }) {
     return _then(_value.copyWith(
-      antigen: antigen == freezed ? _value.antigen : antigen as TargetDisease,
+      antigen: antigen == freezed
+          ? _value.antigen
+          : antigen // ignore: cast_nullable_to_non_nullable
+              as TargetDisease?,
       associationBeginAge: associationBeginAge == freezed
           ? _value.associationBeginAge
-          : associationBeginAge as String,
+          : associationBeginAge // ignore: cast_nullable_to_non_nullable
+              as String?,
       associationEndAge: associationEndAge == freezed
           ? _value.associationEndAge
-          : associationEndAge as String,
+          : associationEndAge // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -411,9 +437,9 @@ abstract class _$AssociationCopyWith<$Res>
       __$AssociationCopyWithImpl<$Res>;
   @override
   $Res call(
-      {TargetDisease antigen,
-      String associationBeginAge,
-      String associationEndAge});
+      {TargetDisease? antigen,
+      String? associationBeginAge,
+      String? associationEndAge});
 }
 
 /// @nodoc
@@ -428,25 +454,29 @@ class __$AssociationCopyWithImpl<$Res> extends _$AssociationCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object antigen = freezed,
-    Object associationBeginAge = freezed,
-    Object associationEndAge = freezed,
+    Object? antigen = freezed,
+    Object? associationBeginAge = freezed,
+    Object? associationEndAge = freezed,
   }) {
     return _then(_Association(
-      antigen: antigen == freezed ? _value.antigen : antigen as TargetDisease,
+      antigen: antigen == freezed
+          ? _value.antigen
+          : antigen // ignore: cast_nullable_to_non_nullable
+              as TargetDisease?,
       associationBeginAge: associationBeginAge == freezed
           ? _value.associationBeginAge
-          : associationBeginAge as String,
+          : associationBeginAge // ignore: cast_nullable_to_non_nullable
+              as String?,
       associationEndAge: associationEndAge == freezed
           ? _value.associationEndAge
-          : associationEndAge as String,
+          : associationEndAge // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Association implements _Association {
   _$_Association(
       {this.antigen, this.associationBeginAge, this.associationEndAge});
@@ -455,11 +485,11 @@ class _$_Association implements _Association {
       _$_$_AssociationFromJson(json);
 
   @override
-  final TargetDisease antigen;
+  final TargetDisease? antigen;
   @override
-  final String associationBeginAge;
+  final String? associationBeginAge;
   @override
-  final String associationEndAge;
+  final String? associationEndAge;
 
   @override
   String toString() {
@@ -488,6 +518,7 @@ class _$_Association implements _Association {
       const DeepCollectionEquality().hash(associationBeginAge) ^
       const DeepCollectionEquality().hash(associationEndAge);
 
+  @JsonKey(ignore: true)
   @override
   _$AssociationCopyWith<_Association> get copyWith =>
       __$AssociationCopyWithImpl<_Association>(this, _$identity);
@@ -500,19 +531,21 @@ class _$_Association implements _Association {
 
 abstract class _Association implements Association {
   factory _Association(
-      {TargetDisease antigen,
-      String associationBeginAge,
-      String associationEndAge}) = _$_Association;
+      {TargetDisease? antigen,
+      String? associationBeginAge,
+      String? associationEndAge}) = _$_Association;
 
   factory _Association.fromJson(Map<String, dynamic> json) =
       _$_Association.fromJson;
 
   @override
-  TargetDisease get antigen;
+  TargetDisease? get antigen => throw _privateConstructorUsedError;
   @override
-  String get associationBeginAge;
+  String? get associationBeginAge => throw _privateConstructorUsedError;
   @override
-  String get associationEndAge;
+  String? get associationEndAge => throw _privateConstructorUsedError;
   @override
-  _$AssociationCopyWith<_Association> get copyWith;
+  @JsonKey(ignore: true)
+  _$AssociationCopyWith<_Association> get copyWith =>
+      throw _privateConstructorUsedError;
 }

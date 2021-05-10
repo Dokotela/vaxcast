@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'observation_code.dart';
 
@@ -8,6 +8,10 @@ part of 'observation_code.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ObservationCode _$ObservationCodeFromJson(Map<String, dynamic> json) {
   return _ObservationCode.fromJson(json);
 }
@@ -16,31 +20,30 @@ ObservationCode _$ObservationCodeFromJson(Map<String, dynamic> json) {
 class _$ObservationCodeTearOff {
   const _$ObservationCodeTearOff();
 
-// ignore: unused_element
-  _ObservationCode call({String text, Obs code}) {
+  _ObservationCode call({String? text, Obs? code}) {
     return _ObservationCode(
       text: text,
       code: code,
     );
   }
 
-// ignore: unused_element
   ObservationCode fromJson(Map<String, Object> json) {
     return ObservationCode.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ObservationCode = _$ObservationCodeTearOff();
 
 /// @nodoc
 mixin _$ObservationCode {
-  String get text;
-  Obs get code;
+  String? get text => throw _privateConstructorUsedError;
+  Obs? get code => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $ObservationCodeCopyWith<ObservationCode> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ObservationCodeCopyWith<ObservationCode> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -48,7 +51,7 @@ abstract class $ObservationCodeCopyWith<$Res> {
   factory $ObservationCodeCopyWith(
           ObservationCode value, $Res Function(ObservationCode) then) =
       _$ObservationCodeCopyWithImpl<$Res>;
-  $Res call({String text, Obs code});
+  $Res call({String? text, Obs? code});
 }
 
 /// @nodoc
@@ -62,12 +65,18 @@ class _$ObservationCodeCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object text = freezed,
-    Object code = freezed,
+    Object? text = freezed,
+    Object? code = freezed,
   }) {
     return _then(_value.copyWith(
-      text: text == freezed ? _value.text : text as String,
-      code: code == freezed ? _value.code : code as Obs,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String?,
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as Obs?,
     ));
   }
 }
@@ -79,7 +88,7 @@ abstract class _$ObservationCodeCopyWith<$Res>
           _ObservationCode value, $Res Function(_ObservationCode) then) =
       __$ObservationCodeCopyWithImpl<$Res>;
   @override
-  $Res call({String text, Obs code});
+  $Res call({String? text, Obs? code});
 }
 
 /// @nodoc
@@ -95,19 +104,24 @@ class __$ObservationCodeCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object text = freezed,
-    Object code = freezed,
+    Object? text = freezed,
+    Object? code = freezed,
   }) {
     return _then(_ObservationCode(
-      text: text == freezed ? _value.text : text as String,
-      code: code == freezed ? _value.code : code as Obs,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String?,
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as Obs?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ObservationCode implements _ObservationCode {
   _$_ObservationCode({this.text, this.code});
 
@@ -115,9 +129,9 @@ class _$_ObservationCode implements _ObservationCode {
       _$_$_ObservationCodeFromJson(json);
 
   @override
-  final String text;
+  final String? text;
   @override
-  final Obs code;
+  final Obs? code;
 
   @override
   String toString() {
@@ -140,6 +154,7 @@ class _$_ObservationCode implements _ObservationCode {
       const DeepCollectionEquality().hash(text) ^
       const DeepCollectionEquality().hash(code);
 
+  @JsonKey(ignore: true)
   @override
   _$ObservationCodeCopyWith<_ObservationCode> get copyWith =>
       __$ObservationCodeCopyWithImpl<_ObservationCode>(this, _$identity);
@@ -151,15 +166,17 @@ class _$_ObservationCode implements _ObservationCode {
 }
 
 abstract class _ObservationCode implements ObservationCode {
-  factory _ObservationCode({String text, Obs code}) = _$_ObservationCode;
+  factory _ObservationCode({String? text, Obs? code}) = _$_ObservationCode;
 
   factory _ObservationCode.fromJson(Map<String, dynamic> json) =
       _$_ObservationCode.fromJson;
 
   @override
-  String get text;
+  String? get text => throw _privateConstructorUsedError;
   @override
-  Obs get code;
+  Obs? get code => throw _privateConstructorUsedError;
   @override
-  _$ObservationCodeCopyWith<_ObservationCode> get copyWith;
+  @JsonKey(ignore: true)
+  _$ObservationCodeCopyWith<_ObservationCode> get copyWith =>
+      throw _privateConstructorUsedError;
 }

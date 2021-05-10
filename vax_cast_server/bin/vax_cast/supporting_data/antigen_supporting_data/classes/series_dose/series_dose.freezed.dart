@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'series_dose.dart';
 
@@ -8,6 +8,10 @@ part of 'series_dose.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 SeriesDose _$SeriesDoseFromJson(Map<String, dynamic> json) {
   return _SeriesDose.fromJson(json);
 }
@@ -16,18 +20,17 @@ SeriesDose _$SeriesDoseFromJson(Map<String, dynamic> json) {
 class _$SeriesDoseTearOff {
   const _$SeriesDoseTearOff();
 
-// ignore: unused_element
   _SeriesDose call(
-      {DoseNumber doseNumber,
-      List<VaxAge> age,
-      List<Interval> interval,
-      Interval allowableInterval,
-      List<Vaccine> preferableVaccine,
-      List<Vaccine> allowableVaccine,
-      List<Vaccine> inadvertentVaccine,
-      List<ConditionalSkip> conditionalSkip,
-      Binary recurringDose,
-      SeasonalRecommendation seasonalRecommendation}) {
+      {DoseNumber? doseNumber,
+      List<VaxAge>? age,
+      List<Interval>? interval,
+      Interval? allowableInterval,
+      List<Vaccine>? preferableVaccine,
+      List<Vaccine>? allowableVaccine,
+      List<Vaccine>? inadvertentVaccine,
+      List<ConditionalSkip>? conditionalSkip,
+      Binary? recurringDose,
+      SeasonalRecommendation? seasonalRecommendation}) {
     return _SeriesDose(
       doseNumber: doseNumber,
       age: age,
@@ -42,31 +45,33 @@ class _$SeriesDoseTearOff {
     );
   }
 
-// ignore: unused_element
   SeriesDose fromJson(Map<String, Object> json) {
     return SeriesDose.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $SeriesDose = _$SeriesDoseTearOff();
 
 /// @nodoc
 mixin _$SeriesDose {
-  DoseNumber get doseNumber;
-  List<VaxAge> get age;
-  List<Interval> get interval;
-  Interval get allowableInterval;
-  List<Vaccine> get preferableVaccine;
-  List<Vaccine> get allowableVaccine;
-  List<Vaccine> get inadvertentVaccine;
-  List<ConditionalSkip> get conditionalSkip;
-  Binary get recurringDose;
-  SeasonalRecommendation get seasonalRecommendation;
+  DoseNumber? get doseNumber => throw _privateConstructorUsedError;
+  List<VaxAge>? get age => throw _privateConstructorUsedError;
+  List<Interval>? get interval => throw _privateConstructorUsedError;
+  Interval? get allowableInterval => throw _privateConstructorUsedError;
+  List<Vaccine>? get preferableVaccine => throw _privateConstructorUsedError;
+  List<Vaccine>? get allowableVaccine => throw _privateConstructorUsedError;
+  List<Vaccine>? get inadvertentVaccine => throw _privateConstructorUsedError;
+  List<ConditionalSkip>? get conditionalSkip =>
+      throw _privateConstructorUsedError;
+  Binary? get recurringDose => throw _privateConstructorUsedError;
+  SeasonalRecommendation? get seasonalRecommendation =>
+      throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $SeriesDoseCopyWith<SeriesDose> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $SeriesDoseCopyWith<SeriesDose> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -75,19 +80,19 @@ abstract class $SeriesDoseCopyWith<$Res> {
           SeriesDose value, $Res Function(SeriesDose) then) =
       _$SeriesDoseCopyWithImpl<$Res>;
   $Res call(
-      {DoseNumber doseNumber,
-      List<VaxAge> age,
-      List<Interval> interval,
-      Interval allowableInterval,
-      List<Vaccine> preferableVaccine,
-      List<Vaccine> allowableVaccine,
-      List<Vaccine> inadvertentVaccine,
-      List<ConditionalSkip> conditionalSkip,
-      Binary recurringDose,
-      SeasonalRecommendation seasonalRecommendation});
+      {DoseNumber? doseNumber,
+      List<VaxAge>? age,
+      List<Interval>? interval,
+      Interval? allowableInterval,
+      List<Vaccine>? preferableVaccine,
+      List<Vaccine>? allowableVaccine,
+      List<Vaccine>? inadvertentVaccine,
+      List<ConditionalSkip>? conditionalSkip,
+      Binary? recurringDose,
+      SeasonalRecommendation? seasonalRecommendation});
 
-  $IntervalCopyWith<$Res> get allowableInterval;
-  $SeasonalRecommendationCopyWith<$Res> get seasonalRecommendation;
+  $IntervalCopyWith<$Res>? get allowableInterval;
+  $SeasonalRecommendationCopyWith<$Res>? get seasonalRecommendation;
 }
 
 /// @nodoc
@@ -100,63 +105,79 @@ class _$SeriesDoseCopyWithImpl<$Res> implements $SeriesDoseCopyWith<$Res> {
 
   @override
   $Res call({
-    Object doseNumber = freezed,
-    Object age = freezed,
-    Object interval = freezed,
-    Object allowableInterval = freezed,
-    Object preferableVaccine = freezed,
-    Object allowableVaccine = freezed,
-    Object inadvertentVaccine = freezed,
-    Object conditionalSkip = freezed,
-    Object recurringDose = freezed,
-    Object seasonalRecommendation = freezed,
+    Object? doseNumber = freezed,
+    Object? age = freezed,
+    Object? interval = freezed,
+    Object? allowableInterval = freezed,
+    Object? preferableVaccine = freezed,
+    Object? allowableVaccine = freezed,
+    Object? inadvertentVaccine = freezed,
+    Object? conditionalSkip = freezed,
+    Object? recurringDose = freezed,
+    Object? seasonalRecommendation = freezed,
   }) {
     return _then(_value.copyWith(
-      doseNumber:
-          doseNumber == freezed ? _value.doseNumber : doseNumber as DoseNumber,
-      age: age == freezed ? _value.age : age as List<VaxAge>,
-      interval:
-          interval == freezed ? _value.interval : interval as List<Interval>,
+      doseNumber: doseNumber == freezed
+          ? _value.doseNumber
+          : doseNumber // ignore: cast_nullable_to_non_nullable
+              as DoseNumber?,
+      age: age == freezed
+          ? _value.age
+          : age // ignore: cast_nullable_to_non_nullable
+              as List<VaxAge>?,
+      interval: interval == freezed
+          ? _value.interval
+          : interval // ignore: cast_nullable_to_non_nullable
+              as List<Interval>?,
       allowableInterval: allowableInterval == freezed
           ? _value.allowableInterval
-          : allowableInterval as Interval,
+          : allowableInterval // ignore: cast_nullable_to_non_nullable
+              as Interval?,
       preferableVaccine: preferableVaccine == freezed
           ? _value.preferableVaccine
-          : preferableVaccine as List<Vaccine>,
+          : preferableVaccine // ignore: cast_nullable_to_non_nullable
+              as List<Vaccine>?,
       allowableVaccine: allowableVaccine == freezed
           ? _value.allowableVaccine
-          : allowableVaccine as List<Vaccine>,
+          : allowableVaccine // ignore: cast_nullable_to_non_nullable
+              as List<Vaccine>?,
       inadvertentVaccine: inadvertentVaccine == freezed
           ? _value.inadvertentVaccine
-          : inadvertentVaccine as List<Vaccine>,
+          : inadvertentVaccine // ignore: cast_nullable_to_non_nullable
+              as List<Vaccine>?,
       conditionalSkip: conditionalSkip == freezed
           ? _value.conditionalSkip
-          : conditionalSkip as List<ConditionalSkip>,
+          : conditionalSkip // ignore: cast_nullable_to_non_nullable
+              as List<ConditionalSkip>?,
       recurringDose: recurringDose == freezed
           ? _value.recurringDose
-          : recurringDose as Binary,
+          : recurringDose // ignore: cast_nullable_to_non_nullable
+              as Binary?,
       seasonalRecommendation: seasonalRecommendation == freezed
           ? _value.seasonalRecommendation
-          : seasonalRecommendation as SeasonalRecommendation,
+          : seasonalRecommendation // ignore: cast_nullable_to_non_nullable
+              as SeasonalRecommendation?,
     ));
   }
 
   @override
-  $IntervalCopyWith<$Res> get allowableInterval {
+  $IntervalCopyWith<$Res>? get allowableInterval {
     if (_value.allowableInterval == null) {
       return null;
     }
-    return $IntervalCopyWith<$Res>(_value.allowableInterval, (value) {
+
+    return $IntervalCopyWith<$Res>(_value.allowableInterval!, (value) {
       return _then(_value.copyWith(allowableInterval: value));
     });
   }
 
   @override
-  $SeasonalRecommendationCopyWith<$Res> get seasonalRecommendation {
+  $SeasonalRecommendationCopyWith<$Res>? get seasonalRecommendation {
     if (_value.seasonalRecommendation == null) {
       return null;
     }
-    return $SeasonalRecommendationCopyWith<$Res>(_value.seasonalRecommendation,
+
+    return $SeasonalRecommendationCopyWith<$Res>(_value.seasonalRecommendation!,
         (value) {
       return _then(_value.copyWith(seasonalRecommendation: value));
     });
@@ -170,21 +191,21 @@ abstract class _$SeriesDoseCopyWith<$Res> implements $SeriesDoseCopyWith<$Res> {
       __$SeriesDoseCopyWithImpl<$Res>;
   @override
   $Res call(
-      {DoseNumber doseNumber,
-      List<VaxAge> age,
-      List<Interval> interval,
-      Interval allowableInterval,
-      List<Vaccine> preferableVaccine,
-      List<Vaccine> allowableVaccine,
-      List<Vaccine> inadvertentVaccine,
-      List<ConditionalSkip> conditionalSkip,
-      Binary recurringDose,
-      SeasonalRecommendation seasonalRecommendation});
+      {DoseNumber? doseNumber,
+      List<VaxAge>? age,
+      List<Interval>? interval,
+      Interval? allowableInterval,
+      List<Vaccine>? preferableVaccine,
+      List<Vaccine>? allowableVaccine,
+      List<Vaccine>? inadvertentVaccine,
+      List<ConditionalSkip>? conditionalSkip,
+      Binary? recurringDose,
+      SeasonalRecommendation? seasonalRecommendation});
 
   @override
-  $IntervalCopyWith<$Res> get allowableInterval;
+  $IntervalCopyWith<$Res>? get allowableInterval;
   @override
-  $SeasonalRecommendationCopyWith<$Res> get seasonalRecommendation;
+  $SeasonalRecommendationCopyWith<$Res>? get seasonalRecommendation;
 }
 
 /// @nodoc
@@ -199,51 +220,64 @@ class __$SeriesDoseCopyWithImpl<$Res> extends _$SeriesDoseCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object doseNumber = freezed,
-    Object age = freezed,
-    Object interval = freezed,
-    Object allowableInterval = freezed,
-    Object preferableVaccine = freezed,
-    Object allowableVaccine = freezed,
-    Object inadvertentVaccine = freezed,
-    Object conditionalSkip = freezed,
-    Object recurringDose = freezed,
-    Object seasonalRecommendation = freezed,
+    Object? doseNumber = freezed,
+    Object? age = freezed,
+    Object? interval = freezed,
+    Object? allowableInterval = freezed,
+    Object? preferableVaccine = freezed,
+    Object? allowableVaccine = freezed,
+    Object? inadvertentVaccine = freezed,
+    Object? conditionalSkip = freezed,
+    Object? recurringDose = freezed,
+    Object? seasonalRecommendation = freezed,
   }) {
     return _then(_SeriesDose(
-      doseNumber:
-          doseNumber == freezed ? _value.doseNumber : doseNumber as DoseNumber,
-      age: age == freezed ? _value.age : age as List<VaxAge>,
-      interval:
-          interval == freezed ? _value.interval : interval as List<Interval>,
+      doseNumber: doseNumber == freezed
+          ? _value.doseNumber
+          : doseNumber // ignore: cast_nullable_to_non_nullable
+              as DoseNumber?,
+      age: age == freezed
+          ? _value.age
+          : age // ignore: cast_nullable_to_non_nullable
+              as List<VaxAge>?,
+      interval: interval == freezed
+          ? _value.interval
+          : interval // ignore: cast_nullable_to_non_nullable
+              as List<Interval>?,
       allowableInterval: allowableInterval == freezed
           ? _value.allowableInterval
-          : allowableInterval as Interval,
+          : allowableInterval // ignore: cast_nullable_to_non_nullable
+              as Interval?,
       preferableVaccine: preferableVaccine == freezed
           ? _value.preferableVaccine
-          : preferableVaccine as List<Vaccine>,
+          : preferableVaccine // ignore: cast_nullable_to_non_nullable
+              as List<Vaccine>?,
       allowableVaccine: allowableVaccine == freezed
           ? _value.allowableVaccine
-          : allowableVaccine as List<Vaccine>,
+          : allowableVaccine // ignore: cast_nullable_to_non_nullable
+              as List<Vaccine>?,
       inadvertentVaccine: inadvertentVaccine == freezed
           ? _value.inadvertentVaccine
-          : inadvertentVaccine as List<Vaccine>,
+          : inadvertentVaccine // ignore: cast_nullable_to_non_nullable
+              as List<Vaccine>?,
       conditionalSkip: conditionalSkip == freezed
           ? _value.conditionalSkip
-          : conditionalSkip as List<ConditionalSkip>,
+          : conditionalSkip // ignore: cast_nullable_to_non_nullable
+              as List<ConditionalSkip>?,
       recurringDose: recurringDose == freezed
           ? _value.recurringDose
-          : recurringDose as Binary,
+          : recurringDose // ignore: cast_nullable_to_non_nullable
+              as Binary?,
       seasonalRecommendation: seasonalRecommendation == freezed
           ? _value.seasonalRecommendation
-          : seasonalRecommendation as SeasonalRecommendation,
+          : seasonalRecommendation // ignore: cast_nullable_to_non_nullable
+              as SeasonalRecommendation?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_SeriesDose implements _SeriesDose {
   _$_SeriesDose(
       {this.doseNumber,
@@ -261,25 +295,25 @@ class _$_SeriesDose implements _SeriesDose {
       _$_$_SeriesDoseFromJson(json);
 
   @override
-  final DoseNumber doseNumber;
+  final DoseNumber? doseNumber;
   @override
-  final List<VaxAge> age;
+  final List<VaxAge>? age;
   @override
-  final List<Interval> interval;
+  final List<Interval>? interval;
   @override
-  final Interval allowableInterval;
+  final Interval? allowableInterval;
   @override
-  final List<Vaccine> preferableVaccine;
+  final List<Vaccine>? preferableVaccine;
   @override
-  final List<Vaccine> allowableVaccine;
+  final List<Vaccine>? allowableVaccine;
   @override
-  final List<Vaccine> inadvertentVaccine;
+  final List<Vaccine>? inadvertentVaccine;
   @override
-  final List<ConditionalSkip> conditionalSkip;
+  final List<ConditionalSkip>? conditionalSkip;
   @override
-  final Binary recurringDose;
+  final Binary? recurringDose;
   @override
-  final SeasonalRecommendation seasonalRecommendation;
+  final SeasonalRecommendation? seasonalRecommendation;
 
   @override
   String toString() {
@@ -335,6 +369,7 @@ class _$_SeriesDose implements _SeriesDose {
       const DeepCollectionEquality().hash(recurringDose) ^
       const DeepCollectionEquality().hash(seasonalRecommendation);
 
+  @JsonKey(ignore: true)
   @override
   _$SeriesDoseCopyWith<_SeriesDose> get copyWith =>
       __$SeriesDoseCopyWithImpl<_SeriesDose>(this, _$identity);
@@ -347,40 +382,44 @@ class _$_SeriesDose implements _SeriesDose {
 
 abstract class _SeriesDose implements SeriesDose {
   factory _SeriesDose(
-      {DoseNumber doseNumber,
-      List<VaxAge> age,
-      List<Interval> interval,
-      Interval allowableInterval,
-      List<Vaccine> preferableVaccine,
-      List<Vaccine> allowableVaccine,
-      List<Vaccine> inadvertentVaccine,
-      List<ConditionalSkip> conditionalSkip,
-      Binary recurringDose,
-      SeasonalRecommendation seasonalRecommendation}) = _$_SeriesDose;
+      {DoseNumber? doseNumber,
+      List<VaxAge>? age,
+      List<Interval>? interval,
+      Interval? allowableInterval,
+      List<Vaccine>? preferableVaccine,
+      List<Vaccine>? allowableVaccine,
+      List<Vaccine>? inadvertentVaccine,
+      List<ConditionalSkip>? conditionalSkip,
+      Binary? recurringDose,
+      SeasonalRecommendation? seasonalRecommendation}) = _$_SeriesDose;
 
   factory _SeriesDose.fromJson(Map<String, dynamic> json) =
       _$_SeriesDose.fromJson;
 
   @override
-  DoseNumber get doseNumber;
+  DoseNumber? get doseNumber => throw _privateConstructorUsedError;
   @override
-  List<VaxAge> get age;
+  List<VaxAge>? get age => throw _privateConstructorUsedError;
   @override
-  List<Interval> get interval;
+  List<Interval>? get interval => throw _privateConstructorUsedError;
   @override
-  Interval get allowableInterval;
+  Interval? get allowableInterval => throw _privateConstructorUsedError;
   @override
-  List<Vaccine> get preferableVaccine;
+  List<Vaccine>? get preferableVaccine => throw _privateConstructorUsedError;
   @override
-  List<Vaccine> get allowableVaccine;
+  List<Vaccine>? get allowableVaccine => throw _privateConstructorUsedError;
   @override
-  List<Vaccine> get inadvertentVaccine;
+  List<Vaccine>? get inadvertentVaccine => throw _privateConstructorUsedError;
   @override
-  List<ConditionalSkip> get conditionalSkip;
+  List<ConditionalSkip>? get conditionalSkip =>
+      throw _privateConstructorUsedError;
   @override
-  Binary get recurringDose;
+  Binary? get recurringDose => throw _privateConstructorUsedError;
   @override
-  SeasonalRecommendation get seasonalRecommendation;
+  SeasonalRecommendation? get seasonalRecommendation =>
+      throw _privateConstructorUsedError;
   @override
-  _$SeriesDoseCopyWith<_SeriesDose> get copyWith;
+  @JsonKey(ignore: true)
+  _$SeriesDoseCopyWith<_SeriesDose> get copyWith =>
+      throw _privateConstructorUsedError;
 }

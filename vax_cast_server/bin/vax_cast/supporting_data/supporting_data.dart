@@ -4,73 +4,66 @@ import 'supporting_data_enums/target_disease_enum.dart';
 import 'supporting_data_map.dart';
 
 class SupportingData {
-  static Map<TargetDisease, AntigenSupportingData> _antigenSupportingData;
-  static ScheduleSupportingData _scheduleSupportingData;
+  Map<TargetDisease?, AntigenSupportingData?>? antigenSupportingData;
+  ScheduleSupportingData? scheduleSupportingData;
 
   SupportingData._();
 
-  static Map<TargetDisease, AntigenSupportingData> get antigenSupportingData =>
-      _antigenSupportingData;
-  static ScheduleSupportingData get scheduleSupportingData =>
-      _scheduleSupportingData;
-  static Future<void> load() => _load();
+  void load() => _getSupportingData();
 
-  static Future<void> _load() async {
-    await _getSupportingData();
-  }
-
-  static void _getSupportingData() async {
+  void _getSupportingData() {
     // var json = jsonDecode(
     //     await File('lib/supporting_data/supporting_data.json').readAsString());
     var json = supportingDataMap;
 
-    // _antigenSupportingData = <TargetDisease, AntigenSupportingData>{};
-    _antigenSupportingData =
-        (json['antigenSupportingData'] as Map<String, dynamic>)?.map(
+    // antigenSupportingData = <TargetDisease, AntigenSupportingData>{};
+    antigenSupportingData =
+        (json['antigenSupportingData'] as Map<String, dynamic>).map(
       (k, e) => MapEntry(
-          _$enumDecodeNullable(_$TargetDiseaseEnumMap, k),
+          _$enumDecodeNullable(_TargetDiseaseEnumToString, k),
           e == null
               ? null
               : AntigenSupportingData.fromJson(e as Map<String, dynamic>)),
     );
-    _scheduleSupportingData = json['scheduleSupportingData'] != null
+
+    scheduleSupportingData = json['scheduleSupportingData'] != null
         ? ScheduleSupportingData.fromJson(
             json['scheduleSupportingData'] as Map<String, dynamic>)
         : null;
   }
 
-  static Map<String, dynamic> toJson() => <String, dynamic>{
-        'antigenSupportingData': _antigenSupportingData
-            ?.map((k, e) => MapEntry(_$TargetDiseaseEnumMap[k], e)),
-        'scheduleSupportingData': _scheduleSupportingData,
+  Map<String, dynamic> toJson() => <String, dynamic>{
+        'antigenSupportingData': antigenSupportingData
+            ?.map((k, e) => MapEntry(_TargetDiseaseStringToEnum[k], e)),
+        'scheduleSupportingData': scheduleSupportingData,
       };
 }
 
-T _$enumDecode<T>(
+T? _$enumDecode<T>(
   Map<T, dynamic> enumValues,
   dynamic source, {
-  T unknownValue,
+  T? unknownValue,
 }) {
   if (source == null) {
     throw ArgumentError('A value must be provided. Supported values: '
         '${enumValues.values.join(', ')}');
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
+  enumValues.removeWhere((key, value) => value.value == source);
 
-  if (value == null && unknownValue == null) {
+  if ((enumValues.isEmpty || enumValues.length > 1) && unknownValue == null) {
     throw ArgumentError('`$source` is not one of the supported values: '
         '${enumValues.values.join(', ')}');
   }
-  return value ?? unknownValue;
+  return (enumValues.isEmpty || enumValues.length > 1)
+      ? unknownValue
+      : enumValues[0];
 }
 
-T _$enumDecodeNullable<T>(
+T? _$enumDecodeNullable<T>(
   Map<T, dynamic> enumValues,
   dynamic source, {
-  T unknownValue,
+  T? unknownValue,
 }) {
   if (source == null) {
     return null;
@@ -78,7 +71,7 @@ T _$enumDecodeNullable<T>(
   return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
 }
 
-const _$TargetDiseaseEnumMap = {
+const _TargetDiseaseEnumToString = {
   TargetDisease.cholera: 'Cholera',
   TargetDisease.diptheria: 'Diphtheria',
   TargetDisease.hepA: 'HepA',
@@ -102,4 +95,30 @@ const _$TargetDiseaseEnumMap = {
   TargetDisease.varicella: 'Varicella',
   TargetDisease.yellowFever: 'Yellow Fever',
   TargetDisease.zoster: 'Zoster',
+};
+
+const _TargetDiseaseStringToEnum = {
+  'Cholera': TargetDisease.cholera,
+  'Diphtheria': TargetDisease.diptheria,
+  'HepA': TargetDisease.hepA,
+  'HepB': TargetDisease.hepB,
+  'Hib': TargetDisease.hib,
+  'HPV': TargetDisease.hpv,
+  'Influenza': TargetDisease.influenza,
+  'Japanese Encephalitis': TargetDisease.japaneseEncephalitis,
+  'Meningococcal': TargetDisease.meningococcal,
+  'Meningococcal B': TargetDisease.meningococcalB,
+  'Measles': TargetDisease.measles,
+  'Mumps': TargetDisease.mumps,
+  'Pertussis': TargetDisease.pertussis,
+  'Pneumococcal': TargetDisease.pneumococcal,
+  'Polio': TargetDisease.polio,
+  'Rabies': TargetDisease.rabies,
+  'Rotavirus': TargetDisease.rotavirus,
+  'Rubella': TargetDisease.rubella,
+  'Tetanus': TargetDisease.tetanus,
+  'Typhoid': TargetDisease.typhoid,
+  'Varicella': TargetDisease.varicella,
+  'Yellow Fever': TargetDisease.yellowFever,
+  'Zoster': TargetDisease.zoster,
 };

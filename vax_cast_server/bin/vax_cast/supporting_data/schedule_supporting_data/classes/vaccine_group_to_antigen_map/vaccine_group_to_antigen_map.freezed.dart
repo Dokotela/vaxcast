@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'vaccine_group_to_antigen_map.dart';
 
@@ -8,6 +8,10 @@ part of 'vaccine_group_to_antigen_map.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 VaccineGroupToAntigenMap _$VaccineGroupToAntigenMapFromJson(
     Map<String, dynamic> json) {
   return _VaccineGroupToAntigenMap.fromJson(json);
@@ -17,29 +21,29 @@ VaccineGroupToAntigenMap _$VaccineGroupToAntigenMapFromJson(
 class _$VaccineGroupToAntigenMapTearOff {
   const _$VaccineGroupToAntigenMapTearOff();
 
-// ignore: unused_element
-  _VaccineGroupToAntigenMap call({List<VaccineGroupMap> vaccineGroupMap}) {
+  _VaccineGroupToAntigenMap call({List<VaccineGroupMap>? vaccineGroupMap}) {
     return _VaccineGroupToAntigenMap(
       vaccineGroupMap: vaccineGroupMap,
     );
   }
 
-// ignore: unused_element
   VaccineGroupToAntigenMap fromJson(Map<String, Object> json) {
     return VaccineGroupToAntigenMap.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $VaccineGroupToAntigenMap = _$VaccineGroupToAntigenMapTearOff();
 
 /// @nodoc
 mixin _$VaccineGroupToAntigenMap {
-  List<VaccineGroupMap> get vaccineGroupMap;
+  List<VaccineGroupMap>? get vaccineGroupMap =>
+      throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $VaccineGroupToAntigenMapCopyWith<VaccineGroupToAntigenMap> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $VaccineGroupToAntigenMapCopyWith<VaccineGroupToAntigenMap> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -47,7 +51,7 @@ abstract class $VaccineGroupToAntigenMapCopyWith<$Res> {
   factory $VaccineGroupToAntigenMapCopyWith(VaccineGroupToAntigenMap value,
           $Res Function(VaccineGroupToAntigenMap) then) =
       _$VaccineGroupToAntigenMapCopyWithImpl<$Res>;
-  $Res call({List<VaccineGroupMap> vaccineGroupMap});
+  $Res call({List<VaccineGroupMap>? vaccineGroupMap});
 }
 
 /// @nodoc
@@ -61,12 +65,13 @@ class _$VaccineGroupToAntigenMapCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object vaccineGroupMap = freezed,
+    Object? vaccineGroupMap = freezed,
   }) {
     return _then(_value.copyWith(
       vaccineGroupMap: vaccineGroupMap == freezed
           ? _value.vaccineGroupMap
-          : vaccineGroupMap as List<VaccineGroupMap>,
+          : vaccineGroupMap // ignore: cast_nullable_to_non_nullable
+              as List<VaccineGroupMap>?,
     ));
   }
 }
@@ -78,7 +83,7 @@ abstract class _$VaccineGroupToAntigenMapCopyWith<$Res>
           $Res Function(_VaccineGroupToAntigenMap) then) =
       __$VaccineGroupToAntigenMapCopyWithImpl<$Res>;
   @override
-  $Res call({List<VaccineGroupMap> vaccineGroupMap});
+  $Res call({List<VaccineGroupMap>? vaccineGroupMap});
 }
 
 /// @nodoc
@@ -95,19 +100,19 @@ class __$VaccineGroupToAntigenMapCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object vaccineGroupMap = freezed,
+    Object? vaccineGroupMap = freezed,
   }) {
     return _then(_VaccineGroupToAntigenMap(
       vaccineGroupMap: vaccineGroupMap == freezed
           ? _value.vaccineGroupMap
-          : vaccineGroupMap as List<VaccineGroupMap>,
+          : vaccineGroupMap // ignore: cast_nullable_to_non_nullable
+              as List<VaccineGroupMap>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_VaccineGroupToAntigenMap implements _VaccineGroupToAntigenMap {
   _$_VaccineGroupToAntigenMap({this.vaccineGroupMap});
 
@@ -115,7 +120,7 @@ class _$_VaccineGroupToAntigenMap implements _VaccineGroupToAntigenMap {
       _$_$_VaccineGroupToAntigenMapFromJson(json);
 
   @override
-  final List<VaccineGroupMap> vaccineGroupMap;
+  final List<VaccineGroupMap>? vaccineGroupMap;
 
   @override
   String toString() {
@@ -136,6 +141,7 @@ class _$_VaccineGroupToAntigenMap implements _VaccineGroupToAntigenMap {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(vaccineGroupMap);
 
+  @JsonKey(ignore: true)
   @override
   _$VaccineGroupToAntigenMapCopyWith<_VaccineGroupToAntigenMap> get copyWith =>
       __$VaccineGroupToAntigenMapCopyWithImpl<_VaccineGroupToAntigenMap>(
@@ -148,16 +154,19 @@ class _$_VaccineGroupToAntigenMap implements _VaccineGroupToAntigenMap {
 }
 
 abstract class _VaccineGroupToAntigenMap implements VaccineGroupToAntigenMap {
-  factory _VaccineGroupToAntigenMap({List<VaccineGroupMap> vaccineGroupMap}) =
+  factory _VaccineGroupToAntigenMap({List<VaccineGroupMap>? vaccineGroupMap}) =
       _$_VaccineGroupToAntigenMap;
 
   factory _VaccineGroupToAntigenMap.fromJson(Map<String, dynamic> json) =
       _$_VaccineGroupToAntigenMap.fromJson;
 
   @override
-  List<VaccineGroupMap> get vaccineGroupMap;
+  List<VaccineGroupMap>? get vaccineGroupMap =>
+      throw _privateConstructorUsedError;
   @override
-  _$VaccineGroupToAntigenMapCopyWith<_VaccineGroupToAntigenMap> get copyWith;
+  @JsonKey(ignore: true)
+  _$VaccineGroupToAntigenMapCopyWith<_VaccineGroupToAntigenMap> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 VaccineGroupMap _$VaccineGroupMapFromJson(Map<String, dynamic> json) {
@@ -168,31 +177,31 @@ VaccineGroupMap _$VaccineGroupMapFromJson(Map<String, dynamic> json) {
 class _$VaccineGroupMapTearOff {
   const _$VaccineGroupMapTearOff();
 
-// ignore: unused_element
-  _VaccineGroupMap call({VaccineGroupName name, List<TargetDisease> antigen}) {
+  _VaccineGroupMap call(
+      {VaccineGroupName? name, List<TargetDisease>? antigen}) {
     return _VaccineGroupMap(
       name: name,
       antigen: antigen,
     );
   }
 
-// ignore: unused_element
   VaccineGroupMap fromJson(Map<String, Object> json) {
     return VaccineGroupMap.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $VaccineGroupMap = _$VaccineGroupMapTearOff();
 
 /// @nodoc
 mixin _$VaccineGroupMap {
-  VaccineGroupName get name;
-  List<TargetDisease> get antigen;
+  VaccineGroupName? get name => throw _privateConstructorUsedError;
+  List<TargetDisease>? get antigen => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $VaccineGroupMapCopyWith<VaccineGroupMap> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $VaccineGroupMapCopyWith<VaccineGroupMap> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -200,7 +209,7 @@ abstract class $VaccineGroupMapCopyWith<$Res> {
   factory $VaccineGroupMapCopyWith(
           VaccineGroupMap value, $Res Function(VaccineGroupMap) then) =
       _$VaccineGroupMapCopyWithImpl<$Res>;
-  $Res call({VaccineGroupName name, List<TargetDisease> antigen});
+  $Res call({VaccineGroupName? name, List<TargetDisease>? antigen});
 }
 
 /// @nodoc
@@ -214,13 +223,18 @@ class _$VaccineGroupMapCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object name = freezed,
-    Object antigen = freezed,
+    Object? name = freezed,
+    Object? antigen = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as VaccineGroupName,
-      antigen:
-          antigen == freezed ? _value.antigen : antigen as List<TargetDisease>,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as VaccineGroupName?,
+      antigen: antigen == freezed
+          ? _value.antigen
+          : antigen // ignore: cast_nullable_to_non_nullable
+              as List<TargetDisease>?,
     ));
   }
 }
@@ -232,7 +246,7 @@ abstract class _$VaccineGroupMapCopyWith<$Res>
           _VaccineGroupMap value, $Res Function(_VaccineGroupMap) then) =
       __$VaccineGroupMapCopyWithImpl<$Res>;
   @override
-  $Res call({VaccineGroupName name, List<TargetDisease> antigen});
+  $Res call({VaccineGroupName? name, List<TargetDisease>? antigen});
 }
 
 /// @nodoc
@@ -248,20 +262,24 @@ class __$VaccineGroupMapCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object name = freezed,
-    Object antigen = freezed,
+    Object? name = freezed,
+    Object? antigen = freezed,
   }) {
     return _then(_VaccineGroupMap(
-      name: name == freezed ? _value.name : name as VaccineGroupName,
-      antigen:
-          antigen == freezed ? _value.antigen : antigen as List<TargetDisease>,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as VaccineGroupName?,
+      antigen: antigen == freezed
+          ? _value.antigen
+          : antigen // ignore: cast_nullable_to_non_nullable
+              as List<TargetDisease>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_VaccineGroupMap implements _VaccineGroupMap {
   _$_VaccineGroupMap({this.name, this.antigen});
 
@@ -269,9 +287,9 @@ class _$_VaccineGroupMap implements _VaccineGroupMap {
       _$_$_VaccineGroupMapFromJson(json);
 
   @override
-  final VaccineGroupName name;
+  final VaccineGroupName? name;
   @override
-  final List<TargetDisease> antigen;
+  final List<TargetDisease>? antigen;
 
   @override
   String toString() {
@@ -294,6 +312,7 @@ class _$_VaccineGroupMap implements _VaccineGroupMap {
       const DeepCollectionEquality().hash(name) ^
       const DeepCollectionEquality().hash(antigen);
 
+  @JsonKey(ignore: true)
   @override
   _$VaccineGroupMapCopyWith<_VaccineGroupMap> get copyWith =>
       __$VaccineGroupMapCopyWithImpl<_VaccineGroupMap>(this, _$identity);
@@ -306,16 +325,18 @@ class _$_VaccineGroupMap implements _VaccineGroupMap {
 
 abstract class _VaccineGroupMap implements VaccineGroupMap {
   factory _VaccineGroupMap(
-      {VaccineGroupName name,
-      List<TargetDisease> antigen}) = _$_VaccineGroupMap;
+      {VaccineGroupName? name,
+      List<TargetDisease>? antigen}) = _$_VaccineGroupMap;
 
   factory _VaccineGroupMap.fromJson(Map<String, dynamic> json) =
       _$_VaccineGroupMap.fromJson;
 
   @override
-  VaccineGroupName get name;
+  VaccineGroupName? get name => throw _privateConstructorUsedError;
   @override
-  List<TargetDisease> get antigen;
+  List<TargetDisease>? get antigen => throw _privateConstructorUsedError;
   @override
-  _$VaccineGroupMapCopyWith<_VaccineGroupMap> get copyWith;
+  @JsonKey(ignore: true)
+  _$VaccineGroupMapCopyWith<_VaccineGroupMap> get copyWith =>
+      throw _privateConstructorUsedError;
 }

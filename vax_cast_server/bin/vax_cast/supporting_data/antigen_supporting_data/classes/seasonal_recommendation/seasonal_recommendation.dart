@@ -4,10 +4,10 @@ part 'seasonal_recommendation.freezed.dart';
 part 'seasonal_recommendation.g.dart';
 
 @freezed
-abstract class SeasonalRecommendation with _$SeasonalRecommendation {
+class SeasonalRecommendation with _$SeasonalRecommendation {
   factory SeasonalRecommendation({
-    String startDate,
-    String endDate,
+    String? startDate,
+    String? endDate,
   }) = _SeasonalRecommendation;
 
   factory SeasonalRecommendation.fromJson(Map<String, dynamic> json) =>

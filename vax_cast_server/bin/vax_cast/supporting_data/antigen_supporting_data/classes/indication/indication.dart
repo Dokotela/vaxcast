@@ -5,13 +5,13 @@ part 'indication.freezed.dart';
 part 'indication.g.dart';
 
 @freezed
-abstract class Indication with _$Indication {
+class Indication with _$Indication {
   factory Indication({
-    ObservationCode observationCode,
-    String description,
-    String beginAge,
-    String endAge,
-    String guidance,
+    ObservationCode? observationCode,
+    String? description,
+    String? beginAge,
+    String? endAge,
+    String? guidance,
   }) = _Indication;
 
   factory Indication.fromJson(Map<String, dynamic> json) =>

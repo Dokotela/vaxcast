@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'date_of_birth.dart';
 
@@ -8,6 +8,10 @@ part of 'date_of_birth.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 DateOfBirth _$DateOfBirthFromJson(Map<String, dynamic> json) {
   return _DateOfBirth.fromJson(json);
 }
@@ -16,11 +20,10 @@ DateOfBirth _$DateOfBirthFromJson(Map<String, dynamic> json) {
 class _$DateOfBirthTearOff {
   const _$DateOfBirthTearOff();
 
-// ignore: unused_element
   _DateOfBirth call(
-      {String immunityBirthDate,
-      String birthCountry,
-      List<Exclusion> exclusion}) {
+      {String? immunityBirthDate,
+      String? birthCountry,
+      List<Exclusion>? exclusion}) {
     return _DateOfBirth(
       immunityBirthDate: immunityBirthDate,
       birthCountry: birthCountry,
@@ -28,24 +31,24 @@ class _$DateOfBirthTearOff {
     );
   }
 
-// ignore: unused_element
   DateOfBirth fromJson(Map<String, Object> json) {
     return DateOfBirth.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $DateOfBirth = _$DateOfBirthTearOff();
 
 /// @nodoc
 mixin _$DateOfBirth {
-  String get immunityBirthDate;
-  String get birthCountry;
-  List<Exclusion> get exclusion;
+  String? get immunityBirthDate => throw _privateConstructorUsedError;
+  String? get birthCountry => throw _privateConstructorUsedError;
+  List<Exclusion>? get exclusion => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $DateOfBirthCopyWith<DateOfBirth> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $DateOfBirthCopyWith<DateOfBirth> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -54,9 +57,9 @@ abstract class $DateOfBirthCopyWith<$Res> {
           DateOfBirth value, $Res Function(DateOfBirth) then) =
       _$DateOfBirthCopyWithImpl<$Res>;
   $Res call(
-      {String immunityBirthDate,
-      String birthCountry,
-      List<Exclusion> exclusion});
+      {String? immunityBirthDate,
+      String? birthCountry,
+      List<Exclusion>? exclusion});
 }
 
 /// @nodoc
@@ -69,20 +72,23 @@ class _$DateOfBirthCopyWithImpl<$Res> implements $DateOfBirthCopyWith<$Res> {
 
   @override
   $Res call({
-    Object immunityBirthDate = freezed,
-    Object birthCountry = freezed,
-    Object exclusion = freezed,
+    Object? immunityBirthDate = freezed,
+    Object? birthCountry = freezed,
+    Object? exclusion = freezed,
   }) {
     return _then(_value.copyWith(
       immunityBirthDate: immunityBirthDate == freezed
           ? _value.immunityBirthDate
-          : immunityBirthDate as String,
+          : immunityBirthDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       birthCountry: birthCountry == freezed
           ? _value.birthCountry
-          : birthCountry as String,
+          : birthCountry // ignore: cast_nullable_to_non_nullable
+              as String?,
       exclusion: exclusion == freezed
           ? _value.exclusion
-          : exclusion as List<Exclusion>,
+          : exclusion // ignore: cast_nullable_to_non_nullable
+              as List<Exclusion>?,
     ));
   }
 }
@@ -95,9 +101,9 @@ abstract class _$DateOfBirthCopyWith<$Res>
       __$DateOfBirthCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String immunityBirthDate,
-      String birthCountry,
-      List<Exclusion> exclusion});
+      {String? immunityBirthDate,
+      String? birthCountry,
+      List<Exclusion>? exclusion});
 }
 
 /// @nodoc
@@ -112,27 +118,29 @@ class __$DateOfBirthCopyWithImpl<$Res> extends _$DateOfBirthCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object immunityBirthDate = freezed,
-    Object birthCountry = freezed,
-    Object exclusion = freezed,
+    Object? immunityBirthDate = freezed,
+    Object? birthCountry = freezed,
+    Object? exclusion = freezed,
   }) {
     return _then(_DateOfBirth(
       immunityBirthDate: immunityBirthDate == freezed
           ? _value.immunityBirthDate
-          : immunityBirthDate as String,
+          : immunityBirthDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       birthCountry: birthCountry == freezed
           ? _value.birthCountry
-          : birthCountry as String,
+          : birthCountry // ignore: cast_nullable_to_non_nullable
+              as String?,
       exclusion: exclusion == freezed
           ? _value.exclusion
-          : exclusion as List<Exclusion>,
+          : exclusion // ignore: cast_nullable_to_non_nullable
+              as List<Exclusion>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_DateOfBirth implements _DateOfBirth {
   _$_DateOfBirth({this.immunityBirthDate, this.birthCountry, this.exclusion});
 
@@ -140,11 +148,11 @@ class _$_DateOfBirth implements _DateOfBirth {
       _$_$_DateOfBirthFromJson(json);
 
   @override
-  final String immunityBirthDate;
+  final String? immunityBirthDate;
   @override
-  final String birthCountry;
+  final String? birthCountry;
   @override
-  final List<Exclusion> exclusion;
+  final List<Exclusion>? exclusion;
 
   @override
   String toString() {
@@ -173,6 +181,7 @@ class _$_DateOfBirth implements _DateOfBirth {
       const DeepCollectionEquality().hash(birthCountry) ^
       const DeepCollectionEquality().hash(exclusion);
 
+  @JsonKey(ignore: true)
   @override
   _$DateOfBirthCopyWith<_DateOfBirth> get copyWith =>
       __$DateOfBirthCopyWithImpl<_DateOfBirth>(this, _$identity);
@@ -185,19 +194,21 @@ class _$_DateOfBirth implements _DateOfBirth {
 
 abstract class _DateOfBirth implements DateOfBirth {
   factory _DateOfBirth(
-      {String immunityBirthDate,
-      String birthCountry,
-      List<Exclusion> exclusion}) = _$_DateOfBirth;
+      {String? immunityBirthDate,
+      String? birthCountry,
+      List<Exclusion>? exclusion}) = _$_DateOfBirth;
 
   factory _DateOfBirth.fromJson(Map<String, dynamic> json) =
       _$_DateOfBirth.fromJson;
 
   @override
-  String get immunityBirthDate;
+  String? get immunityBirthDate => throw _privateConstructorUsedError;
   @override
-  String get birthCountry;
+  String? get birthCountry => throw _privateConstructorUsedError;
   @override
-  List<Exclusion> get exclusion;
+  List<Exclusion>? get exclusion => throw _privateConstructorUsedError;
   @override
-  _$DateOfBirthCopyWith<_DateOfBirth> get copyWith;
+  @JsonKey(ignore: true)
+  _$DateOfBirthCopyWith<_DateOfBirth> get copyWith =>
+      throw _privateConstructorUsedError;
 }

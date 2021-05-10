@@ -6,11 +6,11 @@ part 'date_of_birth.freezed.dart';
 part 'date_of_birth.g.dart';
 
 @freezed
-abstract class DateOfBirth with _$DateOfBirth {
+class DateOfBirth with _$DateOfBirth {
   factory DateOfBirth({
-    String immunityBirthDate,
-    String birthCountry,
-    List<Exclusion> exclusion,
+    String? immunityBirthDate,
+    String? birthCountry,
+    List<Exclusion>? exclusion,
   }) = _DateOfBirth;
 
   factory DateOfBirth.fromJson(Map<String, dynamic> json) =>

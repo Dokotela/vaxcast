@@ -1,13 +1,14 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+
 import '../../../../vax_cast.dart';
 
 part 'observations.freezed.dart';
 part 'observations.g.dart';
 
 @freezed
-abstract class Observations with _$Observations {
+class Observations with _$Observations {
   factory Observations({
-    List<Observation> observation,
+    List<Observation>? observation,
   }) = _Observations;
 
   factory Observations.fromJson(Map<String, dynamic> json) =>
@@ -15,15 +16,15 @@ abstract class Observations with _$Observations {
 }
 
 @freezed
-abstract class Observation with _$Observation {
+class Observation with _$Observation {
   factory Observation({
-    Obs observationCode,
-    String observationTitle,
-    String group,
-    String indicationText,
-    String contraindicationText,
-    String clarifyingText,
-    CodedValues codedValues,
+    Obs? observationCode,
+    String? observationTitle,
+    String? group,
+    String? indicationText,
+    String? contraindicationText,
+    String? clarifyingText,
+    CodedValues? codedValues,
   }) = _Observation;
 
   factory Observation.fromJson(Map<String, dynamic> json) =>
@@ -31,9 +32,9 @@ abstract class Observation with _$Observation {
 }
 
 @freezed
-abstract class CodedValues with _$CodedValues {
+class CodedValues with _$CodedValues {
   factory CodedValues({
-    List<CodedValue> codedValue,
+    List<CodedValue>? codedValue,
   }) = _CodedValues;
 
   factory CodedValues.fromJson(Map<String, dynamic> json) =>
@@ -41,11 +42,11 @@ abstract class CodedValues with _$CodedValues {
 }
 
 @freezed
-abstract class CodedValue with _$CodedValue {
+class CodedValue with _$CodedValue {
   factory CodedValue({
-    String code,
-    String codeSystem,
-    String text,
+    String? code,
+    String? codeSystem,
+    String? text,
   }) = _CodedValue;
 
   factory CodedValue.fromJson(Map<String, dynamic> json) =>

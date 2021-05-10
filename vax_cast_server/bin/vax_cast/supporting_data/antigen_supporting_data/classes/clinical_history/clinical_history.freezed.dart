@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'clinical_history.dart';
 
@@ -8,6 +8,10 @@ part of 'clinical_history.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ClinicalHistory _$ClinicalHistoryFromJson(Map<String, dynamic> json) {
   return _ClinicalHistory.fromJson(json);
 }
@@ -16,31 +20,30 @@ ClinicalHistory _$ClinicalHistoryFromJson(Map<String, dynamic> json) {
 class _$ClinicalHistoryTearOff {
   const _$ClinicalHistoryTearOff();
 
-// ignore: unused_element
-  _ClinicalHistory call({Obs guidelineCode, String guidelineTitle}) {
+  _ClinicalHistory call({Obs? guidelineCode, String? guidelineTitle}) {
     return _ClinicalHistory(
       guidelineCode: guidelineCode,
       guidelineTitle: guidelineTitle,
     );
   }
 
-// ignore: unused_element
   ClinicalHistory fromJson(Map<String, Object> json) {
     return ClinicalHistory.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ClinicalHistory = _$ClinicalHistoryTearOff();
 
 /// @nodoc
 mixin _$ClinicalHistory {
-  Obs get guidelineCode;
-  String get guidelineTitle;
+  Obs? get guidelineCode => throw _privateConstructorUsedError;
+  String? get guidelineTitle => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $ClinicalHistoryCopyWith<ClinicalHistory> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ClinicalHistoryCopyWith<ClinicalHistory> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -48,7 +51,7 @@ abstract class $ClinicalHistoryCopyWith<$Res> {
   factory $ClinicalHistoryCopyWith(
           ClinicalHistory value, $Res Function(ClinicalHistory) then) =
       _$ClinicalHistoryCopyWithImpl<$Res>;
-  $Res call({Obs guidelineCode, String guidelineTitle});
+  $Res call({Obs? guidelineCode, String? guidelineTitle});
 }
 
 /// @nodoc
@@ -62,16 +65,18 @@ class _$ClinicalHistoryCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object guidelineCode = freezed,
-    Object guidelineTitle = freezed,
+    Object? guidelineCode = freezed,
+    Object? guidelineTitle = freezed,
   }) {
     return _then(_value.copyWith(
       guidelineCode: guidelineCode == freezed
           ? _value.guidelineCode
-          : guidelineCode as Obs,
+          : guidelineCode // ignore: cast_nullable_to_non_nullable
+              as Obs?,
       guidelineTitle: guidelineTitle == freezed
           ? _value.guidelineTitle
-          : guidelineTitle as String,
+          : guidelineTitle // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -83,7 +88,7 @@ abstract class _$ClinicalHistoryCopyWith<$Res>
           _ClinicalHistory value, $Res Function(_ClinicalHistory) then) =
       __$ClinicalHistoryCopyWithImpl<$Res>;
   @override
-  $Res call({Obs guidelineCode, String guidelineTitle});
+  $Res call({Obs? guidelineCode, String? guidelineTitle});
 }
 
 /// @nodoc
@@ -99,23 +104,24 @@ class __$ClinicalHistoryCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object guidelineCode = freezed,
-    Object guidelineTitle = freezed,
+    Object? guidelineCode = freezed,
+    Object? guidelineTitle = freezed,
   }) {
     return _then(_ClinicalHistory(
       guidelineCode: guidelineCode == freezed
           ? _value.guidelineCode
-          : guidelineCode as Obs,
+          : guidelineCode // ignore: cast_nullable_to_non_nullable
+              as Obs?,
       guidelineTitle: guidelineTitle == freezed
           ? _value.guidelineTitle
-          : guidelineTitle as String,
+          : guidelineTitle // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ClinicalHistory implements _ClinicalHistory {
   _$_ClinicalHistory({this.guidelineCode, this.guidelineTitle});
 
@@ -123,9 +129,9 @@ class _$_ClinicalHistory implements _ClinicalHistory {
       _$_$_ClinicalHistoryFromJson(json);
 
   @override
-  final Obs guidelineCode;
+  final Obs? guidelineCode;
   @override
-  final String guidelineTitle;
+  final String? guidelineTitle;
 
   @override
   String toString() {
@@ -150,6 +156,7 @@ class _$_ClinicalHistory implements _ClinicalHistory {
       const DeepCollectionEquality().hash(guidelineCode) ^
       const DeepCollectionEquality().hash(guidelineTitle);
 
+  @JsonKey(ignore: true)
   @override
   _$ClinicalHistoryCopyWith<_ClinicalHistory> get copyWith =>
       __$ClinicalHistoryCopyWithImpl<_ClinicalHistory>(this, _$identity);
@@ -161,16 +168,18 @@ class _$_ClinicalHistory implements _ClinicalHistory {
 }
 
 abstract class _ClinicalHistory implements ClinicalHistory {
-  factory _ClinicalHistory({Obs guidelineCode, String guidelineTitle}) =
+  factory _ClinicalHistory({Obs? guidelineCode, String? guidelineTitle}) =
       _$_ClinicalHistory;
 
   factory _ClinicalHistory.fromJson(Map<String, dynamic> json) =
       _$_ClinicalHistory.fromJson;
 
   @override
-  Obs get guidelineCode;
+  Obs? get guidelineCode => throw _privateConstructorUsedError;
   @override
-  String get guidelineTitle;
+  String? get guidelineTitle => throw _privateConstructorUsedError;
   @override
-  _$ClinicalHistoryCopyWith<_ClinicalHistory> get copyWith;
+  @JsonKey(ignore: true)
+  _$ClinicalHistoryCopyWith<_ClinicalHistory> get copyWith =>
+      throw _privateConstructorUsedError;
 }

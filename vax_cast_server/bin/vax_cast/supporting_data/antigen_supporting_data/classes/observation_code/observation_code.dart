@@ -5,10 +5,10 @@ part 'observation_code.freezed.dart';
 part 'observation_code.g.dart';
 
 @freezed
-abstract class ObservationCode with _$ObservationCode {
+class ObservationCode with _$ObservationCode {
   factory ObservationCode({
-    String text,
-    Obs code,
+    String? text,
+    Obs? code,
   }) = _ObservationCode;
 
   factory ObservationCode.fromJson(Map<String, dynamic> json) =>

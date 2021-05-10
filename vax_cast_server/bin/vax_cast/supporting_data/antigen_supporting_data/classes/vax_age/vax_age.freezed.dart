@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'vax_age.dart';
 
@@ -8,6 +8,10 @@ part of 'vax_age.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 VaxAge _$VaxAgeFromJson(Map<String, dynamic> json) {
   return _VaxAge.fromJson(json);
 }
@@ -16,15 +20,14 @@ VaxAge _$VaxAgeFromJson(Map<String, dynamic> json) {
 class _$VaxAgeTearOff {
   const _$VaxAgeTearOff();
 
-// ignore: unused_element
   _VaxAge call(
-      {String absMinAge,
-      String minAge,
-      String earliestRecAge,
-      String latestRecAge,
-      String maxAge,
-      String effectiveDate,
-      String cessationDate}) {
+      {String? absMinAge,
+      String? minAge,
+      String? earliestRecAge,
+      String? latestRecAge,
+      String? maxAge,
+      String? effectiveDate,
+      String? cessationDate}) {
     return _VaxAge(
       absMinAge: absMinAge,
       minAge: minAge,
@@ -36,28 +39,27 @@ class _$VaxAgeTearOff {
     );
   }
 
-// ignore: unused_element
   VaxAge fromJson(Map<String, Object> json) {
     return VaxAge.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $VaxAge = _$VaxAgeTearOff();
 
 /// @nodoc
 mixin _$VaxAge {
-  String get absMinAge;
-  String get minAge;
-  String get earliestRecAge;
-  String get latestRecAge;
-  String get maxAge;
-  String get effectiveDate;
-  String get cessationDate;
+  String? get absMinAge => throw _privateConstructorUsedError;
+  String? get minAge => throw _privateConstructorUsedError;
+  String? get earliestRecAge => throw _privateConstructorUsedError;
+  String? get latestRecAge => throw _privateConstructorUsedError;
+  String? get maxAge => throw _privateConstructorUsedError;
+  String? get effectiveDate => throw _privateConstructorUsedError;
+  String? get cessationDate => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $VaxAgeCopyWith<VaxAge> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $VaxAgeCopyWith<VaxAge> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -65,13 +67,13 @@ abstract class $VaxAgeCopyWith<$Res> {
   factory $VaxAgeCopyWith(VaxAge value, $Res Function(VaxAge) then) =
       _$VaxAgeCopyWithImpl<$Res>;
   $Res call(
-      {String absMinAge,
-      String minAge,
-      String earliestRecAge,
-      String latestRecAge,
-      String maxAge,
-      String effectiveDate,
-      String cessationDate});
+      {String? absMinAge,
+      String? minAge,
+      String? earliestRecAge,
+      String? latestRecAge,
+      String? maxAge,
+      String? effectiveDate,
+      String? cessationDate});
 }
 
 /// @nodoc
@@ -84,30 +86,43 @@ class _$VaxAgeCopyWithImpl<$Res> implements $VaxAgeCopyWith<$Res> {
 
   @override
   $Res call({
-    Object absMinAge = freezed,
-    Object minAge = freezed,
-    Object earliestRecAge = freezed,
-    Object latestRecAge = freezed,
-    Object maxAge = freezed,
-    Object effectiveDate = freezed,
-    Object cessationDate = freezed,
+    Object? absMinAge = freezed,
+    Object? minAge = freezed,
+    Object? earliestRecAge = freezed,
+    Object? latestRecAge = freezed,
+    Object? maxAge = freezed,
+    Object? effectiveDate = freezed,
+    Object? cessationDate = freezed,
   }) {
     return _then(_value.copyWith(
-      absMinAge: absMinAge == freezed ? _value.absMinAge : absMinAge as String,
-      minAge: minAge == freezed ? _value.minAge : minAge as String,
+      absMinAge: absMinAge == freezed
+          ? _value.absMinAge
+          : absMinAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      minAge: minAge == freezed
+          ? _value.minAge
+          : minAge // ignore: cast_nullable_to_non_nullable
+              as String?,
       earliestRecAge: earliestRecAge == freezed
           ? _value.earliestRecAge
-          : earliestRecAge as String,
+          : earliestRecAge // ignore: cast_nullable_to_non_nullable
+              as String?,
       latestRecAge: latestRecAge == freezed
           ? _value.latestRecAge
-          : latestRecAge as String,
-      maxAge: maxAge == freezed ? _value.maxAge : maxAge as String,
+          : latestRecAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      maxAge: maxAge == freezed
+          ? _value.maxAge
+          : maxAge // ignore: cast_nullable_to_non_nullable
+              as String?,
       effectiveDate: effectiveDate == freezed
           ? _value.effectiveDate
-          : effectiveDate as String,
+          : effectiveDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       cessationDate: cessationDate == freezed
           ? _value.cessationDate
-          : cessationDate as String,
+          : cessationDate // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -118,13 +133,13 @@ abstract class _$VaxAgeCopyWith<$Res> implements $VaxAgeCopyWith<$Res> {
       __$VaxAgeCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String absMinAge,
-      String minAge,
-      String earliestRecAge,
-      String latestRecAge,
-      String maxAge,
-      String effectiveDate,
-      String cessationDate});
+      {String? absMinAge,
+      String? minAge,
+      String? earliestRecAge,
+      String? latestRecAge,
+      String? maxAge,
+      String? effectiveDate,
+      String? cessationDate});
 }
 
 /// @nodoc
@@ -138,37 +153,49 @@ class __$VaxAgeCopyWithImpl<$Res> extends _$VaxAgeCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object absMinAge = freezed,
-    Object minAge = freezed,
-    Object earliestRecAge = freezed,
-    Object latestRecAge = freezed,
-    Object maxAge = freezed,
-    Object effectiveDate = freezed,
-    Object cessationDate = freezed,
+    Object? absMinAge = freezed,
+    Object? minAge = freezed,
+    Object? earliestRecAge = freezed,
+    Object? latestRecAge = freezed,
+    Object? maxAge = freezed,
+    Object? effectiveDate = freezed,
+    Object? cessationDate = freezed,
   }) {
     return _then(_VaxAge(
-      absMinAge: absMinAge == freezed ? _value.absMinAge : absMinAge as String,
-      minAge: minAge == freezed ? _value.minAge : minAge as String,
+      absMinAge: absMinAge == freezed
+          ? _value.absMinAge
+          : absMinAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      minAge: minAge == freezed
+          ? _value.minAge
+          : minAge // ignore: cast_nullable_to_non_nullable
+              as String?,
       earliestRecAge: earliestRecAge == freezed
           ? _value.earliestRecAge
-          : earliestRecAge as String,
+          : earliestRecAge // ignore: cast_nullable_to_non_nullable
+              as String?,
       latestRecAge: latestRecAge == freezed
           ? _value.latestRecAge
-          : latestRecAge as String,
-      maxAge: maxAge == freezed ? _value.maxAge : maxAge as String,
+          : latestRecAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      maxAge: maxAge == freezed
+          ? _value.maxAge
+          : maxAge // ignore: cast_nullable_to_non_nullable
+              as String?,
       effectiveDate: effectiveDate == freezed
           ? _value.effectiveDate
-          : effectiveDate as String,
+          : effectiveDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       cessationDate: cessationDate == freezed
           ? _value.cessationDate
-          : cessationDate as String,
+          : cessationDate // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_VaxAge implements _VaxAge {
   _$_VaxAge(
       {this.absMinAge,
@@ -183,19 +210,19 @@ class _$_VaxAge implements _VaxAge {
       _$_$_VaxAgeFromJson(json);
 
   @override
-  final String absMinAge;
+  final String? absMinAge;
   @override
-  final String minAge;
+  final String? minAge;
   @override
-  final String earliestRecAge;
+  final String? earliestRecAge;
   @override
-  final String latestRecAge;
+  final String? latestRecAge;
   @override
-  final String maxAge;
+  final String? maxAge;
   @override
-  final String effectiveDate;
+  final String? effectiveDate;
   @override
-  final String cessationDate;
+  final String? cessationDate;
 
   @override
   String toString() {
@@ -238,6 +265,7 @@ class _$_VaxAge implements _VaxAge {
       const DeepCollectionEquality().hash(effectiveDate) ^
       const DeepCollectionEquality().hash(cessationDate);
 
+  @JsonKey(ignore: true)
   @override
   _$VaxAgeCopyWith<_VaxAge> get copyWith =>
       __$VaxAgeCopyWithImpl<_VaxAge>(this, _$identity);
@@ -250,30 +278,31 @@ class _$_VaxAge implements _VaxAge {
 
 abstract class _VaxAge implements VaxAge {
   factory _VaxAge(
-      {String absMinAge,
-      String minAge,
-      String earliestRecAge,
-      String latestRecAge,
-      String maxAge,
-      String effectiveDate,
-      String cessationDate}) = _$_VaxAge;
+      {String? absMinAge,
+      String? minAge,
+      String? earliestRecAge,
+      String? latestRecAge,
+      String? maxAge,
+      String? effectiveDate,
+      String? cessationDate}) = _$_VaxAge;
 
   factory _VaxAge.fromJson(Map<String, dynamic> json) = _$_VaxAge.fromJson;
 
   @override
-  String get absMinAge;
+  String? get absMinAge => throw _privateConstructorUsedError;
   @override
-  String get minAge;
+  String? get minAge => throw _privateConstructorUsedError;
   @override
-  String get earliestRecAge;
+  String? get earliestRecAge => throw _privateConstructorUsedError;
   @override
-  String get latestRecAge;
+  String? get latestRecAge => throw _privateConstructorUsedError;
   @override
-  String get maxAge;
+  String? get maxAge => throw _privateConstructorUsedError;
   @override
-  String get effectiveDate;
+  String? get effectiveDate => throw _privateConstructorUsedError;
   @override
-  String get cessationDate;
+  String? get cessationDate => throw _privateConstructorUsedError;
   @override
-  _$VaxAgeCopyWith<_VaxAge> get copyWith;
+  @JsonKey(ignore: true)
+  _$VaxAgeCopyWith<_VaxAge> get copyWith => throw _privateConstructorUsedError;
 }

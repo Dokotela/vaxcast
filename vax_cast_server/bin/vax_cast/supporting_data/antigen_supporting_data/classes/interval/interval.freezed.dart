@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'interval.dart';
 
@@ -8,6 +8,10 @@ part of 'interval.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Interval _$IntervalFromJson(Map<String, dynamic> json) {
   return _Interval.fromJson(json);
 }
@@ -16,19 +20,18 @@ Interval _$IntervalFromJson(Map<String, dynamic> json) {
 class _$IntervalTearOff {
   const _$IntervalTearOff();
 
-// ignore: unused_element
   _Interval call(
-      {FromPrevious fromPrevious,
-      FromTarget fromTargetDose,
-      String fromMostRecent,
-      ObservationCode fromRelevantObs,
-      String absMinInt,
-      String minInt,
-      String earliestRecInt,
-      String latestRecInt,
-      String intervalPriority,
-      String effectiveDate,
-      String cessationDate}) {
+      {FromPrevious? fromPrevious,
+      FromTarget? fromTargetDose,
+      String? fromMostRecent,
+      ObservationCode? fromRelevantObs,
+      String? absMinInt,
+      String? minInt,
+      String? earliestRecInt,
+      String? latestRecInt,
+      String? intervalPriority,
+      String? effectiveDate,
+      String? cessationDate}) {
     return _Interval(
       fromPrevious: fromPrevious,
       fromTargetDose: fromTargetDose,
@@ -44,32 +47,32 @@ class _$IntervalTearOff {
     );
   }
 
-// ignore: unused_element
   Interval fromJson(Map<String, Object> json) {
     return Interval.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Interval = _$IntervalTearOff();
 
 /// @nodoc
 mixin _$Interval {
-  FromPrevious get fromPrevious;
-  FromTarget get fromTargetDose;
-  String get fromMostRecent;
-  ObservationCode get fromRelevantObs;
-  String get absMinInt;
-  String get minInt;
-  String get earliestRecInt;
-  String get latestRecInt;
-  String get intervalPriority;
-  String get effectiveDate;
-  String get cessationDate;
+  FromPrevious? get fromPrevious => throw _privateConstructorUsedError;
+  FromTarget? get fromTargetDose => throw _privateConstructorUsedError;
+  String? get fromMostRecent => throw _privateConstructorUsedError;
+  ObservationCode? get fromRelevantObs => throw _privateConstructorUsedError;
+  String? get absMinInt => throw _privateConstructorUsedError;
+  String? get minInt => throw _privateConstructorUsedError;
+  String? get earliestRecInt => throw _privateConstructorUsedError;
+  String? get latestRecInt => throw _privateConstructorUsedError;
+  String? get intervalPriority => throw _privateConstructorUsedError;
+  String? get effectiveDate => throw _privateConstructorUsedError;
+  String? get cessationDate => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $IntervalCopyWith<Interval> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $IntervalCopyWith<Interval> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -77,19 +80,19 @@ abstract class $IntervalCopyWith<$Res> {
   factory $IntervalCopyWith(Interval value, $Res Function(Interval) then) =
       _$IntervalCopyWithImpl<$Res>;
   $Res call(
-      {FromPrevious fromPrevious,
-      FromTarget fromTargetDose,
-      String fromMostRecent,
-      ObservationCode fromRelevantObs,
-      String absMinInt,
-      String minInt,
-      String earliestRecInt,
-      String latestRecInt,
-      String intervalPriority,
-      String effectiveDate,
-      String cessationDate});
+      {FromPrevious? fromPrevious,
+      FromTarget? fromTargetDose,
+      String? fromMostRecent,
+      ObservationCode? fromRelevantObs,
+      String? absMinInt,
+      String? minInt,
+      String? earliestRecInt,
+      String? latestRecInt,
+      String? intervalPriority,
+      String? effectiveDate,
+      String? cessationDate});
 
-  $ObservationCodeCopyWith<$Res> get fromRelevantObs;
+  $ObservationCodeCopyWith<$Res>? get fromRelevantObs;
 }
 
 /// @nodoc
@@ -102,57 +105,73 @@ class _$IntervalCopyWithImpl<$Res> implements $IntervalCopyWith<$Res> {
 
   @override
   $Res call({
-    Object fromPrevious = freezed,
-    Object fromTargetDose = freezed,
-    Object fromMostRecent = freezed,
-    Object fromRelevantObs = freezed,
-    Object absMinInt = freezed,
-    Object minInt = freezed,
-    Object earliestRecInt = freezed,
-    Object latestRecInt = freezed,
-    Object intervalPriority = freezed,
-    Object effectiveDate = freezed,
-    Object cessationDate = freezed,
+    Object? fromPrevious = freezed,
+    Object? fromTargetDose = freezed,
+    Object? fromMostRecent = freezed,
+    Object? fromRelevantObs = freezed,
+    Object? absMinInt = freezed,
+    Object? minInt = freezed,
+    Object? earliestRecInt = freezed,
+    Object? latestRecInt = freezed,
+    Object? intervalPriority = freezed,
+    Object? effectiveDate = freezed,
+    Object? cessationDate = freezed,
   }) {
     return _then(_value.copyWith(
       fromPrevious: fromPrevious == freezed
           ? _value.fromPrevious
-          : fromPrevious as FromPrevious,
+          : fromPrevious // ignore: cast_nullable_to_non_nullable
+              as FromPrevious?,
       fromTargetDose: fromTargetDose == freezed
           ? _value.fromTargetDose
-          : fromTargetDose as FromTarget,
+          : fromTargetDose // ignore: cast_nullable_to_non_nullable
+              as FromTarget?,
       fromMostRecent: fromMostRecent == freezed
           ? _value.fromMostRecent
-          : fromMostRecent as String,
+          : fromMostRecent // ignore: cast_nullable_to_non_nullable
+              as String?,
       fromRelevantObs: fromRelevantObs == freezed
           ? _value.fromRelevantObs
-          : fromRelevantObs as ObservationCode,
-      absMinInt: absMinInt == freezed ? _value.absMinInt : absMinInt as String,
-      minInt: minInt == freezed ? _value.minInt : minInt as String,
+          : fromRelevantObs // ignore: cast_nullable_to_non_nullable
+              as ObservationCode?,
+      absMinInt: absMinInt == freezed
+          ? _value.absMinInt
+          : absMinInt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      minInt: minInt == freezed
+          ? _value.minInt
+          : minInt // ignore: cast_nullable_to_non_nullable
+              as String?,
       earliestRecInt: earliestRecInt == freezed
           ? _value.earliestRecInt
-          : earliestRecInt as String,
+          : earliestRecInt // ignore: cast_nullable_to_non_nullable
+              as String?,
       latestRecInt: latestRecInt == freezed
           ? _value.latestRecInt
-          : latestRecInt as String,
+          : latestRecInt // ignore: cast_nullable_to_non_nullable
+              as String?,
       intervalPriority: intervalPriority == freezed
           ? _value.intervalPriority
-          : intervalPriority as String,
+          : intervalPriority // ignore: cast_nullable_to_non_nullable
+              as String?,
       effectiveDate: effectiveDate == freezed
           ? _value.effectiveDate
-          : effectiveDate as String,
+          : effectiveDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       cessationDate: cessationDate == freezed
           ? _value.cessationDate
-          : cessationDate as String,
+          : cessationDate // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
-  $ObservationCodeCopyWith<$Res> get fromRelevantObs {
+  $ObservationCodeCopyWith<$Res>? get fromRelevantObs {
     if (_value.fromRelevantObs == null) {
       return null;
     }
-    return $ObservationCodeCopyWith<$Res>(_value.fromRelevantObs, (value) {
+
+    return $ObservationCodeCopyWith<$Res>(_value.fromRelevantObs!, (value) {
       return _then(_value.copyWith(fromRelevantObs: value));
     });
   }
@@ -164,20 +183,20 @@ abstract class _$IntervalCopyWith<$Res> implements $IntervalCopyWith<$Res> {
       __$IntervalCopyWithImpl<$Res>;
   @override
   $Res call(
-      {FromPrevious fromPrevious,
-      FromTarget fromTargetDose,
-      String fromMostRecent,
-      ObservationCode fromRelevantObs,
-      String absMinInt,
-      String minInt,
-      String earliestRecInt,
-      String latestRecInt,
-      String intervalPriority,
-      String effectiveDate,
-      String cessationDate});
+      {FromPrevious? fromPrevious,
+      FromTarget? fromTargetDose,
+      String? fromMostRecent,
+      ObservationCode? fromRelevantObs,
+      String? absMinInt,
+      String? minInt,
+      String? earliestRecInt,
+      String? latestRecInt,
+      String? intervalPriority,
+      String? effectiveDate,
+      String? cessationDate});
 
   @override
-  $ObservationCodeCopyWith<$Res> get fromRelevantObs;
+  $ObservationCodeCopyWith<$Res>? get fromRelevantObs;
 }
 
 /// @nodoc
@@ -191,55 +210,69 @@ class __$IntervalCopyWithImpl<$Res> extends _$IntervalCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object fromPrevious = freezed,
-    Object fromTargetDose = freezed,
-    Object fromMostRecent = freezed,
-    Object fromRelevantObs = freezed,
-    Object absMinInt = freezed,
-    Object minInt = freezed,
-    Object earliestRecInt = freezed,
-    Object latestRecInt = freezed,
-    Object intervalPriority = freezed,
-    Object effectiveDate = freezed,
-    Object cessationDate = freezed,
+    Object? fromPrevious = freezed,
+    Object? fromTargetDose = freezed,
+    Object? fromMostRecent = freezed,
+    Object? fromRelevantObs = freezed,
+    Object? absMinInt = freezed,
+    Object? minInt = freezed,
+    Object? earliestRecInt = freezed,
+    Object? latestRecInt = freezed,
+    Object? intervalPriority = freezed,
+    Object? effectiveDate = freezed,
+    Object? cessationDate = freezed,
   }) {
     return _then(_Interval(
       fromPrevious: fromPrevious == freezed
           ? _value.fromPrevious
-          : fromPrevious as FromPrevious,
+          : fromPrevious // ignore: cast_nullable_to_non_nullable
+              as FromPrevious?,
       fromTargetDose: fromTargetDose == freezed
           ? _value.fromTargetDose
-          : fromTargetDose as FromTarget,
+          : fromTargetDose // ignore: cast_nullable_to_non_nullable
+              as FromTarget?,
       fromMostRecent: fromMostRecent == freezed
           ? _value.fromMostRecent
-          : fromMostRecent as String,
+          : fromMostRecent // ignore: cast_nullable_to_non_nullable
+              as String?,
       fromRelevantObs: fromRelevantObs == freezed
           ? _value.fromRelevantObs
-          : fromRelevantObs as ObservationCode,
-      absMinInt: absMinInt == freezed ? _value.absMinInt : absMinInt as String,
-      minInt: minInt == freezed ? _value.minInt : minInt as String,
+          : fromRelevantObs // ignore: cast_nullable_to_non_nullable
+              as ObservationCode?,
+      absMinInt: absMinInt == freezed
+          ? _value.absMinInt
+          : absMinInt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      minInt: minInt == freezed
+          ? _value.minInt
+          : minInt // ignore: cast_nullable_to_non_nullable
+              as String?,
       earliestRecInt: earliestRecInt == freezed
           ? _value.earliestRecInt
-          : earliestRecInt as String,
+          : earliestRecInt // ignore: cast_nullable_to_non_nullable
+              as String?,
       latestRecInt: latestRecInt == freezed
           ? _value.latestRecInt
-          : latestRecInt as String,
+          : latestRecInt // ignore: cast_nullable_to_non_nullable
+              as String?,
       intervalPriority: intervalPriority == freezed
           ? _value.intervalPriority
-          : intervalPriority as String,
+          : intervalPriority // ignore: cast_nullable_to_non_nullable
+              as String?,
       effectiveDate: effectiveDate == freezed
           ? _value.effectiveDate
-          : effectiveDate as String,
+          : effectiveDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       cessationDate: cessationDate == freezed
           ? _value.cessationDate
-          : cessationDate as String,
+          : cessationDate // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Interval implements _Interval {
   _$_Interval(
       {this.fromPrevious,
@@ -258,27 +291,27 @@ class _$_Interval implements _Interval {
       _$_$_IntervalFromJson(json);
 
   @override
-  final FromPrevious fromPrevious;
+  final FromPrevious? fromPrevious;
   @override
-  final FromTarget fromTargetDose;
+  final FromTarget? fromTargetDose;
   @override
-  final String fromMostRecent;
+  final String? fromMostRecent;
   @override
-  final ObservationCode fromRelevantObs;
+  final ObservationCode? fromRelevantObs;
   @override
-  final String absMinInt;
+  final String? absMinInt;
   @override
-  final String minInt;
+  final String? minInt;
   @override
-  final String earliestRecInt;
+  final String? earliestRecInt;
   @override
-  final String latestRecInt;
+  final String? latestRecInt;
   @override
-  final String intervalPriority;
+  final String? intervalPriority;
   @override
-  final String effectiveDate;
+  final String? effectiveDate;
   @override
-  final String cessationDate;
+  final String? cessationDate;
 
   @override
   String toString() {
@@ -338,6 +371,7 @@ class _$_Interval implements _Interval {
       const DeepCollectionEquality().hash(effectiveDate) ^
       const DeepCollectionEquality().hash(cessationDate);
 
+  @JsonKey(ignore: true)
   @override
   _$IntervalCopyWith<_Interval> get copyWith =>
       __$IntervalCopyWithImpl<_Interval>(this, _$identity);
@@ -350,42 +384,44 @@ class _$_Interval implements _Interval {
 
 abstract class _Interval implements Interval {
   factory _Interval(
-      {FromPrevious fromPrevious,
-      FromTarget fromTargetDose,
-      String fromMostRecent,
-      ObservationCode fromRelevantObs,
-      String absMinInt,
-      String minInt,
-      String earliestRecInt,
-      String latestRecInt,
-      String intervalPriority,
-      String effectiveDate,
-      String cessationDate}) = _$_Interval;
+      {FromPrevious? fromPrevious,
+      FromTarget? fromTargetDose,
+      String? fromMostRecent,
+      ObservationCode? fromRelevantObs,
+      String? absMinInt,
+      String? minInt,
+      String? earliestRecInt,
+      String? latestRecInt,
+      String? intervalPriority,
+      String? effectiveDate,
+      String? cessationDate}) = _$_Interval;
 
   factory _Interval.fromJson(Map<String, dynamic> json) = _$_Interval.fromJson;
 
   @override
-  FromPrevious get fromPrevious;
+  FromPrevious? get fromPrevious => throw _privateConstructorUsedError;
   @override
-  FromTarget get fromTargetDose;
+  FromTarget? get fromTargetDose => throw _privateConstructorUsedError;
   @override
-  String get fromMostRecent;
+  String? get fromMostRecent => throw _privateConstructorUsedError;
   @override
-  ObservationCode get fromRelevantObs;
+  ObservationCode? get fromRelevantObs => throw _privateConstructorUsedError;
   @override
-  String get absMinInt;
+  String? get absMinInt => throw _privateConstructorUsedError;
   @override
-  String get minInt;
+  String? get minInt => throw _privateConstructorUsedError;
   @override
-  String get earliestRecInt;
+  String? get earliestRecInt => throw _privateConstructorUsedError;
   @override
-  String get latestRecInt;
+  String? get latestRecInt => throw _privateConstructorUsedError;
   @override
-  String get intervalPriority;
+  String? get intervalPriority => throw _privateConstructorUsedError;
   @override
-  String get effectiveDate;
+  String? get effectiveDate => throw _privateConstructorUsedError;
   @override
-  String get cessationDate;
+  String? get cessationDate => throw _privateConstructorUsedError;
   @override
-  _$IntervalCopyWith<_Interval> get copyWith;
+  @JsonKey(ignore: true)
+  _$IntervalCopyWith<_Interval> get copyWith =>
+      throw _privateConstructorUsedError;
 }

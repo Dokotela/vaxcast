@@ -6,16 +6,16 @@ part 'select_series.freezed.dart';
 part 'select_series.g.dart';
 
 @freezed
-abstract class SelectSeries with _$SelectSeries {
+class SelectSeries with _$SelectSeries {
   factory SelectSeries({
-    Binary defaultSeries,
-    Binary productPath,
-    SeriesGroupName seriesGroupName,
-    SeriesGroup seriesGroup,
-    SeriesPriority seriesPriority,
-    SeriesPreference seriesPreference,
-    String minAgeToStart,
-    String maxAgeToStart,
+    Binary? defaultSeries,
+    Binary? productPath,
+    SeriesGroupName? seriesGroupName,
+    SeriesGroup? seriesGroup,
+    SeriesPriority? seriesPriority,
+    SeriesPreference? seriesPreference,
+    String? minAgeToStart,
+    String? maxAgeToStart,
   }) = _SelectSeries;
 
   factory SelectSeries.fromJson(Map<String, dynamic> json) =>

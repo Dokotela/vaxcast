@@ -1,13 +1,14 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+
 import '../../../../vax_cast.dart';
 
 part 'cvx_to_antigen_map.freezed.dart';
 part 'cvx_to_antigen_map.g.dart';
 
 @freezed
-abstract class CvxToAntigenMap with _$CvxToAntigenMap {
+class CvxToAntigenMap with _$CvxToAntigenMap {
   factory CvxToAntigenMap({
-    List<CvxMap> cvxMap,
+    List<CvxMap>? cvxMap,
   }) = _CvxToAntigenMap;
 
   factory CvxToAntigenMap.fromJson(Map<String, dynamic> json) =>
@@ -15,22 +16,22 @@ abstract class CvxToAntigenMap with _$CvxToAntigenMap {
 }
 
 @freezed
-abstract class CvxMap with _$CvxMap {
+class CvxMap with _$CvxMap {
   factory CvxMap({
-    Cvx cvx,
-    String shortDescription,
-    List<Association> association,
+    Cvx? cvx,
+    String? shortDescription,
+    List<Association>? association,
   }) = _CvxMap;
 
   factory CvxMap.fromJson(Map<String, dynamic> json) => _$CvxMapFromJson(json);
 }
 
 @freezed
-abstract class Association with _$Association {
+class Association with _$Association {
   factory Association({
-    TargetDisease antigen,
-    String associationBeginAge,
-    String associationEndAge,
+    TargetDisease? antigen,
+    String? associationBeginAge,
+    String? associationEndAge,
   }) = _Association;
 
   factory Association.fromJson(Map<String, dynamic> json) =>

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'vaccine_group_contraindications.dart';
 
@@ -8,6 +8,10 @@ part of 'vaccine_group_contraindications.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 VaccineGroupContraindications _$VaccineGroupContraindicationsFromJson(
     Map<String, dynamic> json) {
   return _VaccineGroupContraindications.fromJson(json);
@@ -17,31 +21,30 @@ VaccineGroupContraindications _$VaccineGroupContraindicationsFromJson(
 class _$VaccineGroupContraindicationsTearOff {
   const _$VaccineGroupContraindicationsTearOff();
 
-// ignore: unused_element
   _VaccineGroupContraindications call(
-      {List<GroupContraindication> contraindication}) {
+      {List<GroupContraindication>? contraindication}) {
     return _VaccineGroupContraindications(
       contraindication: contraindication,
     );
   }
 
-// ignore: unused_element
   VaccineGroupContraindications fromJson(Map<String, Object> json) {
     return VaccineGroupContraindications.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $VaccineGroupContraindications = _$VaccineGroupContraindicationsTearOff();
 
 /// @nodoc
 mixin _$VaccineGroupContraindications {
-  List<GroupContraindication> get contraindication;
+  List<GroupContraindication>? get contraindication =>
+      throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
   $VaccineGroupContraindicationsCopyWith<VaccineGroupContraindications>
-      get copyWith;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -50,7 +53,7 @@ abstract class $VaccineGroupContraindicationsCopyWith<$Res> {
           VaccineGroupContraindications value,
           $Res Function(VaccineGroupContraindications) then) =
       _$VaccineGroupContraindicationsCopyWithImpl<$Res>;
-  $Res call({List<GroupContraindication> contraindication});
+  $Res call({List<GroupContraindication>? contraindication});
 }
 
 /// @nodoc
@@ -64,12 +67,13 @@ class _$VaccineGroupContraindicationsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object contraindication = freezed,
+    Object? contraindication = freezed,
   }) {
     return _then(_value.copyWith(
       contraindication: contraindication == freezed
           ? _value.contraindication
-          : contraindication as List<GroupContraindication>,
+          : contraindication // ignore: cast_nullable_to_non_nullable
+              as List<GroupContraindication>?,
     ));
   }
 }
@@ -82,7 +86,7 @@ abstract class _$VaccineGroupContraindicationsCopyWith<$Res>
           $Res Function(_VaccineGroupContraindications) then) =
       __$VaccineGroupContraindicationsCopyWithImpl<$Res>;
   @override
-  $Res call({List<GroupContraindication> contraindication});
+  $Res call({List<GroupContraindication>? contraindication});
 }
 
 /// @nodoc
@@ -100,19 +104,19 @@ class __$VaccineGroupContraindicationsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object contraindication = freezed,
+    Object? contraindication = freezed,
   }) {
     return _then(_VaccineGroupContraindications(
       contraindication: contraindication == freezed
           ? _value.contraindication
-          : contraindication as List<GroupContraindication>,
+          : contraindication // ignore: cast_nullable_to_non_nullable
+              as List<GroupContraindication>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_VaccineGroupContraindications
     implements _VaccineGroupContraindications {
   _$_VaccineGroupContraindications({this.contraindication});
@@ -122,7 +126,7 @@ class _$_VaccineGroupContraindications
       _$_$_VaccineGroupContraindicationsFromJson(json);
 
   @override
-  final List<GroupContraindication> contraindication;
+  final List<GroupContraindication>? contraindication;
 
   @override
   String toString() {
@@ -143,6 +147,7 @@ class _$_VaccineGroupContraindications
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(contraindication);
 
+  @JsonKey(ignore: true)
   @override
   _$VaccineGroupContraindicationsCopyWith<_VaccineGroupContraindications>
       get copyWith => __$VaccineGroupContraindicationsCopyWithImpl<
@@ -157,17 +162,19 @@ class _$_VaccineGroupContraindications
 abstract class _VaccineGroupContraindications
     implements VaccineGroupContraindications {
   factory _VaccineGroupContraindications(
-          {List<GroupContraindication> contraindication}) =
+          {List<GroupContraindication>? contraindication}) =
       _$_VaccineGroupContraindications;
 
   factory _VaccineGroupContraindications.fromJson(Map<String, dynamic> json) =
       _$_VaccineGroupContraindications.fromJson;
 
   @override
-  List<GroupContraindication> get contraindication;
+  List<GroupContraindication>? get contraindication =>
+      throw _privateConstructorUsedError;
   @override
+  @JsonKey(ignore: true)
   _$VaccineGroupContraindicationsCopyWith<_VaccineGroupContraindications>
-      get copyWith;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 GroupContraindication _$GroupContraindicationFromJson(
@@ -179,14 +186,13 @@ GroupContraindication _$GroupContraindicationFromJson(
 class _$GroupContraindicationTearOff {
   const _$GroupContraindicationTearOff();
 
-// ignore: unused_element
   _GroupContraindication call(
-      {Obs observationCode,
-      String observationTitle,
-      String contraindicationText,
-      String contraindicationGuidance,
-      String beginAge,
-      String endAge}) {
+      {Obs? observationCode,
+      String? observationTitle,
+      String? contraindicationText,
+      String? contraindicationGuidance,
+      String? beginAge,
+      String? endAge}) {
     return _GroupContraindication(
       observationCode: observationCode,
       observationTitle: observationTitle,
@@ -197,27 +203,27 @@ class _$GroupContraindicationTearOff {
     );
   }
 
-// ignore: unused_element
   GroupContraindication fromJson(Map<String, Object> json) {
     return GroupContraindication.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $GroupContraindication = _$GroupContraindicationTearOff();
 
 /// @nodoc
 mixin _$GroupContraindication {
-  Obs get observationCode;
-  String get observationTitle;
-  String get contraindicationText;
-  String get contraindicationGuidance;
-  String get beginAge;
-  String get endAge;
+  Obs? get observationCode => throw _privateConstructorUsedError;
+  String? get observationTitle => throw _privateConstructorUsedError;
+  String? get contraindicationText => throw _privateConstructorUsedError;
+  String? get contraindicationGuidance => throw _privateConstructorUsedError;
+  String? get beginAge => throw _privateConstructorUsedError;
+  String? get endAge => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $GroupContraindicationCopyWith<GroupContraindication> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $GroupContraindicationCopyWith<GroupContraindication> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -226,12 +232,12 @@ abstract class $GroupContraindicationCopyWith<$Res> {
           $Res Function(GroupContraindication) then) =
       _$GroupContraindicationCopyWithImpl<$Res>;
   $Res call(
-      {Obs observationCode,
-      String observationTitle,
-      String contraindicationText,
-      String contraindicationGuidance,
-      String beginAge,
-      String endAge});
+      {Obs? observationCode,
+      String? observationTitle,
+      String? contraindicationText,
+      String? contraindicationGuidance,
+      String? beginAge,
+      String? endAge});
 }
 
 /// @nodoc
@@ -245,28 +251,38 @@ class _$GroupContraindicationCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object observationCode = freezed,
-    Object observationTitle = freezed,
-    Object contraindicationText = freezed,
-    Object contraindicationGuidance = freezed,
-    Object beginAge = freezed,
-    Object endAge = freezed,
+    Object? observationCode = freezed,
+    Object? observationTitle = freezed,
+    Object? contraindicationText = freezed,
+    Object? contraindicationGuidance = freezed,
+    Object? beginAge = freezed,
+    Object? endAge = freezed,
   }) {
     return _then(_value.copyWith(
       observationCode: observationCode == freezed
           ? _value.observationCode
-          : observationCode as Obs,
+          : observationCode // ignore: cast_nullable_to_non_nullable
+              as Obs?,
       observationTitle: observationTitle == freezed
           ? _value.observationTitle
-          : observationTitle as String,
+          : observationTitle // ignore: cast_nullable_to_non_nullable
+              as String?,
       contraindicationText: contraindicationText == freezed
           ? _value.contraindicationText
-          : contraindicationText as String,
+          : contraindicationText // ignore: cast_nullable_to_non_nullable
+              as String?,
       contraindicationGuidance: contraindicationGuidance == freezed
           ? _value.contraindicationGuidance
-          : contraindicationGuidance as String,
-      beginAge: beginAge == freezed ? _value.beginAge : beginAge as String,
-      endAge: endAge == freezed ? _value.endAge : endAge as String,
+          : contraindicationGuidance // ignore: cast_nullable_to_non_nullable
+              as String?,
+      beginAge: beginAge == freezed
+          ? _value.beginAge
+          : beginAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      endAge: endAge == freezed
+          ? _value.endAge
+          : endAge // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -279,12 +295,12 @@ abstract class _$GroupContraindicationCopyWith<$Res>
       __$GroupContraindicationCopyWithImpl<$Res>;
   @override
   $Res call(
-      {Obs observationCode,
-      String observationTitle,
-      String contraindicationText,
-      String contraindicationGuidance,
-      String beginAge,
-      String endAge});
+      {Obs? observationCode,
+      String? observationTitle,
+      String? contraindicationText,
+      String? contraindicationGuidance,
+      String? beginAge,
+      String? endAge});
 }
 
 /// @nodoc
@@ -300,35 +316,44 @@ class __$GroupContraindicationCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object observationCode = freezed,
-    Object observationTitle = freezed,
-    Object contraindicationText = freezed,
-    Object contraindicationGuidance = freezed,
-    Object beginAge = freezed,
-    Object endAge = freezed,
+    Object? observationCode = freezed,
+    Object? observationTitle = freezed,
+    Object? contraindicationText = freezed,
+    Object? contraindicationGuidance = freezed,
+    Object? beginAge = freezed,
+    Object? endAge = freezed,
   }) {
     return _then(_GroupContraindication(
       observationCode: observationCode == freezed
           ? _value.observationCode
-          : observationCode as Obs,
+          : observationCode // ignore: cast_nullable_to_non_nullable
+              as Obs?,
       observationTitle: observationTitle == freezed
           ? _value.observationTitle
-          : observationTitle as String,
+          : observationTitle // ignore: cast_nullable_to_non_nullable
+              as String?,
       contraindicationText: contraindicationText == freezed
           ? _value.contraindicationText
-          : contraindicationText as String,
+          : contraindicationText // ignore: cast_nullable_to_non_nullable
+              as String?,
       contraindicationGuidance: contraindicationGuidance == freezed
           ? _value.contraindicationGuidance
-          : contraindicationGuidance as String,
-      beginAge: beginAge == freezed ? _value.beginAge : beginAge as String,
-      endAge: endAge == freezed ? _value.endAge : endAge as String,
+          : contraindicationGuidance // ignore: cast_nullable_to_non_nullable
+              as String?,
+      beginAge: beginAge == freezed
+          ? _value.beginAge
+          : beginAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      endAge: endAge == freezed
+          ? _value.endAge
+          : endAge // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_GroupContraindication implements _GroupContraindication {
   _$_GroupContraindication(
       {this.observationCode,
@@ -342,17 +367,17 @@ class _$_GroupContraindication implements _GroupContraindication {
       _$_$_GroupContraindicationFromJson(json);
 
   @override
-  final Obs observationCode;
+  final Obs? observationCode;
   @override
-  final String observationTitle;
+  final String? observationTitle;
   @override
-  final String contraindicationText;
+  final String? contraindicationText;
   @override
-  final String contraindicationGuidance;
+  final String? contraindicationGuidance;
   @override
-  final String beginAge;
+  final String? beginAge;
   @override
-  final String endAge;
+  final String? endAge;
 
   @override
   String toString() {
@@ -394,6 +419,7 @@ class _$_GroupContraindication implements _GroupContraindication {
       const DeepCollectionEquality().hash(beginAge) ^
       const DeepCollectionEquality().hash(endAge);
 
+  @JsonKey(ignore: true)
   @override
   _$GroupContraindicationCopyWith<_GroupContraindication> get copyWith =>
       __$GroupContraindicationCopyWithImpl<_GroupContraindication>(
@@ -407,28 +433,30 @@ class _$_GroupContraindication implements _GroupContraindication {
 
 abstract class _GroupContraindication implements GroupContraindication {
   factory _GroupContraindication(
-      {Obs observationCode,
-      String observationTitle,
-      String contraindicationText,
-      String contraindicationGuidance,
-      String beginAge,
-      String endAge}) = _$_GroupContraindication;
+      {Obs? observationCode,
+      String? observationTitle,
+      String? contraindicationText,
+      String? contraindicationGuidance,
+      String? beginAge,
+      String? endAge}) = _$_GroupContraindication;
 
   factory _GroupContraindication.fromJson(Map<String, dynamic> json) =
       _$_GroupContraindication.fromJson;
 
   @override
-  Obs get observationCode;
+  Obs? get observationCode => throw _privateConstructorUsedError;
   @override
-  String get observationTitle;
+  String? get observationTitle => throw _privateConstructorUsedError;
   @override
-  String get contraindicationText;
+  String? get contraindicationText => throw _privateConstructorUsedError;
   @override
-  String get contraindicationGuidance;
+  String? get contraindicationGuidance => throw _privateConstructorUsedError;
   @override
-  String get beginAge;
+  String? get beginAge => throw _privateConstructorUsedError;
   @override
-  String get endAge;
+  String? get endAge => throw _privateConstructorUsedError;
   @override
-  _$GroupContraindicationCopyWith<_GroupContraindication> get copyWith;
+  @JsonKey(ignore: true)
+  _$GroupContraindicationCopyWith<_GroupContraindication> get copyWith =>
+      throw _privateConstructorUsedError;
 }

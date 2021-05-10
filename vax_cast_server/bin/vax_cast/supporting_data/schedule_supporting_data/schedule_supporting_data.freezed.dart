@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'schedule_supporting_data.dart';
 
@@ -8,6 +8,10 @@ part of 'schedule_supporting_data.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 ScheduleSupportingData _$ScheduleSupportingDataFromJson(
     Map<String, dynamic> json) {
   return _ScheduleSupportingData.fromJson(json);
@@ -17,13 +21,12 @@ ScheduleSupportingData _$ScheduleSupportingDataFromJson(
 class _$ScheduleSupportingDataTearOff {
   const _$ScheduleSupportingDataTearOff();
 
-// ignore: unused_element
   _ScheduleSupportingData call(
-      {LiveVirusConflicts liveVirusConflicts,
-      VaccineGroups vaccineGroups,
-      VaccineGroupToAntigenMap vaccineGroupToAntigenMap,
-      CvxToAntigenMap cvxToAntigenMap,
-      Observations observations}) {
+      {LiveVirusConflicts? liveVirusConflicts,
+      VaccineGroups? vaccineGroups,
+      VaccineGroupToAntigenMap? vaccineGroupToAntigenMap,
+      CvxToAntigenMap? cvxToAntigenMap,
+      Observations? observations}) {
     return _ScheduleSupportingData(
       liveVirusConflicts: liveVirusConflicts,
       vaccineGroups: vaccineGroups,
@@ -33,26 +36,28 @@ class _$ScheduleSupportingDataTearOff {
     );
   }
 
-// ignore: unused_element
   ScheduleSupportingData fromJson(Map<String, Object> json) {
     return ScheduleSupportingData.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $ScheduleSupportingData = _$ScheduleSupportingDataTearOff();
 
 /// @nodoc
 mixin _$ScheduleSupportingData {
-  LiveVirusConflicts get liveVirusConflicts;
-  VaccineGroups get vaccineGroups;
-  VaccineGroupToAntigenMap get vaccineGroupToAntigenMap;
-  CvxToAntigenMap get cvxToAntigenMap;
-  Observations get observations;
+  LiveVirusConflicts? get liveVirusConflicts =>
+      throw _privateConstructorUsedError;
+  VaccineGroups? get vaccineGroups => throw _privateConstructorUsedError;
+  VaccineGroupToAntigenMap? get vaccineGroupToAntigenMap =>
+      throw _privateConstructorUsedError;
+  CvxToAntigenMap? get cvxToAntigenMap => throw _privateConstructorUsedError;
+  Observations? get observations => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $ScheduleSupportingDataCopyWith<ScheduleSupportingData> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ScheduleSupportingDataCopyWith<ScheduleSupportingData> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -61,17 +66,17 @@ abstract class $ScheduleSupportingDataCopyWith<$Res> {
           $Res Function(ScheduleSupportingData) then) =
       _$ScheduleSupportingDataCopyWithImpl<$Res>;
   $Res call(
-      {LiveVirusConflicts liveVirusConflicts,
-      VaccineGroups vaccineGroups,
-      VaccineGroupToAntigenMap vaccineGroupToAntigenMap,
-      CvxToAntigenMap cvxToAntigenMap,
-      Observations observations});
+      {LiveVirusConflicts? liveVirusConflicts,
+      VaccineGroups? vaccineGroups,
+      VaccineGroupToAntigenMap? vaccineGroupToAntigenMap,
+      CvxToAntigenMap? cvxToAntigenMap,
+      Observations? observations});
 
-  $LiveVirusConflictsCopyWith<$Res> get liveVirusConflicts;
-  $VaccineGroupsCopyWith<$Res> get vaccineGroups;
-  $VaccineGroupToAntigenMapCopyWith<$Res> get vaccineGroupToAntigenMap;
-  $CvxToAntigenMapCopyWith<$Res> get cvxToAntigenMap;
-  $ObservationsCopyWith<$Res> get observations;
+  $LiveVirusConflictsCopyWith<$Res>? get liveVirusConflicts;
+  $VaccineGroupsCopyWith<$Res>? get vaccineGroups;
+  $VaccineGroupToAntigenMapCopyWith<$Res>? get vaccineGroupToAntigenMap;
+  $CvxToAntigenMapCopyWith<$Res>? get cvxToAntigenMap;
+  $ObservationsCopyWith<$Res>? get observations;
 }
 
 /// @nodoc
@@ -85,79 +90,89 @@ class _$ScheduleSupportingDataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object liveVirusConflicts = freezed,
-    Object vaccineGroups = freezed,
-    Object vaccineGroupToAntigenMap = freezed,
-    Object cvxToAntigenMap = freezed,
-    Object observations = freezed,
+    Object? liveVirusConflicts = freezed,
+    Object? vaccineGroups = freezed,
+    Object? vaccineGroupToAntigenMap = freezed,
+    Object? cvxToAntigenMap = freezed,
+    Object? observations = freezed,
   }) {
     return _then(_value.copyWith(
       liveVirusConflicts: liveVirusConflicts == freezed
           ? _value.liveVirusConflicts
-          : liveVirusConflicts as LiveVirusConflicts,
+          : liveVirusConflicts // ignore: cast_nullable_to_non_nullable
+              as LiveVirusConflicts?,
       vaccineGroups: vaccineGroups == freezed
           ? _value.vaccineGroups
-          : vaccineGroups as VaccineGroups,
+          : vaccineGroups // ignore: cast_nullable_to_non_nullable
+              as VaccineGroups?,
       vaccineGroupToAntigenMap: vaccineGroupToAntigenMap == freezed
           ? _value.vaccineGroupToAntigenMap
-          : vaccineGroupToAntigenMap as VaccineGroupToAntigenMap,
+          : vaccineGroupToAntigenMap // ignore: cast_nullable_to_non_nullable
+              as VaccineGroupToAntigenMap?,
       cvxToAntigenMap: cvxToAntigenMap == freezed
           ? _value.cvxToAntigenMap
-          : cvxToAntigenMap as CvxToAntigenMap,
+          : cvxToAntigenMap // ignore: cast_nullable_to_non_nullable
+              as CvxToAntigenMap?,
       observations: observations == freezed
           ? _value.observations
-          : observations as Observations,
+          : observations // ignore: cast_nullable_to_non_nullable
+              as Observations?,
     ));
   }
 
   @override
-  $LiveVirusConflictsCopyWith<$Res> get liveVirusConflicts {
+  $LiveVirusConflictsCopyWith<$Res>? get liveVirusConflicts {
     if (_value.liveVirusConflicts == null) {
       return null;
     }
-    return $LiveVirusConflictsCopyWith<$Res>(_value.liveVirusConflicts,
+
+    return $LiveVirusConflictsCopyWith<$Res>(_value.liveVirusConflicts!,
         (value) {
       return _then(_value.copyWith(liveVirusConflicts: value));
     });
   }
 
   @override
-  $VaccineGroupsCopyWith<$Res> get vaccineGroups {
+  $VaccineGroupsCopyWith<$Res>? get vaccineGroups {
     if (_value.vaccineGroups == null) {
       return null;
     }
-    return $VaccineGroupsCopyWith<$Res>(_value.vaccineGroups, (value) {
+
+    return $VaccineGroupsCopyWith<$Res>(_value.vaccineGroups!, (value) {
       return _then(_value.copyWith(vaccineGroups: value));
     });
   }
 
   @override
-  $VaccineGroupToAntigenMapCopyWith<$Res> get vaccineGroupToAntigenMap {
+  $VaccineGroupToAntigenMapCopyWith<$Res>? get vaccineGroupToAntigenMap {
     if (_value.vaccineGroupToAntigenMap == null) {
       return null;
     }
+
     return $VaccineGroupToAntigenMapCopyWith<$Res>(
-        _value.vaccineGroupToAntigenMap, (value) {
+        _value.vaccineGroupToAntigenMap!, (value) {
       return _then(_value.copyWith(vaccineGroupToAntigenMap: value));
     });
   }
 
   @override
-  $CvxToAntigenMapCopyWith<$Res> get cvxToAntigenMap {
+  $CvxToAntigenMapCopyWith<$Res>? get cvxToAntigenMap {
     if (_value.cvxToAntigenMap == null) {
       return null;
     }
-    return $CvxToAntigenMapCopyWith<$Res>(_value.cvxToAntigenMap, (value) {
+
+    return $CvxToAntigenMapCopyWith<$Res>(_value.cvxToAntigenMap!, (value) {
       return _then(_value.copyWith(cvxToAntigenMap: value));
     });
   }
 
   @override
-  $ObservationsCopyWith<$Res> get observations {
+  $ObservationsCopyWith<$Res>? get observations {
     if (_value.observations == null) {
       return null;
     }
-    return $ObservationsCopyWith<$Res>(_value.observations, (value) {
+
+    return $ObservationsCopyWith<$Res>(_value.observations!, (value) {
       return _then(_value.copyWith(observations: value));
     });
   }
@@ -171,22 +186,22 @@ abstract class _$ScheduleSupportingDataCopyWith<$Res>
       __$ScheduleSupportingDataCopyWithImpl<$Res>;
   @override
   $Res call(
-      {LiveVirusConflicts liveVirusConflicts,
-      VaccineGroups vaccineGroups,
-      VaccineGroupToAntigenMap vaccineGroupToAntigenMap,
-      CvxToAntigenMap cvxToAntigenMap,
-      Observations observations});
+      {LiveVirusConflicts? liveVirusConflicts,
+      VaccineGroups? vaccineGroups,
+      VaccineGroupToAntigenMap? vaccineGroupToAntigenMap,
+      CvxToAntigenMap? cvxToAntigenMap,
+      Observations? observations});
 
   @override
-  $LiveVirusConflictsCopyWith<$Res> get liveVirusConflicts;
+  $LiveVirusConflictsCopyWith<$Res>? get liveVirusConflicts;
   @override
-  $VaccineGroupsCopyWith<$Res> get vaccineGroups;
+  $VaccineGroupsCopyWith<$Res>? get vaccineGroups;
   @override
-  $VaccineGroupToAntigenMapCopyWith<$Res> get vaccineGroupToAntigenMap;
+  $VaccineGroupToAntigenMapCopyWith<$Res>? get vaccineGroupToAntigenMap;
   @override
-  $CvxToAntigenMapCopyWith<$Res> get cvxToAntigenMap;
+  $CvxToAntigenMapCopyWith<$Res>? get cvxToAntigenMap;
   @override
-  $ObservationsCopyWith<$Res> get observations;
+  $ObservationsCopyWith<$Res>? get observations;
 }
 
 /// @nodoc
@@ -202,35 +217,39 @@ class __$ScheduleSupportingDataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object liveVirusConflicts = freezed,
-    Object vaccineGroups = freezed,
-    Object vaccineGroupToAntigenMap = freezed,
-    Object cvxToAntigenMap = freezed,
-    Object observations = freezed,
+    Object? liveVirusConflicts = freezed,
+    Object? vaccineGroups = freezed,
+    Object? vaccineGroupToAntigenMap = freezed,
+    Object? cvxToAntigenMap = freezed,
+    Object? observations = freezed,
   }) {
     return _then(_ScheduleSupportingData(
       liveVirusConflicts: liveVirusConflicts == freezed
           ? _value.liveVirusConflicts
-          : liveVirusConflicts as LiveVirusConflicts,
+          : liveVirusConflicts // ignore: cast_nullable_to_non_nullable
+              as LiveVirusConflicts?,
       vaccineGroups: vaccineGroups == freezed
           ? _value.vaccineGroups
-          : vaccineGroups as VaccineGroups,
+          : vaccineGroups // ignore: cast_nullable_to_non_nullable
+              as VaccineGroups?,
       vaccineGroupToAntigenMap: vaccineGroupToAntigenMap == freezed
           ? _value.vaccineGroupToAntigenMap
-          : vaccineGroupToAntigenMap as VaccineGroupToAntigenMap,
+          : vaccineGroupToAntigenMap // ignore: cast_nullable_to_non_nullable
+              as VaccineGroupToAntigenMap?,
       cvxToAntigenMap: cvxToAntigenMap == freezed
           ? _value.cvxToAntigenMap
-          : cvxToAntigenMap as CvxToAntigenMap,
+          : cvxToAntigenMap // ignore: cast_nullable_to_non_nullable
+              as CvxToAntigenMap?,
       observations: observations == freezed
           ? _value.observations
-          : observations as Observations,
+          : observations // ignore: cast_nullable_to_non_nullable
+              as Observations?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_ScheduleSupportingData implements _ScheduleSupportingData {
   _$_ScheduleSupportingData(
       {this.liveVirusConflicts,
@@ -243,15 +262,15 @@ class _$_ScheduleSupportingData implements _ScheduleSupportingData {
       _$_$_ScheduleSupportingDataFromJson(json);
 
   @override
-  final LiveVirusConflicts liveVirusConflicts;
+  final LiveVirusConflicts? liveVirusConflicts;
   @override
-  final VaccineGroups vaccineGroups;
+  final VaccineGroups? vaccineGroups;
   @override
-  final VaccineGroupToAntigenMap vaccineGroupToAntigenMap;
+  final VaccineGroupToAntigenMap? vaccineGroupToAntigenMap;
   @override
-  final CvxToAntigenMap cvxToAntigenMap;
+  final CvxToAntigenMap? cvxToAntigenMap;
   @override
-  final Observations observations;
+  final Observations? observations;
 
   @override
   String toString() {
@@ -290,6 +309,7 @@ class _$_ScheduleSupportingData implements _ScheduleSupportingData {
       const DeepCollectionEquality().hash(cvxToAntigenMap) ^
       const DeepCollectionEquality().hash(observations);
 
+  @JsonKey(ignore: true)
   @override
   _$ScheduleSupportingDataCopyWith<_ScheduleSupportingData> get copyWith =>
       __$ScheduleSupportingDataCopyWithImpl<_ScheduleSupportingData>(
@@ -303,25 +323,29 @@ class _$_ScheduleSupportingData implements _ScheduleSupportingData {
 
 abstract class _ScheduleSupportingData implements ScheduleSupportingData {
   factory _ScheduleSupportingData(
-      {LiveVirusConflicts liveVirusConflicts,
-      VaccineGroups vaccineGroups,
-      VaccineGroupToAntigenMap vaccineGroupToAntigenMap,
-      CvxToAntigenMap cvxToAntigenMap,
-      Observations observations}) = _$_ScheduleSupportingData;
+      {LiveVirusConflicts? liveVirusConflicts,
+      VaccineGroups? vaccineGroups,
+      VaccineGroupToAntigenMap? vaccineGroupToAntigenMap,
+      CvxToAntigenMap? cvxToAntigenMap,
+      Observations? observations}) = _$_ScheduleSupportingData;
 
   factory _ScheduleSupportingData.fromJson(Map<String, dynamic> json) =
       _$_ScheduleSupportingData.fromJson;
 
   @override
-  LiveVirusConflicts get liveVirusConflicts;
+  LiveVirusConflicts? get liveVirusConflicts =>
+      throw _privateConstructorUsedError;
   @override
-  VaccineGroups get vaccineGroups;
+  VaccineGroups? get vaccineGroups => throw _privateConstructorUsedError;
   @override
-  VaccineGroupToAntigenMap get vaccineGroupToAntigenMap;
+  VaccineGroupToAntigenMap? get vaccineGroupToAntigenMap =>
+      throw _privateConstructorUsedError;
   @override
-  CvxToAntigenMap get cvxToAntigenMap;
+  CvxToAntigenMap? get cvxToAntigenMap => throw _privateConstructorUsedError;
   @override
-  Observations get observations;
+  Observations? get observations => throw _privateConstructorUsedError;
   @override
-  _$ScheduleSupportingDataCopyWith<_ScheduleSupportingData> get copyWith;
+  @JsonKey(ignore: true)
+  _$ScheduleSupportingDataCopyWith<_ScheduleSupportingData> get copyWith =>
+      throw _privateConstructorUsedError;
 }

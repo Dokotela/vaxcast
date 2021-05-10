@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'condition.dart';
 
@@ -8,6 +8,10 @@ part of 'condition.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Condition _$ConditionFromJson(Map<String, dynamic> json) {
   return _Condition.fromJson(json);
 }
@@ -16,20 +20,19 @@ Condition _$ConditionFromJson(Map<String, dynamic> json) {
 class _$ConditionTearOff {
   const _$ConditionTearOff();
 
-// ignore: unused_element
   _Condition call(
-      {String conditionID,
-      ConditionType conditionType,
-      String startDate,
-      String endDate,
-      String beginAge,
-      String endAge,
-      String interval,
-      String doseCount,
-      DoseType doseType,
-      DoseCountLogic doseCountLogic,
-      String vaccineTypes,
-      String seriesGroups}) {
+      {String? conditionID,
+      ConditionType? conditionType,
+      String? startDate,
+      String? endDate,
+      String? beginAge,
+      String? endAge,
+      String? interval,
+      String? doseCount,
+      DoseType? doseType,
+      DoseCountLogic? doseCountLogic,
+      String? vaccineTypes,
+      String? seriesGroups}) {
     return _Condition(
       conditionID: conditionID,
       conditionType: conditionType,
@@ -46,33 +49,33 @@ class _$ConditionTearOff {
     );
   }
 
-// ignore: unused_element
   Condition fromJson(Map<String, Object> json) {
     return Condition.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Condition = _$ConditionTearOff();
 
 /// @nodoc
 mixin _$Condition {
-  String get conditionID;
-  ConditionType get conditionType;
-  String get startDate;
-  String get endDate;
-  String get beginAge;
-  String get endAge;
-  String get interval;
-  String get doseCount;
-  DoseType get doseType;
-  DoseCountLogic get doseCountLogic;
-  String get vaccineTypes;
-  String get seriesGroups;
+  String? get conditionID => throw _privateConstructorUsedError;
+  ConditionType? get conditionType => throw _privateConstructorUsedError;
+  String? get startDate => throw _privateConstructorUsedError;
+  String? get endDate => throw _privateConstructorUsedError;
+  String? get beginAge => throw _privateConstructorUsedError;
+  String? get endAge => throw _privateConstructorUsedError;
+  String? get interval => throw _privateConstructorUsedError;
+  String? get doseCount => throw _privateConstructorUsedError;
+  DoseType? get doseType => throw _privateConstructorUsedError;
+  DoseCountLogic? get doseCountLogic => throw _privateConstructorUsedError;
+  String? get vaccineTypes => throw _privateConstructorUsedError;
+  String? get seriesGroups => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $ConditionCopyWith<Condition> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ConditionCopyWith<Condition> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -80,18 +83,18 @@ abstract class $ConditionCopyWith<$Res> {
   factory $ConditionCopyWith(Condition value, $Res Function(Condition) then) =
       _$ConditionCopyWithImpl<$Res>;
   $Res call(
-      {String conditionID,
-      ConditionType conditionType,
-      String startDate,
-      String endDate,
-      String beginAge,
-      String endAge,
-      String interval,
-      String doseCount,
-      DoseType doseType,
-      DoseCountLogic doseCountLogic,
-      String vaccineTypes,
-      String seriesGroups});
+      {String? conditionID,
+      ConditionType? conditionType,
+      String? startDate,
+      String? endDate,
+      String? beginAge,
+      String? endAge,
+      String? interval,
+      String? doseCount,
+      DoseType? doseType,
+      DoseCountLogic? doseCountLogic,
+      String? vaccineTypes,
+      String? seriesGroups});
 }
 
 /// @nodoc
@@ -104,41 +107,68 @@ class _$ConditionCopyWithImpl<$Res> implements $ConditionCopyWith<$Res> {
 
   @override
   $Res call({
-    Object conditionID = freezed,
-    Object conditionType = freezed,
-    Object startDate = freezed,
-    Object endDate = freezed,
-    Object beginAge = freezed,
-    Object endAge = freezed,
-    Object interval = freezed,
-    Object doseCount = freezed,
-    Object doseType = freezed,
-    Object doseCountLogic = freezed,
-    Object vaccineTypes = freezed,
-    Object seriesGroups = freezed,
+    Object? conditionID = freezed,
+    Object? conditionType = freezed,
+    Object? startDate = freezed,
+    Object? endDate = freezed,
+    Object? beginAge = freezed,
+    Object? endAge = freezed,
+    Object? interval = freezed,
+    Object? doseCount = freezed,
+    Object? doseType = freezed,
+    Object? doseCountLogic = freezed,
+    Object? vaccineTypes = freezed,
+    Object? seriesGroups = freezed,
   }) {
     return _then(_value.copyWith(
-      conditionID:
-          conditionID == freezed ? _value.conditionID : conditionID as String,
+      conditionID: conditionID == freezed
+          ? _value.conditionID
+          : conditionID // ignore: cast_nullable_to_non_nullable
+              as String?,
       conditionType: conditionType == freezed
           ? _value.conditionType
-          : conditionType as ConditionType,
-      startDate: startDate == freezed ? _value.startDate : startDate as String,
-      endDate: endDate == freezed ? _value.endDate : endDate as String,
-      beginAge: beginAge == freezed ? _value.beginAge : beginAge as String,
-      endAge: endAge == freezed ? _value.endAge : endAge as String,
-      interval: interval == freezed ? _value.interval : interval as String,
-      doseCount: doseCount == freezed ? _value.doseCount : doseCount as String,
-      doseType: doseType == freezed ? _value.doseType : doseType as DoseType,
+          : conditionType // ignore: cast_nullable_to_non_nullable
+              as ConditionType?,
+      startDate: startDate == freezed
+          ? _value.startDate
+          : startDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      endDate: endDate == freezed
+          ? _value.endDate
+          : endDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      beginAge: beginAge == freezed
+          ? _value.beginAge
+          : beginAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      endAge: endAge == freezed
+          ? _value.endAge
+          : endAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      interval: interval == freezed
+          ? _value.interval
+          : interval // ignore: cast_nullable_to_non_nullable
+              as String?,
+      doseCount: doseCount == freezed
+          ? _value.doseCount
+          : doseCount // ignore: cast_nullable_to_non_nullable
+              as String?,
+      doseType: doseType == freezed
+          ? _value.doseType
+          : doseType // ignore: cast_nullable_to_non_nullable
+              as DoseType?,
       doseCountLogic: doseCountLogic == freezed
           ? _value.doseCountLogic
-          : doseCountLogic as DoseCountLogic,
+          : doseCountLogic // ignore: cast_nullable_to_non_nullable
+              as DoseCountLogic?,
       vaccineTypes: vaccineTypes == freezed
           ? _value.vaccineTypes
-          : vaccineTypes as String,
+          : vaccineTypes // ignore: cast_nullable_to_non_nullable
+              as String?,
       seriesGroups: seriesGroups == freezed
           ? _value.seriesGroups
-          : seriesGroups as String,
+          : seriesGroups // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -150,18 +180,18 @@ abstract class _$ConditionCopyWith<$Res> implements $ConditionCopyWith<$Res> {
       __$ConditionCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String conditionID,
-      ConditionType conditionType,
-      String startDate,
-      String endDate,
-      String beginAge,
-      String endAge,
-      String interval,
-      String doseCount,
-      DoseType doseType,
-      DoseCountLogic doseCountLogic,
-      String vaccineTypes,
-      String seriesGroups});
+      {String? conditionID,
+      ConditionType? conditionType,
+      String? startDate,
+      String? endDate,
+      String? beginAge,
+      String? endAge,
+      String? interval,
+      String? doseCount,
+      DoseType? doseType,
+      DoseCountLogic? doseCountLogic,
+      String? vaccineTypes,
+      String? seriesGroups});
 }
 
 /// @nodoc
@@ -175,48 +205,74 @@ class __$ConditionCopyWithImpl<$Res> extends _$ConditionCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object conditionID = freezed,
-    Object conditionType = freezed,
-    Object startDate = freezed,
-    Object endDate = freezed,
-    Object beginAge = freezed,
-    Object endAge = freezed,
-    Object interval = freezed,
-    Object doseCount = freezed,
-    Object doseType = freezed,
-    Object doseCountLogic = freezed,
-    Object vaccineTypes = freezed,
-    Object seriesGroups = freezed,
+    Object? conditionID = freezed,
+    Object? conditionType = freezed,
+    Object? startDate = freezed,
+    Object? endDate = freezed,
+    Object? beginAge = freezed,
+    Object? endAge = freezed,
+    Object? interval = freezed,
+    Object? doseCount = freezed,
+    Object? doseType = freezed,
+    Object? doseCountLogic = freezed,
+    Object? vaccineTypes = freezed,
+    Object? seriesGroups = freezed,
   }) {
     return _then(_Condition(
-      conditionID:
-          conditionID == freezed ? _value.conditionID : conditionID as String,
+      conditionID: conditionID == freezed
+          ? _value.conditionID
+          : conditionID // ignore: cast_nullable_to_non_nullable
+              as String?,
       conditionType: conditionType == freezed
           ? _value.conditionType
-          : conditionType as ConditionType,
-      startDate: startDate == freezed ? _value.startDate : startDate as String,
-      endDate: endDate == freezed ? _value.endDate : endDate as String,
-      beginAge: beginAge == freezed ? _value.beginAge : beginAge as String,
-      endAge: endAge == freezed ? _value.endAge : endAge as String,
-      interval: interval == freezed ? _value.interval : interval as String,
-      doseCount: doseCount == freezed ? _value.doseCount : doseCount as String,
-      doseType: doseType == freezed ? _value.doseType : doseType as DoseType,
+          : conditionType // ignore: cast_nullable_to_non_nullable
+              as ConditionType?,
+      startDate: startDate == freezed
+          ? _value.startDate
+          : startDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      endDate: endDate == freezed
+          ? _value.endDate
+          : endDate // ignore: cast_nullable_to_non_nullable
+              as String?,
+      beginAge: beginAge == freezed
+          ? _value.beginAge
+          : beginAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      endAge: endAge == freezed
+          ? _value.endAge
+          : endAge // ignore: cast_nullable_to_non_nullable
+              as String?,
+      interval: interval == freezed
+          ? _value.interval
+          : interval // ignore: cast_nullable_to_non_nullable
+              as String?,
+      doseCount: doseCount == freezed
+          ? _value.doseCount
+          : doseCount // ignore: cast_nullable_to_non_nullable
+              as String?,
+      doseType: doseType == freezed
+          ? _value.doseType
+          : doseType // ignore: cast_nullable_to_non_nullable
+              as DoseType?,
       doseCountLogic: doseCountLogic == freezed
           ? _value.doseCountLogic
-          : doseCountLogic as DoseCountLogic,
+          : doseCountLogic // ignore: cast_nullable_to_non_nullable
+              as DoseCountLogic?,
       vaccineTypes: vaccineTypes == freezed
           ? _value.vaccineTypes
-          : vaccineTypes as String,
+          : vaccineTypes // ignore: cast_nullable_to_non_nullable
+              as String?,
       seriesGroups: seriesGroups == freezed
           ? _value.seriesGroups
-          : seriesGroups as String,
+          : seriesGroups // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Condition implements _Condition {
   _$_Condition(
       {this.conditionID,
@@ -236,29 +292,29 @@ class _$_Condition implements _Condition {
       _$_$_ConditionFromJson(json);
 
   @override
-  final String conditionID;
+  final String? conditionID;
   @override
-  final ConditionType conditionType;
+  final ConditionType? conditionType;
   @override
-  final String startDate;
+  final String? startDate;
   @override
-  final String endDate;
+  final String? endDate;
   @override
-  final String beginAge;
+  final String? beginAge;
   @override
-  final String endAge;
+  final String? endAge;
   @override
-  final String interval;
+  final String? interval;
   @override
-  final String doseCount;
+  final String? doseCount;
   @override
-  final DoseType doseType;
+  final DoseType? doseType;
   @override
-  final DoseCountLogic doseCountLogic;
+  final DoseCountLogic? doseCountLogic;
   @override
-  final String vaccineTypes;
+  final String? vaccineTypes;
   @override
-  final String seriesGroups;
+  final String? seriesGroups;
 
   @override
   String toString() {
@@ -322,6 +378,7 @@ class _$_Condition implements _Condition {
       const DeepCollectionEquality().hash(vaccineTypes) ^
       const DeepCollectionEquality().hash(seriesGroups);
 
+  @JsonKey(ignore: true)
   @override
   _$ConditionCopyWith<_Condition> get copyWith =>
       __$ConditionCopyWithImpl<_Condition>(this, _$identity);
@@ -334,46 +391,48 @@ class _$_Condition implements _Condition {
 
 abstract class _Condition implements Condition {
   factory _Condition(
-      {String conditionID,
-      ConditionType conditionType,
-      String startDate,
-      String endDate,
-      String beginAge,
-      String endAge,
-      String interval,
-      String doseCount,
-      DoseType doseType,
-      DoseCountLogic doseCountLogic,
-      String vaccineTypes,
-      String seriesGroups}) = _$_Condition;
+      {String? conditionID,
+      ConditionType? conditionType,
+      String? startDate,
+      String? endDate,
+      String? beginAge,
+      String? endAge,
+      String? interval,
+      String? doseCount,
+      DoseType? doseType,
+      DoseCountLogic? doseCountLogic,
+      String? vaccineTypes,
+      String? seriesGroups}) = _$_Condition;
 
   factory _Condition.fromJson(Map<String, dynamic> json) =
       _$_Condition.fromJson;
 
   @override
-  String get conditionID;
+  String? get conditionID => throw _privateConstructorUsedError;
   @override
-  ConditionType get conditionType;
+  ConditionType? get conditionType => throw _privateConstructorUsedError;
   @override
-  String get startDate;
+  String? get startDate => throw _privateConstructorUsedError;
   @override
-  String get endDate;
+  String? get endDate => throw _privateConstructorUsedError;
   @override
-  String get beginAge;
+  String? get beginAge => throw _privateConstructorUsedError;
   @override
-  String get endAge;
+  String? get endAge => throw _privateConstructorUsedError;
   @override
-  String get interval;
+  String? get interval => throw _privateConstructorUsedError;
   @override
-  String get doseCount;
+  String? get doseCount => throw _privateConstructorUsedError;
   @override
-  DoseType get doseType;
+  DoseType? get doseType => throw _privateConstructorUsedError;
   @override
-  DoseCountLogic get doseCountLogic;
+  DoseCountLogic? get doseCountLogic => throw _privateConstructorUsedError;
   @override
-  String get vaccineTypes;
+  String? get vaccineTypes => throw _privateConstructorUsedError;
   @override
-  String get seriesGroups;
+  String? get seriesGroups => throw _privateConstructorUsedError;
   @override
-  _$ConditionCopyWith<_Condition> get copyWith;
+  @JsonKey(ignore: true)
+  _$ConditionCopyWith<_Condition> get copyWith =>
+      throw _privateConstructorUsedError;
 }

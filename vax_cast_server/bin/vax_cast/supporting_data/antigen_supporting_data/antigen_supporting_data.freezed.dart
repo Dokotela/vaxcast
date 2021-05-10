@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'antigen_supporting_data.dart';
 
@@ -8,6 +8,10 @@ part of 'antigen_supporting_data.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 AntigenSupportingData _$AntigenSupportingDataFromJson(
     Map<String, dynamic> json) {
   return _AntigenSupportingData.fromJson(json);
@@ -17,11 +21,10 @@ AntigenSupportingData _$AntigenSupportingDataFromJson(
 class _$AntigenSupportingDataTearOff {
   const _$AntigenSupportingDataTearOff();
 
-// ignore: unused_element
   _AntigenSupportingData call(
-      {Immunity immunity,
-      Contraindications contraindications,
-      List<Series> series}) {
+      {Immunity? immunity,
+      Contraindications? contraindications,
+      List<Series>? series}) {
     return _AntigenSupportingData(
       immunity: immunity,
       contraindications: contraindications,
@@ -29,24 +32,25 @@ class _$AntigenSupportingDataTearOff {
     );
   }
 
-// ignore: unused_element
   AntigenSupportingData fromJson(Map<String, Object> json) {
     return AntigenSupportingData.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $AntigenSupportingData = _$AntigenSupportingDataTearOff();
 
 /// @nodoc
 mixin _$AntigenSupportingData {
-  Immunity get immunity;
-  Contraindications get contraindications;
-  List<Series> get series;
+  Immunity? get immunity => throw _privateConstructorUsedError;
+  Contraindications? get contraindications =>
+      throw _privateConstructorUsedError;
+  List<Series>? get series => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $AntigenSupportingDataCopyWith<AntigenSupportingData> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $AntigenSupportingDataCopyWith<AntigenSupportingData> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -55,12 +59,12 @@ abstract class $AntigenSupportingDataCopyWith<$Res> {
           $Res Function(AntigenSupportingData) then) =
       _$AntigenSupportingDataCopyWithImpl<$Res>;
   $Res call(
-      {Immunity immunity,
-      Contraindications contraindications,
-      List<Series> series});
+      {Immunity? immunity,
+      Contraindications? contraindications,
+      List<Series>? series});
 
-  $ImmunityCopyWith<$Res> get immunity;
-  $ContraindicationsCopyWith<$Res> get contraindications;
+  $ImmunityCopyWith<$Res>? get immunity;
+  $ContraindicationsCopyWith<$Res>? get contraindications;
 }
 
 /// @nodoc
@@ -74,35 +78,44 @@ class _$AntigenSupportingDataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object immunity = freezed,
-    Object contraindications = freezed,
-    Object series = freezed,
+    Object? immunity = freezed,
+    Object? contraindications = freezed,
+    Object? series = freezed,
   }) {
     return _then(_value.copyWith(
-      immunity: immunity == freezed ? _value.immunity : immunity as Immunity,
+      immunity: immunity == freezed
+          ? _value.immunity
+          : immunity // ignore: cast_nullable_to_non_nullable
+              as Immunity?,
       contraindications: contraindications == freezed
           ? _value.contraindications
-          : contraindications as Contraindications,
-      series: series == freezed ? _value.series : series as List<Series>,
+          : contraindications // ignore: cast_nullable_to_non_nullable
+              as Contraindications?,
+      series: series == freezed
+          ? _value.series
+          : series // ignore: cast_nullable_to_non_nullable
+              as List<Series>?,
     ));
   }
 
   @override
-  $ImmunityCopyWith<$Res> get immunity {
+  $ImmunityCopyWith<$Res>? get immunity {
     if (_value.immunity == null) {
       return null;
     }
-    return $ImmunityCopyWith<$Res>(_value.immunity, (value) {
+
+    return $ImmunityCopyWith<$Res>(_value.immunity!, (value) {
       return _then(_value.copyWith(immunity: value));
     });
   }
 
   @override
-  $ContraindicationsCopyWith<$Res> get contraindications {
+  $ContraindicationsCopyWith<$Res>? get contraindications {
     if (_value.contraindications == null) {
       return null;
     }
-    return $ContraindicationsCopyWith<$Res>(_value.contraindications, (value) {
+
+    return $ContraindicationsCopyWith<$Res>(_value.contraindications!, (value) {
       return _then(_value.copyWith(contraindications: value));
     });
   }
@@ -116,14 +129,14 @@ abstract class _$AntigenSupportingDataCopyWith<$Res>
       __$AntigenSupportingDataCopyWithImpl<$Res>;
   @override
   $Res call(
-      {Immunity immunity,
-      Contraindications contraindications,
-      List<Series> series});
+      {Immunity? immunity,
+      Contraindications? contraindications,
+      List<Series>? series});
 
   @override
-  $ImmunityCopyWith<$Res> get immunity;
+  $ImmunityCopyWith<$Res>? get immunity;
   @override
-  $ContraindicationsCopyWith<$Res> get contraindications;
+  $ContraindicationsCopyWith<$Res>? get contraindications;
 }
 
 /// @nodoc
@@ -139,23 +152,29 @@ class __$AntigenSupportingDataCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object immunity = freezed,
-    Object contraindications = freezed,
-    Object series = freezed,
+    Object? immunity = freezed,
+    Object? contraindications = freezed,
+    Object? series = freezed,
   }) {
     return _then(_AntigenSupportingData(
-      immunity: immunity == freezed ? _value.immunity : immunity as Immunity,
+      immunity: immunity == freezed
+          ? _value.immunity
+          : immunity // ignore: cast_nullable_to_non_nullable
+              as Immunity?,
       contraindications: contraindications == freezed
           ? _value.contraindications
-          : contraindications as Contraindications,
-      series: series == freezed ? _value.series : series as List<Series>,
+          : contraindications // ignore: cast_nullable_to_non_nullable
+              as Contraindications?,
+      series: series == freezed
+          ? _value.series
+          : series // ignore: cast_nullable_to_non_nullable
+              as List<Series>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_AntigenSupportingData implements _AntigenSupportingData {
   _$_AntigenSupportingData(
       {this.immunity, this.contraindications, this.series});
@@ -164,11 +183,11 @@ class _$_AntigenSupportingData implements _AntigenSupportingData {
       _$_$_AntigenSupportingDataFromJson(json);
 
   @override
-  final Immunity immunity;
+  final Immunity? immunity;
   @override
-  final Contraindications contraindications;
+  final Contraindications? contraindications;
   @override
-  final List<Series> series;
+  final List<Series>? series;
 
   @override
   String toString() {
@@ -196,6 +215,7 @@ class _$_AntigenSupportingData implements _AntigenSupportingData {
       const DeepCollectionEquality().hash(contraindications) ^
       const DeepCollectionEquality().hash(series);
 
+  @JsonKey(ignore: true)
   @override
   _$AntigenSupportingDataCopyWith<_AntigenSupportingData> get copyWith =>
       __$AntigenSupportingDataCopyWithImpl<_AntigenSupportingData>(
@@ -209,19 +229,22 @@ class _$_AntigenSupportingData implements _AntigenSupportingData {
 
 abstract class _AntigenSupportingData implements AntigenSupportingData {
   factory _AntigenSupportingData(
-      {Immunity immunity,
-      Contraindications contraindications,
-      List<Series> series}) = _$_AntigenSupportingData;
+      {Immunity? immunity,
+      Contraindications? contraindications,
+      List<Series>? series}) = _$_AntigenSupportingData;
 
   factory _AntigenSupportingData.fromJson(Map<String, dynamic> json) =
       _$_AntigenSupportingData.fromJson;
 
   @override
-  Immunity get immunity;
+  Immunity? get immunity => throw _privateConstructorUsedError;
   @override
-  Contraindications get contraindications;
+  Contraindications? get contraindications =>
+      throw _privateConstructorUsedError;
   @override
-  List<Series> get series;
+  List<Series>? get series => throw _privateConstructorUsedError;
   @override
-  _$AntigenSupportingDataCopyWith<_AntigenSupportingData> get copyWith;
+  @JsonKey(ignore: true)
+  _$AntigenSupportingDataCopyWith<_AntigenSupportingData> get copyWith =>
+      throw _privateConstructorUsedError;
 }

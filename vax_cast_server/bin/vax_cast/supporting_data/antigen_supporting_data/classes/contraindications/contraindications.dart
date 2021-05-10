@@ -6,10 +6,10 @@ part 'contraindications.freezed.dart';
 part 'contraindications.g.dart';
 
 @freezed
-abstract class Contraindications with _$Contraindications {
+class Contraindications with _$Contraindications {
   factory Contraindications({
-    VaccineGroupContraindications vaccineGroup,
-    VaccineContraindications vaccine,
+    VaccineGroupContraindications? vaccineGroup,
+    VaccineContraindications? vaccine,
   }) = _Contraindications;
 
   factory Contraindications.fromJson(Map<String, dynamic> json) =>

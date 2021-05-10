@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'live_virus_conflicts.dart';
 
@@ -8,6 +8,10 @@ part of 'live_virus_conflicts.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 LiveVirusConflicts _$LiveVirusConflictsFromJson(Map<String, dynamic> json) {
   return _LiveVirusConflicts.fromJson(json);
 }
@@ -16,29 +20,29 @@ LiveVirusConflicts _$LiveVirusConflictsFromJson(Map<String, dynamic> json) {
 class _$LiveVirusConflictsTearOff {
   const _$LiveVirusConflictsTearOff();
 
-// ignore: unused_element
-  _LiveVirusConflicts call({List<LiveVirusConflict> liveVirusConflict}) {
+  _LiveVirusConflicts call({List<LiveVirusConflict>? liveVirusConflict}) {
     return _LiveVirusConflicts(
       liveVirusConflict: liveVirusConflict,
     );
   }
 
-// ignore: unused_element
   LiveVirusConflicts fromJson(Map<String, Object> json) {
     return LiveVirusConflicts.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $LiveVirusConflicts = _$LiveVirusConflictsTearOff();
 
 /// @nodoc
 mixin _$LiveVirusConflicts {
-  List<LiveVirusConflict> get liveVirusConflict;
+  List<LiveVirusConflict>? get liveVirusConflict =>
+      throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $LiveVirusConflictsCopyWith<LiveVirusConflicts> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $LiveVirusConflictsCopyWith<LiveVirusConflicts> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -46,7 +50,7 @@ abstract class $LiveVirusConflictsCopyWith<$Res> {
   factory $LiveVirusConflictsCopyWith(
           LiveVirusConflicts value, $Res Function(LiveVirusConflicts) then) =
       _$LiveVirusConflictsCopyWithImpl<$Res>;
-  $Res call({List<LiveVirusConflict> liveVirusConflict});
+  $Res call({List<LiveVirusConflict>? liveVirusConflict});
 }
 
 /// @nodoc
@@ -60,12 +64,13 @@ class _$LiveVirusConflictsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object liveVirusConflict = freezed,
+    Object? liveVirusConflict = freezed,
   }) {
     return _then(_value.copyWith(
       liveVirusConflict: liveVirusConflict == freezed
           ? _value.liveVirusConflict
-          : liveVirusConflict as List<LiveVirusConflict>,
+          : liveVirusConflict // ignore: cast_nullable_to_non_nullable
+              as List<LiveVirusConflict>?,
     ));
   }
 }
@@ -77,7 +82,7 @@ abstract class _$LiveVirusConflictsCopyWith<$Res>
           _LiveVirusConflicts value, $Res Function(_LiveVirusConflicts) then) =
       __$LiveVirusConflictsCopyWithImpl<$Res>;
   @override
-  $Res call({List<LiveVirusConflict> liveVirusConflict});
+  $Res call({List<LiveVirusConflict>? liveVirusConflict});
 }
 
 /// @nodoc
@@ -93,19 +98,19 @@ class __$LiveVirusConflictsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object liveVirusConflict = freezed,
+    Object? liveVirusConflict = freezed,
   }) {
     return _then(_LiveVirusConflicts(
       liveVirusConflict: liveVirusConflict == freezed
           ? _value.liveVirusConflict
-          : liveVirusConflict as List<LiveVirusConflict>,
+          : liveVirusConflict // ignore: cast_nullable_to_non_nullable
+              as List<LiveVirusConflict>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_LiveVirusConflicts implements _LiveVirusConflicts {
   _$_LiveVirusConflicts({this.liveVirusConflict});
 
@@ -113,7 +118,7 @@ class _$_LiveVirusConflicts implements _LiveVirusConflicts {
       _$_$_LiveVirusConflictsFromJson(json);
 
   @override
-  final List<LiveVirusConflict> liveVirusConflict;
+  final List<LiveVirusConflict>? liveVirusConflict;
 
   @override
   String toString() {
@@ -134,6 +139,7 @@ class _$_LiveVirusConflicts implements _LiveVirusConflicts {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(liveVirusConflict);
 
+  @JsonKey(ignore: true)
   @override
   _$LiveVirusConflictsCopyWith<_LiveVirusConflicts> get copyWith =>
       __$LiveVirusConflictsCopyWithImpl<_LiveVirusConflicts>(this, _$identity);
@@ -145,16 +151,19 @@ class _$_LiveVirusConflicts implements _LiveVirusConflicts {
 }
 
 abstract class _LiveVirusConflicts implements LiveVirusConflicts {
-  factory _LiveVirusConflicts({List<LiveVirusConflict> liveVirusConflict}) =
+  factory _LiveVirusConflicts({List<LiveVirusConflict>? liveVirusConflict}) =
       _$_LiveVirusConflicts;
 
   factory _LiveVirusConflicts.fromJson(Map<String, dynamic> json) =
       _$_LiveVirusConflicts.fromJson;
 
   @override
-  List<LiveVirusConflict> get liveVirusConflict;
+  List<LiveVirusConflict>? get liveVirusConflict =>
+      throw _privateConstructorUsedError;
   @override
-  _$LiveVirusConflictsCopyWith<_LiveVirusConflicts> get copyWith;
+  @JsonKey(ignore: true)
+  _$LiveVirusConflictsCopyWith<_LiveVirusConflicts> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 LiveVirusConflict _$LiveVirusConflictFromJson(Map<String, dynamic> json) {
@@ -165,13 +174,12 @@ LiveVirusConflict _$LiveVirusConflictFromJson(Map<String, dynamic> json) {
 class _$LiveVirusConflictTearOff {
   const _$LiveVirusConflictTearOff();
 
-// ignore: unused_element
   _LiveVirusConflict call(
-      {Vaccine previous,
-      Vaccine current,
-      String conflictBeginInterval,
-      String minConflictEndInterval,
-      String conflictEndInterval}) {
+      {Vaccine? previous,
+      Vaccine? current,
+      String? conflictBeginInterval,
+      String? minConflictEndInterval,
+      String? conflictEndInterval}) {
     return _LiveVirusConflict(
       previous: previous,
       current: current,
@@ -181,26 +189,26 @@ class _$LiveVirusConflictTearOff {
     );
   }
 
-// ignore: unused_element
   LiveVirusConflict fromJson(Map<String, Object> json) {
     return LiveVirusConflict.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $LiveVirusConflict = _$LiveVirusConflictTearOff();
 
 /// @nodoc
 mixin _$LiveVirusConflict {
-  Vaccine get previous;
-  Vaccine get current;
-  String get conflictBeginInterval;
-  String get minConflictEndInterval;
-  String get conflictEndInterval;
+  Vaccine? get previous => throw _privateConstructorUsedError;
+  Vaccine? get current => throw _privateConstructorUsedError;
+  String? get conflictBeginInterval => throw _privateConstructorUsedError;
+  String? get minConflictEndInterval => throw _privateConstructorUsedError;
+  String? get conflictEndInterval => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $LiveVirusConflictCopyWith<LiveVirusConflict> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $LiveVirusConflictCopyWith<LiveVirusConflict> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -209,14 +217,14 @@ abstract class $LiveVirusConflictCopyWith<$Res> {
           LiveVirusConflict value, $Res Function(LiveVirusConflict) then) =
       _$LiveVirusConflictCopyWithImpl<$Res>;
   $Res call(
-      {Vaccine previous,
-      Vaccine current,
-      String conflictBeginInterval,
-      String minConflictEndInterval,
-      String conflictEndInterval});
+      {Vaccine? previous,
+      Vaccine? current,
+      String? conflictBeginInterval,
+      String? minConflictEndInterval,
+      String? conflictEndInterval});
 
-  $VaccineCopyWith<$Res> get previous;
-  $VaccineCopyWith<$Res> get current;
+  $VaccineCopyWith<$Res>? get previous;
+  $VaccineCopyWith<$Res>? get current;
 }
 
 /// @nodoc
@@ -230,43 +238,54 @@ class _$LiveVirusConflictCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object previous = freezed,
-    Object current = freezed,
-    Object conflictBeginInterval = freezed,
-    Object minConflictEndInterval = freezed,
-    Object conflictEndInterval = freezed,
+    Object? previous = freezed,
+    Object? current = freezed,
+    Object? conflictBeginInterval = freezed,
+    Object? minConflictEndInterval = freezed,
+    Object? conflictEndInterval = freezed,
   }) {
     return _then(_value.copyWith(
-      previous: previous == freezed ? _value.previous : previous as Vaccine,
-      current: current == freezed ? _value.current : current as Vaccine,
+      previous: previous == freezed
+          ? _value.previous
+          : previous // ignore: cast_nullable_to_non_nullable
+              as Vaccine?,
+      current: current == freezed
+          ? _value.current
+          : current // ignore: cast_nullable_to_non_nullable
+              as Vaccine?,
       conflictBeginInterval: conflictBeginInterval == freezed
           ? _value.conflictBeginInterval
-          : conflictBeginInterval as String,
+          : conflictBeginInterval // ignore: cast_nullable_to_non_nullable
+              as String?,
       minConflictEndInterval: minConflictEndInterval == freezed
           ? _value.minConflictEndInterval
-          : minConflictEndInterval as String,
+          : minConflictEndInterval // ignore: cast_nullable_to_non_nullable
+              as String?,
       conflictEndInterval: conflictEndInterval == freezed
           ? _value.conflictEndInterval
-          : conflictEndInterval as String,
+          : conflictEndInterval // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 
   @override
-  $VaccineCopyWith<$Res> get previous {
+  $VaccineCopyWith<$Res>? get previous {
     if (_value.previous == null) {
       return null;
     }
-    return $VaccineCopyWith<$Res>(_value.previous, (value) {
+
+    return $VaccineCopyWith<$Res>(_value.previous!, (value) {
       return _then(_value.copyWith(previous: value));
     });
   }
 
   @override
-  $VaccineCopyWith<$Res> get current {
+  $VaccineCopyWith<$Res>? get current {
     if (_value.current == null) {
       return null;
     }
-    return $VaccineCopyWith<$Res>(_value.current, (value) {
+
+    return $VaccineCopyWith<$Res>(_value.current!, (value) {
       return _then(_value.copyWith(current: value));
     });
   }
@@ -280,16 +299,16 @@ abstract class _$LiveVirusConflictCopyWith<$Res>
       __$LiveVirusConflictCopyWithImpl<$Res>;
   @override
   $Res call(
-      {Vaccine previous,
-      Vaccine current,
-      String conflictBeginInterval,
-      String minConflictEndInterval,
-      String conflictEndInterval});
+      {Vaccine? previous,
+      Vaccine? current,
+      String? conflictBeginInterval,
+      String? minConflictEndInterval,
+      String? conflictEndInterval});
 
   @override
-  $VaccineCopyWith<$Res> get previous;
+  $VaccineCopyWith<$Res>? get previous;
   @override
-  $VaccineCopyWith<$Res> get current;
+  $VaccineCopyWith<$Res>? get current;
 }
 
 /// @nodoc
@@ -305,31 +324,39 @@ class __$LiveVirusConflictCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object previous = freezed,
-    Object current = freezed,
-    Object conflictBeginInterval = freezed,
-    Object minConflictEndInterval = freezed,
-    Object conflictEndInterval = freezed,
+    Object? previous = freezed,
+    Object? current = freezed,
+    Object? conflictBeginInterval = freezed,
+    Object? minConflictEndInterval = freezed,
+    Object? conflictEndInterval = freezed,
   }) {
     return _then(_LiveVirusConflict(
-      previous: previous == freezed ? _value.previous : previous as Vaccine,
-      current: current == freezed ? _value.current : current as Vaccine,
+      previous: previous == freezed
+          ? _value.previous
+          : previous // ignore: cast_nullable_to_non_nullable
+              as Vaccine?,
+      current: current == freezed
+          ? _value.current
+          : current // ignore: cast_nullable_to_non_nullable
+              as Vaccine?,
       conflictBeginInterval: conflictBeginInterval == freezed
           ? _value.conflictBeginInterval
-          : conflictBeginInterval as String,
+          : conflictBeginInterval // ignore: cast_nullable_to_non_nullable
+              as String?,
       minConflictEndInterval: minConflictEndInterval == freezed
           ? _value.minConflictEndInterval
-          : minConflictEndInterval as String,
+          : minConflictEndInterval // ignore: cast_nullable_to_non_nullable
+              as String?,
       conflictEndInterval: conflictEndInterval == freezed
           ? _value.conflictEndInterval
-          : conflictEndInterval as String,
+          : conflictEndInterval // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_LiveVirusConflict implements _LiveVirusConflict {
   _$_LiveVirusConflict(
       {this.previous,
@@ -342,15 +369,15 @@ class _$_LiveVirusConflict implements _LiveVirusConflict {
       _$_$_LiveVirusConflictFromJson(json);
 
   @override
-  final Vaccine previous;
+  final Vaccine? previous;
   @override
-  final Vaccine current;
+  final Vaccine? current;
   @override
-  final String conflictBeginInterval;
+  final String? conflictBeginInterval;
   @override
-  final String minConflictEndInterval;
+  final String? minConflictEndInterval;
   @override
-  final String conflictEndInterval;
+  final String? conflictEndInterval;
 
   @override
   String toString() {
@@ -387,6 +414,7 @@ class _$_LiveVirusConflict implements _LiveVirusConflict {
       const DeepCollectionEquality().hash(minConflictEndInterval) ^
       const DeepCollectionEquality().hash(conflictEndInterval);
 
+  @JsonKey(ignore: true)
   @override
   _$LiveVirusConflictCopyWith<_LiveVirusConflict> get copyWith =>
       __$LiveVirusConflictCopyWithImpl<_LiveVirusConflict>(this, _$identity);
@@ -399,25 +427,27 @@ class _$_LiveVirusConflict implements _LiveVirusConflict {
 
 abstract class _LiveVirusConflict implements LiveVirusConflict {
   factory _LiveVirusConflict(
-      {Vaccine previous,
-      Vaccine current,
-      String conflictBeginInterval,
-      String minConflictEndInterval,
-      String conflictEndInterval}) = _$_LiveVirusConflict;
+      {Vaccine? previous,
+      Vaccine? current,
+      String? conflictBeginInterval,
+      String? minConflictEndInterval,
+      String? conflictEndInterval}) = _$_LiveVirusConflict;
 
   factory _LiveVirusConflict.fromJson(Map<String, dynamic> json) =
       _$_LiveVirusConflict.fromJson;
 
   @override
-  Vaccine get previous;
+  Vaccine? get previous => throw _privateConstructorUsedError;
   @override
-  Vaccine get current;
+  Vaccine? get current => throw _privateConstructorUsedError;
   @override
-  String get conflictBeginInterval;
+  String? get conflictBeginInterval => throw _privateConstructorUsedError;
   @override
-  String get minConflictEndInterval;
+  String? get minConflictEndInterval => throw _privateConstructorUsedError;
   @override
-  String get conflictEndInterval;
+  String? get conflictEndInterval => throw _privateConstructorUsedError;
   @override
-  _$LiveVirusConflictCopyWith<_LiveVirusConflict> get copyWith;
+  @JsonKey(ignore: true)
+  _$LiveVirusConflictCopyWith<_LiveVirusConflict> get copyWith =>
+      throw _privateConstructorUsedError;
 }

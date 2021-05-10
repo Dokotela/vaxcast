@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'observations.dart';
 
@@ -8,6 +8,10 @@ part of 'observations.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Observations _$ObservationsFromJson(Map<String, dynamic> json) {
   return _Observations.fromJson(json);
 }
@@ -16,29 +20,28 @@ Observations _$ObservationsFromJson(Map<String, dynamic> json) {
 class _$ObservationsTearOff {
   const _$ObservationsTearOff();
 
-// ignore: unused_element
-  _Observations call({List<Observation> observation}) {
+  _Observations call({List<Observation>? observation}) {
     return _Observations(
       observation: observation,
     );
   }
 
-// ignore: unused_element
   Observations fromJson(Map<String, Object> json) {
     return Observations.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Observations = _$ObservationsTearOff();
 
 /// @nodoc
 mixin _$Observations {
-  List<Observation> get observation;
+  List<Observation>? get observation => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $ObservationsCopyWith<Observations> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ObservationsCopyWith<Observations> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -46,7 +49,7 @@ abstract class $ObservationsCopyWith<$Res> {
   factory $ObservationsCopyWith(
           Observations value, $Res Function(Observations) then) =
       _$ObservationsCopyWithImpl<$Res>;
-  $Res call({List<Observation> observation});
+  $Res call({List<Observation>? observation});
 }
 
 /// @nodoc
@@ -59,12 +62,13 @@ class _$ObservationsCopyWithImpl<$Res> implements $ObservationsCopyWith<$Res> {
 
   @override
   $Res call({
-    Object observation = freezed,
+    Object? observation = freezed,
   }) {
     return _then(_value.copyWith(
       observation: observation == freezed
           ? _value.observation
-          : observation as List<Observation>,
+          : observation // ignore: cast_nullable_to_non_nullable
+              as List<Observation>?,
     ));
   }
 }
@@ -76,7 +80,7 @@ abstract class _$ObservationsCopyWith<$Res>
           _Observations value, $Res Function(_Observations) then) =
       __$ObservationsCopyWithImpl<$Res>;
   @override
-  $Res call({List<Observation> observation});
+  $Res call({List<Observation>? observation});
 }
 
 /// @nodoc
@@ -91,19 +95,19 @@ class __$ObservationsCopyWithImpl<$Res> extends _$ObservationsCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object observation = freezed,
+    Object? observation = freezed,
   }) {
     return _then(_Observations(
       observation: observation == freezed
           ? _value.observation
-          : observation as List<Observation>,
+          : observation // ignore: cast_nullable_to_non_nullable
+              as List<Observation>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Observations implements _Observations {
   _$_Observations({this.observation});
 
@@ -111,7 +115,7 @@ class _$_Observations implements _Observations {
       _$_$_ObservationsFromJson(json);
 
   @override
-  final List<Observation> observation;
+  final List<Observation>? observation;
 
   @override
   String toString() {
@@ -131,6 +135,7 @@ class _$_Observations implements _Observations {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(observation);
 
+  @JsonKey(ignore: true)
   @override
   _$ObservationsCopyWith<_Observations> get copyWith =>
       __$ObservationsCopyWithImpl<_Observations>(this, _$identity);
@@ -142,15 +147,17 @@ class _$_Observations implements _Observations {
 }
 
 abstract class _Observations implements Observations {
-  factory _Observations({List<Observation> observation}) = _$_Observations;
+  factory _Observations({List<Observation>? observation}) = _$_Observations;
 
   factory _Observations.fromJson(Map<String, dynamic> json) =
       _$_Observations.fromJson;
 
   @override
-  List<Observation> get observation;
+  List<Observation>? get observation => throw _privateConstructorUsedError;
   @override
-  _$ObservationsCopyWith<_Observations> get copyWith;
+  @JsonKey(ignore: true)
+  _$ObservationsCopyWith<_Observations> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 Observation _$ObservationFromJson(Map<String, dynamic> json) {
@@ -161,15 +168,14 @@ Observation _$ObservationFromJson(Map<String, dynamic> json) {
 class _$ObservationTearOff {
   const _$ObservationTearOff();
 
-// ignore: unused_element
   _Observation call(
-      {Obs observationCode,
-      String observationTitle,
-      String group,
-      String indicationText,
-      String contraindicationText,
-      String clarifyingText,
-      CodedValues codedValues}) {
+      {Obs? observationCode,
+      String? observationTitle,
+      String? group,
+      String? indicationText,
+      String? contraindicationText,
+      String? clarifyingText,
+      CodedValues? codedValues}) {
     return _Observation(
       observationCode: observationCode,
       observationTitle: observationTitle,
@@ -181,28 +187,28 @@ class _$ObservationTearOff {
     );
   }
 
-// ignore: unused_element
   Observation fromJson(Map<String, Object> json) {
     return Observation.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Observation = _$ObservationTearOff();
 
 /// @nodoc
 mixin _$Observation {
-  Obs get observationCode;
-  String get observationTitle;
-  String get group;
-  String get indicationText;
-  String get contraindicationText;
-  String get clarifyingText;
-  CodedValues get codedValues;
+  Obs? get observationCode => throw _privateConstructorUsedError;
+  String? get observationTitle => throw _privateConstructorUsedError;
+  String? get group => throw _privateConstructorUsedError;
+  String? get indicationText => throw _privateConstructorUsedError;
+  String? get contraindicationText => throw _privateConstructorUsedError;
+  String? get clarifyingText => throw _privateConstructorUsedError;
+  CodedValues? get codedValues => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $ObservationCopyWith<Observation> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ObservationCopyWith<Observation> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -211,15 +217,15 @@ abstract class $ObservationCopyWith<$Res> {
           Observation value, $Res Function(Observation) then) =
       _$ObservationCopyWithImpl<$Res>;
   $Res call(
-      {Obs observationCode,
-      String observationTitle,
-      String group,
-      String indicationText,
-      String contraindicationText,
-      String clarifyingText,
-      CodedValues codedValues});
+      {Obs? observationCode,
+      String? observationTitle,
+      String? group,
+      String? indicationText,
+      String? contraindicationText,
+      String? clarifyingText,
+      CodedValues? codedValues});
 
-  $CodedValuesCopyWith<$Res> get codedValues;
+  $CodedValuesCopyWith<$Res>? get codedValues;
 }
 
 /// @nodoc
@@ -232,43 +238,53 @@ class _$ObservationCopyWithImpl<$Res> implements $ObservationCopyWith<$Res> {
 
   @override
   $Res call({
-    Object observationCode = freezed,
-    Object observationTitle = freezed,
-    Object group = freezed,
-    Object indicationText = freezed,
-    Object contraindicationText = freezed,
-    Object clarifyingText = freezed,
-    Object codedValues = freezed,
+    Object? observationCode = freezed,
+    Object? observationTitle = freezed,
+    Object? group = freezed,
+    Object? indicationText = freezed,
+    Object? contraindicationText = freezed,
+    Object? clarifyingText = freezed,
+    Object? codedValues = freezed,
   }) {
     return _then(_value.copyWith(
       observationCode: observationCode == freezed
           ? _value.observationCode
-          : observationCode as Obs,
+          : observationCode // ignore: cast_nullable_to_non_nullable
+              as Obs?,
       observationTitle: observationTitle == freezed
           ? _value.observationTitle
-          : observationTitle as String,
-      group: group == freezed ? _value.group : group as String,
+          : observationTitle // ignore: cast_nullable_to_non_nullable
+              as String?,
+      group: group == freezed
+          ? _value.group
+          : group // ignore: cast_nullable_to_non_nullable
+              as String?,
       indicationText: indicationText == freezed
           ? _value.indicationText
-          : indicationText as String,
+          : indicationText // ignore: cast_nullable_to_non_nullable
+              as String?,
       contraindicationText: contraindicationText == freezed
           ? _value.contraindicationText
-          : contraindicationText as String,
+          : contraindicationText // ignore: cast_nullable_to_non_nullable
+              as String?,
       clarifyingText: clarifyingText == freezed
           ? _value.clarifyingText
-          : clarifyingText as String,
+          : clarifyingText // ignore: cast_nullable_to_non_nullable
+              as String?,
       codedValues: codedValues == freezed
           ? _value.codedValues
-          : codedValues as CodedValues,
+          : codedValues // ignore: cast_nullable_to_non_nullable
+              as CodedValues?,
     ));
   }
 
   @override
-  $CodedValuesCopyWith<$Res> get codedValues {
+  $CodedValuesCopyWith<$Res>? get codedValues {
     if (_value.codedValues == null) {
       return null;
     }
-    return $CodedValuesCopyWith<$Res>(_value.codedValues, (value) {
+
+    return $CodedValuesCopyWith<$Res>(_value.codedValues!, (value) {
       return _then(_value.copyWith(codedValues: value));
     });
   }
@@ -282,16 +298,16 @@ abstract class _$ObservationCopyWith<$Res>
       __$ObservationCopyWithImpl<$Res>;
   @override
   $Res call(
-      {Obs observationCode,
-      String observationTitle,
-      String group,
-      String indicationText,
-      String contraindicationText,
-      String clarifyingText,
-      CodedValues codedValues});
+      {Obs? observationCode,
+      String? observationTitle,
+      String? group,
+      String? indicationText,
+      String? contraindicationText,
+      String? clarifyingText,
+      CodedValues? codedValues});
 
   @override
-  $CodedValuesCopyWith<$Res> get codedValues;
+  $CodedValuesCopyWith<$Res>? get codedValues;
 }
 
 /// @nodoc
@@ -306,41 +322,49 @@ class __$ObservationCopyWithImpl<$Res> extends _$ObservationCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object observationCode = freezed,
-    Object observationTitle = freezed,
-    Object group = freezed,
-    Object indicationText = freezed,
-    Object contraindicationText = freezed,
-    Object clarifyingText = freezed,
-    Object codedValues = freezed,
+    Object? observationCode = freezed,
+    Object? observationTitle = freezed,
+    Object? group = freezed,
+    Object? indicationText = freezed,
+    Object? contraindicationText = freezed,
+    Object? clarifyingText = freezed,
+    Object? codedValues = freezed,
   }) {
     return _then(_Observation(
       observationCode: observationCode == freezed
           ? _value.observationCode
-          : observationCode as Obs,
+          : observationCode // ignore: cast_nullable_to_non_nullable
+              as Obs?,
       observationTitle: observationTitle == freezed
           ? _value.observationTitle
-          : observationTitle as String,
-      group: group == freezed ? _value.group : group as String,
+          : observationTitle // ignore: cast_nullable_to_non_nullable
+              as String?,
+      group: group == freezed
+          ? _value.group
+          : group // ignore: cast_nullable_to_non_nullable
+              as String?,
       indicationText: indicationText == freezed
           ? _value.indicationText
-          : indicationText as String,
+          : indicationText // ignore: cast_nullable_to_non_nullable
+              as String?,
       contraindicationText: contraindicationText == freezed
           ? _value.contraindicationText
-          : contraindicationText as String,
+          : contraindicationText // ignore: cast_nullable_to_non_nullable
+              as String?,
       clarifyingText: clarifyingText == freezed
           ? _value.clarifyingText
-          : clarifyingText as String,
+          : clarifyingText // ignore: cast_nullable_to_non_nullable
+              as String?,
       codedValues: codedValues == freezed
           ? _value.codedValues
-          : codedValues as CodedValues,
+          : codedValues // ignore: cast_nullable_to_non_nullable
+              as CodedValues?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Observation implements _Observation {
   _$_Observation(
       {this.observationCode,
@@ -355,19 +379,19 @@ class _$_Observation implements _Observation {
       _$_$_ObservationFromJson(json);
 
   @override
-  final Obs observationCode;
+  final Obs? observationCode;
   @override
-  final String observationTitle;
+  final String? observationTitle;
   @override
-  final String group;
+  final String? group;
   @override
-  final String indicationText;
+  final String? indicationText;
   @override
-  final String contraindicationText;
+  final String? contraindicationText;
   @override
-  final String clarifyingText;
+  final String? clarifyingText;
   @override
-  final CodedValues codedValues;
+  final CodedValues? codedValues;
 
   @override
   String toString() {
@@ -411,6 +435,7 @@ class _$_Observation implements _Observation {
       const DeepCollectionEquality().hash(clarifyingText) ^
       const DeepCollectionEquality().hash(codedValues);
 
+  @JsonKey(ignore: true)
   @override
   _$ObservationCopyWith<_Observation> get copyWith =>
       __$ObservationCopyWithImpl<_Observation>(this, _$identity);
@@ -423,33 +448,35 @@ class _$_Observation implements _Observation {
 
 abstract class _Observation implements Observation {
   factory _Observation(
-      {Obs observationCode,
-      String observationTitle,
-      String group,
-      String indicationText,
-      String contraindicationText,
-      String clarifyingText,
-      CodedValues codedValues}) = _$_Observation;
+      {Obs? observationCode,
+      String? observationTitle,
+      String? group,
+      String? indicationText,
+      String? contraindicationText,
+      String? clarifyingText,
+      CodedValues? codedValues}) = _$_Observation;
 
   factory _Observation.fromJson(Map<String, dynamic> json) =
       _$_Observation.fromJson;
 
   @override
-  Obs get observationCode;
+  Obs? get observationCode => throw _privateConstructorUsedError;
   @override
-  String get observationTitle;
+  String? get observationTitle => throw _privateConstructorUsedError;
   @override
-  String get group;
+  String? get group => throw _privateConstructorUsedError;
   @override
-  String get indicationText;
+  String? get indicationText => throw _privateConstructorUsedError;
   @override
-  String get contraindicationText;
+  String? get contraindicationText => throw _privateConstructorUsedError;
   @override
-  String get clarifyingText;
+  String? get clarifyingText => throw _privateConstructorUsedError;
   @override
-  CodedValues get codedValues;
+  CodedValues? get codedValues => throw _privateConstructorUsedError;
   @override
-  _$ObservationCopyWith<_Observation> get copyWith;
+  @JsonKey(ignore: true)
+  _$ObservationCopyWith<_Observation> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 CodedValues _$CodedValuesFromJson(Map<String, dynamic> json) {
@@ -460,29 +487,28 @@ CodedValues _$CodedValuesFromJson(Map<String, dynamic> json) {
 class _$CodedValuesTearOff {
   const _$CodedValuesTearOff();
 
-// ignore: unused_element
-  _CodedValues call({List<CodedValue> codedValue}) {
+  _CodedValues call({List<CodedValue>? codedValue}) {
     return _CodedValues(
       codedValue: codedValue,
     );
   }
 
-// ignore: unused_element
   CodedValues fromJson(Map<String, Object> json) {
     return CodedValues.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $CodedValues = _$CodedValuesTearOff();
 
 /// @nodoc
 mixin _$CodedValues {
-  List<CodedValue> get codedValue;
+  List<CodedValue>? get codedValue => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $CodedValuesCopyWith<CodedValues> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $CodedValuesCopyWith<CodedValues> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -490,7 +516,7 @@ abstract class $CodedValuesCopyWith<$Res> {
   factory $CodedValuesCopyWith(
           CodedValues value, $Res Function(CodedValues) then) =
       _$CodedValuesCopyWithImpl<$Res>;
-  $Res call({List<CodedValue> codedValue});
+  $Res call({List<CodedValue>? codedValue});
 }
 
 /// @nodoc
@@ -503,12 +529,13 @@ class _$CodedValuesCopyWithImpl<$Res> implements $CodedValuesCopyWith<$Res> {
 
   @override
   $Res call({
-    Object codedValue = freezed,
+    Object? codedValue = freezed,
   }) {
     return _then(_value.copyWith(
       codedValue: codedValue == freezed
           ? _value.codedValue
-          : codedValue as List<CodedValue>,
+          : codedValue // ignore: cast_nullable_to_non_nullable
+              as List<CodedValue>?,
     ));
   }
 }
@@ -520,7 +547,7 @@ abstract class _$CodedValuesCopyWith<$Res>
           _CodedValues value, $Res Function(_CodedValues) then) =
       __$CodedValuesCopyWithImpl<$Res>;
   @override
-  $Res call({List<CodedValue> codedValue});
+  $Res call({List<CodedValue>? codedValue});
 }
 
 /// @nodoc
@@ -535,19 +562,19 @@ class __$CodedValuesCopyWithImpl<$Res> extends _$CodedValuesCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object codedValue = freezed,
+    Object? codedValue = freezed,
   }) {
     return _then(_CodedValues(
       codedValue: codedValue == freezed
           ? _value.codedValue
-          : codedValue as List<CodedValue>,
+          : codedValue // ignore: cast_nullable_to_non_nullable
+              as List<CodedValue>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_CodedValues implements _CodedValues {
   _$_CodedValues({this.codedValue});
 
@@ -555,7 +582,7 @@ class _$_CodedValues implements _CodedValues {
       _$_$_CodedValuesFromJson(json);
 
   @override
-  final List<CodedValue> codedValue;
+  final List<CodedValue>? codedValue;
 
   @override
   String toString() {
@@ -575,6 +602,7 @@ class _$_CodedValues implements _CodedValues {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(codedValue);
 
+  @JsonKey(ignore: true)
   @override
   _$CodedValuesCopyWith<_CodedValues> get copyWith =>
       __$CodedValuesCopyWithImpl<_CodedValues>(this, _$identity);
@@ -586,15 +614,17 @@ class _$_CodedValues implements _CodedValues {
 }
 
 abstract class _CodedValues implements CodedValues {
-  factory _CodedValues({List<CodedValue> codedValue}) = _$_CodedValues;
+  factory _CodedValues({List<CodedValue>? codedValue}) = _$_CodedValues;
 
   factory _CodedValues.fromJson(Map<String, dynamic> json) =
       _$_CodedValues.fromJson;
 
   @override
-  List<CodedValue> get codedValue;
+  List<CodedValue>? get codedValue => throw _privateConstructorUsedError;
   @override
-  _$CodedValuesCopyWith<_CodedValues> get copyWith;
+  @JsonKey(ignore: true)
+  _$CodedValuesCopyWith<_CodedValues> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 CodedValue _$CodedValueFromJson(Map<String, dynamic> json) {
@@ -605,8 +635,7 @@ CodedValue _$CodedValueFromJson(Map<String, dynamic> json) {
 class _$CodedValueTearOff {
   const _$CodedValueTearOff();
 
-// ignore: unused_element
-  _CodedValue call({String code, String codeSystem, String text}) {
+  _CodedValue call({String? code, String? codeSystem, String? text}) {
     return _CodedValue(
       code: code,
       codeSystem: codeSystem,
@@ -614,24 +643,24 @@ class _$CodedValueTearOff {
     );
   }
 
-// ignore: unused_element
   CodedValue fromJson(Map<String, Object> json) {
     return CodedValue.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $CodedValue = _$CodedValueTearOff();
 
 /// @nodoc
 mixin _$CodedValue {
-  String get code;
-  String get codeSystem;
-  String get text;
+  String? get code => throw _privateConstructorUsedError;
+  String? get codeSystem => throw _privateConstructorUsedError;
+  String? get text => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $CodedValueCopyWith<CodedValue> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $CodedValueCopyWith<CodedValue> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -639,7 +668,7 @@ abstract class $CodedValueCopyWith<$Res> {
   factory $CodedValueCopyWith(
           CodedValue value, $Res Function(CodedValue) then) =
       _$CodedValueCopyWithImpl<$Res>;
-  $Res call({String code, String codeSystem, String text});
+  $Res call({String? code, String? codeSystem, String? text});
 }
 
 /// @nodoc
@@ -652,15 +681,23 @@ class _$CodedValueCopyWithImpl<$Res> implements $CodedValueCopyWith<$Res> {
 
   @override
   $Res call({
-    Object code = freezed,
-    Object codeSystem = freezed,
-    Object text = freezed,
+    Object? code = freezed,
+    Object? codeSystem = freezed,
+    Object? text = freezed,
   }) {
     return _then(_value.copyWith(
-      code: code == freezed ? _value.code : code as String,
-      codeSystem:
-          codeSystem == freezed ? _value.codeSystem : codeSystem as String,
-      text: text == freezed ? _value.text : text as String,
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String?,
+      codeSystem: codeSystem == freezed
+          ? _value.codeSystem
+          : codeSystem // ignore: cast_nullable_to_non_nullable
+              as String?,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -671,7 +708,7 @@ abstract class _$CodedValueCopyWith<$Res> implements $CodedValueCopyWith<$Res> {
           _CodedValue value, $Res Function(_CodedValue) then) =
       __$CodedValueCopyWithImpl<$Res>;
   @override
-  $Res call({String code, String codeSystem, String text});
+  $Res call({String? code, String? codeSystem, String? text});
 }
 
 /// @nodoc
@@ -686,22 +723,29 @@ class __$CodedValueCopyWithImpl<$Res> extends _$CodedValueCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object code = freezed,
-    Object codeSystem = freezed,
-    Object text = freezed,
+    Object? code = freezed,
+    Object? codeSystem = freezed,
+    Object? text = freezed,
   }) {
     return _then(_CodedValue(
-      code: code == freezed ? _value.code : code as String,
-      codeSystem:
-          codeSystem == freezed ? _value.codeSystem : codeSystem as String,
-      text: text == freezed ? _value.text : text as String,
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String?,
+      codeSystem: codeSystem == freezed
+          ? _value.codeSystem
+          : codeSystem // ignore: cast_nullable_to_non_nullable
+              as String?,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_CodedValue implements _CodedValue {
   _$_CodedValue({this.code, this.codeSystem, this.text});
 
@@ -709,11 +753,11 @@ class _$_CodedValue implements _CodedValue {
       _$_$_CodedValueFromJson(json);
 
   @override
-  final String code;
+  final String? code;
   @override
-  final String codeSystem;
+  final String? codeSystem;
   @override
-  final String text;
+  final String? text;
 
   @override
   String toString() {
@@ -740,6 +784,7 @@ class _$_CodedValue implements _CodedValue {
       const DeepCollectionEquality().hash(codeSystem) ^
       const DeepCollectionEquality().hash(text);
 
+  @JsonKey(ignore: true)
   @override
   _$CodedValueCopyWith<_CodedValue> get copyWith =>
       __$CodedValueCopyWithImpl<_CodedValue>(this, _$identity);
@@ -751,18 +796,20 @@ class _$_CodedValue implements _CodedValue {
 }
 
 abstract class _CodedValue implements CodedValue {
-  factory _CodedValue({String code, String codeSystem, String text}) =
+  factory _CodedValue({String? code, String? codeSystem, String? text}) =
       _$_CodedValue;
 
   factory _CodedValue.fromJson(Map<String, dynamic> json) =
       _$_CodedValue.fromJson;
 
   @override
-  String get code;
+  String? get code => throw _privateConstructorUsedError;
   @override
-  String get codeSystem;
+  String? get codeSystem => throw _privateConstructorUsedError;
   @override
-  String get text;
+  String? get text => throw _privateConstructorUsedError;
   @override
-  _$CodedValueCopyWith<_CodedValue> get copyWith;
+  @JsonKey(ignore: true)
+  _$CodedValueCopyWith<_CodedValue> get copyWith =>
+      throw _privateConstructorUsedError;
 }

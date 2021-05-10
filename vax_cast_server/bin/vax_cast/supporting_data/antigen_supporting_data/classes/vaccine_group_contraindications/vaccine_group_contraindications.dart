@@ -6,10 +6,9 @@ part 'vaccine_group_contraindications.freezed.dart';
 part 'vaccine_group_contraindications.g.dart';
 
 @freezed
-abstract class VaccineGroupContraindications
-    with _$VaccineGroupContraindications {
+class VaccineGroupContraindications with _$VaccineGroupContraindications {
   factory VaccineGroupContraindications({
-    List<GroupContraindication> contraindication,
+    List<GroupContraindication>? contraindication,
   }) = _VaccineGroupContraindications;
 
   factory VaccineGroupContraindications.fromJson(Map<String, dynamic> json) =>
@@ -17,14 +16,14 @@ abstract class VaccineGroupContraindications
 }
 
 @freezed
-abstract class GroupContraindication with _$GroupContraindication {
+class GroupContraindication with _$GroupContraindication {
   factory GroupContraindication({
-    Obs observationCode,
-    String observationTitle,
-    String contraindicationText,
-    String contraindicationGuidance,
-    String beginAge,
-    String endAge,
+    Obs? observationCode,
+    String? observationTitle,
+    String? contraindicationText,
+    String? contraindicationGuidance,
+    String? beginAge,
+    String? endAge,
   }) = _GroupContraindication;
 
   factory GroupContraindication.fromJson(Map<String, dynamic> json) =>

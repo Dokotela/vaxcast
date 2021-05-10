@@ -6,13 +6,13 @@ part 'schedule_supporting_data.freezed.dart';
 part 'schedule_supporting_data.g.dart';
 
 @freezed
-abstract class ScheduleSupportingData with _$ScheduleSupportingData {
+class ScheduleSupportingData with _$ScheduleSupportingData {
   factory ScheduleSupportingData({
-    LiveVirusConflicts liveVirusConflicts,
-    VaccineGroups vaccineGroups,
-    VaccineGroupToAntigenMap vaccineGroupToAntigenMap,
-    CvxToAntigenMap cvxToAntigenMap,
-    Observations observations,
+    LiveVirusConflicts? liveVirusConflicts,
+    VaccineGroups? vaccineGroups,
+    VaccineGroupToAntigenMap? vaccineGroupToAntigenMap,
+    CvxToAntigenMap? cvxToAntigenMap,
+    Observations? observations,
   }) = _ScheduleSupportingData;
 
   factory ScheduleSupportingData.fromJson(Map<String, dynamic> json) =>

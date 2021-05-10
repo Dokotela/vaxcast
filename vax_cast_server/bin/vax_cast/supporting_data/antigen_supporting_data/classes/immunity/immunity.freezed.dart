@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'immunity.dart';
 
@@ -8,6 +8,10 @@ part of 'immunity.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 Immunity _$ImmunityFromJson(Map<String, dynamic> json) {
   return _Immunity.fromJson(json);
 }
@@ -16,41 +20,41 @@ Immunity _$ImmunityFromJson(Map<String, dynamic> json) {
 class _$ImmunityTearOff {
   const _$ImmunityTearOff();
 
-// ignore: unused_element
   _Immunity call(
-      {List<ClinicalHistory> clinicalHistory, DateOfBirth dateOfBirth}) {
+      {List<ClinicalHistory>? clinicalHistory, DateOfBirth? dateOfBirth}) {
     return _Immunity(
       clinicalHistory: clinicalHistory,
       dateOfBirth: dateOfBirth,
     );
   }
 
-// ignore: unused_element
   Immunity fromJson(Map<String, Object> json) {
     return Immunity.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Immunity = _$ImmunityTearOff();
 
 /// @nodoc
 mixin _$Immunity {
-  List<ClinicalHistory> get clinicalHistory;
-  DateOfBirth get dateOfBirth;
+  List<ClinicalHistory>? get clinicalHistory =>
+      throw _privateConstructorUsedError;
+  DateOfBirth? get dateOfBirth => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $ImmunityCopyWith<Immunity> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $ImmunityCopyWith<Immunity> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ImmunityCopyWith<$Res> {
   factory $ImmunityCopyWith(Immunity value, $Res Function(Immunity) then) =
       _$ImmunityCopyWithImpl<$Res>;
-  $Res call({List<ClinicalHistory> clinicalHistory, DateOfBirth dateOfBirth});
+  $Res call({List<ClinicalHistory>? clinicalHistory, DateOfBirth? dateOfBirth});
 
-  $DateOfBirthCopyWith<$Res> get dateOfBirth;
+  $DateOfBirthCopyWith<$Res>? get dateOfBirth;
 }
 
 /// @nodoc
@@ -63,25 +67,28 @@ class _$ImmunityCopyWithImpl<$Res> implements $ImmunityCopyWith<$Res> {
 
   @override
   $Res call({
-    Object clinicalHistory = freezed,
-    Object dateOfBirth = freezed,
+    Object? clinicalHistory = freezed,
+    Object? dateOfBirth = freezed,
   }) {
     return _then(_value.copyWith(
       clinicalHistory: clinicalHistory == freezed
           ? _value.clinicalHistory
-          : clinicalHistory as List<ClinicalHistory>,
+          : clinicalHistory // ignore: cast_nullable_to_non_nullable
+              as List<ClinicalHistory>?,
       dateOfBirth: dateOfBirth == freezed
           ? _value.dateOfBirth
-          : dateOfBirth as DateOfBirth,
+          : dateOfBirth // ignore: cast_nullable_to_non_nullable
+              as DateOfBirth?,
     ));
   }
 
   @override
-  $DateOfBirthCopyWith<$Res> get dateOfBirth {
+  $DateOfBirthCopyWith<$Res>? get dateOfBirth {
     if (_value.dateOfBirth == null) {
       return null;
     }
-    return $DateOfBirthCopyWith<$Res>(_value.dateOfBirth, (value) {
+
+    return $DateOfBirthCopyWith<$Res>(_value.dateOfBirth!, (value) {
       return _then(_value.copyWith(dateOfBirth: value));
     });
   }
@@ -92,10 +99,10 @@ abstract class _$ImmunityCopyWith<$Res> implements $ImmunityCopyWith<$Res> {
   factory _$ImmunityCopyWith(_Immunity value, $Res Function(_Immunity) then) =
       __$ImmunityCopyWithImpl<$Res>;
   @override
-  $Res call({List<ClinicalHistory> clinicalHistory, DateOfBirth dateOfBirth});
+  $Res call({List<ClinicalHistory>? clinicalHistory, DateOfBirth? dateOfBirth});
 
   @override
-  $DateOfBirthCopyWith<$Res> get dateOfBirth;
+  $DateOfBirthCopyWith<$Res>? get dateOfBirth;
 }
 
 /// @nodoc
@@ -109,23 +116,24 @@ class __$ImmunityCopyWithImpl<$Res> extends _$ImmunityCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object clinicalHistory = freezed,
-    Object dateOfBirth = freezed,
+    Object? clinicalHistory = freezed,
+    Object? dateOfBirth = freezed,
   }) {
     return _then(_Immunity(
       clinicalHistory: clinicalHistory == freezed
           ? _value.clinicalHistory
-          : clinicalHistory as List<ClinicalHistory>,
+          : clinicalHistory // ignore: cast_nullable_to_non_nullable
+              as List<ClinicalHistory>?,
       dateOfBirth: dateOfBirth == freezed
           ? _value.dateOfBirth
-          : dateOfBirth as DateOfBirth,
+          : dateOfBirth // ignore: cast_nullable_to_non_nullable
+              as DateOfBirth?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_Immunity implements _Immunity {
   _$_Immunity({this.clinicalHistory, this.dateOfBirth});
 
@@ -133,9 +141,9 @@ class _$_Immunity implements _Immunity {
       _$_$_ImmunityFromJson(json);
 
   @override
-  final List<ClinicalHistory> clinicalHistory;
+  final List<ClinicalHistory>? clinicalHistory;
   @override
-  final DateOfBirth dateOfBirth;
+  final DateOfBirth? dateOfBirth;
 
   @override
   String toString() {
@@ -160,6 +168,7 @@ class _$_Immunity implements _Immunity {
       const DeepCollectionEquality().hash(clinicalHistory) ^
       const DeepCollectionEquality().hash(dateOfBirth);
 
+  @JsonKey(ignore: true)
   @override
   _$ImmunityCopyWith<_Immunity> get copyWith =>
       __$ImmunityCopyWithImpl<_Immunity>(this, _$identity);
@@ -172,15 +181,18 @@ class _$_Immunity implements _Immunity {
 
 abstract class _Immunity implements Immunity {
   factory _Immunity(
-      {List<ClinicalHistory> clinicalHistory,
-      DateOfBirth dateOfBirth}) = _$_Immunity;
+      {List<ClinicalHistory>? clinicalHistory,
+      DateOfBirth? dateOfBirth}) = _$_Immunity;
 
   factory _Immunity.fromJson(Map<String, dynamic> json) = _$_Immunity.fromJson;
 
   @override
-  List<ClinicalHistory> get clinicalHistory;
+  List<ClinicalHistory>? get clinicalHistory =>
+      throw _privateConstructorUsedError;
   @override
-  DateOfBirth get dateOfBirth;
+  DateOfBirth? get dateOfBirth => throw _privateConstructorUsedError;
   @override
-  _$ImmunityCopyWith<_Immunity> get copyWith;
+  @JsonKey(ignore: true)
+  _$ImmunityCopyWith<_Immunity> get copyWith =>
+      throw _privateConstructorUsedError;
 }

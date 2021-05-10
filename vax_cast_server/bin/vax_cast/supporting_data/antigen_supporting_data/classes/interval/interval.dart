@@ -6,19 +6,19 @@ part 'interval.freezed.dart';
 part 'interval.g.dart';
 
 @freezed
-abstract class Interval with _$Interval {
+class Interval with _$Interval {
   factory Interval({
-    FromPrevious fromPrevious,
-    FromTarget fromTargetDose,
-    String fromMostRecent,
-    ObservationCode fromRelevantObs,
-    String absMinInt,
-    String minInt,
-    String earliestRecInt,
-    String latestRecInt,
-    String intervalPriority,
-    String effectiveDate,
-    String cessationDate,
+    FromPrevious? fromPrevious,
+    FromTarget? fromTargetDose,
+    String? fromMostRecent,
+    ObservationCode? fromRelevantObs,
+    String? absMinInt,
+    String? minInt,
+    String? earliestRecInt,
+    String? latestRecInt,
+    String? intervalPriority,
+    String? effectiveDate,
+    String? cessationDate,
   }) = _Interval;
 
   factory Interval.fromJson(Map<String, dynamic> json) =>

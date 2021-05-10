@@ -5,10 +5,10 @@ part 'clinical_history.freezed.dart';
 part 'clinical_history.g.dart';
 
 @freezed
-abstract class ClinicalHistory with _$ClinicalHistory {
+class ClinicalHistory with _$ClinicalHistory {
   factory ClinicalHistory({
-    Obs guidelineCode,
-    String guidelineTitle,
+    Obs? guidelineCode,
+    String? guidelineTitle,
   }) = _ClinicalHistory;
 
   factory ClinicalHistory.fromJson(Map<String, dynamic> json) =>

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'vax_set.dart';
 
@@ -8,6 +8,10 @@ part of 'vax_set.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 VaxSet _$VaxSetFromJson(Map<String, dynamic> json) {
   return _VaxSet.fromJson(json);
 }
@@ -16,14 +20,13 @@ VaxSet _$VaxSetFromJson(Map<String, dynamic> json) {
 class _$VaxSetTearOff {
   const _$VaxSetTearOff();
 
-// ignore: unused_element
   _VaxSet call(
-      {String setID,
-      String setDescription,
-      String effectiveDate,
-      String cessationDate,
-      String conditionLogic,
-      List<Condition> condition}) {
+      {String? setID,
+      String? setDescription,
+      String? effectiveDate,
+      String? cessationDate,
+      String? conditionLogic,
+      List<Condition>? condition}) {
     return _VaxSet(
       setID: setID,
       setDescription: setDescription,
@@ -34,27 +37,26 @@ class _$VaxSetTearOff {
     );
   }
 
-// ignore: unused_element
   VaxSet fromJson(Map<String, Object> json) {
     return VaxSet.fromJson(json);
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $VaxSet = _$VaxSetTearOff();
 
 /// @nodoc
 mixin _$VaxSet {
-  String get setID;
-  String get setDescription;
-  String get effectiveDate;
-  String get cessationDate;
-  String get conditionLogic;
-  List<Condition> get condition;
+  String? get setID => throw _privateConstructorUsedError;
+  String? get setDescription => throw _privateConstructorUsedError;
+  String? get effectiveDate => throw _privateConstructorUsedError;
+  String? get cessationDate => throw _privateConstructorUsedError;
+  String? get conditionLogic => throw _privateConstructorUsedError;
+  List<Condition>? get condition => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson();
-  $VaxSetCopyWith<VaxSet> get copyWith;
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $VaxSetCopyWith<VaxSet> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -62,12 +64,12 @@ abstract class $VaxSetCopyWith<$Res> {
   factory $VaxSetCopyWith(VaxSet value, $Res Function(VaxSet) then) =
       _$VaxSetCopyWithImpl<$Res>;
   $Res call(
-      {String setID,
-      String setDescription,
-      String effectiveDate,
-      String cessationDate,
-      String conditionLogic,
-      List<Condition> condition});
+      {String? setID,
+      String? setDescription,
+      String? effectiveDate,
+      String? cessationDate,
+      String? conditionLogic,
+      List<Condition>? condition});
 }
 
 /// @nodoc
@@ -80,30 +82,38 @@ class _$VaxSetCopyWithImpl<$Res> implements $VaxSetCopyWith<$Res> {
 
   @override
   $Res call({
-    Object setID = freezed,
-    Object setDescription = freezed,
-    Object effectiveDate = freezed,
-    Object cessationDate = freezed,
-    Object conditionLogic = freezed,
-    Object condition = freezed,
+    Object? setID = freezed,
+    Object? setDescription = freezed,
+    Object? effectiveDate = freezed,
+    Object? cessationDate = freezed,
+    Object? conditionLogic = freezed,
+    Object? condition = freezed,
   }) {
     return _then(_value.copyWith(
-      setID: setID == freezed ? _value.setID : setID as String,
+      setID: setID == freezed
+          ? _value.setID
+          : setID // ignore: cast_nullable_to_non_nullable
+              as String?,
       setDescription: setDescription == freezed
           ? _value.setDescription
-          : setDescription as String,
+          : setDescription // ignore: cast_nullable_to_non_nullable
+              as String?,
       effectiveDate: effectiveDate == freezed
           ? _value.effectiveDate
-          : effectiveDate as String,
+          : effectiveDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       cessationDate: cessationDate == freezed
           ? _value.cessationDate
-          : cessationDate as String,
+          : cessationDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       conditionLogic: conditionLogic == freezed
           ? _value.conditionLogic
-          : conditionLogic as String,
+          : conditionLogic // ignore: cast_nullable_to_non_nullable
+              as String?,
       condition: condition == freezed
           ? _value.condition
-          : condition as List<Condition>,
+          : condition // ignore: cast_nullable_to_non_nullable
+              as List<Condition>?,
     ));
   }
 }
@@ -114,12 +124,12 @@ abstract class _$VaxSetCopyWith<$Res> implements $VaxSetCopyWith<$Res> {
       __$VaxSetCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String setID,
-      String setDescription,
-      String effectiveDate,
-      String cessationDate,
-      String conditionLogic,
-      List<Condition> condition});
+      {String? setID,
+      String? setDescription,
+      String? effectiveDate,
+      String? cessationDate,
+      String? conditionLogic,
+      List<Condition>? condition});
 }
 
 /// @nodoc
@@ -133,37 +143,44 @@ class __$VaxSetCopyWithImpl<$Res> extends _$VaxSetCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object setID = freezed,
-    Object setDescription = freezed,
-    Object effectiveDate = freezed,
-    Object cessationDate = freezed,
-    Object conditionLogic = freezed,
-    Object condition = freezed,
+    Object? setID = freezed,
+    Object? setDescription = freezed,
+    Object? effectiveDate = freezed,
+    Object? cessationDate = freezed,
+    Object? conditionLogic = freezed,
+    Object? condition = freezed,
   }) {
     return _then(_VaxSet(
-      setID: setID == freezed ? _value.setID : setID as String,
+      setID: setID == freezed
+          ? _value.setID
+          : setID // ignore: cast_nullable_to_non_nullable
+              as String?,
       setDescription: setDescription == freezed
           ? _value.setDescription
-          : setDescription as String,
+          : setDescription // ignore: cast_nullable_to_non_nullable
+              as String?,
       effectiveDate: effectiveDate == freezed
           ? _value.effectiveDate
-          : effectiveDate as String,
+          : effectiveDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       cessationDate: cessationDate == freezed
           ? _value.cessationDate
-          : cessationDate as String,
+          : cessationDate // ignore: cast_nullable_to_non_nullable
+              as String?,
       conditionLogic: conditionLogic == freezed
           ? _value.conditionLogic
-          : conditionLogic as String,
+          : conditionLogic // ignore: cast_nullable_to_non_nullable
+              as String?,
       condition: condition == freezed
           ? _value.condition
-          : condition as List<Condition>,
+          : condition // ignore: cast_nullable_to_non_nullable
+              as List<Condition>?,
     ));
   }
 }
 
-@JsonSerializable()
-
 /// @nodoc
+@JsonSerializable()
 class _$_VaxSet implements _VaxSet {
   _$_VaxSet(
       {this.setID,
@@ -177,17 +194,17 @@ class _$_VaxSet implements _VaxSet {
       _$_$_VaxSetFromJson(json);
 
   @override
-  final String setID;
+  final String? setID;
   @override
-  final String setDescription;
+  final String? setDescription;
   @override
-  final String effectiveDate;
+  final String? effectiveDate;
   @override
-  final String cessationDate;
+  final String? cessationDate;
   @override
-  final String conditionLogic;
+  final String? conditionLogic;
   @override
-  final List<Condition> condition;
+  final List<Condition>? condition;
 
   @override
   String toString() {
@@ -227,6 +244,7 @@ class _$_VaxSet implements _VaxSet {
       const DeepCollectionEquality().hash(conditionLogic) ^
       const DeepCollectionEquality().hash(condition);
 
+  @JsonKey(ignore: true)
   @override
   _$VaxSetCopyWith<_VaxSet> get copyWith =>
       __$VaxSetCopyWithImpl<_VaxSet>(this, _$identity);
@@ -239,27 +257,28 @@ class _$_VaxSet implements _VaxSet {
 
 abstract class _VaxSet implements VaxSet {
   factory _VaxSet(
-      {String setID,
-      String setDescription,
-      String effectiveDate,
-      String cessationDate,
-      String conditionLogic,
-      List<Condition> condition}) = _$_VaxSet;
+      {String? setID,
+      String? setDescription,
+      String? effectiveDate,
+      String? cessationDate,
+      String? conditionLogic,
+      List<Condition>? condition}) = _$_VaxSet;
 
   factory _VaxSet.fromJson(Map<String, dynamic> json) = _$_VaxSet.fromJson;
 
   @override
-  String get setID;
+  String? get setID => throw _privateConstructorUsedError;
   @override
-  String get setDescription;
+  String? get setDescription => throw _privateConstructorUsedError;
   @override
-  String get effectiveDate;
+  String? get effectiveDate => throw _privateConstructorUsedError;
   @override
-  String get cessationDate;
+  String? get cessationDate => throw _privateConstructorUsedError;
   @override
-  String get conditionLogic;
+  String? get conditionLogic => throw _privateConstructorUsedError;
   @override
-  List<Condition> get condition;
+  List<Condition>? get condition => throw _privateConstructorUsedError;
   @override
-  _$VaxSetCopyWith<_VaxSet> get copyWith;
+  @JsonKey(ignore: true)
+  _$VaxSetCopyWith<_VaxSet> get copyWith => throw _privateConstructorUsedError;
 }
