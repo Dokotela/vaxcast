@@ -8,20 +8,20 @@ part of 'condition.dart';
 
 _$_Condition _$_$_ConditionFromJson(Map<String, dynamic> json) {
   return _$_Condition(
-    conditionID: json['conditionID'] as String,
+    conditionID: json['conditionID'] as String?,
     conditionType:
         _$enumDecodeNullable(_$ConditionTypeEnumMap, json['conditionType']),
-    startDate: json['startDate'] as String,
-    endDate: json['endDate'] as String,
-    beginAge: json['beginAge'] as String,
-    endAge: json['endAge'] as String,
-    interval: json['interval'] as String,
-    doseCount: json['doseCount'] as String,
+    startDate: json['startDate'] as String?,
+    endDate: json['endDate'] as String?,
+    beginAge: json['beginAge'] as String?,
+    endAge: json['endAge'] as String?,
+    interval: json['interval'] as String?,
+    doseCount: json['doseCount'] as String?,
     doseType: _$enumDecodeNullable(_$DoseTypeEnumMap, json['doseType']),
     doseCountLogic:
         _$enumDecodeNullable(_$DoseCountLogicEnumMap, json['doseCountLogic']),
-    vaccineTypes: json['vaccineTypes'] as String,
-    seriesGroups: json['seriesGroups'] as String,
+    vaccineTypes: json['vaccineTypes'] as String?,
+    seriesGroups: json['seriesGroups'] as String?,
   );
 }
 
@@ -41,36 +41,41 @@ Map<String, dynamic> _$_$_ConditionToJson(_$_Condition instance) =>
       'seriesGroups': instance.seriesGroups,
     };
 
-T _$enumDecode<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
+K _$enumDecode<K, V>(
+  Map<K, V> enumValues,
+  Object? source, {
+  K? unknownValue,
 }) {
   if (source == null) {
-    throw ArgumentError('A value must be provided. Supported values: '
-        '${enumValues.values.join(', ')}');
+    throw ArgumentError(
+      'A value must be provided. Supported values: '
+      '${enumValues.values.join(', ')}',
+    );
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
-
-  if (value == null && unknownValue == null) {
-    throw ArgumentError('`$source` is not one of the supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-  return value ?? unknownValue;
+  return enumValues.entries.singleWhere(
+    (e) => e.value == source,
+    orElse: () {
+      if (unknownValue == null) {
+        throw ArgumentError(
+          '`$source` is not one of the supported values: '
+          '${enumValues.values.join(', ')}',
+        );
+      }
+      return MapEntry(unknownValue, enumValues.values.first);
+    },
+  ).key;
 }
 
-T _$enumDecodeNullable<T>(
-  Map<T, dynamic> enumValues,
+K? _$enumDecodeNullable<K, V>(
+  Map<K, V> enumValues,
   dynamic source, {
-  T unknownValue,
+  K? unknownValue,
 }) {
   if (source == null) {
     return null;
   }
-  return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
+  return _$enumDecode<K, V>(enumValues, source, unknownValue: unknownValue);
 }
 
 const _$ConditionTypeEnumMap = {

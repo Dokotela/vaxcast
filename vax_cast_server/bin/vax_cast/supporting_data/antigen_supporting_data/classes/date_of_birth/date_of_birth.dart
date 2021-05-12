@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../vax_cast.dart';
+import '../exclusion/exclusion.dart';
 
 part 'date_of_birth.freezed.dart';
 part 'date_of_birth.g.dart';

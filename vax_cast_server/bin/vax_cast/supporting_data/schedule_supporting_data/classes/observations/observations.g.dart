@@ -8,10 +8,9 @@ part of 'observations.dart';
 
 _$_Observations _$_$_ObservationsFromJson(Map<String, dynamic> json) {
   return _$_Observations(
-    observation: (json['observation'] as List)
-        ?.map((e) =>
-            e == null ? null : Observation.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    observation: (json['observation'] as List<dynamic>?)
+        ?.map((e) => Observation.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 
@@ -24,11 +23,11 @@ _$_Observation _$_$_ObservationFromJson(Map<String, dynamic> json) {
   return _$_Observation(
     observationCode:
         _$enumDecodeNullable(_$ObsEnumMap, json['observationCode']),
-    observationTitle: json['observationTitle'] as String,
-    group: json['group'] as String,
-    indicationText: json['indicationText'] as String,
-    contraindicationText: json['contraindicationText'] as String,
-    clarifyingText: json['clarifyingText'] as String,
+    observationTitle: json['observationTitle'] as String?,
+    group: json['group'] as String?,
+    indicationText: json['indicationText'] as String?,
+    contraindicationText: json['contraindicationText'] as String?,
+    clarifyingText: json['clarifyingText'] as String?,
     codedValues: json['codedValues'] == null
         ? null
         : CodedValues.fromJson(json['codedValues'] as Map<String, dynamic>),
@@ -46,36 +45,41 @@ Map<String, dynamic> _$_$_ObservationToJson(_$_Observation instance) =>
       'codedValues': instance.codedValues,
     };
 
-T _$enumDecode<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
+K _$enumDecode<K, V>(
+  Map<K, V> enumValues,
+  Object? source, {
+  K? unknownValue,
 }) {
   if (source == null) {
-    throw ArgumentError('A value must be provided. Supported values: '
-        '${enumValues.values.join(', ')}');
+    throw ArgumentError(
+      'A value must be provided. Supported values: '
+      '${enumValues.values.join(', ')}',
+    );
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
-
-  if (value == null && unknownValue == null) {
-    throw ArgumentError('`$source` is not one of the supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-  return value ?? unknownValue;
+  return enumValues.entries.singleWhere(
+    (e) => e.value == source,
+    orElse: () {
+      if (unknownValue == null) {
+        throw ArgumentError(
+          '`$source` is not one of the supported values: '
+          '${enumValues.values.join(', ')}',
+        );
+      }
+      return MapEntry(unknownValue, enumValues.values.first);
+    },
+  ).key;
 }
 
-T _$enumDecodeNullable<T>(
-  Map<T, dynamic> enumValues,
+K? _$enumDecodeNullable<K, V>(
+  Map<K, V> enumValues,
   dynamic source, {
-  T unknownValue,
+  K? unknownValue,
 }) {
   if (source == null) {
     return null;
   }
-  return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
+  return _$enumDecode<K, V>(enumValues, source, unknownValue: unknownValue);
 }
 
 const _$ObsEnumMap = {
@@ -253,10 +257,9 @@ const _$ObsEnumMap = {
 
 _$_CodedValues _$_$_CodedValuesFromJson(Map<String, dynamic> json) {
   return _$_CodedValues(
-    codedValue: (json['codedValue'] as List)
-        ?.map((e) =>
-            e == null ? null : CodedValue.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    codedValue: (json['codedValue'] as List<dynamic>?)
+        ?.map((e) => CodedValue.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 
@@ -267,9 +270,9 @@ Map<String, dynamic> _$_$_CodedValuesToJson(_$_CodedValues instance) =>
 
 _$_CodedValue _$_$_CodedValueFromJson(Map<String, dynamic> json) {
   return _$_CodedValue(
-    code: json['code'] as String,
-    codeSystem: json['codeSystem'] as String,
-    text: json['text'] as String,
+    code: json['code'] as String?,
+    codeSystem: json['codeSystem'] as String?,
+    text: json['text'] as String?,
   );
 }
 

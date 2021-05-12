@@ -1,14 +1,16 @@
 part of 'vax_patient.dart';
 
 VaxPatient _$VaxPatientFromR4({
-  r4.Patient patient,
-  List<r4.Immunization> immunizations,
-  List<r4.Condition> conditions,
-  List<r4.AllergyIntolerance> allergies,
-  String assessmentDate,
+  required r4.Patient patient,
+  List<r4.Immunization>? immunizations,
+  List<r4.Condition>? conditions,
+  List<r4.AllergyIntolerance>? allergies,
+  String? assessmentDate,
 }) {
-  Tuple2<List<Dose>, List<Dose>> pastDoses = getPastR4Doses(immunizations);
-  VaxDate assessDate = VaxDate.fromString(assessmentDate);
+  Tuple2<List<Dose>?, List<Dose>?> pastDoses = immunizations == null
+      ? Tuple2(null, null)
+      : getPastR4Doses(immunizations);
+  VaxDate assessDate = VaxDate.fromString(assessmentDate ?? '');
   assessDate = assessDate.year == 2999 ? VaxDate.now() : assessDate;
   return VaxPatient(
     dob: VaxDate.fromString(patient.birthDate.toString()),

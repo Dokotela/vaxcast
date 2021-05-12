@@ -8,10 +8,9 @@ part of 'cvx_to_antigen_map.dart';
 
 _$_CvxToAntigenMap _$_$_CvxToAntigenMapFromJson(Map<String, dynamic> json) {
   return _$_CvxToAntigenMap(
-    cvxMap: (json['cvxMap'] as List)
-        ?.map((e) =>
-            e == null ? null : CvxMap.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    cvxMap: (json['cvxMap'] as List<dynamic>?)
+        ?.map((e) => CvxMap.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 
@@ -23,11 +22,10 @@ Map<String, dynamic> _$_$_CvxToAntigenMapToJson(_$_CvxToAntigenMap instance) =>
 _$_CvxMap _$_$_CvxMapFromJson(Map<String, dynamic> json) {
   return _$_CvxMap(
     cvx: _$enumDecodeNullable(_$CvxEnumMap, json['cvx']),
-    shortDescription: json['shortDescription'] as String,
-    association: (json['association'] as List)
-        ?.map((e) =>
-            e == null ? null : Association.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    shortDescription: json['shortDescription'] as String?,
+    association: (json['association'] as List<dynamic>?)
+        ?.map((e) => Association.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 
@@ -37,36 +35,41 @@ Map<String, dynamic> _$_$_CvxMapToJson(_$_CvxMap instance) => <String, dynamic>{
       'association': instance.association,
     };
 
-T _$enumDecode<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
+K _$enumDecode<K, V>(
+  Map<K, V> enumValues,
+  Object? source, {
+  K? unknownValue,
 }) {
   if (source == null) {
-    throw ArgumentError('A value must be provided. Supported values: '
-        '${enumValues.values.join(', ')}');
+    throw ArgumentError(
+      'A value must be provided. Supported values: '
+      '${enumValues.values.join(', ')}',
+    );
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
-
-  if (value == null && unknownValue == null) {
-    throw ArgumentError('`$source` is not one of the supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-  return value ?? unknownValue;
+  return enumValues.entries.singleWhere(
+    (e) => e.value == source,
+    orElse: () {
+      if (unknownValue == null) {
+        throw ArgumentError(
+          '`$source` is not one of the supported values: '
+          '${enumValues.values.join(', ')}',
+        );
+      }
+      return MapEntry(unknownValue, enumValues.values.first);
+    },
+  ).key;
 }
 
-T _$enumDecodeNullable<T>(
-  Map<T, dynamic> enumValues,
+K? _$enumDecodeNullable<K, V>(
+  Map<K, V> enumValues,
   dynamic source, {
-  T unknownValue,
+  K? unknownValue,
 }) {
   if (source == null) {
     return null;
   }
-  return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
+  return _$enumDecode<K, V>(enumValues, source, unknownValue: unknownValue);
 }
 
 const _$CvxEnumMap = {
@@ -210,8 +213,8 @@ const _$CvxEnumMap = {
 _$_Association _$_$_AssociationFromJson(Map<String, dynamic> json) {
   return _$_Association(
     antigen: _$enumDecodeNullable(_$TargetDiseaseEnumMap, json['antigen']),
-    associationBeginAge: json['associationBeginAge'] as String,
-    associationEndAge: json['associationEndAge'] as String,
+    associationBeginAge: json['associationBeginAge'] as String?,
+    associationEndAge: json['associationEndAge'] as String?,
   );
 }
 

@@ -6,14 +6,14 @@ part 'vax_patient_from_r4.dart';
 part 'string_to_cvx.dart';
 
 class VaxPatient {
-  VaxDate dob;
-  Gender sex;
-  String id;
-  List<Obs> conditions;
-  VaxDate assessmentDate;
-  List<Dose> liveVirusList;
-  List<Dose> pastImmunizations;
-  String seriesGroup;
+  VaxDate? dob;
+  Gender? sex;
+  String? id;
+  List<Obs>? conditions;
+  VaxDate? assessmentDate;
+  List<Dose>? liveVirusList;
+  List<Dose>? pastImmunizations;
+  String? seriesGroup;
 
   VaxPatient({
     this.dob,
@@ -49,7 +49,7 @@ Gender getGender(r4.PatientGender gender) => gender == r4.PatientGender.female
         : Gender.unknown;
 
 int liveIndex(Cvx cvx) =>
-    SupportingData.scheduleSupportingData.liveVirusConflicts.liveVirusConflict
+    SupportingData.scheduleSupportingData?.liveVirusConflicts?.liveVirusConflict?
         .indexWhere((liveCvx) => liveCvx.previous.cvx == cvx);
 
 List<TargetDisease> listAgForCvx(Cvx cvx) {

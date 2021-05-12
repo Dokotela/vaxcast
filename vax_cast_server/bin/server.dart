@@ -150,12 +150,12 @@ Future<void> stu3VaxCast(HttpRequest request) async {
 Future<void> r4VaxCast(HttpRequest request) async {
   final parameterMap = await utf8.decoder.bind(request).join();
   r4.Parameters input = r4.Parameters.fromJson(jsonDecode(parameterMap));
-  r4.Patient newPatient = input.parameter[1].resource;
-  String assessmentDate = input.parameter[0].valueDate.toString();
+  r4.Patient newPatient = input.parameter![1].resource! as r4.Patient;
+  String assessmentDate = input.parameter![0].valueDate.toString();
   List<r4.Immunization> newImmunizations = [];
-  input.parameter.forEach((parameter) {
-    if (parameter?.resource?.resourceType == r4.R4ResourceType.Immunization) {
-      newImmunizations.add(parameter.resource);
+  input.parameter?.forEach((parameter) {
+    if (parameter.resource?.resourceType == r4.R4ResourceType.Immunization) {
+      newImmunizations.add(parameter.resource! as r4.Immunization);
     }
   });
   r4.Parameters forecast =

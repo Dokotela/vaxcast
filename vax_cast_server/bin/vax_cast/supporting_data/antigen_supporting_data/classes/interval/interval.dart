@@ -1,6 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../vax_cast.dart';
+import '../../../supporting_data_enums/from_previous_enum.dart';
+import '../../../supporting_data_enums/from_target_enum.dart';
+import '../observation_code/observation_code.dart';
 
 part 'interval.freezed.dart';
 part 'interval.g.dart';

@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../vax_cast.dart';
+import '../../../supporting_data_enums/skip_context_enum.dart';
+import '../vax_set/vax_set.dart';
 
 part 'conditional_skip.freezed.dart';
 part 'conditional_skip.g.dart';

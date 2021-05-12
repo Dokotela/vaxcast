@@ -8,15 +8,14 @@ part of 'vax_set.dart';
 
 _$_VaxSet _$_$_VaxSetFromJson(Map<String, dynamic> json) {
   return _$_VaxSet(
-    setID: json['setID'] as String,
-    setDescription: json['setDescription'] as String,
-    effectiveDate: json['effectiveDate'] as String,
-    cessationDate: json['cessationDate'] as String,
-    conditionLogic: json['conditionLogic'] as String,
-    condition: (json['condition'] as List)
-        ?.map((e) =>
-            e == null ? null : Condition.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    setID: json['setID'] as String?,
+    setDescription: json['setDescription'] as String?,
+    effectiveDate: json['effectiveDate'] as String?,
+    cessationDate: json['cessationDate'] as String?,
+    conditionLogic: json['conditionLogic'] as String?,
+    condition: (json['condition'] as List<dynamic>?)
+        ?.map((e) => Condition.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 

@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../../../../vax_cast.dart';
+
+import '../../../supporting_data_enums/obs_code_enum.dart';
 
 part 'observation_code.freezed.dart';
 part 'observation_code.g.dart';

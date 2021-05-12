@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../vax_cast.dart';
+import '../../../supporting_data_enums/cvx_enum.dart';
 
 part 'vaccine.freezed.dart';
 part 'vaccine.g.dart';

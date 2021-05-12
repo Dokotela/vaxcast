@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../vax_cast.dart';
+import '../condition/condition.dart';
 
 part 'vax_set.freezed.dart';
 part 'vax_set.g.dart';

@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../vax_cast.dart';
+import '../clinical_history/clinical_history.dart';
+import '../date_of_birth/date_of_birth.dart';
 
 part 'immunity.freezed.dart';
 part 'immunity.g.dart';

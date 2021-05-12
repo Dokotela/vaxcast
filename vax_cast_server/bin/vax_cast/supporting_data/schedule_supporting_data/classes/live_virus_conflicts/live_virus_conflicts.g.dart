@@ -9,11 +9,9 @@ part of 'live_virus_conflicts.dart';
 _$_LiveVirusConflicts _$_$_LiveVirusConflictsFromJson(
     Map<String, dynamic> json) {
   return _$_LiveVirusConflicts(
-    liveVirusConflict: (json['liveVirusConflict'] as List)
-        ?.map((e) => e == null
-            ? null
-            : LiveVirusConflict.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    liveVirusConflict: (json['liveVirusConflict'] as List<dynamic>?)
+        ?.map((e) => LiveVirusConflict.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 
@@ -31,9 +29,9 @@ _$_LiveVirusConflict _$_$_LiveVirusConflictFromJson(Map<String, dynamic> json) {
     current: json['current'] == null
         ? null
         : Vaccine.fromJson(json['current'] as Map<String, dynamic>),
-    conflictBeginInterval: json['conflictBeginInterval'] as String,
-    minConflictEndInterval: json['minConflictEndInterval'] as String,
-    conflictEndInterval: json['conflictEndInterval'] as String,
+    conflictBeginInterval: json['conflictBeginInterval'] as String?,
+    minConflictEndInterval: json['minConflictEndInterval'] as String?,
+    conflictEndInterval: json['conflictEndInterval'] as String?,
   );
 }
 

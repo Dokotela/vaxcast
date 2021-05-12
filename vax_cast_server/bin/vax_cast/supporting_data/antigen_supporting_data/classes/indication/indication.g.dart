@@ -12,10 +12,10 @@ _$_Indication _$_$_IndicationFromJson(Map<String, dynamic> json) {
         ? null
         : ObservationCode.fromJson(
             json['observationCode'] as Map<String, dynamic>),
-    description: json['description'] as String,
-    beginAge: json['beginAge'] as String,
-    endAge: json['endAge'] as String,
-    guidance: json['guidance'] as String,
+    description: json['description'] as String?,
+    beginAge: json['beginAge'] as String?,
+    endAge: json['endAge'] as String?,
+    guidance: json['guidance'] as String?,
   );
 }
 

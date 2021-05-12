@@ -28,7 +28,7 @@ final dstu2CapabilityStatement = Conformance(
     ConformanceRest(
       mode: RestMode.server,
       documentation: 'Immunization Forecast',
-      resource: null,
+      resource: [],
       operation: [
         ConformanceRestOperation(
           name: 'ImmDSForecast',

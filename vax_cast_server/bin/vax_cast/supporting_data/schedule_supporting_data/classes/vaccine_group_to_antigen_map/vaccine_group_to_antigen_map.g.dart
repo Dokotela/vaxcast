@@ -9,11 +9,9 @@ part of 'vaccine_group_to_antigen_map.dart';
 _$_VaccineGroupToAntigenMap _$_$_VaccineGroupToAntigenMapFromJson(
     Map<String, dynamic> json) {
   return _$_VaccineGroupToAntigenMap(
-    vaccineGroupMap: (json['vaccineGroupMap'] as List)
-        ?.map((e) => e == null
-            ? null
-            : VaccineGroupMap.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    vaccineGroupMap: (json['vaccineGroupMap'] as List<dynamic>?)
+        ?.map((e) => VaccineGroupMap.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 
@@ -26,9 +24,9 @@ Map<String, dynamic> _$_$_VaccineGroupToAntigenMapToJson(
 _$_VaccineGroupMap _$_$_VaccineGroupMapFromJson(Map<String, dynamic> json) {
   return _$_VaccineGroupMap(
     name: _$enumDecodeNullable(_$VaccineGroupNameEnumMap, json['name']),
-    antigen: (json['antigen'] as List)
-        ?.map((e) => _$enumDecodeNullable(_$TargetDiseaseEnumMap, e))
-        ?.toList(),
+    antigen: (json['antigen'] as List<dynamic>?)
+        ?.map((e) => _$enumDecode(_$TargetDiseaseEnumMap, e))
+        .toList(),
   );
 }
 
@@ -36,39 +34,44 @@ Map<String, dynamic> _$_$_VaccineGroupMapToJson(_$_VaccineGroupMap instance) =>
     <String, dynamic>{
       'name': _$VaccineGroupNameEnumMap[instance.name],
       'antigen':
-          instance.antigen?.map((e) => _$TargetDiseaseEnumMap[e])?.toList(),
+          instance.antigen?.map((e) => _$TargetDiseaseEnumMap[e]).toList(),
     };
 
-T _$enumDecode<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
+K _$enumDecode<K, V>(
+  Map<K, V> enumValues,
+  Object? source, {
+  K? unknownValue,
 }) {
   if (source == null) {
-    throw ArgumentError('A value must be provided. Supported values: '
-        '${enumValues.values.join(', ')}');
+    throw ArgumentError(
+      'A value must be provided. Supported values: '
+      '${enumValues.values.join(', ')}',
+    );
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
-
-  if (value == null && unknownValue == null) {
-    throw ArgumentError('`$source` is not one of the supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-  return value ?? unknownValue;
+  return enumValues.entries.singleWhere(
+    (e) => e.value == source,
+    orElse: () {
+      if (unknownValue == null) {
+        throw ArgumentError(
+          '`$source` is not one of the supported values: '
+          '${enumValues.values.join(', ')}',
+        );
+      }
+      return MapEntry(unknownValue, enumValues.values.first);
+    },
+  ).key;
 }
 
-T _$enumDecodeNullable<T>(
-  Map<T, dynamic> enumValues,
+K? _$enumDecodeNullable<K, V>(
+  Map<K, V> enumValues,
   dynamic source, {
-  T unknownValue,
+  K? unknownValue,
 }) {
   if (source == null) {
     return null;
   }
-  return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
+  return _$enumDecode<K, V>(enumValues, source, unknownValue: unknownValue);
 }
 
 const _$VaccineGroupNameEnumMap = {

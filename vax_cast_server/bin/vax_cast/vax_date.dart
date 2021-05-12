@@ -21,9 +21,9 @@ class VaxDate extends DateTime {
 
   VaxDate.yyyymmdd(String date)
       : super(
-          int.tryParse(date.substring(0, 4)),
-          int.tryParse(date.substring(4, 6)),
-          int.tryParse(date.substring(6, 8)),
+          int.tryParse(date.substring(0, 4)) ?? 1900,
+          int.tryParse(date.substring(4, 6)) ?? 01,
+          int.tryParse(date.substring(6, 8)) ?? 01,
         );
 
   VaxDate.fromJson(String date)
@@ -76,7 +76,7 @@ class VaxDate extends DateTime {
       (howMuch == null || howMuch == '' ? this : _parseDateString(howMuch));
 
   VaxDate changeIfNotNull(String howMuch) =>
-      howMuch == null || howMuch == '' ? null : change(howMuch);
+      howMuch == null || howMuch == '' ? VaxDate(1900, 1, 1) : change(howMuch);
 
   VaxDate _parseDateString(String change) {
     var years = 0, months = 0, weeks = 0, days = 0, posNeg = 1;
@@ -90,16 +90,16 @@ class VaxDate extends DateTime {
         }
       }
       if (time[i].contains('year')) {
-        years += int.tryParse(time[i - 1]) * posNeg;
+        years += int.tryParse(time[i - 1]) ?? 0 * posNeg;
       }
       if (time[i].contains('month')) {
-        months += int.tryParse(time[i - 1]) * posNeg;
+        months += int.tryParse(time[i - 1]) ?? 0 * posNeg;
       }
       if (time[i].contains('week')) {
-        weeks += int.tryParse(time[i - 1]) * posNeg;
+        weeks += int.tryParse(time[i - 1]) ?? 0 * posNeg;
       }
       if (time[i].contains('day')) {
-        days += int.tryParse(time[i - 1]) * posNeg;
+        days += int.tryParse(time[i - 1]) ?? 0 * posNeg;
       }
     }
     return _calculateTime(years, months, 7 * weeks + days);
@@ -107,7 +107,7 @@ class VaxDate extends DateTime {
 
   VaxDate _calculateTime(int years, int months, int days) {
     var newDate = DateTime(year + years, month + months, 1);
-    if (Utils.lastDayOfMonth(newDate).day < day) {
+    if (DateUtils.lastDayOfMonth(newDate).day < day) {
       newDate = DateTime(newDate.year, newDate.month + 1, 1);
     } else {
       newDate = DateTime(newDate.year, newDate.month, day);
@@ -121,7 +121,11 @@ VaxDate LatestOf(List<VaxDate> dates) {
   for (final date in dates) {
     latest = date == null
         ? latest
-        : latest == null ? date : latest > date ? latest : date;
+        : latest == null
+            ? date
+            : latest > date
+                ? latest
+                : date;
   }
   return latest;
 }

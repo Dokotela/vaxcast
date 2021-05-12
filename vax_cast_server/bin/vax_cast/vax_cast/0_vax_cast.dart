@@ -13,16 +13,15 @@ class VaxCast {
     final firstPass =
         await forecastR4(newPatient, newImmunizations, assessmentDate);
 
-    final firstRecs = firstPass.parameter.firstWhere((parameter) =>
-        parameter.resource.resourceType == 'ImmunizationRecommendation');
+    final firstRecs = firstPass.parameter?.firstWhere((parameter) =>
+        parameter.resource?.resourceType == 'ImmunizationRecommendation');
 
     for (var rec
-        in (firstRecs.resource as ImmunizationRecommendation).recommendation) {
-      final dueDate = rec.dateCriterion.firstWhere(
-          (criteria) => criteria?.code?.coding != null
-              ? criteria.code.coding[0].code == Code('30980-7')
-              : false,
-          orElse: () => null);
+        in (firstRecs?.resource as ImmunizationRecommendation).recommendation) {
+      final dueDate = rec.dateCriterion?.firstWhere((criteria) =>
+          criteria.code.coding != null
+              ? criteria.code.coding![0].code == Code('30980-7')
+              : false);
 
       if (dueDate != null) {
         final due = dueDate.value.toString();
@@ -34,7 +33,7 @@ class VaxCast {
               resourceType: R4ResourceType.Immunization,
               status: Code('completed'),
               patient: Reference(reference: 'Patient/${newPatient.id}'),
-              vaccineCode: rec.vaccineCode[0],
+              vaccineCode: rec.vaccineCode![0],
               occurrenceDateTime: FhirDateTime(DateTime.now()),
             ),
           );
@@ -48,17 +47,17 @@ class VaxCast {
       VaxDate.now().change('1 month').toString(),
     );
 
-    final secondRecs = secondPass.parameter.firstWhere((parameter) =>
-        parameter.resource.resourceType == 'ImmunizationRecommendation');
+    final secondRecs = secondPass.parameter?.firstWhere((parameter) =>
+        parameter.resource?.resourceType == 'ImmunizationRecommendation');
 
     var finalRecs = firstRecs;
 
-    for (var rec
-        in (secondRecs.resource as ImmunizationRecommendation).recommendation) {
-      if (!(finalRecs.resource as ImmunizationRecommendation)
+    for (var rec in (secondRecs?.resource as ImmunizationRecommendation)
+        .recommendation) {
+      if (!(finalRecs?.resource as ImmunizationRecommendation)
           .recommendation
           .contains(rec)) {
-        (finalRecs.resource as ImmunizationRecommendation)
+        (finalRecs?.resource as ImmunizationRecommendation)
             .recommendation
             .add(rec);
       }
@@ -66,10 +65,10 @@ class VaxCast {
 
     var finalPass = firstPass;
 
-    finalPass.parameter.removeWhere((parameter) =>
-        parameter.resource.resourceType == 'ImmunizationRecommendation');
+    finalPass.parameter?.removeWhere((parameter) =>
+        parameter.resource?.resourceType == 'ImmunizationRecommendation');
 
-    finalPass.parameter.add(finalRecs);
+    finalPass.parameter?.add(finalRecs);
 
     return finalPass;
   }

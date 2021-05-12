@@ -1,6 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../vax_cast.dart';
+import 'classes/contraindications/contraindications.dart';
+import 'classes/immunity/immunity.dart';
+import 'classes/series/series.dart';
 
 part 'antigen_supporting_data.freezed.dart';
 part 'antigen_supporting_data.g.dart';

@@ -9,8 +9,8 @@ part of 'seasonal_recommendation.dart';
 _$_SeasonalRecommendation _$_$_SeasonalRecommendationFromJson(
     Map<String, dynamic> json) {
   return _$_SeasonalRecommendation(
-    startDate: json['startDate'] as String,
-    endDate: json['endDate'] as String,
+    startDate: json['startDate'] as String?,
+    endDate: json['endDate'] as String?,
   );
 }
 

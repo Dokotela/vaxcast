@@ -9,11 +9,9 @@ part of 'vaccine_group_contraindications.dart';
 _$_VaccineGroupContraindications _$_$_VaccineGroupContraindicationsFromJson(
     Map<String, dynamic> json) {
   return _$_VaccineGroupContraindications(
-    contraindication: (json['contraindication'] as List)
-        ?.map((e) => e == null
-            ? null
-            : GroupContraindication.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    contraindication: (json['contraindication'] as List<dynamic>?)
+        ?.map((e) => GroupContraindication.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 
@@ -28,11 +26,11 @@ _$_GroupContraindication _$_$_GroupContraindicationFromJson(
   return _$_GroupContraindication(
     observationCode:
         _$enumDecodeNullable(_$ObsEnumMap, json['observationCode']),
-    observationTitle: json['observationTitle'] as String,
-    contraindicationText: json['contraindicationText'] as String,
-    contraindicationGuidance: json['contraindicationGuidance'] as String,
-    beginAge: json['beginAge'] as String,
-    endAge: json['endAge'] as String,
+    observationTitle: json['observationTitle'] as String?,
+    contraindicationText: json['contraindicationText'] as String?,
+    contraindicationGuidance: json['contraindicationGuidance'] as String?,
+    beginAge: json['beginAge'] as String?,
+    endAge: json['endAge'] as String?,
   );
 }
 
@@ -47,36 +45,41 @@ Map<String, dynamic> _$_$_GroupContraindicationToJson(
       'endAge': instance.endAge,
     };
 
-T _$enumDecode<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
+K _$enumDecode<K, V>(
+  Map<K, V> enumValues,
+  Object? source, {
+  K? unknownValue,
 }) {
   if (source == null) {
-    throw ArgumentError('A value must be provided. Supported values: '
-        '${enumValues.values.join(', ')}');
+    throw ArgumentError(
+      'A value must be provided. Supported values: '
+      '${enumValues.values.join(', ')}',
+    );
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
-
-  if (value == null && unknownValue == null) {
-    throw ArgumentError('`$source` is not one of the supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-  return value ?? unknownValue;
+  return enumValues.entries.singleWhere(
+    (e) => e.value == source,
+    orElse: () {
+      if (unknownValue == null) {
+        throw ArgumentError(
+          '`$source` is not one of the supported values: '
+          '${enumValues.values.join(', ')}',
+        );
+      }
+      return MapEntry(unknownValue, enumValues.values.first);
+    },
+  ).key;
 }
 
-T _$enumDecodeNullable<T>(
-  Map<T, dynamic> enumValues,
+K? _$enumDecodeNullable<K, V>(
+  Map<K, V> enumValues,
   dynamic source, {
-  T unknownValue,
+  K? unknownValue,
 }) {
   if (source == null) {
     return null;
   }
-  return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
+  return _$enumDecode<K, V>(enumValues, source, unknownValue: unknownValue);
 }
 
 const _$ObsEnumMap = {

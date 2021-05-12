@@ -8,11 +8,9 @@ part of 'immunity.dart';
 
 _$_Immunity _$_$_ImmunityFromJson(Map<String, dynamic> json) {
   return _$_Immunity(
-    clinicalHistory: (json['clinicalHistory'] as List)
-        ?.map((e) => e == null
-            ? null
-            : ClinicalHistory.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    clinicalHistory: (json['clinicalHistory'] as List<dynamic>?)
+        ?.map((e) => ClinicalHistory.fromJson(e as Map<String, dynamic>))
+        .toList(),
     dateOfBirth: json['dateOfBirth'] == null
         ? null
         : DateOfBirth.fromJson(json['dateOfBirth'] as Map<String, dynamic>),

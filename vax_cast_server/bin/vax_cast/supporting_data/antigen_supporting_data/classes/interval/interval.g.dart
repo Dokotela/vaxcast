@@ -12,18 +12,18 @@ _$_Interval _$_$_IntervalFromJson(Map<String, dynamic> json) {
         _$enumDecodeNullable(_$FromPreviousEnumMap, json['fromPrevious']),
     fromTargetDose:
         _$enumDecodeNullable(_$FromTargetEnumMap, json['fromTargetDose']),
-    fromMostRecent: json['fromMostRecent'] as String,
+    fromMostRecent: json['fromMostRecent'] as String?,
     fromRelevantObs: json['fromRelevantObs'] == null
         ? null
         : ObservationCode.fromJson(
             json['fromRelevantObs'] as Map<String, dynamic>),
-    absMinInt: json['absMinInt'] as String,
-    minInt: json['minInt'] as String,
-    earliestRecInt: json['earliestRecInt'] as String,
-    latestRecInt: json['latestRecInt'] as String,
-    intervalPriority: json['intervalPriority'] as String,
-    effectiveDate: json['effectiveDate'] as String,
-    cessationDate: json['cessationDate'] as String,
+    absMinInt: json['absMinInt'] as String?,
+    minInt: json['minInt'] as String?,
+    earliestRecInt: json['earliestRecInt'] as String?,
+    latestRecInt: json['latestRecInt'] as String?,
+    intervalPriority: json['intervalPriority'] as String?,
+    effectiveDate: json['effectiveDate'] as String?,
+    cessationDate: json['cessationDate'] as String?,
   );
 }
 
@@ -42,36 +42,41 @@ Map<String, dynamic> _$_$_IntervalToJson(_$_Interval instance) =>
       'cessationDate': instance.cessationDate,
     };
 
-T _$enumDecode<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
+K _$enumDecode<K, V>(
+  Map<K, V> enumValues,
+  Object? source, {
+  K? unknownValue,
 }) {
   if (source == null) {
-    throw ArgumentError('A value must be provided. Supported values: '
-        '${enumValues.values.join(', ')}');
+    throw ArgumentError(
+      'A value must be provided. Supported values: '
+      '${enumValues.values.join(', ')}',
+    );
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
-
-  if (value == null && unknownValue == null) {
-    throw ArgumentError('`$source` is not one of the supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-  return value ?? unknownValue;
+  return enumValues.entries.singleWhere(
+    (e) => e.value == source,
+    orElse: () {
+      if (unknownValue == null) {
+        throw ArgumentError(
+          '`$source` is not one of the supported values: '
+          '${enumValues.values.join(', ')}',
+        );
+      }
+      return MapEntry(unknownValue, enumValues.values.first);
+    },
+  ).key;
 }
 
-T _$enumDecodeNullable<T>(
-  Map<T, dynamic> enumValues,
+K? _$enumDecodeNullable<K, V>(
+  Map<K, V> enumValues,
   dynamic source, {
-  T unknownValue,
+  K? unknownValue,
 }) {
   if (source == null) {
     return null;
   }
-  return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
+  return _$enumDecode<K, V>(enumValues, source, unknownValue: unknownValue);
 }
 
 const _$FromPreviousEnumMap = {

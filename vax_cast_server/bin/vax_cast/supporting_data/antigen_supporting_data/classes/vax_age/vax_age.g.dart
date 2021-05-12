@@ -8,13 +8,13 @@ part of 'vax_age.dart';
 
 _$_VaxAge _$_$_VaxAgeFromJson(Map<String, dynamic> json) {
   return _$_VaxAge(
-    absMinAge: json['absMinAge'] as String,
-    minAge: json['minAge'] as String,
-    earliestRecAge: json['earliestRecAge'] as String,
-    latestRecAge: json['latestRecAge'] as String,
-    maxAge: json['maxAge'] as String,
-    effectiveDate: json['effectiveDate'] as String,
-    cessationDate: json['cessationDate'] as String,
+    absMinAge: json['absMinAge'] as String?,
+    minAge: json['minAge'] as String?,
+    earliestRecAge: json['earliestRecAge'] as String?,
+    latestRecAge: json['latestRecAge'] as String?,
+    maxAge: json['maxAge'] as String?,
+    effectiveDate: json['effectiveDate'] as String?,
+    cessationDate: json['cessationDate'] as String?,
   );
 }
 

@@ -8,31 +8,29 @@ part of 'series.dart';
 
 _$_Series _$_$_SeriesFromJson(Map<String, dynamic> json) {
   return _$_Series(
-    seriesName: json['seriesName'] as String,
+    seriesName: json['seriesName'] as String?,
     targetDisease:
         _$enumDecodeNullable(_$TargetDiseaseEnumMap, json['targetDisease']),
     vaccineGroup:
         _$enumDecodeNullable(_$VaccineGroupNameEnumMap, json['vaccineGroup']),
-    seriesAdminGuidance: (json['seriesAdminGuidance'] as List)
+    seriesAdminGuidance: (json['seriesAdminGuidance'] as List<dynamic>?)
         ?.map((e) => e as String)
-        ?.toList(),
+        .toList(),
     seriesType: _$enumDecodeNullable(_$SeriesTypeEnumMap, json['seriesType']),
     equivalentSeriesGroups: _$enumDecodeNullable(
         _$EquivalentSeriesGroupsEnumMap, json['equivalentSeriesGroups']),
-    requiredGender: (json['requiredGender'] as List)
-        ?.map((e) => _$enumDecodeNullable(_$GenderEnumMap, e))
-        ?.toList(),
+    requiredGender: (json['requiredGender'] as List<dynamic>?)
+        ?.map((e) => _$enumDecode(_$GenderEnumMap, e))
+        .toList(),
     selectSeries: json['selectSeries'] == null
         ? null
         : SelectSeries.fromJson(json['selectSeries'] as Map<String, dynamic>),
-    indication: (json['indication'] as List)
-        ?.map((e) =>
-            e == null ? null : Indication.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
-    seriesDose: (json['seriesDose'] as List)
-        ?.map((e) =>
-            e == null ? null : SeriesDose.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    indication: (json['indication'] as List<dynamic>?)
+        ?.map((e) => Indication.fromJson(e as Map<String, dynamic>))
+        .toList(),
+    seriesDose: (json['seriesDose'] as List<dynamic>?)
+        ?.map((e) => SeriesDose.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 
@@ -45,42 +43,47 @@ Map<String, dynamic> _$_$_SeriesToJson(_$_Series instance) => <String, dynamic>{
       'equivalentSeriesGroups':
           _$EquivalentSeriesGroupsEnumMap[instance.equivalentSeriesGroups],
       'requiredGender':
-          instance.requiredGender?.map((e) => _$GenderEnumMap[e])?.toList(),
+          instance.requiredGender?.map((e) => _$GenderEnumMap[e]).toList(),
       'selectSeries': instance.selectSeries,
       'indication': instance.indication,
       'seriesDose': instance.seriesDose,
     };
 
-T _$enumDecode<T>(
-  Map<T, dynamic> enumValues,
-  dynamic source, {
-  T unknownValue,
+K _$enumDecode<K, V>(
+  Map<K, V> enumValues,
+  Object? source, {
+  K? unknownValue,
 }) {
   if (source == null) {
-    throw ArgumentError('A value must be provided. Supported values: '
-        '${enumValues.values.join(', ')}');
+    throw ArgumentError(
+      'A value must be provided. Supported values: '
+      '${enumValues.values.join(', ')}',
+    );
   }
 
-  final value = enumValues.entries
-      .singleWhere((e) => e.value == source, orElse: () => null)
-      ?.key;
-
-  if (value == null && unknownValue == null) {
-    throw ArgumentError('`$source` is not one of the supported values: '
-        '${enumValues.values.join(', ')}');
-  }
-  return value ?? unknownValue;
+  return enumValues.entries.singleWhere(
+    (e) => e.value == source,
+    orElse: () {
+      if (unknownValue == null) {
+        throw ArgumentError(
+          '`$source` is not one of the supported values: '
+          '${enumValues.values.join(', ')}',
+        );
+      }
+      return MapEntry(unknownValue, enumValues.values.first);
+    },
+  ).key;
 }
 
-T _$enumDecodeNullable<T>(
-  Map<T, dynamic> enumValues,
+K? _$enumDecodeNullable<K, V>(
+  Map<K, V> enumValues,
   dynamic source, {
-  T unknownValue,
+  K? unknownValue,
 }) {
   if (source == null) {
     return null;
   }
-  return _$enumDecode<T>(enumValues, source, unknownValue: unknownValue);
+  return _$enumDecode<K, V>(enumValues, source, unknownValue: unknownValue);
 }
 
 const _$TargetDiseaseEnumMap = {

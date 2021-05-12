@@ -16,10 +16,9 @@ _$_AntigenSupportingData _$_$_AntigenSupportingDataFromJson(
         ? null
         : Contraindications.fromJson(
             json['contraindications'] as Map<String, dynamic>),
-    series: (json['series'] as List)
-        ?.map((e) =>
-            e == null ? null : Series.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    series: (json['series'] as List<dynamic>?)
+        ?.map((e) => Series.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 

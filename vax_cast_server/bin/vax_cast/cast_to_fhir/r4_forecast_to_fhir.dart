@@ -20,7 +20,7 @@ Parameters r4ForecastToFhir(
   for (var forecast in groupForecast) {
     for (final series in forecast.vaxSeries) {
       for (final dose in series.pastDoses) {
-        returnParameters.parameter.add(doseEvaluation(
+        returnParameters.parameter!.add(doseEvaluation(
           dose,
           id,
           series.targetDisease,
@@ -48,22 +48,24 @@ Parameters r4ForecastToFhir(
                   coding: listCvx(forecast, id),
                 ),
               ],
-        dateCriterion: [
-          forecast.groupEarliestDate == null
-              ? null
-              : earliest(forecast.groupEarliestDate),
-          forecast.groupAdjRecDate == null
-              ? null
-              : recommended(forecast.groupAdjRecDate),
-          forecast.groupAdjPastDueDate == null
-              ? null
-              : past(forecast.groupAdjPastDueDate),
-        ],
+        dateCriterion: [],
         series: forecast.vaccineGroupName.toString(),
       ),
     );
+    if (forecast.groupEarliestDate != null) {
+      immunizationRecommendation.recommendation.last.dateCriterion!
+          .add(earliest(forecast.groupEarliestDate));
+    }
+    if (forecast.groupAdjRecDate != null) {
+      immunizationRecommendation.recommendation.last.dateCriterion!
+          .add(recommended(forecast.groupAdjRecDate));
+    }
+    if (forecast.groupAdjPastDueDate != null) {
+      immunizationRecommendation.recommendation.last.dateCriterion!
+          .add(past(forecast.groupAdjPastDueDate));
+    }
   }
-  returnParameters.parameter.add(ParametersParameter(
+  returnParameters.parameter!.add(ParametersParameter(
     name: 'recommendation',
     resource: immunizationRecommendation,
   ));
@@ -110,7 +112,7 @@ ParametersParameter doseEvaluation(
     );
 
 List<CodeableConcept> getDoseStatusReason(Dose dose) {
-  if (dose.evaluation.value1 == EvalStatus.valid) return null;
+  if (dose.evaluation.value1 == EvalStatus.valid) return [];
   return [
     CodeableConcept(
       coding: [
@@ -156,27 +158,28 @@ String doseStatusDisplay(EvalReason status) {
   }
 }
 
-List<Coding> listCvx(GroupForecast groupForecast, String id) {
+List<Coding>? listCvx(GroupForecast groupForecast, String id) {
   var diseases = groupForecast.targetDisease;
   List<Vaccine> vaccineList = groupForecast.groupRecVaccines.keys.toList();
   if (diseases.length == 1) {
     return [
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
-        code: Code(cvxToString[vaccineList[0].cvx]),
+        code: Code(cvxToString[vaccineList[0].cvx]!),
         display: vaccineList[0].vaccineType,
       )
     ];
   } else {
-    var firstVax = groupForecast.groupRecVaccines.keys.firstWhere(
-        (key) => groupForecast.groupRecVaccines[key].length == 3,
-        orElse: () => null);
-    if (firstVax != null) {
+    var firstVax = groupForecast.groupRecVaccines.keys
+        .toList()
+        .indexWhere((key) => groupForecast.groupRecVaccines[key]!.length == 3);
+    if (firstVax != -1) {
+      var first = groupForecast.groupRecVaccines.keys.toList()[firstVax];
       return [
         Coding(
           system: FhirUri('http://hl7.org/fhir/sid/cvx'),
-          code: Code(cvxToString[firstVax.cvx]),
-          display: firstVax.vaccineType,
+          code: Code(cvxToString[first.cvx]!),
+          display: first.vaccineType,
         ),
       ];
     } else {
@@ -188,10 +191,10 @@ List<Coding> listCvx(GroupForecast groupForecast, String id) {
 
 List<Coding> getDiseaseListCoding(List<TargetDisease> targets) {
   if (targets.length == 1) {
-    return r4DiseaseCoding[targets[0]];
+    return r4DiseaseCoding[targets[0]]!;
   } else {
     List<Coding> codingList = [];
-    targets.forEach((target) => codingList.add(r4DiseaseCoding[target][0]));
+    targets.forEach((target) => codingList.add(r4DiseaseCoding[target]![0]));
     return codingList;
   }
 }
@@ -234,7 +237,7 @@ String statusToDisplay(SeriesStatus status) {
   }
 }
 
-ImmunizationRecommendationDateCriterion earliest(VaxDate earliest) =>
+ImmunizationRecommendationDateCriterion earliest(VaxDate? earliest) =>
     ImmunizationRecommendationDateCriterion(
       code: CodeableConcept(
         coding: [
@@ -259,7 +262,7 @@ ImmunizationRecommendationDateCriterion recommended(VaxDate recommended) =>
           ),
         ],
       ),
-      value: FhirDateTime(recommended?.toString() ?? VaxDate.max().toString()),
+      value: FhirDateTime(recommended.toString()),
     );
 
 ImmunizationRecommendationDateCriterion past(VaxDate past) =>
@@ -273,5 +276,5 @@ ImmunizationRecommendationDateCriterion past(VaxDate past) =>
           ),
         ],
       ),
-      value: FhirDateTime(past?.toString() ?? VaxDate.max().toString()),
+      value: FhirDateTime(past.toString()),
     );

@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../vax_cast.dart';
+import '../vaccine_contraindications/vaccine_contraindications.dart';
+import '../vaccine_group_contraindications/vaccine_group_contraindications.dart';
 
 part 'contraindications.freezed.dart';
 part 'contraindications.g.dart';
