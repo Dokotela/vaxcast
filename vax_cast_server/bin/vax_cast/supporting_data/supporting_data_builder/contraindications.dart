@@ -23,9 +23,11 @@ AntigenSupportingData contraindications(
   var codeText = '';
   for (var i in contraindication!.rows) {
     /// if it's an antigen contraindication but not the title row
+    ///
     if (i[0]?.value != null &&
-        i[0]!.value.toString().contains('Antigen Contrandication') &&
-        !i[1]!.value.toString().contains('Contraindication (Code)')) {
+        i[0]!.value.toString().contains('Antigen Contraindication') &&
+        !i[1]!.value.toString().contains('Contraindication (Code)') &&
+        !i[1]!.value.toString().contains('n/a')) {
       /// instantiate the contraindication if if it hasn't been already
       if (antigenSupportingData
               .contraindications!.vaccineGroup!.contraindication ==
@@ -47,14 +49,18 @@ AntigenSupportingData contraindications(
           observationCode: ObsStringToEnumMap[code],
           observationTitle: text,
           contraindicationText: i[2]!.value.toString(),
-          contraindicationGuidance: i[3]!.value.toString(),
-          beginAge: i[4]!.value.toString(),
-          endAge: i[5]!.value.toString(),
+          contraindicationGuidance:
+              i[3]!.value.toString() == 'n/a' ? null : i[3]!.value.toString(),
+          beginAge:
+              i[4]!.value.toString() == 'n/a' ? null : i[4]!.value.toString(),
+          endAge:
+              i[5]!.value.toString() == 'n/a' ? null : i[5]!.value.toString(),
         ),
       );
     } else if (i[0]?.value != null &&
-        i[0]!.value.toString().contains('Vaccine Contrandication') &&
-        !i[1]!.value.toString().contains('Contraindication (Code)')) {
+        i[0]!.value.toString().contains('Vaccine Contraindication') &&
+        !i[1]!.value.toString().contains('Contraindication (Code)') &&
+        !i[1]!.value.toString().contains('n/a')) {
       if (antigenSupportingData.contraindications!.vaccine!.contraindication ==
           null) {
         antigenSupportingData = antigenSupportingData.copyWith(
@@ -89,8 +95,10 @@ AntigenSupportingData contraindications(
         Vaccine(
           vaccineType: text,
           cvx: cvxStringToEnumMap[code],
-          beginAge: i[5]!.value.toString(),
-          endAge: i[6]!.value.toString(),
+          beginAge:
+              i[5]!.value.toString() == 'n/a' ? null : i[5]!.value.toString(),
+          endAge:
+              i[6]!.value.toString() == 'n/a' ? null : i[6]!.value.toString(),
         ),
       );
     }

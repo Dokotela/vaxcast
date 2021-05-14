@@ -1,6 +1,8 @@
 targets:
   $default:
     sources:
+      - $package$
+      - lib/$lib$
       - 'asset/Excel/**.xlsx'
     builders:
       vax_cast_server|supportingDataBuilder:
