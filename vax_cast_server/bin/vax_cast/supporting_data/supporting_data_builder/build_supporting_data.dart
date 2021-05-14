@@ -22,6 +22,7 @@ class SupportingDataBuilder extends Builder {
     /// identify only those files that contain AntigenSupportingData
     if (inputId.toString().contains('AntigenSupportingData')) {
       var antigenSupportingData = immunity(excel);
+
       antigenSupportingData = contraindications(excel, antigenSupportingData);
     }
   }

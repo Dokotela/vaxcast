@@ -1,5 +1,6 @@
 import 'package:excel/excel.dart';
 
+import '../../vax_date.dart';
 import '../antigen_supporting_data/antigen_supporting_data.dart';
 import '../antigen_supporting_data/classes/clinical_history/clinical_history.dart';
 import '../antigen_supporting_data/classes/date_of_birth/date_of_birth.dart';
@@ -46,7 +47,7 @@ AntigenSupportingData immunity(Excel excel) {
 
       /// Find any of the Birth Date Immunity rows
     } else if (i[0] != null &&
-        i[0]!.value == 'Birth Date Immunity' &&
+        i[0]!.value.contains('Birth Date Immunity') &&
         !i[1]!.value.contains('Immunity Birth Date') &&
         !i[1]!.value.contains('n/a')) {
       /// initialize immunity if not already initialized
@@ -54,29 +55,26 @@ AntigenSupportingData immunity(Excel excel) {
         antigenSupportingData =
             antigenSupportingData.copyWith(immunity: Immunity());
       }
-      date = i[1]!.value.toString();
-      country = i[2]!.value.toString();
-      var open = i[3]!.value.toString().lastIndexOf('(');
-      var close = i[3]!.value.toString().lastIndexOf(')');
-      var code = i[3]!.value.toString().substring(open + 1, close);
-      var text = i[3]!.value.toString().substring(0, open - 1);
 
-      if (date != '' && country != '' && DateTime.tryParse(date) != null) {
-        antigenSupportingData = antigenSupportingData.copyWith(
-          immunity: antigenSupportingData.immunity!.copyWith(
-            dateOfBirth: DateOfBirth(
-              immunityBirthDate: date,
-              birthCountry: country,
-              exclusion: [
-                Exclusion(
-                  exclusionCode: ObsStringToEnumMap[code],
-                  exclusionTitle: text,
-                )
-              ],
+      if (VaxDate.yyyymmdd(i[1]!.value.toString()) != VaxDate.max()) {
+        if (date != i[1]!.value.toString()) {
+          date = i[1]!.value.toString();
+          country = i[2]!.value.toString();
+          antigenSupportingData = antigenSupportingData.copyWith(
+            immunity: antigenSupportingData.immunity!.copyWith(
+              dateOfBirth: DateOfBirth(
+                immunityBirthDate: date,
+                birthCountry: country,
+                exclusion: [],
+              ),
             ),
-          ),
-        );
-      } else {
+          );
+        }
+        var open = i[3]!.value.toString().lastIndexOf('(');
+        var close = i[3]!.value.toString().lastIndexOf(')');
+        var code = i[3]!.value.toString().substring(open + 1, close);
+        var text = i[3]!.value.toString().substring(0, open - 1);
+
         antigenSupportingData.immunity!.dateOfBirth!.exclusion!.add(
           Exclusion(
             exclusionCode: ObsStringToEnumMap[code],
