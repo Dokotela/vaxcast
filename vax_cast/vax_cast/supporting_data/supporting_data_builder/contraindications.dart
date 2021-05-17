@@ -5,7 +5,6 @@ import '../antigen_supporting_data/classes/contraindications/contraindications.d
 import '../antigen_supporting_data/classes/vaccine/vaccine.dart';
 import '../antigen_supporting_data/classes/vaccine_contraindications/vaccine_contraindications.dart';
 import '../antigen_supporting_data/classes/vaccine_group_contraindications/vaccine_group_contraindications.dart';
-import '../cvx_maps.dart';
 import '../export_supporting_data.dart';
 import '../supporting_data_enums/obs_code_enum.dart';
 

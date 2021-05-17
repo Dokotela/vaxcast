@@ -5,6 +5,7 @@ import 'package:build/build.dart';
 import 'package:excel/excel.dart';
 
 import 'contraindications.dart';
+import 'create_series.dart';
 import 'immunity.dart';
 
 class SupportingDataBuilder extends Builder {
@@ -29,6 +30,18 @@ class SupportingDataBuilder extends Builder {
     if (inputId.toString().contains('AntigenSupportingData')) {
       var antigenSupportingData = immunity(excel);
       antigenSupportingData = contraindications(excel, antigenSupportingData);
+      antigenSupportingData = antigenSupportingData.copyWith(series: []);
+      excel.tables.forEach((key, value) {
+        if (key != 'Antigen Series Overview' &&
+            key != 'Change History' &&
+            key != 'FAQ' &&
+            key != 'Immunity' &&
+            key != 'Contraindications') {
+          if (excel.tables[key] != null) {
+            antigenSupportingData.series!.add(createSeries(excel.tables[key]!));
+          }
+        }
+      });
       var file = jsonEncode(antigenSupportingData.toJson());
       await File(newFilePath).writeAsString(file);
     }
