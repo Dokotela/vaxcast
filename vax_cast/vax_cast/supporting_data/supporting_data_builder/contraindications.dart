@@ -11,12 +11,8 @@ import '../supporting_data_enums/obs_code_enum.dart';
 
 AntigenSupportingData contraindications(
     Excel excel, AntigenSupportingData antigenSupportingData) {
-  antigenSupportingData = antigenSupportingData.copyWith(
-    contraindications: Contraindications(
-      vaccineGroup: VaccineGroupContraindications(),
-      vaccine: VaccineContraindications(),
-    ),
-  );
+  antigenSupportingData =
+      antigenSupportingData.copyWith(contraindications: Contraindications());
 
   /// first look at the Contraindications sheet
   var contraindication = excel.tables['Contraindications'];
@@ -29,6 +25,13 @@ AntigenSupportingData contraindications(
         !i[1]!.value.toString().contains('Contraindication (Code)') &&
         !i[1]!.value.toString().contains('n/a')) {
       /// instantiate the contraindication if if it hasn't been already
+      if (antigenSupportingData.contraindications!.vaccineGroup == null) {
+        antigenSupportingData = antigenSupportingData.copyWith(
+            contraindications: antigenSupportingData.contraindications!
+                .copyWith(
+                    vaccineGroup: VaccineGroupContraindications(),
+                    vaccine: antigenSupportingData.contraindications?.vaccine));
+      }
       if (antigenSupportingData
               .contraindications!.vaccineGroup!.contraindication ==
           null) {
@@ -61,6 +64,14 @@ AntigenSupportingData contraindications(
         i[0]!.value.toString().contains('Vaccine Contraindication') &&
         !i[1]!.value.toString().contains('Contraindication (Code)') &&
         !i[1]!.value.toString().contains('n/a')) {
+      if (antigenSupportingData.contraindications!.vaccine == null) {
+        antigenSupportingData = antigenSupportingData.copyWith(
+            contraindications: antigenSupportingData.contraindications!
+                .copyWith(
+                    vaccineGroup:
+                        antigenSupportingData.contraindications?.vaccineGroup,
+                    vaccine: VaccineContraindications()));
+      }
       if (antigenSupportingData.contraindications!.vaccine!.contraindication ==
           null) {
         antigenSupportingData = antigenSupportingData.copyWith(
