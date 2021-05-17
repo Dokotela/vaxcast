@@ -1,4 +1,4 @@
-name: vax_cast_server
+name: vax_cast
 description: Creating an actual server for VaxCast
 version: 0.0.1
 homepage: https://github.com/Dokotela/vax_cast_server
@@ -25,4 +25,4 @@ dev_dependencies:
 
 flutter:
   assets:
-    - ../assets/Excel/
+    - assets/Excel/

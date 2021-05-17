@@ -8,7 +8,7 @@ import 'contraindications.dart';
 import 'immunity.dart';
 
 class SupportingDataBuilder extends Builder {
-  static const filePath = 'asset/new_json';
+  static const filePath = 'assets/new_json';
   @override
   Map<String, List<String>> get buildExtensions => {
         '.xlsx': ['.json']
