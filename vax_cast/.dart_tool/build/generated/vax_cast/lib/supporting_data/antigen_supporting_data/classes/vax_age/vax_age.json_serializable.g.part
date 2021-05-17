@@ -1,0 +1,34 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$_VaxAge _$_$_VaxAgeFromJson(Map<String, dynamic> json) {
+  return _$_VaxAge(
+    absMinAge: json['absMinAge'] as String?,
+    minAge: json['minAge'] as String?,
+    earliestRecAge: json['earliestRecAge'] as String?,
+    latestRecAge: json['latestRecAge'] as String?,
+    maxAge: json['maxAge'] as String?,
+    effectiveDate: json['effectiveDate'] as String?,
+    cessationDate: json['cessationDate'] as String?,
+  );
+}
+
+Map<String, dynamic> _$_$_VaxAgeToJson(_$_VaxAge instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('absMinAge', instance.absMinAge);
+  writeNotNull('minAge', instance.minAge);
+  writeNotNull('earliestRecAge', instance.earliestRecAge);
+  writeNotNull('latestRecAge', instance.latestRecAge);
+  writeNotNull('maxAge', instance.maxAge);
+  writeNotNull('effectiveDate', instance.effectiveDate);
+  writeNotNull('cessationDate', instance.cessationDate);
+  return val;
+}

@@ -37,14 +37,14 @@ packages:
     source: hosted
     version: "2.6.1"
   build:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: build
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
   build_config:
-    dependency: "direct dev"
+    dependency: transitive
     description:
       name: build_config
       url: "https://pub.dartlang.org"
@@ -155,13 +155,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
-  dartz:
-    dependency: "direct main"
-    description:
-      name: dartz
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.10.0-nullsafety.2"
   date_utils:
     dependency: "direct main"
     description:
@@ -210,7 +203,7 @@ packages:
       name: file
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.1.0"
+    version: "6.1.1"
   fixnum:
     dependency: transitive
     description:
@@ -218,8 +211,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  freezed:
+    dependency: "direct dev"
+    description:
+      name: freezed
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.14.2"
   freezed_annotation:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: freezed_annotation
       url: "https://pub.dartlang.org"
@@ -295,6 +295,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.1"
+  json_serializable:
+    dependency: "direct dev"
+    description:
+      name: json_serializable
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.1.2"
   logging:
     dependency: transitive
     description:
@@ -394,7 +401,7 @@ packages:
     source: hosted
     version: "1.0.1"
   source_gen:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: source_gen
       url: "https://pub.dartlang.org"

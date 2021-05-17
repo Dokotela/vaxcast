@@ -90,10 +90,6 @@ dart_style
 2.12
 file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-2.0.1/
 file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-2.0.1/lib/
-dartz
-2.12
-file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/dartz-0.10.0-nullsafety.2/
-file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/dartz-0.10.0-nullsafety.2/lib/
 date_utils
 2.12
 file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/date_utils-0.2.0/
@@ -120,8 +116,8 @@ file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org
 file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fhir_yaml-0.4.0/lib/
 file
 2.12
-file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.0/
-file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.0/lib/
+file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.1/
+file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.1/lib/
 fixnum
 2.12
 file:///home/grey/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.0/

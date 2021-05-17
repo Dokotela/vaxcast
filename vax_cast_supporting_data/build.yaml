@@ -1,0 +1,17 @@
+targets:
+  $default:
+    sources:
+      - $package$
+      - lib/$lib$
+      - 'assets/Excel/**.xlsx'
+    builders:
+      vax_cast_supporting_data|supportingDataBuilder:
+        enabled: true
+
+builders:
+  supportingDataBuilder:
+    import: 'supporting_data_builder/supporting_data_builder.dart'
+    builder_factories: ['supportingDataBuilder']
+    build_extensions: {.xlsx: [".json"]}
+    build_to: source
+    auto_apply: dependents
