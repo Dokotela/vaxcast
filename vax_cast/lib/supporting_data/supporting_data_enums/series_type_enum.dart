@@ -6,3 +6,13 @@ enum SeriesType {
   @JsonValue('Risk')
   risk,
 }
+
+const seriesTypeStringToEnum = {
+  'Standard': SeriesType.standard,
+  'Risk': SeriesType.risk,
+};
+
+const seriesTypeEnumToString = {
+  SeriesType.standard: 'Standard',
+  SeriesType.risk: 'Risk',
+};

@@ -5,7 +5,7 @@ import 'package:build/build.dart';
 import 'package:excel/excel.dart';
 
 import 'contraindications.dart';
-import 'create_series.dart';
+import 'create_series/create_series.dart';
 import 'immunity.dart';
 
 class SupportingDataBuilder extends Builder {

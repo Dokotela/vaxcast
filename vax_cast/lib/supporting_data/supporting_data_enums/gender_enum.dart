@@ -10,3 +10,17 @@ enum Gender {
   @JsonValue('Male')
   male,
 }
+
+const genderStringToEnum = {
+  'Female': Gender.female,
+  'Transgender': Gender.transgender,
+  'Unknown': Gender.unknown,
+  'Male': Gender.male,
+};
+
+const genderEnumToString = {
+  Gender.female: 'Female',
+  Gender.transgender: 'Transgender',
+  Gender.unknown: 'Unknown',
+  Gender.male: 'Male',
+};

@@ -8,3 +8,15 @@ enum Binary {
   @JsonValue('')
   na,
 }
+
+const binaryStringToEnum = {
+  'Yes': Binary.yes,
+  'No': Binary.no,
+  '': Binary.na,
+};
+
+const binaryEnumToString = {
+  Binary.yes: 'Yes',
+  Binary.no: 'No',
+  Binary.na: '',
+};

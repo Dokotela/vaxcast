@@ -8,3 +8,15 @@ enum SeriesGroup {
   @JsonValue('3')
   three,
 }
+
+const seriesGroupStringToEnum = {
+  '1': SeriesGroup.one,
+  '2': SeriesGroup.two,
+  '3': SeriesGroup.three,
+};
+
+const seriesGroupEnumToString = {
+  SeriesGroup.one: '1',
+  SeriesGroup.two: '2',
+  SeriesGroup.three: '3',
+};

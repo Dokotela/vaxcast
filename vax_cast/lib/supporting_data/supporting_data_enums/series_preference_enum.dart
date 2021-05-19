@@ -16,3 +16,23 @@ enum SeriesPreference {
   @JsonValue('')
   none,
 }
+
+const seriesPreferenceStringToEnum = {
+  '1': SeriesPreference.one,
+  '2': SeriesPreference.two,
+  '3': SeriesPreference.three,
+  '4': SeriesPreference.four,
+  '5': SeriesPreference.five,
+  '6': SeriesPreference.six,
+  '': SeriesPreference.none,
+};
+
+const seriesPreferenceEnumToString = {
+  SeriesPreference.one: '1',
+  SeriesPreference.two: '2',
+  SeriesPreference.three: '3',
+  SeriesPreference.four: '4',
+  SeriesPreference.five: '5',
+  SeriesPreference.six: '6',
+  SeriesPreference.none: '',
+};
