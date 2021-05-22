@@ -49,10 +49,13 @@ AntigenSupportingData immunity(Excel excel) {
             antigenSupportingData.copyWith(immunity: Immunity());
       }
 
+      /// Checks if the data field is the max date (which means it was blank, null or
+      /// incorrectly formatted)
       if (VaxDate.yyyymmdd(i[1]!.value.toString()) != VaxDate.max()) {
         if (date != i[1]!.value.toString()) {
           date = i[1]!.value.toString();
           country = i[2]!.value.toString();
+          /// add the immunity data
           antigenSupportingData = antigenSupportingData.copyWith(
             immunity: antigenSupportingData.immunity!.copyWith(
               dateOfBirth: DateOfBirth(
@@ -63,6 +66,7 @@ AntigenSupportingData immunity(Excel excel) {
             ),
           );
         }
+        /// extract the code from the text for the observation
         var open = i[3]!.value.toString().lastIndexOf('(');
         var close = i[3]!.value.toString().lastIndexOf(')');
         var code = i[3]!.value.toString().substring(open + 1, close);

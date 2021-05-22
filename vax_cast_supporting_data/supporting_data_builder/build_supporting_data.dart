@@ -28,9 +28,17 @@ class SupportingDataBuilder extends Builder {
 
     /// identify only those files that contain AntigenSupportingData
     if (inputId.toString().contains('AntigenSupportingData')) {
+      /// first we get the immunity data
       var antigenSupportingData = immunity(excel);
+
+      /// then we get the contraindication data
       antigenSupportingData = contraindications(excel, antigenSupportingData);
+
+      /// add the list of series
       antigenSupportingData = antigenSupportingData.copyWith(series: []);
+
+      /// go through each sheet that is a series, in this case we just ignore all sheets
+      /// that we know the excel document is going to have that are not series
       excel.tables.forEach((key, value) {
         if (key != 'Antigen Series Overview' &&
             key != 'Change History' &&

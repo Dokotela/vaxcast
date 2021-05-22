@@ -22,3 +22,29 @@ enum DoseNumber {
   @JsonValue('Dose 10')
   num10,
 }
+
+const doseNumberStringToEnum = {
+  'Dose 1': DoseNumber.num1,
+  'Dose 2': DoseNumber.num2,
+  'Dose 3': DoseNumber.num3,
+  'Dose 4': DoseNumber.num4,
+  'Dose 5': DoseNumber.num5,
+  'Dose 6': DoseNumber.num6,
+  'Dose 7': DoseNumber.num7,
+  'Dose 8': DoseNumber.num8,
+  'Dose 9': DoseNumber.num9,
+  'Dose 10': DoseNumber.num10,
+};
+
+const doseNumberEnumToString = {
+  DoseNumber.num1: 'Dose 1',
+  DoseNumber.num2: 'Dose 2',
+  DoseNumber.num3: 'Dose 3',
+  DoseNumber.num4: 'Dose 4',
+  DoseNumber.num5: 'Dose 5',
+  DoseNumber.num6: 'Dose 6',
+  DoseNumber.num7: 'Dose 7',
+  DoseNumber.num8: 'Dose 8',
+  DoseNumber.num9: 'Dose 9',
+  DoseNumber.num10: 'Dose 10',
+};

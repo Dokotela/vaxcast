@@ -34,6 +34,8 @@ AntigenSupportingData contraindications(
                         .contraindications!.vaccineGroup!
                         .copyWith(contraindication: [])));
       }
+
+      /// extract the code from the text for the observation
       var open = i[1]!.value.toString().lastIndexOf('(');
       var close = i[1]!.value.toString().lastIndexOf(')');
       var code = i[1]!.value.toString().substring(open + 1, close);
@@ -73,6 +75,7 @@ AntigenSupportingData contraindications(
                         .copyWith(contraindication: [])));
       }
       if (i[1]!.value.toString() != codeText) {
+        /// extract the code from the text for the observation
         codeText = i[1]!.value.toString();
         var open = codeText.lastIndexOf('(');
         var close = codeText.lastIndexOf(')');
@@ -88,6 +91,8 @@ AntigenSupportingData contraindications(
           ),
         );
       }
+
+      /// extract the code from the text for the observation
       var open = i[4]!.value.toString().lastIndexOf('(');
       var close = i[4]!.value.toString().lastIndexOf(')');
       var code = i[4]!.value.toString().substring(open + 1, close);
