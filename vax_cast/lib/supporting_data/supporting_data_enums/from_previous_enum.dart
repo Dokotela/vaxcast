@@ -6,3 +6,13 @@ enum FromPrevious {
   @JsonValue('N')
   no,
 }
+
+const fromPreviousStringToEnum = {
+  'Y': FromPrevious.yes,
+  'N': FromPrevious.no,
+};
+
+const fromPreviousEnumToString = {
+  FromPrevious.yes: 'Y',
+  FromPrevious.no: 'N',
+};

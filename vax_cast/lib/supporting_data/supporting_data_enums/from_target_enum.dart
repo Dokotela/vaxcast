@@ -8,3 +8,15 @@ enum FromTarget {
   @JsonValue('')
   na,
 }
+
+const fromTargetStringToEnum = {
+  '1': FromTarget.dose1,
+  '2': FromTarget.dose2,
+  '': FromTarget.na,
+};
+
+const fromTargetEnumToString = {
+  FromTarget.dose1: '1',
+  FromTarget.dose2: '2',
+  FromTarget.na: '',
+};

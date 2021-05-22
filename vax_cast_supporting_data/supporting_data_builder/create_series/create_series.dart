@@ -110,8 +110,14 @@ Series createSeries(Sheet sheet) {
         if (newSeries.seriesDose == null) {
           newSeries = newSeries.copyWith(seriesDose: []);
         }
-        newSeries.seriesDose!
-            .add(createSeriesDose(sheet.rows.indexOf(row), sheet.rows));
+        ;
+        newSeries.seriesDose!.add(createSeriesDose(
+            sheet.rows.indexWhere((element) =>
+                element[0]?.value.toString().trim() ==
+                    row[0]!.value.toString().trim() &&
+                element[1]?.value.toString().trim() ==
+                    row[1]!.value.toString().trim()),
+            sheet.rows));
       }
     }
   }
