@@ -265,6 +265,20 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
           ),
         );
       }
+    } else if (row[0]!.value.toString().contains('Recurring Dose') &&
+        !row[1]!.value.toString().contains('Recurring Dose (Yes/No)')) {
+      seriesDose = seriesDose.copyWith(
+        recurringDose: binaryStringToEnum[row[1]!.value.toString().trim()],
+      );
+    } else if (row[0]!.value.toString().contains('Seasonal Recommendation') &&
+        !row[1]!.value.toString().contains('Start Date') &&
+        (!row[1]!.value.toString().contains('n/a') ||
+            !row[2]!.value.toString().contains('n/a'))) {
+      seriesDose = seriesDose.copyWith(
+          seasonalRecommendation: SeasonalRecommendation(
+        startDate: _valueToString(row[1]!.value),
+        endDate: _valueToString(row[2]!.value),
+      ));
     }
   }
   return seriesDose;
