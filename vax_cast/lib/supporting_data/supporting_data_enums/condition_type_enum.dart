@@ -12,3 +12,19 @@ enum ConditionType {
   @JsonValue('Completed Series')
   completedSeries,
 }
+
+const conditionTypeStringToEnum = {
+  'Age': ConditionType.age,
+  'Vaccine Count by Age': ConditionType.countByAge,
+  'Interval': ConditionType.interval,
+  'Vaccine Count by Date': ConditionType.countByDate,
+  'Completed Series': ConditionType.completedSeries,
+};
+
+const conditionTypeEnumToString = {
+  ConditionType.age: 'Age',
+  ConditionType.countByAge: 'Vaccine Count by Age',
+  ConditionType.interval: 'Interval',
+  ConditionType.countByDate: 'Vaccine Count by Date',
+  ConditionType.completedSeries: 'Completed Series',
+};

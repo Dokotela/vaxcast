@@ -8,3 +8,15 @@ enum DoseType {
   @JsonValue('')
   none,
 }
+
+const doseTypeStringToEnum = {
+  'Total': DoseType.total,
+  'Valid': DoseType.valid,
+  '': DoseType.none,
+};
+
+const doseTypeEnumToString = {
+  DoseType.total: 'Total',
+  DoseType.valid: 'Valid',
+  DoseType.none: '',
+};
