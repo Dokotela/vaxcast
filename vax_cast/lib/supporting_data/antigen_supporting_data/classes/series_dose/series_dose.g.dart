@@ -9,9 +9,9 @@ part of 'series_dose.dart';
 _$_SeriesDose _$_$_SeriesDoseFromJson(Map<String, dynamic> json) {
   return _$_SeriesDose(
     doseNumber: _$enumDecodeNullable(_$DoseNumberEnumMap, json['doseNumber']),
-    age: (json['age'] as List<dynamic>?)
-        ?.map((e) => VaxAge.fromJson(e as Map<String, dynamic>))
-        .toList(),
+    age: json['age'] == null
+        ? null
+        : VaxAge.fromJson(json['age'] as Map<String, dynamic>),
     interval: (json['interval'] as List<dynamic>?)
         ?.map((e) => Interval.fromJson(e as Map<String, dynamic>))
         .toList(),
@@ -48,7 +48,7 @@ Map<String, dynamic> _$_$_SeriesDoseToJson(_$_SeriesDose instance) {
   }
 
   writeNotNull('doseNumber', _$DoseNumberEnumMap[instance.doseNumber]);
-  writeNotNull('age', instance.age?.map((e) => e.toJson()).toList());
+  writeNotNull('age', instance.age?.toJson());
   writeNotNull('interval', instance.interval?.map((e) => e.toJson()).toList());
   writeNotNull('allowableInterval', instance.allowableInterval?.toJson());
   writeNotNull('preferableVaccine',

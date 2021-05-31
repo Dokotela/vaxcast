@@ -15,17 +15,18 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
     } else if (row[0]!.value.toString().contains('Age') &&
         !row[1]!.value.toString().contains('Absolute Minimum Age')) {
       if (seriesDose.age == null) {
-        seriesDose = seriesDose.copyWith(age: []);
+        seriesDose = seriesDose.copyWith(
+          age: VaxAge(
+            absMinAge: _valueToString(row[1]!.value),
+            minAge: _valueToString(row[2]!.value),
+            earliestRecAge: _valueToString(row[3]!.value),
+            latestRecAge: _valueToString(row[4]!.value),
+            maxAge: _valueToString(row[5]!.value),
+            effectiveDate: _valueToString(row[6]!.value),
+            cessationDate: _valueToString(row[7]!.value),
+          ),
+        );
       }
-      seriesDose.age!.add(VaxAge(
-        absMinAge: _valueToString(row[1]!.value),
-        minAge: _valueToString(row[2]!.value),
-        earliestRecAge: _valueToString(row[3]!.value),
-        latestRecAge: _valueToString(row[4]!.value),
-        maxAge: _valueToString(row[5]!.value),
-        effectiveDate: _valueToString(row[6]!.value),
-        cessationDate: _valueToString(row[7]!.value),
-      ));
     } else if (row[0]!.value.toString().contains('Preferable Interval') &&
         !row[1]!
             .value

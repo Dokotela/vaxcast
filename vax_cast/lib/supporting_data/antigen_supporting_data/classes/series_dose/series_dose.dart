@@ -15,7 +15,7 @@ part 'series_dose.g.dart';
 class SeriesDose with _$SeriesDose {
   factory SeriesDose({
     DoseNumber? doseNumber,
-    List<VaxAge>? age,
+    VaxAge? age,
     List<Interval>? interval,
     Interval? allowableInterval,
     List<Vaccine>? preferableVaccine,
