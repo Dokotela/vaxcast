@@ -55,40 +55,46 @@
                 "endAge": "65 years",
                 "guidance": null
             },
-            "seriesDose": {
-                "doseNumber": "Dose 1",
-                "age": {
-                    "absMinAge": "18 years - 4 days",
-                    "minAge": "18 years",
-                    "earliestRecAge": "18 years",
-                    "latestRecAge": null,
-                    "maxAge": null,
-                    "effectiveDate": null,
-                    "cessationDate": null
-                },
-                "interval": null,
-                "allowableInterval": null,
-                "preferableVaccine": {
-                    "vaccineType": "cholera, live attenuated",
-                    "cvx": "174",
-                    "beginAge": "18 years",
-                    "endAge": "65 years",
-                    "tradeName": null,
-                    "mvx": null,
-                    "volume": "100",
-                    "forecastVaccineType": "N"
-                },
-                "allowableVaccine": {
-                    "vaccineType": "cholera, live attenuated",
-                    "cvx": "174",
-                    "beginAge": "18 years - 4 days",
-                    "endAge": null
-                },
-                "inadvertentVaccine": null,
-                "conditionalSkip": null,
-                "recurringDose": "No",
-                "seasonalRecommendation": null
-            }
+            "seriesDose": [
+                {
+                    "doseNumber": "Dose 1",
+                    "age": {
+                        "absMinAge": "18 years - 4 days",
+                        "minAge": "18 years",
+                        "earliestRecAge": "18 years",
+                        "latestRecAge": null,
+                        "maxAge": null,
+                        "effectiveDate": null,
+                        "cessationDate": null
+                    },
+                    "interval": null,
+                    "allowableInterval": null,
+                    "preferableVaccine": [
+                        {
+                            "vaccineType": "cholera, live attenuated",
+                            "cvx": "174",
+                            "beginAge": "18 years",
+                            "endAge": "65 years",
+                            "tradeName": null,
+                            "mvx": null,
+                            "volume": "100",
+                            "forecastVaccineType": "N"
+                        }
+                    ],
+                    "allowableVaccine": [
+                        {
+                            "vaccineType": "cholera, live attenuated",
+                            "cvx": "174",
+                            "beginAge": "18 years - 4 days",
+                            "endAge": null
+                        }
+                    ],
+                    "inadvertentVaccine": null,
+                    "conditionalSkip": null,
+                    "recurringDose": "No",
+                    "seasonalRecommendation": null
+                }
+            ]
         }
     }
 }

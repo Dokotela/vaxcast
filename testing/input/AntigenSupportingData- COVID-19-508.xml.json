@@ -1,1 +1,556 @@
-﻿{"antigenSupportingData":{"immunity":null,"contraindications":{"vaccineGroup":{"contraindication":[{"observationCode":"122","observationTitle":"Severe allergic reaction after previous dose of COVID-19","contraindicationText":"Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of COVID-19 vaccine.","contraindicationGuidance":null,"beginAge":null,"endAge":null},{"observationCode":"080","observationTitle":"Adverse reaction to vaccine component","contraindicationText":"Do not vaccinate if the patient has had an adverse reaction to a vaccine component.","contraindicationGuidance":null,"beginAge":null,"endAge":null}]},"vaccine":{"contraindication":[{"observationCode":"187","observationTitle":"Allergic reaction to polysorbate 80","contraindicationText":"Do not vaccinate if the patient has had an immediate allergic reaction of any severity to polysorbate 80.","contraindicationGuidance":null,"contraindicatedVaccine":{"vaccineType":"SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL","cvx":"212","beginAge":null,"endAge":null}},{"observationCode":"188","observationTitle":"Known allergy to Polyethylene glycol [PEG]","contraindicationText":"Do not vaccinate if the patient has known allergy to Polyethylene glycol [PEG].","contraindicationGuidance":null,"contraindicatedVaccine":[{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":null,"endAge":null},{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":null,"endAge":null}]}]}},"series":[{"seriesName":"2-dose Pfizer series","targetDisease":"COVID-19","vaccineGroup":"COVID-19","seriesAdminGuidance":["COVID-19 vaccines should be administered alone with a minimum interval of 14 days before or after administration with any other vaccines. If COVID-19 vaccines are inadvertently administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.","Vaccination should be deferred until recovery from acute illness (if person had symptoms) and criteria have been met to discontinue isolation.","Currently no data on safety or efficacy of COVID-19 vaccination in persons who received monoclonal antibodies or convalescent plasma as part of COVID-19 treatment. Vaccination should be deferred for at least 90 days to avoid interference of the treatment with vaccine-induced immune responses."],"seriesType":"Standard","equivalentSeriesGroups":null,"requiredGender":null,"selectSeries":{"defaultSeries":"Yes","productPath":"Yes","seriesGroupName":"Standard","seriesGroup":"1","seriesPriority":"A","seriesPreference":"1","minAgeToStart":null,"maxAgeToStart":null},"indication":null,"seriesDose":[{"doseNumber":"Dose 1","age":{"absMinAge":"0 days","minAge":"16 years","earliestRecAge":"16 years","latestRecAge":null,"maxAge":null,"effectiveDate":null,"cessationDate":null},"interval":null,"allowableInterval":null,"preferableVaccine":{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":"16 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.3","forecastVaccineType":"N"},"allowableVaccine":{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":"0 days","endAge":null},"inadvertentVaccine":null,"conditionalSkip":null,"recurringDose":"No","seasonalRecommendation":null},{"doseNumber":"Dose 2","age":{"absMinAge":"0 days","minAge":"16 years","earliestRecAge":"16 years","latestRecAge":null,"maxAge":null,"effectiveDate":null,"cessationDate":null},"interval":{"fromPrevious":"Y","fromTargetDose":null,"fromMostRecent":null,"fromRelevantObs":null,"absMinInt":"21 days - 4 days","minInt":"21 days","earliestRecInt":"21 days","latestRecInt":"42 days","intervalPriority":null,"effectiveDate":null,"cessationDate":null},"allowableInterval":{"fromPrevious":"Y","fromTargetDose":null,"absMinInt":"0 days","effectiveDate":null,"cessationDate":null},"preferableVaccine":{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":"16 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.3","forecastVaccineType":"Y"},"allowableVaccine":{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":"0 days","endAge":null},"inadvertentVaccine":null,"conditionalSkip":null,"recurringDose":"No","seasonalRecommendation":null}]},{"seriesName":"2-dose Moderna series","targetDisease":"COVID-19","vaccineGroup":"COVID-19","seriesAdminGuidance":["COVID-19 vaccines should be administered alone with a minimum interval of 14 days before or after administration with any other vaccines. If COVID-19 vaccines are inadvertently administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.","Vaccination should be deferred until recovery from acute illness (if person had symptoms) and criteria have been met to discontinue isolation.","Currently no data on safety or efficacy of COVID-19 vaccination in persons who received monoclonal antibodies or convalescent plasma as part of COVID-19 treatment. Vaccination should be deferred for at least 90 days to avoid interference of the treatment with vaccine-induced immune responses.","If age 16 to 17 years and Moderna vaccine inadvertently administered instead of Pfizer-BioNTech as the first dose, may administer Moderna vaccine as the second dose (as off-label use, because Moderna vaccine is not authorized in this age group)."],"seriesType":"Standard","equivalentSeriesGroups":null,"requiredGender":null,"selectSeries":{"defaultSeries":"No","productPath":"Yes","seriesGroupName":"Standard","seriesGroup":"1","seriesPriority":"A","seriesPreference":"2","minAgeToStart":null,"maxAgeToStart":null},"indication":null,"seriesDose":[{"doseNumber":"Dose 1","age":{"absMinAge":"0 days","minAge":"18 years","earliestRecAge":"18 years","latestRecAge":null,"maxAge":null,"effectiveDate":null,"cessationDate":null},"interval":null,"allowableInterval":null,"preferableVaccine":{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":"18 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.5","forecastVaccineType":"N"},"allowableVaccine":{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":"0 days","endAge":null},"inadvertentVaccine":null,"conditionalSkip":null,"recurringDose":"No","seasonalRecommendation":null},{"doseNumber":"Dose 2","age":{"absMinAge":"0 days","minAge":"18 years","earliestRecAge":"18 years","latestRecAge":null,"maxAge":null,"effectiveDate":null,"cessationDate":null},"interval":{"fromPrevious":"Y","fromTargetDose":null,"fromMostRecent":null,"fromRelevantObs":null,"absMinInt":"28 days - 4 days","minInt":"28 days","earliestRecInt":"28 days","latestRecInt":"42 days","intervalPriority":null,"effectiveDate":null,"cessationDate":null},"allowableInterval":{"fromPrevious":"Y","fromTargetDose":null,"absMinInt":"0 days","effectiveDate":null,"cessationDate":null},"preferableVaccine":{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":"18 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.5","forecastVaccineType":"Y"},"allowableVaccine":{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":"0 days","endAge":null},"inadvertentVaccine":null,"conditionalSkip":null,"recurringDose":"No","seasonalRecommendation":null}]},{"seriesName":"1-dose Janssen series","targetDisease":"COVID-19","vaccineGroup":"COVID-19","seriesAdminGuidance":["COVID-19 vaccines should be administered alone with a minimum interval of 14 days before or after administration with any other vaccines. If COVID-19 vaccines are inadvertently administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.","Vaccination should be deferred until recovery from acute illness (if person had symptoms) and criteria have been met to discontinue isolation.","Currently no data on safety or efficacy of COVID-19 vaccination in persons who received monoclonal antibodies or convalescent plasma as part of COVID-19 treatment. Vaccination should be deferred for at least 90 days to avoid interference of the treatment with vaccine-induced immune responses."],"seriesType":"Standard","equivalentSeriesGroups":null,"requiredGender":null,"selectSeries":{"defaultSeries":"No","productPath":"Yes","seriesGroupName":"Standard","seriesGroup":"1","seriesPriority":"A","seriesPreference":"3","minAgeToStart":null,"maxAgeToStart":null},"indication":null,"seriesDose":{"doseNumber":"Dose 1","age":{"absMinAge":"0 days","minAge":"18 years","earliestRecAge":"18 years","latestRecAge":null,"maxAge":null,"effectiveDate":null,"cessationDate":null},"interval":{"fromPrevious":"N","fromTargetDose":null,"fromMostRecent":"207; 208; 213","fromRelevantObs":null,"absMinInt":"0 days","minInt":"28 days","earliestRecInt":"28 days","latestRecInt":null,"intervalPriority":null,"effectiveDate":null,"cessationDate":null},"allowableInterval":null,"preferableVaccine":{"vaccineType":"SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL","cvx":"212","beginAge":"18 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.5","forecastVaccineType":"N"},"allowableVaccine":{"vaccineType":"SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL","cvx":"212","beginAge":"0 days","endAge":null},"inadvertentVaccine":null,"conditionalSkip":null,"recurringDose":"No","seasonalRecommendation":null}},{"seriesName":"2-dose mRNA series","targetDisease":"COVID-19","vaccineGroup":"COVID-19","seriesAdminGuidance":["COVID-19 vaccines should be administered alone with a minimum interval of 14 days before or after administration with any other vaccines. If COVID-19 vaccines are inadvertently administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.","Vaccination should be deferred until recovery from acute illness (if person had symptoms) and criteria have been met to discontinue isolation.","Currently no data on safety or efficacy of COVID-19 vaccination in persons who received monoclonal antibodies or convalescent plasma as part of COVID-19 treatment. Vaccination should be deferred for at least 90 days to avoid interference of the treatment with vaccine-induced immune responses."],"seriesType":"Standard","equivalentSeriesGroups":null,"requiredGender":null,"selectSeries":{"defaultSeries":"No","productPath":"No","seriesGroupName":"Standard","seriesGroup":"1","seriesPriority":"A","seriesPreference":"4","minAgeToStart":null,"maxAgeToStart":null},"indication":null,"seriesDose":[{"doseNumber":"Dose 1","age":{"absMinAge":"0 days","minAge":"16 years","earliestRecAge":"16 years","latestRecAge":null,"maxAge":null,"effectiveDate":null,"cessationDate":null},"interval":null,"allowableInterval":null,"preferableVaccine":[{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":"18 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.5","forecastVaccineType":"N"},{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":"16 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.3","forecastVaccineType":"N"}],"allowableVaccine":[{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":"0 days","endAge":null},{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":"0 days","endAge":null},{"vaccineType":"SARS-COV-2 (COVID-19) vaccine, Unspecified Formulation","cvx":"213","beginAge":"0 days","endAge":null}],"inadvertentVaccine":null,"conditionalSkip":null,"recurringDose":"No","seasonalRecommendation":null},{"doseNumber":"Dose 2","age":{"absMinAge":null,"minAge":null,"earliestRecAge":null,"latestRecAge":null,"maxAge":null,"effectiveDate":null,"cessationDate":null},"interval":{"fromPrevious":"Y","fromTargetDose":null,"fromMostRecent":null,"fromRelevantObs":null,"absMinInt":"28 days - 4 days","minInt":"28 days","earliestRecInt":"28 days","latestRecInt":"42 days","intervalPriority":null,"effectiveDate":null,"cessationDate":null},"allowableInterval":{"fromPrevious":"Y","fromTargetDose":null,"absMinInt":"0 days","effectiveDate":null,"cessationDate":null},"preferableVaccine":[{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":"18 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.5","forecastVaccineType":"N"},{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":"16 years","endAge":null,"tradeName":null,"mvx":null,"volume":"0.3","forecastVaccineType":"N"}],"allowableVaccine":[{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose","cvx":"207","beginAge":"0 days","endAge":null},{"vaccineType":"COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose","cvx":"208","beginAge":"0 days","endAge":null},{"vaccineType":"SARS-COV-2 (COVID-19) vaccine, Unspecified Formulation","cvx":"213","beginAge":"0 days","endAge":null}],"inadvertentVaccine":null,"conditionalSkip":null,"recurringDose":"No","seasonalRecommendation":null}]}]}}
+﻿{
+    "antigenSupportingData": {
+        "immunity": null,
+        "contraindications": {
+            "vaccineGroup": {
+                "contraindication": [
+                    {
+                        "observationCode": "122",
+                        "observationTitle": "Severe allergic reaction after previous dose of COVID-19",
+                        "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of COVID-19 vaccine.",
+                        "contraindicationGuidance": null,
+                        "beginAge": null,
+                        "endAge": null
+                    },
+                    {
+                        "observationCode": "080",
+                        "observationTitle": "Adverse reaction to vaccine component",
+                        "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component.",
+                        "contraindicationGuidance": null,
+                        "beginAge": null,
+                        "endAge": null
+                    }
+                ]
+            },
+            "vaccine": {
+                "contraindication": [
+                    {
+                        "observationCode": "187",
+                        "observationTitle": "Allergic reaction to polysorbate 80",
+                        "contraindicationText": "Do not vaccinate if the patient has had an immediate allergic reaction of any severity to polysorbate 80.",
+                        "contraindicationGuidance": null,
+                        "contraindicatedVaccine": [
+                            {
+                                "vaccineType": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL",
+                                "cvx": "212",
+                                "beginAge": null,
+                                "endAge": null
+                            }
+                        ]
+                    },
+                    {
+                        "observationCode": "188",
+                        "observationTitle": "Known allergy to Polyethylene glycol [PEG]",
+                        "contraindicationText": "Do not vaccinate if the patient has known allergy to Polyethylene glycol [PEG].",
+                        "contraindicationGuidance": null,
+                        "contraindicatedVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": null,
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": null,
+                                "endAge": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "series": [
+            {
+                "seriesName": "2-dose Pfizer series",
+                "targetDisease": "COVID-19",
+                "vaccineGroup": "COVID-19",
+                "seriesAdminGuidance": [
+                    "COVID-19 vaccines should be administered alone with a minimum interval of 14 days before or after administration with any other vaccines. If COVID-19 vaccines are inadvertently administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.",
+                    "Vaccination should be deferred until recovery from acute illness (if person had symptoms) and criteria have been met to discontinue isolation.",
+                    "Currently no data on safety or efficacy of COVID-19 vaccination in persons who received monoclonal antibodies or convalescent plasma as part of COVID-19 treatment. Vaccination should be deferred for at least 90 days to avoid interference of the treatment with vaccine-induced immune responses."
+                ],
+                "seriesType": "Standard",
+                "equivalentSeriesGroups": null,
+                "requiredGender": null,
+                "selectSeries": {
+                    "defaultSeries": "Yes",
+                    "productPath": "Yes",
+                    "seriesGroupName": "Standard",
+                    "seriesGroup": "1",
+                    "seriesPriority": "A",
+                    "seriesPreference": "1",
+                    "minAgeToStart": null,
+                    "maxAgeToStart": null
+                },
+                "indication": null,
+                "seriesDose": [
+                    {
+                        "doseNumber": "Dose 1",
+                        "age": {
+                            "absMinAge": "0 days",
+                            "minAge": "16 years",
+                            "earliestRecAge": "16 years",
+                            "latestRecAge": null,
+                            "maxAge": null,
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "interval": null,
+                        "allowableInterval": null,
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": "16 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.3",
+                                "forecastVaccineType": "N"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": null,
+                        "recurringDose": "No",
+                        "seasonalRecommendation": null
+                    },
+                    {
+                        "doseNumber": "Dose 2",
+                        "age": {
+                            "absMinAge": "0 days",
+                            "minAge": "16 years",
+                            "earliestRecAge": "16 years",
+                            "latestRecAge": null,
+                            "maxAge": null,
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "fromTargetDose": null,
+                                "fromMostRecent": null,
+                                "fromRelevantObs": null,
+                                "absMinInt": "21 days - 4 days",
+                                "minInt": "21 days",
+                                "earliestRecInt": "21 days",
+                                "latestRecInt": "42 days",
+                                "intervalPriority": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
+                        "allowableInterval": {
+                            "fromPrevious": "Y",
+                            "fromTargetDose": null,
+                            "absMinInt": "0 days",
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": "16 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.3",
+                                "forecastVaccineType": "Y"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": null,
+                        "recurringDose": "No",
+                        "seasonalRecommendation": null
+                    }
+                ]
+            },
+            {
+                "seriesName": "2-dose Moderna series",
+                "targetDisease": "COVID-19",
+                "vaccineGroup": "COVID-19",
+                "seriesAdminGuidance": [
+                    "COVID-19 vaccines should be administered alone with a minimum interval of 14 days before or after administration with any other vaccines. If COVID-19 vaccines are inadvertently administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.",
+                    "Vaccination should be deferred until recovery from acute illness (if person had symptoms) and criteria have been met to discontinue isolation.",
+                    "Currently no data on safety or efficacy of COVID-19 vaccination in persons who received monoclonal antibodies or convalescent plasma as part of COVID-19 treatment. Vaccination should be deferred for at least 90 days to avoid interference of the treatment with vaccine-induced immune responses.",
+                    "If age 16 to 17 years and Moderna vaccine inadvertently administered instead of Pfizer-BioNTech as the first dose, may administer Moderna vaccine as the second dose (as off-label use, because Moderna vaccine is not authorized in this age group)."
+                ],
+                "seriesType": "Standard",
+                "equivalentSeriesGroups": null,
+                "requiredGender": null,
+                "selectSeries": {
+                    "defaultSeries": "No",
+                    "productPath": "Yes",
+                    "seriesGroupName": "Standard",
+                    "seriesGroup": "1",
+                    "seriesPriority": "A",
+                    "seriesPreference": "2",
+                    "minAgeToStart": null,
+                    "maxAgeToStart": null
+                },
+                "indication": null,
+                "seriesDose": [
+                    {
+                        "doseNumber": "Dose 1",
+                        "age": {
+                            "absMinAge": "0 days",
+                            "minAge": "18 years",
+                            "earliestRecAge": "18 years",
+                            "latestRecAge": null,
+                            "maxAge": null,
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "interval": null,
+                        "allowableInterval": null,
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": "18 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": null,
+                        "recurringDose": "No",
+                        "seasonalRecommendation": null
+                    },
+                    {
+                        "doseNumber": "Dose 2",
+                        "age": {
+                            "absMinAge": "0 days",
+                            "minAge": "18 years",
+                            "earliestRecAge": "18 years",
+                            "latestRecAge": null,
+                            "maxAge": null,
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "fromTargetDose": null,
+                                "fromMostRecent": null,
+                                "fromRelevantObs": null,
+                                "absMinInt": "28 days - 4 days",
+                                "minInt": "28 days",
+                                "earliestRecInt": "28 days",
+                                "latestRecInt": "42 days",
+                                "intervalPriority": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
+                        "allowableInterval": {
+                            "fromPrevious": "Y",
+                            "fromTargetDose": null,
+                            "absMinInt": "0 days",
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": "18 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "Y"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": null,
+                        "recurringDose": "No",
+                        "seasonalRecommendation": null
+                    }
+                ]
+            },
+            {
+                "seriesName": "1-dose Janssen series",
+                "targetDisease": "COVID-19",
+                "vaccineGroup": "COVID-19",
+                "seriesAdminGuidance": [
+                    "COVID-19 vaccines should be administered alone with a minimum interval of 14 days before or after administration with any other vaccines. If COVID-19 vaccines are inadvertently administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.",
+                    "Vaccination should be deferred until recovery from acute illness (if person had symptoms) and criteria have been met to discontinue isolation.",
+                    "Currently no data on safety or efficacy of COVID-19 vaccination in persons who received monoclonal antibodies or convalescent plasma as part of COVID-19 treatment. Vaccination should be deferred for at least 90 days to avoid interference of the treatment with vaccine-induced immune responses."
+                ],
+                "seriesType": "Standard",
+                "equivalentSeriesGroups": null,
+                "requiredGender": null,
+                "selectSeries": {
+                    "defaultSeries": "No",
+                    "productPath": "Yes",
+                    "seriesGroupName": "Standard",
+                    "seriesGroup": "1",
+                    "seriesPriority": "A",
+                    "seriesPreference": "3",
+                    "minAgeToStart": null,
+                    "maxAgeToStart": null
+                },
+                "indication": null,
+                "seriesDose": [
+                    {
+                        "doseNumber": "Dose 1",
+                        "age": {
+                            "absMinAge": "0 days",
+                            "minAge": "18 years",
+                            "earliestRecAge": "18 years",
+                            "latestRecAge": null,
+                            "maxAge": null,
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "N",
+                                "fromTargetDose": null,
+                                "fromMostRecent": "207; 208; 213",
+                                "fromRelevantObs": null,
+                                "absMinInt": "0 days",
+                                "minInt": "28 days",
+                                "earliestRecInt": "28 days",
+                                "latestRecInt": null,
+                                "intervalPriority": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
+                        "allowableInterval": null,
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL",
+                                "cvx": "212",
+                                "beginAge": "18 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL",
+                                "cvx": "212",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": null,
+                        "recurringDose": "No",
+                        "seasonalRecommendation": null
+                    }
+                ]
+            },
+            {
+                "seriesName": "2-dose mRNA series",
+                "targetDisease": "COVID-19",
+                "vaccineGroup": "COVID-19",
+                "seriesAdminGuidance": [
+                    "COVID-19 vaccines should be administered alone with a minimum interval of 14 days before or after administration with any other vaccines. If COVID-19 vaccines are inadvertently administered within 14 days of another vaccine, doses do not need to be repeated for either vaccine.",
+                    "Vaccination should be deferred until recovery from acute illness (if person had symptoms) and criteria have been met to discontinue isolation.",
+                    "Currently no data on safety or efficacy of COVID-19 vaccination in persons who received monoclonal antibodies or convalescent plasma as part of COVID-19 treatment. Vaccination should be deferred for at least 90 days to avoid interference of the treatment with vaccine-induced immune responses."
+                ],
+                "seriesType": "Standard",
+                "equivalentSeriesGroups": null,
+                "requiredGender": null,
+                "selectSeries": {
+                    "defaultSeries": "No",
+                    "productPath": "No",
+                    "seriesGroupName": "Standard",
+                    "seriesGroup": "1",
+                    "seriesPriority": "A",
+                    "seriesPreference": "4",
+                    "minAgeToStart": null,
+                    "maxAgeToStart": null
+                },
+                "indication": null,
+                "seriesDose": [
+                    {
+                        "doseNumber": "Dose 1",
+                        "age": {
+                            "absMinAge": "0 days",
+                            "minAge": "16 years",
+                            "earliestRecAge": "16 years",
+                            "latestRecAge": null,
+                            "maxAge": null,
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "interval": null,
+                        "allowableInterval": null,
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": "18 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": "16 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.3",
+                                "forecastVaccineType": "N"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "SARS-COV-2 (COVID-19) vaccine, Unspecified Formulation",
+                                "cvx": "213",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": null,
+                        "recurringDose": "No",
+                        "seasonalRecommendation": null
+                    },
+                    {
+                        "doseNumber": "Dose 2",
+                        "age": {
+                            "absMinAge": null,
+                            "minAge": null,
+                            "earliestRecAge": null,
+                            "latestRecAge": null,
+                            "maxAge": null,
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "fromTargetDose": null,
+                                "fromMostRecent": null,
+                                "fromRelevantObs": null,
+                                "absMinInt": "28 days - 4 days",
+                                "minInt": "28 days",
+                                "earliestRecInt": "28 days",
+                                "latestRecInt": "42 days",
+                                "intervalPriority": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
+                        "allowableInterval": {
+                            "fromPrevious": "Y",
+                            "fromTargetDose": null,
+                            "absMinInt": "0 days",
+                            "effectiveDate": null,
+                            "cessationDate": null
+                        },
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": "18 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": "16 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.3",
+                                "forecastVaccineType": "N"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                                "cvx": "207",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                                "cvx": "208",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "SARS-COV-2 (COVID-19) vaccine, Unspecified Formulation",
+                                "cvx": "213",
+                                "beginAge": "0 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": null,
+                        "recurringDose": "No",
+                        "seasonalRecommendation": null
+                    }
+                ]
+            }
+        ]
+    }
+}

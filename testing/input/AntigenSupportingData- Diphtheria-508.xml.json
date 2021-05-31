@@ -332,15 +332,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 7 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "7 years"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 7 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -349,24 +353,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 7 years or older",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "7 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -381,13 +389,15 @@
                             "earliestRecAge": "4 months",
                             "latestRecAge": "5 months + 4 weeks"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "4 weeks - 4 days",
-                            "minInt": "4 weeks",
-                            "earliestRecInt": "8 weeks",
-                            "latestRecInt": "13 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "4 weeks - 4 days",
+                                "minInt": "4 weeks",
+                                "earliestRecInt": "8 weeks",
+                                "latestRecInt": "13 weeks"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "DTaP",
@@ -550,15 +560,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 7 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "7 years"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 7 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -567,24 +581,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 7 years or older at the earliest forecasted date for next dose.",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "7 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -599,13 +617,15 @@
                             "earliestRecAge": "6 months",
                             "latestRecAge": "7 months + 4 weeks"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "4 weeks - 4 days",
-                            "minInt": "4 weeks",
-                            "earliestRecInt": "8 weeks",
-                            "latestRecInt": "13 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "4 weeks - 4 days",
+                                "minInt": "4 weeks",
+                                "earliestRecInt": "8 weeks",
+                                "latestRecInt": "13 weeks"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "DTaP",
@@ -768,15 +788,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 7 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "7 years"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 7 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -785,24 +809,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 7 years or older at the earliest forecasted date for next dose.",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "7 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -817,13 +845,15 @@
                             "earliestRecAge": "15 months",
                             "latestRecAge": "19 months + 4 weeks"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "6 months - 4 days",
-                            "minInt": "6 months",
-                            "earliestRecInt": "6 months",
-                            "latestRecInt": "13 months + 4 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "6 months - 4 days",
+                                "minInt": "6 months",
+                                "earliestRecInt": "6 months",
+                                "latestRecInt": "13 months + 4 weeks"
+                            }
+                        ],
                         "allowableInterval": {
                             "fromPrevious": "Y",
                             "absMinInt": "4 months - 4 days"
@@ -978,15 +1008,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 4 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "4 years - 4 days"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 4 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "4 years - 4 days"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -995,24 +1029,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 4 years or older at the earliest forecasted date for next dose.",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "4 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "4 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -1027,13 +1065,15 @@
                             "earliestRecAge": "4 years",
                             "latestRecAge": "7 years"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "6 months - 4 days",
-                            "minInt": "6 months",
-                            "earliestRecInt": "3 years",
-                            "latestRecInt": "4 years + 4 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "6 months - 4 days",
+                                "minInt": "6 months",
+                                "earliestRecInt": "3 years",
+                                "latestRecInt": "4 years + 4 weeks"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "DTaP",
@@ -1184,15 +1224,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 7 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "7 years"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 7 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -1201,24 +1245,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 7 years or older at the earliest forecasted date for next dose.",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "7 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -1233,13 +1281,15 @@
                             "earliestRecAge": "7 years",
                             "latestRecAge": "7 years"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "0 days",
-                            "minInt": "0 days",
-                            "earliestRecInt": "0 days",
-                            "intervalPriority": "override"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "0 days",
+                                "minInt": "0 days",
+                                "earliestRecInt": "0 days",
+                                "intervalPriority": "override"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "Td - Adult Adsorbed",
@@ -1375,68 +1425,76 @@
                                 "beginAge": "6 weeks - 4 days"
                             }
                         ],
-                        "conditionalSkip": {
-                            "context": "Both",
-                            "setLogic": "OR",
-                            "set": [
-                                {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required if the patient has received 2 doses",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Vaccine Count by Age",
-                                        "doseCount": "2",
-                                        "doseType": "Valid",
-                                        "doseCountLogic": "equal to"
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "OR",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received 2 doses",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "2",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "equal to"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "2",
+                                        "setDescription": "Dose is not required if the patient has received 3 doses",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "3",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "equal to"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "3",
+                                        "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years",
+                                        "conditionLogic": "AND",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "4",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "equal to"
+                                            },
+                                            {
+                                                "conditionID": "2",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "4 years - 4 days",
+                                                "doseCount": "0",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "4",
+                                        "setDescription": "Dose is not required if the patient has received more than 4 doses",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "4",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than"
+                                            }
+                                        ]
                                     }
-                                },
-                                {
-                                    "setID": "2",
-                                    "setDescription": "Dose is not required if the patient has received 3 doses",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Vaccine Count by Age",
-                                        "doseCount": "3",
-                                        "doseType": "Valid",
-                                        "doseCountLogic": "equal to"
-                                    }
-                                },
-                                {
-                                    "setID": "3",
-                                    "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years",
-                                    "conditionLogic": "AND",
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "doseCount": "4",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "equal to"
-                                        },
-                                        {
-                                            "conditionID": "2",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "4 years - 4 days",
-                                            "doseCount": "0",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "setID": "4",
-                                    "setDescription": "Dose is not required if the patient has received more than 4 doses",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Vaccine Count by Age",
-                                        "doseCount": "4",
-                                        "doseType": "Valid",
-                                        "doseCountLogic": "greater than"
-                                    }
-                                }
-                            ]
-                        },
+                                ]
+                            }
+                        ],
                         "recurringDose": "No"
                     },
                     {
@@ -1447,14 +1505,16 @@
                             "earliestRecAge": "7 years",
                             "latestRecAge": "7 years"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "4 weeks - 4 days",
-                            "minInt": "4 weeks",
-                            "earliestRecInt": "4 weeks",
-                            "latestRecInt": "4 weeks",
-                            "intervalPriority": "override"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "4 weeks - 4 days",
+                                "minInt": "4 weeks",
+                                "earliestRecInt": "4 weeks",
+                                "latestRecInt": "4 weeks",
+                                "intervalPriority": "override"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "Td - Adult Adsorbed",
@@ -1590,21 +1650,27 @@
                                 "beginAge": "6 weeks - 4 days"
                             }
                         ],
-                        "conditionalSkip": {
-                            "context": "Both",
-                            "setLogic": "n/a",
-                            "set": {
-                                "setID": "1",
-                                "setDescription": "Dose is not required if the patient has received more than 2 doses.",
-                                "condition": {
-                                    "conditionID": "1",
-                                    "conditionType": "Vaccine Count by Age",
-                                    "doseCount": "2",
-                                    "doseType": "Valid",
-                                    "doseCountLogic": "greater than"
-                                }
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "n/a",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received more than 2 doses.",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "2",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
-                        },
+                        ],
                         "recurringDose": "No"
                     },
                     {
@@ -1615,14 +1681,16 @@
                             "earliestRecAge": "7 years",
                             "latestRecAge": "7 years"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "6 months - 4 days",
-                            "minInt": "6 months",
-                            "earliestRecInt": "6 months",
-                            "latestRecInt": "6 months",
-                            "intervalPriority": "override"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "6 months - 4 days",
+                                "minInt": "6 months",
+                                "earliestRecInt": "6 months",
+                                "latestRecInt": "6 months",
+                                "intervalPriority": "override"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "Td - Adult Adsorbed",
@@ -1758,21 +1826,27 @@
                                 "beginAge": "6 weeks - 4 days"
                             }
                         ],
-                        "conditionalSkip": {
-                            "context": "Both",
-                            "setLogic": "n/a",
-                            "set": {
-                                "setID": "1",
-                                "setDescription": "Dose is not required if the patient has received more than 3 doses",
-                                "condition": {
-                                    "conditionID": "1",
-                                    "conditionType": "Vaccine Count by Age",
-                                    "doseCount": "3",
-                                    "doseType": "Valid",
-                                    "doseCountLogic": "greater than"
-                                }
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "n/a",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received more than 3 doses",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "3",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
-                        },
+                        ],
                         "recurringDose": "No"
                     },
                     {
@@ -1918,22 +1992,28 @@
                                 "beginAge": "6 weeks - 4 days"
                             }
                         ],
-                        "conditionalSkip": {
-                            "context": "Both",
-                            "setLogic": "n/a",
-                            "set": {
-                                "setID": "1",
-                                "setDescription": "Dose is not required if the patient has received 1 or more doses after the age of 10 years",
-                                "condition": {
-                                    "conditionID": "1",
-                                    "conditionType": "Vaccine Count by Age",
-                                    "beginAge": "10 years",
-                                    "doseCount": "0",
-                                    "doseType": "Valid",
-                                    "doseCountLogic": "greater than"
-                                }
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "n/a",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received 1 or more doses after the age of 10 years",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "10 years",
+                                                "doseCount": "0",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
-                        },
+                        ],
                         "recurringDose": "No"
                     },
                     {
@@ -1941,13 +2021,15 @@
                         "age": {
                             "cessationDate": null
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "0 days",
-                            "minInt": "5 years",
-                            "earliestRecInt": "10 years",
-                            "latestRecInt": "10 years + 4 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "0 days",
+                                "minInt": "5 years",
+                                "earliestRecInt": "10 years",
+                                "latestRecInt": "10 years + 4 weeks"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "Td - Adult Adsorbed",
@@ -2269,15 +2351,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 7 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "7 years"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 7 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -2286,24 +2372,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 7 years or older",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "7 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -2315,13 +2405,15 @@
                         "age": {
                             "cessationDate": null
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "4 weeks - 4 days",
-                            "minInt": "4 weeks",
-                            "earliestRecInt": "4 weeks",
-                            "latestRecInt": "4 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "4 weeks - 4 days",
+                                "minInt": "4 weeks",
+                                "earliestRecInt": "4 weeks",
+                                "latestRecInt": "4 weeks"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "DTaP",
@@ -2484,15 +2576,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 7 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "7 years"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 7 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -2501,24 +2597,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 7 years or older at the earliest forecasted date for next dose.",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "7 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -2530,13 +2630,15 @@
                         "age": {
                             "cessationDate": null
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "4 weeks - 4 days",
-                            "minInt": "4 weeks",
-                            "earliestRecInt": "4 weeks",
-                            "latestRecInt": "4 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "4 weeks - 4 days",
+                                "minInt": "4 weeks",
+                                "earliestRecInt": "4 weeks",
+                                "latestRecInt": "4 weeks"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "DTaP",
@@ -2699,15 +2801,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 7 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "7 years"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 7 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -2716,24 +2822,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 7 years or older at the earliest forecasted date for next dose.",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "7 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -2748,13 +2858,15 @@
                             "earliestRecAge": "15 months",
                             "latestRecAge": "19 months + 4 weeks"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "6 months - 4 days",
-                            "minInt": "6 months",
-                            "earliestRecInt": "6 months",
-                            "latestRecInt": "13 months + 4 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "6 months - 4 days",
+                                "minInt": "6 months",
+                                "earliestRecInt": "6 months",
+                                "latestRecInt": "13 months + 4 weeks"
+                            }
+                        ],
                         "allowableInterval": {
                             "fromPrevious": "Y",
                             "absMinInt": "4 months - 4 days"
@@ -2909,15 +3021,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 4 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "4 years - 4 days"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 4 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "4 years - 4 days"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -2926,24 +3042,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 4 years or older at the earliest forecasted date for next dose.",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "4 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "4 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -2958,13 +3078,15 @@
                             "earliestRecAge": "4 years",
                             "latestRecAge": "7 years"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "6 months - 4 days",
-                            "minInt": "6 months",
-                            "earliestRecInt": "3 years",
-                            "latestRecInt": "4 years + 4 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "6 months - 4 days",
+                                "minInt": "6 months",
+                                "earliestRecInt": "3 years",
+                                "latestRecInt": "4 years + 4 weeks"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "DTaP",
@@ -3115,15 +3237,19 @@
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
-                                "set": {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 7 years or older",
-                                    "condition": {
-                                        "conditionID": "1",
-                                        "conditionType": "Age",
-                                        "beginAge": "7 years"
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 7 years or older",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     }
-                                }
+                                ]
                             },
                             {
                                 "context": "Forecast",
@@ -3132,24 +3258,28 @@
                                     {
                                         "setID": "2",
                                         "setDescription": "Dose is not required for those 7 years or older at the earliest forecasted date for next dose.",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "beginAge": "7 years"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "beginAge": "7 years"
+                                            }
+                                        ]
                                     },
                                     {
                                         "setID": "3",
                                         "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
-                                        "condition": {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "6 weeks - 4 days",
-                                            "doseCount": "5",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
-                                        }
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "6 weeks - 4 days",
+                                                "doseCount": "5",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;09;20;22;28;50;102;106;107;110;113;115;120;130;132;138;139;146;170; 195; 196"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -3164,13 +3294,15 @@
                             "earliestRecAge": "7 years",
                             "latestRecAge": "7 years"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "0 days",
-                            "minInt": "0 days",
-                            "earliestRecInt": "0 days",
-                            "intervalPriority": "override"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "0 days",
+                                "minInt": "0 days",
+                                "earliestRecInt": "0 days",
+                                "intervalPriority": "override"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "Td - Adult Adsorbed",
@@ -3306,140 +3438,142 @@
                                 "beginAge": "6 weeks - 4 days"
                             }
                         ],
-                        "conditionalSkip": {
-                            "context": "Both",
-                            "setLogic": "OR",
-                            "set": [
-                                {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required if the patient has received 1 dose and no doses prior to 12 months",
-                                    "conditionLogic": "AND",
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "doseCount": "1",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "equal to"
-                                        },
-                                        {
-                                            "conditionID": "2",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "endAge": "12 months - 4 days",
-                                            "doseCount": "0",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "equal to"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "setID": "2",
-                                    "setDescription": "Dose is not required if the patient has received 2 doses and no doses prior to 12 months",
-                                    "conditionLogic": "AND",
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "doseCount": "2",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "equal to"
-                                        },
-                                        {
-                                            "conditionID": "2",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "endAge": "12 months - 4 days",
-                                            "doseCount": "0",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "equal to"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "setID": "3",
-                                    "setDescription": "Dose is not required if the patient has recevied 3 doses with 1 dose of Tdap on or after 7 years and no doses prior to 12 months",
-                                    "conditionLogic": "AND",
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "doseCount": "3",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "equal to"
-                                        },
-                                        {
-                                            "conditionID": "2",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "7 years",
-                                            "doseCount": "0",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
-                                        },
-                                        {
-                                            "conditionID": "3",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "endAge": "12 months - 4 days",
-                                            "doseCount": "0",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "equal to"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "setID": "4",
-                                    "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years and no doses prior to 12 months",
-                                    "conditionLogic": "AND",
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "doseCount": "4",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "equal to"
-                                        },
-                                        {
-                                            "conditionID": "2",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "beginAge": "4 years - 4 days",
-                                            "doseCount": "0",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
-                                        },
-                                        {
-                                            "conditionID": "3",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "endAge": "12 months - 4 days",
-                                            "doseCount": "0",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "equal to"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "setID": "5",
-                                    "setDescription": "Dose is not required if the patient has received more than 4 doses and no doses prior to 12 months",
-                                    "conditionLogic": "AND",
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "doseCount": "4",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "greater than"
-                                        },
-                                        {
-                                            "conditionID": "2",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "endAge": "12 months - 4 days",
-                                            "doseCount": "0",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "equal to"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "OR",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received 1 dose and no doses prior to 12 months",
+                                        "conditionLogic": "AND",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "1",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "equal to"
+                                            },
+                                            {
+                                                "conditionID": "2",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "endAge": "12 months - 4 days",
+                                                "doseCount": "0",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "equal to"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "2",
+                                        "setDescription": "Dose is not required if the patient has received 2 doses and no doses prior to 12 months",
+                                        "conditionLogic": "AND",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "2",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "equal to"
+                                            },
+                                            {
+                                                "conditionID": "2",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "endAge": "12 months - 4 days",
+                                                "doseCount": "0",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "equal to"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "3",
+                                        "setDescription": "Dose is not required if the patient has recevied 3 doses with 1 dose of Tdap on or after 7 years and no doses prior to 12 months",
+                                        "conditionLogic": "AND",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "3",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "equal to"
+                                            },
+                                            {
+                                                "conditionID": "2",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "7 years",
+                                                "doseCount": "0",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
+                                            },
+                                            {
+                                                "conditionID": "3",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "endAge": "12 months - 4 days",
+                                                "doseCount": "0",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "equal to"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "4",
+                                        "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years and no doses prior to 12 months",
+                                        "conditionLogic": "AND",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "4",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "equal to"
+                                            },
+                                            {
+                                                "conditionID": "2",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "4 years - 4 days",
+                                                "doseCount": "0",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
+                                            },
+                                            {
+                                                "conditionID": "3",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "endAge": "12 months - 4 days",
+                                                "doseCount": "0",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "equal to"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "5",
+                                        "setDescription": "Dose is not required if the patient has received more than 4 doses and no doses prior to 12 months",
+                                        "conditionLogic": "AND",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "4",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than"
+                                            },
+                                            {
+                                                "conditionID": "2",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "endAge": "12 months - 4 days",
+                                                "doseCount": "0",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "equal to"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
                         "recurringDose": "No"
                     },
                     {
@@ -3450,14 +3584,16 @@
                             "earliestRecAge": "7 years",
                             "latestRecAge": "7 years"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "4 weeks - 4 days",
-                            "minInt": "4 weeks",
-                            "earliestRecInt": "4 weeks",
-                            "latestRecInt": "4 weeks",
-                            "intervalPriority": "override"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "4 weeks - 4 days",
+                                "minInt": "4 weeks",
+                                "earliestRecInt": "4 weeks",
+                                "latestRecInt": "4 weeks",
+                                "intervalPriority": "override"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "Td - Adult Adsorbed",
@@ -3593,21 +3729,27 @@
                                 "beginAge": "6 weeks - 4 days"
                             }
                         ],
-                        "conditionalSkip": {
-                            "context": "Both",
-                            "setLogic": "n/a",
-                            "set": {
-                                "setID": "1",
-                                "setDescription": "Dose is not required if the patient has received more than 1 dose.",
-                                "condition": {
-                                    "conditionID": "1",
-                                    "conditionType": "Vaccine Count by Age",
-                                    "doseCount": "1",
-                                    "doseType": "Valid",
-                                    "doseCountLogic": "greater than"
-                                }
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "n/a",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received more than 1 dose.",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "1",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
-                        },
+                        ],
                         "recurringDose": "No"
                     },
                     {
@@ -3618,14 +3760,16 @@
                             "earliestRecAge": "7 years",
                             "latestRecAge": "7 years"
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "6 months - 4 days",
-                            "minInt": "6 months",
-                            "earliestRecInt": "6 months",
-                            "latestRecInt": "6 months",
-                            "intervalPriority": "override"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "6 months - 4 days",
+                                "minInt": "6 months",
+                                "earliestRecInt": "6 months",
+                                "latestRecInt": "6 months",
+                                "intervalPriority": "override"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "Td - Adult Adsorbed",
@@ -3761,21 +3905,27 @@
                                 "beginAge": "6 weeks - 4 days"
                             }
                         ],
-                        "conditionalSkip": {
-                            "context": "Both",
-                            "setLogic": "n/a",
-                            "set": {
-                                "setID": "1",
-                                "setDescription": "Dose is not required if the patient has received more than 2 doses.",
-                                "condition": {
-                                    "conditionID": "1",
-                                    "conditionType": "Vaccine Count by Age",
-                                    "doseCount": "2",
-                                    "doseType": "Valid",
-                                    "doseCountLogic": "greater than"
-                                }
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "n/a",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received more than 2 doses.",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "doseCount": "2",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
-                        },
+                        ],
                         "recurringDose": "No"
                     },
                     {
@@ -3921,22 +4071,28 @@
                                 "beginAge": "6 weeks - 4 days"
                             }
                         ],
-                        "conditionalSkip": {
-                            "context": "Both",
-                            "setLogic": "n/a",
-                            "set": {
-                                "setID": "1",
-                                "setDescription": "Dose is not required if the patient has received 1 or more doses after the age of 10 years",
-                                "condition": {
-                                    "conditionID": "1",
-                                    "conditionType": "Vaccine Count by Age",
-                                    "beginAge": "10 years",
-                                    "doseCount": "0",
-                                    "doseType": "Valid",
-                                    "doseCountLogic": "greater than"
-                                }
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "n/a",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received 1 or more doses after the age of 10 years",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "beginAge": "10 years",
+                                                "doseCount": "0",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
-                        },
+                        ],
                         "recurringDose": "No"
                     },
                     {
@@ -3944,13 +4100,15 @@
                         "age": {
                             "cessationDate": null
                         },
-                        "interval": {
-                            "fromPrevious": "Y",
-                            "absMinInt": "0 days",
-                            "minInt": "5 years",
-                            "earliestRecInt": "10 years",
-                            "latestRecInt": "10 years + 4 weeks"
-                        },
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "absMinInt": "0 days",
+                                "minInt": "5 years",
+                                "earliestRecInt": "10 years",
+                                "latestRecInt": "10 years + 4 weeks"
+                            }
+                        ],
                         "preferableVaccine": [
                             {
                                 "vaccineType": "Td - Adult Adsorbed",
