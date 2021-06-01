@@ -180,7 +180,9 @@
                 "seriesName": "Meningococcal B risk 2-dose series MenB-FHbp",
                 "targetDisease": "Meningococcal B",
                 "vaccineGroup": "Meningococcal B",
-                "seriesAdminGuidance": "A 2-dose series for MenB-FHbp (Trumenba) which is used only for healthy adolescents and young adults who are not at increased risk for meningococcal B disease.",
+                "seriesAdminGuidance": [
+                    "A 2-dose series for MenB-FHbp (Trumenba) which is used only for healthy adolescents and young adults who are not at increased risk for meningococcal B disease."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": "2",
                 "requiredGender": null,

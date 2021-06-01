@@ -1829,7 +1829,9 @@
                 "seriesName": "HPV risk 3-dose series",
                 "targetDisease": "HPV",
                 "vaccineGroup": "HPV",
-                "seriesAdminGuidance": "At the provider's discretion, the recommendation for a 3-dose schedule does not apply to children aged less than 15 years with asplenia, asthma, chronic granulomatous disease, chronic liver disease, chronic lung disease, chronic renal disease, CNS anatomic barrier defines (e.g., cochlear implant), complement deficiency, diabetes, heart disease, or sickle cell disease.",
+                "seriesAdminGuidance": [
+                    "At the provider's discretion, the recommendation for a 3-dose schedule does not apply to children aged less than 15 years with asplenia, asthma, chronic granulomatous disease, chronic liver disease, chronic lung disease, chronic renal disease, CNS anatomic barrier defines (e.g., cochlear implant), complement deficiency, diabetes, heart disease, or sickle cell disease."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": "1",
                 "requiredGender": [
@@ -2198,7 +2200,9 @@
                 "seriesName": "HPV risk male 3-dose series",
                 "targetDisease": "HPV",
                 "vaccineGroup": "HPV",
-                "seriesAdminGuidance": "At the provider's discretion, the recommendation for a 3-dose schedule does not apply to children aged less than 15 years with asplenia, asthma, chronic granulomatous disease, chronic liver disease, chronic lung disease, chronic renal disease, CNS anatomic barrier defines (e.g., cochlear implant), complement deficiency, diabetes, heart disease, or sickle cell disease.",
+                "seriesAdminGuidance": [
+                    "At the provider's discretion, the recommendation for a 3-dose schedule does not apply to children aged less than 15 years with asplenia, asthma, chronic granulomatous disease, chronic liver disease, chronic lung disease, chronic renal disease, CNS anatomic barrier defines (e.g., cochlear implant), complement deficiency, diabetes, heart disease, or sickle cell disease."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": "1",
                 "requiredGender": "Male",

@@ -373,7 +373,9 @@
                 "seriesName": "Meningococcal ACWY risk start before 7 months 4-dose series",
                 "targetDisease": "Meningococcal",
                 "vaccineGroup": "Meningococcal",
-                "seriesAdminGuidance": "If MenACWY-D is used, it should be administered at least 4 weeks after completion of all PCV doses.",
+                "seriesAdminGuidance": [
+                    "If MenACWY-D is used, it should be administered at least 4 weeks after completion of all PCV doses."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,
@@ -970,7 +972,9 @@
                 "seriesName": "Meningococcal ACWY risk start after 7 months 2-dose series",
                 "targetDisease": "Meningococcal",
                 "vaccineGroup": "Meningococcal",
-                "seriesAdminGuidance": "If MenACWY-D is used, it should be administered at least 4 weeks after completion of all PCV doses.",
+                "seriesAdminGuidance": [
+                    "If MenACWY-D is used, it should be administered at least 4 weeks after completion of all PCV doses."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,
@@ -1968,7 +1972,9 @@
                 "seriesName": "Meningococcal ACWY risk 2-dose series",
                 "targetDisease": "Meningococcal",
                 "vaccineGroup": "Meningococcal",
-                "seriesAdminGuidance": "If MenACWY-D is used, it should be administered at least 4 weeks after completion of all PCV doses.",
+                "seriesAdminGuidance": [
+                    "If MenACWY-D is used, it should be administered at least 4 weeks after completion of all PCV doses."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,

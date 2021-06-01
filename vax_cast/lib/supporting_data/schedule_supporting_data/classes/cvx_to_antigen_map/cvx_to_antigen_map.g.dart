@@ -225,7 +225,18 @@ const _$CvxEnumMap = {
   Cvx.code194: '194',
   Cvx.code195: '195',
   Cvx.code196: '196',
+  Cvx.code197: '197',
   Cvx.code198: '198',
+  Cvx.code200: '200',
+  Cvx.code201: '201',
+  Cvx.code202: '202',
+  Cvx.code203: '203',
+  Cvx.code204: '204',
+  Cvx.code205: '205',
+  Cvx.code207: '207',
+  Cvx.code208: '208',
+  Cvx.code212: '212',
+  Cvx.code213: '213',
 };
 
 _$_Association _$_$_AssociationFromJson(Map<String, dynamic> json) {

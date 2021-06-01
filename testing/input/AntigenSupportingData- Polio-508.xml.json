@@ -92,7 +92,9 @@
                 "seriesName": "Polio 4-dose series",
                 "targetDisease": "Polio",
                 "vaccineGroup": "Polio",
-                "seriesAdminGuidance": "When evaluating doses of oral polio vaccine (OPV), only documentation specifying receipt of trivalent vaccine (tOPV) constitutes proof of vaccination according to the U.S. polio vaccination recommendations. As of April 2016, tOPV is no longer available or in use.",
+                "seriesAdminGuidance": [
+                    "When evaluating doses of oral polio vaccine (OPV), only documentation specifying receipt of trivalent vaccine (tOPV) constitutes proof of vaccination according to the U.S. polio vaccination recommendations. As of April 2016, tOPV is no longer available or in use."
+                ],
                 "seriesType": "Standard",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,

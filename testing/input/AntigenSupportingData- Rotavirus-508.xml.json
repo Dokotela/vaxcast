@@ -60,7 +60,9 @@
                 "seriesName": "Rotavirus 3-dose series",
                 "targetDisease": "Rotavirus",
                 "vaccineGroup": "Rotavirus",
-                "seriesAdminGuidance": "For children with known or suspected altered immunocompetence, ACIP advises consultation with an immunologist or infectious diseases specialist before administration of rotavirus vaccine.  Children who are immunocompromised because of congenital immunodeficiency, or hematopoietic stem cell or solid organ transplantation sometimes experience severe, prolonged, and even fatal wild-type rotavirus gastroenteritis.",
+                "seriesAdminGuidance": [
+                    "For children with known or suspected altered immunocompetence, ACIP advises consultation with an immunologist or infectious diseases specialist before administration of rotavirus vaccine.  Children who are immunocompromised because of congenital immunodeficiency, or hematopoietic stem cell or solid organ transplantation sometimes experience severe, prolonged, and even fatal wild-type rotavirus gastroenteritis."
+                ],
                 "seriesType": "Standard",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,
@@ -559,7 +561,9 @@
                 "seriesName": "Rotavirus 2-dose series",
                 "targetDisease": "Rotavirus",
                 "vaccineGroup": "Rotavirus",
-                "seriesAdminGuidance": "For children with known or suspected altered immunocompetence, ACIP advises consultation with an immunologist or infectious diseases specialist before administration of rotavirus vaccine.  Children who are immunocompromised because of congenital immunodeficiency, or hematopoietic stem cell or solid organ transplantation sometimes experience severe, prolonged, and even fatal wild-type rotavirus gastroenteritis.",
+                "seriesAdminGuidance": [
+                    "For children with known or suspected altered immunocompetence, ACIP advises consultation with an immunologist or infectious diseases specialist before administration of rotavirus vaccine.  Children who are immunocompromised because of congenital immunodeficiency, or hematopoietic stem cell or solid organ transplantation sometimes experience severe, prolonged, and even fatal wild-type rotavirus gastroenteritis."
+                ],
                 "seriesType": "Standard",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,

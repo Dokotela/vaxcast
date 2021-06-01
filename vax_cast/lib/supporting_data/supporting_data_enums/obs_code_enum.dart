@@ -241,6 +241,12 @@ enum Obs {
   code120,
   @JsonValue('121')
   code121,
+  @JsonValue('122')
+  code122,
+  @JsonValue('123')
+  code123,
+  @JsonValue('124')
+  code124,
   @JsonValue('125')
   code125,
   @JsonValue('126')
@@ -341,6 +347,34 @@ enum Obs {
   code173,
   @JsonValue('174')
   code174,
+  @JsonValue('175')
+  code175,
+  @JsonValue('176')
+  code176,
+  @JsonValue('177')
+  code177,
+  @JsonValue('178')
+  code178,
+  @JsonValue('179')
+  code179,
+  @JsonValue('180')
+  code180,
+  @JsonValue('181')
+  code181,
+  @JsonValue('182')
+  code182,
+  @JsonValue('183')
+  code183,
+  @JsonValue('184')
+  code184,
+  @JsonValue('185')
+  code185,
+  @JsonValue('186')
+  code186,
+  @JsonValue('187')
+  code187,
+  @JsonValue('188')
+  code188,
 }
 
 const ObsStringToEnumMap = {
@@ -464,6 +498,9 @@ const ObsStringToEnumMap = {
   '119': Obs.code119,
   '120': Obs.code120,
   '121': Obs.code121,
+  '122': Obs.code122,
+  '123': Obs.code123,
+  '124': Obs.code124,
   '125': Obs.code125,
   '126': Obs.code126,
   '127': Obs.code127,
@@ -514,6 +551,20 @@ const ObsStringToEnumMap = {
   '172': Obs.code172,
   '173': Obs.code173,
   '174': Obs.code174,
+  '175': Obs.code175,
+  '176': Obs.code176,
+  '177': Obs.code177,
+  '178': Obs.code178,
+  '179': Obs.code179,
+  '180': Obs.code180,
+  '181': Obs.code181,
+  '182': Obs.code182,
+  '183': Obs.code183,
+  '184': Obs.code184,
+  '185': Obs.code185,
+  '186': Obs.code186,
+  '187': Obs.code187,
+  '188': Obs.code188,
 };
 
 const ObsEnumToStringMap = {
@@ -637,6 +688,9 @@ const ObsEnumToStringMap = {
   Obs.code119: '119',
   Obs.code120: '120',
   Obs.code121: '121',
+  Obs.code122: '122',
+  Obs.code123: '123',
+  Obs.code124: '124',
   Obs.code125: '125',
   Obs.code126: '126',
   Obs.code127: '127',
@@ -687,4 +741,18 @@ const ObsEnumToStringMap = {
   Obs.code172: '172',
   Obs.code173: '173',
   Obs.code174: '174',
+  Obs.code175: '175',
+  Obs.code176: '176',
+  Obs.code177: '177',
+  Obs.code178: '178',
+  Obs.code179: '179',
+  Obs.code180: '180',
+  Obs.code181: '181',
+  Obs.code182: '182',
+  Obs.code183: '183',
+  Obs.code184: '184',
+  Obs.code185: '185',
+  Obs.code186: '186',
+  Obs.code187: '187',
+  Obs.code188: '188',
 };

@@ -349,760 +349,762 @@
                 ]
             }
         },
-        "series": {
-            "seriesName": "Influenza standard series",
-            "targetDisease": "Influenza",
-            "vaccineGroup": "Influenza",
-            "seriesAdminGuidance": [
-                "Persons with a history of egg allergy may receive any licensed, recommended influenza vaccine that is otherwise appropriate for their age and health status.",
-                "Persons who report having had reactions to egg involving symptoms other than urticaria (e.g., angioedema or swelling, respiratory distress, lightheadedness, or recurrent emesis) or who required epinephrine or another emergency medical intervention should be vaccinated in an inpatient or outpatient medical setting (including, but not necessarily limited to, hospitals, clinics, health departments, and physician offices). Vaccine administration should be supervised by a health care provider who is able to recognize and manage severe allergic reactions."
-            ],
-            "seriesType": "Standard",
-            "equivalentSeriesGroups": null,
-            "requiredGender": null,
-            "selectSeries": {
-                "defaultSeries": "Yes",
-                "productPath": "No",
-                "seriesGroupName": "Standard",
-                "seriesGroup": "1",
-                "seriesPriority": "A",
-                "seriesPreference": "1",
-                "minAgeToStart": null,
-                "maxAgeToStart": null
-            },
-            "indication": null,
-            "seriesDose": [
-                {
-                    "doseNumber": "Dose 1",
-                    "age": {
-                        "absMinAge": "6 months - 4 days",
-                        "minAge": "6 months",
-                        "earliestRecAge": "6 months",
-                        "latestRecAge": null,
-                        "maxAge": null,
-                        "effectiveDate": null,
-                        "cessationDate": null
-                    },
-                    "interval": null,
-                    "allowableInterval": null,
-                    "preferableVaccine": [
-                        {
-                            "vaccineType": "Influenza, live, intranasal, quadrivalent",
-                            "cvx": "149",
-                            "beginAge": "2 years",
-                            "endAge": "50 years",
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.2",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "3 years",
-                            "endAge": null,
-                            "tradeName": "AFLURIA - QUADRIVALENT",
-                            "mvx": "SEQ",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "6 months",
-                            "endAge": null,
-                            "tradeName": "FLUARIX - QUADRIVALENT",
-                            "mvx": "SKB",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "6 months",
-                            "endAge": null,
-                            "tradeName": "FLUZONE - QUADRIVALENT",
-                            "mvx": "PMC",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "6 months",
-                            "endAge": null,
-                            "tradeName": "FLULAVAL - QUADRIVALENT",
-                            "mvx": "IDB",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "6 months",
-                            "endAge": "3 years",
-                            "tradeName": "FLUZONE - QUADRIVALENT",
-                            "mvx": "PMC",
-                            "volume": "0.25",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "6 months",
-                            "endAge": null,
-                            "tradeName": "FLUZONE - QUADRIVALENT",
-                            "mvx": "PMC",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "6 months",
-                            "endAge": "3 years",
-                            "tradeName": "AFLURIA - QUADRIVALENT",
-                            "mvx": "SEQ",
-                            "volume": "0.25",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "3 years",
-                            "endAge": null,
-                            "tradeName": "AFLURIA - QUADRIVALENT",
-                            "mvx": "SEQ",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free, peds",
-                            "cvx": "161",
-                            "beginAge": "6 months",
-                            "endAge": "3 years",
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.25",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative free, quadrivalent",
-                            "cvx": "171",
-                            "beginAge": "4 years",
-                            "endAge": null,
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative, quadrivalent",
-                            "cvx": "186",
-                            "beginAge": "4 years",
-                            "endAge": null,
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        }
-                    ],
-                    "allowableVaccine": [
-                        {
-                            "vaccineType": "Influenza, split incl. purified surface antigen",
-                            "cvx": "15",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, whole",
-                            "cvx": "16",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, Unspecified",
-                            "cvx": "88",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, live, intranasal",
-                            "cvx": "111",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": "50 years"
-                        },
-                        {
-                            "vaccineType": "Influenza, high dose seasonal",
-                            "cvx": "135",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable preservative free",
-                            "cvx": "140",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable",
-                            "cvx": "141",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, live, intranasal, quadrivalent",
-                            "cvx": "149",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": "50 years"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "influenza nasal, unspecified formulation",
-                            "cvx": "151",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative free",
-                            "cvx": "153",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, recombinant, injectable, preservative free",
-                            "cvx": "155",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free, peds",
-                            "cvx": "161",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": "3 years"
-                        },
-                        {
-                            "vaccineType": "influenza, trivalent, adjuvanted",
-                            "cvx": "168",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative free, quadrivalent",
-                            "cvx": "171",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "influenza, recombinant, quadrIvalent,injectable, preservative free",
-                            "cvx": "185",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative, quadrivalent",
-                            "cvx": "186",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, high dose, quadrivalent",
-                            "cvx": "197",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "influenza, seasonal vaccine, quadrivalent, adjuvanted",
-                            "cvx": "205",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        }
-                    ],
-                    "inadvertentVaccine": null,
-                    "conditionalSkip": [
-                        {
-                            "context": "Both",
-                            "setLogic": "n/a",
-                            "set": [
-                                {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required for those 9 years or older",
-                                    "effectiveDate": null,
-                                    "cessationDate": null,
-                                    "conditionLogic": null,
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Age",
-                                            "startDate": null,
-                                            "endDate": null,
-                                            "beginAge": "9 years",
-                                            "endAge": null,
-                                            "interval": null,
-                                            "doseCount": null,
-                                            "doseType": null,
-                                            "doseCountLogic": null,
-                                            "vaccineTypes": null,
-                                            "seriesGroups": null
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "recurringDose": "No",
-                    "seasonalRecommendation": {
-                        "startDate": "20200701",
-                        "endDate": "20210630"
-                    }
+        "series": [
+            {
+                "seriesName": "Influenza standard series",
+                "targetDisease": "Influenza",
+                "vaccineGroup": "Influenza",
+                "seriesAdminGuidance": [
+                    "Persons with a history of egg allergy may receive any licensed, recommended influenza vaccine that is otherwise appropriate for their age and health status.",
+                    "Persons who report having had reactions to egg involving symptoms other than urticaria (e.g., angioedema or swelling, respiratory distress, lightheadedness, or recurrent emesis) or who required epinephrine or another emergency medical intervention should be vaccinated in an inpatient or outpatient medical setting (including, but not necessarily limited to, hospitals, clinics, health departments, and physician offices). Vaccine administration should be supervised by a health care provider who is able to recognize and manage severe allergic reactions."
+                ],
+                "seriesType": "Standard",
+                "equivalentSeriesGroups": null,
+                "requiredGender": null,
+                "selectSeries": {
+                    "defaultSeries": "Yes",
+                    "productPath": "No",
+                    "seriesGroupName": "Standard",
+                    "seriesGroup": "1",
+                    "seriesPriority": "A",
+                    "seriesPreference": "1",
+                    "minAgeToStart": null,
+                    "maxAgeToStart": null
                 },
-                {
-                    "doseNumber": "Dose 2",
-                    "age": {
-                        "absMinAge": null,
-                        "minAge": null,
-                        "earliestRecAge": null,
-                        "latestRecAge": null,
-                        "maxAge": null,
-                        "effectiveDate": null,
-                        "cessationDate": null
-                    },
-                    "interval": [
-                        {
-                            "fromPrevious": "Y",
-                            "fromTargetDose": null,
-                            "fromMostRecent": null,
-                            "fromRelevantObs": null,
-                            "absMinInt": "4 weeks - 4 days",
-                            "minInt": "4 weeks",
-                            "earliestRecInt": "4 weeks",
-                            "latestRecInt": null,
-                            "intervalPriority": null,
+                "indication": null,
+                "seriesDose": [
+                    {
+                        "doseNumber": "Dose 1",
+                        "age": {
+                            "absMinAge": "6 months - 4 days",
+                            "minAge": "6 months",
+                            "earliestRecAge": "6 months",
+                            "latestRecAge": null,
+                            "maxAge": null,
                             "effectiveDate": null,
                             "cessationDate": null
+                        },
+                        "interval": null,
+                        "allowableInterval": null,
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "Influenza, live, intranasal, quadrivalent",
+                                "cvx": "149",
+                                "beginAge": "2 years",
+                                "endAge": "50 years",
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.2",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "3 years",
+                                "endAge": null,
+                                "tradeName": "AFLURIA - QUADRIVALENT",
+                                "mvx": "SEQ",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "6 months",
+                                "endAge": null,
+                                "tradeName": "FLUARIX - QUADRIVALENT",
+                                "mvx": "SKB",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "6 months",
+                                "endAge": null,
+                                "tradeName": "FLUZONE - QUADRIVALENT",
+                                "mvx": "PMC",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "6 months",
+                                "endAge": null,
+                                "tradeName": "FLULAVAL - QUADRIVALENT",
+                                "mvx": "IDB",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "6 months",
+                                "endAge": "3 years",
+                                "tradeName": "FLUZONE - QUADRIVALENT",
+                                "mvx": "PMC",
+                                "volume": "0.25",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "6 months",
+                                "endAge": null,
+                                "tradeName": "FLUZONE - QUADRIVALENT",
+                                "mvx": "PMC",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "6 months",
+                                "endAge": "3 years",
+                                "tradeName": "AFLURIA - QUADRIVALENT",
+                                "mvx": "SEQ",
+                                "volume": "0.25",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "3 years",
+                                "endAge": null,
+                                "tradeName": "AFLURIA - QUADRIVALENT",
+                                "mvx": "SEQ",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free, peds",
+                                "cvx": "161",
+                                "beginAge": "6 months",
+                                "endAge": "3 years",
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.25",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative free, quadrivalent",
+                                "cvx": "171",
+                                "beginAge": "4 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative, quadrivalent",
+                                "cvx": "186",
+                                "beginAge": "4 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "Influenza, split incl. purified surface antigen",
+                                "cvx": "15",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, whole",
+                                "cvx": "16",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, Unspecified",
+                                "cvx": "88",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, live, intranasal",
+                                "cvx": "111",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": "50 years"
+                            },
+                            {
+                                "vaccineType": "Influenza, high dose seasonal",
+                                "cvx": "135",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable preservative free",
+                                "cvx": "140",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable",
+                                "cvx": "141",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, live, intranasal, quadrivalent",
+                                "cvx": "149",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": "50 years"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "influenza nasal, unspecified formulation",
+                                "cvx": "151",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative free",
+                                "cvx": "153",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, recombinant, injectable, preservative free",
+                                "cvx": "155",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free, peds",
+                                "cvx": "161",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": "3 years"
+                            },
+                            {
+                                "vaccineType": "influenza, trivalent, adjuvanted",
+                                "cvx": "168",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative free, quadrivalent",
+                                "cvx": "171",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "influenza, recombinant, quadrIvalent,injectable, preservative free",
+                                "cvx": "185",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative, quadrivalent",
+                                "cvx": "186",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, high dose, quadrivalent",
+                                "cvx": "197",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "influenza, seasonal vaccine, quadrivalent, adjuvanted",
+                                "cvx": "205",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "n/a",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required for those 9 years or older",
+                                        "effectiveDate": null,
+                                        "cessationDate": null,
+                                        "conditionLogic": null,
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Age",
+                                                "startDate": null,
+                                                "endDate": null,
+                                                "beginAge": "9 years",
+                                                "endAge": null,
+                                                "interval": null,
+                                                "doseCount": null,
+                                                "doseType": null,
+                                                "doseCountLogic": null,
+                                                "vaccineTypes": null,
+                                                "seriesGroups": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "recurringDose": "No",
+                        "seasonalRecommendation": {
+                            "startDate": "20200701",
+                            "endDate": "20210630"
                         }
-                    ],
-                    "allowableInterval": null,
-                    "preferableVaccine": [
-                        {
-                            "vaccineType": "Influenza, live, intranasal, quadrivalent",
-                            "cvx": "149",
-                            "beginAge": "2 years",
-                            "endAge": "50 years",
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.2",
-                            "forecastVaccineType": "N"
+                    },
+                    {
+                        "doseNumber": "Dose 2",
+                        "age": {
+                            "absMinAge": null,
+                            "minAge": null,
+                            "earliestRecAge": null,
+                            "latestRecAge": null,
+                            "maxAge": null,
+                            "effectiveDate": null,
+                            "cessationDate": null
                         },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "3 years",
-                            "endAge": null,
-                            "tradeName": "AFLURIA - QUADRIVALENT",
-                            "mvx": "SEQ",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "6 months",
-                            "endAge": null,
-                            "tradeName": "FLUARIX - QUADRIVALENT",
-                            "mvx": "SKB",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "6 months",
-                            "endAge": null,
-                            "tradeName": "FLUZONE - QUADRIVALENT",
-                            "mvx": "PMC",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "6 months",
-                            "endAge": null,
-                            "tradeName": "FLULAVAL - QUADRIVALENT",
-                            "mvx": "IDB",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "6 months",
-                            "endAge": "3 years",
-                            "tradeName": "FLUZONE - QUADRIVALENT",
-                            "mvx": "PMC",
-                            "volume": "0.25",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "6 months",
-                            "endAge": null,
-                            "tradeName": "FLUZONE - QUADRIVALENT",
-                            "mvx": "PMC",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "6 months",
-                            "endAge": "3 years",
-                            "tradeName": "AFLURIA - QUADRIVALENT",
-                            "mvx": "SEQ",
-                            "volume": "0.25",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "3 years",
-                            "endAge": null,
-                            "tradeName": "AFLURIA - QUADRIVALENT",
-                            "mvx": "SEQ",
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free, peds",
-                            "cvx": "161",
-                            "beginAge": "6 months",
-                            "endAge": "3 years",
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.25",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "influenza, trivalent, adjuvanted",
-                            "cvx": "168",
-                            "beginAge": "65 years",
-                            "endAge": null,
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative free, quadrivalent",
-                            "cvx": "171",
-                            "beginAge": "4 years",
-                            "endAge": null,
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "influenza, recombinant, quadrIvalent,injectable, preservative free",
-                            "cvx": "185",
-                            "beginAge": "18 years",
-                            "endAge": null,
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative, quadrivalent",
-                            "cvx": "186",
-                            "beginAge": "4 years",
-                            "endAge": null,
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "Influenza, high dose, quadrivalent",
-                            "cvx": "197",
-                            "beginAge": "65 years",
-                            "endAge": null,
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.7",
-                            "forecastVaccineType": "N"
-                        },
-                        {
-                            "vaccineType": "influenza, seasonal vaccine, quadrivalent, adjuvanted",
-                            "cvx": "205",
-                            "beginAge": "65 years",
-                            "endAge": null,
-                            "tradeName": null,
-                            "mvx": null,
-                            "volume": "0.5",
-                            "forecastVaccineType": "N"
+                        "interval": [
+                            {
+                                "fromPrevious": "Y",
+                                "fromTargetDose": null,
+                                "fromMostRecent": null,
+                                "fromRelevantObs": null,
+                                "absMinInt": "4 weeks - 4 days",
+                                "minInt": "4 weeks",
+                                "earliestRecInt": "4 weeks",
+                                "latestRecInt": null,
+                                "intervalPriority": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
+                        "allowableInterval": null,
+                        "preferableVaccine": [
+                            {
+                                "vaccineType": "Influenza, live, intranasal, quadrivalent",
+                                "cvx": "149",
+                                "beginAge": "2 years",
+                                "endAge": "50 years",
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.2",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "3 years",
+                                "endAge": null,
+                                "tradeName": "AFLURIA - QUADRIVALENT",
+                                "mvx": "SEQ",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "6 months",
+                                "endAge": null,
+                                "tradeName": "FLUARIX - QUADRIVALENT",
+                                "mvx": "SKB",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "6 months",
+                                "endAge": null,
+                                "tradeName": "FLUZONE - QUADRIVALENT",
+                                "mvx": "PMC",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "6 months",
+                                "endAge": null,
+                                "tradeName": "FLULAVAL - QUADRIVALENT",
+                                "mvx": "IDB",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "6 months",
+                                "endAge": "3 years",
+                                "tradeName": "FLUZONE - QUADRIVALENT",
+                                "mvx": "PMC",
+                                "volume": "0.25",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "6 months",
+                                "endAge": null,
+                                "tradeName": "FLUZONE - QUADRIVALENT",
+                                "mvx": "PMC",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "6 months",
+                                "endAge": "3 years",
+                                "tradeName": "AFLURIA - QUADRIVALENT",
+                                "mvx": "SEQ",
+                                "volume": "0.25",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "3 years",
+                                "endAge": null,
+                                "tradeName": "AFLURIA - QUADRIVALENT",
+                                "mvx": "SEQ",
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free, peds",
+                                "cvx": "161",
+                                "beginAge": "6 months",
+                                "endAge": "3 years",
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.25",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "influenza, trivalent, adjuvanted",
+                                "cvx": "168",
+                                "beginAge": "65 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative free, quadrivalent",
+                                "cvx": "171",
+                                "beginAge": "4 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "influenza, recombinant, quadrIvalent,injectable, preservative free",
+                                "cvx": "185",
+                                "beginAge": "18 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative, quadrivalent",
+                                "cvx": "186",
+                                "beginAge": "4 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "Influenza, high dose, quadrivalent",
+                                "cvx": "197",
+                                "beginAge": "65 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.7",
+                                "forecastVaccineType": "N"
+                            },
+                            {
+                                "vaccineType": "influenza, seasonal vaccine, quadrivalent, adjuvanted",
+                                "cvx": "205",
+                                "beginAge": "65 years",
+                                "endAge": null,
+                                "tradeName": null,
+                                "mvx": null,
+                                "volume": "0.5",
+                                "forecastVaccineType": "N"
+                            }
+                        ],
+                        "allowableVaccine": [
+                            {
+                                "vaccineType": "Influenza, split incl. purified surface antigen",
+                                "cvx": "15",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, whole",
+                                "cvx": "16",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, Unspecified",
+                                "cvx": "88",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, live, intranasal",
+                                "cvx": "111",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": "50 years"
+                            },
+                            {
+                                "vaccineType": "Influenza, high dose seasonal",
+                                "cvx": "135",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable preservative free",
+                                "cvx": "140",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable",
+                                "cvx": "141",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, intradermal, preservative free",
+                                "cvx": "144",
+                                "beginAge": "12 years - 4 days",
+                                "endAge": "65 years"
+                            },
+                            {
+                                "vaccineType": "Influenza, live, intranasal, quadrivalent",
+                                "cvx": "149",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": "50 years"
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
+                                "cvx": "150",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "influenza nasal, unspecified formulation",
+                                "cvx": "151",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative free",
+                                "cvx": "153",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, recombinant, injectable, preservative free",
+                                "cvx": "155",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent",
+                                "cvx": "158",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, quadrivalent, preservative free, peds",
+                                "cvx": "161",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": "3 years"
+                            },
+                            {
+                                "vaccineType": "Influenza, intradermal, quadrivalent, preservative free",
+                                "cvx": "166",
+                                "beginAge": "12 years - 4 days",
+                                "endAge": "65 years"
+                            },
+                            {
+                                "vaccineType": "influenza, trivalent, adjuvanted",
+                                "cvx": "168",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative free, quadrivalent",
+                                "cvx": "171",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "influenza, recombinant, quadrIvalent,injectable, preservative free",
+                                "cvx": "185",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, injectable, MDCK, preservative, quadrivalent",
+                                "cvx": "186",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "Influenza, high dose, quadrivalent",
+                                "cvx": "197",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            },
+                            {
+                                "vaccineType": "influenza, seasonal vaccine, quadrivalent, adjuvanted",
+                                "cvx": "205",
+                                "beginAge": "6 months - 4 days",
+                                "endAge": null
+                            }
+                        ],
+                        "inadvertentVaccine": null,
+                        "conditionalSkip": [
+                            {
+                                "context": "Both",
+                                "setLogic": "OR",
+                                "set": [
+                                    {
+                                        "setID": "1",
+                                        "setDescription": "Dose is not required if the patient has received 2 or more doses during the current season.",
+                                        "effectiveDate": null,
+                                        "cessationDate": null,
+                                        "conditionLogic": null,
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Date",
+                                                "startDate": "20200701",
+                                                "endDate": "20210630",
+                                                "beginAge": null,
+                                                "endAge": null,
+                                                "interval": null,
+                                                "doseCount": "1",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
+                                                "seriesGroups": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "2",
+                                        "setDescription": "Dose is not required if the patient has received 1 or more doses during the current season AND patient was 9 years or older when the first dose was received.",
+                                        "effectiveDate": null,
+                                        "cessationDate": null,
+                                        "conditionLogic": "AND",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Date",
+                                                "startDate": "20200701",
+                                                "endDate": "20210630",
+                                                "beginAge": null,
+                                                "endAge": null,
+                                                "interval": null,
+                                                "doseCount": "0",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
+                                                "seriesGroups": null
+                                            },
+                                            {
+                                                "conditionID": "2",
+                                                "conditionType": "Vaccine Count by Age",
+                                                "startDate": null,
+                                                "endDate": null,
+                                                "beginAge": "9 years",
+                                                "endAge": null,
+                                                "interval": null,
+                                                "doseCount": "0",
+                                                "doseType": "Total",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
+                                                "seriesGroups": null
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "setID": "3",
+                                        "setDescription": "Dose is not required if the patient has received 1 or more doses during the current season AND patient has received 2 or more doses before July 1, 2020.",
+                                        "effectiveDate": null,
+                                        "cessationDate": null,
+                                        "conditionLogic": "AND",
+                                        "condition": [
+                                            {
+                                                "conditionID": "1",
+                                                "conditionType": "Vaccine Count by Date",
+                                                "startDate": "20200701",
+                                                "endDate": "20210630",
+                                                "beginAge": null,
+                                                "endAge": null,
+                                                "interval": null,
+                                                "doseCount": "0",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
+                                                "seriesGroups": null
+                                            },
+                                            {
+                                                "conditionID": "2",
+                                                "conditionType": "Vaccine Count by Date",
+                                                "startDate": null,
+                                                "endDate": "20200701",
+                                                "beginAge": null,
+                                                "endAge": null,
+                                                "interval": null,
+                                                "doseCount": "1",
+                                                "doseType": "Valid",
+                                                "doseCountLogic": "greater than",
+                                                "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
+                                                "seriesGroups": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "recurringDose": "Yes",
+                        "seasonalRecommendation": {
+                            "startDate": "20200701",
+                            "endDate": "20210630"
                         }
-                    ],
-                    "allowableVaccine": [
-                        {
-                            "vaccineType": "Influenza, split incl. purified surface antigen",
-                            "cvx": "15",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, whole",
-                            "cvx": "16",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, Unspecified",
-                            "cvx": "88",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, live, intranasal",
-                            "cvx": "111",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": "50 years"
-                        },
-                        {
-                            "vaccineType": "Influenza, high dose seasonal",
-                            "cvx": "135",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable preservative free",
-                            "cvx": "140",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable",
-                            "cvx": "141",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, intradermal, preservative free",
-                            "cvx": "144",
-                            "beginAge": "12 years - 4 days",
-                            "endAge": "65 years"
-                        },
-                        {
-                            "vaccineType": "Influenza, live, intranasal, quadrivalent",
-                            "cvx": "149",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": "50 years"
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
-                            "cvx": "150",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "influenza nasal, unspecified formulation",
-                            "cvx": "151",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative free",
-                            "cvx": "153",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, recombinant, injectable, preservative free",
-                            "cvx": "155",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent",
-                            "cvx": "158",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, quadrivalent, preservative free, peds",
-                            "cvx": "161",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": "3 years"
-                        },
-                        {
-                            "vaccineType": "Influenza, intradermal, quadrivalent, preservative free",
-                            "cvx": "166",
-                            "beginAge": "12 years - 4 days",
-                            "endAge": "65 years"
-                        },
-                        {
-                            "vaccineType": "influenza, trivalent, adjuvanted",
-                            "cvx": "168",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative free, quadrivalent",
-                            "cvx": "171",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "influenza, recombinant, quadrIvalent,injectable, preservative free",
-                            "cvx": "185",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, injectable, MDCK, preservative, quadrivalent",
-                            "cvx": "186",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "Influenza, high dose, quadrivalent",
-                            "cvx": "197",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        },
-                        {
-                            "vaccineType": "influenza, seasonal vaccine, quadrivalent, adjuvanted",
-                            "cvx": "205",
-                            "beginAge": "6 months - 4 days",
-                            "endAge": null
-                        }
-                    ],
-                    "inadvertentVaccine": null,
-                    "conditionalSkip": [
-                        {
-                            "context": "Both",
-                            "setLogic": "OR",
-                            "set": [
-                                {
-                                    "setID": "1",
-                                    "setDescription": "Dose is not required if the patient has received 2 or more doses during the current season.",
-                                    "effectiveDate": null,
-                                    "cessationDate": null,
-                                    "conditionLogic": null,
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Date",
-                                            "startDate": "20200701",
-                                            "endDate": "20210630",
-                                            "beginAge": null,
-                                            "endAge": null,
-                                            "interval": null,
-                                            "doseCount": "1",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
-                                            "seriesGroups": null
-                                        }
-                                    ]
-                                },
-                                {
-                                    "setID": "2",
-                                    "setDescription": "Dose is not required if the patient has received 1 or more doses during the current season AND patient was 9 years or older when the first dose was received.",
-                                    "effectiveDate": null,
-                                    "cessationDate": null,
-                                    "conditionLogic": "AND",
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Date",
-                                            "startDate": "20200701",
-                                            "endDate": "20210630",
-                                            "beginAge": null,
-                                            "endAge": null,
-                                            "interval": null,
-                                            "doseCount": "0",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
-                                            "seriesGroups": null
-                                        },
-                                        {
-                                            "conditionID": "2",
-                                            "conditionType": "Vaccine Count by Age",
-                                            "startDate": null,
-                                            "endDate": null,
-                                            "beginAge": "9 years",
-                                            "endAge": null,
-                                            "interval": null,
-                                            "doseCount": "0",
-                                            "doseType": "Total",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
-                                            "seriesGroups": null
-                                        }
-                                    ]
-                                },
-                                {
-                                    "setID": "3",
-                                    "setDescription": "Dose is not required if the patient has received 1 or more doses during the current season AND patient has received 2 or more doses before July 1, 2020.",
-                                    "effectiveDate": null,
-                                    "cessationDate": null,
-                                    "conditionLogic": "AND",
-                                    "condition": [
-                                        {
-                                            "conditionID": "1",
-                                            "conditionType": "Vaccine Count by Date",
-                                            "startDate": "20200701",
-                                            "endDate": "20210630",
-                                            "beginAge": null,
-                                            "endAge": null,
-                                            "interval": null,
-                                            "doseCount": "0",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
-                                            "seriesGroups": null
-                                        },
-                                        {
-                                            "conditionID": "2",
-                                            "conditionType": "Vaccine Count by Date",
-                                            "startDate": null,
-                                            "endDate": "20200701",
-                                            "beginAge": null,
-                                            "endAge": null,
-                                            "interval": null,
-                                            "doseCount": "1",
-                                            "doseType": "Valid",
-                                            "doseCountLogic": "greater than",
-                                            "vaccineTypes": "15; 16; 88; 111; 135; 140; 141; 144; 149; 150; 151; 153; 155; 158; 161; 166; 168; 171; 185; 186; 197; 205",
-                                            "seriesGroups": null
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "recurringDose": "Yes",
-                    "seasonalRecommendation": {
-                        "startDate": "20200701",
-                        "endDate": "20210630"
                     }
-                }
-            ]
-        }
+                ]
+            }
+        ]
     }
 }

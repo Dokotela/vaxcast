@@ -28,7 +28,9 @@
                 "seriesName": "Rabies risk 3-dose continuous series",
                 "targetDisease": "Rabies",
                 "vaccineGroup": "Rabies",
-                "seriesAdminGuidance": "The 6 month booster should only be given after a serum sample has been tested for rabies virus neutralizing antibody. The booster should be administered if the serum titer fails to maintain a value of at least complete neutralization of a 1:5 serum dilution by rapid fluorescent focus inhibition test.",
+                "seriesAdminGuidance": [
+                    "The 6 month booster should only be given after a serum sample has been tested for rabies virus neutralizing antibody. The booster should be administered if the serum titer fails to maintain a value of at least complete neutralization of a 1:5 serum dilution by rapid fluorescent focus inhibition test."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,
@@ -365,7 +367,9 @@
                 "seriesName": "Rabies risk 3-dose frequent series",
                 "targetDisease": "Rabies",
                 "vaccineGroup": "Rabies",
-                "seriesAdminGuidance": "The 2 year booster should only be given after a serum sample has been tested for rabies virus neutralizing antibody. The booster should be administered if the serum titer fails to maintain a value of at least complete neutralization of a 1:5 serum dilution by rapid fluorescent focus inhibition test.",
+                "seriesAdminGuidance": [
+                    "The 2 year booster should only be given after a serum sample has been tested for rabies virus neutralizing antibody. The booster should be administered if the serum titer fails to maintain a value of at least complete neutralization of a 1:5 serum dilution by rapid fluorescent focus inhibition test."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,

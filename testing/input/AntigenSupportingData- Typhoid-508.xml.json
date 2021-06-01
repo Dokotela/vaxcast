@@ -216,7 +216,9 @@
                 "seriesName": "Typhoid risk 1-dose series",
                 "targetDisease": "Typhoid",
                 "vaccineGroup": "Typhoid",
-                "seriesAdminGuidance": "This vaccine should be given at least 2 weeks before potential exposure.",
+                "seriesAdminGuidance": [
+                    "This vaccine should be given at least 2 weeks before potential exposure."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,
@@ -359,7 +361,9 @@
                 "seriesName": "Typhoid risk 4-dose series",
                 "targetDisease": "Typhoid",
                 "vaccineGroup": "Typhoid",
-                "seriesAdminGuidance": "Primary vaccination with live-attenuated Ty21a vaccine consists of one enteric-coated capsule taken on alternate days (day 0, 2, 4, and 6), for a total of four capsules. The capsules must be kept refrigerated (not frozen). Each capsule should be taken with cool water no warmer than 98.6 F (37.0 C), approximately 1 hour before a meal. All doses should be completed at least 1 week before potential exposure.",
+                "seriesAdminGuidance": [
+                    "Primary vaccination with live-attenuated Ty21a vaccine consists of one enteric-coated capsule taken on alternate days (day 0, 2, 4, and 6), for a total of four capsules. The capsules must be kept refrigerated (not frozen). Each capsule should be taken with cool water no warmer than 98.6 F (37.0 C), approximately 1 hour before a meal. All doses should be completed at least 1 week before potential exposure."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,

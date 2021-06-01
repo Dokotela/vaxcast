@@ -1,17 +1,21 @@
 ﻿{
     "antigenSupportingData": {
         "immunity": {
-            "clinicalHistory": {
-                "guidelineCode": "020",
-                "guidelineTitle": "Laboratory Evidence of Immunity for Measles"
-            },
+            "clinicalHistory": [
+                {
+                    "guidelineCode": "020",
+                    "guidelineTitle": "Laboratory Evidence of Immunity for Measles"
+                }
+            ],
             "dateOfBirth": {
                 "immunityBirthDate": "01/01/1957",
                 "birthCountry": null,
-                "exclusion": {
-                    "exclusionCode": "055",
-                    "exclusionTitle": "Health care personnel"
-                }
+                "exclusion": [
+                    {
+                        "exclusionCode": "055",
+                        "exclusionTitle": "Health care personnel"
+                    }
+                ]
             }
         },
         "contraindications": {
@@ -503,7 +507,9 @@
                 "seriesName": "Measles risk 1-dose series",
                 "targetDisease": "Measles",
                 "vaccineGroup": "MMR",
-                "seriesAdminGuidance": "Children who received MMR vaccine before age 12 months should be considered potentially susceptible to all three diseases and should be revaccinated with 2 doses of MMR vaccine, the first dose administered when the child is aged 12 through 15 months (12 months if the child remains in an area where disease risk is high) and the second dose at least 28 days later.",
+                "seriesAdminGuidance": [
+                    "Children who received MMR vaccine before age 12 months should be considered potentially susceptible to all three diseases and should be revaccinated with 2 doses of MMR vaccine, the first dose administered when the child is aged 12 through 15 months (12 months if the child remains in an area where disease risk is high) and the second dose at least 28 days later."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,

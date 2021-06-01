@@ -1,17 +1,21 @@
 ﻿{
     "antigenSupportingData": {
         "immunity": {
-            "clinicalHistory": {
-                "guidelineCode": "021",
-                "guidelineTitle": "Laboratory Evidence of Immunity for Mumps"
-            },
+            "clinicalHistory": [
+                {
+                    "guidelineCode": "021",
+                    "guidelineTitle": "Laboratory Evidence of Immunity for Mumps"
+                }
+            ],
             "dateOfBirth": {
                 "immunityBirthDate": "01/01/1957",
                 "birthCountry": null,
-                "exclusion": {
-                    "exclusionCode": "055",
-                    "exclusionTitle": "Health care personnel"
-                }
+                "exclusion": [
+                    {
+                        "exclusionCode": "055",
+                        "exclusionTitle": "Health care personnel"
+                    }
+                ]
             }
         },
         "contraindications": {
@@ -305,7 +309,9 @@
                 "seriesName": "Mumps 2-dose series",
                 "targetDisease": "Mumps",
                 "vaccineGroup": "MMR",
-                "seriesAdminGuidance": "Persons identified as being at increased risk who have received less than or equal to 2 doses of mumps virus-containing vaccine should receive 1 dose.",
+                "seriesAdminGuidance": [
+                    "Persons identified as being at increased risk who have received less than or equal to 2 doses of mumps virus-containing vaccine should receive 1 dose."
+                ],
                 "seriesType": "Standard",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,
@@ -592,7 +598,9 @@
                 "seriesName": "Mumps risk 2-dose series",
                 "targetDisease": "Mumps",
                 "vaccineGroup": "MMR",
-                "seriesAdminGuidance": "Persons identified as being at increased risk who have received less than or equal to 2 doses of mumps virus-containing vaccine should receive 1 dose.",
+                "seriesAdminGuidance": [
+                    "Persons identified as being at increased risk who have received less than or equal to 2 doses of mumps virus-containing vaccine should receive 1 dose."
+                ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": null,
                 "requiredGender": null,
