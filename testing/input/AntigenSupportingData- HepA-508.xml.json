@@ -267,7 +267,7 @@
                     "minAgeToStart": "6 months",
                     "maxAgeToStart": "12 months"
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "Travelling Internationally",
                         "code": "048"
@@ -276,7 +276,7 @@
                     "beginAge": "6 months",
                     "endAge": "12 months",
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",

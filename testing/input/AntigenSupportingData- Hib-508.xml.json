@@ -2922,7 +2922,7 @@
                     "minAgeToStart": "6 weeks",
                     "maxAgeToStart": null
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "Recipient of a hematopoietic stem cell transplant",
                         "code": "004"
@@ -2931,7 +2931,7 @@
                     "beginAge": "6 weeks",
                     "endAge": null,
                     "guidance": "At least 4 weeks should separate doses, 6 to 12 months after a successful transplant."
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",

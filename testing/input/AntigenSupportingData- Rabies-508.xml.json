@@ -44,7 +44,7 @@
                     "minAgeToStart": "0 days",
                     "maxAgeToStart": null
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "Rabies researchers",
                         "code": "053"
@@ -53,7 +53,7 @@
                     "beginAge": "0 days",
                     "endAge": null,
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",

@@ -526,7 +526,7 @@
                     "minAgeToStart": "6 months",
                     "maxAgeToStart": "12 months"
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "Travelling Internationally",
                         "code": "048"
@@ -535,7 +535,7 @@
                     "beginAge": "6 months",
                     "endAge": "12 months",
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
@@ -813,7 +813,7 @@
                     "minAgeToStart": null,
                     "maxAgeToStart": null
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "Persons with perinatal HIV infection who do not have evidence of severe immunosuppression and who were vaccinated with MMR before establishment of antiviral therapy [ART]",
                         "code": "026"
@@ -822,7 +822,7 @@
                     "beginAge": null,
                     "endAge": null,
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",

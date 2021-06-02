@@ -46,7 +46,7 @@
                     "minAgeToStart": "18 years",
                     "maxAgeToStart": "65 years"
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "Travel to an area of active cholera transmission",
                         "code": "008"
@@ -55,7 +55,7 @@
                     "beginAge": "18 years",
                     "endAge": "65 years",
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",

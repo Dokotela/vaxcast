@@ -5390,7 +5390,7 @@
                     "minAgeToStart": "19 years",
                     "maxAgeToStart": null
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "Dialysis patient",
                         "code": "032"
@@ -5399,7 +5399,7 @@
                     "beginAge": "19 years",
                     "endAge": null,
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
@@ -5563,7 +5563,7 @@
                     "minAgeToStart": "19 years",
                     "maxAgeToStart": null
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "Dialysis patient",
                         "code": "032"
@@ -5572,7 +5572,7 @@
                     "beginAge": "19 years",
                     "endAge": null,
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",

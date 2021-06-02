@@ -1198,7 +1198,7 @@
                     "minAgeToStart": "0 days",
                     "maxAgeToStart": "11 years"
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "History of sexual abuse or assault",
                         "code": "169"
@@ -1207,7 +1207,7 @@
                     "beginAge": "0 days",
                     "endAge": "11 years",
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
@@ -1525,7 +1525,7 @@
                     "minAgeToStart": "0 days",
                     "maxAgeToStart": "11 years"
                 },
-                "indication": {
+                "indication": [{
                     "observationCode": {
                         "text": "History of sexual abuse or assault",
                         "code": "169"
@@ -1534,7 +1534,7 @@
                     "beginAge": "0 days",
                     "endAge": "11 years",
                     "guidance": null
-                },
+                }],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
