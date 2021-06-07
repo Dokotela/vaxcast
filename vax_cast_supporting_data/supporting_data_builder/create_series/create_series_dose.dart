@@ -78,7 +78,8 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
         !row[1]!
             .value
             .toString()
-            .contains('From Immediate Previous Dose Administered? Y/N')) {
+            .contains('From Immediate Previous Dose Administered? Y/N') &&
+        !row[0]!.value.toString().contains('n/a')) {
       seriesDose = seriesDose.copyWith(
           allowableInterval: Interval(
         fromPrevious: _valueToEnum(row[1]!.value, fromPreviousStringToEnum),
@@ -135,7 +136,8 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
         endAge: _valueToString(row[3]!.value),
       ));
     } else if (row[0]!.value.toString().contains('Inadvertent Vaccine') &&
-        !row[1]!.value.toString().contains('Vaccine Type (CVX)')) {
+        !row[1]!.value.toString().contains('Vaccine Type (CVX)') &&
+        !row[1]!.value.toString().contains('n/a')) {
       if (seriesDose.inadvertentVaccine == null) {
         seriesDose = seriesDose.copyWith(inadvertentVaccine: []);
       }
@@ -155,7 +157,8 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
         cvx: cvxStringToEnumMap[code],
       ));
     } else if (row[0]!.value.toString().contains('Conditional Skip') &&
-        !row[1]!.value.toString().contains('Skip Context')) {
+        !row[1]!.value.toString().contains('Skip Context') &&
+        !row[1]!.value.toString().contains('n/a')) {
       if (seriesDose.conditionalSkip == null) {
         seriesDose = seriesDose.copyWith(conditionalSkip: [
           ConditionalSkip(

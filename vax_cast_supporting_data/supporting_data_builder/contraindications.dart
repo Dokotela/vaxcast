@@ -85,8 +85,10 @@ AntigenSupportingData contraindications(
           VaccineContraindication(
             observationCode: ObsStringToEnumMap[code],
             observationTitle: text,
-            contraindicationText: i[2]!.value.toString(),
-            contraindicationGuidance: i[3]!.value.toString(),
+            contraindicationText:
+                i[2]!.value.toString() == 'n/a' ? null : i[2]!.value.toString(),
+            contraindicationGuidance:
+                i[3]!.value.toString() == 'n/a' ? null : i[3]!.value.toString(),
             contraindicatedVaccine: [],
           ),
         );
