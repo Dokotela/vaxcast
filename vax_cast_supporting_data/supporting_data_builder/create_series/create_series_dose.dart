@@ -45,7 +45,7 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
         !row[1]!
             .value
             .toString()
-            .contains('From Immediate Previous Dose Administered? Y/N')) {
+            .contains('From Previous Dose Administered? Y/N')) {
       if (seriesDose.interval == null) {
         seriesDose = seriesDose.copyWith(interval: []);
       }

@@ -215,6 +215,19 @@
             }
           ],
           "interval": [
+            {
+              "fromMostRecent": "From Most Recent (CVX List)",
+              "fromRelevantObs": {
+                "text": "From Relevant Observation"
+              },
+              "absMinInt": "Absolute Minimum Interval",
+              "minInt": "Minimum Interval",
+              "earliestRecInt": "Earliest Recommended Interval",
+              "latestRecInt": "Latest Recommended Interval (less than)",
+              "intervalPriority": "Interval Priority Flag",
+              "effectiveDate": "Effective Date",
+              "cessationDate": "Cessation Date"
+            },
             {}
           ],
           "allowableInterval": {},
@@ -242,6 +255,19 @@
             {}
           ],
           "interval": [
+            {
+              "fromMostRecent": "From Most Recent (CVX List)",
+              "fromRelevantObs": {
+                "text": "From Relevant Observation"
+              },
+              "absMinInt": "Absolute Minimum Interval",
+              "minInt": "Minimum Interval",
+              "earliestRecInt": "Earliest Recommended Interval",
+              "latestRecInt": "Latest Recommended Interval (less than)",
+              "intervalPriority": "Interval Priority Flag",
+              "effectiveDate": "Effective Date",
+              "cessationDate": "Cessation Date"
+            },
             {
               "fromPrevious": "Y",
               "absMinInt": "2 years - 4 days",
@@ -323,6 +349,19 @@
             }
           ],
           "interval": [
+            {
+              "fromMostRecent": "From Most Recent (CVX List)",
+              "fromRelevantObs": {
+                "text": "From Relevant Observation"
+              },
+              "absMinInt": "Absolute Minimum Interval",
+              "minInt": "Minimum Interval",
+              "earliestRecInt": "Earliest Recommended Interval",
+              "latestRecInt": "Latest Recommended Interval (less than)",
+              "intervalPriority": "Interval Priority Flag",
+              "effectiveDate": "Effective Date",
+              "cessationDate": "Cessation Date"
+            },
             {}
           ],
           "allowableInterval": {},
@@ -349,6 +388,19 @@
             {}
           ],
           "interval": [
+            {
+              "fromMostRecent": "From Most Recent (CVX List)",
+              "fromRelevantObs": {
+                "text": "From Relevant Observation"
+              },
+              "absMinInt": "Absolute Minimum Interval",
+              "minInt": "Minimum Interval",
+              "earliestRecInt": "Earliest Recommended Interval",
+              "latestRecInt": "Latest Recommended Interval (less than)",
+              "intervalPriority": "Interval Priority Flag",
+              "effectiveDate": "Effective Date",
+              "cessationDate": "Cessation Date"
+            },
             {
               "fromPrevious": "Y",
               "absMinInt": "5 years - 4 days",
