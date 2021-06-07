@@ -135,18 +135,22 @@
                 ]
             },
             "vaccine": {
-                "contraindication": {
-                    "observationCode": "009",
-                    "observationTitle": "Breastfeeding",
-                    "contraindicationText": "Do not vaccinate if the patient is breastfeeding.",
-                    "contraindicationGuidance": "Vaccination with Stamaril may occur if the patient is able to suspend breastfeeding for 14 days after administration.",
-                    "contraindicatedVaccine": {
-                        "vaccineType": "Yellow fever vaccine - alt",
-                        "cvx": "183",
-                        "beginAge": "9 months",
-                        "endAge": null
+                "contraindication": [
+                    {
+                        "observationCode": "009",
+                        "observationTitle": "Breastfeeding",
+                        "contraindicationText": "Do not vaccinate if the patient is breastfeeding.",
+                        "contraindicationGuidance": "Vaccination with Stamaril may occur if the patient is able to suspend breastfeeding for 14 days after administration.",
+                        "contraindicatedVaccine": [
+                            {
+                                "vaccineType": "Yellow fever vaccine - alt",
+                                "cvx": "183",
+                                "beginAge": "9 months",
+                                "endAge": null
+                            }
+                        ]
                     }
-                }
+                ]
             }
         },
         "series": [
@@ -219,15 +223,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "6 months",
-                            "minAge": "9 months",
-                            "earliestRecAge": "9 months",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "6 months",
+                                "minAge": "9 months",
+                                "earliestRecAge": "9 months",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [

@@ -153,15 +153,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "0 days",
-                            "minAge": "0 days",
-                            "earliestRecAge": "0 days",
-                            "latestRecAge": "4 weeks",
-                            "maxAge": "19 years",
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "0 days",
+                                "minAge": "0 days",
+                                "earliestRecAge": "0 days",
+                                "latestRecAge": "4 weeks",
+                                "maxAge": "19 years",
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -313,15 +315,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": "4 weeks - 4 days",
-                            "minAge": "4 weeks",
-                            "earliestRecAge": "1 month",
-                            "latestRecAge": "3 months + 4 weeks",
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "4 weeks - 4 days",
+                                "minAge": "4 weeks",
+                                "earliestRecAge": "1 month",
+                                "latestRecAge": "3 months + 4 weeks",
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -487,15 +491,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": "24 weeks - 4 days",
-                            "minAge": "24 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "19 months + 4 weeks",
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "24 weeks - 4 days",
+                                "minAge": "24 weeks",
+                                "earliestRecAge": "6 months",
+                                "latestRecAge": "19 months + 4 weeks",
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -696,15 +702,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "0 days",
-                            "minAge": "0 days",
-                            "earliestRecAge": "0 days",
-                            "latestRecAge": "4 weeks",
-                            "maxAge": "19 years",
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "0 days",
+                                "minAge": "0 days",
+                                "earliestRecAge": "0 days",
+                                "latestRecAge": "4 weeks",
+                                "maxAge": "19 years",
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -836,15 +844,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": "4 weeks - 4 days",
-                            "minAge": "4 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks",
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "4 weeks - 4 days",
+                                "minAge": "4 weeks",
+                                "earliestRecAge": "2 months",
+                                "latestRecAge": "3 months + 4 weeks",
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -990,15 +1000,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -1144,15 +1156,17 @@
                     },
                     {
                         "doseNumber": "Dose 4",
-                        "age": {
-                            "absMinAge": "24 weeks - 4 days",
-                            "minAge": "24 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "19 months + 4 weeks",
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "24 weeks - 4 days",
+                                "minAge": "24 weeks",
+                                "earliestRecAge": "6 months",
+                                "latestRecAge": "19 months + 4 weeks",
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "N",
@@ -1333,15 +1347,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "11 years - 4 days",
-                            "minAge": "11 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "11 years - 4 days",
+                                "minAge": "11 years",
+                                "earliestRecAge": "11 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -1364,15 +1380,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": "16 years",
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": "16 years",
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -1431,15 +1449,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years",
-                            "latestRecAge": null,
-                            "maxAge": "19 years",
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "18 years - 4 days",
+                                "minAge": "18 years",
+                                "earliestRecAge": "18 years",
+                                "latestRecAge": null,
+                                "maxAge": "19 years",
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -1483,15 +1503,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -1563,15 +1585,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "0 days",
-                            "minAge": "0 days",
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "0 days",
+                                "minAge": "0 days",
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -1697,15 +1721,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years",
-                            "latestRecAge": null,
-                            "maxAge": "19 years",
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "18 years - 4 days",
+                                "minAge": "18 years",
+                                "earliestRecAge": "18 years",
+                                "latestRecAge": null,
+                                "maxAge": "19 years",
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -1749,15 +1775,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -1913,15 +1941,17 @@
                     },
                     {
                         "doseNumber": "Dose 4",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "N",
@@ -2036,15 +2066,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years",
-                            "latestRecAge": null,
-                            "maxAge": "19 years",
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "18 years - 4 days",
+                                "minAge": "18 years",
+                                "earliestRecAge": "18 years",
+                                "latestRecAge": null,
+                                "maxAge": "19 years",
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -2088,15 +2120,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -2236,15 +2270,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -2400,15 +2436,17 @@
                     },
                     {
                         "doseNumber": "Dose 4",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -2681,15 +2719,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "0 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "0 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": "19 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -2801,15 +2841,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -2935,15 +2977,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -3275,15 +3319,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "18 years - 4 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": "19 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -3313,15 +3359,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -3564,15 +3612,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "0 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "0 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": "19 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -3698,15 +3748,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "18 years - 4 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": "19 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -3750,15 +3802,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -3914,15 +3968,17 @@
                     },
                     {
                         "doseNumber": "Dose 4",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "N",
@@ -4208,15 +4264,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "18 years - 4 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": "19 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -4260,15 +4318,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -4408,15 +4468,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -4572,15 +4634,17 @@
                     },
                     {
                         "doseNumber": "Dose 4",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -4853,15 +4917,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "19 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "19 years - 4 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": "19 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -4884,15 +4950,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -4942,15 +5010,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -5206,15 +5276,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "19 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "19 years - 4 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": "19 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -5237,15 +5309,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -5282,15 +5356,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -5327,15 +5403,17 @@
                     },
                     {
                         "doseNumber": "Dose 4",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "N",
@@ -5390,28 +5468,32 @@
                     "minAgeToStart": "19 years",
                     "maxAgeToStart": null
                 },
-                "indication": [{
-                    "observationCode": {
-                        "text": "Dialysis patient",
-                        "code": "032"
-                    },
-                    "description": "Administer to hemodialysis patients and predialysis, peritoneal dialysis, and home dialysis patients",
-                    "beginAge": "19 years",
-                    "endAge": null,
-                    "guidance": null
-                }],
+                "indication": [
+                    {
+                        "observationCode": {
+                            "text": "Dialysis patient",
+                            "code": "032"
+                        },
+                        "description": "Administer to hemodialysis patients and predialysis, peritoneal dialysis, and home dialysis patients",
+                        "beginAge": "19 years",
+                        "endAge": null,
+                        "guidance": null
+                    }
+                ],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "19 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "19 years - 4 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -5441,15 +5523,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -5493,15 +5577,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -5563,28 +5649,32 @@
                     "minAgeToStart": "19 years",
                     "maxAgeToStart": null
                 },
-                "indication": [{
-                    "observationCode": {
-                        "text": "Dialysis patient",
-                        "code": "032"
-                    },
-                    "description": "Administer to hemodialysis patients and predialysis, peritoneal dialysis, and home dialysis patients",
-                    "beginAge": "19 years",
-                    "endAge": null,
-                    "guidance": null
-                }],
+                "indication": [
+                    {
+                        "observationCode": {
+                            "text": "Dialysis patient",
+                            "code": "032"
+                        },
+                        "description": "Administer to hemodialysis patients and predialysis, peritoneal dialysis, and home dialysis patients",
+                        "beginAge": "19 years",
+                        "endAge": null,
+                        "guidance": null
+                    }
+                ],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "19 years- 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "19 years- 4 days",
+                                "minAge": "19 years",
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
@@ -5607,15 +5697,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -5652,15 +5744,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -5704,15 +5798,17 @@
                     },
                     {
                         "doseNumber": "Dose 4",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",

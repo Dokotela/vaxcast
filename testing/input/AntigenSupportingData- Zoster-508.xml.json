@@ -3,30 +3,34 @@
         "immunity": null,
         "contraindications": {
             "vaccineGroup": {
-                "contraindication": {
-                    "observationCode": "080",
-                    "observationTitle": "Adverse reaction to vaccine component",
-                    "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component.",
-                    "contraindicationGuidance": null,
-                    "beginAge": null,
-                    "endAge": null
-                }
+                "contraindication": [
+                    {
+                        "observationCode": "080",
+                        "observationTitle": "Adverse reaction to vaccine component",
+                        "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component.",
+                        "contraindicationGuidance": null,
+                        "beginAge": null,
+                        "endAge": null
+                    }
+                ]
             },
             "vaccine": {
-                "contraindication": {
-                    "observationCode": "172",
-                    "observationTitle": "Severe allergic reaction after previous dose of recombinant zoster",
-                    "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of recombinant zoster vaccine.",
-                    "contraindicationGuidance": null,
-                    "contraindicatedVaccine": [
-                        {
-                            "vaccineType": "Zoster recombinant",
-                            "cvx": "187",
-                            "beginAge": null,
-                            "endAge": null
-                        }
-                    ]
-                }
+                "contraindication": [
+                    {
+                        "observationCode": "172",
+                        "observationTitle": "Severe allergic reaction after previous dose of recombinant zoster",
+                        "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of recombinant zoster vaccine.",
+                        "contraindicationGuidance": null,
+                        "contraindicatedVaccine": [
+                            {
+                                "vaccineType": "Zoster recombinant",
+                                "cvx": "187",
+                                "beginAge": null,
+                                "endAge": null
+                            }
+                        ]
+                    }
+                ]
             }
         },
         "series": [
@@ -52,15 +56,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "18 years",
-                            "minAge": "50 years",
-                            "earliestRecAge": "50 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "18 years",
+                                "minAge": "50 years",
+                                "earliestRecAge": "50 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "N",
@@ -104,15 +110,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": "50 years - 4 days",
-                            "minAge": "50 years",
-                            "earliestRecAge": "50 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "50 years - 4 days",
+                                "minAge": "50 years",
+                                "earliestRecAge": "50 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -197,15 +205,17 @@
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "50 years",
-                            "minAge": "60 years",
-                            "earliestRecAge": "60 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "50 years",
+                                "minAge": "60 years",
+                                "earliestRecAge": "60 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": null,
@@ -224,15 +234,17 @@
                     },
                     {
                         "doseNumber": "Dose 2",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",
@@ -276,15 +288,17 @@
                     },
                     {
                         "doseNumber": "Dose 3",
-                        "age": {
-                            "absMinAge": null,
-                            "minAge": null,
-                            "earliestRecAge": null,
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": null,
+                                "minAge": null,
+                                "earliestRecAge": null,
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": [
                             {
                                 "fromPrevious": "Y",

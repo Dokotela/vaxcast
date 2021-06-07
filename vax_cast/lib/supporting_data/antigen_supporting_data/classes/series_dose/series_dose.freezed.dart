@@ -22,7 +22,7 @@ class _$SeriesDoseTearOff {
 
   _SeriesDose call(
       {DoseNumber? doseNumber,
-      VaxAge? age,
+      List<VaxAge>? age,
       List<Interval>? interval,
       Interval? allowableInterval,
       List<Vaccine>? preferableVaccine,
@@ -56,7 +56,7 @@ const $SeriesDose = _$SeriesDoseTearOff();
 /// @nodoc
 mixin _$SeriesDose {
   DoseNumber? get doseNumber => throw _privateConstructorUsedError;
-  VaxAge? get age => throw _privateConstructorUsedError;
+  List<VaxAge>? get age => throw _privateConstructorUsedError;
   List<Interval>? get interval => throw _privateConstructorUsedError;
   Interval? get allowableInterval => throw _privateConstructorUsedError;
   List<Vaccine>? get preferableVaccine => throw _privateConstructorUsedError;
@@ -81,7 +81,7 @@ abstract class $SeriesDoseCopyWith<$Res> {
       _$SeriesDoseCopyWithImpl<$Res>;
   $Res call(
       {DoseNumber? doseNumber,
-      VaxAge? age,
+      List<VaxAge>? age,
       List<Interval>? interval,
       Interval? allowableInterval,
       List<Vaccine>? preferableVaccine,
@@ -91,7 +91,6 @@ abstract class $SeriesDoseCopyWith<$Res> {
       Binary? recurringDose,
       SeasonalRecommendation? seasonalRecommendation});
 
-  $VaxAgeCopyWith<$Res>? get age;
   $IntervalCopyWith<$Res>? get allowableInterval;
   $SeasonalRecommendationCopyWith<$Res>? get seasonalRecommendation;
 }
@@ -125,7 +124,7 @@ class _$SeriesDoseCopyWithImpl<$Res> implements $SeriesDoseCopyWith<$Res> {
       age: age == freezed
           ? _value.age
           : age // ignore: cast_nullable_to_non_nullable
-              as VaxAge?,
+              as List<VaxAge>?,
       interval: interval == freezed
           ? _value.interval
           : interval // ignore: cast_nullable_to_non_nullable
@@ -162,17 +161,6 @@ class _$SeriesDoseCopyWithImpl<$Res> implements $SeriesDoseCopyWith<$Res> {
   }
 
   @override
-  $VaxAgeCopyWith<$Res>? get age {
-    if (_value.age == null) {
-      return null;
-    }
-
-    return $VaxAgeCopyWith<$Res>(_value.age!, (value) {
-      return _then(_value.copyWith(age: value));
-    });
-  }
-
-  @override
   $IntervalCopyWith<$Res>? get allowableInterval {
     if (_value.allowableInterval == null) {
       return null;
@@ -204,7 +192,7 @@ abstract class _$SeriesDoseCopyWith<$Res> implements $SeriesDoseCopyWith<$Res> {
   @override
   $Res call(
       {DoseNumber? doseNumber,
-      VaxAge? age,
+      List<VaxAge>? age,
       List<Interval>? interval,
       Interval? allowableInterval,
       List<Vaccine>? preferableVaccine,
@@ -214,8 +202,6 @@ abstract class _$SeriesDoseCopyWith<$Res> implements $SeriesDoseCopyWith<$Res> {
       Binary? recurringDose,
       SeasonalRecommendation? seasonalRecommendation});
 
-  @override
-  $VaxAgeCopyWith<$Res>? get age;
   @override
   $IntervalCopyWith<$Res>? get allowableInterval;
   @override
@@ -253,7 +239,7 @@ class __$SeriesDoseCopyWithImpl<$Res> extends _$SeriesDoseCopyWithImpl<$Res>
       age: age == freezed
           ? _value.age
           : age // ignore: cast_nullable_to_non_nullable
-              as VaxAge?,
+              as List<VaxAge>?,
       interval: interval == freezed
           ? _value.interval
           : interval // ignore: cast_nullable_to_non_nullable
@@ -311,7 +297,7 @@ class _$_SeriesDose implements _SeriesDose {
   @override
   final DoseNumber? doseNumber;
   @override
-  final VaxAge? age;
+  final List<VaxAge>? age;
   @override
   final List<Interval>? interval;
   @override
@@ -397,7 +383,7 @@ class _$_SeriesDose implements _SeriesDose {
 abstract class _SeriesDose implements SeriesDose {
   factory _SeriesDose(
       {DoseNumber? doseNumber,
-      VaxAge? age,
+      List<VaxAge>? age,
       List<Interval>? interval,
       Interval? allowableInterval,
       List<Vaccine>? preferableVaccine,
@@ -413,7 +399,7 @@ abstract class _SeriesDose implements SeriesDose {
   @override
   DoseNumber? get doseNumber => throw _privateConstructorUsedError;
   @override
-  VaxAge? get age => throw _privateConstructorUsedError;
+  List<VaxAge>? get age => throw _privateConstructorUsedError;
   @override
   List<Interval>? get interval => throw _privateConstructorUsedError;
   @override

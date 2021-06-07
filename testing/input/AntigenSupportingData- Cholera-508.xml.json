@@ -46,28 +46,32 @@
                     "minAgeToStart": "18 years",
                     "maxAgeToStart": "65 years"
                 },
-                "indication": [{
-                    "observationCode": {
-                        "text": "Travel to an area of active cholera transmission",
-                        "code": "008"
-                    },
-                    "description": "Administer to adult travelers (aged 18-64 years) from the United States traveling to an area of active cholera transmission.",
-                    "beginAge": "18 years",
-                    "endAge": "65 years",
-                    "guidance": null
-                }],
+                "indication": [
+                    {
+                        "observationCode": {
+                            "text": "Travel to an area of active cholera transmission",
+                            "code": "008"
+                        },
+                        "description": "Administer to adult travelers (aged 18-64 years) from the United States traveling to an area of active cholera transmission.",
+                        "beginAge": "18 years",
+                        "endAge": "65 years",
+                        "guidance": null
+                    }
+                ],
                 "seriesDose": [
                     {
                         "doseNumber": "Dose 1",
-                        "age": {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years",
-                            "latestRecAge": null,
-                            "maxAge": null,
-                            "effectiveDate": null,
-                            "cessationDate": null
-                        },
+                        "age": [
+                            {
+                                "absMinAge": "18 years - 4 days",
+                                "minAge": "18 years",
+                                "earliestRecAge": "18 years",
+                                "latestRecAge": null,
+                                "maxAge": null,
+                                "effectiveDate": null,
+                                "cessationDate": null
+                            }
+                        ],
                         "interval": null,
                         "allowableInterval": null,
                         "preferableVaccine": [
