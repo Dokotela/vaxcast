@@ -1650,7 +1650,7 @@
                                             },
                                             {
                                                 "conditionID": "2",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "6 weeks - 4 days",
@@ -1664,7 +1664,7 @@
                                             },
                                             {
                                                 "conditionID": "3",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "12 months - 4 days",
@@ -1701,7 +1701,7 @@
                                             },
                                             {
                                                 "conditionID": "2",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "6 weeks - 4 days",
@@ -1792,7 +1792,7 @@
                                             },
                                             {
                                                 "conditionID": "2",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "6 weeks - 4 days",
@@ -1806,7 +1806,7 @@
                                             },
                                             {
                                                 "conditionID": "3",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "12 months - 4 days",
@@ -1843,7 +1843,7 @@
                                             },
                                             {
                                                 "conditionID": "2",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "6 weeks - 4 days",
@@ -2174,7 +2174,7 @@
                                             },
                                             {
                                                 "conditionID": "2",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "6 weeks - 4 days",
@@ -2188,7 +2188,7 @@
                                             },
                                             {
                                                 "conditionID": "3",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "12 months - 4 days",
@@ -2225,7 +2225,7 @@
                                             },
                                             {
                                                 "conditionID": "2",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "6 weeks - 4 days",
@@ -2316,7 +2316,7 @@
                                             },
                                             {
                                                 "conditionID": "2",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "6 weeks - 4 days",
@@ -2330,7 +2330,7 @@
                                             },
                                             {
                                                 "conditionID": "3",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "12 months - 4 days",
@@ -2367,7 +2367,7 @@
                                             },
                                             {
                                                 "conditionID": "2",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "6 weeks - 4 days",
@@ -2758,7 +2758,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -3008,7 +3008,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -3258,7 +3258,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -3508,7 +3508,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -3919,7 +3919,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -4009,7 +4009,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -4493,7 +4493,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -4917,7 +4917,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -5007,7 +5007,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -5478,7 +5478,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -5805,7 +5805,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",
@@ -5979,7 +5979,7 @@
                                         "condition": [
                                             {
                                                 "conditionID": "1",
-                                                "conditionType": "Vaccine Count By Age",
+                                                "conditionType": "Vaccine Count by Age",
                                                 "startDate": null,
                                                 "endDate": null,
                                                 "beginAge": "65 years",

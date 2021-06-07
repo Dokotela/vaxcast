@@ -108,6 +108,7 @@ const _$SeriesPriorityEnumMap = {
   SeriesPriority.b: 'B',
   SeriesPriority.c: 'C',
   SeriesPriority.d: 'D',
+  SeriesPriority.e: 'E',
 };
 
 const _$SeriesPreferenceEnumMap = {

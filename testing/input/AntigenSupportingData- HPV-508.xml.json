@@ -638,7 +638,9 @@
                 "seriesAdminGuidance": null,
                 "seriesType": "Standard",
                 "equivalentSeriesGroups": "2",
-                "requiredGender": "Male",
+                "requiredGender": [
+                    "Male"
+                ],
                 "selectSeries": {
                     "defaultSeries": "Yes",
                     "productPath": "No",
@@ -959,7 +961,9 @@
                 "seriesAdminGuidance": null,
                 "seriesType": "Standard",
                 "equivalentSeriesGroups": "2",
-                "requiredGender": "Male",
+                "requiredGender": [
+                    "Male"
+                ],
                 "selectSeries": {
                     "defaultSeries": "No",
                     "productPath": "No",
@@ -1554,7 +1558,9 @@
                 "seriesAdminGuidance": null,
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": "1",
-                "requiredGender": "Male",
+                "requiredGender": [
+                    "Male"
+                ],
                 "selectSeries": {
                     "defaultSeries": "No",
                     "productPath": "No",
@@ -2265,7 +2271,9 @@
                 ],
                 "seriesType": "Risk",
                 "equivalentSeriesGroups": "1",
-                "requiredGender": "Male",
+                "requiredGender": [
+                    "Male"
+                ],
                 "selectSeries": {
                     "defaultSeries": "No",
                     "productPath": "No",
