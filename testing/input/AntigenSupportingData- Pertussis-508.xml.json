@@ -385,10 +385,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "Tdap",
-                            "cvx": "115"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "Tdap",
+                                "cvx": "115"
+                            }
+                        ],
                         "conditionalSkip": [
                             {
                                 "context": "Evaluation",
@@ -642,10 +644,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "Tdap",
-                            "cvx": "115"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "Tdap",
+                                "cvx": "115"
+                            }
+                        ],
                         "conditionalSkip": [
                             {
                                 "context": "Evaluation",
@@ -899,10 +903,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "Tdap",
-                            "cvx": "115"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "Tdap",
+                                "cvx": "115"
+                            }
+                        ],
                         "conditionalSkip": [
                             {
                                 "context": "Evaluation",
@@ -2642,10 +2648,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "Tdap",
-                            "cvx": "115"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "Tdap",
+                                "cvx": "115"
+                            }
+                        ],
                         "conditionalSkip": [
                             {
                                 "context": "Evaluation",
@@ -2899,10 +2907,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "Tdap",
-                            "cvx": "115"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "Tdap",
+                                "cvx": "115"
+                            }
+                        ],
                         "conditionalSkip": [
                             {
                                 "context": "Evaluation",
@@ -3156,10 +3166,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "Tdap",
-                            "cvx": "115"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "Tdap",
+                                "cvx": "115"
+                            }
+                        ],
                         "conditionalSkip": [
                             {
                                 "context": "Evaluation",

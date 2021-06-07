@@ -121,11 +121,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": null,
+                        }],
+"conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
                     },
@@ -202,11 +202,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": [
+                        }],
+"conditionalSkip": [
                             {
                                 "context": "Evaluation",
                                 "setLogic": "n/a",
@@ -342,11 +342,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": [
+                        }],
+"conditionalSkip": [
                             {
                                 "context": "Evaluation",
                                 "setLogic": "OR",
@@ -519,11 +519,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": null,
+                        }],
+"conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
                     },
@@ -576,11 +576,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": [
+                        }],
+"conditionalSkip": [
                             {
                                 "context": "Both",
                                 "setLogic": "n/a",
@@ -695,11 +695,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": null,
+                        }],
+"conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
                     },
@@ -776,11 +776,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": [
+                        }],
+"conditionalSkip": [
                             {
                                 "context": "Both",
                                 "setLogic": "n/a",
@@ -887,11 +887,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": null,
+                        }],
+"conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
                     },
@@ -968,11 +968,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": null,
+                        }],
+"conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
                     },
@@ -1025,11 +1025,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": [
+                        }],
+"conditionalSkip": [
                             {
                                 "context": "Both",
                                 "setLogic": "n/a",
@@ -1144,11 +1144,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": null,
+                        }],
+"conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
                     },
@@ -1225,11 +1225,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": null,
+                        }],
+"conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
                     },
@@ -1282,11 +1282,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": [
+                        }],
+"conditionalSkip": [
                             {
                                 "context": "Both",
                                 "setLogic": "n/a",
@@ -1401,11 +1401,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": null,
+                        }],
+"conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
                     },
@@ -1458,11 +1458,11 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
+                        "inadvertentVaccine":[{
                             "vaccineType": "PPSV23",
                             "cvx": "33"
-                        },
-                        "conditionalSkip": [
+                        }],
+"conditionalSkip": [
                             {
                                 "context": "Both",
                                 "setLogic": "n/a",

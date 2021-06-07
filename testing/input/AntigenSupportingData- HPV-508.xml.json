@@ -698,10 +698,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -767,10 +769,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": [
                             {
                                 "context": "Evaluation",
@@ -936,10 +940,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -1022,10 +1028,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -1091,10 +1099,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -1186,10 +1196,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -1613,10 +1625,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -1682,10 +1696,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": [
                             {
                                 "context": "Evaluation",
@@ -1851,10 +1867,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -2428,10 +2446,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -2497,10 +2517,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null
@@ -2592,10 +2614,12 @@
                                 "endAge": null
                             }
                         ],
-                        "inadvertentVaccine": {
-                            "vaccineType": "2vHPV",
-                            "cvx": "118"
-                        },
+                        "inadvertentVaccine": [
+                            {
+                                "vaccineType": "2vHPV",
+                                "cvx": "118"
+                            }
+                        ],
                         "conditionalSkip": null,
                         "recurringDose": "No",
                         "seasonalRecommendation": null

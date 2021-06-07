@@ -9,6 +9,8 @@ enum SeriesPriority {
   c,
   @JsonValue('D')
   d,
+  @JsonValue('E')
+  e,
 }
 
 const seriesPriorityStringToEnum = {
@@ -16,6 +18,7 @@ const seriesPriorityStringToEnum = {
   'B': SeriesPriority.b,
   'C': SeriesPriority.c,
   'D': SeriesPriority.d,
+  'E': SeriesPriority.e,
 };
 
 const seriesPriorityEnumToString = {
@@ -23,4 +26,5 @@ const seriesPriorityEnumToString = {
   SeriesPriority.b: 'B',
   SeriesPriority.c: 'C',
   SeriesPriority.d: 'D',
+  SeriesPriority.e: 'E',
 };
