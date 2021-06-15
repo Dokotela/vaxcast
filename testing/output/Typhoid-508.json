@@ -214,23 +214,6 @@
               "earliestRecAge": "2 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Typhoid capsular polysaccharide",
@@ -256,26 +239,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "2 years - 4 days",
               "minInt": "2 years",
               "earliestRecInt": "2 years"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Typhoid capsular polysaccharide",
@@ -348,23 +317,6 @@
               "earliestRecAge": "6 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Typhoid oral, live, attenuated",
@@ -389,26 +341,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "5 years - 4 days",
               "minInt": "5 years",
               "earliestRecInt": "5 years"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Typhoid oral, live, attenuated",

@@ -74,23 +74,6 @@
               "earliestRecAge": "16 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
@@ -119,19 +102,6 @@
             }
           ],
           "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
             {
               "fromPrevious": "Y",
               "absMinInt": "21 days - 4 days",
@@ -193,23 +163,6 @@
               "earliestRecAge": "18 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
@@ -238,19 +191,6 @@
             }
           ],
           "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
             {
               "fromPrevious": "Y",
               "absMinInt": "28 days - 4 days",
@@ -313,19 +253,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "N",
               "fromMostRecent": "207; 208; 213",
               "absMinInt": "0 days",
@@ -333,7 +260,6 @@
               "earliestRecInt": "28 days"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL",
@@ -382,23 +308,6 @@
               "earliestRecAge": "16 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
@@ -440,19 +349,6 @@
             {}
           ],
           "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
             {
               "fromPrevious": "Y",
               "absMinInt": "28 days - 4 days",

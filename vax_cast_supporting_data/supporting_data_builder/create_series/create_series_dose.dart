@@ -45,7 +45,8 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
         !row[1]!
             .value
             .toString()
-            .contains('From Previous Dose Administered? Y/N')) {
+            .contains('From Immediate Previous Dose Administered? Y/N') &&
+        !row[1]!.value.toString().contains('n/a')) {
       if (seriesDose.interval == null) {
         seriesDose = seriesDose.copyWith(interval: []);
       }
@@ -79,7 +80,7 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
             .value
             .toString()
             .contains('From Immediate Previous Dose Administered? Y/N') &&
-        !row[0]!.value.toString().contains('n/a')) {
+        !row[1]!.value.toString().contains('n/a')) {
       seriesDose = seriesDose.copyWith(
           allowableInterval: Interval(
         fromPrevious: _valueToEnum(row[1]!.value, fromPreviousStringToEnum),
@@ -103,18 +104,37 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
         code = row[1]!.value.toString().substring(open + 1, close);
         text = row[1]!.value.toString().substring(0, open - 1);
       }
+      String? mvx;
+      String? tradeName;
+      if (!row[4]!.value.toString().contains('n/a')) {
+        open = row[4]!.value.toString().lastIndexOf('(');
+        close = row[4]!.value.toString().lastIndexOf(')');
+        if (open != -1 && close != -1) {
+          mvx = row[4]!.value.toString().substring(open + 1, close);
+          tradeName = row[4]!.value.toString().substring(0, open - 1);
+        }
+      }
 
       seriesDose.preferableVaccine!.add(Vaccine(
         vaccineType: text,
         cvx: cvxStringToEnumMap[code],
         beginAge: _valueToString(row[2]!.value),
         endAge: _valueToString(row[3]!.value),
-        mvx: _valueToString(row[4]!.value),
-        volume: _valueToString(row[5]!.value),
+        tradeName: tradeName,
+        mvx: mvx,
+        volume:
+            _valueToString(row[5]!.value.toString() == '1899-12-30T12:00:00.000'
+                ? 0.5
+                : row[5]!.value.toString() == '1899-12-31T00:00:00.000'
+                    ? 1
+                    : row[5]!.value.toString() == '1900-01-01T00:00:00.000'
+                        ? 2
+                        : row[5]!.value),
         forecastVaccineType: _valueToString(row[6]!.value),
       ));
     } else if (row[0]!.value.toString().contains('Allowable Vaccine') &&
-        !row[1]!.value.toString().contains('Vaccine Type (CVX)')) {
+        !row[1]!.value.toString().contains('Vaccine Type (CVX)') &&
+        !row[1]!.value.toString().contains('n/a')) {
       if (seriesDose.allowableVaccine == null) {
         seriesDose = seriesDose.copyWith(allowableVaccine: []);
       }
@@ -305,7 +325,7 @@ SeriesDose createSeriesDose(int index, List<List<Data?>> rows) {
 String? _valueToString(dynamic value) =>
     value.toString().trim().contains('n/a') ? null : value.toString().trim();
 
-dynamic? _valueToEnum(dynamic value, Map map) =>
+dynamic _valueToEnum(dynamic value, Map map) =>
     value.toString().trim().contains('n/a')
         ? null
         : map[value.toString().trim()];

@@ -77,23 +77,6 @@
               "earliestRecAge": "2 months"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Japanese Encephalitis, VC",
@@ -127,26 +110,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
               "earliestRecInt": "4 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Japanese Encephalitis, VC",
@@ -180,26 +149,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "12 months - 4 days",
               "minInt": "12 months",
               "earliestRecInt": "12 months"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Japanese Encephalitis, VC",
@@ -288,23 +243,6 @@
               "earliestRecAge": "18 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Japanese Encephalitis, VC",
@@ -332,19 +270,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "7 days",
               "minInt": "7 days",
@@ -352,7 +277,6 @@
               "latestRecInt": "28 days"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Japanese Encephalitis, VC",
@@ -378,26 +302,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "12 months - 4 days",
               "minInt": "12 months",
               "earliestRecInt": "12 months"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Japanese Encephalitis, VC",

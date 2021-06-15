@@ -51,19 +51,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "N",
               "fromMostRecent": "21; 94; 121",
               "absMinInt": "0 days",
@@ -71,7 +58,6 @@
               "earliestRecInt": "8 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Zoster recombinant",
@@ -101,19 +87,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "8 weeks",
@@ -128,7 +101,6 @@
               "earliestRecInt": "8 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Zoster recombinant",
@@ -177,23 +149,6 @@
               "earliestRecAge": "60 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": ""
@@ -215,26 +170,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "0 days",
               "minInt": "8 weeks",
               "earliestRecInt": "8 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Zoster recombinant",
@@ -260,19 +201,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "8 weeks",
@@ -280,7 +208,6 @@
               "latestRecInt": "7 months + 4 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Zoster recombinant",

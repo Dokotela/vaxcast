@@ -76,29 +76,12 @@
               "maxAge": "19 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Hep A, adult",
               "cvx": "52",
               "beginAge": "19 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
@@ -154,19 +137,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "6 months - 4 days",
               "minInt": "6 months",
@@ -184,7 +154,7 @@
               "vaccineType": "Hep A, adult",
               "cvx": "52",
               "beginAge": "19 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
@@ -268,23 +238,6 @@
               "maxAge": "12 months"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Hep A, ped/adol, 2 dose",
@@ -458,29 +411,12 @@
               "latestRecAge": "24 months + 4 weeks"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Hep A, adult",
               "cvx": "52",
               "beginAge": "19 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
@@ -525,19 +461,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "6 months - 4 days",
               "minInt": "6 months",
@@ -554,7 +477,7 @@
               "vaccineType": "Hep A, adult",
               "cvx": "52",
               "beginAge": "19 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -715,29 +638,12 @@
               "earliestRecAge": "18 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "HepA-HepB",
               "cvx": "104",
               "beginAge": "18 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -779,32 +685,18 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
               "earliestRecInt": "4 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "HepA-HepB",
               "cvx": "104",
               "beginAge": "18 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -846,19 +738,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "5 months - 4 days",
               "minInt": "5 months",
@@ -872,13 +751,12 @@
               "earliestRecInt": "6 months"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "HepA-HepB",
               "cvx": "104",
               "beginAge": "18 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -1044,29 +922,12 @@
               "earliestRecAge": "18 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "HepA-HepB",
               "cvx": "104",
               "beginAge": "18 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -1086,32 +947,18 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "7 days",
               "minInt": "7 days",
               "earliestRecInt": "7 days"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "HepA-HepB",
               "cvx": "104",
               "beginAge": "18 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -1131,19 +978,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "14 days",
               "minInt": "14 days",
@@ -1151,13 +985,12 @@
               "latestRecInt": "23 days"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "HepA-HepB",
               "cvx": "104",
               "beginAge": "18 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -1177,19 +1010,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "N",
               "fromTargetDose": "1",
               "absMinInt": "12 months - 4 days",
@@ -1197,13 +1017,12 @@
               "earliestRecInt": "12 months"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "HepA-HepB",
               "cvx": "104",
               "beginAge": "18 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],

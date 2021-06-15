@@ -53,36 +53,19 @@
               "earliestRecAge": "0 days"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rabies - IM Diploid cell culture",
               "cvx": "175",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
               "vaccineType": "Rabies - IM fibroblast culture",
               "cvx": "176",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -117,39 +100,25 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "7 days",
               "minInt": "7 days",
               "earliestRecInt": "7 days"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rabies - IM Diploid cell culture",
               "cvx": "175",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
               "vaccineType": "Rabies - IM fibroblast culture",
               "cvx": "176",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -184,19 +153,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "14 days",
               "minInt": "14 days",
@@ -204,20 +160,19 @@
               "latestRecInt": "21 days"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rabies - IM Diploid cell culture",
               "cvx": "175",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
               "vaccineType": "Rabies - IM fibroblast culture",
               "cvx": "176",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -252,39 +207,25 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "6 months",
               "minInt": "6 months",
               "earliestRecInt": "6 months"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rabies - IM Diploid cell culture",
               "cvx": "175",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
               "vaccineType": "Rabies - IM fibroblast culture",
               "cvx": "176",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -375,36 +316,19 @@
               "earliestRecAge": "0 days"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rabies - IM Diploid cell culture",
               "cvx": "175",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
               "vaccineType": "Rabies - IM fibroblast culture",
               "cvx": "176",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -439,39 +363,25 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "7 days",
               "minInt": "7 days",
               "earliestRecInt": "7 days"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rabies - IM Diploid cell culture",
               "cvx": "175",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
               "vaccineType": "Rabies - IM fibroblast culture",
               "cvx": "176",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -506,19 +416,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "14 days",
               "minInt": "14 days",
@@ -526,20 +423,19 @@
               "latestRecInt": "21 days"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rabies - IM Diploid cell culture",
               "cvx": "175",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
               "vaccineType": "Rabies - IM fibroblast culture",
               "cvx": "176",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -574,39 +470,25 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "2 years",
               "minInt": "2 years",
               "earliestRecInt": "2 years"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rabies - IM Diploid cell culture",
               "cvx": "175",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             },
             {
               "vaccineType": "Rabies - IM fibroblast culture",
               "cvx": "176",
               "beginAge": "0 days",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],

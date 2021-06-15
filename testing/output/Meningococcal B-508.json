@@ -62,29 +62,13 @@
               "earliestRecAge": "10 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, OMV",
               "cvx": "163",
               "beginAge": "10 years",
-              "mvx": "Bexsero (NOV)",
+              "tradeName": "Bexsero",
+              "mvx": "NOV",
               "volume": "0.5",
               "forecastVaccineType": "N"
             }
@@ -105,19 +89,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "0 days",
               "minInt": "4 weeks",
@@ -132,13 +103,13 @@
               "effectiveDate": "2017-05-19T01:00:00.000"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, OMV",
               "cvx": "163",
               "beginAge": "10 years",
-              "mvx": "Bexsero (NOV)",
+              "tradeName": "Bexsero",
+              "mvx": "NOV",
               "volume": "0.5",
               "forecastVaccineType": "Y"
             }
@@ -208,29 +179,13 @@
               "earliestRecAge": "10 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, recombinant",
               "cvx": "162",
               "beginAge": "10 years",
-              "mvx": "Trumenba (PFR)",
+              "tradeName": "Trumenba",
+              "mvx": "PFR",
               "volume": "0.5",
               "forecastVaccineType": "N"
             }
@@ -251,19 +206,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 months - 4 days",
               "minInt": "4 months",
@@ -277,13 +219,13 @@
               "earliestRecInt": "6 months"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, recombinant",
               "cvx": "162",
               "beginAge": "10 years",
-              "mvx": "Trumenba (PFR)",
+              "tradeName": "Trumenba",
+              "mvx": "PFR",
               "volume": "0.5",
               "forecastVaccineType": "Y"
             }
@@ -370,29 +312,13 @@
               "earliestRecAge": "10 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, OMV",
               "cvx": "163",
               "beginAge": "10 years",
-              "mvx": "Bexsero (NOV)",
+              "tradeName": "Bexsero",
+              "mvx": "NOV",
               "volume": "0.5",
               "forecastVaccineType": "N"
             }
@@ -413,19 +339,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "0 days",
               "minInt": "4 weeks",
@@ -440,13 +353,13 @@
               "effectiveDate": "2017-05-19T01:00:00.000"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, OMV",
               "cvx": "163",
               "beginAge": "10 years",
-              "mvx": "Bexsero (NOV)",
+              "tradeName": "Bexsero",
+              "mvx": "NOV",
               "volume": "0.5",
               "forecastVaccineType": "Y"
             }
@@ -472,26 +385,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "1 years - 4 days",
               "minInt": "1 year",
               "earliestRecInt": "1 year"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, OMV",
@@ -522,19 +421,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "2 years - 4 days",
               "minInt": "2 years",
@@ -542,7 +428,6 @@
               "latestRecInt": "4 years"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, OMV",
@@ -634,29 +519,13 @@
               "earliestRecAge": "10 years"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, recombinant",
               "cvx": "162",
               "beginAge": "10 years",
-              "mvx": "Trumenba (PFR)",
+              "tradeName": "Trumenba",
+              "mvx": "PFR",
               "volume": "0.5",
               "forecastVaccineType": "N"
             }
@@ -677,19 +546,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "0 days",
               "minInt": "4 weeks",
@@ -706,13 +562,13 @@
               "effectiveDate": "2017-05-19T01:00:00.000"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, recombinant",
               "cvx": "162",
               "beginAge": "10 years",
-              "mvx": "Trumenba (PFR)",
+              "tradeName": "Trumenba",
+              "mvx": "PFR",
               "volume": "0.5",
               "forecastVaccineType": "Y"
             }
@@ -752,19 +608,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "0 days",
               "minInt": "4 months",
@@ -786,13 +629,13 @@
               "earliestRecInt": "6 months"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, recombinant",
               "cvx": "162",
               "beginAge": "10 years",
-              "mvx": "Trumenba (PFR)",
+              "tradeName": "Trumenba",
+              "mvx": "PFR",
               "volume": "0.5",
               "forecastVaccineType": "Y"
             }
@@ -818,26 +661,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "1 years - 4 days",
               "minInt": "1 year",
               "earliestRecInt": "1 year"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, recombinant",
@@ -868,19 +697,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "2 years - 4 days",
               "minInt": "2 years",
@@ -888,7 +704,6 @@
               "latestRecInt": "4 years"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "meningococcal B, recombinant",

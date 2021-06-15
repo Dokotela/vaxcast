@@ -68,30 +68,13 @@
               "maxAge": "15 weeks"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, pentavalent",
               "cvx": "116",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1900-01-01T00:00:00.000",
+              "volume": "2",
               "forecastVaccineType": "N"
             },
             {
@@ -99,7 +82,7 @@
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -140,19 +123,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
@@ -160,14 +130,13 @@
               "latestRecInt": "13 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, pentavalent",
               "cvx": "116",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1900-01-01T00:00:00.000",
+              "volume": "2",
               "forecastVaccineType": "N"
             },
             {
@@ -175,7 +144,7 @@
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -216,19 +185,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
@@ -236,14 +192,13 @@
               "latestRecInt": "13 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, pentavalent",
               "cvx": "116",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1900-01-01T00:00:00.000",
+              "volume": "2",
               "forecastVaccineType": "N"
             },
             {
@@ -251,7 +206,7 @@
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -308,30 +263,13 @@
               "maxAge": "8 months + 1 day"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, pentavalent",
               "cvx": "116",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1900-01-01T00:00:00.000",
+              "volume": "2",
               "forecastVaccineType": "N"
             },
             {
@@ -339,7 +277,7 @@
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -378,19 +316,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
@@ -398,14 +323,13 @@
               "latestRecInt": "13 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, pentavalent",
               "cvx": "116",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1900-01-01T00:00:00.000",
+              "volume": "2",
               "forecastVaccineType": "N"
             },
             {
@@ -413,7 +337,7 @@
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -452,19 +376,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
@@ -472,14 +383,13 @@
               "latestRecInt": "13 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, pentavalent",
               "cvx": "116",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1900-01-01T00:00:00.000",
+              "volume": "2",
               "forecastVaccineType": "N"
             },
             {
@@ -487,7 +397,7 @@
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
@@ -544,30 +454,13 @@
               "maxAge": "15 weeks"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, monovalent",
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -593,19 +486,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
@@ -613,14 +493,13 @@
               "latestRecInt": "13 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, monovalent",
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -662,30 +541,13 @@
               "maxAge": "8 months + 1 day"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, monovalent",
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],
@@ -709,19 +571,6 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
@@ -729,14 +578,13 @@
               "latestRecInt": "13 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Rotavirus, monovalent",
               "cvx": "119",
               "beginAge": "6 weeks",
               "endAge": "8 months + 1 day",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "Y"
             }
           ],

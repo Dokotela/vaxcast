@@ -304,23 +304,6 @@
               "earliestRecAge": "6 months"
             }
           ],
-          "interval": [
-            {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {}
-          ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Influenza, live, intranasal, quadrivalent",
@@ -334,7 +317,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
               "cvx": "150",
               "beginAge": "3 years",
-              "mvx": "AFLURIA - QUADRIVALENT (SEQ)",
+              "tradeName": "AFLURIA - QUADRIVALENT",
+              "mvx": "SEQ",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -342,7 +326,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
               "cvx": "150",
               "beginAge": "6 months",
-              "mvx": "FLUARIX - QUADRIVALENT (SKB)",
+              "tradeName": "FLUARIX - QUADRIVALENT",
+              "mvx": "SKB",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -350,7 +335,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
               "cvx": "150",
               "beginAge": "6 months",
-              "mvx": "FLUZONE - QUADRIVALENT (PMC)",
+              "tradeName": "FLUZONE - QUADRIVALENT",
+              "mvx": "PMC",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -358,7 +344,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
               "cvx": "150",
               "beginAge": "6 months",
-              "mvx": "FLULAVAL - QUADRIVALENT (IDB)",
+              "tradeName": "FLULAVAL - QUADRIVALENT",
+              "mvx": "IDB",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -367,7 +354,8 @@
               "cvx": "158",
               "beginAge": "6 months",
               "endAge": "3 years",
-              "mvx": "FLUZONE - QUADRIVALENT (PMC)",
+              "tradeName": "FLUZONE - QUADRIVALENT",
+              "mvx": "PMC",
               "volume": "0.25",
               "forecastVaccineType": "N"
             },
@@ -375,7 +363,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent",
               "cvx": "158",
               "beginAge": "6 months",
-              "mvx": "FLUZONE - QUADRIVALENT (PMC)",
+              "tradeName": "FLUZONE - QUADRIVALENT",
+              "mvx": "PMC",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -384,7 +373,8 @@
               "cvx": "158",
               "beginAge": "6 months",
               "endAge": "3 years",
-              "mvx": "AFLURIA - QUADRIVALENT (SEQ)",
+              "tradeName": "AFLURIA - QUADRIVALENT",
+              "mvx": "SEQ",
               "volume": "0.25",
               "forecastVaccineType": "N"
             },
@@ -392,7 +382,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent",
               "cvx": "158",
               "beginAge": "3 years",
-              "mvx": "AFLURIA - QUADRIVALENT (SEQ)",
+              "tradeName": "AFLURIA - QUADRIVALENT",
+              "mvx": "SEQ",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -556,26 +547,12 @@
           ],
           "interval": [
             {
-              "fromMostRecent": "From Most Recent (CVX List)",
-              "fromRelevantObs": {
-                "text": "From Relevant Observation"
-              },
-              "absMinInt": "Absolute Minimum Interval",
-              "minInt": "Minimum Interval",
-              "earliestRecInt": "Earliest Recommended Interval",
-              "latestRecInt": "Latest Recommended Interval (less than)",
-              "intervalPriority": "Interval Priority Flag",
-              "effectiveDate": "Effective Date",
-              "cessationDate": "Cessation Date"
-            },
-            {
               "fromPrevious": "Y",
               "absMinInt": "4 weeks - 4 days",
               "minInt": "4 weeks",
               "earliestRecInt": "4 weeks"
             }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Influenza, live, intranasal, quadrivalent",
@@ -589,7 +566,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
               "cvx": "150",
               "beginAge": "3 years",
-              "mvx": "AFLURIA - QUADRIVALENT (SEQ)",
+              "tradeName": "AFLURIA - QUADRIVALENT",
+              "mvx": "SEQ",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -597,7 +575,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
               "cvx": "150",
               "beginAge": "6 months",
-              "mvx": "FLUARIX - QUADRIVALENT (SKB)",
+              "tradeName": "FLUARIX - QUADRIVALENT",
+              "mvx": "SKB",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -605,7 +584,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
               "cvx": "150",
               "beginAge": "6 months",
-              "mvx": "FLUZONE - QUADRIVALENT (PMC)",
+              "tradeName": "FLUZONE - QUADRIVALENT",
+              "mvx": "PMC",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -613,7 +593,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent, preservative free",
               "cvx": "150",
               "beginAge": "6 months",
-              "mvx": "FLULAVAL - QUADRIVALENT (IDB)",
+              "tradeName": "FLULAVAL - QUADRIVALENT",
+              "mvx": "IDB",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -622,7 +603,8 @@
               "cvx": "158",
               "beginAge": "6 months",
               "endAge": "3 years",
-              "mvx": "FLUZONE - QUADRIVALENT (PMC)",
+              "tradeName": "FLUZONE - QUADRIVALENT",
+              "mvx": "PMC",
               "volume": "0.25",
               "forecastVaccineType": "N"
             },
@@ -630,7 +612,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent",
               "cvx": "158",
               "beginAge": "6 months",
-              "mvx": "FLUZONE - QUADRIVALENT (PMC)",
+              "tradeName": "FLUZONE - QUADRIVALENT",
+              "mvx": "PMC",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },
@@ -639,7 +622,8 @@
               "cvx": "158",
               "beginAge": "6 months",
               "endAge": "3 years",
-              "mvx": "AFLURIA - QUADRIVALENT (SEQ)",
+              "tradeName": "AFLURIA - QUADRIVALENT",
+              "mvx": "SEQ",
               "volume": "0.25",
               "forecastVaccineType": "N"
             },
@@ -647,7 +631,8 @@
               "vaccineType": "Influenza, injectable, quadrivalent",
               "cvx": "158",
               "beginAge": "3 years",
-              "mvx": "AFLURIA - QUADRIVALENT (SEQ)",
+              "tradeName": "AFLURIA - QUADRIVALENT",
+              "mvx": "SEQ",
               "volume": "0.5",
               "forecastVaccineType": "N"
             },

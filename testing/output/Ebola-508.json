@@ -72,15 +72,26 @@
             }
           ],
           "interval": [
-            {}
+            {
+              "fromMostRecent": "From Most Recent (CVX List)",
+              "fromRelevantObs": {
+                "text": "From Relevant Observation"
+              },
+              "absMinInt": "Absolute Minimum Interval",
+              "minInt": "Minimum Interval",
+              "earliestRecInt": "Earliest Recommended Interval",
+              "latestRecInt": "Latest Recommended Interval (less than)",
+              "intervalPriority": "Interval Priority Flag",
+              "effectiveDate": "Effective Date",
+              "cessationDate": "Cessation Date"
+            }
           ],
-          "allowableInterval": {},
           "preferableVaccine": [
             {
               "vaccineType": "Ebola Zaire vaccine, live",
               "cvx": "204",
               "beginAge": "18 years",
-              "volume": "1899-12-31T00:00:00.000",
+              "volume": "1",
               "forecastVaccineType": "N"
             }
           ],
