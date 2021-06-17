@@ -1,6 +1,7 @@
 import 'package:excel/excel.dart';
 import 'package:vax_cast/vax_cast.dart';
 
+import '../value_to_string.dart';
 import 'create_series_dose.dart';
 
 Series createSeries(Sheet sheet) {
@@ -10,28 +11,28 @@ Series createSeries(Sheet sheet) {
         row[0]?.value != null &&
         row[0]!.value.toString() != '') {
       if (row[0]!.value.toString().contains('Series Name')) {
-        newSeries = newSeries.copyWith(seriesName: row[1]!.value.toString());
+        newSeries = newSeries.copyWith(seriesName: valueToString(row[1]!.value));
       } else if (row[0]!.value.toString().contains('Target Disease')) {
         newSeries = newSeries.copyWith(
-            targetDisease: targetDiseaseStringToEnum[row[1]!.value.toString()]);
+            targetDisease: targetDiseaseStringToEnum[valueToString(row[1]!.value)]);
       } else if (row[0]!.value.toString().contains('Vaccine Group')) {
         newSeries = newSeries.copyWith(
             vaccineGroup:
-                vaccineGroupNameStringToEnum[row[1]!.value.toString().trim()]);
+                vaccineGroupNameStringToEnum[valueToString(row[1]!.value)]);
       } else if (row[0]!.value.toString().contains('Administrative Guidance') &&
           row[1]?.value.toString() != 'Text') {
         if (!row[1]!.value.toString().contains('n/a')) {
           if (newSeries.seriesAdminGuidance == null) {
             newSeries = newSeries
-                .copyWith(seriesAdminGuidance: [row[1]!.value.toString()]);
+                .copyWith(seriesAdminGuidance: [valueToString(row[1]!.value) ?? '']);
           } else {
-            newSeries.seriesAdminGuidance!.add(row[1]!.value.toString());
+            newSeries.seriesAdminGuidance!.add(valueToString(row[1]!.value) ?? '');
           }
         }
       } else if (row[0]!.value.toString().contains('Series Type') &&
           row[1]?.value.toString() != 'Type') {
         newSeries = newSeries.copyWith(
-            seriesType: seriesTypeStringToEnum[row[1]!.value.toString()]);
+            seriesType: seriesTypeStringToEnum[valueToString(row[1]!.value)]);
       } else if (row[0]!
               .value
               .toString()
@@ -40,40 +41,39 @@ Series createSeries(Sheet sheet) {
         if (!row[1]!.value.toString().contains('n/a')) {
           newSeries = newSeries.copyWith(
               equivalentSeriesGroups: equivalentSeriesGroupsStringToEnum[
-                  row[1]!.value.toString().trim()]);
+                  valueToString(row[1]!.value)]);
         }
       } else if (row[0]!.value.toString().contains('Gender') &&
           row[1]?.value.toString() != 'Required Gender') {
         if (!row[1]!.value.toString().contains('n/a')) {
           if (newSeries.requiredGender == null) {
             newSeries = newSeries.copyWith(requiredGender: [
-              genderStringToEnum[row[1]!.value.toString().trim()]!
+              genderStringToEnum[valueToString(row[1]!.value)]!
             ]);
           } else {
             newSeries.requiredGender!
-                .add(genderStringToEnum[row[1]!.value.toString().trim()]!);
+                .add(genderStringToEnum[valueToString(row[1]!.value)]!);
           }
         }
       } else if (row[0]!.value.toString().contains('Select Patient Series') &&
           row[1]?.value.toString() != 'Default Series') {
         newSeries = newSeries.copyWith(
           selectSeries: SelectSeries(
-            defaultSeries: binaryStringToEnum[row[1]!.value.toString().trim()],
-            productPath: binaryStringToEnum[row[2]!.value.toString().trim()],
+            defaultSeries: binaryStringToEnum[valueToString(row[1]!.value)],
+            productPath: binaryStringToEnum[valueToString(row[2]!.value)],
             seriesGroupName:
-                seriesGroupNameStringToEnum[row[3]!.value.toString().trim()],
-            seriesGroup:
-                seriesGroupStringToEnum[row[4]!.value.toString().trim()],
+                seriesGroupNameStringToEnum[valueToString(row[3]!.value)],
+            seriesGroup: seriesGroupStringToEnum[valueToString(row[4]!.value)],
             seriesPriority:
-                seriesPriorityStringToEnum[row[5]!.value.toString().trim()],
+                seriesPriorityStringToEnum[valueToString(row[5]!.value)],
             seriesPreference:
-                seriesPreferenceStringToEnum[row[6]!.value.toString().trim()],
+                seriesPreferenceStringToEnum[valueToString(row[6]!.value)],
             minAgeToStart: row[7]!.value.toString().contains('n/a')
                 ? null
-                : row[7]!.value.toString().trim(),
+                : valueToString(row[7]!.value),
             maxAgeToStart: row[8]!.value.toString().contains('n/a')
                 ? null
-                : row[8]!.value.toString().trim(),
+                : valueToString(row[8]!.value),
           ),
         );
       } else if (row[0]!.value.toString().contains('Indication') &&
@@ -94,16 +94,16 @@ Series createSeries(Sheet sheet) {
                 ObservationCode(code: ObsStringToEnumMap[code], text: text),
             description: row[2]!.value.toString().contains('n/a')
                 ? null
-                : row[2]!.value.toString(),
+                : valueToString(row[2]!.value),
             beginAge: row[3]!.value.toString().contains('n/a')
                 ? null
-                : row[3]!.value.toString().trim(),
+                : valueToString(row[3]!.value),
             endAge: row[4]!.value.toString().contains('n/a')
                 ? null
-                : row[4]!.value.toString().trim(),
+                : valueToString(row[4]!.value),
             guidance: row[5]!.value.toString().contains('n/a')
                 ? null
-                : row[5]!.value.toString().trim(),
+                : valueToString(row[5]!.value),
           ),
         );
       } else if (row[0]!.value.toString().contains('Series Dose')) {

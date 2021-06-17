@@ -1,6 +1,8 @@
 import 'package:excel/excel.dart';
 import 'package:vax_cast/vax_cast.dart';
 
+import 'value_to_string.dart';
+
 AntigenSupportingData immunity(Excel excel) {
   /// Create a new AntigenSupportingData object
   var antigenSupportingData = AntigenSupportingData();
@@ -9,8 +11,8 @@ AntigenSupportingData immunity(Excel excel) {
   var immunity = excel.tables['Immunity'];
 
   /// Date and Country may be the same for multiple Exclusion Conditions
-  var date = '';
-  var country = '';
+  String? date = '';
+  String? country = '';
 
   /// Look through the rows in the Immunity sheet
   for (var i in immunity!.rows) {
@@ -53,8 +55,9 @@ AntigenSupportingData immunity(Excel excel) {
       /// incorrectly formatted)
       if (VaxDate.yyyymmdd(i[1]!.value.toString()) != VaxDate.max()) {
         if (date != i[1]!.value.toString()) {
-          date = i[1]!.value.toString();
-          country = i[2]!.value.toString();
+          date = valueToString(i[1]!.value);
+          country = valueToString(i[2]!.value);
+
           /// add the immunity data
           antigenSupportingData = antigenSupportingData.copyWith(
             immunity: antigenSupportingData.immunity!.copyWith(
@@ -66,6 +69,7 @@ AntigenSupportingData immunity(Excel excel) {
             ),
           );
         }
+
         /// extract the code from the text for the observation
         var open = i[3]!.value.toString().lastIndexOf('(');
         var close = i[3]!.value.toString().lastIndexOf(')');

@@ -1734,7 +1734,7 @@
       "targetDisease": "Meningococcal",
       "vaccineGroup": "Meningococcal",
       "seriesAdminGuidance": [
-        "If MenACWY-D is used, it should be administered at least 4 weeks after completion of all PCV doses. ",
+        "If MenACWY-D is used, it should be administered at least 4 weeks after completion of all PCV doses.",
         "Persons with HIV infection who are recommended routinely to receive vaccine should receive a 2-dose primary series, administered 8-12 weeks apart, because evidence suggests that persons with HIV do not respond optimally to a single dose."
       ],
       "seriesType": "Risk",

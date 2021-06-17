@@ -88,7 +88,7 @@
         {
           "observationCode": "109",
           "observationTitle": "Severe allergic reaction to polymyxin B",
-          "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to polymyxin B. ",
+          "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to polymyxin B.",
           "contraindicatedVaccine": [
             {
               "vaccineType": "DTaP-HepB-IPV",

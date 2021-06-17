@@ -8,7 +8,7 @@
     ],
     "dateOfBirth": {
       "immunityBirthDate": "01/01/1957",
-      "birthCountry": "n/a",
+      "birthCountry": "",
       "exclusion": [
         {
           "exclusionCode": "055",

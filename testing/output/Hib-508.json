@@ -99,11 +99,14 @@
       "targetDisease": "Hib",
       "vaccineGroup": "Hib",
       "seriesType": "Standard",
+      "equivalentSeriesGroups": "2",
       "selectSeries": {
         "defaultSeries": "Yes",
         "productPath": "No",
         "seriesGroupName": "Standard",
+        "seriesGroup": "1",
         "seriesPriority": "A",
+        "seriesPreference": "1",
         "maxAgeToStart": "7 months - 4 days"
       },
       "seriesDose": [
@@ -360,11 +363,11 @@
               "setLogic": "n/a",
               "set": [
                 {
-                  "setID": "1899-12-31T00:00:00.000",
+                  "setID": "1",
                   "setDescription": "Target Dose is not required if the current dose was administered on or after 15 months - 4 days of age.",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Age",
                       "beginAge": "15 months - 4 days"
                     }
@@ -377,11 +380,11 @@
               "setLogic": "n/a",
               "set": [
                 {
-                  "setID": "1900-01-01T00:00:00.000",
+                  "setID": "2",
                   "setDescription": "Dose is not required for those 15 months or older",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Age",
                       "beginAge": "15 months"
                     }
@@ -530,28 +533,35 @@
               "setLogic": "OR",
               "set": [
                 {
-                  "setID": "1899-12-31T00:00:00.000",
+                  "setID": "1",
                   "setDescription": "Target Dose is not required if the current dose was administered on or after 12 months of age.",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Age",
                       "beginAge": "12 months"
                     }
                   ]
                 },
                 {
-                  "setID": "1900-01-01T00:00:00.000",
+                  "setID": "2",
                   "setDescription": "Target Dose is not required if the current dose was administered on or after 12 months - 4 days of age AND the previous dose was administered at least 8 weeks - 4 day from the current dose.",
                   "conditionLogic": "AND",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Age",
                       "beginAge": "12 months - 4 days"
-                    },
+                    }
+                  ]
+                },
+                {
+                  "setID": "2",
+                  "setDescription": "Target Dose is not required if the current dose was administered on or after 12 months - 4 days of age AND the previous dose was administered at least 8 weeks - 4 day from the current dose.",
+                  "conditionLogic": "AND",
+                  "condition": [
                     {
-                      "conditionID": "1900-01-01T00:00:00.000",
+                      "conditionID": "2",
                       "conditionType": "Interval",
                       "interval": "8 weeks - 4 days"
                     }
@@ -564,11 +574,11 @@
               "setLogic": "n/a",
               "set": [
                 {
-                  "setID": "1900-01-02T00:00:00.000",
+                  "setID": "3",
                   "setDescription": "Dose is not required for those 12 months or older",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Age",
                       "beginAge": "12 months"
                     }
@@ -712,11 +722,14 @@
       "targetDisease": "Hib",
       "vaccineGroup": "Hib",
       "seriesType": "Standard",
+      "equivalentSeriesGroups": "2",
       "selectSeries": {
         "defaultSeries": "No",
         "productPath": "No",
         "seriesGroupName": "Standard",
+        "seriesGroup": "1",
         "seriesPriority": "A",
+        "seriesPreference": "3",
         "maxAgeToStart": "12 months - 4 days"
       },
       "seriesDose": [
@@ -972,28 +985,35 @@
               "setLogic": "OR",
               "set": [
                 {
-                  "setID": "1899-12-31T00:00:00.000",
+                  "setID": "1",
                   "setDescription": "Target Dose is not required if the current dose was administered on or after 15 months of age.",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Age",
                       "beginAge": "15 months"
                     }
                   ]
                 },
                 {
-                  "setID": "1900-01-01T00:00:00.000",
+                  "setID": "2",
                   "setDescription": "Target Dose is not required if the current dose was administered on or after 15 months - 4 days of age AND the previous dose was administered at least 8 weeks - 4 day from the current dose.",
                   "conditionLogic": "AND",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Age",
                       "beginAge": "15 months - 4 days"
-                    },
+                    }
+                  ]
+                },
+                {
+                  "setID": "2",
+                  "setDescription": "Target Dose is not required if the current dose was administered on or after 15 months - 4 days of age AND the previous dose was administered at least 8 weeks - 4 day from the current dose.",
+                  "conditionLogic": "AND",
+                  "condition": [
                     {
-                      "conditionID": "1900-01-01T00:00:00.000",
+                      "conditionID": "2",
                       "conditionType": "Interval",
                       "interval": "8 weeks - 4 days"
                     }
@@ -1006,11 +1026,11 @@
               "setLogic": "n/a",
               "set": [
                 {
-                  "setID": "1900-01-02T00:00:00.000",
+                  "setID": "3",
                   "setDescription": "Dose is not required for those 15 months or older",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Age",
                       "beginAge": "15 months"
                     }
@@ -1154,11 +1174,14 @@
       "targetDisease": "Hib",
       "vaccineGroup": "Hib",
       "seriesType": "Standard",
+      "equivalentSeriesGroups": "2",
       "selectSeries": {
         "defaultSeries": "No",
         "productPath": "No",
         "seriesGroupName": "Standard",
+        "seriesGroup": "1",
         "seriesPriority": "A",
+        "seriesPreference": "4",
         "maxAgeToStart": "15 months - 4 days"
       },
       "seriesDose": [
@@ -1414,10 +1437,12 @@
       "targetDisease": "Hib",
       "vaccineGroup": "Hib",
       "seriesType": "Standard",
+      "equivalentSeriesGroups": "2",
       "selectSeries": {
         "defaultSeries": "No",
         "productPath": "No",
         "seriesGroupName": "Standard",
+        "seriesGroup": "1",
         "seriesPriority": "A"
       },
       "seriesDose": [
@@ -1543,11 +1568,14 @@
       "targetDisease": "Hib",
       "vaccineGroup": "Hib",
       "seriesType": "Standard",
+      "equivalentSeriesGroups": "2",
       "selectSeries": {
         "defaultSeries": "No",
         "productPath": "Yes",
         "seriesGroupName": "Standard",
-        "seriesPriority": "A"
+        "seriesGroup": "1",
+        "seriesPriority": "A",
+        "seriesPreference": "2"
       },
       "seriesDose": [
         {
@@ -1764,7 +1792,9 @@
         "defaultSeries": "No",
         "productPath": "No",
         "seriesGroupName": "Increased Risk",
+        "seriesGroup": "2",
         "seriesPriority": "B",
+        "seriesPreference": "1",
         "minAgeToStart": "12 months",
         "maxAgeToStart": "5 years"
       },
@@ -1918,11 +1948,11 @@
               "setLogic": "n/a",
               "set": [
                 {
-                  "setID": "1899-12-31T00:00:00.000",
+                  "setID": "1",
                   "setDescription": "Dose is not required if the patient has received 1 or more doses on or after the age of 12 months",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Vaccine Count by Age",
                       "beginAge": "12 months",
                       "doseCount": "1899-12-30T00:00:00.000",
@@ -2053,29 +2083,29 @@
               "setLogic": "OR",
               "set": [
                 {
-                  "setID": "1899-12-31T00:00:00.000",
+                  "setID": "1",
                   "setDescription": "Dose is not required if the patient has received 2 or more doses before the age of 12 months",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Vaccine Count by Age",
                       "beginAge": "6 weeks - 4 days",
                       "endAge": "12 months",
-                      "doseCount": "1899-12-31T00:00:00.000",
+                      "doseCount": "1",
                       "doseType": "Total",
                       "doseCountLogic": "greater than"
                     }
                   ]
                 },
                 {
-                  "setID": "1900-01-01T00:00:00.000",
+                  "setID": "2",
                   "setDescription": "Dose is not required if the patient has received 2 or more doses on or after the age of 12 months",
                   "condition": [
                     {
-                      "conditionID": "1899-12-31T00:00:00.000",
+                      "conditionID": "1",
                       "conditionType": "Vaccine Count by Age",
                       "beginAge": "12 months",
-                      "doseCount": "1899-12-31T00:00:00.000",
+                      "doseCount": "1",
                       "doseType": "Total",
                       "doseCountLogic": "greater than"
                     }
@@ -2093,11 +2123,14 @@
       "targetDisease": "Hib",
       "vaccineGroup": "Hib",
       "seriesType": "Risk",
+      "equivalentSeriesGroups": "1",
       "selectSeries": {
         "defaultSeries": "No",
         "productPath": "No",
         "seriesGroupName": "Increased Risk",
+        "seriesGroup": "2",
         "seriesPriority": "C",
+        "seriesPreference": "1",
         "minAgeToStart": "15 months"
       },
       "indication": [
@@ -2239,7 +2272,9 @@
         "defaultSeries": "No",
         "productPath": "No",
         "seriesGroupName": "Increased Risk",
+        "seriesGroup": "2",
         "seriesPriority": "A",
+        "seriesPreference": "1",
         "minAgeToStart": "6 weeks"
       },
       "indication": [

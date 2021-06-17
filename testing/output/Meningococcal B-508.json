@@ -265,7 +265,7 @@
             "text": "Undergoing elective splenectomy",
             "code": "002"
           },
-          "description": "Administered to persons who are undergoing elective splenectomy if they have not previously received Meningococcal B vaccine. ",
+          "description": "Administered to persons who are undergoing elective splenectomy if they have not previously received Meningococcal B vaccine.",
           "beginAge": "10 years",
           "guidance": "Vaccination 14 or more days before splenectomy is suggested."
         },
@@ -472,7 +472,7 @@
             "text": "Undergoing elective splenectomy",
             "code": "002"
           },
-          "description": "Administered to persons who are undergoing elective splenectomy if they have not previously received Meningococcal B vaccine. ",
+          "description": "Administered to persons who are undergoing elective splenectomy if they have not previously received Meningococcal B vaccine.",
           "beginAge": "10 years",
           "guidance": "Vaccination 14 or more days before splenectomy is suggested."
         },

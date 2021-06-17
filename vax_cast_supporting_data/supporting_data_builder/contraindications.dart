@@ -1,6 +1,8 @@
 import 'package:excel/excel.dart';
 import 'package:vax_cast/vax_cast.dart';
 
+import 'value_to_string.dart';
+
 AntigenSupportingData contraindications(
     Excel excel, AntigenSupportingData antigenSupportingData) {
   antigenSupportingData =
@@ -46,12 +48,15 @@ AntigenSupportingData contraindications(
           observationCode: ObsStringToEnumMap[code],
           observationTitle: text,
           contraindicationText: i[2]!.value.toString(),
-          contraindicationGuidance:
-              i[3]!.value.toString() == 'n/a' ? null : i[3]!.value.toString(),
-          beginAge:
-              i[4]!.value.toString() == 'n/a' ? null : i[4]!.value.toString(),
-          endAge:
-              i[5]!.value.toString() == 'n/a' ? null : i[5]!.value.toString(),
+          contraindicationGuidance: i[3]!.value.toString() == 'n/a'
+              ? null
+              : valueToString(i[3]!.value),
+          beginAge: i[4]!.value.toString() == 'n/a'
+              ? null
+              : valueToString(i[4]!.value),
+          endAge: i[5]!.value.toString() == 'n/a'
+              ? null
+              : valueToString(i[5]!.value),
         ),
       );
     } else if (i[0]?.value != null &&
@@ -76,7 +81,7 @@ AntigenSupportingData contraindications(
       }
       if (i[1]!.value.toString() != codeText) {
         /// extract the code from the text for the observation
-        codeText = i[1]!.value.toString();
+        codeText = valueToString(i[1]!.value) ?? '';
         var open = codeText.lastIndexOf('(');
         var close = codeText.lastIndexOf(')');
         var code = codeText.substring(open + 1, close);
@@ -85,10 +90,12 @@ AntigenSupportingData contraindications(
           VaccineContraindication(
             observationCode: ObsStringToEnumMap[code],
             observationTitle: text,
-            contraindicationText:
-                i[2]!.value.toString() == 'n/a' ? null : i[2]!.value.toString(),
-            contraindicationGuidance:
-                i[3]!.value.toString() == 'n/a' ? null : i[3]!.value.toString(),
+            contraindicationText: i[2]!.value.toString() == 'n/a'
+                ? null
+                : valueToString(i[2]!.value),
+            contraindicationGuidance: i[3]!.value.toString() == 'n/a'
+                ? null
+                : valueToString(i[3]!.value),
             contraindicatedVaccine: [],
           ),
         );
@@ -105,10 +112,12 @@ AntigenSupportingData contraindications(
         Vaccine(
           vaccineType: text,
           cvx: cvxStringToEnumMap[code],
-          beginAge:
-              i[5]!.value.toString() == 'n/a' ? null : i[5]!.value.toString(),
-          endAge:
-              i[6]!.value.toString() == 'n/a' ? null : i[6]!.value.toString(),
+          beginAge: i[5]!.value.toString() == 'n/a'
+              ? null
+              : valueToString(i[5]!.value),
+          endAge: i[6]!.value.toString() == 'n/a'
+              ? null
+              : valueToString(i[6]!.value),
         ),
       );
     }
