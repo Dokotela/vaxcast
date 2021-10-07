@@ -1,0 +1,11 @@
+name: generate_vax_cast
+description: Pulling the data from the cloud to make supporting data fro VaxCast
+version: 0.0.1
+
+environment:
+  sdk: '>=2.14.0 <3.0.0'
+  
+dependencies:
+  gsheets: ^0.3.2
+  vax_cast: 
+    path: ../vax_cast
