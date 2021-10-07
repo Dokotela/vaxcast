@@ -1,0 +1,48 @@
+{
+    "contraindications": {
+        "vaccineGroup": {
+            "contraindication": [
+                {
+                    "observationCode": "122",
+                    "observationTitle": "Severe allergic reaction after previous dose of COVID-19",
+                    "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of COVID-19 vaccine."
+                },
+                {
+                    "observationCode": "080",
+                    "observationTitle": "Adverse reaction to vaccine component",
+                    "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
+                }
+            ]
+        },
+        "vaccine": {
+            "contraindication": [
+                {
+                    "observationCode": "187",
+                    "observationTitle": "Allergic reaction to polysorbate 80",
+                    "contraindicationText": "Do not vaccinate if the patient has had an immediate allergic reaction of any severity to polysorbate 80.",
+                    "contraindicatedVaccine": [
+                        {
+                            "vaccineType": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL",
+                            "cvx": "212"
+                        }
+                    ]
+                },
+                {
+                    "observationCode": "188",
+                    "observationTitle": "Known allergy to Polyethylene glycol [PEG]",
+                    "contraindicationText": "Do not vaccinate if the patient has known allergy to Polyethylene glycol [PEG].",
+                    "contraindicatedVaccine": [
+                        {
+                            "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+                            "cvx": "207"
+                        },
+                        {
+                            "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+                            "cvx": "208"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

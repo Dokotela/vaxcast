@@ -1,7 +1,9 @@
-import 'package:generate_vax_cast/supporting_strings.dart';
+import 'dart:io';
+
+import 'package:generate_vax_cast/models/supporting_strings.dart';
 import 'package:gsheets/gsheets.dart';
 
-import 'api.dart';
+import '../api.dart';
 
 Future<List<SupportingStrings>> downloadSheets() async {
   /// Assign the gsheets credentials
@@ -10,6 +12,8 @@ Future<List<SupportingStrings>> downloadSheets() async {
   final supportingStringsList = <SupportingStrings>[];
 
   for (var gsheet in gSheetsList) {
+    sleep(Duration(seconds: 10));
+
     /// Get all of tabs/sheets at the stated location
     final ss = await gsheets.spreadsheet(gsheet);
 
@@ -37,6 +41,7 @@ Future<List<SupportingStrings>> downloadSheets() async {
         string += '\n';
       }
 
+      print(tab.title);
       switch (tab.title) {
         case 'Antigen Series Overview':
           {
@@ -80,7 +85,7 @@ Future<List<SupportingStrings>> downloadSheets() async {
             supportingStrings.data = string;
           }
           break;
-        case 'CVS to Antigen Map':
+        case 'CVX to Antigen Map':
           {
             (supportingStrings as ScheduleSupportingStrings).type =
                 SupportingType.cvxToAntigenMap;

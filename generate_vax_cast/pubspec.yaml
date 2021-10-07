@@ -6,6 +6,7 @@ environment:
   sdk: '>=2.14.0 <3.0.0'
   
 dependencies:
+  csv: ^5.0.0
   gsheets: ^0.3.2
   vax_cast: 
     path: ../vax_cast
