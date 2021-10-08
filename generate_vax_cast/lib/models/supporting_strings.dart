@@ -35,7 +35,7 @@ class ScheduleSupportingStrings extends SupportingStrings {
 enum SupportingType {
   codedObservations,
   cvxToAntigenMap,
-  liveViruConflicts,
+  liveVirusConflicts,
   vaccineGroupToAntigenMap,
-  vaccineGroup,
+  vaccineGroups,
 }

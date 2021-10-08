@@ -375,6 +375,44 @@ enum Obs {
   code187,
   @JsonValue('188')
   code188,
+  @JsonValue('189')
+  code189,
+  @JsonValue('190')
+  code190,
+  @JsonValue('191')
+  code191,
+  @JsonValue('192')
+  code192,
+  @JsonValue('193')
+  code193,
+  @JsonValue('194')
+  code194,
+  @JsonValue('195')
+  code195,
+  @JsonValue('196')
+  code196,
+  @JsonValue('197')
+  code197,
+  @JsonValue('198')
+  code198,
+  @JsonValue('199')
+  code199,
+  @JsonValue('200')
+  code200,
+  @JsonValue('201')
+  code201,
+  @JsonValue('202')
+  code202,
+  @JsonValue('203')
+  code203,
+  @JsonValue('204')
+  code204,
+  @JsonValue('205')
+  code205,
+  @JsonValue('206')
+  code206,
+  @JsonValue('207')
+  code207,
 }
 
 const ObsStringToEnumMap = {
@@ -565,6 +603,25 @@ const ObsStringToEnumMap = {
   '186': Obs.code186,
   '187': Obs.code187,
   '188': Obs.code188,
+  '189': Obs.code189,
+  '190': Obs.code190,
+  '191': Obs.code191,
+  '192': Obs.code192,
+  '193': Obs.code193,
+  '194': Obs.code194,
+  '195': Obs.code195,
+  '196': Obs.code196,
+  '197': Obs.code197,
+  '198': Obs.code198,
+  '199': Obs.code199,
+  '200': Obs.code200,
+  '201': Obs.code201,
+  '202': Obs.code202,
+  '203': Obs.code203,
+  '204': Obs.code204,
+  '205': Obs.code205,
+  '206': Obs.code206,
+  '207': Obs.code207,
 };
 
 const ObsEnumToStringMap = {
@@ -755,4 +812,23 @@ const ObsEnumToStringMap = {
   Obs.code186: '186',
   Obs.code187: '187',
   Obs.code188: '188',
+  Obs.code189: '189',
+  Obs.code190: '190',
+  Obs.code191: '191',
+  Obs.code192: '192',
+  Obs.code193: '193',
+  Obs.code194: '194',
+  Obs.code195: '195',
+  Obs.code196: '196',
+  Obs.code197: '197',
+  Obs.code198: '198',
+  Obs.code199: '199',
+  Obs.code200: '200',
+  Obs.code201: '201',
+  Obs.code202: '202',
+  Obs.code203: '203',
+  Obs.code204: '204',
+  Obs.code205: '205',
+  Obs.code206: '206',
+  Obs.code207: '207',
 };

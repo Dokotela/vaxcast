@@ -41,7 +41,6 @@ Future<List<SupportingStrings>> downloadSheets() async {
         string += '\n';
       }
 
-      print(tab.title);
       switch (tab.title) {
         case 'Antigen Series Overview':
           {
@@ -95,7 +94,7 @@ Future<List<SupportingStrings>> downloadSheets() async {
         case 'Live Virus Conflicts':
           {
             (supportingStrings as ScheduleSupportingStrings).type =
-                SupportingType.liveViruConflicts;
+                SupportingType.liveVirusConflicts;
             supportingStrings.data = string;
           }
           break;
@@ -109,7 +108,7 @@ Future<List<SupportingStrings>> downloadSheets() async {
         case 'Vaccine Groups':
           {
             (supportingStrings as ScheduleSupportingStrings).type =
-                SupportingType.vaccineGroup;
+                SupportingType.vaccineGroups;
             supportingStrings.data = string;
           }
           break;
