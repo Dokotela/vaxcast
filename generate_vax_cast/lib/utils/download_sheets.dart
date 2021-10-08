@@ -12,7 +12,7 @@ Future<List<SupportingStrings>> downloadSheets() async {
   final supportingStringsList = <SupportingStrings>[];
 
   for (var gsheet in gSheetsList) {
-    sleep(Duration(seconds: 10));
+    sleep(Duration(seconds: 12));
 
     /// Get all of tabs/sheets at the stated location
     final ss = await gsheets.spreadsheet(gsheet);
