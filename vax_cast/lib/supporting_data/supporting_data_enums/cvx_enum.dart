@@ -289,10 +289,40 @@ enum Cvx {
   code207,
   @JsonValue('208')
   code208,
+  @JsonValue('210')
+  code210,
+  @JsonValue('211')
+  code211,
   @JsonValue('212')
   code212,
   @JsonValue('213')
   code213,
+  @JsonValue('214')
+  code214,
+  @JsonValue('500')
+  code500,
+  @JsonValue('501')
+  code501,
+  @JsonValue('502')
+  code502,
+  @JsonValue('503')
+  code503,
+  @JsonValue('504')
+  code504,
+  @JsonValue('505')
+  code505,
+  @JsonValue('506')
+  code506,
+  @JsonValue('507')
+  code507,
+  @JsonValue('508')
+  code508,
+  @JsonValue('509')
+  code509,
+  @JsonValue('510')
+  code510,
+  @JsonValue('511')
+  code511,
 }
 
 int cvxToInt(Cvx cvx) => int.parse(cvx.toString().split('code')[1]);
@@ -442,6 +472,21 @@ const cvxStringToEnumMap = {
   '205': Cvx.code205,
   '207': Cvx.code207,
   '208': Cvx.code208,
+  '210': Cvx.code210,
+  '211': Cvx.code211,
   '212': Cvx.code212,
   '213': Cvx.code213,
+  '214': Cvx.code214,
+  '500': Cvx.code500,
+  '501': Cvx.code501,
+  '502': Cvx.code502,
+  '503': Cvx.code503,
+  '504': Cvx.code504,
+  '505': Cvx.code505,
+  '506': Cvx.code506,
+  '507': Cvx.code507,
+  '508': Cvx.code508,
+  '509': Cvx.code509,
+  '510': Cvx.code510,
+  '511': Cvx.code511,
 };

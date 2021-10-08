@@ -8,3 +8,5 @@
 - The original of all of the spreadsheets can be found on the [CDC site here](https://www.cdc.gov/vaccines/programs/iis/cdsi.html). What you're looking for specifically is CdSi Logic Specification and Supporting Data about halfway down the page. Then there's a [Supporting Data link](https://www.cdc.gov/vaccines/programs/iis/downloads/supporting-data-4.16-508.zip).
 
 - Inside the Supporting Data zip file (once extracted), is a folder with Excel Documents, another with XML documents, then some release notes and supporting documents. I have uploaded all of the Excel files to Google Drive because it makes it easier for me to pull the data from them. I'm going to use these files to generate my own JSON files because I don't particularly like working with XML.
+
+- In general, adding new antigens, vaccines, anything should be able to be dynamically generated. The things that certainly may come up are observation codes, and possibly CVX codes (especially internationally). If they are updated, they will need to be added by hand to some of the supportive files.

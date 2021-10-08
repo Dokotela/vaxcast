@@ -4,7 +4,1197 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
   "liveVirusConflicts": {},
   "vaccineGroups": {},
   "vaccineGroupToAntigenMap": {},
-  "cvxToAntigenMap": {},
+  "cvxToAntigenMap": {
+    "cvxMap": [
+      {
+        "cvx": "01",
+        "shortDescription": "DTP",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"}
+        ]
+      },
+      {
+        "cvx": "02",
+        "shortDescription": "OPV",
+        "association": [
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "03",
+        "shortDescription": "MMR",
+        "association": [
+          {"antigen": "Measles"},
+          {"antigen": "Mumps"},
+          {"antigen": "Rubella"}
+        ]
+      },
+      {
+        "cvx": "04",
+        "shortDescription": "M/R",
+        "association": [
+          {"antigen": "Measles"},
+          {"antigen": "Rubella"}
+        ]
+      },
+      {
+        "cvx": "05",
+        "shortDescription": "measles",
+        "association": [
+          {"antigen": "Measles"}
+        ]
+      },
+      {
+        "cvx": "06",
+        "shortDescription": "rubella",
+        "association": [
+          {"antigen": "Rubella"}
+        ]
+      },
+      {
+        "cvx": "07",
+        "shortDescription": "mumps",
+        "association": [
+          {"antigen": "Mumps"}
+        ]
+      },
+      {
+        "cvx": "08",
+        "shortDescription": "Hep B, adolescent or pediatric",
+        "association": [
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "09",
+        "shortDescription": "Td (adult), adsorbed",
+        "association": [
+          {"antigen": "Tetanus"},
+          {"antigen": "Diphtheria"}
+        ]
+      },
+      {
+        "cvx": "10",
+        "shortDescription": "IPV",
+        "association": [
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "11",
+        "shortDescription": "pertussis",
+        "association": [
+          {"antigen": "Pertussis"}
+        ]
+      },
+      {
+        "cvx": "15",
+        "shortDescription": "influenza, split (incl. purified surface antigen)",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "16",
+        "shortDescription": "influenza, whole",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "17",
+        "shortDescription": "Hib, unspecified formulation",
+        "association": [
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "18",
+        "shortDescription": "Rabies, intramuscular injection",
+        "association": [
+          {"antigen": "Rabies"}
+        ]
+      },
+      {
+        "cvx": "20",
+        "shortDescription": "DTaP",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"}
+        ]
+      },
+      {
+        "cvx": "21",
+        "shortDescription": "varicella",
+        "association": [
+          {"antigen": "Varicella"}
+        ]
+      },
+      {
+        "cvx": "22",
+        "shortDescription": "DTP-Hib",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "25",
+        "shortDescription": "Typhoid oral, live, attenuated",
+        "association": [
+          {"antigen": "Typhoid"}
+        ]
+      },
+      {
+        "cvx": "26",
+        "shortDescription": "cholera, unspecified formulation",
+        "association": [
+          {"antigen": "Cholera"}
+        ]
+      },
+      {
+        "cvx": "28",
+        "shortDescription": "DT (pediatric)",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"}
+        ]
+      },
+      {
+        "cvx": "31",
+        "shortDescription": "Hep A, pediatric, unspecified formulation",
+        "association": [
+          {"antigen": "HepA"}
+        ]
+      },
+      {
+        "cvx": "32",
+        "shortDescription": "meningococcal MPSV4",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "33",
+        "shortDescription": "pneumococcal polysaccharide PPV23",
+        "association": [
+          {"antigen": "Pneumococcal"}
+        ]
+      },
+      {
+        "cvx": "35",
+        "shortDescription": "tetanus toxoid, adsorbed",
+        "association": [
+          {"antigen": "Tetanus"}
+        ]
+      },
+      {
+        "cvx": "37",
+        "shortDescription": "Yellow Fever",
+        "association": [
+          {"antigen": "Yellow Fever"}
+        ]
+      },
+      {
+        "cvx": "38",
+        "shortDescription": "rubella/mumps",
+        "association": [
+          {"antigen": "Rubella"},
+          {"antigen": "Mumps"}
+        ]
+      },
+      {
+        "cvx": "39",
+        "shortDescription": "Japanese encephalitis SC",
+        "association": [
+          {"antigen": "Japanese Encephalitis"}
+        ]
+      },
+      {
+        "cvx": "40",
+        "shortDescription": "rabies, intradermal injection",
+        "association": [
+          {"antigen": "Rabies"}
+        ]
+      },
+      {
+        "cvx": "41",
+        "shortDescription": "typhoid, parenteral",
+        "association": [
+          {"antigen": "Typhoid"}
+        ]
+      },
+      {
+        "cvx": "42",
+        "shortDescription": "Hep B, adolescent/high risk infant",
+        "association": [
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "43",
+        "shortDescription": "Hep B, adult",
+        "association": [
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "44",
+        "shortDescription": "Hep B, dialysis",
+        "association": [
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "45",
+        "shortDescription": "Hep B, unspecified formulation",
+        "association": [
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "46",
+        "shortDescription": "Hib (PRP-D)",
+        "association": [
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "47",
+        "shortDescription": "Hib (HbOC)",
+        "association": [
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "48",
+        "shortDescription": "Hib (PRP-T)",
+        "association": [
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "49",
+        "shortDescription": "Hib (PRP-OMP)",
+        "association": [
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "50",
+        "shortDescription": "DTaP-Hib",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "51",
+        "shortDescription": "Hib-Hep B",
+        "association": [
+          {"antigen": "Hib"},
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "53",
+        "shortDescription": "typhoid, parenteral, AKD (U.S. military)",
+        "association": [
+          {"antigen": "Typhoid"}
+        ]
+      },
+      {
+        "cvx": "52",
+        "shortDescription": "Hep A, adult",
+        "association": [
+          {"antigen": "HepA"}
+        ]
+      },
+      {
+        "cvx": "62",
+        "shortDescription": "HPV, quadrivalent",
+        "association": [
+          {"antigen": "HPV"}
+        ]
+      },
+      {
+        "cvx": "74",
+        "shortDescription": "rotavirus, tetravalent",
+        "association": [
+          {"antigen": "Rotavirus"}
+        ]
+      },
+      {
+        "cvx": "83",
+        "shortDescription": "Hep A, ped/adol, 2 dose",
+        "association": [
+          {"antigen": "HepA"}
+        ]
+      },
+      {
+        "cvx": "84",
+        "shortDescription": "Hep A, ped/adol, 3 dose",
+        "association": [
+          {"antigen": "HepA"}
+        ]
+      },
+      {
+        "cvx": "85",
+        "shortDescription": "Hep A, unspecified formulation",
+        "association": [
+          {"antigen": "HepA"}
+        ]
+      },
+      {
+        "cvx": "88",
+        "shortDescription": "influenza, unspecified formulation",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "89",
+        "shortDescription": "polio, unspecified formulation",
+        "association": [
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "90",
+        "shortDescription": "Rabies, unspecified formulation",
+        "association": [
+          {"antigen": "Rabies"}
+        ]
+      },
+      {
+        "cvx": "91",
+        "shortDescription": "typhoid, unspecified formulation",
+        "association": [
+          {"antigen": "Typhoid"}
+        ]
+      },
+      {
+        "cvx": "94",
+        "shortDescription": "MMRV",
+        "association": [
+          {"antigen": "Measles"},
+          {"antigen": "Mumps"},
+          {"antigen": "Rubella"},
+          {"antigen": "Varicella"}
+        ]
+      },
+      {
+        "cvx": "100",
+        "shortDescription": "pneumococcal conjugate PCV 7",
+        "association": [
+          {"antigen": "Pneumococcal"}
+        ]
+      },
+      {
+        "cvx": "101",
+        "shortDescription": "Typhoid capsular polysaccharide",
+        "association": [
+          {"antigen": "Typhoid"}
+        ]
+      },
+      {
+        "cvx": "102",
+        "shortDescription": "DTP-Hib-Hep B",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "Hib"},
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "103",
+        "shortDescription": "meningococcal C conjugate",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "104",
+        "shortDescription": "Hep A-Hep B",
+        "association": [
+          {"antigen": "HepA"},
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "106",
+        "shortDescription": "DTaP, 5 pertussis antigens",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"}
+        ]
+      },
+      {
+        "cvx": "107",
+        "shortDescription": "DTaP, unspecified formulation",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"}
+        ]
+      },
+      {
+        "cvx": "108",
+        "shortDescription": "meningococcal, unspecified formulation",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "109",
+        "shortDescription": "pneumococcal, unspecified formulation",
+        "association": [
+          {"antigen": "Pneumococcal"}
+        ]
+      },
+      {
+        "cvx": "110",
+        "shortDescription": "DTaP-Hep B-IPV",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "HepB"},
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "111",
+        "shortDescription": "influenza, live, intranasal",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "112",
+        "shortDescription": "tetanus toxoid, unspecified formulation",
+        "association": [
+          {"antigen": "Tetanus"}
+        ]
+      },
+      {
+        "cvx": "113",
+        "shortDescription": "Td (adult) preservative free",
+        "association": [
+          {"antigen": "Tetanus"},
+          {"antigen": "Diphtheria"}
+        ]
+      },
+      {
+        "cvx": "114",
+        "shortDescription": "meningococcal MCV4P",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "115",
+        "shortDescription": "Tdap",
+        "association": [
+          {"antigen": "Tetanus"},
+          {"antigen": "Diphtheria"},
+          {"antigen": "Pertussis"}
+        ]
+      },
+      {
+        "cvx": "116",
+        "shortDescription": "rotavirus, pentavalent",
+        "association": [
+          {"antigen": "Rotavirus"}
+        ]
+      },
+      {
+        "cvx": "118",
+        "shortDescription": "HPV, bivalent",
+        "association": [
+          {"antigen": "HPV"}
+        ]
+      },
+      {
+        "cvx": "119",
+        "shortDescription": "rotavirus, monovalent",
+        "association": [
+          {"antigen": "Rotavirus"}
+        ]
+      },
+      {
+        "cvx": "120",
+        "shortDescription": "DTaP-Hib-IPV",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "Hib"},
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "121",
+        "shortDescription": "Zoster live",
+        "association": [
+          {
+            "antigen": "Varicella",
+            "associationBeginAge": "0 days",
+            "associationEndAge": "50 years"
+          },
+          {"antigen": "Zoster", "associationBeginAge": "50 years"}
+        ]
+      },
+      {
+        "cvx": "122",
+        "shortDescription": "rotavirus, unspecified formulation",
+        "association": [
+          {"antigen": "Rotavirus"}
+        ]
+      },
+      {
+        "cvx": "129",
+        "shortDescription": "Japanese Encephalitis, unspecified formulation",
+        "association": [
+          {"antigen": "Japanese Encephalitis"}
+        ]
+      },
+      {
+        "cvx": "130",
+        "shortDescription": "DTaP-IPV",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "132",
+        "shortDescription": "DTaP-IPV-HIB-HEP B, historical",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "Polio"},
+          {"antigen": "Hib"},
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "133",
+        "shortDescription": "Pneumococcal conjugate PCV 13",
+        "association": [
+          {"antigen": "Pneumococcal"}
+        ]
+      },
+      {
+        "cvx": "134",
+        "shortDescription": "Japanese Encephalitis, VC",
+        "association": [
+          {"antigen": "Japanese Encephalitis"}
+        ]
+      },
+      {
+        "cvx": "135",
+        "shortDescription": "Influenza, high dose seasonal",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "136",
+        "shortDescription": "Meningococcal MCV4O",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "137",
+        "shortDescription": "HPV, unspecified formulation",
+        "association": [
+          {"antigen": "HPV"}
+        ]
+      },
+      {
+        "cvx": "138",
+        "shortDescription": "Td (adult)",
+        "association": [
+          {"antigen": "Tetanus"},
+          {"antigen": "Diphtheria"}
+        ]
+      },
+      {
+        "cvx": "139",
+        "shortDescription": "Td(adult) unspecified formulation",
+        "association": [
+          {"antigen": "Tetanus"},
+          {"antigen": "Diphtheria"}
+        ]
+      },
+      {
+        "cvx": "140",
+        "shortDescription":
+            "Influenza, seasonal, injectable, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "141",
+        "shortDescription": "Influenza, seasonal, injectable",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "142",
+        "shortDescription": "tetanus toxoid, not adsorbed",
+        "association": [
+          {"antigen": "Tetanus"}
+        ]
+      },
+      {
+        "cvx": "144",
+        "shortDescription":
+            "influenza, seasonal, intradermal, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "146",
+        "shortDescription": "DTaP,IPV,Hib,HepB",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "Polio"},
+          {"antigen": "Hib"},
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "147",
+        "shortDescription": "meningococcal MCV4, unspecified formulation",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "148",
+        "shortDescription": "Meningococcal C/Y-HIB PRP",
+        "association": [
+          {"antigen": "Meningococcal"},
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "149",
+        "shortDescription": "influenza, live, intranasal, quadrivalent",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "150",
+        "shortDescription":
+            "influenza, injectable, quadrivalent, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "151",
+        "shortDescription": "influenza, nasal, unspecified formulation",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "152",
+        "shortDescription": "Pneumococcal Conjugate, unspecified formulation",
+        "association": [
+          {"antigen": "Pneumococcal"}
+        ]
+      },
+      {
+        "cvx": "153",
+        "shortDescription":
+            "Influenza, injectable, Madin Darby Canine Kidney, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "155",
+        "shortDescription":
+            "influenza, recombinant, injectable, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "158",
+        "shortDescription": "influenza, injectable, quadrivalent",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "161",
+        "shortDescription":
+            "Influenza, injectable,quadrivalent, preservative free, pediatric",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "162",
+        "shortDescription": "Meningococcal B, recombinant",
+        "association": [
+          {"antigen": "Meningococcal B"}
+        ]
+      },
+      {
+        "cvx": "163",
+        "shortDescription": "Meningococcal B, OMV",
+        "association": [
+          {"antigen": "Meningococcal B"}
+        ]
+      },
+      {
+        "cvx": "164",
+        "shortDescription": "meningococcal B, unspecified",
+        "association": [
+          {"antigen": "Meningococcal B"}
+        ]
+      },
+      {
+        "cvx": "165",
+        "shortDescription": "HPV9",
+        "association": [
+          {"antigen": "HPV"}
+        ]
+      },
+      {
+        "cvx": "166",
+        "shortDescription":
+            "influenza, intradermal, quadrivalent, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "167",
+        "shortDescription": "meningococcal, unknown serogroups",
+        "association": [
+          {"antigen": "Meningococcal"},
+          {"antigen": "Meningococcal B"}
+        ]
+      },
+      {
+        "cvx": "168",
+        "shortDescription": "influenza, trivalent, adjuvanted",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "169",
+        "shortDescription": "Hep A, live attenuated",
+        "association": [
+          {"antigen": "HepA"}
+        ]
+      },
+      {
+        "cvx": "170",
+        "shortDescription": "DTAP/IPV/HIB - non-US",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "Polio"},
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "171",
+        "shortDescription":
+            "Influenza, injectable, MDCK, preservative free, quadrivalent",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "172",
+        "shortDescription": "cholera, WC-rBS",
+        "association": [
+          {"antigen": "Cholera"}
+        ]
+      },
+      {
+        "cvx": "173",
+        "shortDescription": "cholera, BivWC",
+        "association": [
+          {"antigen": "Cholera"}
+        ]
+      },
+      {
+        "cvx": "174",
+        "shortDescription": "cholera, live attenuated",
+        "association": [
+          {"antigen": "Cholera"}
+        ]
+      },
+      {
+        "cvx": "175",
+        "shortDescription": "Rabies - IM Diploid cell culture",
+        "association": [
+          {"antigen": "Rabies"}
+        ]
+      },
+      {
+        "cvx": "176",
+        "shortDescription": "Rabies - IM fibroblast culture",
+        "association": [
+          {"antigen": "Rabies"}
+        ]
+      },
+      {
+        "cvx": "177",
+        "shortDescription": "pneumococcal conjugate PCV10",
+        "association": [
+          {"antigen": "Pneumococcal"}
+        ]
+      },
+      {
+        "cvx": "178",
+        "shortDescription": "OPV bivalent",
+        "association": [
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "179",
+        "shortDescription": "OPV ,monovalent, unspecified",
+        "association": [
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "182",
+        "shortDescription": "OPV, Unspecified",
+        "association": [
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "183",
+        "shortDescription": "Yellow fever vaccine - alt",
+        "association": [
+          {"antigen": "Yellow Fever"}
+        ]
+      },
+      {
+        "cvx": "184",
+        "shortDescription": "Yellow fever, unspecified formulation",
+        "association": [
+          {"antigen": "Yellow Fever"}
+        ]
+      },
+      {
+        "cvx": "185",
+        "shortDescription":
+            "influenza, recombinant, quadrivalent,injectable, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "186",
+        "shortDescription":
+            "Influenza, injectable, MDCK, preservative, quadrivalent",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "187",
+        "shortDescription": "zoster recombinant",
+        "association": [
+          {"antigen": "Zoster"}
+        ]
+      },
+      {
+        "cvx": "188",
+        "shortDescription": "zoster, unspecified formulation",
+        "association": [
+          {"antigen": "Zoster"}
+        ]
+      },
+      {
+        "cvx": "189",
+        "shortDescription": "Hep B, adjuvanted",
+        "association": [
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "190",
+        "shortDescription": "Typhoid conjugate vaccine (TCV)",
+        "association": [
+          {"antigen": "Typhoid"}
+        ]
+      },
+      {
+        "cvx": "191",
+        "shortDescription": "meningococcal A polysaccharide",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "192",
+        "shortDescription": "meningococcal AC polysaccharide",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "193",
+        "shortDescription": "Hep A-Hep B, pediatric/adolescent",
+        "association": [
+          {"antigen": "HepA"},
+          {"antigen": "HepB"}
+        ]
+      },
+      {
+        "cvx": "194",
+        "shortDescription":
+            "Influenza, Southern Hemisphere, unspecified formulation",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "195",
+        "shortDescription": "DT, IPV adsorbed",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Polio"}
+        ]
+      },
+      {
+        "cvx": "196",
+        "shortDescription":
+            "Td, adsorbed, preservative free, adult use, Lf unspecified",
+        "association": [
+          {"antigen": "Tetanus"},
+          {"antigen": "Diphtheria"}
+        ]
+      },
+      {
+        "cvx": "197",
+        "shortDescription": "Influenza, high-dose, quadrivalent",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "198",
+        "shortDescription": "DTP-hepB-Hib Pentavalent Non-US",
+        "association": [
+          {"antigen": "Diphtheria"},
+          {"antigen": "Tetanus"},
+          {"antigen": "Pertussis"},
+          {"antigen": "HepB"},
+          {"antigen": "Hib"}
+        ]
+      },
+      {
+        "cvx": "200",
+        "shortDescription":
+            "Influenza, Southern Hemisphere, pediatric, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "201",
+        "shortDescription": "Influenza, Southern Hemisphere, preservative free",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "202",
+        "shortDescription":
+            "Influenza, Southern Hemisphere, quadrivalent, with preservative",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "203",
+        "shortDescription":
+            "Meningococcal Polysaccharide groups A, C, Y, W-135 TT Conjugate",
+        "association": [
+          {"antigen": "Meningococcal"}
+        ]
+      },
+      {
+        "cvx": "204",
+        "shortDescription": "Ebola Zaire Vaccine, Live",
+        "association": [
+          {"antigen": "Ebola"}
+        ]
+      },
+      {
+        "cvx": "205",
+        "shortDescription": "Influenza vaccine, quadrivalent, adjuvanted",
+        "association": [
+          {"antigen": "Influenza"}
+        ]
+      },
+      {
+        "cvx": "207",
+        "shortDescription": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "cvx": "208",
+        "shortDescription": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription":
+            "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription":
+            "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "cvx": "212",
+        "shortDescription":
+            "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "cvx": "213",
+        "shortDescription":
+            "SARS-COV-2 (COVID-19), vaccine Unspecified Formulation",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "Ebola, Unspecified",
+        "association": [
+          {"antigen": "Ebola"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 Non-US Vaccine, Product Unknown",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 IV Non-US Vaccine (COVAXIN)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 LAV Non-US Vaccine (COVIVAC)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 VVnr Non-US Vaccine (Sputnik Light)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 VVnr Non-US Vaccine (Sputnik V)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription":
+            "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription":
+            "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharmaceutical + Institute of Microbology Chinese academy of Sciences)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription":
+            "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 PS Non-US Vaccine (EpiVacCorona)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      },
+      {
+        "shortDescription": "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)",
+        "association": [
+          {"antigen": "COVID-19"}
+        ]
+      }
+    ]
+  },
   "observations": {
     "observation": [
       {
