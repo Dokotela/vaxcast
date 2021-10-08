@@ -12,8 +12,6 @@ Observations observations(String? data) {
 
   for (var i in supportingData) {
     if (i[0].toString() != 'Observation Code') {
-      print(i);
-      print(i.length);
       observations.observation!.add(
         Observation.fromJson(
           {
@@ -78,7 +76,6 @@ Observations observations(String? data) {
       }
     }
   }
-  print(observations.toJson());
   return observations;
 }
 
@@ -87,7 +84,6 @@ List<CodedValue> codedValueList(String codeString, int column) {
   var tempList = codeString.split(';');
   for (var value in tempList) {
     if (value.length > 0) {
-      print(value);
       final index = value.indexOf('(');
       codedValueList.add(CodedValue(
         code: value.substring(index + 1, value.length - 1),
@@ -96,7 +92,7 @@ List<CodedValue> codedValueList(String codeString, int column) {
             : column == 6
                 ? 'CVX'
                 : 'CDCPHINVS',
-        text: value.substring(0, index),
+        text: value.substring(0, index - 1),
       ));
     }
   }

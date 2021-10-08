@@ -1,9 +1,3343 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final scheduleSupportingData = ScheduleSupportingData.fromJson({
-  "liveVirusConflicts": {},
-  "vaccineGroups": {},
-  "vaccineGroupToAntigenMap": {},
+  "liveVirusConflicts": {
+    "liveVirusConflict": [
+      {
+        "previous": {"vaccineType": "Previous Vaccine Type"},
+        "current": {"vaccineType": "Current Vaccine Type"},
+        "conflictBeginInterval": "Conflict Begin Interval",
+        "minConflictEndInterval": "Minimum Conflict End Interval",
+        "conflictEndInterval": "Conflict End Interval"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMR", "cvx": "03"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles-Rubella", "cvx": "04"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Measles", "cvx": "05"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella", "cvx": "06"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Mumps", "cvx": "07"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "BCG", "cvx": "19"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Varicella", "cvx": "21"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Smallpox", "cvx": "75"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "MMRV", "cvx": "94"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Zoster live", "cvx": "121"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "26 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "MMR", "cvx": "03"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Measles- Rubella", "cvx": "04"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Measles", "cvx": "05"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Rubella", "cvx": "06"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Mumps", "cvx": "07"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "BCG", "cvx": "19"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Varicella", "cvx": "21"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Yellow Fever", "cvx": "37"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Rubella-Mumps", "cvx": "38"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Smallpox", "cvx": "75"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "MMRV", "cvx": "94"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Influenza LAIV", "cvx": "111"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Zoster live", "cvx": "121"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "H1N1 LAIV", "cvx": "125"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Influenza LAIV4", "cvx": "149"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Influenza LAIV Unspecified", "cvx": "151"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Hep A, live attenuated", "cvx": "169"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Yellow Fever vaccine - alt", "cvx": "183"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Yellow Fever, unspecified", "cvx": "184"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "30 days",
+        "conflictEndInterval": "30 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {"vaccineType": "Ebola Zaire Vaccine, Live", "cvx": "204"},
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "28 days",
+        "conflictEndInterval": "28 days"
+      },
+      {
+        "previous": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "current": {
+          "vaccineType": "COVID-19 LAV Non-US Vaccine  - COVIVAC",
+          "cvx": "503"
+        },
+        "conflictBeginInterval": "1 day",
+        "minConflictEndInterval": "24 days",
+        "conflictEndInterval": "28 days"
+      }
+    ]
+  },
+  "vaccineGroups": {
+    "vaccineGroup": [
+      {"name": "Cholera"},
+      {"name": "COVID-19"},
+      {"name": "DTaP/Tdap/Td", "administerFullVaccineGroup": "No"},
+      {"name": "Ebola"},
+      {"name": "HepA"},
+      {"name": "HepB"},
+      {"name": "Hib"},
+      {"name": "HPV"},
+      {"name": "Influenza"},
+      {"name": "Japanese Encephalitis"},
+      {"name": "Meningococcal"},
+      {"name": "Meningococcal B"},
+      {"name": "MMR", "administerFullVaccineGroup": "Yes"},
+      {"name": "Pneumococcal"},
+      {"name": "Polio"},
+      {"name": "Rabies"},
+      {"name": "Rotavirus"},
+      {"name": "Typhoid"},
+      {"name": "Varicella"},
+      {"name": "Yellow Fever"},
+      {"name": "Zoster"}
+    ]
+  },
+  "vaccineGroupToAntigenMap": {
+    "vaccineGroupMap": [
+      {
+        "name": "Cholera",
+        "antigen": ["Cholera"]
+      },
+      {
+        "name": "COVID-19",
+        "antigen": ["COVID-19"]
+      },
+      {
+        "name": "DTaP/Tdap/Td",
+        "antigen": ["Diphtheria", "Pertussis", "Tetanus"]
+      },
+      {
+        "name": "Ebola",
+        "antigen": ["Ebola"]
+      },
+      {
+        "name": "HepA",
+        "antigen": ["HepA"]
+      },
+      {
+        "name": "HepB",
+        "antigen": ["HepB"]
+      },
+      {
+        "name": "Hib",
+        "antigen": ["Hib"]
+      },
+      {
+        "name": "HPV",
+        "antigen": ["HPV"]
+      },
+      {
+        "name": "Influenza",
+        "antigen": ["Influenza"]
+      },
+      {
+        "name": "Japanese Encephalitis",
+        "antigen": ["Japanese Encephalitis"]
+      },
+      {
+        "name": "Meningococcal",
+        "antigen": ["Meningococcal"]
+      },
+      {
+        "name": "Meningococcal B",
+        "antigen": ["Meningococcal B"]
+      },
+      {
+        "name": "MMR",
+        "antigen": ["Measles", "Mumps", "Rubella"]
+      },
+      {
+        "name": "Pneumococcal",
+        "antigen": ["Pneumococcal"]
+      },
+      {
+        "name": "Polio",
+        "antigen": ["Polio"]
+      },
+      {
+        "name": "Rabies",
+        "antigen": ["Rabies"]
+      },
+      {
+        "name": "Rotavirus",
+        "antigen": ["Rotavirus"]
+      },
+      {
+        "name": "Typhoid",
+        "antigen": ["Typhoid"]
+      },
+      {
+        "name": "Varicella",
+        "antigen": ["Varicella"]
+      },
+      {
+        "name": "Yellow Fever",
+        "antigen": ["Yellow Fever"]
+      },
+      {
+        "name": "Zoster",
+        "antigen": ["Zoster"]
+      }
+    ]
+  },
   "cvxToAntigenMap": {
     "cvxMap": [
       {
@@ -1083,6 +4417,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
         ]
       },
       {
+        "cvx": "210",
         "shortDescription":
             "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL",
         "association": [
@@ -1090,6 +4425,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
         ]
       },
       {
+        "cvx": "211",
         "shortDescription":
             "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
         "association": [
@@ -1113,48 +4449,56 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
         ]
       },
       {
+        "cvx": "214",
         "shortDescription": "Ebola, Unspecified",
         "association": [
           {"antigen": "Ebola"}
         ]
       },
       {
+        "cvx": "500",
         "shortDescription": "COVID-19 Non-US Vaccine, Product Unknown",
         "association": [
           {"antigen": "COVID-19"}
         ]
       },
       {
+        "cvx": "501",
         "shortDescription": "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)",
         "association": [
           {"antigen": "COVID-19"}
         ]
       },
       {
+        "cvx": "502",
         "shortDescription": "COVID-19 IV Non-US Vaccine (COVAXIN)",
         "association": [
           {"antigen": "COVID-19"}
         ]
       },
       {
+        "cvx": "503",
         "shortDescription": "COVID-19 LAV Non-US Vaccine (COVIVAC)",
         "association": [
           {"antigen": "COVID-19"}
         ]
       },
       {
+        "cvx": "504",
         "shortDescription": "COVID-19 VVnr Non-US Vaccine (Sputnik Light)",
         "association": [
           {"antigen": "COVID-19"}
         ]
       },
       {
+        "cvx": "505",
         "shortDescription": "COVID-19 VVnr Non-US Vaccine (Sputnik V)",
         "association": [
           {"antigen": "COVID-19"}
         ]
       },
       {
+        "cvx": "506",
         "shortDescription":
             "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)",
         "association": [
@@ -1162,6 +4506,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
         ]
       },
       {
+        "cvx": "507",
         "shortDescription":
             "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharmaceutical + Institute of Microbology Chinese academy of Sciences)",
         "association": [
@@ -1169,6 +4514,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
         ]
       },
       {
+        "cvx": "508",
         "shortDescription":
             "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)",
         "association": [
@@ -1176,18 +4522,21 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
         ]
       },
       {
+        "cvx": "509",
         "shortDescription": "COVID-19 PS Non-US Vaccine (EpiVacCorona)",
         "association": [
           {"antigen": "COVID-19"}
         ]
       },
       {
+        "cvx": "510",
         "shortDescription": "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)",
         "association": [
           {"antigen": "COVID-19"}
         ]
       },
       {
+        "cvx": "511",
         "shortDescription": "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)",
         "association": [
           {"antigen": "COVID-19"}
@@ -1220,12 +4569,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "370388006",
               "codeSystem": "SNOMED",
-              "text": "Patient Immunocompromised "
+              "text": "Patient Immunocompromised"
             },
             {
               "code": "VXC27",
               "codeSystem": "CDCPHINVS",
-              "text": "Immunodeficiency due to any cause "
+              "text": "Immunodeficiency due to any cause"
             }
           ]
         }
@@ -1240,7 +4589,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "234336002",
               "codeSystem": "SNOMED",
-              "text": "Hemopoietic stem cell transplant [procedure] "
+              "text": "Hemopoietic stem cell transplant [procedure]"
             }
           ]
         }
@@ -1255,7 +4604,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "50711007",
               "codeSystem": "SNOMED",
-              "text": "Viral hepatitis type C [disorder] "
+              "text": "Viral hepatitis type C [disorder]"
             }
           ]
         }
@@ -1276,17 +4625,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "77386006",
               "codeSystem": "SNOMED",
-              "text": "Patient currently pregnant [finding] "
+              "text": "Patient currently pregnant [finding]"
             },
             {
               "code": "102874004",
               "codeSystem": "SNOMED",
-              "text": "Possible pregnancy [finding] "
+              "text": "Possible pregnancy [finding]"
             },
             {
               "code": "255409004",
               "codeSystem": "SNOMED",
-              "text": "Pregnant woman [person] "
+              "text": "Pregnant woman [person]"
             }
           ]
         }
@@ -1309,7 +4658,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "413712001",
               "codeSystem": "SNOMED",
-              "text": " Breastfeeding [mother] [observable entity] "
+              "text": " Breastfeeding [mother] [observable entity]"
             }
           ]
         }
@@ -1324,7 +4673,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "230744007",
               "codeSystem": "SNOMED",
-              "text": "Cerebrospinal fluid leak [disorder] "
+              "text": "Cerebrospinal fluid leak [disorder]"
             }
           ]
         }
@@ -1338,17 +4687,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "449840001",
               "codeSystem": "SNOMED",
-              "text": "Cochlear prosthesis in situ [finding] "
+              "text": "Cochlear prosthesis in situ [finding]"
             },
             {
               "code": "43252007",
               "codeSystem": "SNOMED",
-              "text": "Cochlear prosthesis, device [physical object] "
+              "text": "Cochlear prosthesis, device [physical object]"
             },
             {
               "code": "359612003",
               "codeSystem": "SNOMED",
-              "text": "Implantation of cochlear prosthetic device [procedure] "
+              "text": "Implantation of cochlear prosthetic device [procedure]"
             }
           ]
         }
@@ -1371,7 +4720,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "31323000",
               "codeSystem": "SNOMED",
-              "text": "Severe combined immunodeficiency disease [disorder] "
+              "text": "Severe combined immunodeficiency disease [disorder]"
             }
           ]
         }
@@ -1385,7 +4734,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "73211009",
               "codeSystem": "SNOMED",
-              "text": "Diabetes mellitus [disorder] "
+              "text": "Diabetes mellitus [disorder]"
             }
           ]
         }
@@ -1401,12 +4750,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "328383001",
               "codeSystem": "SNOMED",
-              "text": "Chronic liver disease [disorder] "
+              "text": "Chronic liver disease [disorder]"
             },
             {
               "code": "19943007",
               "codeSystem": "SNOMED",
-              "text": "Cirrhosis of liver [disorder] "
+              "text": "Cirrhosis of liver [disorder]"
             }
           ]
         }
@@ -1423,17 +4772,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "128238001",
               "codeSystem": "SNOMED",
-              "text": "Chronic heart disease [disorder] "
+              "text": "Chronic heart disease [disorder]"
             },
             {
               "code": "42343007",
               "codeSystem": "SNOMED",
-              "text": "Congestive heart failure [disorder] "
+              "text": "Congestive heart failure [disorder]"
             },
             {
               "code": "57809008",
               "codeSystem": "SNOMED",
-              "text": "Myocardial disease [disorder] "
+              "text": "Myocardial disease [disorder]"
             }
           ]
         }
@@ -1450,17 +4799,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "413839001",
               "codeSystem": "SNOMED",
-              "text": "Chronic lung disease [disorder] "
+              "text": "Chronic lung disease [disorder]"
             },
             {
               "code": "13645005",
               "codeSystem": "SNOMED",
-              "text": "Chronic obstructive lung disease [disorder] "
+              "text": "Chronic obstructive lung disease [disorder]"
             },
             {
               "code": "87433001",
               "codeSystem": "SNOMED",
-              "text": "Pulmonary emphysema [disorder] "
+              "text": "Pulmonary emphysema [disorder]"
             }
           ]
         }
@@ -1474,7 +4823,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "278971009",
               "codeSystem": "SNOMED",
-              "text": "Hepatitis A Immune [Finding] "
+              "text": "Hepatitis A Immune [Finding]"
             }
           ]
         }
@@ -1488,7 +4837,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "271511000",
               "codeSystem": "SNOMED",
-              "text": "Hepatitis B Immune [Finding] "
+              "text": "Hepatitis B Immune [Finding]"
             }
           ]
         }
@@ -1501,7 +4850,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "371111005",
               "codeSystem": "SNOMED",
-              "text": "Measles Immune [finding] "
+              "text": "Measles Immune [finding]"
             }
           ]
         }
@@ -1514,7 +4863,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "371112003",
               "codeSystem": "SNOMED",
-              "text": "Mumps Immune [finding] "
+              "text": "Mumps Immune [finding]"
             }
           ]
         }
@@ -1527,7 +4876,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "278968001",
               "codeSystem": "SNOMED",
-              "text": "Rubella Immune [finding] "
+              "text": "Rubella Immune [finding]"
             }
           ]
         }
@@ -1541,7 +4890,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "371113008",
               "codeSystem": "SNOMED",
-              "text": "Varicella Immune "
+              "text": "Varicella Immune"
             }
           ]
         }
@@ -1555,7 +4904,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "38907003",
               "codeSystem": "SNOMED",
-              "text": "Varicella [Disorder] "
+              "text": "Varicella [Disorder]"
             }
           ]
         }
@@ -1569,7 +4918,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "4740000",
               "codeSystem": "SNOMED",
-              "text": "Herpes Zoster [Disorder] "
+              "text": "Herpes Zoster [Disorder]"
             }
           ]
         }
@@ -1585,12 +4934,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "86406008",
               "codeSystem": "SNOMED",
-              "text": "Human immunodeficiency virus infection [disorder] "
+              "text": "Human immunodeficiency virus infection [disorder]"
             },
             {
               "code": "427314002",
               "codeSystem": "SNOMED",
-              "text": "Antiviral therapy [procedure] "
+              "text": "Antiviral therapy [procedure]"
             }
           ]
         }
@@ -1605,12 +4954,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "390798007",
               "codeSystem": "SNOMED",
-              "text": "Asthma finding [finding] "
+              "text": "Asthma finding [finding]"
             },
             {
               "code": "195967001",
               "codeSystem": "SNOMED",
-              "text": " Asthma [disorder] "
+              "text": " Asthma [disorder]"
             }
           ]
         }
@@ -1627,17 +4976,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "35327006",
               "codeSystem": "SNOMED",
-              "text": "Intussusception [morphologic abnormality] "
+              "text": "Intussusception [morphologic abnormality]"
             },
             {
               "code": "49723003",
               "codeSystem": "SNOMED",
-              "text": "Intussusception of intestine [disorder] "
+              "text": "Intussusception of intestine [disorder]"
             },
             {
               "code": "VXC21",
               "codeSystem": "CDCPHINVS",
-              "text": "Previous history of intussusception "
+              "text": "Previous history of intussusception"
             }
           ]
         }
@@ -1652,7 +5001,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "69776003",
               "codeSystem": "SNOMED",
-              "text": "Acute gastroenteritis [disorder] "
+              "text": "Acute gastroenteritis [disorder]"
             }
           ]
         }
@@ -1673,7 +5022,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "56717001",
               "codeSystem": "SNOMED",
-              "text": "Tuberculosis [disorder] "
+              "text": "Tuberculosis [disorder]"
             }
           ]
         }
@@ -1697,42 +5046,42 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "372763006",
               "codeSystem": "SNOMED",
-              "text": "Amantadine [substance] "
+              "text": "Amantadine [substance]"
             },
             {
               "code": "51361008",
               "codeSystem": "SNOMED",
-              "text": "Amantadine [product] "
+              "text": "Amantadine [product]"
             },
             {
               "code": "372532009",
               "codeSystem": "SNOMED",
-              "text": "Rimantadine [substance] "
+              "text": "Rimantadine [substance]"
             },
             {
               "code": "108712009",
               "codeSystem": "SNOMED",
-              "text": "Rimantadine [product] "
+              "text": "Rimantadine [product]"
             },
             {
               "code": "387010007",
               "codeSystem": "SNOMED",
-              "text": "Zanamivir [substance] "
+              "text": "Zanamivir [substance]"
             },
             {
               "code": "116100000",
               "codeSystem": "SNOMED",
-              "text": "Zanamivir [product] "
+              "text": "Zanamivir [product]"
             },
             {
               "code": "412261005",
               "codeSystem": "SNOMED",
-              "text": "Oseltamivir [substance] "
+              "text": "Oseltamivir [substance]"
             },
             {
               "code": "386142008",
               "codeSystem": "SNOMED",
-              "text": "Oseltamivir [product] "
+              "text": "Oseltamivir [product]"
             }
           ]
         }
@@ -1747,7 +5096,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "405742008",
               "codeSystem": "SNOMED",
-              "text": "Aspirin therapy finding [finding] "
+              "text": "Aspirin therapy finding [finding]"
             }
           ]
         }
@@ -1770,12 +5119,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "76102007",
               "codeSystem": "SNOMED",
-              "text": "Male homosexual [finding] "
+              "text": "Male homosexual [finding]"
             },
             {
               "code": "225531006",
               "codeSystem": "SNOMED",
-              "text": "Homosexual behavior [finding] "
+              "text": "Homosexual behavior [finding]"
             }
           ]
         }
@@ -1793,17 +5142,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "225516002",
               "codeSystem": "SNOMED",
-              "text": "Multiple sexual contacts [finding] "
+              "text": "Multiple sexual contacts [finding]"
             },
             {
               "code": "228460004",
               "codeSystem": "SNOMED",
-              "text": "Multiple current sexual partners [finding] "
+              "text": "Multiple current sexual partners [finding]"
             },
             {
               "code": "228466005",
               "codeSystem": "SNOMED",
-              "text": "Commitment to sexual relationship [observable entity] "
+              "text": "Commitment to sexual relationship [observable entity]"
             }
           ]
         }
@@ -1819,17 +5168,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "225517006",
               "codeSystem": "SNOMED",
-              "text": "Sexual partners [observable entity] "
+              "text": "Sexual partners [observable entity]"
             },
             {
               "code": "11723008",
               "codeSystem": "SNOMED",
-              "text": "Contact with [contextual qualifier] [qualifier value] "
+              "text": "Contact with [contextual qualifier] [qualifier value]"
             },
             {
               "code": "165806002",
               "codeSystem": "SNOMED",
-              "text": "Hepatitis B surface antigen positive [finding] "
+              "text": "Hepatitis B surface antigen positive [finding]"
             }
           ]
         }
@@ -1844,18 +5193,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "305489005",
               "codeSystem": "SNOMED",
-              "text":
-                  "Under care of genitourinary medicine physician [finding] "
+              "text": "Under care of genitourinary medicine physician [finding]"
             },
             {
               "code": "305679000",
               "codeSystem": "SNOMED",
-              "text": "Seen by genitourinary medicine physician [finding] "
+              "text": "Seen by genitourinary medicine physician [finding]"
             },
             {
               "code": "8098009",
               "codeSystem": "SNOMED",
-              "text": "Sexually transmitted infectious disease [disorder] "
+              "text": "Sexually transmitted infectious disease [disorder]"
             }
           ]
         }
@@ -1870,12 +5218,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "307052004",
               "codeSystem": "SNOMED",
-              "text": "Illicit drug use [finding] "
+              "text": "Illicit drug use [finding]"
             },
             {
               "code": "228366006",
               "codeSystem": "SNOMED",
-              "text": "Finding relating to drug misuse behavior [finding] "
+              "text": "Finding relating to drug misuse behavior [finding]"
             }
           ]
         }
@@ -1890,12 +5238,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "307052004",
               "codeSystem": "SNOMED",
-              "text": "Illicit drug use [finding] "
+              "text": "Illicit drug use [finding]"
             },
             {
               "code": "226034001",
               "codeSystem": "SNOMED",
-              "text": "Injecting drug user [finding] "
+              "text": "Injecting drug user [finding]"
             }
           ]
         }
@@ -1909,7 +5257,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "77176002",
               "codeSystem": "SNOMED",
-              "text": "Smoker [finding] "
+              "text": "Smoker [finding]"
             }
           ]
         }
@@ -1923,12 +5271,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "228281002",
               "codeSystem": "SNOMED",
-              "text": "Problem drinker [finding] "
+              "text": "Problem drinker [finding]"
             },
             {
               "code": "7200002",
               "codeSystem": "SNOMED",
-              "text": "Alcoholism [disorder] "
+              "text": "Alcoholism [disorder]"
             }
           ]
         }
@@ -1990,22 +5338,22 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "159138004",
               "codeSystem": "SNOMED",
-              "text": "Microbiologist [occupation] "
+              "text": "Microbiologist [occupation]"
             },
             {
               "code": "14698002",
               "codeSystem": "SNOMED",
-              "text": "Medical microbiologist [occupation] "
+              "text": "Medical microbiologist [occupation]"
             },
             {
               "code": "24932003",
               "codeSystem": "SNOMED",
-              "text": "Exposure to [contextual qualifier] [qualifier value] "
+              "text": "Exposure to [contextual qualifier] [qualifier value]"
             },
             {
               "code": "17872004",
               "codeSystem": "SNOMED",
-              "text": "Neisseria meningitidis [organism] "
+              "text": "Neisseria meningitidis [organism]"
             }
           ]
         }
@@ -2021,27 +5369,27 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "159138004",
               "codeSystem": "SNOMED",
-              "text": "Microbiologist [occupation] "
+              "text": "Microbiologist [occupation]"
             },
             {
               "code": "14698002",
               "codeSystem": "SNOMED",
-              "text": "Medical microbiologist [occupation] "
+              "text": "Medical microbiologist [occupation]"
             },
             {
               "code": "159282002",
               "codeSystem": "SNOMED",
-              "text": "Laboratory technician [occupation] "
+              "text": "Laboratory technician [occupation]"
             },
             {
               "code": "24932003",
               "codeSystem": "SNOMED",
-              "text": "Exposure to [contextual qualifier] [qualifier value] "
+              "text": "Exposure to [contextual qualifier] [qualifier value]"
             },
             {
               "code": "5595000",
               "codeSystem": "SNOMED",
-              "text": "Salmonella Typhi [organism] "
+              "text": "Salmonella Typhi [organism]"
             }
           ]
         }
@@ -2056,17 +5404,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "159282002",
               "codeSystem": "SNOMED",
-              "text": "Laboratory technician [occupation] "
+              "text": "Laboratory technician [occupation]"
             },
             {
               "code": "24932003",
               "codeSystem": "SNOMED",
-              "text": "Exposure to [contextual qualifier] [qualifier value] "
+              "text": "Exposure to [contextual qualifier] [qualifier value]"
             },
             {
               "code": "26630006",
               "codeSystem": "SNOMED",
-              "text": "Yellow fever virus [organism] "
+              "text": "Yellow fever virus [organism]"
             }
           ]
         }
@@ -2080,17 +5428,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "159282002",
               "codeSystem": "SNOMED",
-              "text": "Laboratory technician [occupation] "
+              "text": "Laboratory technician [occupation]"
             },
             {
               "code": "24932003",
               "codeSystem": "SNOMED",
-              "text": "Exposure to [contextual qualifier] [qualifier value] "
+              "text": "Exposure to [contextual qualifier] [qualifier value]"
             },
             {
               "code": "59881000",
               "codeSystem": "SNOMED",
-              "text": "Rabies virus [organism] "
+              "text": "Rabies virus [organism]"
             }
           ]
         }
@@ -2106,17 +5454,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "159282002",
               "codeSystem": "SNOMED",
-              "text": "Laboratory technician [occupation] "
+              "text": "Laboratory technician [occupation]"
             },
             {
               "code": "24932003",
               "codeSystem": "SNOMED",
-              "text": "Exposure to [contextual qualifier] [qualifier value] "
+              "text": "Exposure to [contextual qualifier] [qualifier value]"
             },
             {
               "code": "44172002",
               "codeSystem": "SNOMED",
-              "text": "Human poliovirus [organism] "
+              "text": "Human poliovirus [organism]"
             }
           ]
         }
@@ -2133,7 +5481,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "223366009",
               "codeSystem": "SNOMED",
-              "text": "Healthcare professional [occupation] "
+              "text": "Healthcare professional [occupation]"
             }
           ]
         }
@@ -2149,17 +5497,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "223366009",
               "codeSystem": "SNOMED",
-              "text": "Healthcare professional [occupation] "
+              "text": "Healthcare professional [occupation]"
             },
             {
               "code": "24932003",
               "codeSystem": "SNOMED",
-              "text": "Exposure to [contextual qualifier] [qualifier value] "
+              "text": "Exposure to [contextual qualifier] [qualifier value]"
             },
             {
               "code": "44172002",
               "codeSystem": "SNOMED",
-              "text": "Human poliovirus [organism] "
+              "text": "Human poliovirus [organism]"
             }
           ]
         }
@@ -2175,47 +5523,47 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "26369006",
               "codeSystem": "SNOMED",
-              "text": "Public health nurse [occupation] "
+              "text": "Public health nurse [occupation]"
             },
             {
               "code": "68867008",
               "codeSystem": "SNOMED",
-              "text": "Public health dentist [occupation] "
+              "text": "Public health dentist [occupation]"
             },
             {
               "code": "307969004",
               "codeSystem": "SNOMED",
-              "text": "Public health officer [occupation] "
+              "text": "Public health officer [occupation]"
             },
             {
               "code": "56466003",
               "codeSystem": "SNOMED",
-              "text": "Public health physician [occupation] "
+              "text": "Public health physician [occupation]"
             },
             {
               "code": "56079002",
               "codeSystem": "SNOMED",
-              "text": "Public health veterinarian [occupation] "
+              "text": "Public health veterinarian [occupation]"
             },
             {
               "code": "60008001",
               "codeSystem": "SNOMED",
-              "text": "Public health nutritionist [occupation] "
+              "text": "Public health nutritionist [occupation]"
             },
             {
               "code": "24932003",
               "codeSystem": "SNOMED",
-              "text": "Exposure to [contextual qualifier] [qualifier value] "
+              "text": "Exposure to [contextual qualifier] [qualifier value]"
             },
             {
               "code": "87612001",
               "codeSystem": "SNOMED",
-              "text": "Blood [substance] "
+              "text": "Blood [substance]"
             },
             {
               "code": "32457005",
               "codeSystem": "SNOMED",
-              "text": "Body fluid [substance] "
+              "text": "Body fluid [substance]"
             }
           ]
         }
@@ -2239,42 +5587,42 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "223366009",
               "codeSystem": "SNOMED",
-              "text": "Healthcare professional [occupation] "
+              "text": "Healthcare professional [occupation]"
             },
             {
               "code": "158942005",
               "codeSystem": "SNOMED",
-              "text": "Residential child care worker [occupation] "
+              "text": "Residential child care worker [occupation]"
             },
             {
               "code": "158939004",
               "codeSystem": "SNOMED",
-              "text": "Child care officer [occupation] "
+              "text": "Child care officer [occupation]"
             },
             {
               "code": "73851001",
               "codeSystem": "SNOMED",
-              "text": "Plumber [general] [occupation] "
+              "text": "Plumber [general] [occupation]"
             },
             {
               "code": "160157004",
               "codeSystem": "SNOMED",
-              "text": "Sewerman [occupation] "
+              "text": "Sewerman [occupation]"
             },
             {
               "code": "266006009",
               "codeSystem": "SNOMED",
-              "text": "Food/drink processor [occupation] "
+              "text": "Food/drink processor [occupation]"
             },
             {
               "code": "274272004",
               "codeSystem": "SNOMED",
-              "text": "Catering services occupation [occupation] "
+              "text": "Catering services occupation [occupation]"
             },
             {
               "code": "160133004",
               "codeSystem": "SNOMED",
-              "text": "Packer - food/garden produce [occupation] "
+              "text": "Packer - food/garden produce [occupation]"
             }
           ]
         }
@@ -2288,7 +5636,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "265940000",
               "codeSystem": "SNOMED",
-              "text": "Animal health occupation [occupation] "
+              "text": "Animal health occupation [occupation]"
             }
           ]
         }
@@ -2302,7 +5650,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "159091009",
               "codeSystem": "SNOMED",
-              "text": "Trainer - performing animals [occupation] "
+              "text": "Trainer - performing animals [occupation]"
             }
           ]
         }
@@ -2318,12 +5666,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "24932003",
               "codeSystem": "SNOMED",
-              "text": "Exposure to [contextual qualifier] [qualifier value] "
+              "text": "Exposure to [contextual qualifier] [qualifier value]"
             },
             {
               "code": "59881000",
               "codeSystem": "SNOMED",
-              "text": "Rabies virus [organism] "
+              "text": "Rabies virus [organism]"
             }
           ]
         }
@@ -2338,12 +5686,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "65853000",
               "codeSystem": "SNOMED",
-              "text": "Student [occupation] "
+              "text": "Student [occupation]"
             },
             {
               "code": "257561002",
               "codeSystem": "SNOMED",
-              "text": "Further education establishment [environment] "
+              "text": "Further education establishment [environment]"
             }
           ]
         }
@@ -2371,7 +5719,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "90688005",
               "codeSystem": "SNOMED",
-              "text": "Chronic renal failure syndrome [disorder] "
+              "text": "Chronic renal failure syndrome [disorder]"
             }
           ]
         }
@@ -2386,7 +5734,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "20078004",
               "codeSystem": "SNOMED",
-              "text": "Substance abuse treatment center [environment] "
+              "text": "Substance abuse treatment center [environment]"
             }
           ]
         }
@@ -2401,7 +5749,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "257656006",
               "codeSystem": "SNOMED",
-              "text": "Penal institution [environment] "
+              "text": "Penal institution [environment]"
             }
           ]
         }
@@ -2416,12 +5764,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "410519009",
               "codeSystem": "SNOMED",
-              "text": "At risk context [qualifier value] "
+              "text": "At risk context [qualifier value]"
             },
             {
               "code": "443684005",
               "codeSystem": "SNOMED",
-              "text": "Disease outbreak [event] "
+              "text": "Disease outbreak [event]"
             }
           ]
         }
@@ -2437,12 +5785,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "11723008",
               "codeSystem": "SNOMED",
-              "text": "Contact with [contextual qualifier] [qualifier value] "
+              "text": "Contact with [contextual qualifier] [qualifier value]"
             },
             {
               "code": "165806002",
               "codeSystem": "SNOMED",
-              "text": "Hepatitis B surface antigen positive [finding] "
+              "text": "Hepatitis B surface antigen positive [finding]"
             }
           ]
         }
@@ -2459,7 +5807,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "170484009",
               "codeSystem": "SNOMED",
-              "text": "Typhoid carrier [finding] "
+              "text": "Typhoid carrier [finding]"
             }
           ]
         }
@@ -2486,7 +5834,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "12271241000119109",
               "codeSystem": "SNOMED",
-              "text": "Transgender identify [finding] "
+              "text": "Transgender identify [finding]"
             }
           ]
         }
@@ -2503,7 +5851,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "84757009",
               "codeSystem": "SNOMED",
-              "text": "Epilepsy [disorder] "
+              "text": "Epilepsy [disorder]"
             }
           ]
         }
@@ -2533,23 +5881,23 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "192711008",
               "codeSystem": "SNOMED",
-              "text": "Post diphtheria vaccination encephalitis [disorder] "
+              "text": "Post diphtheria vaccination encephalitis [disorder]"
             },
             {
               "code": "192710009",
               "codeSystem": "SNOMED",
-              "text": "Post tetanus vaccination encephalitis [disorder] "
+              "text": "Post tetanus vaccination encephalitis [disorder]"
             },
             {
               "code": "192712001",
               "codeSystem": "SNOMED",
-              "text": "Post pertussis vaccination encephalitis [disorder] "
+              "text": "Post pertussis vaccination encephalitis [disorder]"
             },
             {
               "code": "VXC22",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Encephalopathy within 7 days of previous dose of DTP or DTaP "
+                  "Encephalopathy within 7 days of previous dose of DTP or DTaP"
             }
           ]
         }
@@ -2564,13 +5912,13 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293104008",
               "codeSystem": "SNOMED",
-              "text": "Vaccines adverse reaction [disorder] "
+              "text": "Vaccines adverse reaction [disorder]"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -2586,29 +5934,29 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293117006",
               "codeSystem": "SNOMED",
-              "text": "Poliomyelitis vaccine adverse reaction [disorder] "
+              "text": "Poliomyelitis vaccine adverse reaction [disorder]"
             },
-            {"code": "02", "codeSystem": "CVX", "text": "OPV "},
-            {"code": "10", "codeSystem": "CVX", "text": "IPV "},
+            {"code": "02", "codeSystem": "CVX", "text": "OPV"},
+            {"code": "10", "codeSystem": "CVX", "text": "IPV"},
             {
               "code": "89",
               "codeSystem": "CVX",
-              "text": "Polio, unspecified formulation "
+              "text": "Polio, unspecified formulation"
             },
-            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV "},
-            {"code": "120", "codeSystem": "CVX", "text": "DTaP-Hib-IPV "},
-            {"code": "130", "codeSystem": "CVX", "text": "DTaP-IPV "},
+            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV"},
+            {"code": "120", "codeSystem": "CVX", "text": "DTaP-Hib-IPV"},
+            {"code": "130", "codeSystem": "CVX", "text": "DTaP-IPV"},
             {
               "code": "132",
               "codeSystem": "CVX",
-              "text": "DTaP-IPV-Hib-HepB, Historical "
+              "text": "DTaP-IPV-Hib-HepB, Historical"
             },
-            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB "},
+            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -2625,28 +5973,28 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
               "code": "451301000124103",
               "codeSystem": "SNOMED",
               "text":
-                  "Adverse reaction caused by Japanese encephalitis virus vaccine [disorder] "
+                  "Adverse reaction caused by Japanese encephalitis virus vaccine [disorder]"
             },
             {
               "code": "39",
               "codeSystem": "CVX",
-              "text": "Japanese Encephalitis, MB "
+              "text": "Japanese Encephalitis, MB"
             },
             {
               "code": "134",
               "codeSystem": "CVX",
-              "text": "Japanese Encephalitis, VC "
+              "text": "Japanese Encephalitis, VC"
             },
             {
               "code": "129",
               "codeSystem": "CVX",
-              "text": "Japanese Encephalitis, unspecified "
+              "text": "Japanese Encephalitis, unspecified"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -2662,33 +6010,33 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "429301000124101",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction to rotavirus vaccine [disorder] "
+              "text": "Adverse reaction to rotavirus vaccine [disorder]"
             },
             {
               "code": "116",
               "codeSystem": "CVX",
-              "text": "Rotavirus, pentavalent "
+              "text": "Rotavirus, pentavalent"
             },
             {
               "code": "122",
               "codeSystem": "CVX",
-              "text": "Rotavirus, unspecified formulation "
+              "text": "Rotavirus, unspecified formulation"
             },
             {
               "code": "74",
               "codeSystem": "CVX",
-              "text": "Rotavirus, tetravalent "
+              "text": "Rotavirus, tetravalent"
             },
             {
               "code": "119",
               "codeSystem": "CVX",
-              "text": "Rotavirus, monovalent "
+              "text": "Rotavirus, monovalent"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -2704,34 +6052,34 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293122006",
               "codeSystem": "SNOMED",
-              "text": "Typhoid vaccine adverse reaction [disorder] "
+              "text": "Typhoid vaccine adverse reaction [disorder]"
             },
             {
               "code": "101",
               "codeSystem": "CVX",
-              "text": "Typhoid capsular polysaccharide "
+              "text": "Typhoid capsular polysaccharide"
             },
             {
               "code": "25",
               "codeSystem": "CVX",
-              "text": "Typhoid oral, live, attenuated "
+              "text": "Typhoid oral, live, attenuated"
             },
-            {"code": "41", "codeSystem": "CVX", "text": "Typhoid, parenteral "},
+            {"code": "41", "codeSystem": "CVX", "text": "Typhoid, parenteral"},
             {
               "code": "53",
               "codeSystem": "CVX",
-              "text": "Typhoid, parenteral, AKD [U.S. military] "
+              "text": "Typhoid, parenteral, AKD [U.S. military]"
             },
             {
               "code": "91",
               "codeSystem": "CVX",
-              "text": "Typhoid, unspecified formulation "
+              "text": "Typhoid, unspecified formulation"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -2747,90 +6095,90 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "420113004",
               "codeSystem": "SNOMED",
-              "text": "Influenza virus vaccine adverse reaction [disorder] "
+              "text": "Influenza virus vaccine adverse reaction [disorder]"
             },
             {
               "code": "15",
               "codeSystem": "CVX",
-              "text": "Influenza, split incl. purified surface antigen "
+              "text": "Influenza, split incl. purified surface antigen"
             },
-            {"code": "16", "codeSystem": "CVX", "text": "Influenza, whole "},
+            {"code": "16", "codeSystem": "CVX", "text": "Influenza, whole"},
             {
               "code": "88",
               "codeSystem": "CVX",
-              "text": "Influenza, Unspecified "
+              "text": "Influenza, Unspecified"
             },
             {
               "code": "111",
               "codeSystem": "CVX",
-              "text": "Influenza, live, intranasal "
+              "text": "Influenza, live, intranasal"
             },
             {
               "code": "135",
               "codeSystem": "CVX",
-              "text": "Influenza, high dose seasonal "
+              "text": "Influenza, high dose seasonal"
             },
             {
               "code": "140",
               "codeSystem": "CVX",
-              "text": "Influenza, injectable preservative free "
+              "text": "Influenza, injectable preservative free"
             },
             {
               "code": "141",
               "codeSystem": "CVX",
-              "text": "Influenza, injectable "
+              "text": "Influenza, injectable"
             },
             {
               "code": "144",
               "codeSystem": "CVX",
-              "text": "Influenza, intradermal, preservative free "
+              "text": "Influenza, intradermal, preservative free"
             },
             {
               "code": "149",
               "codeSystem": "CVX",
-              "text": "influenza, live, intranasal, quadrivalent "
+              "text": "influenza, live, intranasal, quadrivalent"
             },
             {
               "code": "150",
               "codeSystem": "CVX",
-              "text": "influenza, injectable, quadrivalent, preservative free "
+              "text": "influenza, injectable, quadrivalent, preservative free"
             },
             {
               "code": "151",
               "codeSystem": "CVX",
-              "text": "influenza nasal, unspecified formulation "
+              "text": "influenza nasal, unspecified formulation"
             },
             {
               "code": "153",
               "codeSystem": "CVX",
-              "text": "Influenza, injectable, MDCK, preservative free "
+              "text": "Influenza, injectable, MDCK, preservative free"
             },
             {
               "code": "155",
               "codeSystem": "CVX",
-              "text": "influenza, recombinant, injectable, preservative free "
+              "text": "influenza, recombinant, injectable, preservative free"
             },
             {
               "code": "158",
               "codeSystem": "CVX",
-              "text": "Influenza, injectable, quadrivalent "
+              "text": "Influenza, injectable, quadrivalent"
             },
             {
               "code": "161",
               "codeSystem": "CVX",
               "text":
-                  "Influenza, injectable, quadrivalent, preservative free, peds "
+                  "Influenza, injectable, quadrivalent, preservative free, peds"
             },
             {
               "code": "166",
               "codeSystem": "CVX",
-              "text": "Influenza, intradermal, quadrivalent, preservative free "
+              "text": "Influenza, intradermal, quadrivalent, preservative free"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -2846,38 +6194,38 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293115003",
               "codeSystem": "SNOMED",
-              "text": "Pertussis vaccine adverse reaction [disorder] "
+              "text": "Pertussis vaccine adverse reaction [disorder]"
             },
-            {"code": "01", "codeSystem": "CVX", "text": "DTP "},
-            {"code": "20", "codeSystem": "CVX", "text": "DTaP "},
-            {"code": "22", "codeSystem": "CVX", "text": "DTP-Hib "},
-            {"code": "50", "codeSystem": "CVX", "text": "DTaP-Hib "},
-            {"code": "102", "codeSystem": "CVX", "text": "DTP-Hib-HepB "},
+            {"code": "01", "codeSystem": "CVX", "text": "DTP"},
+            {"code": "20", "codeSystem": "CVX", "text": "DTaP"},
+            {"code": "22", "codeSystem": "CVX", "text": "DTP-Hib"},
+            {"code": "50", "codeSystem": "CVX", "text": "DTaP-Hib"},
+            {"code": "102", "codeSystem": "CVX", "text": "DTP-Hib-HepB"},
             {
               "code": "106",
               "codeSystem": "CVX",
-              "text": "DTaP, 5 pertussis antigens "
+              "text": "DTaP, 5 pertussis antigens"
             },
             {
               "code": "107",
               "codeSystem": "CVX",
-              "text": "DTaP, Unspecified Formulation "
+              "text": "DTaP, Unspecified Formulation"
             },
-            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV "},
-            {"code": "115", "codeSystem": "CVX", "text": "Tdap "},
-            {"code": "120", "codeSystem": "CVX", "text": "DTaP-Hib-IPV "},
-            {"code": "130", "codeSystem": "CVX", "text": "DTaP-IPV "},
+            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV"},
+            {"code": "115", "codeSystem": "CVX", "text": "Tdap"},
+            {"code": "120", "codeSystem": "CVX", "text": "DTaP-Hib-IPV"},
+            {"code": "130", "codeSystem": "CVX", "text": "DTaP-IPV"},
             {
               "code": "132",
               "codeSystem": "CVX",
-              "text": "DTaP-IPV-Hib-HepB,historical "
+              "text": "DTaP-IPV-Hib-HepB,historical"
             },
-            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB "},
+            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -2893,47 +6241,47 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "219085007",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction to diphtheria vaccine [disorder] "
+              "text": "Adverse reaction to diphtheria vaccine [disorder]"
             },
-            {"code": "01", "codeSystem": "CVX", "text": "DTP "},
-            {"code": "09", "codeSystem": "CVX", "text": "Td - Adult Adsorbed "},
-            {"code": "20", "codeSystem": "CVX", "text": "DTaP "},
-            {"code": "22", "codeSystem": "CVX", "text": "DTP-Hib "},
-            {"code": "28", "codeSystem": "CVX", "text": "DT - Pediatric "},
-            {"code": "50", "codeSystem": "CVX", "text": "DTaP-Hib "},
-            {"code": "102", "codeSystem": "CVX", "text": "DTP-Hib-HepB "},
+            {"code": "01", "codeSystem": "CVX", "text": "DTP"},
+            {"code": "09", "codeSystem": "CVX", "text": "Td - Adult Adsorbed"},
+            {"code": "20", "codeSystem": "CVX", "text": "DTaP"},
+            {"code": "22", "codeSystem": "CVX", "text": "DTP-Hib"},
+            {"code": "28", "codeSystem": "CVX", "text": "DT - Pediatric"},
+            {"code": "50", "codeSystem": "CVX", "text": "DTaP-Hib"},
+            {"code": "102", "codeSystem": "CVX", "text": "DTP-Hib-HepB"},
             {
               "code": "106",
               "codeSystem": "CVX",
-              "text": "DTaP, 5 pertussis antigens "
+              "text": "DTaP, 5 pertussis antigens"
             },
             {
               "code": "107",
               "codeSystem": "CVX",
-              "text": "DTaP, Unspecified Formulation "
+              "text": "DTaP, Unspecified Formulation"
             },
-            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV "},
-            {"code": "113", "codeSystem": "CVX", "text": "Td p-free "},
-            {"code": "115", "codeSystem": "CVX", "text": "Tdap "},
-            {"code": "120", "codeSystem": "CVX", "text": "DTaP-Hib-IPV "},
-            {"code": "130", "codeSystem": "CVX", "text": "DTaP-IPV "},
+            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV"},
+            {"code": "113", "codeSystem": "CVX", "text": "Td p-free"},
+            {"code": "115", "codeSystem": "CVX", "text": "Tdap"},
+            {"code": "120", "codeSystem": "CVX", "text": "DTaP-Hib-IPV"},
+            {"code": "130", "codeSystem": "CVX", "text": "DTaP-IPV"},
             {
               "code": "132",
               "codeSystem": "CVX",
-              "text": "DTaP-IPV-Hib-HepB,historical "
+              "text": "DTaP-IPV-Hib-HepB,historical"
             },
-            {"code": "138", "codeSystem": "CVX", "text": "Td - Adult "},
+            {"code": "138", "codeSystem": "CVX", "text": "Td - Adult"},
             {
               "code": "139",
               "codeSystem": "CVX",
-              "text": "Td - Adult Unspecified Formulation "
+              "text": "Td - Adult Unspecified Formulation"
             },
-            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB "},
+            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -2949,48 +6297,48 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "219084006",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction to tetanus vaccine [disorder] "
+              "text": "Adverse reaction to tetanus vaccine [disorder]"
             },
-            {"code": "01", "codeSystem": "CVX", "text": "DTP "},
-            {"code": "09", "codeSystem": "CVX", "text": "Td - Adult Adsorbed "},
-            {"code": "20", "codeSystem": "CVX", "text": "DTaP "},
-            {"code": "22", "codeSystem": "CVX", "text": "DTP-Hib "},
-            {"code": "28", "codeSystem": "CVX", "text": "DT - Pediatric "},
-            {"code": "35", "codeSystem": "CVX", "text": "TT "},
-            {"code": "50", "codeSystem": "CVX", "text": "DTaP-Hib "},
-            {"code": "102", "codeSystem": "CVX", "text": "DTP-Hib-HepB "},
+            {"code": "01", "codeSystem": "CVX", "text": "DTP"},
+            {"code": "09", "codeSystem": "CVX", "text": "Td - Adult Adsorbed"},
+            {"code": "20", "codeSystem": "CVX", "text": "DTaP"},
+            {"code": "22", "codeSystem": "CVX", "text": "DTP-Hib"},
+            {"code": "28", "codeSystem": "CVX", "text": "DT - Pediatric"},
+            {"code": "35", "codeSystem": "CVX", "text": "TT"},
+            {"code": "50", "codeSystem": "CVX", "text": "DTaP-Hib"},
+            {"code": "102", "codeSystem": "CVX", "text": "DTP-Hib-HepB"},
             {
               "code": "106",
               "codeSystem": "CVX",
-              "text": "DTaP, 5 pertussis antigens "
+              "text": "DTaP, 5 pertussis antigens"
             },
             {
               "code": "107",
               "codeSystem": "CVX",
-              "text": "DTaP, Unspecified Formulation "
+              "text": "DTaP, Unspecified Formulation"
             },
-            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV "},
-            {"code": "113", "codeSystem": "CVX", "text": "Td p-free "},
-            {"code": "115", "codeSystem": "CVX", "text": "Tdap "},
-            {"code": "120", "codeSystem": "CVX", "text": "DTaP-Hib-IPV "},
-            {"code": "130", "codeSystem": "CVX", "text": "DTaP-IPV "},
+            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV"},
+            {"code": "113", "codeSystem": "CVX", "text": "Td p-free"},
+            {"code": "115", "codeSystem": "CVX", "text": "Tdap"},
+            {"code": "120", "codeSystem": "CVX", "text": "DTaP-Hib-IPV"},
+            {"code": "130", "codeSystem": "CVX", "text": "DTaP-IPV"},
             {
               "code": "132",
               "codeSystem": "CVX",
-              "text": "DTaP-IPV-Hib-HepB,historical "
+              "text": "DTaP-IPV-Hib-HepB,historical"
             },
-            {"code": "138", "codeSystem": "CVX", "text": "Td - Adult "},
+            {"code": "138", "codeSystem": "CVX", "text": "Td - Adult"},
             {
               "code": "139",
               "codeSystem": "CVX",
-              "text": "Td - Adult Unspecified Formulation "
+              "text": "Td - Adult Unspecified Formulation"
             },
-            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB "},
+            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3007,16 +6355,16 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
               "code": "451331000124106",
               "codeSystem": "SNOMED",
               "text":
-                  "Adverse reaction caused by varicella virus live vaccine [disorder] "
+                  "Adverse reaction caused by varicella virus live vaccine [disorder]"
             },
-            {"code": "21", "codeSystem": "CVX", "text": "Varicella "},
-            {"code": "94", "codeSystem": "CVX", "text": "MMRV "},
-            {"code": "121", "codeSystem": "CVX", "text": "Zoster "},
+            {"code": "21", "codeSystem": "CVX", "text": "Varicella"},
+            {"code": "94", "codeSystem": "CVX", "text": "MMRV"},
+            {"code": "121", "codeSystem": "CVX", "text": "Zoster"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3033,17 +6381,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
               "code": "429311000124103",
               "codeSystem": "SNOMED",
               "text":
-                  "Adverse reaction to human papillomavirus vaccine [disorder] "
+                  "Adverse reaction to human papillomavirus vaccine [disorder]"
             },
-            {"code": "62", "codeSystem": "CVX", "text": "4vHPV "},
-            {"code": "118", "codeSystem": "CVX", "text": "2vHPV "},
-            {"code": "137", "codeSystem": "CVX", "text": "HPV Unspecified "},
-            {"code": "165", "codeSystem": "CVX", "text": "9vHPV "},
+            {"code": "62", "codeSystem": "CVX", "text": "4vHPV"},
+            {"code": "118", "codeSystem": "CVX", "text": "2vHPV"},
+            {"code": "137", "codeSystem": "CVX", "text": "HPV Unspecified"},
+            {"code": "165", "codeSystem": "CVX", "text": "9vHPV"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3059,17 +6407,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "219096004",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction to measles vaccine [disorder] "
+              "text": "Adverse reaction to measles vaccine [disorder]"
             },
-            {"code": "03", "codeSystem": "CVX", "text": "MMR "},
-            {"code": "04", "codeSystem": "CVX", "text": "Measles/Rubella "},
-            {"code": "05", "codeSystem": "CVX", "text": "Measles "},
-            {"code": "94", "codeSystem": "CVX", "text": "MMRV "},
+            {"code": "03", "codeSystem": "CVX", "text": "MMR"},
+            {"code": "04", "codeSystem": "CVX", "text": "Measles/Rubella"},
+            {"code": "05", "codeSystem": "CVX", "text": "Measles"},
+            {"code": "94", "codeSystem": "CVX", "text": "MMRV"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3085,17 +6433,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293114004",
               "codeSystem": "SNOMED",
-              "text": "Mumps vaccine adverse reaction [disorder] "
+              "text": "Mumps vaccine adverse reaction [disorder]"
             },
-            {"code": "03", "codeSystem": "CVX", "text": "MMR "},
-            {"code": "07", "codeSystem": "CVX", "text": "Mumps "},
-            {"code": "38", "codeSystem": "CVX", "text": "Rubella/Mumps "},
-            {"code": "94", "codeSystem": "CVX", "text": "MMRV "},
+            {"code": "03", "codeSystem": "CVX", "text": "MMR"},
+            {"code": "07", "codeSystem": "CVX", "text": "Mumps"},
+            {"code": "38", "codeSystem": "CVX", "text": "Rubella/Mumps"},
+            {"code": "94", "codeSystem": "CVX", "text": "MMRV"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3111,18 +6459,18 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293119009",
               "codeSystem": "SNOMED",
-              "text": "Rubella vaccine adverse reaction [disorder] "
+              "text": "Rubella vaccine adverse reaction [disorder]"
             },
-            {"code": "03", "codeSystem": "CVX", "text": "MMR "},
-            {"code": "04", "codeSystem": "CVX", "text": "Measles/Rubella "},
-            {"code": "06", "codeSystem": "CVX", "text": "Rubella "},
-            {"code": "38", "codeSystem": "CVX", "text": "Rubella/Mumps "},
-            {"code": "94", "codeSystem": "CVX", "text": "MMRV "},
+            {"code": "03", "codeSystem": "CVX", "text": "MMR"},
+            {"code": "04", "codeSystem": "CVX", "text": "Measles/Rubella"},
+            {"code": "06", "codeSystem": "CVX", "text": "Rubella"},
+            {"code": "38", "codeSystem": "CVX", "text": "Rubella/Mumps"},
+            {"code": "94", "codeSystem": "CVX", "text": "MMRV"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3138,26 +6486,26 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293116002",
               "codeSystem": "SNOMED",
-              "text": "Pneumococcal vaccine adverse reaction [disorder] "
+              "text": "Pneumococcal vaccine adverse reaction [disorder]"
             },
-            {"code": "133", "codeSystem": "CVX", "text": "PCV13 "},
-            {"code": "100", "codeSystem": "CVX", "text": "PCV7 "},
-            {"code": "33", "codeSystem": "CVX", "text": "PPSV23 "},
+            {"code": "133", "codeSystem": "CVX", "text": "PCV13"},
+            {"code": "100", "codeSystem": "CVX", "text": "PCV7"},
+            {"code": "33", "codeSystem": "CVX", "text": "PPSV23"},
             {
               "code": "109",
               "codeSystem": "CVX",
-              "text": "Pneumococcal, unspecified formulation "
+              "text": "Pneumococcal, unspecified formulation"
             },
             {
               "code": "152",
               "codeSystem": "CVX",
-              "text": "Pneumococcal Conjugate, unspecified formulation "
+              "text": "Pneumococcal Conjugate, unspecified formulation"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3173,50 +6521,46 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "2219088009",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction to meningococcal vaccine [disorder] "
+              "text": "Adverse reaction to meningococcal vaccine [disorder]"
             },
             {
               "code": "451111000124103",
               "codeSystem": "SNOMED",
               "text":
-                  " Adverse reaction caused by meningococcal conjugate vaccine [disorder] "
+                  " Adverse reaction caused by meningococcal conjugate vaccine [disorder]"
             },
-            {
-              "code": "32",
-              "codeSystem": "CVX",
-              "text": "Meningococcal, MPSV4 "
-            },
+            {"code": "32", "codeSystem": "CVX", "text": "Meningococcal, MPSV4"},
             {
               "code": "108",
               "codeSystem": "CVX",
-              "text": "Meningococcal ACWY, unspecified "
+              "text": "Meningococcal ACWY, unspecified"
             },
             {
               "code": "114",
               "codeSystem": "CVX",
-              "text": "Meningococcal, MCV4P "
+              "text": "Meningococcal, MCV4P"
             },
             {
               "code": "136",
               "codeSystem": "CVX",
-              "text": "Meningococcal, MCV4O "
+              "text": "Meningococcal, MCV4O"
             },
-            {"code": "147", "codeSystem": "CVX", "text": "MCV4, unspecified "},
+            {"code": "147", "codeSystem": "CVX", "text": "MCV4, unspecified"},
             {
               "code": "148",
               "codeSystem": "CVX",
-              "text": "Meningococcal C/Y-HIB PRP "
+              "text": "Meningococcal C/Y-HIB PRP"
             },
             {
               "code": "167",
               "codeSystem": "CVX",
-              "text": "Meningococcal, unknown serogroups "
+              "text": "Meningococcal, unknown serogroups"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3232,26 +6576,26 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293126009",
               "codeSystem": "SNOMED",
-              "text": "Hepatitis A vaccine adverse reaction [disorder] "
+              "text": "Hepatitis A vaccine adverse reaction [disorder]"
             },
-            {"code": "52", "codeSystem": "CVX", "text": "Hep A, adult "},
+            {"code": "52", "codeSystem": "CVX", "text": "Hep A, adult"},
             {
               "code": "83",
               "codeSystem": "CVX",
-              "text": "Hep A, ped/adol, 2 dose "
+              "text": "Hep A, ped/adol, 2 dose"
             },
             {
               "code": "84",
               "codeSystem": "CVX",
-              "text": "Hep A, ped/adol, 3 dose "
+              "text": "Hep A, ped/adol, 3 dose"
             },
-            {"code": "85", "codeSystem": "CVX", "text": "Hep A, Unspecified "},
-            {"code": "104", "codeSystem": "CVX", "text": "HepA-HepB "},
+            {"code": "85", "codeSystem": "CVX", "text": "Hep A, Unspecified"},
+            {"code": "104", "codeSystem": "CVX", "text": "HepA-HepB"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3267,36 +6611,36 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293110008",
               "codeSystem": "SNOMED",
-              "text": "Hepatitis B vaccine adverse reaction [disorder] "
+              "text": "Hepatitis B vaccine adverse reaction [disorder]"
             },
-            {"code": "08", "codeSystem": "CVX", "text": "Hep B, Adol/peds "},
+            {"code": "08", "codeSystem": "CVX", "text": "Hep B, Adol/peds"},
             {
               "code": "42",
               "codeSystem": "CVX",
-              "text": "Hep B, Adol/high risk infant "
+              "text": "Hep B, Adol/high risk infant"
             },
-            {"code": "43", "codeSystem": "CVX", "text": "Hep B, Adult "},
-            {"code": "44", "codeSystem": "CVX", "text": "Hep B, Dialysis "},
+            {"code": "43", "codeSystem": "CVX", "text": "Hep B, Adult"},
+            {"code": "44", "codeSystem": "CVX", "text": "Hep B, Dialysis"},
             {
               "code": "45",
               "codeSystem": "CVX",
-              "text": "Hep B, Unspecified Formulation "
+              "text": "Hep B, Unspecified Formulation"
             },
-            {"code": "51", "codeSystem": "CVX", "text": "Hib-HepB "},
-            {"code": "102", "codeSystem": "CVX", "text": "DTaP-Hib-HepB "},
-            {"code": "104", "codeSystem": "CVX", "text": "HepA-HepB "},
-            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV "},
+            {"code": "51", "codeSystem": "CVX", "text": "Hib-HepB"},
+            {"code": "102", "codeSystem": "CVX", "text": "DTaP-Hib-HepB"},
+            {"code": "104", "codeSystem": "CVX", "text": "HepA-HepB"},
+            {"code": "110", "codeSystem": "CVX", "text": "DTaP-HepB-IPV"},
             {
               "code": "132",
               "codeSystem": "CVX",
-              "text": "DTaP-IPV-Hib-HepB, historical "
+              "text": "DTaP-IPV-Hib-HepB, historical"
             },
-            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB "},
+            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3313,34 +6657,34 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
               "code": "293127000",
               "codeSystem": "SNOMED",
               "text":
-                  "Haemophilus influenzae Type B vaccine adverse reaction [disorder] "
+                  "Haemophilus influenzae Type B vaccine adverse reaction [disorder]"
             },
             {
               "code": "17",
               "codeSystem": "CVX",
-              "text": "Hib unspecified formulation "
+              "text": "Hib unspecified formulation"
             },
-            {"code": "22", "codeSystem": "CVX", "text": "DTP-Hib "},
-            {"code": "46", "codeSystem": "CVX", "text": "PRP-D "},
-            {"code": "47", "codeSystem": "CVX", "text": "HbOC "},
-            {"code": "48", "codeSystem": "CVX", "text": "PRP-T "},
-            {"code": "49", "codeSystem": "CVX", "text": "PRP-OMP "},
-            {"code": "50", "codeSystem": "CVX", "text": "DTaP/Hib "},
-            {"code": "51", "codeSystem": "CVX", "text": "Hib-HepB "},
-            {"code": "102", "codeSystem": "CVX", "text": "DTP-Hib-HepB "},
-            {"code": "120", "codeSystem": "CVX", "text": "DTaP-IPV/Hib "},
+            {"code": "22", "codeSystem": "CVX", "text": "DTP-Hib"},
+            {"code": "46", "codeSystem": "CVX", "text": "PRP-D"},
+            {"code": "47", "codeSystem": "CVX", "text": "HbOC"},
+            {"code": "48", "codeSystem": "CVX", "text": "PRP-T"},
+            {"code": "49", "codeSystem": "CVX", "text": "PRP-OMP"},
+            {"code": "50", "codeSystem": "CVX", "text": "DTaP/Hib"},
+            {"code": "51", "codeSystem": "CVX", "text": "Hib-HepB"},
+            {"code": "102", "codeSystem": "CVX", "text": "DTP-Hib-HepB"},
+            {"code": "120", "codeSystem": "CVX", "text": "DTaP-IPV/Hib"},
             {
               "code": "132",
               "codeSystem": "CVX",
-              "text": "DTaP-IPV-Hib-HepB,historical "
+              "text": "DTaP-IPV-Hib-HepB,historical"
             },
-            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB "},
-            {"code": "148", "codeSystem": "CVX", "text": "Hib-MenCY-TT "},
+            {"code": "146", "codeSystem": "CVX", "text": "DTaP-IPV-Hib-HepB"},
+            {"code": "148", "codeSystem": "CVX", "text": "Hib-MenCY-TT"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3356,14 +6700,14 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "219095000",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction to yellow fever vaccine [disorder] "
+              "text": "Adverse reaction to yellow fever vaccine [disorder]"
             },
-            {"code": "25", "codeSystem": "CVX", "text": "Yellow Fever "},
+            {"code": "25", "codeSystem": "CVX", "text": "Yellow Fever"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3379,14 +6723,14 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "451291000124104",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction caused by zoster vaccine [disorder] "
+              "text": "Adverse reaction caused by zoster vaccine [disorder]"
             },
-            {"code": "121", "codeSystem": "CVX", "text": "Zoster live "},
+            {"code": "121", "codeSystem": "CVX", "text": "Zoster live"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3401,12 +6745,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "213020009",
               "codeSystem": "SNOMED",
-              "text": "Egg protein allergy [disorder] "
+              "text": "Egg protein allergy [disorder]"
             },
             {
               "code": "91930004",
               "codeSystem": "SNOMED",
-              "text": "Allergy to eggs [disorder] "
+              "text": "Allergy to eggs [disorder]"
             }
           ]
         }
@@ -3421,12 +6765,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293309006",
               "codeSystem": "SNOMED",
-              "text": "Gelatin adverse reaction [disorder] "
+              "text": "Gelatin adverse reaction [disorder]"
             },
             {
               "code": "294847001",
               "codeSystem": "SNOMED",
-              "text": "Gelatin allergy [disorder] "
+              "text": "Gelatin allergy [disorder]"
             }
           ]
         }
@@ -3447,12 +6791,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "300916003",
               "codeSystem": "SNOMED",
-              "text": "Latex allergy [disorder] "
+              "text": "Latex allergy [disorder]"
             },
             {
               "code": "441593005",
               "codeSystem": "SNOMED",
-              "text": "Anaphylaxis due to latex [disorder] "
+              "text": "Anaphylaxis due to latex [disorder]"
             }
           ]
         }
@@ -3473,17 +6817,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "419522004",
               "codeSystem": "SNOMED",
-              "text": "Gentamycin sensitivity [disorder] "
+              "text": "Gentamycin sensitivity [disorder]"
             },
             {
               "code": "420094007",
               "codeSystem": "SNOMED",
-              "text": "Gentamicin adverse reaction [disorder] "
+              "text": "Gentamicin adverse reaction [disorder]"
             },
             {
               "code": "294469003",
               "codeSystem": "SNOMED",
-              "text": "Gentamicin allergy [disorder] "
+              "text": "Gentamicin allergy [disorder]"
             }
           ]
         }
@@ -3498,12 +6842,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "294468006",
               "codeSystem": "SNOMED",
-              "text": "Neomycin allergy [disorder] "
+              "text": "Neomycin allergy [disorder]"
             },
             {
               "code": "292927007",
               "codeSystem": "SNOMED",
-              "text": "Neomycin adverse reaction [disorder] "
+              "text": "Neomycin adverse reaction [disorder]"
             }
           ]
         }
@@ -3518,12 +6862,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "294466005",
               "codeSystem": "SNOMED",
-              "text": "Streptomycin allergy [disorder] "
+              "text": "Streptomycin allergy [disorder]"
             },
             {
               "code": "292925004",
               "codeSystem": "SNOMED",
-              "text": "Streptomycin adverse reaction [disorder] "
+              "text": "Streptomycin adverse reaction [disorder]"
             }
           ]
         }
@@ -3538,12 +6882,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "294530006",
               "codeSystem": "SNOMED",
-              "text": "Polymyxin B allergy [disorder] "
+              "text": "Polymyxin B allergy [disorder]"
             },
             {
               "code": "292992006",
               "codeSystem": "SNOMED",
-              "text": "Polymyxin B adverse reaction [disorder] "
+              "text": "Polymyxin B adverse reaction [disorder]"
             }
           ]
         }
@@ -3558,12 +6902,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "703936006",
               "codeSystem": "SNOMED",
-              "text": "Allergy to yeast [disorder] "
+              "text": "Allergy to yeast [disorder]"
             },
             {
               "code": "VXC18",
               "codeSystem": "CDCPHINVS",
-              "text": "Allergy to baker's yeast [anaphylactic] "
+              "text": "Allergy to baker's yeast [anaphylactic]"
             }
           ]
         }
@@ -3579,7 +6923,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "VXC17",
               "codeSystem": "CDCPHINVS",
-              "text": "Allergy [anaphylactic] to 2-phenoxyethanol "
+              "text": "Allergy [anaphylactic] to 2-phenoxyethanol"
             }
           ]
         }
@@ -3602,28 +6946,28 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "293118001",
               "codeSystem": "SNOMED",
-              "text": "Rabies vaccine adverse reaction [disorder] "
+              "text": "Rabies vaccine adverse reaction [disorder]"
             },
             {
               "code": "18",
               "codeSystem": "CVX",
-              "text": "Rabies, intramuscular injection "
+              "text": "Rabies, intramuscular injection"
             },
             {
               "code": "40",
               "codeSystem": "CVX",
-              "text": "Rabies, intradermal injection "
+              "text": "Rabies, intradermal injection"
             },
             {
               "code": "90",
               "codeSystem": "CVX",
-              "text": "Rabies, unspecified formulation "
+              "text": "Rabies, unspecified formulation"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3639,7 +6983,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "46177005",
               "codeSystem": "SNOMED",
-              "text": "End stage renal disease [disorder] "
+              "text": "End stage renal disease [disorder]"
             }
           ]
         }
@@ -3654,12 +6998,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "64520006",
               "codeSystem": "SNOMED",
-              "text": "Protamine sulfate [substance] "
+              "text": "Protamine sulfate [substance]"
             },
             {
               "code": "294278007",
               "codeSystem": "SNOMED",
-              "text": "Protamine allergy [disorder] "
+              "text": "Protamine allergy [disorder]"
             }
           ]
         }
@@ -3676,28 +7020,28 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
               "code": "451281000124102",
               "codeSystem": "SNOMED",
               "text":
-                  "Adverse reaction caused by meningococcal group B vaccine [disorder] "
+                  "Adverse reaction caused by meningococcal group B vaccine [disorder]"
             },
             {
               "code": "162",
               "codeSystem": "CVX",
-              "text": "Meningococcal B, recombinant "
+              "text": "Meningococcal B, recombinant"
             },
             {
               "code": "163",
               "codeSystem": "CVX",
-              "text": "Meningococcal B, OMV "
+              "text": "Meningococcal B, OMV"
             },
             {
               "code": "164",
               "codeSystem": "CVX",
-              "text": "Meningococcal B, unspecified "
+              "text": "Meningococcal B, unspecified"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3725,25 +7069,25 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "219082005",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction caused by cholera vaccine [disorder] "
+              "text": "Adverse reaction caused by cholera vaccine [disorder]"
             },
             {
               "code": "26",
               "codeSystem": "CVX",
-              "text": "cholera, unspecified formulation "
+              "text": "cholera, unspecified formulation"
             },
-            {"code": "172", "codeSystem": "CVX", "text": "cholera, WC-rBS "},
-            {"code": "173", "codeSystem": "CVX", "text": "cholera, BivWC "},
+            {"code": "172", "codeSystem": "CVX", "text": "cholera, WC-rBS"},
+            {"code": "173", "codeSystem": "CVX", "text": "cholera, BivWC"},
             {
               "code": "174",
               "codeSystem": "CVX",
-              "text": "cholera, live attenuated "
+              "text": "cholera, live attenuated"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3762,7 +7106,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "32911000",
               "codeSystem": "SNOMED",
-              "text": "Homeless [finding] "
+              "text": "Homeless [finding]"
             }
           ]
         }
@@ -3778,13 +7122,13 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "208",
               "codeSystem": "CVX",
-              "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose "
+              "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"
             },
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -3812,7 +7156,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "13",
               "codeSystem": "CVX",
-              "text": "Tetanus immune globulin "
+              "text": "Tetanus immune globulin"
             }
           ]
         }
@@ -3827,7 +7171,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "154",
               "codeSystem": "CVX",
-              "text": "Hepatitis A immune globulin "
+              "text": "Hepatitis A immune globulin"
             }
           ]
         }
@@ -3842,7 +7186,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "30",
               "codeSystem": "CVX",
-              "text": "Hepatitis B immune globulin "
+              "text": "Hepatitis B immune globulin"
             }
           ]
         }
@@ -3857,7 +7201,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "34",
               "codeSystem": "CVX",
-              "text": "Rabies immune globulin "
+              "text": "Rabies immune globulin"
             }
           ]
         }
@@ -3872,7 +7216,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "36",
               "codeSystem": "CVX",
-              "text": "Varicella zoster immune globulin "
+              "text": "Varicella zoster immune globulin"
             }
           ]
         }
@@ -3900,7 +7244,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "116859006",
               "codeSystem": "SNOMED",
-              "text": "Transfusion of blood product [procedure] "
+              "text": "Transfusion of blood product [procedure]"
             }
           ]
         }
@@ -3915,7 +7259,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "116859006",
               "codeSystem": "SNOMED",
-              "text": "Transfusion of blood product [procedure] "
+              "text": "Transfusion of blood product [procedure]"
             }
           ]
         }
@@ -3930,7 +7274,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "116859006",
               "codeSystem": "SNOMED",
-              "text": "Transfusion of blood product [procedure] "
+              "text": "Transfusion of blood product [procedure]"
             }
           ]
         }
@@ -3945,12 +7289,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "13569004",
               "codeSystem": "SNOMED",
-              "text": "Transfusion of plasma [procedure] "
+              "text": "Transfusion of plasma [procedure]"
             },
             {
               "code": "12719002",
               "codeSystem": "SNOMED",
-              "text": "Platelet transfusion [procedure] "
+              "text": "Platelet transfusion [procedure]"
             }
           ]
         }
@@ -4030,12 +7374,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "65880007",
               "codeSystem": "SNOMED",
-              "text": "X-linked agammaglobulinemia [disorder] "
+              "text": "X-linked agammaglobulinemia [disorder]"
             },
             {
               "code": "23238000",
               "codeSystem": "SNOMED",
-              "text": "Common variable agammaglobulinemia [disorder] "
+              "text": "Common variable agammaglobulinemia [disorder]"
             }
           ]
         }
@@ -4055,12 +7399,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "190979003",
               "codeSystem": "SNOMED",
-              "text": "Selective immunoglobulin A deficiency [disorder] "
+              "text": "Selective immunoglobulin A deficiency [disorder]"
             },
             {
               "code": "123785006",
               "codeSystem": "SNOMED",
-              "text": "Immunoglobulin G subclass deficiency [finding] "
+              "text": "Immunoglobulin G subclass deficiency [finding]"
             }
           ]
         }
@@ -4080,12 +7424,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "31323000",
               "codeSystem": "SNOMED",
-              "text": "Severe combined immunodeficiency disease [disorder] "
+              "text": "Severe combined immunodeficiency disease [disorder]"
             },
             {
               "code": "77128003",
               "codeSystem": "SNOMED",
-              "text": "DiGeorge sequence [disorder] "
+              "text": "DiGeorge sequence [disorder]"
             }
           ]
         }
@@ -4105,17 +7449,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "77128003",
               "codeSystem": "SNOMED",
-              "text": "DiGeorge sequence [disorder] "
+              "text": "DiGeorge sequence [disorder]"
             },
             {
               "code": "36070007",
               "codeSystem": "SNOMED",
-              "text": "Wiskott-Aldrich syndrome [disorder] "
+              "text": "Wiskott-Aldrich syndrome [disorder]"
             },
             {
               "code": "68504005",
               "codeSystem": "SNOMED",
-              "text": "Ataxia-telangiectasia syndrome [disorder] "
+              "text": "Ataxia-telangiectasia syndrome [disorder]"
             }
           ]
         }
@@ -4142,7 +7486,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "24743004",
               "codeSystem": "SNOMED",
-              "text": "Complement deficiency disease [disorder] "
+              "text": "Complement deficiency disease [disorder]"
             }
           ]
         }
@@ -4158,17 +7502,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "24743004",
               "codeSystem": "SNOMED",
-              "text": "Complement deficiency disease [disorder] "
+              "text": "Complement deficiency disease [disorder]"
             },
             {
               "code": "81166004",
               "codeSystem": "SNOMED",
-              "text": "Properdin deficiency disease [disorder] "
+              "text": "Properdin deficiency disease [disorder]"
             },
             {
               "code": "234605000",
               "codeSystem": "SNOMED",
-              "text": "Factor B deficiency [disorder] "
+              "text": "Factor B deficiency [disorder]"
             }
           ]
         }
@@ -4186,7 +7530,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "387759001",
               "codeSystem": "SNOMED",
-              "text": "Chronic granulomatous disease [disorder] "
+              "text": "Chronic granulomatous disease [disorder]"
             }
           ]
         }
@@ -4206,12 +7550,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "77358003",
               "codeSystem": "SNOMED",
-              "text": "Congenital leukocyte adherence deficiency [disorder] "
+              "text": "Congenital leukocyte adherence deficiency [disorder]"
             },
             {
               "code": "234433009",
               "codeSystem": "SNOMED",
-              "text": "Myeloperoxidase deficiency [disorder] "
+              "text": "Myeloperoxidase deficiency [disorder]"
             }
           ]
         }
@@ -4230,7 +7574,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "62479008",
               "codeSystem": "SNOMED",
-              "text": "Acquired immune deficiency syndrome [disorder] "
+              "text": "Acquired immune deficiency syndrome [disorder]"
             }
           ]
         }
@@ -4247,7 +7591,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "62479008",
               "codeSystem": "SNOMED",
-              "text": "Acquired immune deficiency syndrome [disorder] "
+              "text": "Acquired immune deficiency syndrome [disorder]"
             }
           ]
         }
@@ -4272,12 +7616,12 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "77465005",
               "codeSystem": "SNOMED",
-              "text": "Transplantation [procedure] "
+              "text": "Transplantation [procedure]"
             },
             {
               "code": "313039003",
               "codeSystem": "SNOMED",
-              "text": "Solid organ transplant [procedure] "
+              "text": "Solid organ transplant [procedure]"
             }
           ]
         }
@@ -4296,7 +7640,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "86553008",
               "codeSystem": "SNOMED",
-              "text": "Immunosuppressive therapy [procedure] "
+              "text": "Immunosuppressive therapy [procedure]"
             }
           ]
         }
@@ -4313,7 +7657,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "53438000",
               "codeSystem": "SNOMED",
-              "text": "Radiation therapy procedure or service [procedure] "
+              "text": "Radiation therapy procedure or service [procedure]"
             }
           ]
         }
@@ -4332,7 +7676,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "707147002",
               "codeSystem": "SNOMED",
-              "text": "Asplenia [disorder] "
+              "text": "Asplenia [disorder]"
             }
           ]
         }
@@ -4348,7 +7692,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "709044004",
               "codeSystem": "SNOMED",
-              "text": "Chronic kidney disease [disorder] "
+              "text": "Chronic kidney disease [disorder]"
             }
           ]
         }
@@ -4401,7 +7745,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "52254009",
               "codeSystem": "SNOMED",
-              "text": "Nephrotic syndrome [disorder] "
+              "text": "Nephrotic syndrome [disorder]"
             }
           ]
         }
@@ -4424,17 +7768,17 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "213017001",
               "codeSystem": "SNOMED",
-              "text": "Sexual abuse [event] "
+              "text": "Sexual abuse [event]"
             },
             {
               "code": "422608009",
               "codeSystem": "SNOMED",
-              "text": "Sexual assault [finding]"
+              "text": "Sexual assault [finding"
             },
             {
               "code": "248110007",
               "codeSystem": "SNOMED",
-              "text": "Sexual assault [event] "
+              "text": "Sexual assault [event]"
             }
           ]
         }
@@ -4447,7 +7791,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "248986005",
               "codeSystem": "SNOMED",
-              "text": "Estimated date of conception [observable entity] "
+              "text": "Estimated date of conception [observable entity]"
             }
           ]
         }
@@ -4467,14 +7811,14 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "451291000124104",
               "codeSystem": "SNOMED",
-              "text": "Adverse reaction caused by zoster vaccine [disorder] "
+              "text": "Adverse reaction caused by zoster vaccine [disorder]"
             },
-            {"code": "187", "codeSystem": "CVX", "text": "Zoster subunit "},
+            {"code": "187", "codeSystem": "CVX", "text": "Zoster subunit"},
             {
               "code": "VXC20",
               "codeSystem": "CDCPHINVS",
               "text":
-                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic] "
+                  "Allergy to previous dose of this vaccine or to any of its unlisted vaccine components [anaphylactic]"
             }
           ]
         }
@@ -4522,7 +7866,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "93143009",
               "codeSystem": "SNOMED",
-              "text": "Leukemia, disease [disorder] "
+              "text": "Leukemia, disease [disorder]"
             }
           ]
         }
@@ -4536,7 +7880,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "399600009",
               "codeSystem": "SNOMED",
-              "text": "Lymphoma [finding] "
+              "text": "Lymphoma [finding]"
             }
           ]
         }
@@ -4550,7 +7894,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "118599009",
               "codeSystem": "SNOMED",
-              "text": "Hodgkin's disease [disorder] "
+              "text": "Hodgkin's disease [disorder]"
             }
           ]
         }
@@ -4564,7 +7908,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "109989006",
               "codeSystem": "SNOMED",
-              "text": "Multiple myeloma [disorder] "
+              "text": "Multiple myeloma [disorder]"
             }
           ]
         }
@@ -4605,7 +7949,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "86406008",
               "codeSystem": "SNOMED",
-              "text": "Human immunodeficiency virus infection [disorder] "
+              "text": "Human immunodeficiency virus infection [disorder]"
             }
           ]
         }
@@ -4644,7 +7988,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
               "code": "1156961008",
               "codeSystem": "SNOMED",
               "text":
-                  "Chimeric antigen receptor T-cell immunotherapy [procedure] "
+                  "Chimeric antigen receptor T-cell immunotherapy [procedure]"
             }
           ]
         }
@@ -4703,7 +8047,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "363346000",
               "codeSystem": "SNOMED",
-              "text": "n/aMalignant neoplastic disease [disorder] "
+              "text": "n/aMalignant neoplastic disease [disorder]"
             }
           ]
         }
@@ -4720,7 +8064,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "233703007",
               "codeSystem": "SNOMED",
-              "text": "Interstitial lung disease [disorder] "
+              "text": "Interstitial lung disease [disorder]"
             }
           ]
         }
@@ -4734,7 +8078,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "190905008",
               "codeSystem": "SNOMED",
-              "text": "cystic fibrosis [disorder] "
+              "text": "cystic fibrosis [disorder]"
             }
           ]
         }
@@ -4748,7 +8092,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "70995007",
               "codeSystem": "SNOMED",
-              "text": "Pulmonary hypertension [disorder] "
+              "text": "Pulmonary hypertension [disorder]"
             }
           ]
         }
@@ -4762,7 +8106,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "52448006",
               "codeSystem": "SNOMED",
-              "text": "Dimensia [disorder] "
+              "text": "Dimensia [disorder]"
             }
           ]
         }
@@ -4776,7 +8120,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "41040004",
               "codeSystem": "SNOMED",
-              "text": "Complete trisomy 21 syndrome [disorder] "
+              "text": "Complete trisomy 21 syndrome [disorder]"
             }
           ]
         }
@@ -4797,7 +8141,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "40108008",
               "codeSystem": "SNOMED",
-              "text": "Thalassemia [disorder] "
+              "text": "Thalassemia [disorder]"
             }
           ]
         }
@@ -4812,7 +8156,7 @@ final scheduleSupportingData = ScheduleSupportingData.fromJson({
             {
               "code": "62914000",
               "codeSystem": "SNOMED",
-              "text": "Cerebrovascular disease [disorder] "
+              "text": "Cerebrovascular disease [disorder]"
             }
           ]
         }
