@@ -29,7 +29,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is immunocompromised.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -38,7 +41,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is pregnant.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -47,7 +53,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has cerebrospinal fluid leaks.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -56,7 +65,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has cochlear implants.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -66,7 +78,8 @@ final influenza = AntigenSupportingData.fromJson({
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is between 2 and 4 years and has asthma.",
           "contraindicatedVaccine": [
             {
-              "vaccineType": "Influenza, live, intranasal, quadrivalent ",
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149",
               "beginAge": "2 years",
               "endAge": "4 years"
             }
@@ -79,7 +92,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has taken influenza antiviral medications  within the previous 48 hours.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -89,7 +105,8 @@ final influenza = AntigenSupportingData.fromJson({
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is between 2 and 17 years and is receiving long-term aspirin therapy.",
           "contraindicatedVaccine": [
             {
-              "vaccineType": "Influenza, live, intranasal, quadrivalent ",
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149",
               "beginAge": "2 years",
               "endAge": "17 years"
             }
@@ -101,7 +118,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has had a severe allergic reaction to gelatin.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -110,7 +130,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has had a severe allergic reaction to arginine.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -119,7 +142,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has had a severe allergic reaction to gentamicin.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -129,7 +155,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -139,7 +168,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -149,7 +181,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -159,7 +194,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has cell-mediated or humoral T-lymphocyte defects related to interferon-gamma or interferon-alpha",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -169,7 +207,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -178,7 +219,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has HIV/AIDS and is severely immunocompromised (See the CDC general recommendations for a definition of severely immunocompromised).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -187,7 +231,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has HIV/AIDS even if not severely immunocompromised (See the CDC general recommendations for a definition of severely immunocompromised).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -196,7 +243,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has generalized malignant neoplasm.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -205,7 +255,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient received a transplant.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -214,7 +267,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -223,7 +279,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is undergoing radiation therapy.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -232,7 +291,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has anatomical or functional asplenia",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -241,7 +303,10 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has chronic renal disease.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "}
+            {
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
+            }
           ]
         },
         {
@@ -250,20 +315,29 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with any egg-based IIV or LAIV influenza vaccine if the patient has had a severe allergic reaction after a previous dose of an egg-based IIV or LAIV influenza vaccine.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "},
             {
-              "vaccineType":
-                  "Influenza, injectable, quadrivalent, preservative free "
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
             },
-            {"vaccineType": "Influenza, injectable, quadrivalent "},
             {
               "vaccineType":
-                  "Influenza, injectable, quadrivalent, preservative free, peds "
+                  "Influenza, injectable, quadrivalent, preservative free",
+              "cvx": "150"
             },
-            {"vaccineType": "Influenza, high dose, quadrivalent "},
+            {
+              "vaccineType": "Influenza, injectable, quadrivalent",
+              "cvx": "158"
+            },
             {
               "vaccineType":
-                  "influenza, seasonal vaccine, quadrivalent, adjuvanted "
+                  "Influenza, injectable, quadrivalent, preservative free, peds",
+              "cvx": "161"
+            },
+            {"vaccineType": "Influenza, high dose, quadrivalent", "cvx": "197"},
+            {
+              "vaccineType":
+                  "influenza, seasonal vaccine, quadrivalent, adjuvanted",
+              "cvx": "205"
             }
           ]
         },
@@ -273,28 +347,39 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with any ccIIV or egg-based IIV or LAIV influenza vaccine if the patient has had a severe allergic reaction after a previous dose of a ccIIV influenza vaccine.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "},
             {
-              "vaccineType":
-                  "Influenza, injectable, quadrivalent, preservative free "
-            },
-            {"vaccineType": "Influenza, injectable, quadrivalent "},
-            {
-              "vaccineType":
-                  "Influenza, injectable, quadrivalent, preservative free, peds "
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
             },
             {
               "vaccineType":
-                  "Influenza, injectable, MDCK, preservative free, quadrivalent "
+                  "Influenza, injectable, quadrivalent, preservative free",
+              "cvx": "150"
+            },
+            {
+              "vaccineType": "Influenza, injectable, quadrivalent",
+              "cvx": "158"
             },
             {
               "vaccineType":
-                  "Influenza, injectable, MDCK, preservative, quadrivalent "
+                  "Influenza, injectable, quadrivalent, preservative free, peds",
+              "cvx": "161"
             },
-            {"vaccineType": "Influenza, high dose, quadrivalent "},
             {
               "vaccineType":
-                  "influenza, seasonal vaccine, quadrivalent, adjuvanted "
+                  "Influenza, injectable, MDCK, preservative free, quadrivalent",
+              "cvx": "171"
+            },
+            {
+              "vaccineType":
+                  "Influenza, injectable, MDCK, preservative, quadrivalent",
+              "cvx": "186"
+            },
+            {"vaccineType": "Influenza, high dose, quadrivalent", "cvx": "197"},
+            {
+              "vaccineType":
+                  "influenza, seasonal vaccine, quadrivalent, adjuvanted",
+              "cvx": "205"
             }
           ]
         },
@@ -304,24 +389,34 @@ final influenza = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with any RIV or egg-based IIV or LAIV influenza vaccine if the patient has had a severe allergic reaction after a previous dose of an RIV influenza vaccine.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Influenza, live, intranasal, quadrivalent "},
             {
-              "vaccineType":
-                  "Influenza, injectable, quadrivalent, preservative free "
-            },
-            {"vaccineType": "Influenza, injectable, quadrivalent "},
-            {
-              "vaccineType":
-                  "Influenza, injectable, quadrivalent, preservative free, peds "
+              "vaccineType": "Influenza, live, intranasal, quadrivalent",
+              "cvx": "149"
             },
             {
               "vaccineType":
-                  "influenza, recombinant, quadriIvalent,injectable, preservative free "
+                  "Influenza, injectable, quadrivalent, preservative free",
+              "cvx": "150"
             },
-            {"vaccineType": "Influenza, high dose, quadrivalent "},
+            {
+              "vaccineType": "Influenza, injectable, quadrivalent",
+              "cvx": "158"
+            },
             {
               "vaccineType":
-                  "influenza, seasonal vaccine, quadrivalent, adjuvanted "
+                  "Influenza, injectable, quadrivalent, preservative free, peds",
+              "cvx": "161"
+            },
+            {
+              "vaccineType":
+                  "influenza, recombinant, quadriIvalent,injectable, preservative free",
+              "cvx": "185"
+            },
+            {"vaccineType": "Influenza, high dose, quadrivalent", "cvx": "197"},
+            {
+              "vaccineType":
+                  "influenza, seasonal vaccine, quadrivalent, adjuvanted",
+              "cvx": "205"
             }
           ]
         }

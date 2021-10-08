@@ -21,7 +21,7 @@ final zoster = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of recombinant zoster vaccine.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Zoster recombinant "}
+            {"vaccineType": "Zoster recombinant", "cvx": "187"}
           ]
         }
       ]

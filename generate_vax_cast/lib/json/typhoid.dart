@@ -40,7 +40,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has taken antimicrobial or antimalarial medications  within the previous 72 hours.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -50,7 +50,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -60,7 +60,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -70,7 +70,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -80,7 +80,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -90,7 +90,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has cell-mediated or humoral T-lymphocyte defects related to interferon-gamma or interferon-alpha",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -100,7 +100,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has phagocytic function - chronic granulomatous disease.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -110,7 +110,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -119,7 +119,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has generalized malignant neoplasm.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -128,7 +128,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient received a transplant.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -137,7 +137,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient is undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         },
         {
@@ -146,7 +146,7 @@ final typhoid = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient is undergoing radiation therapy.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Typhoid oral, live, attenuated "}
+            {"vaccineType": "Typhoid oral, live, attenuated", "cvx": "25"}
           ]
         }
       ]

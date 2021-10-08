@@ -29,7 +29,8 @@ final covid_9 = AntigenSupportingData.fromJson({
           "contraindicatedVaccine": [
             {
               "vaccineType":
-                  "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL "
+                  "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL",
+              "cvx": "212"
             }
           ]
         },
@@ -39,8 +40,14 @@ final covid_9 = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has known allergy to Polyethylene glycol [PEG].",
           "contraindicatedVaccine": [
-            {"vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose "},
-            {"vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose "}
+            {
+              "vaccineType": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5 mL dose",
+              "cvx": "207"
+            },
+            {
+              "vaccineType": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+              "cvx": "208"
+            }
           ]
         }
       ]

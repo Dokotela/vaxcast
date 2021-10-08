@@ -48,7 +48,7 @@ final hepa = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has a hypersensitivity to yeast.",
           "contraindicatedVaccine": [
-            {"vaccineType": "HepA-HepB "}
+            {"vaccineType": "HepA-HepB", "cvx": "104"}
           ]
         }
       ]

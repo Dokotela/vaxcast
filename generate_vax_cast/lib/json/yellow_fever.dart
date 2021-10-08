@@ -120,7 +120,8 @@ final yellow_ever = AntigenSupportingData.fromJson({
               "Vaccination with Stamaril may occur if the patient is able to suspend breastfeeding for 14 days after administration.",
           "contraindicatedVaccine": [
             {
-              "vaccineType": "Yellow fever vaccine - alt ",
+              "vaccineType": "Yellow fever vaccine - alt",
+              "cvx": "183",
               "beginAge": "9 months"
             }
           ]

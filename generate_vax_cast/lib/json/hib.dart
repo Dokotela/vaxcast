@@ -43,8 +43,8 @@ final hib = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
           "contraindicatedVaccine": [
-            {"vaccineType": "DTaP-IPV-Hib-HepB "},
-            {"vaccineType": "DTP-hepB-Hib Pentavalent Non-US "}
+            {"vaccineType": "DTaP-IPV-Hib-HepB", "cvx": "146"},
+            {"vaccineType": "DTP-hepB-Hib Pentavalent Non-US", "cvx": "198"}
           ]
         },
         {
@@ -54,8 +54,8 @@ final hib = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
           "contraindicatedVaccine": [
-            {"vaccineType": "DTaP-IPV-Hib-HepB "},
-            {"vaccineType": "DTP-hepB-Hib Pentavalent Non-US "}
+            {"vaccineType": "DTaP-IPV-Hib-HepB", "cvx": "146"},
+            {"vaccineType": "DTP-hepB-Hib Pentavalent Non-US", "cvx": "198"}
           ]
         },
         {
@@ -64,9 +64,9 @@ final hib = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has an allergy to latex.",
           "contraindicatedVaccine": [
-            {"vaccineType": "PRP-T "},
-            {"vaccineType": "PRP-OMP "},
-            {"vaccineType": "Hib-Hep B "}
+            {"vaccineType": "PRP-T", "cvx": "48"},
+            {"vaccineType": "PRP-OMP", "cvx": "49"},
+            {"vaccineType": "Hib-Hep B", "cvx": "51"}
           ]
         },
         {
@@ -75,7 +75,7 @@ final hib = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has a hypersensitivity to yeast.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Hib-Hep B "}
+            {"vaccineType": "Hib-Hep B", "cvx": "51"}
           ]
         }
       ]

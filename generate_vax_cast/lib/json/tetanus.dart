@@ -27,20 +27,20 @@ final tetanus = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
           "contraindicatedVaccine": [
-            {"vaccineType": "DTP "},
-            {"vaccineType": "DTaP "},
-            {"vaccineType": "DTP-Hib "},
-            {"vaccineType": "DTaP-Hib "},
-            {"vaccineType": "DTP-Hib-HepB "},
-            {"vaccineType": "DTaP, 5 pertussis antigens "},
-            {"vaccineType": "DTaP, Unspecified Formulation "},
-            {"vaccineType": "DTaP-HepB-IPV "},
-            {"vaccineType": "Tdap "},
-            {"vaccineType": "DTaP-Hib-IPV "},
-            {"vaccineType": "DTaP-IPV "},
-            {"vaccineType": "DTaP-IPV-Hib-HepB,historical "},
-            {"vaccineType": "DTaP-IPV-Hib-HepB "},
-            {"vaccineType": "DTP-hepB-Hib Pentavalent Non-US "}
+            {"vaccineType": "DTP", "cvx": "01"},
+            {"vaccineType": "DTaP", "cvx": "20"},
+            {"vaccineType": "DTP-Hib", "cvx": "22"},
+            {"vaccineType": "DTaP-Hib", "cvx": "50"},
+            {"vaccineType": "DTP-Hib-HepB", "cvx": "102"},
+            {"vaccineType": "DTaP, 5 pertussis antigens", "cvx": "106"},
+            {"vaccineType": "DTaP, Unspecified Formulation", "cvx": "107"},
+            {"vaccineType": "DTaP-HepB-IPV", "cvx": "110"},
+            {"vaccineType": "Tdap", "cvx": "115"},
+            {"vaccineType": "DTaP-Hib-IPV", "cvx": "120"},
+            {"vaccineType": "DTaP-IPV", "cvx": "130"},
+            {"vaccineType": "DTaP-IPV-Hib-HepB,historical", "cvx": "132"},
+            {"vaccineType": "DTaP-IPV-Hib-HepB", "cvx": "146"},
+            {"vaccineType": "DTP-hepB-Hib Pentavalent Non-US", "cvx": "198"}
           ]
         },
         {
@@ -50,20 +50,20 @@ final tetanus = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
           "contraindicatedVaccine": [
-            {"vaccineType": "DTP "},
-            {"vaccineType": "DTaP "},
-            {"vaccineType": "DTP-Hib "},
-            {"vaccineType": "DTaP-Hib "},
-            {"vaccineType": "DTP-Hib-HepB "},
-            {"vaccineType": "DTaP, 5 pertussis antigens "},
-            {"vaccineType": "DTaP, Unspecified Formulation "},
-            {"vaccineType": "DTaP-HepB-IPV "},
-            {"vaccineType": "Tdap "},
-            {"vaccineType": "DTaP-Hib-IPV "},
-            {"vaccineType": "DTaP-IPV "},
-            {"vaccineType": "DTaP-IPV-Hib-HepB,historical "},
-            {"vaccineType": "DTaP-IPV-Hib-HepB "},
-            {"vaccineType": "DTP-hepB-Hib Pentavalent Non-US "}
+            {"vaccineType": "DTP", "cvx": "01"},
+            {"vaccineType": "DTaP", "cvx": "20"},
+            {"vaccineType": "DTP-Hib", "cvx": "22"},
+            {"vaccineType": "DTaP-Hib", "cvx": "50"},
+            {"vaccineType": "DTP-Hib-HepB", "cvx": "102"},
+            {"vaccineType": "DTaP, 5 pertussis antigens", "cvx": "106"},
+            {"vaccineType": "DTaP, Unspecified Formulation", "cvx": "107"},
+            {"vaccineType": "DTaP-HepB-IPV", "cvx": "110"},
+            {"vaccineType": "Tdap", "cvx": "115"},
+            {"vaccineType": "DTaP-Hib-IPV", "cvx": "120"},
+            {"vaccineType": "DTaP-IPV", "cvx": "130"},
+            {"vaccineType": "DTaP-IPV-Hib-HepB,historical", "cvx": "132"},
+            {"vaccineType": "DTaP-IPV-Hib-HepB", "cvx": "146"},
+            {"vaccineType": "DTP-hepB-Hib Pentavalent Non-US", "cvx": "198"}
           ]
         }
       ]

@@ -39,7 +39,7 @@ final rotavirus = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate with Rotarix if the patient has an allergy to latex.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Rotavirus, monovalent "}
+            {"vaccineType": "Rotavirus, monovalent", "cvx": "119"}
           ]
         }
       ]

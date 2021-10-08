@@ -52,7 +52,7 @@ final polio = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
           "contraindicatedVaccine": [
-            {"vaccineType": "DTaP-IPV-Hib-HepB "}
+            {"vaccineType": "DTaP-IPV-Hib-HepB", "cvx": "146"}
           ]
         },
         {
@@ -62,7 +62,7 @@ final polio = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
           "contraindicatedVaccine": [
-            {"vaccineType": "DTaP-IPV-Hib-HepB "}
+            {"vaccineType": "DTaP-IPV-Hib-HepB", "cvx": "146"}
           ]
         }
       ]

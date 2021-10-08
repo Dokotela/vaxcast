@@ -90,20 +90,22 @@ Contraindications? contraindications(String? contraindicationString) {
       /// extract the code from the text for the observation
       var open = i.length < 5 ? null : i[4]!.toString().lastIndexOf('(');
       var close = i.length < 5 ? null : i[4]!.toString().lastIndexOf(')');
-      var code = i.length < 5
-          ? null
-          : i[4]!.toString().substring(open ?? 0 + 1, close);
-      var text =
-          i.length < 5 ? null : i[4]!.toString().substring(0, open ?? 0 - 1);
-      contraindications.vaccine!.contraindication!.last.contraindicatedVaccine!
-          .add(
-        Vaccine(
-          vaccineType: text,
-          cvx: cvxStringToEnumMap[code],
-          beginAge: i[5]!.toString() == 'n/a' ? null : valueToString(i[5]!),
-          endAge: i[6]!.toString() == 'n/a' ? null : valueToString(i[6]!),
-        ),
-      );
+      if (open != null && close != null) {
+        var code =
+            i.length < 5 ? null : i[4]!.toString().substring(open + 1, close);
+        var text =
+            i.length < 5 ? null : i[4]!.toString().substring(0, open - 1);
+        contraindications
+            .vaccine!.contraindication!.last.contraindicatedVaccine!
+            .add(
+          Vaccine(
+            vaccineType: text,
+            cvx: cvxStringToEnumMap[code],
+            beginAge: i[5]!.toString() == 'n/a' ? null : valueToString(i[5]!),
+            endAge: i[6]!.toString() == 'n/a' ? null : valueToString(i[6]!),
+          ),
+        );
+      }
     }
   }
   return contraindications;

@@ -28,7 +28,8 @@ final meningococcal = AntigenSupportingData.fromJson({
               "Do not vaccinate with Meningococcal MCV4P (Menactra) if the patient is between the ages of 9 months and 2 years and is severely immunocompromised due to HIV/AIDS.",
           "contraindicatedVaccine": [
             {
-              "vaccineType": "Meningococcal, MCV4P ",
+              "vaccineType": "Meningococcal, MCV4P",
+              "cvx": "114",
               "beginAge": "2 months",
               "endAge": "2 years"
             }
@@ -41,7 +42,8 @@ final meningococcal = AntigenSupportingData.fromJson({
               "Do not vaccinate with Meningococcal MCV4P (Menactra) if the patient is between the ages of 9 months and 2 years and is severely immunocompromised due to HIV/AIDS.",
           "contraindicatedVaccine": [
             {
-              "vaccineType": "Meningococcal, MCV4P ",
+              "vaccineType": "Meningococcal, MCV4P",
+              "cvx": "114",
               "beginAge": "2 months",
               "endAge": "2 years"
             }
@@ -54,7 +56,8 @@ final meningococcal = AntigenSupportingData.fromJson({
               "Do not vaccinate with Meningococcal MCV4P (Menactra) if the patient is between the ages of 9 months and 2 years and has anatomical or functional asplenia.",
           "contraindicatedVaccine": [
             {
-              "vaccineType": "Meningococcal, MCV4P ",
+              "vaccineType": "Meningococcal, MCV4P",
+              "cvx": "114",
               "beginAge": "2 months",
               "endAge": "2 years"
             }
@@ -66,8 +69,8 @@ final meningococcal = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has had a severe allergic reaction to diphtheria toxoid.",
           "contraindicatedVaccine": [
-            {"vaccineType": "Meningococcal, MCV4P "},
-            {"vaccineType": "Meningococcal, MCV4O "}
+            {"vaccineType": "Meningococcal, MCV4P", "cvx": "114"},
+            {"vaccineType": "Meningococcal, MCV4O", "cvx": "136"}
           ]
         },
         {
@@ -78,7 +81,8 @@ final meningococcal = AntigenSupportingData.fromJson({
           "contraindicatedVaccine": [
             {
               "vaccineType":
-                  "Meningococcal Polysaccharide A, C, Y, W-135 TT Conjugate "
+                  "Meningococcal Polysaccharide A, C, Y, W-135 TT Conjugate",
+              "cvx": "203"
             }
           ]
         }

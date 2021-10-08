@@ -27,7 +27,7 @@ final pneumococcal = AntigenSupportingData.fromJson({
           "contraindicationText":
               "Do not vaccinate if the patient has had a severe allergic reaction to diphtheria toxoid.",
           "contraindicatedVaccine": [
-            {"vaccineType": "PCV13 "}
+            {"vaccineType": "PCV13", "cvx": "133"}
           ]
         }
       ]
