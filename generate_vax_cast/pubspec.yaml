@@ -1,6 +1,6 @@
 name: generate_vax_cast
 description: Pulling the data from the cloud to make supporting data fro VaxCast
-version: 0.0.1
+publish_to: "none"
 
 environment:
   sdk: '>=2.14.0 <3.0.0'
