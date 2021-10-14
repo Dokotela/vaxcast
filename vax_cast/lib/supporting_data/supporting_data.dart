@@ -19,7 +19,7 @@ class SupportingData with _$SupportingData {
   factory SupportingData.fromFile() => SupportingData(
         antigenSupportingData: [
           cholera,
-          covid_9,
+          covid_19,
           diphtheria,
           ebola,
           hepa,

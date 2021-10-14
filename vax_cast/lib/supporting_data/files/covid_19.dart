@@ -1,6 +1,6 @@
 import 'package:vax_cast/vax_cast.dart';
 
-final covid_9 = AntigenSupportingData.fromJson({
+final covid_19 = AntigenSupportingData.fromJson({
     "targetDisease": "COVID-19",
     "vaccineGroup": "COVID-19",
     "contraindications": {

@@ -16,6 +16,9 @@ Future<void> main() async {
   final fileList = await dir.list().map((event) => event.path).toList();
   for(var file in fileList){
     final newFile = await File(file).readAsString();
+    if(!(await File('../vax_cast/lib/supporting_data/files/$file').exists())){
+      await File('../vax_cast/lib/supporting_data/files/$file').create();
+    }
     await File('../vax_cast/lib/supporting_data/files/$file').writeAsString(newFile);
   }
 }

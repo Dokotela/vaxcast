@@ -1,6 +1,6 @@
 import 'package:vax_cast/vax_cast.dart';
 
-final meningococcal_ = AntigenSupportingData.fromJson({
+final meningococcal_b = AntigenSupportingData.fromJson({
     "targetDisease": "Meningococcal B",
     "vaccineGroup": "Meningococcal B",
     "contraindications": {

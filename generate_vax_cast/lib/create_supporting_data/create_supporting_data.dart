@@ -45,7 +45,7 @@ Future<void> createSupportingData(
       var diseaseName = fileName;
       if (index != null && index != -1) {
         diseaseName = '${fileName?.substring(0, index)}'
-            '${fileName?.substring(index, index + 1).toUpperCase()}'
+            '${fileName?.substring(index + 1, index + 2).toUpperCase()}'
             '${fileName?.substring(index + 2)}';
       }
 

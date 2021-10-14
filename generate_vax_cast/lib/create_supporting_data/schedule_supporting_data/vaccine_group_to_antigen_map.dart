@@ -15,7 +15,6 @@ VaccineGroupToAntigenMap vaccineGroupToAntigenMap(String? data) {
       vaccineGroupToAntigenMap.copyWith(vaccineGroupMap: []);
 
   for (var i in supportingData) {
-    print(i);
     if (i[0] != 'Vaccine Group') {
       if (vaccineGroupToAntigenMap.vaccineGroupMap!.isNotEmpty &&
           vaccineGroupToAntigenMap.vaccineGroupMap?.last.name ==
