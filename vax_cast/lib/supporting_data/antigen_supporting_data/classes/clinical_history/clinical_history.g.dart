@@ -6,14 +6,13 @@ part of 'clinical_history.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ClinicalHistory _$_$_ClinicalHistoryFromJson(Map<String, dynamic> json) {
-  return _$_ClinicalHistory(
-    guidelineCode: _$enumDecodeNullable(_$ObsEnumMap, json['guidelineCode']),
-    guidelineTitle: json['guidelineTitle'] as String?,
-  );
-}
+_$_ClinicalHistory _$$_ClinicalHistoryFromJson(Map<String, dynamic> json) =>
+    _$_ClinicalHistory(
+      guidelineCode: _$enumDecodeNullable(_$ObsEnumMap, json['guidelineCode']),
+      guidelineTitle: json['guidelineTitle'] as String?,
+    );
 
-Map<String, dynamic> _$_$_ClinicalHistoryToJson(_$_ClinicalHistory instance) {
+Map<String, dynamic> _$$_ClinicalHistoryToJson(_$_ClinicalHistory instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

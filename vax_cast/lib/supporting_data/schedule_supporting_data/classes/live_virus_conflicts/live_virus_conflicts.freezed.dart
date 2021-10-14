@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'live_virus_conflicts.dart';
 
@@ -115,7 +116,7 @@ class _$_LiveVirusConflicts implements _LiveVirusConflicts {
   _$_LiveVirusConflicts({this.liveVirusConflict});
 
   factory _$_LiveVirusConflicts.fromJson(Map<String, dynamic> json) =>
-      _$_$_LiveVirusConflictsFromJson(json);
+      _$$_LiveVirusConflictsFromJson(json);
 
   @override
   final List<LiveVirusConflict>? liveVirusConflict;
@@ -146,7 +147,7 @@ class _$_LiveVirusConflicts implements _LiveVirusConflicts {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_LiveVirusConflictsToJson(this);
+    return _$$_LiveVirusConflictsToJson(this);
   }
 }
 
@@ -366,7 +367,7 @@ class _$_LiveVirusConflict implements _LiveVirusConflict {
       this.conflictEndInterval});
 
   factory _$_LiveVirusConflict.fromJson(Map<String, dynamic> json) =>
-      _$_$_LiveVirusConflictFromJson(json);
+      _$$_LiveVirusConflictFromJson(json);
 
   @override
   final Vaccine? previous;
@@ -421,7 +422,7 @@ class _$_LiveVirusConflict implements _LiveVirusConflict {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_LiveVirusConflictToJson(this);
+    return _$$_LiveVirusConflictToJson(this);
   }
 }
 

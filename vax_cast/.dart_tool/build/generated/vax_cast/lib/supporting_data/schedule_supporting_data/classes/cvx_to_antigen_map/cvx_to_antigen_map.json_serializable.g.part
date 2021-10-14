@@ -2,15 +2,14 @@
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CvxToAntigenMap _$_$_CvxToAntigenMapFromJson(Map<String, dynamic> json) {
-  return _$_CvxToAntigenMap(
-    cvxMap: (json['cvxMap'] as List<dynamic>?)
-        ?.map((e) => CvxMap.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+_$_CvxToAntigenMap _$$_CvxToAntigenMapFromJson(Map<String, dynamic> json) =>
+    _$_CvxToAntigenMap(
+      cvxMap: (json['cvxMap'] as List<dynamic>?)
+          ?.map((e) => CvxMap.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
-Map<String, dynamic> _$_$_CvxToAntigenMapToJson(_$_CvxToAntigenMap instance) {
+Map<String, dynamic> _$$_CvxToAntigenMapToJson(_$_CvxToAntigenMap instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -23,17 +22,15 @@ Map<String, dynamic> _$_$_CvxToAntigenMapToJson(_$_CvxToAntigenMap instance) {
   return val;
 }
 
-_$_CvxMap _$_$_CvxMapFromJson(Map<String, dynamic> json) {
-  return _$_CvxMap(
-    cvx: _$enumDecodeNullable(_$CvxEnumMap, json['cvx']),
-    shortDescription: json['shortDescription'] as String?,
-    association: (json['association'] as List<dynamic>?)
-        ?.map((e) => Association.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+_$_CvxMap _$$_CvxMapFromJson(Map<String, dynamic> json) => _$_CvxMap(
+      cvx: _$enumDecodeNullable(_$CvxEnumMap, json['cvx']),
+      shortDescription: json['shortDescription'] as String?,
+      association: (json['association'] as List<dynamic>?)
+          ?.map((e) => Association.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
-Map<String, dynamic> _$_$_CvxMapToJson(_$_CvxMap instance) {
+Map<String, dynamic> _$$_CvxMapToJson(_$_CvxMap instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -250,15 +247,14 @@ const _$CvxEnumMap = {
   Cvx.code511: '511',
 };
 
-_$_Association _$_$_AssociationFromJson(Map<String, dynamic> json) {
-  return _$_Association(
-    antigen: _$enumDecodeNullable(_$TargetDiseaseEnumMap, json['antigen']),
-    associationBeginAge: json['associationBeginAge'] as String?,
-    associationEndAge: json['associationEndAge'] as String?,
-  );
-}
+_$_Association _$$_AssociationFromJson(Map<String, dynamic> json) =>
+    _$_Association(
+      antigen: _$enumDecodeNullable(_$TargetDiseaseEnumMap, json['antigen']),
+      associationBeginAge: json['associationBeginAge'] as String?,
+      associationEndAge: json['associationEndAge'] as String?,
+    );
 
-Map<String, dynamic> _$_$_AssociationToJson(_$_Association instance) {
+Map<String, dynamic> _$$_AssociationToJson(_$_Association instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

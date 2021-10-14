@@ -6,16 +6,16 @@ part of 'vaccine_group_contraindications.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_VaccineGroupContraindications _$_$_VaccineGroupContraindicationsFromJson(
-    Map<String, dynamic> json) {
-  return _$_VaccineGroupContraindications(
-    contraindication: (json['contraindication'] as List<dynamic>?)
-        ?.map((e) => GroupContraindication.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+_$_VaccineGroupContraindications _$$_VaccineGroupContraindicationsFromJson(
+        Map<String, dynamic> json) =>
+    _$_VaccineGroupContraindications(
+      contraindication: (json['contraindication'] as List<dynamic>?)
+          ?.map(
+              (e) => GroupContraindication.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
-Map<String, dynamic> _$_$_VaccineGroupContraindicationsToJson(
+Map<String, dynamic> _$$_VaccineGroupContraindicationsToJson(
     _$_VaccineGroupContraindications instance) {
   final val = <String, dynamic>{};
 
@@ -30,20 +30,19 @@ Map<String, dynamic> _$_$_VaccineGroupContraindicationsToJson(
   return val;
 }
 
-_$_GroupContraindication _$_$_GroupContraindicationFromJson(
-    Map<String, dynamic> json) {
-  return _$_GroupContraindication(
-    observationCode:
-        _$enumDecodeNullable(_$ObsEnumMap, json['observationCode']),
-    observationTitle: json['observationTitle'] as String?,
-    contraindicationText: json['contraindicationText'] as String?,
-    contraindicationGuidance: json['contraindicationGuidance'] as String?,
-    beginAge: json['beginAge'] as String?,
-    endAge: json['endAge'] as String?,
-  );
-}
+_$_GroupContraindication _$$_GroupContraindicationFromJson(
+        Map<String, dynamic> json) =>
+    _$_GroupContraindication(
+      observationCode:
+          _$enumDecodeNullable(_$ObsEnumMap, json['observationCode']),
+      observationTitle: json['observationTitle'] as String?,
+      contraindicationText: json['contraindicationText'] as String?,
+      contraindicationGuidance: json['contraindicationGuidance'] as String?,
+      beginAge: json['beginAge'] as String?,
+      endAge: json['endAge'] as String?,
+    );
 
-Map<String, dynamic> _$_$_GroupContraindicationToJson(
+Map<String, dynamic> _$$_GroupContraindicationToJson(
     _$_GroupContraindication instance) {
   final val = <String, dynamic>{};
 

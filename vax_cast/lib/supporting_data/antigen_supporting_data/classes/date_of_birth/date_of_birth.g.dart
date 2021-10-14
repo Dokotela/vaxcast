@@ -6,17 +6,16 @@ part of 'date_of_birth.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_DateOfBirth _$_$_DateOfBirthFromJson(Map<String, dynamic> json) {
-  return _$_DateOfBirth(
-    immunityBirthDate: json['immunityBirthDate'] as String?,
-    birthCountry: json['birthCountry'] as String?,
-    exclusion: (json['exclusion'] as List<dynamic>?)
-        ?.map((e) => Exclusion.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+_$_DateOfBirth _$$_DateOfBirthFromJson(Map<String, dynamic> json) =>
+    _$_DateOfBirth(
+      immunityBirthDate: json['immunityBirthDate'] as String?,
+      birthCountry: json['birthCountry'] as String?,
+      exclusion: (json['exclusion'] as List<dynamic>?)
+          ?.map((e) => Exclusion.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
-Map<String, dynamic> _$_$_DateOfBirthToJson(_$_DateOfBirth instance) {
+Map<String, dynamic> _$$_DateOfBirthToJson(_$_DateOfBirth instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

@@ -6,14 +6,13 @@ part of 'observation_code.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ObservationCode _$_$_ObservationCodeFromJson(Map<String, dynamic> json) {
-  return _$_ObservationCode(
-    text: json['text'] as String?,
-    code: _$enumDecodeNullable(_$ObsEnumMap, json['code']),
-  );
-}
+_$_ObservationCode _$$_ObservationCodeFromJson(Map<String, dynamic> json) =>
+    _$_ObservationCode(
+      text: json['text'] as String?,
+      code: _$enumDecodeNullable(_$ObsEnumMap, json['code']),
+    );
 
-Map<String, dynamic> _$_$_ObservationCodeToJson(_$_ObservationCode instance) {
+Map<String, dynamic> _$$_ObservationCodeToJson(_$_ObservationCode instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

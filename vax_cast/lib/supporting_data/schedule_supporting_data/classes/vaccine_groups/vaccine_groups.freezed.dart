@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'vaccine_groups.dart';
 
@@ -114,7 +115,7 @@ class _$_VaccineGroups implements _VaccineGroups {
   _$_VaccineGroups({this.vaccineGroup});
 
   factory _$_VaccineGroups.fromJson(Map<String, dynamic> json) =>
-      _$_$_VaccineGroupsFromJson(json);
+      _$$_VaccineGroupsFromJson(json);
 
   @override
   final List<VaccineGroup>? vaccineGroup;
@@ -144,7 +145,7 @@ class _$_VaccineGroups implements _VaccineGroups {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_VaccineGroupsToJson(this);
+    return _$$_VaccineGroupsToJson(this);
   }
 }
 
@@ -275,7 +276,7 @@ class _$_VaccineGroup implements _VaccineGroup {
   _$_VaccineGroup({this.name, this.administerFullVaccineGroup});
 
   factory _$_VaccineGroup.fromJson(Map<String, dynamic> json) =>
-      _$_$_VaccineGroupFromJson(json);
+      _$$_VaccineGroupFromJson(json);
 
   @override
   final VaccineGroupName? name;
@@ -313,7 +314,7 @@ class _$_VaccineGroup implements _VaccineGroup {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_VaccineGroupToJson(this);
+    return _$$_VaccineGroupToJson(this);
   }
 }
 

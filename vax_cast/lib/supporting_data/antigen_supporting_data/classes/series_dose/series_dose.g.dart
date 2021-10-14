@@ -6,39 +6,40 @@ part of 'series_dose.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SeriesDose _$_$_SeriesDoseFromJson(Map<String, dynamic> json) {
-  return _$_SeriesDose(
-    doseNumber: _$enumDecodeNullable(_$DoseNumberEnumMap, json['doseNumber']),
-    age: (json['age'] as List<dynamic>?)
-        ?.map((e) => VaxAge.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    interval: (json['interval'] as List<dynamic>?)
-        ?.map((e) => Interval.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    allowableInterval: json['allowableInterval'] == null
-        ? null
-        : Interval.fromJson(json['allowableInterval'] as Map<String, dynamic>),
-    preferableVaccine: (json['preferableVaccine'] as List<dynamic>?)
-        ?.map((e) => Vaccine.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    allowableVaccine: (json['allowableVaccine'] as List<dynamic>?)
-        ?.map((e) => Vaccine.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    inadvertentVaccine: (json['inadvertentVaccine'] as List<dynamic>?)
-        ?.map((e) => Vaccine.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    conditionalSkip: (json['conditionalSkip'] as List<dynamic>?)
-        ?.map((e) => ConditionalSkip.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    recurringDose: _$enumDecodeNullable(_$BinaryEnumMap, json['recurringDose']),
-    seasonalRecommendation: json['seasonalRecommendation'] == null
-        ? null
-        : SeasonalRecommendation.fromJson(
-            json['seasonalRecommendation'] as Map<String, dynamic>),
-  );
-}
+_$_SeriesDose _$$_SeriesDoseFromJson(Map<String, dynamic> json) =>
+    _$_SeriesDose(
+      doseNumber: _$enumDecodeNullable(_$DoseNumberEnumMap, json['doseNumber']),
+      age: (json['age'] as List<dynamic>?)
+          ?.map((e) => VaxAge.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      interval: (json['interval'] as List<dynamic>?)
+          ?.map((e) => Interval.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      allowableInterval: json['allowableInterval'] == null
+          ? null
+          : Interval.fromJson(
+              json['allowableInterval'] as Map<String, dynamic>),
+      preferableVaccine: (json['preferableVaccine'] as List<dynamic>?)
+          ?.map((e) => Vaccine.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      allowableVaccine: (json['allowableVaccine'] as List<dynamic>?)
+          ?.map((e) => Vaccine.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      inadvertentVaccine: (json['inadvertentVaccine'] as List<dynamic>?)
+          ?.map((e) => Vaccine.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      conditionalSkip: (json['conditionalSkip'] as List<dynamic>?)
+          ?.map((e) => ConditionalSkip.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      recurringDose:
+          _$enumDecodeNullable(_$BinaryEnumMap, json['recurringDose']),
+      seasonalRecommendation: json['seasonalRecommendation'] == null
+          ? null
+          : SeasonalRecommendation.fromJson(
+              json['seasonalRecommendation'] as Map<String, dynamic>),
+    );
 
-Map<String, dynamic> _$_$_SeriesDoseToJson(_$_SeriesDose instance) {
+Map<String, dynamic> _$$_SeriesDoseToJson(_$_SeriesDose instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

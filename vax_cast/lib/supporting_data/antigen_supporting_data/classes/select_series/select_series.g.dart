@@ -6,24 +6,24 @@ part of 'select_series.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SelectSeries _$_$_SelectSeriesFromJson(Map<String, dynamic> json) {
-  return _$_SelectSeries(
-    defaultSeries: _$enumDecodeNullable(_$BinaryEnumMap, json['defaultSeries']),
-    productPath: _$enumDecodeNullable(_$BinaryEnumMap, json['productPath']),
-    seriesGroupName:
-        _$enumDecodeNullable(_$SeriesGroupNameEnumMap, json['seriesGroupName']),
-    seriesGroup:
-        _$enumDecodeNullable(_$SeriesGroupEnumMap, json['seriesGroup']),
-    seriesPriority:
-        _$enumDecodeNullable(_$SeriesPriorityEnumMap, json['seriesPriority']),
-    seriesPreference: _$enumDecodeNullable(
-        _$SeriesPreferenceEnumMap, json['seriesPreference']),
-    minAgeToStart: json['minAgeToStart'] as String?,
-    maxAgeToStart: json['maxAgeToStart'] as String?,
-  );
-}
+_$_SelectSeries _$$_SelectSeriesFromJson(Map<String, dynamic> json) =>
+    _$_SelectSeries(
+      defaultSeries:
+          _$enumDecodeNullable(_$BinaryEnumMap, json['defaultSeries']),
+      productPath: _$enumDecodeNullable(_$BinaryEnumMap, json['productPath']),
+      seriesGroupName: _$enumDecodeNullable(
+          _$SeriesGroupNameEnumMap, json['seriesGroupName']),
+      seriesGroup:
+          _$enumDecodeNullable(_$SeriesGroupEnumMap, json['seriesGroup']),
+      seriesPriority:
+          _$enumDecodeNullable(_$SeriesPriorityEnumMap, json['seriesPriority']),
+      seriesPreference: _$enumDecodeNullable(
+          _$SeriesPreferenceEnumMap, json['seriesPreference']),
+      minAgeToStart: json['minAgeToStart'] as String?,
+      maxAgeToStart: json['maxAgeToStart'] as String?,
+    );
 
-Map<String, dynamic> _$_$_SelectSeriesToJson(_$_SelectSeries instance) {
+Map<String, dynamic> _$$_SelectSeriesToJson(_$_SelectSeries instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

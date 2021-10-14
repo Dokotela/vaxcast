@@ -6,26 +6,24 @@ part of 'condition.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Condition _$_$_ConditionFromJson(Map<String, dynamic> json) {
-  return _$_Condition(
-    conditionID: json['conditionID'] as String?,
-    conditionType:
-        _$enumDecodeNullable(_$ConditionTypeEnumMap, json['conditionType']),
-    startDate: json['startDate'] as String?,
-    endDate: json['endDate'] as String?,
-    beginAge: json['beginAge'] as String?,
-    endAge: json['endAge'] as String?,
-    interval: json['interval'] as String?,
-    doseCount: json['doseCount'] as String?,
-    doseType: _$enumDecodeNullable(_$DoseTypeEnumMap, json['doseType']),
-    doseCountLogic:
-        _$enumDecodeNullable(_$DoseCountLogicEnumMap, json['doseCountLogic']),
-    vaccineTypes: json['vaccineTypes'] as String?,
-    seriesGroups: json['seriesGroups'] as String?,
-  );
-}
+_$_Condition _$$_ConditionFromJson(Map<String, dynamic> json) => _$_Condition(
+      conditionID: json['conditionID'] as String?,
+      conditionType:
+          _$enumDecodeNullable(_$ConditionTypeEnumMap, json['conditionType']),
+      startDate: json['startDate'] as String?,
+      endDate: json['endDate'] as String?,
+      beginAge: json['beginAge'] as String?,
+      endAge: json['endAge'] as String?,
+      interval: json['interval'] as String?,
+      doseCount: json['doseCount'] as String?,
+      doseType: _$enumDecodeNullable(_$DoseTypeEnumMap, json['doseType']),
+      doseCountLogic:
+          _$enumDecodeNullable(_$DoseCountLogicEnumMap, json['doseCountLogic']),
+      vaccineTypes: json['vaccineTypes'] as String?,
+      seriesGroups: json['seriesGroups'] as String?,
+    );
 
-Map<String, dynamic> _$_$_ConditionToJson(_$_Condition instance) {
+Map<String, dynamic> _$$_ConditionToJson(_$_Condition instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

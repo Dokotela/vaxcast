@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'conditional_skip.dart';
 
@@ -149,7 +150,7 @@ class _$_ConditionalSkip implements _ConditionalSkip {
       {this.context, this.setLogic, @JsonKey(name: 'set') this.set_});
 
   factory _$_ConditionalSkip.fromJson(Map<String, dynamic> json) =>
-      _$_$_ConditionalSkipFromJson(json);
+      _$$_ConditionalSkipFromJson(json);
 
   @override
   final SkipContext? context;
@@ -192,7 +193,7 @@ class _$_ConditionalSkip implements _ConditionalSkip {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ConditionalSkipToJson(this);
+    return _$$_ConditionalSkipToJson(this);
   }
 }
 

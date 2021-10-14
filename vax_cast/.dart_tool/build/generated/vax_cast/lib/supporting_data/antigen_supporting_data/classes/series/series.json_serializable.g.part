@@ -2,35 +2,33 @@
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Series _$_$_SeriesFromJson(Map<String, dynamic> json) {
-  return _$_Series(
-    seriesName: json['seriesName'] as String?,
-    targetDisease:
-        _$enumDecodeNullable(_$TargetDiseaseEnumMap, json['targetDisease']),
-    vaccineGroup:
-        _$enumDecodeNullable(_$VaccineGroupNameEnumMap, json['vaccineGroup']),
-    seriesAdminGuidance: (json['seriesAdminGuidance'] as List<dynamic>?)
-        ?.map((e) => e as String)
-        .toList(),
-    seriesType: _$enumDecodeNullable(_$SeriesTypeEnumMap, json['seriesType']),
-    equivalentSeriesGroups: _$enumDecodeNullable(
-        _$EquivalentSeriesGroupsEnumMap, json['equivalentSeriesGroups']),
-    requiredGender: (json['requiredGender'] as List<dynamic>?)
-        ?.map((e) => _$enumDecode(_$GenderEnumMap, e))
-        .toList(),
-    selectSeries: json['selectSeries'] == null
-        ? null
-        : SelectSeries.fromJson(json['selectSeries'] as Map<String, dynamic>),
-    indication: (json['indication'] as List<dynamic>?)
-        ?.map((e) => Indication.fromJson(e as Map<String, dynamic>))
-        .toList(),
-    seriesDose: (json['seriesDose'] as List<dynamic>?)
-        ?.map((e) => SeriesDose.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+_$_Series _$$_SeriesFromJson(Map<String, dynamic> json) => _$_Series(
+      seriesName: json['seriesName'] as String?,
+      targetDisease:
+          _$enumDecodeNullable(_$TargetDiseaseEnumMap, json['targetDisease']),
+      vaccineGroup:
+          _$enumDecodeNullable(_$VaccineGroupNameEnumMap, json['vaccineGroup']),
+      seriesAdminGuidance: (json['seriesAdminGuidance'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
+      seriesType: _$enumDecodeNullable(_$SeriesTypeEnumMap, json['seriesType']),
+      equivalentSeriesGroups: _$enumDecodeNullable(
+          _$EquivalentSeriesGroupsEnumMap, json['equivalentSeriesGroups']),
+      requiredGender: (json['requiredGender'] as List<dynamic>?)
+          ?.map((e) => _$enumDecode(_$GenderEnumMap, e))
+          .toList(),
+      selectSeries: json['selectSeries'] == null
+          ? null
+          : SelectSeries.fromJson(json['selectSeries'] as Map<String, dynamic>),
+      indication: (json['indication'] as List<dynamic>?)
+          ?.map((e) => Indication.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      seriesDose: (json['seriesDose'] as List<dynamic>?)
+          ?.map((e) => SeriesDose.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
-Map<String, dynamic> _$_$_SeriesToJson(_$_Series instance) {
+Map<String, dynamic> _$$_SeriesToJson(_$_Series instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

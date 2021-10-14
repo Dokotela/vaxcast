@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'observations.dart';
 
@@ -112,7 +113,7 @@ class _$_Observations implements _Observations {
   _$_Observations({this.observation});
 
   factory _$_Observations.fromJson(Map<String, dynamic> json) =>
-      _$_$_ObservationsFromJson(json);
+      _$$_ObservationsFromJson(json);
 
   @override
   final List<Observation>? observation;
@@ -142,7 +143,7 @@ class _$_Observations implements _Observations {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ObservationsToJson(this);
+    return _$$_ObservationsToJson(this);
   }
 }
 
@@ -376,7 +377,7 @@ class _$_Observation implements _Observation {
       this.codedValues});
 
   factory _$_Observation.fromJson(Map<String, dynamic> json) =>
-      _$_$_ObservationFromJson(json);
+      _$$_ObservationFromJson(json);
 
   @override
   final Obs? observationCode;
@@ -442,7 +443,7 @@ class _$_Observation implements _Observation {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_ObservationToJson(this);
+    return _$$_ObservationToJson(this);
   }
 }
 
@@ -579,7 +580,7 @@ class _$_CodedValues implements _CodedValues {
   _$_CodedValues({this.codedValue});
 
   factory _$_CodedValues.fromJson(Map<String, dynamic> json) =>
-      _$_$_CodedValuesFromJson(json);
+      _$$_CodedValuesFromJson(json);
 
   @override
   final List<CodedValue>? codedValue;
@@ -609,7 +610,7 @@ class _$_CodedValues implements _CodedValues {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CodedValuesToJson(this);
+    return _$$_CodedValuesToJson(this);
   }
 }
 
@@ -750,7 +751,7 @@ class _$_CodedValue implements _CodedValue {
   _$_CodedValue({this.code, this.codeSystem, this.text});
 
   factory _$_CodedValue.fromJson(Map<String, dynamic> json) =>
-      _$_$_CodedValueFromJson(json);
+      _$$_CodedValueFromJson(json);
 
   @override
   final String? code;
@@ -791,7 +792,7 @@ class _$_CodedValue implements _CodedValue {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CodedValueToJson(this);
+    return _$$_CodedValueToJson(this);
   }
 }
 

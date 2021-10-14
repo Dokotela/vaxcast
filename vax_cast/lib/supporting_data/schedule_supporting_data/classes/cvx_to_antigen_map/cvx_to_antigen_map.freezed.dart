@@ -1,5 +1,6 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'cvx_to_antigen_map.dart';
 
@@ -114,7 +115,7 @@ class _$_CvxToAntigenMap implements _CvxToAntigenMap {
   _$_CvxToAntigenMap({this.cvxMap});
 
   factory _$_CvxToAntigenMap.fromJson(Map<String, dynamic> json) =>
-      _$_$_CvxToAntigenMapFromJson(json);
+      _$$_CvxToAntigenMapFromJson(json);
 
   @override
   final List<CvxMap>? cvxMap;
@@ -143,7 +144,7 @@ class _$_CvxToAntigenMap implements _CvxToAntigenMap {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CvxToAntigenMapToJson(this);
+    return _$$_CvxToAntigenMapToJson(this);
   }
 }
 
@@ -283,7 +284,7 @@ class _$_CvxMap implements _CvxMap {
   _$_CvxMap({this.cvx, this.shortDescription, this.association});
 
   factory _$_CvxMap.fromJson(Map<String, dynamic> json) =>
-      _$_$_CvxMapFromJson(json);
+      _$$_CvxMapFromJson(json);
 
   @override
   final Cvx? cvx;
@@ -325,7 +326,7 @@ class _$_CvxMap implements _CvxMap {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_CvxMapToJson(this);
+    return _$$_CvxMapToJson(this);
   }
 }
 
@@ -482,7 +483,7 @@ class _$_Association implements _Association {
       {this.antigen, this.associationBeginAge, this.associationEndAge});
 
   factory _$_Association.fromJson(Map<String, dynamic> json) =>
-      _$_$_AssociationFromJson(json);
+      _$$_AssociationFromJson(json);
 
   @override
   final TargetDisease? antigen;
@@ -525,7 +526,7 @@ class _$_Association implements _Association {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$_$_AssociationToJson(this);
+    return _$$_AssociationToJson(this);
   }
 }
 

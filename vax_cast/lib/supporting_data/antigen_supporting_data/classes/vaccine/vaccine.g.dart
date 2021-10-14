@@ -6,20 +6,18 @@ part of 'vaccine.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Vaccine _$_$_VaccineFromJson(Map<String, dynamic> json) {
-  return _$_Vaccine(
-    vaccineType: json['vaccineType'] as String?,
-    cvx: _$enumDecodeNullable(_$CvxEnumMap, json['cvx']),
-    beginAge: json['beginAge'] as String?,
-    endAge: json['endAge'] as String?,
-    tradeName: json['tradeName'] as String?,
-    mvx: json['mvx'] as String?,
-    volume: json['volume'] as String?,
-    forecastVaccineType: json['forecastVaccineType'] as String?,
-  );
-}
+_$_Vaccine _$$_VaccineFromJson(Map<String, dynamic> json) => _$_Vaccine(
+      vaccineType: json['vaccineType'] as String?,
+      cvx: _$enumDecodeNullable(_$CvxEnumMap, json['cvx']),
+      beginAge: json['beginAge'] as String?,
+      endAge: json['endAge'] as String?,
+      tradeName: json['tradeName'] as String?,
+      mvx: json['mvx'] as String?,
+      volume: json['volume'] as String?,
+      forecastVaccineType: json['forecastVaccineType'] as String?,
+    );
 
-Map<String, dynamic> _$_$_VaccineToJson(_$_Vaccine instance) {
+Map<String, dynamic> _$$_VaccineToJson(_$_Vaccine instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {

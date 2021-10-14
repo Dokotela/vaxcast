@@ -6,17 +6,16 @@ part of 'vaccine_contraindications.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_VaccineContraindications _$_$_VaccineContraindicationsFromJson(
-    Map<String, dynamic> json) {
-  return _$_VaccineContraindications(
-    contraindication: (json['contraindication'] as List<dynamic>?)
-        ?.map(
-            (e) => VaccineContraindication.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+_$_VaccineContraindications _$$_VaccineContraindicationsFromJson(
+        Map<String, dynamic> json) =>
+    _$_VaccineContraindications(
+      contraindication: (json['contraindication'] as List<dynamic>?)
+          ?.map((e) =>
+              VaccineContraindication.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
-Map<String, dynamic> _$_$_VaccineContraindicationsToJson(
+Map<String, dynamic> _$$_VaccineContraindicationsToJson(
     _$_VaccineContraindications instance) {
   final val = <String, dynamic>{};
 
@@ -31,21 +30,20 @@ Map<String, dynamic> _$_$_VaccineContraindicationsToJson(
   return val;
 }
 
-_$_VaccineContraindication _$_$_VaccineContraindicationFromJson(
-    Map<String, dynamic> json) {
-  return _$_VaccineContraindication(
-    observationCode:
-        _$enumDecodeNullable(_$ObsEnumMap, json['observationCode']),
-    observationTitle: json['observationTitle'] as String?,
-    contraindicationText: json['contraindicationText'] as String?,
-    contraindicationGuidance: json['contraindicationGuidance'] as String?,
-    contraindicatedVaccine: (json['contraindicatedVaccine'] as List<dynamic>?)
-        ?.map((e) => Vaccine.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
+_$_VaccineContraindication _$$_VaccineContraindicationFromJson(
+        Map<String, dynamic> json) =>
+    _$_VaccineContraindication(
+      observationCode:
+          _$enumDecodeNullable(_$ObsEnumMap, json['observationCode']),
+      observationTitle: json['observationTitle'] as String?,
+      contraindicationText: json['contraindicationText'] as String?,
+      contraindicationGuidance: json['contraindicationGuidance'] as String?,
+      contraindicatedVaccine: (json['contraindicatedVaccine'] as List<dynamic>?)
+          ?.map((e) => Vaccine.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
 
-Map<String, dynamic> _$_$_VaccineContraindicationToJson(
+Map<String, dynamic> _$$_VaccineContraindicationToJson(
     _$_VaccineContraindication instance) {
   final val = <String, dynamic>{};
 
