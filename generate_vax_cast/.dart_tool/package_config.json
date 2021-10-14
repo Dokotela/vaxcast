@@ -8,12 +8,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "archive",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/archive-3.1.5",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "async",
       "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/async-2.8.2",
       "packageUri": "lib/",
@@ -56,34 +50,16 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "equatable",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "event_bus",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/event_bus-2.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "excel",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/excel-2.0.0-null-safety-3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "fhir",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir-0.4.7",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir-0.5.0-3",
       "packageUri": "lib/",
-      "languageVersion": "2.13"
+      "languageVersion": "2.14"
     },
     {
       "name": "fhir_yaml",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir_yaml-0.4.2",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir_yaml-0.5.1",
       "packageUri": "lib/",
-      "languageVersion": "2.13"
+      "languageVersion": "2.14"
     },
     {
       "name": "freezed_annotation",
@@ -140,22 +116,10 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "mqtt_client",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/mqtt_client-9.6.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "path",
       "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
-    },
-    {
-      "name": "petitparser",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/petitparser-4.3.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
     },
     {
       "name": "source_span",
@@ -182,14 +146,14 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "vax_cast",
-      "rootUri": "../../vax_cast",
+      "name": "uuid",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/uuid-3.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
-      "name": "xml",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/xml-5.3.0",
+      "name": "vax_cast",
+      "rootUri": "../../vax_cast",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -206,7 +170,7 @@
       "languageVersion": "2.14"
     }
   ],
-  "generated": "2021-10-10T15:45:39.168688Z",
+  "generated": "2021-10-14T14:02:00.308674Z",
   "generator": "pub",
-  "generatorVersion": "2.14.3"
+  "generatorVersion": "2.15.0-181.0.dev"
 }

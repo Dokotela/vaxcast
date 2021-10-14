@@ -53,6 +53,7 @@
 //         .indexWhere((liveCvx) => liveCvx.previous.cvx == cvx);
 
 // List<TargetDisease> listAgForCvx(Cvx cvx) {
+//   r4.Patient().newVersion() .thisReference()
 //   List<TargetDisease> agList = [];
 //   var map = SupportingData.scheduleSupportingData.cvxToAntigenMap.cvxMap
 //       .firstWhere((element) => element.cvx == cvx);

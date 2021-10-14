@@ -1,6 +1,6 @@
 import 'antigen_supporting_data/antigen_supporting_data.dart';
 import 'schedule_supporting_data/schedule_supporting_data.dart';
-import 'supporting_data_enums/target_disease_enum.dart';
+import 'enums/target_disease_enum.dart';
 import 'supporting_data_map.dart';
 
 class SupportingData {

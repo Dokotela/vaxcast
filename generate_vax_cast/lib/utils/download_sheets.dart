@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:generate_vax_cast/models/supporting_strings.dart';
 import 'package:gsheets/gsheets.dart';
 
-import '../api.dart';
+import 'api.dart';
 
 Future<List<SupportingStrings>> downloadSheets() async {
   /// Assign the gsheets credentials

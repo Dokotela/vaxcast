@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../supporting_data_enums/binary_enum.dart';
-import '../../../supporting_data_enums/dose_number_enum.dart';
+import '../../../enums/binary_enum.dart';
+import '../../../enums/dose_number_enum.dart';
 import '../conditional_skip/conditional_skip.dart';
 import '../interval/interval.dart';
 import '../seasonal_recommendation/seasonal_recommendation.dart';

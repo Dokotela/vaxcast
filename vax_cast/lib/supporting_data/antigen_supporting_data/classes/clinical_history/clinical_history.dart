@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../supporting_data_enums/obs_code_enum.dart';
+import '../../../enums/obs_code_enum.dart';
 
 part 'clinical_history.freezed.dart';
 part 'clinical_history.g.dart';

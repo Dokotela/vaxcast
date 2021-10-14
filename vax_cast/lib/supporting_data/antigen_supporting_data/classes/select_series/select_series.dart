@@ -1,10 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../supporting_data_enums/binary_enum.dart';
-import '../../../supporting_data_enums/series_group_enum.dart';
-import '../../../supporting_data_enums/series_group_name_enum.dart';
-import '../../../supporting_data_enums/series_preference_enum.dart';
-import '../../../supporting_data_enums/series_priority_enum.dart';
+import '../../../enums/binary_enum.dart';
+import '../../../enums/series_group_enum.dart';
+import '../../../enums/series_group_name_enum.dart';
+import '../../../enums/series_preference_enum.dart';
+import '../../../enums/series_priority_enum.dart';
 
 part 'select_series.freezed.dart';
 part 'select_series.g.dart';

@@ -1,8 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../supporting_data_enums/condition_type_enum.dart';
-import '../../../supporting_data_enums/dose_count_logic_enum.dart';
-import '../../../supporting_data_enums/dose_type_enum.dart';
+import '../../../enums/condition_type_enum.dart';
+import '../../../enums/dose_count_logic_enum.dart';
+import '../../../enums/dose_type_enum.dart';
 
 part 'condition.freezed.dart';
 part 'condition.g.dart';
