@@ -1,5 +1,5 @@
 export 'supporting_data.dart';
-export 'antigen_supporting_data/export_antigen_supporting_data.dart';
+export 'antigen_supporting_data/antigen_supporting_data.dart';
 export 'simple_cvx_map.dart';
-export 'schedule_supporting_data/export_schedule_supporting_data.dart';
-export 'enums/export_supporting_enums.dart';
+export 'schedule_supporting_data/schedule_supporting_data.dart';
+export 'enums/enums.dart';

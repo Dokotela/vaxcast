@@ -415,7 +415,7 @@ enum Obs {
   code207,
 }
 
-const ObsStringToEnumMap = {
+const obsStringToEnumMap = {
   '001': Obs.code001,
   '002': Obs.code002,
   '003': Obs.code003,
@@ -624,7 +624,7 @@ const ObsStringToEnumMap = {
   '207': Obs.code207,
 };
 
-const ObsEnumToStringMap = {
+const obsEnumToStringMap = {
   Obs.code001: '001',
   Obs.code002: '002',
   Obs.code003: '003',

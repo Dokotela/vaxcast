@@ -61,7 +61,7 @@ SeriesDose createSeriesDose(int index, List<List<dynamic>> rows) {
         fromMostRecent: valueToString(row[3]!),
         fromRelevantObs: open == -1 || close == -1
             ? null
-            : ObservationCode(code: ObsStringToEnumMap[code], text: text),
+            : ObservationCode(code: stringToEnum(code) as Obs?, text: text),
         absMinInt: valueToString(row[5]!),
         minInt: valueToString(row[6]!),
         earliestRecInt: valueToString(row[7]!),

@@ -16,10 +16,15 @@ Future<void> createSupportingData(
   const JsonEncoder jsonEncoder = JsonEncoder.withIndent('    ');
   for (var supportString in supportingStrings) {
     if (supportString is AntigenSupportingStrings) {
-      final antigenSupportingData = AntigenSupportingData(
+      var antigenSupportingData = AntigenSupportingData(
         immunity: immunity(supportString.immunity),
         contraindications: contraindications(supportString.contraindications),
         series: supportString.series?.map((e) => createSeries(e)).toList(),
+      );
+
+      antigenSupportingData = antigenSupportingData.copyWith(
+        targetDisease: antigenSupportingData.series?[0].targetDisease,
+        vaccineGroup: antigenSupportingData.series?[0].vaccineGroup,
       );
 
       final fileName = targetDiseaseEnumToString[
@@ -39,7 +44,7 @@ Future<void> createSupportingData(
           'final $diseaseName = '
           'AntigenSupportingData.fromJson(${jsonEncoder.convert(antigenSupportingData)});';
 
-      await File('lib/json/$fileName.dart').writeAsString(dataString);
+      await File('lib/files/$fileName.dart').writeAsString(dataString);
     } else {
       switch ((supportString as ScheduleSupportingStrings).type) {
         case SupportingType.codedObservations:
@@ -72,6 +77,6 @@ Future<void> createSupportingData(
       'final scheduleSupportingData = '
       'ScheduleSupportingData.fromJson(${jsonEncoder.convert(scheduleSupportingData)});';
 
-  await File('lib/json/schedule_supporting_data.dart')
+  await File('lib/files/schedule_supporting_data.dart')
       .writeAsString(dataString);
 }
