@@ -1,21 +1,20 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final japanese_ncephalitis = AntigenSupportingData.fromJson({
+    "targetDisease": "Japanese Encephalitis",
+    "vaccineGroup": "Japanese Encephalitis",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
-                    "observationCode": "082",
                     "observationTitle": "Severe allergic reaction after previous dose of Japanese Encephalitis",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Japanese Encephalitis vaccine."
                 },
                 {
-                    "observationCode": "115",
                     "observationTitle": "Severe allergic reaction to protamine sulfate",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to protamine sulfate."
                 }
@@ -46,24 +45,21 @@ final japanese_ncephalitis = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Longer-term (e.g., 1 month or more) travel to a JE-endemic area",
-                        "code": "165"
+                        "text": "Longer-term (e.g., 1 month or more) travel to a JE-endemic area"
                     },
                     "description": "Administer to persons who plan for longer-term (e.g., ≥ 1 month) travel to JE-endemic areas.",
                     "beginAge": "2 months"
                 },
                 {
                     "observationCode": {
-                        "text": "Moving to JE-endemic country to take up residence",
-                        "code": "173"
+                        "text": "Moving to JE-endemic country to take up residence"
                     },
                     "description": "Administer to persons who plan to move to JE-endemic countries to take up residence.",
                     "beginAge": "2 months"
                 },
                 {
                     "observationCode": {
-                        "text": "Frequent travel to JE-endemic areas",
-                        "code": "174"
+                        "text": "Frequent travel to JE-endemic areas"
                     },
                     "description": "Administer to persons who frequently travel to JE-endemic areas.",
                     "beginAge": "2 months"
@@ -209,8 +205,7 @@ final japanese_ncephalitis = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Longer-term (e.g., 1 month or more) travel to a JE-endemic area",
-                        "code": "165"
+                        "text": "Longer-term (e.g., 1 month or more) travel to a JE-endemic area"
                     },
                     "description": "Administer to persons who plan for longer-term (e.g., ≥ 1 month) travel to JE-endemic areas.",
                     "beginAge": "18 years",
@@ -218,8 +213,7 @@ final japanese_ncephalitis = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Moving to JE-endemic country to take up residence",
-                        "code": "173"
+                        "text": "Moving to JE-endemic country to take up residence"
                     },
                     "description": "Administer to persons who plan to move to JE-endemic countries to take up residence.",
                     "beginAge": "18 years",
@@ -227,8 +221,7 @@ final japanese_ncephalitis = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Frequent travel to JE-endemic areas",
-                        "code": "174"
+                        "text": "Frequent travel to JE-endemic areas"
                     },
                     "description": "Administer to persons who frequently travel to JE-endemic areas.",
                     "beginAge": "18 years",

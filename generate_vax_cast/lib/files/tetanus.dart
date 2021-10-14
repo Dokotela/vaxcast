@@ -1,16 +1,16 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final tetanus = AntigenSupportingData.fromJson({
+    "targetDisease": "Tetanus",
+    "vaccineGroup": "DTaP/Tdap/Td",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "088",
                     "observationTitle": "Severe allergic reaction after previous dose of Tetanus",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Tetanus vaccine."
                 },
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -19,7 +19,6 @@ final tetanus = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
-                    "observationCode": "076",
                     "observationTitle": "Progressive neurologic disorder",
                     "contraindicationText": "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
                     "contraindicatedVaccine": [
@@ -82,7 +81,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "079",
                     "observationTitle": "Encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine",
                     "contraindicationText": "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
                     "contraindicatedVaccine": [

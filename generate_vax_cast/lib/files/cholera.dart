@@ -1,16 +1,16 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final cholera = AntigenSupportingData.fromJson({
+    "targetDisease": "Cholera",
+    "vaccineGroup": "Cholera",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
-                    "observationCode": "119",
                     "observationTitle": "Severe allergic reaction after previous dose of cholera",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of cholera vaccine."
                 }
@@ -41,8 +41,7 @@ final cholera = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Travel to an area of active cholera transmission",
-                        "code": "008"
+                        "text": "Travel to an area of active cholera transmission"
                     },
                     "description": "Administer to adult travelers (aged 18-64 years) from the United States traveling to an area of active cholera transmission.",
                     "beginAge": "18 years",

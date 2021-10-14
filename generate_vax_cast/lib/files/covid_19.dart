@@ -1,16 +1,16 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final covid_9 = AntigenSupportingData.fromJson({
+    "targetDisease": "COVID-19",
+    "vaccineGroup": "COVID-19",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "122",
                     "observationTitle": "Severe allergic reaction after previous dose of COVID-19",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of COVID-19 vaccine."
                 },
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -19,7 +19,6 @@ final covid_9 = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
-                    "observationCode": "187",
                     "observationTitle": "Allergic reaction to polysorbate 80",
                     "contraindicationText": "Do not vaccinate if the patient has had an immediate allergic reaction of any severity to polysorbate 80.",
                     "contraindicatedVaccine": [
@@ -30,7 +29,6 @@ final covid_9 = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "188",
                     "observationTitle": "Known allergy to Polyethylene glycol [PEG]",
                     "contraindicationText": "Do not vaccinate if the patient has known allergy to Polyethylene glycol [PEG].",
                     "contraindicatedVaccine": [
@@ -609,64 +607,56 @@ final covid_9 = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Recipient of a hematopoietic stem cell transplant",
-                        "code": "004"
+                        "text": "Recipient of a hematopoietic stem cell transplant"
                     },
                     "description": "Administer to recipients of a hematopoietic stem cell transplant [HSCT] within 2 years of successful transplantation.",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
-                        "code": "145"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
-                        "code": "147"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
-                        "code": "148"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
-                        "code": "153"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV/AIDS - Severely immunocompromised",
-                        "code": "154"
+                        "text": "HIV/AIDS - Severely immunocompromised"
                     },
                     "description": "Administer to persons who have HIV/AIDS and are severely immunocompromised [See the CDC general recommendations for a definition of severely immunocompromised].",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation",
-                        "code": "157"
+                        "text": "Transplantation"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy",
-                        "code": "158"
+                        "text": "Immunosuppressive therapy"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "12 years",
@@ -674,8 +664,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy",
-                        "code": "159"
+                        "text": "Radiation therapy"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "12 years",
@@ -683,24 +672,21 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Active treatement for solid tumors",
-                        "code": "189"
+                        "text": "Active treatement for solid tumors"
                     },
                     "description": "Administer to persons receiving active treatement for solid tumors",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Active treatement for hematologic malignancies",
-                        "code": "190"
+                        "text": "Active treatement for hematologic malignancies"
                     },
                     "description": "Administer to persons receiving active treatement for hematologic malignancies",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receipt of CAR-T-cell therapy",
-                        "code": "191"
+                        "text": "Receipt of CAR-T-cell therapy"
                     },
                     "description": "Adminster to persons receiving CAR-T-cell therapy",
                     "beginAge": "12 years"
@@ -863,64 +849,56 @@ final covid_9 = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Recipient of a hematopoietic stem cell transplant",
-                        "code": "004"
+                        "text": "Recipient of a hematopoietic stem cell transplant"
                     },
                     "description": "Administer to recipients of a hematopoietic stem cell transplant [HSCT] within 2 years of successful transplantation.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
-                        "code": "145"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
-                        "code": "147"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
-                        "code": "148"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
-                        "code": "153"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV/AIDS - Severely immunocompromised",
-                        "code": "154"
+                        "text": "HIV/AIDS - Severely immunocompromised"
                     },
                     "description": "Administer to persons who have HIV/AIDS and are severely immunocompromised [See the CDC general recommendations for a definition of severely immunocompromised].",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation",
-                        "code": "157"
+                        "text": "Transplantation"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy",
-                        "code": "158"
+                        "text": "Immunosuppressive therapy"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "18 years",
@@ -928,8 +906,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy",
-                        "code": "159"
+                        "text": "Radiation therapy"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "18 years",
@@ -937,24 +914,21 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Active treatement for solid tumors",
-                        "code": "189"
+                        "text": "Active treatement for solid tumors"
                     },
                     "description": "Administer to persons receiving active treatement for solid tumors",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Active treatement for hematologic malignancies",
-                        "code": "190"
+                        "text": "Active treatement for hematologic malignancies"
                     },
                     "description": "Administer to persons receiving active treatement for hematologic malignancies",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receipt of CAR-T-cell therapy",
-                        "code": "191"
+                        "text": "Receipt of CAR-T-cell therapy"
                     },
                     "description": "Adminster to persons receiving CAR-T-cell therapy",
                     "beginAge": "18 years"
@@ -1116,64 +1090,56 @@ final covid_9 = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Recipient of a hematopoietic stem cell transplant",
-                        "code": "004"
+                        "text": "Recipient of a hematopoietic stem cell transplant"
                     },
                     "description": "Administer to recipients of a hematopoietic stem cell transplant [HSCT] within 2 years of successful transplantation.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
-                        "code": "145"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
-                        "code": "147"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
-                        "code": "148"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
-                        "code": "153"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV/AIDS - Severely immunocompromised",
-                        "code": "154"
+                        "text": "HIV/AIDS - Severely immunocompromised"
                     },
                     "description": "Administer to persons who have HIV/AIDS and are severely immunocompromised [See the CDC general recommendations for a definition of severely immunocompromised].",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation",
-                        "code": "157"
+                        "text": "Transplantation"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy",
-                        "code": "158"
+                        "text": "Immunosuppressive therapy"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "18 years",
@@ -1181,8 +1147,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy",
-                        "code": "159"
+                        "text": "Radiation therapy"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "18 years",
@@ -1190,24 +1155,21 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Active treatement for solid tumors",
-                        "code": "189"
+                        "text": "Active treatement for solid tumors"
                     },
                     "description": "Administer to persons receiving active treatement for solid tumors",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Active treatement for hematologic malignancies",
-                        "code": "190"
+                        "text": "Active treatement for hematologic malignancies"
                     },
                     "description": "Administer to persons receiving active treatement for hematologic malignancies",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receipt of CAR-T-cell therapy",
-                        "code": "191"
+                        "text": "Receipt of CAR-T-cell therapy"
                     },
                     "description": "Adminster to persons receiving CAR-T-cell therapy",
                     "beginAge": "18 years"
@@ -1275,64 +1237,56 @@ final covid_9 = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Recipient of a hematopoietic stem cell transplant",
-                        "code": "004"
+                        "text": "Recipient of a hematopoietic stem cell transplant"
                     },
                     "description": "Administer to recipients of a hematopoietic stem cell transplant [HSCT] within 2 years of successful transplantation.",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
-                        "code": "145"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
-                        "code": "147"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
-                        "code": "148"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
-                        "code": "153"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV/AIDS - Severely immunocompromised",
-                        "code": "154"
+                        "text": "HIV/AIDS - Severely immunocompromised"
                     },
                     "description": "Administer to persons who have HIV/AIDS and are severely immunocompromised [See the CDC general recommendations for a definition of severely immunocompromised].",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation",
-                        "code": "157"
+                        "text": "Transplantation"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy",
-                        "code": "158"
+                        "text": "Immunosuppressive therapy"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "12 years",
@@ -1340,8 +1294,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy",
-                        "code": "159"
+                        "text": "Radiation therapy"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "12 years",
@@ -1349,24 +1302,21 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Active treatement for solid tumors",
-                        "code": "189"
+                        "text": "Active treatement for solid tumors"
                     },
                     "description": "Administer to persons receiving active treatement for solid tumors",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Active treatement for hematologic malignancies",
-                        "code": "190"
+                        "text": "Active treatement for hematologic malignancies"
                     },
                     "description": "Administer to persons receiving active treatement for hematologic malignancies",
                     "beginAge": "12 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receipt of CAR-T-cell therapy",
-                        "code": "191"
+                        "text": "Receipt of CAR-T-cell therapy"
                     },
                     "description": "Adminster to persons receiving CAR-T-cell therapy",
                     "beginAge": "12 years"
@@ -1576,8 +1526,7 @@ final covid_9 = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Pregnancy",
-                        "code": "007"
+                        "text": "Pregnancy"
                     },
                     "description": "Administer to persons who are pregnant.",
                     "beginAge": "18 years",
@@ -1586,8 +1535,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes",
-                        "code": "014"
+                        "text": "Diabetes"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "18 years",
@@ -1596,8 +1544,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease",
-                        "code": "015"
+                        "text": "Chronic liver disease"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "18 years",
@@ -1606,8 +1553,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic heart disease",
-                        "code": "016"
+                        "text": "Chronic heart disease"
                     },
                     "description": "Administer to persons who have chronic heart disease.",
                     "beginAge": "18 years",
@@ -1616,8 +1562,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic lung disease",
-                        "code": "017"
+                        "text": "Chronic lung disease"
                     },
                     "description": "Administer to persons who have chronic lung disease.",
                     "beginAge": "18 years",
@@ -1626,8 +1571,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Asthma",
-                        "code": "027"
+                        "text": "Asthma"
                     },
                     "description": "Administer to persons who have asthma.",
                     "beginAge": "18 years",
@@ -1636,8 +1580,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Smoke Cigarettes",
-                        "code": "042"
+                        "text": "Smoke Cigarettes"
                     },
                     "description": "Administer to persons who smoke cigarettes.",
                     "beginAge": "18 years",
@@ -1646,8 +1589,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
-                        "code": "146"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte [humoral] - antibody deficiencies [e.g., selective IgA deficiency and IgG subclass deficiency].",
                     "beginAge": "18 years",
@@ -1656,8 +1598,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency",
-                        "code": "151"
+                        "text": "Persistent complement, properdin, or factor B deficiency"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, including inherited or chronic deficiencies in C3, C5-9, properdin, factor D, factor H, or who are taking eculizumab [Soliris].",
                     "beginAge": "18 years",
@@ -1666,8 +1607,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "HIV/AIDS - not severely immunocompromised",
-                        "code": "155"
+                        "text": "HIV/AIDS - not severely immunocompromised"
                     },
                     "description": "Administer to persons who have HIV/AIDS and are not severely immunocompromised [See the CDC general recommendations for a definition of severely immunocompromised].",
                     "beginAge": "18 years",
@@ -1676,8 +1616,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia",
-                        "code": "160"
+                        "text": "Anatomical or functional asplenia"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "18 years",
@@ -1686,8 +1625,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic renal disease",
-                        "code": "161"
+                        "text": "Chronic renal disease"
                     },
                     "description": "Administer to persons who have chronic renal disease.",
                     "beginAge": "18 years",
@@ -1696,8 +1634,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Occupations at increased risk for COVID-19 exposure and transmission",
-                        "code": "195"
+                        "text": "Occupations at increased risk for COVID-19 exposure and transmission"
                     },
                     "description": "Administer to persons with occupations at increased risk for COVID-19 exposure and transmission.",
                     "beginAge": "18 years",
@@ -1706,8 +1643,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Residing in an institutional setting at increased risk for COVID-19 exposure and transmission",
-                        "code": "196"
+                        "text": "Residing in an institutional setting at increased risk for COVID-19 exposure and transmission"
                     },
                     "description": "Administer to persons residing in an institutional setting at increased risk for COVID-19 exposure and transmission",
                     "beginAge": "18 years",
@@ -1716,8 +1652,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Resident of long term care facility",
-                        "code": "197"
+                        "text": "Resident of long term care facility"
                     },
                     "description": "Administer to persons residing in a long term care facility",
                     "beginAge": "18 years",
@@ -1725,8 +1660,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cancer",
-                        "code": "198"
+                        "text": "Cancer"
                     },
                     "description": "Administer to persons with cancer",
                     "beginAge": "18 years",
@@ -1735,8 +1669,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Interstitial lung disease",
-                        "code": "199"
+                        "text": "Interstitial lung disease"
                     },
                     "description": "Administer to persons with interstitial lung disease",
                     "beginAge": "18 years",
@@ -1745,8 +1678,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cystic fibrosis",
-                        "code": "200"
+                        "text": "Cystic fibrosis"
                     },
                     "description": "Administer to persons with cystic fibrosis",
                     "beginAge": "18 years",
@@ -1755,8 +1687,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Pulmonary hypertension",
-                        "code": "201"
+                        "text": "Pulmonary hypertension"
                     },
                     "description": "Administer to persons with pulmonary hypertension",
                     "beginAge": "18 years",
@@ -1765,8 +1696,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Dementia",
-                        "code": "202"
+                        "text": "Dementia"
                     },
                     "description": "Administer to persons with dementia",
                     "beginAge": "18 years",
@@ -1775,8 +1705,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Down syndrome",
-                        "code": "203"
+                        "text": "Down syndrome"
                     },
                     "description": "Administer to persons with down syndrome",
                     "beginAge": "18 years",
@@ -1785,8 +1714,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Obesity",
-                        "code": "204"
+                        "text": "Obesity"
                     },
                     "description": "Administer to persons with obesity",
                     "beginAge": "18 years",
@@ -1795,8 +1723,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Thalassemia",
-                        "code": "205"
+                        "text": "Thalassemia"
                     },
                     "description": "Administer to persons with thalassemia",
                     "beginAge": "18 years",
@@ -1805,8 +1732,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cerebrovascular disease",
-                        "code": "206"
+                        "text": "Cerebrovascular disease"
                     },
                     "description": "Administer to persons with cerebrovascular disease such as having a stroke",
                     "beginAge": "18 years",
@@ -1815,8 +1741,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Substance use disorder",
-                        "code": "207"
+                        "text": "Substance use disorder"
                     },
                     "description": "Administer to persons with substance use disorders (e.g., alcohol, opiod, cocaine)",
                     "beginAge": "18 years",
@@ -1979,8 +1904,7 @@ final covid_9 = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Pregnancy",
-                        "code": "007"
+                        "text": "Pregnancy"
                     },
                     "description": "Administer to persons who are pregnant.",
                     "beginAge": "18 years",
@@ -1989,8 +1913,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes",
-                        "code": "014"
+                        "text": "Diabetes"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "18 years",
@@ -1999,8 +1922,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease",
-                        "code": "015"
+                        "text": "Chronic liver disease"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "18 years",
@@ -2009,8 +1931,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic heart disease",
-                        "code": "016"
+                        "text": "Chronic heart disease"
                     },
                     "description": "Administer to persons who have chronic heart disease.",
                     "beginAge": "18 years",
@@ -2019,8 +1940,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic lung disease",
-                        "code": "017"
+                        "text": "Chronic lung disease"
                     },
                     "description": "Administer to persons who have chronic lung disease.",
                     "beginAge": "18 years",
@@ -2029,8 +1949,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Asthma",
-                        "code": "027"
+                        "text": "Asthma"
                     },
                     "description": "Administer to persons who have asthma.",
                     "beginAge": "18 years",
@@ -2039,8 +1958,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Smoke Cigarettes",
-                        "code": "042"
+                        "text": "Smoke Cigarettes"
                     },
                     "description": "Administer to persons who smoke cigarettes.",
                     "beginAge": "18 years",
@@ -2049,8 +1967,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
-                        "code": "146"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte [humoral] - antibody deficiencies [e.g., selective IgA deficiency and IgG subclass deficiency].",
                     "beginAge": "18 years",
@@ -2059,8 +1976,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency",
-                        "code": "151"
+                        "text": "Persistent complement, properdin, or factor B deficiency"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, including inherited or chronic deficiencies in C3, C5-9, properdin, factor D, factor H, or who are taking eculizumab [Soliris].",
                     "beginAge": "18 years",
@@ -2069,8 +1985,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "HIV/AIDS - not severely immunocompromised",
-                        "code": "155"
+                        "text": "HIV/AIDS - not severely immunocompromised"
                     },
                     "description": "Administer to persons who have HIV/AIDS and are not severely immunocompromised [See the CDC general recommendations for a definition of severely immunocompromised].",
                     "beginAge": "18 years",
@@ -2079,8 +1994,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia",
-                        "code": "160"
+                        "text": "Anatomical or functional asplenia"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "18 years",
@@ -2089,8 +2003,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic renal disease",
-                        "code": "161"
+                        "text": "Chronic renal disease"
                     },
                     "description": "Administer to persons who have chronic renal disease.",
                     "beginAge": "18 years",
@@ -2099,8 +2012,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Occupations at increased risk for COVID-19 exposure and transmission",
-                        "code": "195"
+                        "text": "Occupations at increased risk for COVID-19 exposure and transmission"
                     },
                     "description": "Administer to persons with occupations at increased risk for COVID-19 exposure and transmission.",
                     "beginAge": "18 years",
@@ -2109,8 +2021,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Residing in an institutional setting at increased risk for COVID-19 exposure and transmission",
-                        "code": "196"
+                        "text": "Residing in an institutional setting at increased risk for COVID-19 exposure and transmission"
                     },
                     "description": "Administer to persons residing in an institutional setting at increased risk for COVID-19 exposure and transmission",
                     "beginAge": "18 years",
@@ -2119,8 +2030,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Resident of long term care facility",
-                        "code": "197"
+                        "text": "Resident of long term care facility"
                     },
                     "description": "Administer to persons residing in a long term care facility",
                     "beginAge": "18 years",
@@ -2128,8 +2038,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cancer",
-                        "code": "198"
+                        "text": "Cancer"
                     },
                     "description": "Administer to persons with cancer",
                     "beginAge": "18 years",
@@ -2138,8 +2047,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Interstitial lung disease",
-                        "code": "199"
+                        "text": "Interstitial lung disease"
                     },
                     "description": "Administer to persons with interstitial lung disease",
                     "beginAge": "18 years",
@@ -2148,8 +2056,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cystic fibrosis",
-                        "code": "200"
+                        "text": "Cystic fibrosis"
                     },
                     "description": "Administer to persons with cystic fibrosis",
                     "beginAge": "18 years",
@@ -2158,8 +2065,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Pulmonary hypertension",
-                        "code": "201"
+                        "text": "Pulmonary hypertension"
                     },
                     "description": "Administer to persons with pulmonary hypertension",
                     "beginAge": "18 years",
@@ -2168,8 +2074,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Dementia",
-                        "code": "202"
+                        "text": "Dementia"
                     },
                     "description": "Administer to persons with dementia",
                     "beginAge": "18 years",
@@ -2178,8 +2083,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Down syndrome",
-                        "code": "203"
+                        "text": "Down syndrome"
                     },
                     "description": "Administer to persons with down syndrome",
                     "beginAge": "18 years",
@@ -2188,8 +2092,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Obesity",
-                        "code": "204"
+                        "text": "Obesity"
                     },
                     "description": "Administer to persons with obesity",
                     "beginAge": "18 years",
@@ -2198,8 +2101,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Thalassemia",
-                        "code": "205"
+                        "text": "Thalassemia"
                     },
                     "description": "Administer to persons with thalassemia",
                     "beginAge": "18 years",
@@ -2208,8 +2110,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cerebrovascular disease",
-                        "code": "206"
+                        "text": "Cerebrovascular disease"
                     },
                     "description": "Administer to persons with cerebrovascular disease such as having a stroke",
                     "beginAge": "18 years",
@@ -2218,8 +2119,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Substance use disorder",
-                        "code": "207"
+                        "text": "Substance use disorder"
                     },
                     "description": "Administer to persons with substance use disorders (e.g., alcohol, opiod, cocaine)",
                     "beginAge": "18 years",
@@ -2334,8 +2234,7 @@ final covid_9 = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Pregnancy",
-                        "code": "007"
+                        "text": "Pregnancy"
                     },
                     "description": "Administer to persons who are pregnant.",
                     "beginAge": "18 years",
@@ -2344,8 +2243,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes",
-                        "code": "014"
+                        "text": "Diabetes"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "18 years",
@@ -2354,8 +2252,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease",
-                        "code": "015"
+                        "text": "Chronic liver disease"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "18 years",
@@ -2364,8 +2261,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic heart disease",
-                        "code": "016"
+                        "text": "Chronic heart disease"
                     },
                     "description": "Administer to persons who have chronic heart disease.",
                     "beginAge": "18 years",
@@ -2374,8 +2270,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic lung disease",
-                        "code": "017"
+                        "text": "Chronic lung disease"
                     },
                     "description": "Administer to persons who have chronic lung disease.",
                     "beginAge": "18 years",
@@ -2384,8 +2279,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Asthma",
-                        "code": "027"
+                        "text": "Asthma"
                     },
                     "description": "Administer to persons who have asthma.",
                     "beginAge": "18 years",
@@ -2394,8 +2288,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Smoke Cigarettes",
-                        "code": "042"
+                        "text": "Smoke Cigarettes"
                     },
                     "description": "Administer to persons who smoke cigarettes.",
                     "beginAge": "18 years",
@@ -2404,8 +2297,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
-                        "code": "146"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte [humoral] - antibody deficiencies [e.g., selective IgA deficiency and IgG subclass deficiency].",
                     "beginAge": "18 years",
@@ -2414,8 +2306,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency",
-                        "code": "151"
+                        "text": "Persistent complement, properdin, or factor B deficiency"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, including inherited or chronic deficiencies in C3, C5-9, properdin, factor D, factor H, or who are taking eculizumab [Soliris].",
                     "beginAge": "18 years",
@@ -2424,8 +2315,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "HIV/AIDS - not severely immunocompromised",
-                        "code": "155"
+                        "text": "HIV/AIDS - not severely immunocompromised"
                     },
                     "description": "Administer to persons who have HIV/AIDS and are not severely immunocompromised [See the CDC general recommendations for a definition of severely immunocompromised].",
                     "beginAge": "18 years",
@@ -2434,8 +2324,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia",
-                        "code": "160"
+                        "text": "Anatomical or functional asplenia"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "18 years",
@@ -2444,8 +2333,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic renal disease",
-                        "code": "161"
+                        "text": "Chronic renal disease"
                     },
                     "description": "Administer to persons who have chronic renal disease.",
                     "beginAge": "18 years",
@@ -2454,8 +2342,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Occupations at increased risk for COVID-19 exposure and transmission",
-                        "code": "195"
+                        "text": "Occupations at increased risk for COVID-19 exposure and transmission"
                     },
                     "description": "Administer to persons with occupations at increased risk for COVID-19 exposure and transmission.",
                     "beginAge": "18 years",
@@ -2464,8 +2351,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Residing in an institutional setting at increased risk for COVID-19 exposure and transmission",
-                        "code": "196"
+                        "text": "Residing in an institutional setting at increased risk for COVID-19 exposure and transmission"
                     },
                     "description": "Administer to persons residing in an institutional setting at increased risk for COVID-19 exposure and transmission",
                     "beginAge": "18 years",
@@ -2474,8 +2360,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Resident of long term care facility",
-                        "code": "197"
+                        "text": "Resident of long term care facility"
                     },
                     "description": "Administer to persons residing in a long term care facility",
                     "beginAge": "18 years",
@@ -2483,8 +2368,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cancer",
-                        "code": "198"
+                        "text": "Cancer"
                     },
                     "description": "Administer to persons with cancer",
                     "beginAge": "18 years",
@@ -2493,8 +2377,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Interstitial lung disease",
-                        "code": "199"
+                        "text": "Interstitial lung disease"
                     },
                     "description": "Administer to persons with interstitial lung disease",
                     "beginAge": "18 years",
@@ -2503,8 +2386,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cystic fibrosis",
-                        "code": "200"
+                        "text": "Cystic fibrosis"
                     },
                     "description": "Administer to persons with cystic fibrosis",
                     "beginAge": "18 years",
@@ -2513,8 +2395,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Pulmonary hypertension",
-                        "code": "201"
+                        "text": "Pulmonary hypertension"
                     },
                     "description": "Administer to persons with pulmonary hypertension",
                     "beginAge": "18 years",
@@ -2523,8 +2404,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Dementia",
-                        "code": "202"
+                        "text": "Dementia"
                     },
                     "description": "Administer to persons with dementia",
                     "beginAge": "18 years",
@@ -2533,8 +2413,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Down syndrome",
-                        "code": "203"
+                        "text": "Down syndrome"
                     },
                     "description": "Administer to persons with down syndrome",
                     "beginAge": "18 years",
@@ -2543,8 +2422,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Obesity",
-                        "code": "204"
+                        "text": "Obesity"
                     },
                     "description": "Administer to persons with obesity",
                     "beginAge": "18 years",
@@ -2553,8 +2431,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Thalassemia",
-                        "code": "205"
+                        "text": "Thalassemia"
                     },
                     "description": "Administer to persons with thalassemia",
                     "beginAge": "18 years",
@@ -2563,8 +2440,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cerebrovascular disease",
-                        "code": "206"
+                        "text": "Cerebrovascular disease"
                     },
                     "description": "Administer to persons with cerebrovascular disease such as having a stroke",
                     "beginAge": "18 years",
@@ -2573,8 +2449,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Substance use disorder",
-                        "code": "207"
+                        "text": "Substance use disorder"
                     },
                     "description": "Administer to persons with substance use disorders (e.g., alcohol, opiod, cocaine)",
                     "beginAge": "18 years",
@@ -2642,8 +2517,7 @@ final covid_9 = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Pregnancy",
-                        "code": "007"
+                        "text": "Pregnancy"
                     },
                     "description": "Administer to persons who are pregnant.",
                     "beginAge": "18 years",
@@ -2652,8 +2526,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes",
-                        "code": "014"
+                        "text": "Diabetes"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "18 years",
@@ -2662,8 +2535,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease",
-                        "code": "015"
+                        "text": "Chronic liver disease"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "18 years",
@@ -2672,8 +2544,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic heart disease",
-                        "code": "016"
+                        "text": "Chronic heart disease"
                     },
                     "description": "Administer to persons who have chronic heart disease.",
                     "beginAge": "18 years",
@@ -2682,8 +2553,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic lung disease",
-                        "code": "017"
+                        "text": "Chronic lung disease"
                     },
                     "description": "Administer to persons who have chronic lung disease.",
                     "beginAge": "18 years",
@@ -2692,8 +2562,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Asthma",
-                        "code": "027"
+                        "text": "Asthma"
                     },
                     "description": "Administer to persons who have asthma.",
                     "beginAge": "18 years",
@@ -2702,8 +2571,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Smoke Cigarettes",
-                        "code": "042"
+                        "text": "Smoke Cigarettes"
                     },
                     "description": "Administer to persons who smoke cigarettes.",
                     "beginAge": "18 years",
@@ -2712,8 +2580,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
-                        "code": "146"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte [humoral] - antibody deficiencies [e.g., selective IgA deficiency and IgG subclass deficiency].",
                     "beginAge": "18 years",
@@ -2722,8 +2589,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency",
-                        "code": "151"
+                        "text": "Persistent complement, properdin, or factor B deficiency"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, including inherited or chronic deficiencies in C3, C5-9, properdin, factor D, factor H, or who are taking eculizumab [Soliris].",
                     "beginAge": "18 years",
@@ -2732,8 +2598,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "HIV/AIDS - not severely immunocompromised",
-                        "code": "155"
+                        "text": "HIV/AIDS - not severely immunocompromised"
                     },
                     "description": "Administer to persons who have HIV/AIDS and are not severely immunocompromised [See the CDC general recommendations for a definition of severely immunocompromised].",
                     "beginAge": "18 years",
@@ -2742,8 +2607,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia",
-                        "code": "160"
+                        "text": "Anatomical or functional asplenia"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "18 years",
@@ -2752,8 +2616,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic renal disease",
-                        "code": "161"
+                        "text": "Chronic renal disease"
                     },
                     "description": "Administer to persons who have chronic renal disease.",
                     "beginAge": "18 years",
@@ -2762,8 +2625,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Occupations at increased risk for COVID-19 exposure and transmission",
-                        "code": "195"
+                        "text": "Occupations at increased risk for COVID-19 exposure and transmission"
                     },
                     "description": "Administer to persons with occupations at increased risk for COVID-19 exposure and transmission.",
                     "beginAge": "18 years",
@@ -2772,8 +2634,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Residing in an institutional setting at increased risk for COVID-19 exposure and transmission",
-                        "code": "196"
+                        "text": "Residing in an institutional setting at increased risk for COVID-19 exposure and transmission"
                     },
                     "description": "Administer to persons residing in an institutional setting at increased risk for COVID-19 exposure and transmission",
                     "beginAge": "18 years",
@@ -2782,8 +2643,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Resident of long term care facility",
-                        "code": "197"
+                        "text": "Resident of long term care facility"
                     },
                     "description": "Administer to persons residing in a long term care facility",
                     "beginAge": "18 years",
@@ -2791,8 +2651,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cancer",
-                        "code": "198"
+                        "text": "Cancer"
                     },
                     "description": "Administer to persons with cancer",
                     "beginAge": "18 years",
@@ -2801,8 +2660,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Interstitial lung disease",
-                        "code": "199"
+                        "text": "Interstitial lung disease"
                     },
                     "description": "Administer to persons with interstitial lung disease",
                     "beginAge": "18 years",
@@ -2811,8 +2669,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cystic fibrosis",
-                        "code": "200"
+                        "text": "Cystic fibrosis"
                     },
                     "description": "Administer to persons with cystic fibrosis",
                     "beginAge": "18 years",
@@ -2821,8 +2678,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Pulmonary hypertension",
-                        "code": "201"
+                        "text": "Pulmonary hypertension"
                     },
                     "description": "Administer to persons with pulmonary hypertension",
                     "beginAge": "18 years",
@@ -2831,8 +2687,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Dementia",
-                        "code": "202"
+                        "text": "Dementia"
                     },
                     "description": "Administer to persons with dementia",
                     "beginAge": "18 years",
@@ -2841,8 +2696,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Down syndrome",
-                        "code": "203"
+                        "text": "Down syndrome"
                     },
                     "description": "Administer to persons with down syndrome",
                     "beginAge": "18 years",
@@ -2851,8 +2705,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Obesity",
-                        "code": "204"
+                        "text": "Obesity"
                     },
                     "description": "Administer to persons with obesity",
                     "beginAge": "18 years",
@@ -2861,8 +2714,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Thalassemia",
-                        "code": "205"
+                        "text": "Thalassemia"
                     },
                     "description": "Administer to persons with thalassemia",
                     "beginAge": "18 years",
@@ -2871,8 +2723,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cerebrovascular disease",
-                        "code": "206"
+                        "text": "Cerebrovascular disease"
                     },
                     "description": "Administer to persons with cerebrovascular disease such as having a stroke",
                     "beginAge": "18 years",
@@ -2881,8 +2732,7 @@ final covid_9 = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Substance use disorder",
-                        "code": "207"
+                        "text": "Substance use disorder"
                     },
                     "description": "Administer to persons with substance use disorders (e.g., alcohol, opiod, cocaine)",
                     "beginAge": "18 years",

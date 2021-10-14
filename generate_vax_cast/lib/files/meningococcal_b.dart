@@ -1,16 +1,16 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final meningococcal_ = AntigenSupportingData.fromJson({
+    "targetDisease": "Meningococcal B",
+    "vaccineGroup": "Meningococcal B",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "116",
                     "observationTitle": "Severe allergic reaction after previous dose of Meningococcal B",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Meningococcal B vaccine."
                 },
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -35,8 +35,7 @@ final meningococcal_ = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Patient seeks protection",
-                        "code": "001"
+                        "text": "Patient seeks protection"
                     },
                     "description": "Administer to persons seeking protection.",
                     "beginAge": "16 years",
@@ -45,8 +44,7 @@ final meningococcal_ = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Patient seeks Meningococcal B protection",
-                        "code": "177"
+                        "text": "Patient seeks Meningococcal B protection"
                     },
                     "description": "Administer to persons seeking protection from Meningococcal B.",
                     "beginAge": "16 years",
@@ -156,8 +154,7 @@ final meningococcal_ = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Patient seeks protection",
-                        "code": "001"
+                        "text": "Patient seeks protection"
                     },
                     "description": "Administer to persons seeking protection.",
                     "beginAge": "16 years",
@@ -166,8 +163,7 @@ final meningococcal_ = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Patient seeks Meningococcal B protection",
-                        "code": "177"
+                        "text": "Patient seeks Meningococcal B protection"
                     },
                     "description": "Administer to persons seeking protection from Meningococcal B.",
                     "beginAge": "16 years",
@@ -272,8 +268,7 @@ final meningococcal_ = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Undergoing elective splenectomy",
-                        "code": "002"
+                        "text": "Undergoing elective splenectomy"
                     },
                     "description": "Administered to persons who are undergoing elective splenectomy if they have not previously received Meningococcal B vaccine.",
                     "beginAge": "10 years",
@@ -281,32 +276,28 @@ final meningococcal_ = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Microbiologists routinely exposed to Neisseria meningitidis",
-                        "code": "050"
+                        "text": "Microbiologists routinely exposed to Neisseria meningitidis"
                     },
                     "description": "Administer to microbiologists routinely exposed to isolates of Neisseria meningitidis.",
                     "beginAge": "10 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Persons at risk during an outbreak",
-                        "code": "070"
+                        "text": "Persons at risk during an outbreak"
                     },
                     "description": "Administer to persons identified as at increased risk because of a serogroup B meningococcal disease outbreak",
                     "beginAge": "10 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency",
-                        "code": "151"
+                        "text": "Persistent complement, properdin, or factor B deficiency"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, including inherited or chronic deficiencies in C3, C5-9, properdin, factor D, factor H, or who are taking eculizumab (Soliris).",
                     "beginAge": "10 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia",
-                        "code": "160"
+                        "text": "Anatomical or functional asplenia"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "10 years"
@@ -479,8 +470,7 @@ final meningococcal_ = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Undergoing elective splenectomy",
-                        "code": "002"
+                        "text": "Undergoing elective splenectomy"
                     },
                     "description": "Administered to persons who are undergoing elective splenectomy if they have not previously received Meningococcal B vaccine.",
                     "beginAge": "10 years",
@@ -488,32 +478,28 @@ final meningococcal_ = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Microbiologists routinely exposed to Neisseria meningitidis",
-                        "code": "050"
+                        "text": "Microbiologists routinely exposed to Neisseria meningitidis"
                     },
                     "description": "Administer to microbiologists routinely exposed to isolates of Neisseria meningitidis.",
                     "beginAge": "10 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Persons at risk during an outbreak",
-                        "code": "070"
+                        "text": "Persons at risk during an outbreak"
                     },
                     "description": "Administer to persons identified as at increased risk because of a serogroup B meningococcal disease outbreak",
                     "beginAge": "10 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency",
-                        "code": "151"
+                        "text": "Persistent complement, properdin, or factor B deficiency"
                     },
                     "description": "Administer to persons 10 years or older with persistent complement component deficiencies, including inherited or chronic deficiencies in C3, C5-9, properdin, factor D, factor H, or who are taking eculizumab (Soliris).",
                     "beginAge": "10 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia",
-                        "code": "160"
+                        "text": "Anatomical or functional asplenia"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "10 years"

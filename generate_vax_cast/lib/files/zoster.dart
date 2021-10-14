@@ -1,11 +1,12 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final zoster = AntigenSupportingData.fromJson({
+    "targetDisease": "Zoster",
+    "vaccineGroup": "Zoster",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -14,7 +15,6 @@ final zoster = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
-                    "observationCode": "172",
                     "observationTitle": "Severe allergic reaction after previous dose of recombinant zoster",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of recombinant zoster vaccine.",
                     "contraindicatedVaccine": [

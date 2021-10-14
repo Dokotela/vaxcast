@@ -50,12 +50,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "enum_to_string",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/enum_to_string-2.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "fhir",
       "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir-0.5.0-3",
       "packageUri": "lib/",
@@ -176,7 +170,7 @@
       "languageVersion": "2.14"
     }
   ],
-  "generated": "2021-10-14T17:18:17.943170Z",
+  "generated": "2021-10-14T18:11:24.726986Z",
   "generator": "pub",
   "generatorVersion": "2.15.0-181.0.dev"
 }

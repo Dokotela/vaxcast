@@ -7,7 +7,6 @@ environment:
   
 dependencies:
   csv: ^5.0.0
-  enum_to_string: ^2.0.1
   gsheets: ^0.3.2
   vax_cast: 
     path: ../vax_cast

@@ -1,26 +1,24 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final rotavirus = AntigenSupportingData.fromJson({
+    "targetDisease": "Rotavirus",
+    "vaccineGroup": "Rotavirus",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "013",
                     "observationTitle": "Severe Combined Immunodeficiency [SCID]",
                     "contraindicationText": "Do not vaccinate if the patient has Severe Combined Immunodeficiency [SCID]."
                 },
                 {
-                    "observationCode": "028",
                     "observationTitle": "Intussusception",
                     "contraindicationText": "Do not vaccinate if the patient has intussusception."
                 },
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
-                    "observationCode": "083",
                     "observationTitle": "Severe allergic reaction after previous dose of Rotavirus",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Rotavirus vaccine."
                 }
@@ -29,7 +27,6 @@ final rotavirus = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
-                    "observationCode": "104",
                     "observationTitle": "Allergic reaction to latex",
                     "contraindicationText": "Do not vaccinate with Rotarix if the patient has an allergy to latex.",
                     "contraindicatedVaccine": [

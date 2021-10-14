@@ -27,6 +27,15 @@ Future<void> createSupportingData(
         vaccineGroup: antigenSupportingData.series?[0].vaccineGroup,
       );
 
+      print(targetDiseaseEnumToString[
+          antigenSupportingData.series?[0].targetDisease]);
+      print(targetDiseaseEnumToString[
+              antigenSupportingData.series?[0].targetDisease]
+          ?.replaceAll(' ', '_'));
+      print(targetDiseaseEnumToString[
+              antigenSupportingData.series?[0].targetDisease]
+          ?.replaceAll(' ', '_')
+          .replaceAll('-', '_'));
       final fileName = targetDiseaseEnumToString[
               antigenSupportingData.series?[0].targetDisease]
           ?.replaceAll(' ', '_')

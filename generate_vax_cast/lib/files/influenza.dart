@@ -1,17 +1,17 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final influenza = AntigenSupportingData.fromJson({
+    "targetDisease": "Influenza",
+    "vaccineGroup": "Influenza",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "085",
                     "observationTitle": "Severe allergic reaction after previous dose of Influenza",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Influenza vaccine.",
                     "contraindicationGuidance": "ACIP recommends an allergist consultation if the specific type of influenza vaccine is unknown."
                 },
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -20,7 +20,6 @@ final influenza = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
-                    "observationCode": "003",
                     "observationTitle": "Immunocompromised",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is immunocompromised.",
                     "contraindicatedVaccine": [
@@ -31,7 +30,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "007",
                     "observationTitle": "Pregnant",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is pregnant.",
                     "contraindicatedVaccine": [
@@ -42,7 +40,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "010",
                     "observationTitle": "Cerebrospinal fluid leaks",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has cerebrospinal fluid leaks.",
                     "contraindicatedVaccine": [
@@ -53,7 +50,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "011",
                     "observationTitle": "Cochlear Implants",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has cochlear implants.",
                     "contraindicatedVaccine": [
@@ -64,7 +60,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "027",
                     "observationTitle": "Asthma",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is between 2 and 4 years and has asthma.",
                     "contraindicatedVaccine": [
@@ -77,7 +72,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "033",
                     "observationTitle": "Taken influenza antiviral medications within the previous 48 hours",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has taken influenza antiviral medications  within the previous 48 hours.",
                     "contraindicatedVaccine": [
@@ -88,7 +82,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "034",
                     "observationTitle": "Receiving long-term aspirin therapy",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is between 2 and 17 years and is receiving long-term aspirin therapy.",
                     "contraindicatedVaccine": [
@@ -101,7 +94,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "102",
                     "observationTitle": "Severe allergic reaction to gelatin",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has had a severe allergic reaction to gelatin.",
                     "contraindicatedVaccine": [
@@ -112,7 +104,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "103",
                     "observationTitle": "Severe allergic reaction to arginine",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has had a severe allergic reaction to arginine.",
                     "contraindicatedVaccine": [
@@ -123,7 +114,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "106",
                     "observationTitle": "Severe allergic reaction to gentamicin",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has had a severe allergic reaction to gentamicin.",
                     "contraindicatedVaccine": [
@@ -134,7 +124,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "145",
                     "observationTitle": "B-lymphocyte [humoral] - Severe antibody deficiencies",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "contraindicatedVaccine": [
@@ -145,7 +134,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "147",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "contraindicatedVaccine": [
@@ -156,7 +144,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "148",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "contraindicatedVaccine": [
@@ -167,7 +154,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "150",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has cell-mediated or humoral T-lymphocyte defects related to interferon-gamma or interferon-alpha",
                     "contraindicatedVaccine": [
@@ -178,7 +164,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "153",
                     "observationTitle": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "contraindicatedVaccine": [
@@ -189,7 +174,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "154",
                     "observationTitle": "HIV/AIDS - severely immunocompromised",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has HIV/AIDS and is severely immunocompromised (See the CDC general recommendations for a definition of severely immunocompromised).",
                     "contraindicatedVaccine": [
@@ -200,7 +184,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "155",
                     "observationTitle": "HIV/AIDS - not severely immunocompromised",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has HIV/AIDS even if not severely immunocompromised (See the CDC general recommendations for a definition of severely immunocompromised).",
                     "contraindicatedVaccine": [
@@ -211,7 +194,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "156",
                     "observationTitle": "Generalized malignant neoplasm",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has generalized malignant neoplasm.",
                     "contraindicatedVaccine": [
@@ -222,7 +204,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "157",
                     "observationTitle": "Transplantation",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient received a transplant.",
                     "contraindicatedVaccine": [
@@ -233,7 +214,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "158",
                     "observationTitle": "Immunosuppressive therapy",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "contraindicatedVaccine": [
@@ -244,7 +224,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "159",
                     "observationTitle": "Radiation therapy",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient is undergoing radiation therapy.",
                     "contraindicatedVaccine": [
@@ -255,7 +234,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "160",
                     "observationTitle": "Anatomical or Functional Asplenia",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has anatomical or functional asplenia",
                     "contraindicatedVaccine": [
@@ -266,7 +244,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "161",
                     "observationTitle": "Chronic renal disease",
                     "contraindicationText": "Do not vaccinate with live attenuated influenza virus (LAIV) if the patient has chronic renal disease.",
                     "contraindicatedVaccine": [
@@ -277,7 +254,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "192",
                     "observationTitle": "Severe allergic reaction after previous dose of any egg-based IIV or LAIV influenza vaccine",
                     "contraindicationText": "Do not vaccinate with any egg-based IIV or LAIV influenza vaccine if the patient has had a severe allergic reaction after a previous dose of an egg-based IIV or LAIV influenza vaccine.",
                     "contraindicatedVaccine": [
@@ -308,7 +284,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "193",
                     "observationTitle": "Severe allergic reaction after previous dose of any ccIIV influenza vaccine",
                     "contraindicationText": "Do not vaccinate with any ccIIV or egg-based IIV or LAIV influenza vaccine if the patient has had a severe allergic reaction after a previous dose of a ccIIV influenza vaccine.",
                     "contraindicatedVaccine": [
@@ -347,7 +322,6 @@ final influenza = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "194",
                     "observationTitle": "Severe allergic reaction after previous dose of any RIV influenza vaccine",
                     "contraindicationText": "Do not vaccinate with any RIV or egg-based IIV or LAIV influenza vaccine if the patient has had a severe allergic reaction after a previous dose of an RIV influenza vaccine.",
                     "contraindicatedVaccine": [

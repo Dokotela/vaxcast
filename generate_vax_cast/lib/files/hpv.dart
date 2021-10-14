@@ -1,26 +1,24 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final hpv = AntigenSupportingData.fromJson({
+    "targetDisease": "HPV",
+    "vaccineGroup": "HPV",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "007",
                     "observationTitle": "Pregnant",
                     "contraindicationText": "Do not vaccinate if the patient is pregnant."
                 },
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
-                    "observationCode": "090",
                     "observationTitle": "Severe allergic reaction after previous dose of HPV",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of HPV vaccine."
                 },
                 {
-                    "observationCode": "110",
                     "observationTitle": "Hypersensitivity to yeast",
                     "contraindicationText": "Do not vaccinate with 9vHPV if the patient has a hypersensitivity to yeast."
                 }
@@ -904,8 +902,7 @@ final hpv = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "History of sexual abuse or assault",
-                        "code": "169"
+                        "text": "History of sexual abuse or assault"
                     },
                     "description": "Administer to persons who have a history of sexual abuse or assault.",
                     "beginAge": "0 days",
@@ -1144,8 +1141,7 @@ final hpv = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "History of sexual abuse or assault",
-                        "code": "169"
+                        "text": "History of sexual abuse or assault"
                     },
                     "description": "Administer to persons who have a history of sexual abuse or assault.",
                     "beginAge": "0 days",
@@ -1392,96 +1388,84 @@ final hpv = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
-                        "code": "145"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
-                        "code": "146"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
-                        "code": "147"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
-                        "code": "148"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies",
-                        "code": "149"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies"
                     },
                     "description": "Administer to persons who have T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha",
-                        "code": "150"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha"
                     },
                     "description": "Administer to persons who have T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
-                        "code": "153"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Generalized malignant neoplasm",
-                        "code": "156"
+                        "text": "Generalized malignant neoplasm"
                     },
                     "description": "Administer to persons who have generalized malignant neoplasm.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation",
-                        "code": "157"
+                        "text": "Transplantation"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy",
-                        "code": "158"
+                        "text": "Immunosuppressive therapy"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy",
-                        "code": "159"
+                        "text": "Radiation therapy"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection",
-                        "code": "186"
+                        "text": "HIV Infection"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "9 years"
@@ -1678,96 +1662,84 @@ final hpv = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
-                        "code": "145"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
-                        "code": "146"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
-                        "code": "147"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
-                        "code": "148"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies",
-                        "code": "149"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies"
                     },
                     "description": "Administer to persons who have T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha",
-                        "code": "150"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha"
                     },
                     "description": "Administer to persons who have T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
-                        "code": "153"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Generalized malignant neoplasm",
-                        "code": "156"
+                        "text": "Generalized malignant neoplasm"
                     },
                     "description": "Administer to persons who have generalized malignant neoplasm.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation",
-                        "code": "157"
+                        "text": "Transplantation"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy",
-                        "code": "158"
+                        "text": "Immunosuppressive therapy"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy",
-                        "code": "159"
+                        "text": "Radiation therapy"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "9 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection",
-                        "code": "186"
+                        "text": "HIV Infection"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "9 years"

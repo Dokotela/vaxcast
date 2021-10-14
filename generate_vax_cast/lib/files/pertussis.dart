@@ -1,16 +1,16 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final pertussis = AntigenSupportingData.fromJson({
+    "targetDisease": "Pertussis",
+    "vaccineGroup": "DTaP/Tdap/Td",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "086",
                     "observationTitle": "Severe allergic reaction after previous dose of Pertussis",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Pertussis vaccine."
                 },
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -19,7 +19,6 @@ final pertussis = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
-                    "observationCode": "076",
                     "observationTitle": "Progressive neurologic disorder",
                     "contraindicationText": "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
                     "contraindicatedVaccine": [
@@ -82,7 +81,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
-                    "observationCode": "079",
                     "observationTitle": "Encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine",
                     "contraindicationText": "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
                     "contraindicatedVaccine": [
@@ -3653,8 +3651,7 @@ final pertussis = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Pregnant",
-                        "code": "007"
+                        "text": "Pregnant"
                     },
                     "description": "Administer to women who are pregnant.",
                     "guidance": "Pregnant women should receive 1 dose of Tdap during each pregnancy, preferably during the early part of gestational weeks 27-36, regardless of prior history of receiving Tdap."
@@ -3670,8 +3667,7 @@ final pertussis = AntigenSupportingData.fromJson({
                         {
                             "fromPrevious": "N",
                             "fromRelevantObs": {
-                                "text": "Onset of pregnancy",
-                                "code": "170"
+                                "text": "Onset of pregnancy"
                             },
                             "earliestRecInt": "27 weeks",
                             "latestRecInt": "36 weeks"

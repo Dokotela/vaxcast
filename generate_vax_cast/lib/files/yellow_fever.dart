@@ -1,86 +1,72 @@
 import 'package:vax_cast/vax_cast.dart';
 
 final yellow_ever = AntigenSupportingData.fromJson({
+    "targetDisease": "Yellow Fever",
+    "vaccineGroup": "Yellow Fever",
     "contraindications": {
         "vaccineGroup": {
             "contraindication": [
                 {
-                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
-                    "observationCode": "099",
                     "observationTitle": "Severe allergic reaction after previous dose of Yellow Fever",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Yellow Fever vaccine."
                 },
                 {
-                    "observationCode": "101",
                     "observationTitle": "Allergic reaction to egg protein",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to egg protein."
                 },
                 {
-                    "observationCode": "102",
                     "observationTitle": "Severe allergic reaction to gelatin",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to gelatin."
                 },
                 {
-                    "observationCode": "105",
                     "observationTitle": "Severe allergic reaction to chicken protein",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to chicken protein."
                 },
                 {
-                    "observationCode": "145",
                     "observationTitle": "B-lymphocyte [humoral] - Severe antibody deficiencies",
                     "contraindicationText": "Do not vaccinate if the patient has severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency)."
                 },
                 {
-                    "observationCode": "146",
                     "observationTitle": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
                     "contraindicationText": "Do not vaccinate if the patient has less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency)."
                 },
                 {
-                    "observationCode": "147",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
                     "contraindicationText": "Do not vaccinate if the patient has complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome)."
                 },
                 {
-                    "observationCode": "148",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
                     "contraindicationText": "Do not vaccinate if the patient has partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia)."
                 },
                 {
-                    "observationCode": "150",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha",
                     "contraindicationText": "Do not vaccinate if the patient has cell-mediated or humoral T-lymphocyte defects related to interferon-gamma or interferon-alpha"
                 },
                 {
-                    "observationCode": "153",
                     "observationTitle": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
                     "contraindicationText": "Do not vaccinate if the patient has a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency)."
                 },
                 {
-                    "observationCode": "154",
                     "observationTitle": "HIV/AIDS - severely immunocompromised",
                     "contraindicationText": "Do not vaccinate if the patient has HIV/AIDS and is severely immunocompromised (See the CDC general recommendations for a definition of severely immunocompromised)."
                 },
                 {
-                    "observationCode": "156",
                     "observationTitle": "Generalized malignant neoplasm",
                     "contraindicationText": "Do not vaccinate if the patient has generalized malignant neoplasm."
                 },
                 {
-                    "observationCode": "157",
                     "observationTitle": "Transplantation",
                     "contraindicationText": "Do not vaccinate if the patient received a transplant."
                 },
                 {
-                    "observationCode": "158",
                     "observationTitle": "Immunosuppressive therapy",
                     "contraindicationText": "Do not vaccinate if the patient is undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies. "
                 },
                 {
-                    "observationCode": "159",
                     "observationTitle": "Radiation therapy",
                     "contraindicationText": "Do not vaccinate if the patient is undergoing radiation therapy."
                 }
@@ -89,7 +75,6 @@ final yellow_ever = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
-                    "observationCode": "009",
                     "observationTitle": "Breastfeeding",
                     "contraindicationText": "Do not vaccinate if the patient is breastfeeding.",
                     "contraindicationGuidance": "Vaccination with Stamaril may occur if the patient is able to suspend breastfeeding for 14 days after administration.",
@@ -129,8 +114,7 @@ final yellow_ever = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Travel to country with a Yellow Fever vaccination entry requirement",
-                        "code": "045"
+                        "text": "Travel to country with a Yellow Fever vaccination entry requirement"
                     },
                     "description": "Administer to persons who travel to a country with a Yellow Fever vaccination entry requirement.",
                     "beginAge": "9 months",
@@ -138,24 +122,21 @@ final yellow_ever = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Resident of area at risk for exposure to the disease",
-                        "code": "047"
+                        "text": "Resident of area at risk for exposure to the disease"
                     },
                     "description": "Administer to residents of an area at risk for exposure to the disease.",
                     "beginAge": "9 months"
                 },
                 {
                     "observationCode": {
-                        "text": "Laboratory personnel who might be exposed to YFV",
-                        "code": "052"
+                        "text": "Laboratory personnel who might be exposed to YFV"
                     },
                     "description": "Administer to laboratory personnel who might be exposed to virulent YFV or to concentrated preparations of YF vaccine virus strains by direct or indirect contact or by aerosols.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to areas at risk for Yellow Fever transmission",
-                        "code": "162"
+                        "text": "Travel to areas at risk for Yellow Fever transmission"
                     },
                     "description": "Administer to persons who travel to areas at risk for Yellow Fever transmission.",
                     "beginAge": "9 months",
