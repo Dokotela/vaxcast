@@ -1,6 +1,6 @@
 import 'package:vax_cast/vax_cast.dart';
 
-final japanese_ncephalitis = AntigenSupportingData.fromJson({
+final japaneseEncephalitis = AntigenSupportingData.fromJson({
     "targetDisease": "Japanese Encephalitis",
     "vaccineGroup": "Japanese Encephalitis",
     "contraindications": {

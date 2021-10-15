@@ -14,11 +14,14 @@ Future<void> main() async {
   /// Edit this out if testing generating files, this writes files to the actual program
   final dir = Directory('lib/files');
   final fileList = await dir.list().map((event) => event.path).toList();
-  for(var file in fileList){
+  for (var file in fileList) {
     final newFile = await File(file).readAsString();
-    if(!(await File('../vax_cast/lib/supporting_data/files/$file').exists())){
-      await File('../vax_cast/lib/supporting_data/files/$file').create();
+    if (!(await File('../vax_cast/lib/supporting_data/files/$file').exists())) {
+      await File(
+              '../vax_cast/lib/supporting_data/${file.replaceAll("lib/", "")}')
+          .create();
     }
-    await File('../vax_cast/lib/supporting_data/files/$file').writeAsString(newFile);
+    await File('../vax_cast/lib/supporting_data/${file.replaceAll("lib/", "")}')
+        .writeAsString(newFile);
   }
 }

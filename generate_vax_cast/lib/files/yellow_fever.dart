@@ -1,6 +1,6 @@
 import 'package:vax_cast/vax_cast.dart';
 
-final yellow_ever = AntigenSupportingData.fromJson({
+final yellowFever = AntigenSupportingData.fromJson({
     "targetDisease": "Yellow Fever",
     "vaccineGroup": "Yellow Fever",
     "contraindications": {
