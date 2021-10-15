@@ -7,10 +7,12 @@ final pertussis = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "086",
                     "observationTitle": "Severe allergic reaction after previous dose of Pertussis",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Pertussis vaccine."
                 },
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -19,6 +21,7 @@ final pertussis = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
+                    "observationCode": "076",
                     "observationTitle": "Progressive neurologic disorder",
                     "contraindicationText": "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
                     "contraindicatedVaccine": [
@@ -81,6 +84,7 @@ final pertussis = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "079",
                     "observationTitle": "Encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine",
                     "contraindicationText": "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
                     "contraindicatedVaccine": [
@@ -286,7 +290,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -303,7 +306,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -315,7 +317,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -471,7 +478,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -488,7 +494,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -500,7 +505,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -656,7 +666,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -673,7 +682,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -685,7 +693,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -828,7 +841,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -845,7 +857,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -857,7 +868,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "4 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -996,7 +1012,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1013,7 +1028,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -1025,7 +1039,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -1146,7 +1165,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1160,7 +1178,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 3 doses",
@@ -1173,7 +1196,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years",
@@ -1185,7 +1213,19 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCount": "4",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "3",
+                                    "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -1196,7 +1236,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "4",
                                     "setDescription": "Dose is not required if the patient has received more than 4 doses",
@@ -1315,7 +1360,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1329,7 +1373,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "greater than"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 1 or more doses of Td on or after 7 years.",
@@ -1349,7 +1398,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -1470,7 +1518,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1484,7 +1531,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "greater than"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 2 or more doses of Td on or after 7 years.",
@@ -1504,7 +1556,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -1625,7 +1676,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1639,7 +1689,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "greater than"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 1 valid dose on or after 10 years.",
@@ -1759,7 +1814,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1921,7 +1975,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1938,7 +1991,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -1950,7 +2002,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -2106,7 +2163,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2123,7 +2179,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -2135,7 +2190,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -2291,7 +2351,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2308,7 +2367,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -2320,7 +2378,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -2463,7 +2526,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2480,7 +2542,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -2492,7 +2553,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "4 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -2631,7 +2697,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2648,7 +2713,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -2660,7 +2724,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -2781,7 +2850,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2794,7 +2862,19 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCount": "1",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has received 1 dose and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -2804,7 +2884,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 2 doses and no doses prior to 12 months",
@@ -2816,7 +2901,19 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCount": "2",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Dose is not required if the patient has received 2 doses and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -2826,7 +2923,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has recevied 3 doses with 1 dose of Tdap on or after 7 years and no doses prior to 12 months",
@@ -2838,7 +2940,19 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCount": "3",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "3",
+                                    "setDescription": "Dose is not required if the patient has recevied 3 doses with 1 dose of Tdap on or after 7 years and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -2847,7 +2961,19 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseType": "Valid",
                                             "doseCountLogic": "greater than",
                                             "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "3",
+                                    "setDescription": "Dose is not required if the patient has recevied 3 doses with 1 dose of Tdap on or after 7 years and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "3",
                                             "conditionType": "Vaccine Count by Age",
@@ -2857,7 +2983,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "4",
                                     "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years and no doses prior to 12 months",
@@ -2869,7 +3000,19 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCount": "4",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "4",
+                                    "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -2878,7 +3021,19 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseType": "Valid",
                                             "doseCountLogic": "greater than",
                                             "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "4",
+                                    "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "3",
                                             "conditionType": "Vaccine Count by Age",
@@ -2888,7 +3043,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "5",
                                     "setDescription": "Dose is not required if the patient has received more than 4 doses and no doses prior to 12 months",
@@ -2900,7 +3060,19 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCount": "4",
                                             "doseType": "Valid",
                                             "doseCountLogic": "greater than"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "5",
+                                    "setDescription": "Dose is not required if the patient has received more than 4 doses and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -3016,7 +3188,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3030,7 +3201,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "greater than"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 1 or more doses of Td on or after 7 years.",
@@ -3050,7 +3226,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -3171,7 +3346,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3185,7 +3359,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "greater than"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 2 or more doses of Td on or after 7 years.",
@@ -3205,7 +3384,6 @@ final pertussis = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -3326,7 +3504,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3340,7 +3517,12 @@ final pertussis = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "greater than"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 1 valid dose on or after 10 years.",
@@ -3460,7 +3642,6 @@ final pertussis = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3503,7 +3684,8 @@ final pertussis = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Pregnant"
+                        "text": "Pregnant",
+                        "code": "007"
                     },
                     "description": "Administer to women who are pregnant.",
                     "guidance": "Pregnant women should receive 1 dose of Tdap during each pregnancy, preferably during the early part of gestational weeks 27-36, regardless of prior history of receiving Tdap."
@@ -3516,7 +3698,8 @@ final pertussis = AntigenSupportingData.fromJson({
                         {
                             "fromPrevious": "N",
                             "fromRelevantObs": {
-                                "text": "Onset of pregnancy"
+                                "text": "Onset of pregnancy",
+                                "code": "170"
                             },
                             "earliestRecInt": "27 weeks",
                             "latestRecInt": "36 weeks"

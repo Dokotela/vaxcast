@@ -92,7 +92,7 @@ Series createSeries(String? seriesString) {
         newSeries.indication!.add(
           Indication(
             observationCode:
-                ObservationCode(code: stringToEnum(code) as Obs?, text: text),
+                ObservationCode(code: stringToEnum(Obs, code) as Obs?, text: text),
             description: row[2]!.toString().contains('n/a')
                 ? null
                 : valueToString(row[2]!),

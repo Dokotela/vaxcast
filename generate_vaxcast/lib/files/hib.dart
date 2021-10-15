@@ -7,20 +7,24 @@ final hib = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
+                    "observationCode": "098",
                     "observationTitle": "Severe allergic reaction after previous dose of Hib",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Hib vaccine."
                 },
                 {
+                    "observationCode": "159",
                     "observationTitle": "Radiation therapy",
                     "contraindicationText": "Do not vaccinate if the patient is undergoing radiation therapy, including 14 days before the start of therapy and 3 months after the completion of therapy.",
                     "beginAge": "6 weeks",
                     "endAge": "5 years"
                 },
                 {
+                    "observationCode": "168",
                     "observationTitle": "Chemotherapy",
                     "contraindicationText": "Do not vaccinate if the patient is undergoing chemotherapy, including 14 days before the start of therapy and 3 months after the completion of therapy.",
                     "beginAge": "6 weeks",
@@ -31,6 +35,7 @@ final hib = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
+                    "observationCode": "076",
                     "observationTitle": "Progressive neurologic disorder",
                     "contraindicationText": "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
                     "contraindicatedVaccine": [
@@ -45,6 +50,7 @@ final hib = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "079",
                     "observationTitle": "Encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine",
                     "contraindicationText": "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
                     "contraindicatedVaccine": [
@@ -59,6 +65,7 @@ final hib = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "104",
                     "observationTitle": "Allergic reaction to latex",
                     "contraindicationText": "Do not vaccinate if the patient has an allergy to latex.",
                     "contraindicatedVaccine": [
@@ -77,6 +84,7 @@ final hib = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "110",
                     "observationTitle": "Hypersensitivity to yeast",
                     "contraindicationText": "Do not vaccinate if the patient has a hypersensitivity to yeast.",
                     "contraindicatedVaccine": [
@@ -338,7 +346,6 @@ final hib = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -355,7 +362,6 @@ final hib = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "2",
@@ -499,7 +505,6 @@ final hib = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -511,7 +516,12 @@ final hib = AntigenSupportingData.fromJson({
                                             "beginAge": "12 months"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Target Dose is not required if the current dose was administered on or after 12 months - 4 days of age AND the previous dose was administered at least 8 weeks - 4 day from the current dose.",
@@ -521,7 +531,19 @@ final hib = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Age",
                                             "beginAge": "12 months - 4 days"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Target Dose is not required if the current dose was administered on or after 12 months - 4 days of age AND the previous dose was administered at least 8 weeks - 4 day from the current dose.",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Interval",
@@ -533,7 +555,6 @@ final hib = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -923,7 +944,6 @@ final hib = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -935,7 +955,12 @@ final hib = AntigenSupportingData.fromJson({
                                             "beginAge": "15 months"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Target Dose is not required if the current dose was administered on or after 15 months - 4 days of age AND the previous dose was administered at least 8 weeks - 4 day from the current dose.",
@@ -945,7 +970,19 @@ final hib = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Age",
                                             "beginAge": "15 months - 4 days"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Target Dose is not required if the current dose was administered on or after 15 months - 4 days of age AND the previous dose was administered at least 8 weeks - 4 day from the current dose.",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Interval",
@@ -957,7 +994,6 @@ final hib = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -1681,7 +1717,8 @@ final hib = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have early complement component deficiencies.",
                     "beginAge": "12 months",
@@ -1689,7 +1726,8 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
+                        "code": "146"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte [humoral] - antibody deficiencies [e.g., selective IgA deficiency and IgG subclass deficiency].",
                     "beginAge": "12 months",
@@ -1697,7 +1735,8 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "12 months",
@@ -1816,7 +1855,6 @@ final hib = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1948,7 +1986,6 @@ final hib = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1964,7 +2001,12 @@ final hib = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "greater than"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 2 or more doses on or after the age of 12 months",
@@ -2004,7 +2046,8 @@ final hib = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Undergoing elective splenectomy"
+                        "text": "Undergoing elective splenectomy",
+                        "code": "002"
                     },
                     "description": "Administered to persons who are undergoing elective splenectomy if they have not previously received Hib vaccine. Vaccination 14 or more days before splenectomy is suggested.",
                     "beginAge": "15 months",
@@ -2012,14 +2055,16 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "5 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "5 years",
@@ -2138,7 +2183,8 @@ final hib = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Recipient of a hematopoietic stem cell transplant"
+                        "text": "Recipient of a hematopoietic stem cell transplant",
+                        "code": "004"
                     },
                     "description": "Administer to recipients of a hematopoietic stem cell transplant (HSCT) 6 to 12 months after a successful transplant, regardless of vaccination history.",
                     "beginAge": "6 weeks",
@@ -2152,7 +2198,8 @@ final hib = AntigenSupportingData.fromJson({
                         {
                             "fromPrevious": "N",
                             "fromRelevantObs": {
-                                "text": "Date of hematopoietic stem cell transplant"
+                                "text": "Date of hematopoietic stem cell transplant",
+                                "code": "171"
                             },
                             "earliestRecInt": "6 months",
                             "latestRecInt": "12 months"

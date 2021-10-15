@@ -43,7 +43,7 @@ Contraindications? contraindications(String? contraindicationString) {
       var text = i[1]!.toString().substring(0, open - 1);
       contraindications.vaccineGroup!.contraindication!.add(
         GroupContraindication(
-          observationCode: stringToEnum(code) as Obs?,
+          observationCode: stringToEnum(Obs, code) as Obs?,
           observationTitle: text,
           contraindicationText: i[2]!.toString(),
           contraindicationGuidance:
@@ -74,7 +74,7 @@ Contraindications? contraindications(String? contraindicationString) {
         var text = codeText.substring(0, open - 1);
         contraindications.vaccine!.contraindication!.add(
           VaccineContraindication(
-            observationCode: stringToEnum(code) as Obs?,
+            observationCode: stringToEnum(Obs, code) as Obs?,
             observationTitle: text,
             contraindicationText: i.length < 3 || i[2]!.toString() == 'n/a'
                 ? null

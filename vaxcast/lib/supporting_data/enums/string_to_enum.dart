@@ -1,7 +1,7 @@
 import 'enums.dart';
 
-Enum? stringToEnum(String value) {
-  switch (value.runtimeType) {
+Enum? stringToEnum<T>(Type enumType, String value) {
+  switch (enumType) {
     case Binary:
       return binaryStringToEnum[value];
 

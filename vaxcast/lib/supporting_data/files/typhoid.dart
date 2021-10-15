@@ -7,18 +7,22 @@ final typhoid = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "029",
                     "observationTitle": "Acute gastroenteritis",
                     "contraindicationText": "Do not vaccinate if the patient has acute gastroenteritis."
                 },
                 {
+                    "observationCode": "030",
                     "observationTitle": "Acute febrile illness",
                     "contraindicationText": "Do not vaccinate if the patient has acute febrile illness."
                 },
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
+                    "observationCode": "084",
                     "observationTitle": "Severe allergic reaction after previous dose of Typhoid",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Typhoid vaccine."
                 }
@@ -27,6 +31,7 @@ final typhoid = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
+                    "observationCode": "035",
                     "observationTitle": "Antimicrobial or antimalarial taken within 72 hours",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has taken antimicrobial or antimalarial medications  within the previous 72 hours.",
                     "contraindicatedVaccine": [
@@ -37,6 +42,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "145",
                     "observationTitle": "B-lymphocyte [humoral] - Severe antibody deficiencies",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "contraindicatedVaccine": [
@@ -47,6 +53,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "147",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "contraindicatedVaccine": [
@@ -57,6 +64,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "148",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "contraindicatedVaccine": [
@@ -67,6 +75,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "149",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has T-lymphocyte [cell-mediated and humoral] - interferon-gamma/Interleukin 12 axis deficiencies.",
                     "contraindicatedVaccine": [
@@ -77,6 +86,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "150",
                     "observationTitle": "T-lymphocyte [cell-mediated and humoral] - interferon-gamma or interferon-alpha",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has cell-mediated or humoral T-lymphocyte defects related to interferon-gamma or interferon-alpha",
                     "contraindicatedVaccine": [
@@ -87,6 +97,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "152",
                     "observationTitle": "Phagocytic function - Chronic granulomatous disease",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has phagocytic function - chronic granulomatous disease.",
                     "contraindicatedVaccine": [
@@ -97,6 +108,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "153",
                     "observationTitle": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "contraindicatedVaccine": [
@@ -107,6 +119,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "156",
                     "observationTitle": "Generalized malignant neoplasm",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient has generalized malignant neoplasm.",
                     "contraindicatedVaccine": [
@@ -117,6 +130,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "157",
                     "observationTitle": "Transplantation",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient received a transplant.",
                     "contraindicatedVaccine": [
@@ -127,6 +141,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "158",
                     "observationTitle": "Immunosuppressive therapy",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient is undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "contraindicatedVaccine": [
@@ -137,6 +152,7 @@ final typhoid = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "159",
                     "observationTitle": "Radiation therapy",
                     "contraindicationText": "Do not vaccinate with live attenuated typhoid virus (Ty21a) if the patient is undergoing radiation therapy.",
                     "contraindicatedVaccine": [
@@ -169,21 +185,24 @@ final typhoid = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Microbiology laboratorians who work frequently with S. typhi"
+                        "text": "Microbiology laboratorians who work frequently with S. typhi",
+                        "code": "051"
                     },
                     "description": "Administer to persons who are microbiology laboratorians who work frequently with S. typhi.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Intimate exposure to a documented S. typhi carrier"
+                        "text": "Intimate exposure to a documented S. typhi carrier",
+                        "code": "072"
                     },
                     "description": "Administer to persons who have intimate exposure to a documented S. typhi carrier.",
                     "beginAge": "2 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to areas in which there is a recognized risk of exposure to S. typhi"
+                        "text": "Travel to areas in which there is a recognized risk of exposure to S. typhi",
+                        "code": "163"
                     },
                     "description": "Administer to persons who travel to areas in which there is a recognized risk of exposure to S. typhi.",
                     "beginAge": "2 years"
@@ -259,21 +278,24 @@ final typhoid = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Microbiology laboratorians who work frequently with S. typhi"
+                        "text": "Microbiology laboratorians who work frequently with S. typhi",
+                        "code": "051"
                     },
                     "description": "Administer to persons who are microbiology laboratorians who work frequently with S. typhi.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Intimate exposure to a documented S. typhi carrier"
+                        "text": "Intimate exposure to a documented S. typhi carrier",
+                        "code": "072"
                     },
                     "description": "Administer to persons who have intimate exposure to a documented S. typhi carrier.",
                     "beginAge": "2 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to areas in which there is a recognized risk of exposure to S. typhi"
+                        "text": "Travel to areas in which there is a recognized risk of exposure to S. typhi",
+                        "code": "163"
                     },
                     "description": "Administer to persons who travel to areas in which there is a recognized risk of exposure to S. typhi.",
                     "beginAge": "2 years"

@@ -7,10 +7,12 @@ final rabies = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
+                    "observationCode": "113",
                     "observationTitle": "Severe allergic reaction after previous dose of Rabies",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Rabies vaccine."
                 }
@@ -38,7 +40,8 @@ final rabies = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Rabies researchers"
+                        "text": "Rabies researchers",
+                        "code": "053"
                     },
                     "description": "Administer to Rabies researchers.",
                     "beginAge": "0 days"
@@ -260,28 +263,32 @@ final rabies = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Veterinarians and their staff"
+                        "text": "Veterinarians and their staff",
+                        "code": "060"
                     },
                     "description": "Administer to veterinarians and their staff.",
                     "beginAge": "0 days"
                 },
                 {
                     "observationCode": {
-                        "text": "Animal handlers"
+                        "text": "Animal handlers",
+                        "code": "061"
                     },
                     "description": "Administer to animal handlers.",
                     "beginAge": "0 days"
                 },
                 {
                     "observationCode": {
-                        "text": "Persons whose activities bring them into frequent contact with rabies virus or potentially rabid animals"
+                        "text": "Persons whose activities bring them into frequent contact with rabies virus or potentially rabid animals",
+                        "code": "062"
                     },
                     "description": "Administer to persons whose activities bring them into frequent contact with rabies virus or potentially rabid animals.",
                     "beginAge": "0 days"
                 },
                 {
                     "observationCode": {
-                        "text": "International travel with possible contact with animals in areas where rabies is enzootic and immediate access to appropriate medical care might be limited"
+                        "text": "International travel with possible contact with animals in areas where rabies is enzootic and immediate access to appropriate medical care might be limited",
+                        "code": "144"
                     },
                     "description": "Administer to persons with plans for international travel with possible contact with animals in areas where rabies is enzootic and immediate access to appropriate medical care might be limited.",
                     "beginAge": "0 days"

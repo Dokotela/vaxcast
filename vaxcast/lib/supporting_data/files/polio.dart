@@ -7,26 +7,32 @@ final polio = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "081",
                     "observationTitle": "Severe allergic reaction after previous dose of Polio",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Polio vaccine."
                 },
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
+                    "observationCode": "107",
                     "observationTitle": "Severe allergic reaction to neomycin",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to neomycin."
                 },
                 {
+                    "observationCode": "108",
                     "observationTitle": "Severe allergic reaction to streptomycin",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to streptomycin."
                 },
                 {
+                    "observationCode": "109",
                     "observationTitle": "Severe allergic reaction to polymyxin B",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to polymyxin B."
                 },
                 {
+                    "observationCode": "111",
                     "observationTitle": "Hypersensitivity to the preservative 2-phenoxyethanol",
                     "contraindicationText": "Do not vaccinate if the patient has a hypersensitivity to the preservative 2-phenoxyethanol."
                 }
@@ -35,6 +41,7 @@ final polio = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
+                    "observationCode": "076",
                     "observationTitle": "Progressive neurologic disorder",
                     "contraindicationText": "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
                     "contraindicatedVaccine": [
@@ -45,6 +52,7 @@ final polio = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "079",
                     "observationTitle": "Encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine",
                     "contraindicationText": "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
                     "contraindicatedVaccine": [
@@ -403,7 +411,6 @@ final polio = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -415,7 +422,12 @@ final polio = AntigenSupportingData.fromJson({
                                             "beginAge": "4 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Target Dose is not required if the current dose was administered on or after 4 years - 4 days of age AND at least 6 months - 4 days from the previous dose.",
@@ -425,7 +437,19 @@ final polio = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Age",
                                             "beginAge": "4 years - 4 days"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Target Dose is not required if the current dose was administered on or after 4 years - 4 days of age AND at least 6 months - 4 days from the previous dose.",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Interval",
@@ -437,7 +461,6 @@ final polio = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -924,7 +947,6 @@ final polio = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -936,7 +958,12 @@ final polio = AntigenSupportingData.fromJson({
                                             "beginAge": "4 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Target Dose is not required if the current dose was administered on or after 4 years - 4 days of age AND at least 6 months - 4 days from the previous dose.",
@@ -946,7 +973,19 @@ final polio = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Age",
                                             "beginAge": "4 years - 4 days"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Target Dose is not required if the current dose was administered on or after 4 years - 4 days of age AND at least 6 months - 4 days from the previous dose.",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Interval",
@@ -958,7 +997,6 @@ final polio = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -1220,21 +1258,24 @@ final polio = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Laboratory workers who handle specimens that might contain polioviruses"
+                        "text": "Laboratory workers who handle specimens that might contain polioviruses",
+                        "code": "054"
                     },
                     "description": "Administer to laboratory workers who handle specimens that might contain polioviruses.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Health-care workers who have close contact with patients who might be excreting wild polioviruses"
+                        "text": "Health-care workers who have close contact with patients who might be excreting wild polioviruses",
+                        "code": "056"
                     },
                     "description": "Administer to health-care workers who have close contact with patients who might be excreting wild polioviruses.",
                     "beginAge": "18 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to areas or countries where polio is epidemic or endemic"
+                        "text": "Travel to areas or countries where polio is epidemic or endemic",
+                        "code": "143"
                     },
                     "description": "Administer to travelers to areas or countries where polio is epidemic or endemic.",
                     "beginAge": "18 years"
@@ -1311,7 +1352,6 @@ final polio = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1408,7 +1448,6 @@ final polio = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1504,16 +1543,7 @@ final polio = AntigenSupportingData.fromJson({
                     ],
                     "conditionalSkip": [
                         {
-                            "context": "Both",
-                            "setLogic": "n/a",
-                            "set": [
-                                {
-                                    "setDescription": "n/a",
-                                    "condition": [
-                                        {}
-                                    ]
-                                }
-                            ]
+                            "context": "Both"
                         }
                     ],
                     "recurringDose": "No"

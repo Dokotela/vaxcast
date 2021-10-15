@@ -6,6 +6,7 @@ final hepb = AntigenSupportingData.fromJson({
     "immunity": {
         "clinicalHistory": [
             {
+                "guidelineCode": "019",
                 "guidelineTitle": "Laboratory Evidence of Immunity or confirmation of Hepatitis B disease"
             }
         ]
@@ -14,14 +15,17 @@ final hepb = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "097",
                     "observationTitle": "Severe allergic reaction after previous dose of Hepatitis B",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Hepatitis B vaccine."
                 },
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 },
                 {
+                    "observationCode": "110",
                     "observationTitle": "Hypersensitivity to yeast",
                     "contraindicationText": "Do not vaccinate if the patient has a hypersensitivity to yeast."
                 }
@@ -30,6 +34,7 @@ final hepb = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
+                    "observationCode": "007",
                     "observationTitle": "Pregnant",
                     "contraindicationText": "Do not vaccinate if the patient is pregnant.",
                     "contraindicatedVaccine": [
@@ -40,6 +45,7 @@ final hepb = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "076",
                     "observationTitle": "Progressive neurologic disorder",
                     "contraindicationText": "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
                     "contraindicatedVaccine": [
@@ -54,6 +60,7 @@ final hepb = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "079",
                     "observationTitle": "Encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine",
                     "contraindicationText": "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
                     "contraindicatedVaccine": [
@@ -68,6 +75,7 @@ final hepb = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "107",
                     "observationTitle": "Severe allergic reaction to neomycin",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to neomycin.",
                     "contraindicatedVaccine": [
@@ -82,6 +90,7 @@ final hepb = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "109",
                     "observationTitle": "Severe allergic reaction to polymyxin B",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to polymyxin B.",
                     "contraindicatedVaccine": [
@@ -1398,7 +1407,6 @@ final hepb = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1724,7 +1732,6 @@ final hepb = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1766,14 +1773,16 @@ final hepb = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Patient seeks protection"
+                        "text": "Patient seeks protection",
+                        "code": "001"
                     },
                     "description": "Administer to persons seeking protection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes"
+                        "text": "Diabetes",
+                        "code": "014"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "19 years",
@@ -1782,7 +1791,8 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease"
+                        "text": "Chronic liver disease",
+                        "code": "015"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "19 years",
@@ -1790,98 +1800,112 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Men who have sex with men"
+                        "text": "Men who have sex with men",
+                        "code": "036"
                     },
                     "description": "Administer to men who have sex with men.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Not in a long-term, mutually monogamous relationship"
+                        "text": "Not in a long-term, mutually monogamous relationship",
+                        "code": "037"
                     },
                     "description": "Administer to persons not in a long-term, mutually monogamous relationship.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Sex partner of Hepatitis B surface antigen-positive persons"
+                        "text": "Sex partner of Hepatitis B surface antigen-positive persons",
+                        "code": "038"
                     },
                     "description": "Administer to persons who are a sex partner of a Hepatitis B surface antigen-positive person.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receives treatment for STD"
+                        "text": "Receives treatment for STD",
+                        "code": "039"
                     },
                     "description": "Administer to persons who receive treatment for STD.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Illicit injection drug use"
+                        "text": "Illicit injection drug use",
+                        "code": "041"
                     },
                     "description": "Administer to persons who use illicit injection drugs.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Health care personnel"
+                        "text": "Health care personnel",
+                        "code": "055"
                     },
                     "description": "Administer to healthcare personnel.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Public safety worker exposed to blood or infection body fluids"
+                        "text": "Public safety worker exposed to blood or infection body fluids",
+                        "code": "057"
                     },
                     "description": "Administer to public safety workers exposed to blood or infection body fluids",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Staff of institution for persons with developmental disabilities"
+                        "text": "Staff of institution for persons with developmental disabilities",
+                        "code": "058"
                     },
                     "description": "Administer to staff of institution for persons with developmental disabilities",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Client of institution for persons with developmental disabilities"
+                        "text": "Client of institution for persons with developmental disabilities",
+                        "code": "065"
                     },
                     "description": "Administer to persons who are a client of institution for persons with developmental disabilities.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "In correctional facility"
+                        "text": "In correctional facility",
+                        "code": "069"
                     },
                     "description": "Administer to persons who are in a correctional facility.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Household contact with hepatitis B surface antigen-positive persons"
+                        "text": "Household contact with hepatitis B surface antigen-positive persons",
+                        "code": "071"
                     },
                     "description": "Administer to persons who have household contact with hepatitis B surface antigen-positive persons.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection"
+                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection",
+                        "code": "166"
                     },
                     "description": "Administered to persons who travel to countries with high or intermediate prevalence of chronic HBV infection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Patient seeks Hepatitis B protection"
+                        "text": "Patient seeks Hepatitis B protection",
+                        "code": "176"
                     },
                     "description": "Administer to persons seeking protection from Hepatitis B.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "19 years"
@@ -2198,14 +2222,16 @@ final hepb = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Patient seeks protection"
+                        "text": "Patient seeks protection",
+                        "code": "001"
                     },
                     "description": "Administer to persons seeking protection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes"
+                        "text": "Diabetes",
+                        "code": "014"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "19 years",
@@ -2214,7 +2240,8 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease"
+                        "text": "Chronic liver disease",
+                        "code": "015"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "19 years",
@@ -2222,98 +2249,112 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Men who have sex with men"
+                        "text": "Men who have sex with men",
+                        "code": "036"
                     },
                     "description": "Administer to men who have sex with men.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Not in a long-term, mutually monogamous relationship"
+                        "text": "Not in a long-term, mutually monogamous relationship",
+                        "code": "037"
                     },
                     "description": "Administer to persons not in a long-term, mutually monogamous relationship.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Sex partner of Hepatitis B surface antigen-positive persons"
+                        "text": "Sex partner of Hepatitis B surface antigen-positive persons",
+                        "code": "038"
                     },
                     "description": "Administer to persons who are a sex partner of a Hepatitis B surface antigen-positive person.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receives treatment for STD"
+                        "text": "Receives treatment for STD",
+                        "code": "039"
                     },
                     "description": "Administer to persons who receive treatment for STD.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Illicit injection drug use"
+                        "text": "Illicit injection drug use",
+                        "code": "041"
                     },
                     "description": "Administer to persons who use illicit injection drugs.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Health care personnel"
+                        "text": "Health care personnel",
+                        "code": "055"
                     },
                     "description": "Administer to healthcare personnel.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Public safety worker exposed to blood or infection body fluids"
+                        "text": "Public safety worker exposed to blood or infection body fluids",
+                        "code": "057"
                     },
                     "description": "Administer to public safety workers exposed to blood or infection body fluids",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Staff of institution for persons with developmental disabilities"
+                        "text": "Staff of institution for persons with developmental disabilities",
+                        "code": "058"
                     },
                     "description": "Administer to staff of institution for persons with developmental disabilities",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Client of institution for persons with developmental disabilities"
+                        "text": "Client of institution for persons with developmental disabilities",
+                        "code": "065"
                     },
                     "description": "Administer to persons who are a client of institution for persons with developmental disabilities.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "In correctional facility"
+                        "text": "In correctional facility",
+                        "code": "069"
                     },
                     "description": "Administer to persons who are in a correctional facility.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Household contact with hepatitis B surface antigen-positive persons"
+                        "text": "Household contact with hepatitis B surface antigen-positive persons",
+                        "code": "071"
                     },
                     "description": "Administer to persons who have household contact with hepatitis B surface antigen-positive persons.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection"
+                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection",
+                        "code": "166"
                     },
                     "description": "Administered to persons who travel to countries with high or intermediate prevalence of chronic HBV infection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Patient seeks Hepatitis B  protection"
+                        "text": "Patient seeks Hepatitis B  protection",
+                        "code": "176"
                     },
                     "description": "Administer to persons seeking protection from Hepatitis B.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "19 years"
@@ -2394,14 +2435,16 @@ final hepb = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Patient seeks protection"
+                        "text": "Patient seeks protection",
+                        "code": "001"
                     },
                     "description": "Administer to persons seeking protection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes"
+                        "text": "Diabetes",
+                        "code": "014"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "19 years",
@@ -2410,7 +2453,8 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease"
+                        "text": "Chronic liver disease",
+                        "code": "015"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "19 years",
@@ -2418,98 +2462,112 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Men who have sex with men"
+                        "text": "Men who have sex with men",
+                        "code": "036"
                     },
                     "description": "Administer to men who have sex with men.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Not in a long-term, mutually monogamous relationship"
+                        "text": "Not in a long-term, mutually monogamous relationship",
+                        "code": "037"
                     },
                     "description": "Administer to persons not in a long-term, mutually monogamous relationship.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Sex partner of Hepatitis B surface antigen-positive persons"
+                        "text": "Sex partner of Hepatitis B surface antigen-positive persons",
+                        "code": "038"
                     },
                     "description": "Administer to persons who are a sex partner of a Hepatitis B surface antigen-positive person.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receives treatment for STD"
+                        "text": "Receives treatment for STD",
+                        "code": "039"
                     },
                     "description": "Administer to persons who receive treatment for STD.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Illicit injection drug use"
+                        "text": "Illicit injection drug use",
+                        "code": "041"
                     },
                     "description": "Administer to persons who use illicit injection drugs.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Health care personnel"
+                        "text": "Health care personnel",
+                        "code": "055"
                     },
                     "description": "Administer to healthcare personnel.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Public safety worker exposed to blood or infection body fluids"
+                        "text": "Public safety worker exposed to blood or infection body fluids",
+                        "code": "057"
                     },
                     "description": "Administer to public safety workers exposed to blood or infection body fluids",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Staff of institution for persons with developmental disabilities"
+                        "text": "Staff of institution for persons with developmental disabilities",
+                        "code": "058"
                     },
                     "description": "Administer to staff of institution for persons with developmental disabilities",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Client of institution for persons with developmental disabilities"
+                        "text": "Client of institution for persons with developmental disabilities",
+                        "code": "065"
                     },
                     "description": "Administer to persons who are a client of institution for persons with developmental disabilities.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "In correctional facility"
+                        "text": "In correctional facility",
+                        "code": "069"
                     },
                     "description": "Administer to persons who are in a correctional facility.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Household contact with hepatitis B surface antigen-positive persons"
+                        "text": "Household contact with hepatitis B surface antigen-positive persons",
+                        "code": "071"
                     },
                     "description": "Administer to persons who have household contact with hepatitis B surface antigen-positive persons.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection"
+                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection",
+                        "code": "166"
                     },
                     "description": "Administered to persons who travel to countries with high or intermediate prevalence of chronic HBV infection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Patient seeks Hepatitis B  protection"
+                        "text": "Patient seeks Hepatitis B  protection",
+                        "code": "176"
                     },
                     "description": "Administer to persons seeking protection from Hepatitis B.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "19 years"
@@ -2800,7 +2858,6 @@ final hepb = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2842,14 +2899,16 @@ final hepb = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Patient seeks protection"
+                        "text": "Patient seeks protection",
+                        "code": "001"
                     },
                     "description": "Administer to persons seeking protection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes"
+                        "text": "Diabetes",
+                        "code": "014"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "19 years",
@@ -2858,7 +2917,8 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease"
+                        "text": "Chronic liver disease",
+                        "code": "015"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "19 years",
@@ -2866,98 +2926,112 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Men who have sex with men"
+                        "text": "Men who have sex with men",
+                        "code": "036"
                     },
                     "description": "Administer to men who have sex with men.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Not in a long-term, mutually monogamous relationship"
+                        "text": "Not in a long-term, mutually monogamous relationship",
+                        "code": "037"
                     },
                     "description": "Administer to persons not in a long-term, mutually monogamous relationship.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Sex partner of Hepatitis B surface antigen-positive persons"
+                        "text": "Sex partner of Hepatitis B surface antigen-positive persons",
+                        "code": "038"
                     },
                     "description": "Administer to persons who are a sex partner of a Hepatitis B surface antigen-positive person.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receives treatment for STD"
+                        "text": "Receives treatment for STD",
+                        "code": "039"
                     },
                     "description": "Administer to persons who receive treatment for STD.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Illicit injection drug use"
+                        "text": "Illicit injection drug use",
+                        "code": "041"
                     },
                     "description": "Administer to persons who use illicit injection drugs.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Health care personnel"
+                        "text": "Health care personnel",
+                        "code": "055"
                     },
                     "description": "Administer to healthcare personnel.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Public safety worker exposed to blood or infection body fluids"
+                        "text": "Public safety worker exposed to blood or infection body fluids",
+                        "code": "057"
                     },
                     "description": "Administer to public safety workers exposed to blood or infection body fluids",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Staff of institution for persons with developmental disabilities"
+                        "text": "Staff of institution for persons with developmental disabilities",
+                        "code": "058"
                     },
                     "description": "Administer to staff of institution for persons with developmental disabilities",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Client of institution for persons with developmental disabilities"
+                        "text": "Client of institution for persons with developmental disabilities",
+                        "code": "065"
                     },
                     "description": "Administer to persons who are a client of institution for persons with developmental disabilities.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "In correctional facility"
+                        "text": "In correctional facility",
+                        "code": "069"
                     },
                     "description": "Administer to persons who are in a correctional facility.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Household contact with hepatitis B surface antigen-positive persons"
+                        "text": "Household contact with hepatitis B surface antigen-positive persons",
+                        "code": "071"
                     },
                     "description": "Administer to persons who have household contact with hepatitis B surface antigen-positive persons.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection"
+                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection",
+                        "code": "166"
                     },
                     "description": "Administered to persons who travel to countries with high or intermediate prevalence of chronic HBV infection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Patient seeks Hepatitis B  protection"
+                        "text": "Patient seeks Hepatitis B  protection",
+                        "code": "176"
                     },
                     "description": "Administer to persons seeking protection from Hepatitis B.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "19 years"
@@ -3250,7 +3324,6 @@ final hepb = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3292,14 +3365,16 @@ final hepb = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Patient seeks protection"
+                        "text": "Patient seeks protection",
+                        "code": "001"
                     },
                     "description": "Administer to persons seeking protection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes"
+                        "text": "Diabetes",
+                        "code": "014"
                     },
                     "description": "Administer to persons  who have diabetes.",
                     "beginAge": "19 years",
@@ -3308,7 +3383,8 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease"
+                        "text": "Chronic liver disease",
+                        "code": "015"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "19 years",
@@ -3316,98 +3392,112 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Men who have sex with men"
+                        "text": "Men who have sex with men",
+                        "code": "036"
                     },
                     "description": "Administer to men who have sex with men.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Not in a long-term, mutually monogamous relationship"
+                        "text": "Not in a long-term, mutually monogamous relationship",
+                        "code": "037"
                     },
                     "description": "Administer to persons not in a long-term, mutually monogamous relationship.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Sex partner of Hepatitis B surface antigen-positive persons"
+                        "text": "Sex partner of Hepatitis B surface antigen-positive persons",
+                        "code": "038"
                     },
                     "description": "Administer to persons who are a sex partner of a Hepatitis B surface antigen-positive person.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receives treatment for STD"
+                        "text": "Receives treatment for STD",
+                        "code": "039"
                     },
                     "description": "Administer to persons who receive treatment for STD.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Illicit injection drug use"
+                        "text": "Illicit injection drug use",
+                        "code": "041"
                     },
                     "description": "Administer to persons who use illicit injection drugs.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Health care personnel"
+                        "text": "Health care personnel",
+                        "code": "055"
                     },
                     "description": "Administer to  healthcare personnel.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Public safety worker exposed to blood or infection body fluids"
+                        "text": "Public safety worker exposed to blood or infection body fluids",
+                        "code": "057"
                     },
                     "description": "Administer to public safety workers exposed to blood or infection body fluids",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Staff of institution for persons with developmental disabilities"
+                        "text": "Staff of institution for persons with developmental disabilities",
+                        "code": "058"
                     },
                     "description": "Administer to staff of institution for persons with developmental disabilities",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Client of institution for persons with developmental disabilities"
+                        "text": "Client of institution for persons with developmental disabilities",
+                        "code": "065"
                     },
                     "description": "Administer to persons who are a client of institution for persons with developmental disabilities.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "In correctional facility"
+                        "text": "In correctional facility",
+                        "code": "069"
                     },
                     "description": "Administer to persons who are in a correctional facility.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Household contact with hepatitis B surface antigen-positive persons"
+                        "text": "Household contact with hepatitis B surface antigen-positive persons",
+                        "code": "071"
                     },
                     "description": "Administer to persons who have household contact with hepatitis B surface antigen-positive persons.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection"
+                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection",
+                        "code": "166"
                     },
                     "description": "Administered to persons who travel to countries with high or intermediate prevalence of chronic HBV infection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Patient seeks Hepatitis B  protection"
+                        "text": "Patient seeks Hepatitis B  protection",
+                        "code": "176"
                     },
                     "description": "Administer to persons seeking protection from Hepatitis B.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "19 years"
@@ -3520,14 +3610,16 @@ final hepb = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Patient seeks protection"
+                        "text": "Patient seeks protection",
+                        "code": "001"
                     },
                     "description": "Administer to persons seeking protection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes"
+                        "text": "Diabetes",
+                        "code": "014"
                     },
                     "description": "Administer to persons  who have diabetes.",
                     "beginAge": "19 years",
@@ -3536,7 +3628,8 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease"
+                        "text": "Chronic liver disease",
+                        "code": "015"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "19 years",
@@ -3544,98 +3637,112 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Men who have sex with men"
+                        "text": "Men who have sex with men",
+                        "code": "036"
                     },
                     "description": "Administer to men who have sex with men.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Not in a long-term, mutually monogamous relationship"
+                        "text": "Not in a long-term, mutually monogamous relationship",
+                        "code": "037"
                     },
                     "description": "Administer to persons not in a long-term, mutually monogamous relationship.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Sex partner of Hepatitis B surface antigen-positive persons"
+                        "text": "Sex partner of Hepatitis B surface antigen-positive persons",
+                        "code": "038"
                     },
                     "description": "Administer to persons who are a sex partner of a Hepatitis B surface antigen-positive person.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Receives treatment for STD"
+                        "text": "Receives treatment for STD",
+                        "code": "039"
                     },
                     "description": "Administer to persons who receive treatment for STD.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Illicit injection drug use"
+                        "text": "Illicit injection drug use",
+                        "code": "041"
                     },
                     "description": "Administer to persons who use illicit injection drugs.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Health care personnel"
+                        "text": "Health care personnel",
+                        "code": "055"
                     },
                     "description": "Administer to  healthcare personnel.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Public safety worker exposed to blood or infection body fluids"
+                        "text": "Public safety worker exposed to blood or infection body fluids",
+                        "code": "057"
                     },
                     "description": "Administer to public safety workers exposed to blood or infection body fluids",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Staff of institution for persons with developmental disabilities"
+                        "text": "Staff of institution for persons with developmental disabilities",
+                        "code": "058"
                     },
                     "description": "Administer to staff of institution for persons with developmental disabilities",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Client of institution for persons with developmental disabilities"
+                        "text": "Client of institution for persons with developmental disabilities",
+                        "code": "065"
                     },
                     "description": "Administer to persons who are a client of institution for persons with developmental disabilities.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "In correctional facility"
+                        "text": "In correctional facility",
+                        "code": "069"
                     },
                     "description": "Administer to persons who are in a correctional facility.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Household contact with hepatitis B surface antigen-positive persons"
+                        "text": "Household contact with hepatitis B surface antigen-positive persons",
+                        "code": "071"
                     },
                     "description": "Administer to persons who have household contact with hepatitis B surface antigen-positive persons.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection"
+                        "text": "Travel to countries with high or intermediate prevalence of chronic HBV infection",
+                        "code": "166"
                     },
                     "description": "Administered to persons who travel to countries with high or intermediate prevalence of chronic HBV infection.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Patient seeks Hepatitis B  protection"
+                        "text": "Patient seeks Hepatitis B  protection",
+                        "code": "176"
                     },
                     "description": "Administer to persons seeking protection from Hepatitis B.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "19 years"
@@ -3739,7 +3846,8 @@ final hepb = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Dialysis patient"
+                        "text": "Dialysis patient",
+                        "code": "032"
                     },
                     "description": "Administer to hemodialysis patients and predialysis, peritoneal dialysis, and home dialysis patients",
                     "beginAge": "19 years"
@@ -3841,7 +3949,8 @@ final hepb = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Dialysis patient"
+                        "text": "Dialysis patient",
+                        "code": "032"
                     },
                     "description": "Administer to hemodialysis patients and predialysis, peritoneal dialysis, and home dialysis patients",
                     "beginAge": "19 years"

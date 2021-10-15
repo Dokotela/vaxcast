@@ -7,10 +7,12 @@ final pneumococcal = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "094",
                     "observationTitle": "Severe allergic reaction after previous dose of Pneumococcal",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Pneumococcal vaccine."
                 },
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -19,6 +21,7 @@ final pneumococcal = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
+                    "observationCode": "117",
                     "observationTitle": "Severe allergic reaction to diphtheria toxoid",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to diphtheria toxoid.",
                     "contraindicatedVaccine": [
@@ -152,7 +155,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -169,7 +171,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "2",
@@ -244,7 +245,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -256,7 +256,12 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "beginAge": "12 months"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Target Dose is not required if the current dose was administered on or after 12 months - 4 days of age AND at least 8 weeks - 4 days from the previous dose",
@@ -266,7 +271,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Age",
                                             "beginAge": "12 months - 4 days"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Evaluation",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Target Dose is not required if the current dose was administered on or after 12 months - 4 days of age AND at least 8 weeks - 4 days from the previous dose",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Interval",
@@ -278,7 +295,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "3",
@@ -389,7 +405,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -533,7 +548,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -700,7 +714,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -880,7 +893,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1003,7 +1015,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1045,7 +1056,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Cerebrospinal fluid leaks"
+                        "text": "Cerebrospinal fluid leaks",
+                        "code": "010"
                     },
                     "description": "Administer to persons who have cerebrospinal fluid leaks.",
                     "beginAge": "2 years",
@@ -1053,7 +1065,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cochlear implants"
+                        "text": "Cochlear implants",
+                        "code": "011"
                     },
                     "description": "Administer to persons who have cochlear implants.",
                     "beginAge": "2 years",
@@ -1062,7 +1075,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Diabetes"
+                        "text": "Diabetes",
+                        "code": "014"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "2 years",
@@ -1070,7 +1084,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic heart disease"
+                        "text": "Chronic heart disease",
+                        "code": "016"
                     },
                     "description": "Administer to persons who have chronic heart disease.",
                     "beginAge": "2 years",
@@ -1078,7 +1093,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic lung disease"
+                        "text": "Chronic lung disease",
+                        "code": "017"
                     },
                     "description": "Administer to persons who have chronic lung disease.",
                     "beginAge": "2 years",
@@ -1086,7 +1102,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Asthma"
+                        "text": "Asthma",
+                        "code": "027"
                     },
                     "description": "Administer to persons who have asthma.",
                     "beginAge": "2 years",
@@ -1118,7 +1135,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1129,7 +1145,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Completed Series",
                                             "seriesGroups": "1"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 0 doses before 12 months AND 2 or more doses between 12 and 24 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "6 weeks - 4 days",
@@ -1138,7 +1166,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "doseType": "Total",
                                             "doseCountLogic": "equal to",
                                             "vaccineTypes": "133"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 0 doses before 12 months AND 2 or more doses between 12 and 24 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "3",
                                             "beginAge": "12 months - 4 days",
@@ -1149,7 +1189,12 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "vaccineTypes": "133"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has a complete standard series AND 3 or more doses before 24 months.",
@@ -1159,7 +1204,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Completed Series",
                                             "seriesGroups": "1"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 3 or more doses before 24 months.",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "6 weeks - 4 days",
@@ -1198,7 +1255,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1209,7 +1265,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Completed Series",
                                             "seriesGroups": "1"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 0 doses before 12 months AND 2 or more doses between 12 and 24 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "6 weeks - 4 days",
@@ -1218,7 +1286,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "doseType": "Total",
                                             "doseCountLogic": "equal to",
                                             "vaccineTypes": "133"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 0 doses before 12 months AND 2 or more doses between 12 and 24 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "3",
                                             "beginAge": "12 months - 4 days",
@@ -1229,7 +1309,12 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "vaccineTypes": "133"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has a complete standard series AND 3 or more doses before 24 months.",
@@ -1239,7 +1324,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Completed Series",
                                             "seriesGroups": "1"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 3 or more doses before 24 months.",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "6 weeks - 4 days",
@@ -1278,7 +1375,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1320,7 +1416,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Chronic renal failure"
+                        "text": "Chronic renal failure",
+                        "code": "066"
                     },
                     "description": "Administer to persons with chronic renal failure.",
                     "beginAge": "2 years",
@@ -1328,7 +1425,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
+                        "code": "145"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "2 years",
@@ -1336,7 +1434,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
+                        "code": "146"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency).",
                     "beginAge": "2 years",
@@ -1344,7 +1443,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
+                        "code": "147"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "2 years",
@@ -1352,7 +1452,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
+                        "code": "148"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "2 years",
@@ -1360,7 +1461,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, particularly C1, C2, C3, and C4 deficiencies.",
                     "beginAge": "2 years",
@@ -1368,7 +1470,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
+                        "code": "153"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "2 years",
@@ -1376,7 +1479,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Generalized malignant neoplasm"
+                        "text": "Generalized malignant neoplasm",
+                        "code": "156"
                     },
                     "description": "Administer to persons who have generalized malignant neoplasm.",
                     "beginAge": "2 years",
@@ -1384,7 +1488,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation"
+                        "text": "Transplantation",
+                        "code": "157"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "2 years",
@@ -1392,7 +1497,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy"
+                        "text": "Immunosuppressive therapy",
+                        "code": "158"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "2 years",
@@ -1401,7 +1507,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy"
+                        "text": "Radiation therapy",
+                        "code": "159"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "2 years",
@@ -1410,7 +1517,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "2 years",
@@ -1419,7 +1527,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Nephrotic Syndrome"
+                        "text": "Nephrotic Syndrome",
+                        "code": "167"
                     },
                     "description": "Administer to persons with nephrotic syndrome.",
                     "beginAge": "2 years",
@@ -1427,7 +1536,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "2 years",
@@ -1458,7 +1568,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1469,7 +1578,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Completed Series",
                                             "seriesGroups": "1"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 0 doses before 12 months AND 2 or more doses between 12 and 24 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "6 weeks - 4 days",
@@ -1478,7 +1599,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "doseType": "Total",
                                             "doseCountLogic": "equal to",
                                             "vaccineTypes": "133"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 0 doses before 12 months AND 2 or more doses between 12 and 24 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "3",
                                             "beginAge": "12 months - 4 days",
@@ -1489,7 +1622,12 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "vaccineTypes": "133"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has a complete standard series AND 3 or more doses before 24 months.",
@@ -1499,7 +1637,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Completed Series",
                                             "seriesGroups": "1"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 3 or more doses before 24 months.",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "6 weeks - 4 days",
@@ -1538,7 +1688,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1549,7 +1698,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Completed Series",
                                             "seriesGroups": "1"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 0 doses before 12 months AND 2 or more doses between 12 and 24 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "6 weeks - 4 days",
@@ -1558,7 +1719,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "doseType": "Total",
                                             "doseCountLogic": "equal to",
                                             "vaccineTypes": "133"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 0 doses before 12 months AND 2 or more doses between 12 and 24 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "3",
                                             "beginAge": "12 months - 4 days",
@@ -1569,7 +1742,12 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "vaccineTypes": "133"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has a complete standard series AND 3 or more doses before 24 months.",
@@ -1579,7 +1757,19 @@ final pneumococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Completed Series",
                                             "seriesGroups": "1"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Dose is not required if the patient has a complete standard series AND 3 or more doses before 24 months.",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "6 weeks - 4 days",
@@ -1618,7 +1808,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1662,7 +1851,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1703,35 +1891,40 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Diabetes"
+                        "text": "Diabetes",
+                        "code": "014"
                     },
                     "description": "Administer to persons who have diabetes.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic liver disease"
+                        "text": "Chronic liver disease",
+                        "code": "015"
                     },
                     "description": "Administer to persons who have chronic liver disease.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic heart disease"
+                        "text": "Chronic heart disease",
+                        "code": "016"
                     },
                     "description": "Administer to persons who have chronic heart disease.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Chronic lung disease"
+                        "text": "Chronic lung disease",
+                        "code": "017"
                     },
                     "description": "Administer to persons who have chronic lung disease.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Asthma"
+                        "text": "Asthma",
+                        "code": "027"
                     },
                     "description": "Administer to persons who have asthma.",
                     "beginAge": "6 years",
@@ -1739,14 +1932,16 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Smoke cigarettes"
+                        "text": "Smoke cigarettes",
+                        "code": "042"
                     },
                     "description": "Administer to persons who smoke cigarettes.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Alcoholism"
+                        "text": "Alcoholism",
+                        "code": "043"
                     },
                     "description": "Administer to persons who have alcoholism.",
                     "beginAge": "6 years"
@@ -1783,7 +1978,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1830,7 +2024,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1870,14 +2063,16 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Cerebrospinal fluid leaks"
+                        "text": "Cerebrospinal fluid leaks",
+                        "code": "010"
                     },
                     "description": "Administer to persons who have cerebrospinal fluid leaks.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Cochlear implants"
+                        "text": "Cochlear implants",
+                        "code": "011"
                     },
                     "description": "Administer to persons who have cochlear implants.",
                     "beginAge": "6 years",
@@ -1906,7 +2101,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1978,7 +2172,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2019,7 +2212,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Cerebrospinal fluid leaks"
+                        "text": "Cerebrospinal fluid leaks",
+                        "code": "010"
                     },
                     "description": "Administer to persons who have cerebrospinal fluid leaks.",
                     "beginAge": "6 years",
@@ -2027,7 +2221,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Cochlear implants"
+                        "text": "Cochlear implants",
+                        "code": "011"
                     },
                     "description": "Administer to persons who have cochlear implants.",
                     "beginAge": "6 years",
@@ -2078,7 +2273,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2129,7 +2323,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2169,14 +2362,16 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Cerebrospinal fluid leaks"
+                        "text": "Cerebrospinal fluid leaks",
+                        "code": "010"
                     },
                     "description": "Administer to persons who have cerebrospinal fluid leaks.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Cochlear implants"
+                        "text": "Cochlear implants",
+                        "code": "011"
                     },
                     "description": "Administer to persons who have cochlear implants.",
                     "beginAge": "19 years"
@@ -2225,7 +2420,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2276,7 +2470,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2316,70 +2509,80 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Chronic renal failure"
+                        "text": "Chronic renal failure",
+                        "code": "066"
                     },
                     "description": "Administer to persons with chronic renal failure.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
+                        "code": "145"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
+                        "code": "146"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency).",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
+                        "code": "147"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
+                        "code": "148"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, particularly C1, C2, C3, and C4 deficiencies.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
+                        "code": "153"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Generalized malignant neoplasm"
+                        "text": "Generalized malignant neoplasm",
+                        "code": "156"
                     },
                     "description": "Administer to persons who have generalized malignant neoplasm.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation"
+                        "text": "Transplantation",
+                        "code": "157"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy"
+                        "text": "Immunosuppressive therapy",
+                        "code": "158"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "6 years",
@@ -2387,7 +2590,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy"
+                        "text": "Radiation therapy",
+                        "code": "159"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "6 years",
@@ -2395,7 +2599,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "6 years",
@@ -2403,42 +2608,48 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Nephrotic Syndrome"
+                        "text": "Nephrotic Syndrome",
+                        "code": "167"
                     },
                     "description": "Administer to persons with nephrotic syndrome.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Leukemia"
+                        "text": "Leukemia",
+                        "code": "178"
                     },
                     "description": "Administer to persons with leukemia.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Lymphoma"
+                        "text": "Lymphoma",
+                        "code": "179"
                     },
                     "description": "Administer to persons with lymphoma.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Hodgkin's disease"
+                        "text": "Hodgkin's disease",
+                        "code": "180"
                     },
                     "description": "Administer to persons with Hodgkin's disease.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Multiple myeloma"
+                        "text": "Multiple myeloma",
+                        "code": "181"
                     },
                     "description": "Administer to persons with multiple myeloma.",
                     "beginAge": "6 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "6 years"
@@ -2466,7 +2677,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2545,7 +2755,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2595,7 +2804,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2636,7 +2844,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Chronic renal failure"
+                        "text": "Chronic renal failure",
+                        "code": "066"
                     },
                     "description": "Administer to persons with chronic renal failure.",
                     "beginAge": "6 years",
@@ -2644,7 +2853,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
+                        "code": "145"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "6 years",
@@ -2652,7 +2862,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
+                        "code": "146"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency).",
                     "beginAge": "6 years",
@@ -2660,7 +2871,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
+                        "code": "147"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "6 years",
@@ -2668,7 +2880,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
+                        "code": "148"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "6 years",
@@ -2676,7 +2889,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, particularly C1, C2, C3, and C4 deficiencies.",
                     "beginAge": "6 years",
@@ -2684,7 +2898,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
+                        "code": "153"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "6 years",
@@ -2692,7 +2907,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Generalized malignant neoplasm"
+                        "text": "Generalized malignant neoplasm",
+                        "code": "156"
                     },
                     "description": "Administer to persons who have generalized malignant neoplasm.",
                     "beginAge": "6 years",
@@ -2700,7 +2916,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation"
+                        "text": "Transplantation",
+                        "code": "157"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "6 years",
@@ -2708,7 +2925,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy"
+                        "text": "Immunosuppressive therapy",
+                        "code": "158"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "6 years",
@@ -2717,7 +2935,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy"
+                        "text": "Radiation therapy",
+                        "code": "159"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "6 years",
@@ -2726,7 +2945,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "6 years",
@@ -2735,7 +2955,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Nephrotic Syndrome"
+                        "text": "Nephrotic Syndrome",
+                        "code": "167"
                     },
                     "description": "Administer to persons with nephrotic syndrome.",
                     "beginAge": "6 years",
@@ -2743,7 +2964,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Leukemia"
+                        "text": "Leukemia",
+                        "code": "178"
                     },
                     "description": "Administer to persons with leukemia.",
                     "beginAge": "6 years",
@@ -2751,7 +2973,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Lymphoma"
+                        "text": "Lymphoma",
+                        "code": "179"
                     },
                     "description": "Administer to persons with lymphoma.",
                     "beginAge": "6 years",
@@ -2759,7 +2982,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Hodgkin's disease"
+                        "text": "Hodgkin's disease",
+                        "code": "180"
                     },
                     "description": "Administer to persons with Hodgkin's disease.",
                     "beginAge": "6 years",
@@ -2767,7 +2991,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Multiple myeloma"
+                        "text": "Multiple myeloma",
+                        "code": "181"
                     },
                     "description": "Administer to persons with multiple myeloma.",
                     "beginAge": "6 years",
@@ -2775,7 +3000,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "6 years",
@@ -2832,7 +3058,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2918,7 +3143,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2958,70 +3182,80 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Chronic renal failure"
+                        "text": "Chronic renal failure",
+                        "code": "066"
                     },
                     "description": "Administer to persons with chronic renal failure.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
+                        "code": "145"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
+                        "code": "146"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
+                        "code": "147"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
+                        "code": "148"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, particularly C1, C2, C3, and C4 deficiencies.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
+                        "code": "153"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Generalized malignant neoplasm"
+                        "text": "Generalized malignant neoplasm",
+                        "code": "156"
                     },
                     "description": "Administer to persons who have generalized malignant neoplasm.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation"
+                        "text": "Transplantation",
+                        "code": "157"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy"
+                        "text": "Immunosuppressive therapy",
+                        "code": "158"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "19 years",
@@ -3029,7 +3263,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy"
+                        "text": "Radiation therapy",
+                        "code": "159"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "19 years",
@@ -3037,7 +3272,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "19 years",
@@ -3045,42 +3281,48 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Nephrotic Syndrome"
+                        "text": "Nephrotic Syndrome",
+                        "code": "167"
                     },
                     "description": "Administer to persons with nephrotic syndrome.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Leukemia"
+                        "text": "Leukemia",
+                        "code": "178"
                     },
                     "description": "Administer to persons with leukemia.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Lymphoma"
+                        "text": "Lymphoma",
+                        "code": "179"
                     },
                     "description": "Administer to persons with lymphoma.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Hodgkin's disease"
+                        "text": "Hodgkin's disease",
+                        "code": "180"
                     },
                     "description": "Administer to persons with Hodgkin's disease.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Multiple myeloma"
+                        "text": "Multiple myeloma",
+                        "code": "181"
                     },
                     "description": "Administer to persons with multiple myeloma.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "19 years"
@@ -3136,7 +3378,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3194,7 +3435,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3244,7 +3484,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3285,7 +3524,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Chronic renal failure"
+                        "text": "Chronic renal failure",
+                        "code": "066"
                     },
                     "description": "Administer to persons with chronic renal failure.",
                     "beginAge": "6 years",
@@ -3293,7 +3533,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
+                        "code": "145"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "6 years",
@@ -3301,7 +3542,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
+                        "code": "146"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency).",
                     "beginAge": "6 years",
@@ -3309,7 +3551,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
+                        "code": "147"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "6 years",
@@ -3317,7 +3560,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
+                        "code": "148"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "6 years",
@@ -3325,7 +3569,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, particularly C1, C2, C3, and C4 deficiencies.",
                     "beginAge": "6 years",
@@ -3333,7 +3578,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
+                        "code": "153"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "6 years",
@@ -3341,7 +3587,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Generalized malignant neoplasm"
+                        "text": "Generalized malignant neoplasm",
+                        "code": "156"
                     },
                     "description": "Administer to persons who have generalized malignant neoplasm.",
                     "beginAge": "6 years",
@@ -3349,7 +3596,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation"
+                        "text": "Transplantation",
+                        "code": "157"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "6 years",
@@ -3357,7 +3605,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy"
+                        "text": "Immunosuppressive therapy",
+                        "code": "158"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "6 years",
@@ -3366,7 +3615,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy"
+                        "text": "Radiation therapy",
+                        "code": "159"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "6 years",
@@ -3375,7 +3625,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "6 years",
@@ -3384,7 +3635,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Nephrotic Syndrome"
+                        "text": "Nephrotic Syndrome",
+                        "code": "167"
                     },
                     "description": "Administer to persons with nephrotic syndrome.",
                     "beginAge": "6 years",
@@ -3392,7 +3644,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Leukemia"
+                        "text": "Leukemia",
+                        "code": "178"
                     },
                     "description": "Administer to persons with leukemia.",
                     "beginAge": "6 years",
@@ -3400,7 +3653,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Lymphoma"
+                        "text": "Lymphoma",
+                        "code": "179"
                     },
                     "description": "Administer to persons with lymphoma.",
                     "beginAge": "6 years",
@@ -3408,7 +3662,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Hodgkin's disease"
+                        "text": "Hodgkin's disease",
+                        "code": "180"
                     },
                     "description": "Administer to persons with Hodgkin's disease.",
                     "beginAge": "6 years",
@@ -3416,7 +3671,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Multiple myeloma"
+                        "text": "Multiple myeloma",
+                        "code": "181"
                     },
                     "description": "Administer to persons with multiple myeloma.",
                     "beginAge": "6 years",
@@ -3424,7 +3680,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "6 years",
@@ -3509,7 +3766,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3560,7 +3816,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3600,70 +3855,80 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Chronic renal failure"
+                        "text": "Chronic renal failure",
+                        "code": "066"
                     },
                     "description": "Administer to persons with chronic renal failure.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Severe antibody deficiencies",
+                        "code": "145"
                     },
                     "description": "Administer to persons who have severe B-lymphocyte (humoral) - antibody deficiencies (e.g., X-linked agammaglobulinemia and common variable immunodeficiency).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies"
+                        "text": "B-lymphocyte [humoral] - Less severe antibody deficiencies",
+                        "code": "146"
                     },
                     "description": "Administer to persons who have less severe B-lymphocyte (humoral) - antibody deficiencies (e.g., selective IgA deficiency and IgG subclass deficiency).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Complete defects",
+                        "code": "147"
                     },
                     "description": "Administer to persons who have complete cell-mediated or humoral T-lymphocyte defects (e.g., severe combined immunodeficiency [SCID] disease, complete DiGeorge syndrome).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects"
+                        "text": "T-lymphocyte [cell-mediated and humoral] - Partial defects",
+                        "code": "148"
                     },
                     "description": "Administer to persons who have partial cell-mediated or humoral T-lymphocyte defects (e.g., most patients with DiGeorge syndrome, Wiskott-Aldrich syndrome, ataxia- telangiectasia).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement component deficiencies, particularly C1, C2, C3, and C4 deficiencies.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency"
+                        "text": "Phagocytic function - Leukocyte adhesion defect, and myeloperoxidase deficiency",
+                        "code": "153"
                     },
                     "description": "Administer to persons who have a phagocytic function defect (e.g. leukocyte adhesion defect and myeloperoxidase deficiency).",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Generalized malignant neoplasm"
+                        "text": "Generalized malignant neoplasm",
+                        "code": "156"
                     },
                     "description": "Administer to persons who have generalized malignant neoplasm.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Transplantation"
+                        "text": "Transplantation",
+                        "code": "157"
                     },
                     "description": "Administer to persons who have received a transplant.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Immunosuppressive therapy"
+                        "text": "Immunosuppressive therapy",
+                        "code": "158"
                     },
                     "description": "Administer to persons who are undergoing immunosuppressive therapy. Immunosuppressive medications include those given to prevent solid organ transplant rejection, human immune mediators like interleukins and colony-stimulating factors, immune modulators like levamisol and BCG bladder-tumor therapy, and medicines like tumor necrosis factor alpha inhibitors and anti-B cell antibodies.",
                     "beginAge": "19 years",
@@ -3671,7 +3936,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Radiation therapy"
+                        "text": "Radiation therapy",
+                        "code": "159"
                     },
                     "description": "Administer to persons who are undergoing radiation therapy.",
                     "beginAge": "19 years",
@@ -3679,7 +3945,8 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "19 years",
@@ -3687,42 +3954,48 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Nephrotic Syndrome"
+                        "text": "Nephrotic Syndrome",
+                        "code": "167"
                     },
                     "description": "Administer to persons with nephrotic syndrome.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Leukemia"
+                        "text": "Leukemia",
+                        "code": "178"
                     },
                     "description": "Administer to persons with leukemia.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Lymphoma"
+                        "text": "Lymphoma",
+                        "code": "179"
                     },
                     "description": "Administer to persons with lymphoma.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Hodgkin's disease"
+                        "text": "Hodgkin's disease",
+                        "code": "180"
                     },
                     "description": "Administer to persons with Hodgkin's disease.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Multiple myeloma"
+                        "text": "Multiple myeloma",
+                        "code": "181"
                     },
                     "description": "Administer to persons with multiple myeloma.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "19 years"
@@ -3778,7 +4051,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3828,7 +4100,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3879,7 +4150,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",

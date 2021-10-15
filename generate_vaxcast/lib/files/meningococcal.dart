@@ -7,10 +7,12 @@ final meningococcal = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "095",
                     "observationTitle": "Severe allergic reaction after previous dose of Meningococcal",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Meningococcal vaccine."
                 },
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -19,6 +21,7 @@ final meningococcal = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
+                    "observationCode": "154",
                     "observationTitle": "HIV/AIDS - severely immunocompromised",
                     "contraindicationText": "Do not vaccinate with Meningococcal MCV4P (Menactra) if the patient is between the ages of 9 months and 2 years and is severely immunocompromised due to HIV/AIDS.",
                     "contraindicatedVaccine": [
@@ -31,6 +34,7 @@ final meningococcal = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "155",
                     "observationTitle": "HIV/AIDS - not severely immunocompromised",
                     "contraindicationText": "Do not vaccinate with Meningococcal MCV4P (Menactra) if the patient is between the ages of 9 months and 2 years and is severely immunocompromised due to HIV/AIDS.",
                     "contraindicatedVaccine": [
@@ -43,6 +47,7 @@ final meningococcal = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "160",
                     "observationTitle": "Anatomical or functional asplenia",
                     "contraindicationText": "Do not vaccinate with Meningococcal MCV4P (Menactra) if the patient is between the ages of 9 months and 2 years and has anatomical or functional asplenia.",
                     "contraindicatedVaccine": [
@@ -55,6 +60,7 @@ final meningococcal = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "117",
                     "observationTitle": "Severe allergic reaction to diphtheria toxoid",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to diphtheria toxoid.",
                     "contraindicatedVaccine": [
@@ -69,6 +75,7 @@ final meningococcal = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "118",
                     "observationTitle": "Severe allergic reaction to tetanus toxoid",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction to tetanus toxoid.",
                     "contraindicatedVaccine": [
@@ -159,7 +166,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -176,7 +182,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "2",
@@ -279,35 +284,40 @@ final meningococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Persons at risk during an outbreak"
+                        "text": "Persons at risk during an outbreak",
+                        "code": "070"
                     },
                     "description": "Administer to persons identified as at increased risk during a community outbreak attributable to a vaccine serogroup",
                     "beginAge": "2 months"
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement deficiencies",
                     "beginAge": "2 months"
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "2 months"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to or are residents of countries in which meningococcal disease is hyperendemic or epidemic"
+                        "text": "Travel to or are residents of countries in which meningococcal disease is hyperendemic or epidemic",
+                        "code": "164"
                     },
                     "description": "Administer to persons who travel to or are residents of countries in which meningococcal disease is hyperendemic or epidemic",
                     "beginAge": "2 months"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "2 months"
@@ -341,7 +351,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -352,7 +361,19 @@ final meningococcal = AntigenSupportingData.fromJson({
                                             "conditionID": "1",
                                             "conditionType": "Age",
                                             "beginAge": "7 months"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if patient is currently 7 months of age or older AND no doses were administered prior to age 7 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "2 months",
@@ -428,7 +449,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -504,7 +524,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -580,7 +599,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -594,7 +612,19 @@ final meningococcal = AntigenSupportingData.fromJson({
                                             "doseCount": "2",
                                             "doseType": "Valid",
                                             "doseCountLogic": "greater than"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if more than 2 doses have been administered between 2 and 7 months OR at least 1 dose on or after 7 months",
+                                    "conditionLogic": "OR",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "beginAge": "7 months",
@@ -724,7 +754,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -821,21 +850,24 @@ final meningococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Persons at risk during an outbreak"
+                        "text": "Persons at risk during an outbreak",
+                        "code": "070"
                     },
                     "description": "Administer to persons identified as at increased risk during a community outbreak attributable to a vaccine serogroup",
                     "beginAge": "2 months"
                 },
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement deficiencies",
                     "beginAge": "2 months"
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "2 months"
@@ -875,7 +907,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -914,7 +945,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -930,7 +960,12 @@ final meningococcal = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required for those 19 months or older",
@@ -968,7 +1003,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -984,7 +1018,12 @@ final meningococcal = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required for those 19 months or older",
@@ -1059,7 +1098,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1157,21 +1195,24 @@ final meningococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "Persistent complement, properdin, or factor B deficiency"
+                        "text": "Persistent complement, properdin, or factor B deficiency",
+                        "code": "151"
                     },
                     "description": "Administer to persons who have persistent complement deficiencies",
                     "beginAge": "2 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Anatomical or functional asplenia"
+                        "text": "Anatomical or functional asplenia",
+                        "code": "160"
                     },
                     "description": "Administer to persons with anatomic or functional asplenia, including sickle cell disease.",
                     "beginAge": "2 years"
                 },
                 {
                     "observationCode": {
-                        "text": "HIV Infection"
+                        "text": "HIV Infection",
+                        "code": "186"
                     },
                     "description": "Administer to persons with HIV Infection",
                     "beginAge": "2 years"
@@ -1349,7 +1390,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1451,7 +1491,8 @@ final meningococcal = AntigenSupportingData.fromJson({
             "indication": [
                 {
                     "observationCode": {
-                        "text": "College students living in residence halls"
+                        "text": "College students living in residence halls",
+                        "code": "046"
                     },
                     "description": "Administer to college students living in residence halls.",
                     "beginAge": "19 years",
@@ -1459,28 +1500,32 @@ final meningococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "observationCode": {
-                        "text": "Microbiologists routinely exposed to Neisseria meningitidis"
+                        "text": "Microbiologists routinely exposed to Neisseria meningitidis",
+                        "code": "050"
                     },
                     "description": "Administer to microbiologists routinely exposed to Neisseria meningitidis",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Military recruits"
+                        "text": "Military recruits",
+                        "code": "064"
                     },
                     "description": "Administer to military recruits.",
                     "beginAge": "19 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Persons at risk during an outbreak"
+                        "text": "Persons at risk during an outbreak",
+                        "code": "070"
                     },
                     "description": "Administer to persons identified as at increased risk during a community outbreak attributable to a vaccine serogroup.",
                     "beginAge": "2 years"
                 },
                 {
                     "observationCode": {
-                        "text": "Travel to or are residents of countries in which meningococcal disease is hyperendemic or epidemic"
+                        "text": "Travel to or are residents of countries in which meningococcal disease is hyperendemic or epidemic",
+                        "code": "164"
                     },
                     "description": "Administer to persons who travel to or are residents of countries in which meningococcal disease is hyperendemic or epidemic.",
                     "beginAge": "2 years"
@@ -1603,7 +1648,6 @@ final meningococcal = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",

@@ -7,10 +7,12 @@ final tetanus = AntigenSupportingData.fromJson({
         "vaccineGroup": {
             "contraindication": [
                 {
+                    "observationCode": "088",
                     "observationTitle": "Severe allergic reaction after previous dose of Tetanus",
                     "contraindicationText": "Do not vaccinate if the patient has had a severe allergic reaction after a previous dose of Tetanus vaccine."
                 },
                 {
+                    "observationCode": "080",
                     "observationTitle": "Adverse reaction to vaccine component",
                     "contraindicationText": "Do not vaccinate if the patient has had an adverse reaction to a vaccine component."
                 }
@@ -19,6 +21,7 @@ final tetanus = AntigenSupportingData.fromJson({
         "vaccine": {
             "contraindication": [
                 {
+                    "observationCode": "076",
                     "observationTitle": "Progressive neurologic disorder",
                     "contraindicationText": "Do not vaccinate if the patient has progressive neurologic disorder until a treatment regimen has been established and the condition has stabilized.",
                     "contraindicatedVaccine": [
@@ -81,6 +84,7 @@ final tetanus = AntigenSupportingData.fromJson({
                     ]
                 },
                 {
+                    "observationCode": "079",
                     "observationTitle": "Encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine",
                     "contraindicationText": "Do not vaccinate if the patient has had encephalopathy not attributable to another identifiable cause within 7 days of administration of a previous dose of Tdap, DTP, or DTaP vaccine.",
                     "contraindicatedVaccine": [
@@ -324,7 +328,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -341,7 +344,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -353,7 +355,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -546,7 +553,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -563,7 +569,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -575,7 +580,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -768,7 +778,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -785,7 +794,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -797,7 +805,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -982,7 +995,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -999,7 +1011,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -1011,7 +1022,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "4 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -1192,7 +1208,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1209,7 +1224,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -1221,7 +1235,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -1391,7 +1410,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1405,7 +1423,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 3 doses",
@@ -1418,7 +1441,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years",
@@ -1430,7 +1458,19 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCount": "4",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "3",
+                                    "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -1441,7 +1481,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "4",
                                     "setDescription": "Dose is not required if the patient has received more than 4 doses",
@@ -1610,7 +1655,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1780,7 +1824,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -1940,7 +1983,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2288,7 +2330,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2305,7 +2346,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -2317,7 +2357,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -2510,7 +2555,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2527,7 +2571,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -2539,7 +2582,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -2732,7 +2780,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2749,7 +2796,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -2761,7 +2807,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -2946,7 +2997,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -2963,7 +3013,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -2975,7 +3024,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "4 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -3156,7 +3210,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Evaluation",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3173,7 +3226,6 @@ final tetanus = AntigenSupportingData.fromJson({
                         },
                         {
                             "context": "Forecast",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "2",
@@ -3185,7 +3237,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "beginAge": "7 years"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Forecast",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has received 6 or more total doses to date",
@@ -3355,7 +3412,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "OR",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3368,7 +3424,19 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCount": "1",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "1",
+                                    "setDescription": "Dose is not required if the patient has received 1 dose and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -3378,7 +3446,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "2",
                                     "setDescription": "Dose is not required if the patient has received 2 doses and no doses prior to 12 months",
@@ -3390,7 +3463,19 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCount": "2",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "2",
+                                    "setDescription": "Dose is not required if the patient has received 2 doses and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -3400,7 +3485,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "3",
                                     "setDescription": "Dose is not required if the patient has recevied 3 doses with 1 dose of Tdap on or after 7 years and no doses prior to 12 months",
@@ -3412,7 +3502,19 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCount": "3",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "3",
+                                    "setDescription": "Dose is not required if the patient has recevied 3 doses with 1 dose of Tdap on or after 7 years and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -3421,7 +3523,19 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseType": "Valid",
                                             "doseCountLogic": "greater than",
                                             "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "3",
+                                    "setDescription": "Dose is not required if the patient has recevied 3 doses with 1 dose of Tdap on or after 7 years and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "3",
                                             "conditionType": "Vaccine Count by Age",
@@ -3431,7 +3545,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "4",
                                     "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years and no doses prior to 12 months",
@@ -3443,7 +3562,19 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCount": "4",
                                             "doseType": "Valid",
                                             "doseCountLogic": "equal to"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "4",
+                                    "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -3452,7 +3583,19 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseType": "Valid",
                                             "doseCountLogic": "greater than",
                                             "vaccineTypes": "01;20;22;50;102;106;107;110;115;120;130;132;146;170"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "4",
+                                    "setDescription": "Dose is not required if the patient has received 4 doses with 1 pertussis- containing vaccine on or after 4 years and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "3",
                                             "conditionType": "Vaccine Count by Age",
@@ -3462,7 +3605,12 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCountLogic": "equal to"
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
                                 {
                                     "setID": "5",
                                     "setDescription": "Dose is not required if the patient has received more than 4 doses and no doses prior to 12 months",
@@ -3474,7 +3622,19 @@ final tetanus = AntigenSupportingData.fromJson({
                                             "doseCount": "4",
                                             "doseType": "Valid",
                                             "doseCountLogic": "greater than"
-                                        },
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "context": "Both",
+                            "set": [
+                                {
+                                    "setID": "5",
+                                    "setDescription": "Dose is not required if the patient has received more than 4 doses and no doses prior to 12 months",
+                                    "conditionLogic": "AND",
+                                    "condition": [
                                         {
                                             "conditionID": "2",
                                             "conditionType": "Vaccine Count by Age",
@@ -3640,7 +3800,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3810,7 +3969,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
@@ -3970,7 +4128,6 @@ final tetanus = AntigenSupportingData.fromJson({
                     "conditionalSkip": [
                         {
                             "context": "Both",
-                            "setLogic": "n/a",
                             "set": [
                                 {
                                     "setID": "1",
