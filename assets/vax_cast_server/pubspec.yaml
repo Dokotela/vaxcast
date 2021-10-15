@@ -1,7 +1,7 @@
-name: vax_cast_server
+name: vaxcast_server
 description: Creating an actual server for VaxCast
 version: 0.0.1
-homepage: https://github.com/Dokotela/vax_cast_server
+homepage: https://github.com/Dokotela/vaxcast_server
 
 environment:
   sdk: '>=2.12.1 <3.0.0'

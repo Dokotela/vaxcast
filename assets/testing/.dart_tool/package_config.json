@@ -380,8 +380,8 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "vax_cast",
-      "rootUri": "../../vax_cast",
+      "name": "vaxcast",
+      "rootUri": "../../vaxcast",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -410,7 +410,7 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "vax_cast_testing",
+      "name": "vaxcast_testing",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"

@@ -1,4 +1,4 @@
-# vax_cast_server
+# vaxcast_server
 
 Trying again to do server-side dart. Sadly angel has been deprecated and Acqueduct hasn't been updated recently. Was trying GetX, but then retreated further to just pure dart.
 

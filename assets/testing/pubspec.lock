@@ -442,10 +442,10 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
-  vax_cast:
+  vaxcast:
     dependency: "direct main"
     description:
-      path: "../vax_cast"
+      path: "../vaxcast"
       relative: true
     source: path
     version: "0.0.1"

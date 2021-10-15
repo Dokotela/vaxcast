@@ -1,12 +1,12 @@
 // import 'dart:convert';
 // import 'dart:io';
 
-// import 'package:vax_cast/vax_cast.dart';
+// import 'package:vaxcast/vaxcast.dart';
 
 // Future<void> main() async {
 //   var dir = Directory('./input');
 //   await writeOut(dir);
-//   dir = Directory('../vax_cast_supporting_data/assets/new_json');
+//   dir = Directory('../vaxcast_supporting_data/assets/new_json');
 //   await writeOut(dir);
 // }
 
