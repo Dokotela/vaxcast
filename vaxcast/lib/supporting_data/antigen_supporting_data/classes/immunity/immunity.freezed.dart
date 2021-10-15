@@ -135,8 +135,8 @@ class __$ImmunityCopyWithImpl<$Res> extends _$ImmunityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Immunity implements _Immunity {
-  _$_Immunity({this.clinicalHistory, this.dateOfBirth});
+class _$_Immunity extends _Immunity {
+  _$_Immunity({this.clinicalHistory, this.dateOfBirth}) : super._();
 
   factory _$_Immunity.fromJson(Map<String, dynamic> json) =>
       _$$_ImmunityFromJson(json);
@@ -180,10 +180,11 @@ class _$_Immunity implements _Immunity {
   }
 }
 
-abstract class _Immunity implements Immunity {
+abstract class _Immunity extends Immunity {
   factory _Immunity(
       {List<ClinicalHistory>? clinicalHistory,
       DateOfBirth? dateOfBirth}) = _$_Immunity;
+  _Immunity._() : super._();
 
   factory _Immunity.fromJson(Map<String, dynamic> json) = _$_Immunity.fromJson;
 

@@ -7,6 +7,7 @@ part 'date_of_birth.g.dart';
 
 @freezed
 class DateOfBirth with _$DateOfBirth {
+  DateOfBirth._();
   factory DateOfBirth({
     String? immunityBirthDate,
     String? birthCountry,

@@ -44,13 +44,6 @@ final zoster = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years",
-                            "minAge": "50 years",
-                            "earliestRecAge": "50 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -80,13 +73,6 @@ final zoster = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "50 years - 4 days",
-                            "minAge": "50 years",
-                            "earliestRecAge": "50 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -144,13 +130,6 @@ final zoster = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "50 years",
-                            "minAge": "60 years",
-                            "earliestRecAge": "60 years"
-                        }
-                    ],
                     "allowableVaccine": [
                         {
                             "vaccineType": "Zoster live",
@@ -162,9 +141,6 @@ final zoster = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -193,9 +169,6 @@ final zoster = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

@@ -9,6 +9,7 @@ part 'condition.g.dart';
 
 @freezed
 class Condition with _$Condition {
+  Condition._();
   factory Condition({
     String? conditionID,
     ConditionType? conditionType,

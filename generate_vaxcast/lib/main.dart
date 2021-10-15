@@ -17,14 +17,14 @@ Future<void> main() async {
   for (var file in fileList) {
     final newFile = await File(file).readAsString();
     if (!(await File(
-            '../vaxcast/lib/supporting_data/${file.replaceAll("lib/files/", "")}')
+            '../vaxcast/lib/supporting_data/${file.replaceAll("lib/", "")}')
         .exists())) {
       await File(
-              '../vaxcast/lib/supporting_data/${file.replaceAll("lib/files/", "")}')
+              '../vaxcast/lib/supporting_data/${file.replaceAll("lib/", "")}')
           .create();
     }
     await File(
-            '../vaxcast/lib/supporting_data/${file.replaceAll("lib/files/", "")}')
+            '../vaxcast/lib/supporting_data/${file.replaceAll("lib/", "")}')
         .writeAsString(newFile);
   }
 }

@@ -192,13 +192,6 @@ final typhoid = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years - 4 days",
-                            "minAge": "2 years",
-                            "earliestRecAge": "2 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Typhoid capsular polysaccharide",
@@ -219,9 +212,6 @@ final typhoid = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -292,13 +282,6 @@ final typhoid = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 years - 4 days",
-                            "minAge": "6 years",
-                            "earliestRecAge": "6 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Typhoid oral, live, attenuated",
@@ -318,9 +301,6 @@ final typhoid = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

@@ -111,8 +111,8 @@ class __$CvxToAntigenMapCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CvxToAntigenMap implements _CvxToAntigenMap {
-  _$_CvxToAntigenMap({this.cvxMap});
+class _$_CvxToAntigenMap extends _CvxToAntigenMap {
+  _$_CvxToAntigenMap({this.cvxMap}) : super._();
 
   factory _$_CvxToAntigenMap.fromJson(Map<String, dynamic> json) =>
       _$$_CvxToAntigenMapFromJson(json);
@@ -148,8 +148,9 @@ class _$_CvxToAntigenMap implements _CvxToAntigenMap {
   }
 }
 
-abstract class _CvxToAntigenMap implements CvxToAntigenMap {
+abstract class _CvxToAntigenMap extends CvxToAntigenMap {
   factory _CvxToAntigenMap({List<CvxMap>? cvxMap}) = _$_CvxToAntigenMap;
+  _CvxToAntigenMap._() : super._();
 
   factory _CvxToAntigenMap.fromJson(Map<String, dynamic> json) =
       _$_CvxToAntigenMap.fromJson;
@@ -280,8 +281,8 @@ class __$CvxMapCopyWithImpl<$Res> extends _$CvxMapCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CvxMap implements _CvxMap {
-  _$_CvxMap({this.cvx, this.shortDescription, this.association});
+class _$_CvxMap extends _CvxMap {
+  _$_CvxMap({this.cvx, this.shortDescription, this.association}) : super._();
 
   factory _$_CvxMap.fromJson(Map<String, dynamic> json) =>
       _$$_CvxMapFromJson(json);
@@ -330,11 +331,12 @@ class _$_CvxMap implements _CvxMap {
   }
 }
 
-abstract class _CvxMap implements CvxMap {
+abstract class _CvxMap extends CvxMap {
   factory _CvxMap(
       {Cvx? cvx,
       String? shortDescription,
       List<Association>? association}) = _$_CvxMap;
+  _CvxMap._() : super._();
 
   factory _CvxMap.fromJson(Map<String, dynamic> json) = _$_CvxMap.fromJson;
 
@@ -478,9 +480,10 @@ class __$AssociationCopyWithImpl<$Res> extends _$AssociationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Association implements _Association {
+class _$_Association extends _Association {
   _$_Association(
-      {this.antigen, this.associationBeginAge, this.associationEndAge});
+      {this.antigen, this.associationBeginAge, this.associationEndAge})
+      : super._();
 
   factory _$_Association.fromJson(Map<String, dynamic> json) =>
       _$$_AssociationFromJson(json);
@@ -530,11 +533,12 @@ class _$_Association implements _Association {
   }
 }
 
-abstract class _Association implements Association {
+abstract class _Association extends Association {
   factory _Association(
       {TargetDisease? antigen,
       String? associationBeginAge,
       String? associationEndAge}) = _$_Association;
+  _Association._() : super._();
 
   factory _Association.fromJson(Map<String, dynamic> json) =
       _$_Association.fromJson;

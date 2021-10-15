@@ -197,7 +197,7 @@ class __$VaxAgeCopyWithImpl<$Res> extends _$VaxAgeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaxAge implements _VaxAge {
+class _$_VaxAge extends _VaxAge {
   _$_VaxAge(
       {this.absMinAge,
       this.minAge,
@@ -205,7 +205,8 @@ class _$_VaxAge implements _VaxAge {
       this.latestRecAge,
       this.maxAge,
       this.effectiveDate,
-      this.cessationDate});
+      this.cessationDate})
+      : super._();
 
   factory _$_VaxAge.fromJson(Map<String, dynamic> json) =>
       _$$_VaxAgeFromJson(json);
@@ -277,7 +278,7 @@ class _$_VaxAge implements _VaxAge {
   }
 }
 
-abstract class _VaxAge implements VaxAge {
+abstract class _VaxAge extends VaxAge {
   factory _VaxAge(
       {String? absMinAge,
       String? minAge,
@@ -286,6 +287,7 @@ abstract class _VaxAge implements VaxAge {
       String? maxAge,
       String? effectiveDate,
       String? cessationDate}) = _$_VaxAge;
+  _VaxAge._() : super._();
 
   factory _VaxAge.fromJson(Map<String, dynamic> json) = _$_VaxAge.fromJson;
 

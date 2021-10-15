@@ -1,18 +1,12 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-
-import '../../../enums/binary_enum.dart';
-import '../../../enums/dose_number_enum.dart';
-import '../conditional_skip/conditional_skip.dart';
-import '../interval/interval.dart';
-import '../seasonal_recommendation/seasonal_recommendation.dart';
-import '../vaccine/vaccine.dart';
-import '../vax_age/vax_age.dart';
+import 'package:vaxcast/supporting_data/export_supporting_data.dart';
 
 part 'series_dose.freezed.dart';
 part 'series_dose.g.dart';
 
 @freezed
 class SeriesDose with _$SeriesDose {
+  SeriesDose._();
   factory SeriesDose({
     DoseNumber? doseNumber,
     List<VaxAge>? age,

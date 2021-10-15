@@ -279,7 +279,7 @@ class __$SeriesDoseCopyWithImpl<$Res> extends _$SeriesDoseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SeriesDose implements _SeriesDose {
+class _$_SeriesDose extends _SeriesDose {
   _$_SeriesDose(
       {this.doseNumber,
       this.age,
@@ -290,7 +290,8 @@ class _$_SeriesDose implements _SeriesDose {
       this.inadvertentVaccine,
       this.conditionalSkip,
       this.recurringDose,
-      this.seasonalRecommendation});
+      this.seasonalRecommendation})
+      : super._();
 
   factory _$_SeriesDose.fromJson(Map<String, dynamic> json) =>
       _$$_SeriesDoseFromJson(json);
@@ -381,7 +382,7 @@ class _$_SeriesDose implements _SeriesDose {
   }
 }
 
-abstract class _SeriesDose implements SeriesDose {
+abstract class _SeriesDose extends SeriesDose {
   factory _SeriesDose(
       {DoseNumber? doseNumber,
       List<VaxAge>? age,
@@ -393,6 +394,7 @@ abstract class _SeriesDose implements SeriesDose {
       List<ConditionalSkip>? conditionalSkip,
       Binary? recurringDose,
       SeasonalRecommendation? seasonalRecommendation}) = _$_SeriesDose;
+  _SeriesDose._() : super._();
 
   factory _SeriesDose.fromJson(Map<String, dynamic> json) =
       _$_SeriesDose.fromJson;

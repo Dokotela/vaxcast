@@ -115,8 +115,8 @@ class __$VaccineContraindicationsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaccineContraindications implements _VaccineContraindications {
-  _$_VaccineContraindications({this.contraindication});
+class _$_VaccineContraindications extends _VaccineContraindications {
+  _$_VaccineContraindications({this.contraindication}) : super._();
 
   factory _$_VaccineContraindications.fromJson(Map<String, dynamic> json) =>
       _$$_VaccineContraindicationsFromJson(json);
@@ -155,10 +155,11 @@ class _$_VaccineContraindications implements _VaccineContraindications {
   }
 }
 
-abstract class _VaccineContraindications implements VaccineContraindications {
+abstract class _VaccineContraindications extends VaccineContraindications {
   factory _VaccineContraindications(
           {List<VaccineContraindication>? contraindication}) =
       _$_VaccineContraindications;
+  _VaccineContraindications._() : super._();
 
   factory _VaccineContraindications.fromJson(Map<String, dynamic> json) =
       _$_VaccineContraindications.fromJson;
@@ -336,13 +337,14 @@ class __$VaccineContraindicationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaccineContraindication implements _VaccineContraindication {
+class _$_VaccineContraindication extends _VaccineContraindication {
   _$_VaccineContraindication(
       {this.observationCode,
       this.observationTitle,
       this.contraindicationText,
       this.contraindicationGuidance,
-      this.contraindicatedVaccine});
+      this.contraindicatedVaccine})
+      : super._();
 
   factory _$_VaccineContraindication.fromJson(Map<String, dynamic> json) =>
       _$$_VaccineContraindicationFromJson(json);
@@ -407,13 +409,14 @@ class _$_VaccineContraindication implements _VaccineContraindication {
   }
 }
 
-abstract class _VaccineContraindication implements VaccineContraindication {
+abstract class _VaccineContraindication extends VaccineContraindication {
   factory _VaccineContraindication(
       {Obs? observationCode,
       String? observationTitle,
       String? contraindicationText,
       String? contraindicationGuidance,
       List<Vaccine>? contraindicatedVaccine}) = _$_VaccineContraindication;
+  _VaccineContraindication._() : super._();
 
   factory _VaccineContraindication.fromJson(Map<String, dynamic> json) =
       _$_VaccineContraindication.fromJson;

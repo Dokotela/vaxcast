@@ -68,13 +68,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -104,13 +97,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -151,13 +137,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -220,13 +199,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -256,13 +228,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -325,13 +290,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -383,13 +341,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -436,12 +387,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -499,13 +444,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -695,13 +633,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -731,13 +662,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -778,13 +702,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -937,13 +854,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -973,13 +883,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1020,13 +923,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1178,13 +1074,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1325,13 +1214,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1378,12 +1260,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1441,12 +1317,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1752,13 +1622,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1788,13 +1651,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1835,13 +1691,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2130,13 +1979,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2166,13 +2008,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2460,13 +2295,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2743,13 +2571,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2796,12 +2617,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "minAge": "12 years",
-                            "earliestRecAge": "12 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2859,13 +2674,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2958,13 +2766,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "allowableVaccine": [
                         {
                             "vaccineType": "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL",
@@ -2976,13 +2777,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3021,13 +2815,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "allowableVaccine": [
                         {
                             "vaccineType": "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)",
@@ -3039,13 +2826,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3084,13 +2864,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "allowableVaccine": [
                         {
                             "vaccineType": "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)",
@@ -3102,13 +2875,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3147,13 +2913,6 @@ final covid19 = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "allowableVaccine": [
                         {
                             "vaccineType": "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
@@ -3165,13 +2924,6 @@ final covid19 = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "18 years",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

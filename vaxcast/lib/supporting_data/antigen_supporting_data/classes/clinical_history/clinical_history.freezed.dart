@@ -123,8 +123,8 @@ class __$ClinicalHistoryCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ClinicalHistory implements _ClinicalHistory {
-  _$_ClinicalHistory({this.guidelineCode, this.guidelineTitle});
+class _$_ClinicalHistory extends _ClinicalHistory {
+  _$_ClinicalHistory({this.guidelineCode, this.guidelineTitle}) : super._();
 
   factory _$_ClinicalHistory.fromJson(Map<String, dynamic> json) =>
       _$$_ClinicalHistoryFromJson(json);
@@ -168,9 +168,10 @@ class _$_ClinicalHistory implements _ClinicalHistory {
   }
 }
 
-abstract class _ClinicalHistory implements ClinicalHistory {
+abstract class _ClinicalHistory extends ClinicalHistory {
   factory _ClinicalHistory({Obs? guidelineCode, String? guidelineTitle}) =
       _$_ClinicalHistory;
+  _ClinicalHistory._() : super._();
 
   factory _ClinicalHistory.fromJson(Map<String, dynamic> json) =
       _$_ClinicalHistory.fromJson;

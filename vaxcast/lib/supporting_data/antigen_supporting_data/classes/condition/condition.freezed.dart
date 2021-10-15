@@ -274,7 +274,7 @@ class __$ConditionCopyWithImpl<$Res> extends _$ConditionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Condition implements _Condition {
+class _$_Condition extends _Condition {
   _$_Condition(
       {this.conditionID,
       this.conditionType,
@@ -287,7 +287,8 @@ class _$_Condition implements _Condition {
       this.doseType,
       this.doseCountLogic,
       this.vaccineTypes,
-      this.seriesGroups});
+      this.seriesGroups})
+      : super._();
 
   factory _$_Condition.fromJson(Map<String, dynamic> json) =>
       _$$_ConditionFromJson(json);
@@ -390,7 +391,7 @@ class _$_Condition implements _Condition {
   }
 }
 
-abstract class _Condition implements Condition {
+abstract class _Condition extends Condition {
   factory _Condition(
       {String? conditionID,
       ConditionType? conditionType,
@@ -404,6 +405,7 @@ abstract class _Condition implements Condition {
       DoseCountLogic? doseCountLogic,
       String? vaccineTypes,
       String? seriesGroups}) = _$_Condition;
+  _Condition._() : super._();
 
   factory _Condition.fromJson(Map<String, dynamic> json) =
       _$_Condition.fromJson;

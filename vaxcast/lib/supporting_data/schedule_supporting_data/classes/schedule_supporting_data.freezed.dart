@@ -251,13 +251,14 @@ class __$ScheduleSupportingDataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ScheduleSupportingData implements _ScheduleSupportingData {
+class _$_ScheduleSupportingData extends _ScheduleSupportingData {
   _$_ScheduleSupportingData(
       {this.liveVirusConflicts,
       this.vaccineGroups,
       this.vaccineGroupToAntigenMap,
       this.cvxToAntigenMap,
-      this.observations});
+      this.observations})
+      : super._();
 
   factory _$_ScheduleSupportingData.fromJson(Map<String, dynamic> json) =>
       _$$_ScheduleSupportingDataFromJson(json);
@@ -322,13 +323,14 @@ class _$_ScheduleSupportingData implements _ScheduleSupportingData {
   }
 }
 
-abstract class _ScheduleSupportingData implements ScheduleSupportingData {
+abstract class _ScheduleSupportingData extends ScheduleSupportingData {
   factory _ScheduleSupportingData(
       {LiveVirusConflicts? liveVirusConflicts,
       VaccineGroups? vaccineGroups,
       VaccineGroupToAntigenMap? vaccineGroupToAntigenMap,
       CvxToAntigenMap? cvxToAntigenMap,
       Observations? observations}) = _$_ScheduleSupportingData;
+  _ScheduleSupportingData._() : super._();
 
   factory _ScheduleSupportingData.fromJson(Map<String, dynamic> json) =
       _$_ScheduleSupportingData.fromJson;

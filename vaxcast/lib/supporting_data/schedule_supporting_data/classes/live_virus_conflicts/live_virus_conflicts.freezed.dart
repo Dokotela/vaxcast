@@ -112,8 +112,8 @@ class __$LiveVirusConflictsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LiveVirusConflicts implements _LiveVirusConflicts {
-  _$_LiveVirusConflicts({this.liveVirusConflict});
+class _$_LiveVirusConflicts extends _LiveVirusConflicts {
+  _$_LiveVirusConflicts({this.liveVirusConflict}) : super._();
 
   factory _$_LiveVirusConflicts.fromJson(Map<String, dynamic> json) =>
       _$$_LiveVirusConflictsFromJson(json);
@@ -151,9 +151,10 @@ class _$_LiveVirusConflicts implements _LiveVirusConflicts {
   }
 }
 
-abstract class _LiveVirusConflicts implements LiveVirusConflicts {
+abstract class _LiveVirusConflicts extends LiveVirusConflicts {
   factory _LiveVirusConflicts({List<LiveVirusConflict>? liveVirusConflict}) =
       _$_LiveVirusConflicts;
+  _LiveVirusConflicts._() : super._();
 
   factory _LiveVirusConflicts.fromJson(Map<String, dynamic> json) =
       _$_LiveVirusConflicts.fromJson;
@@ -358,13 +359,14 @@ class __$LiveVirusConflictCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LiveVirusConflict implements _LiveVirusConflict {
+class _$_LiveVirusConflict extends _LiveVirusConflict {
   _$_LiveVirusConflict(
       {this.previous,
       this.current,
       this.conflictBeginInterval,
       this.minConflictEndInterval,
-      this.conflictEndInterval});
+      this.conflictEndInterval})
+      : super._();
 
   factory _$_LiveVirusConflict.fromJson(Map<String, dynamic> json) =>
       _$$_LiveVirusConflictFromJson(json);
@@ -426,13 +428,14 @@ class _$_LiveVirusConflict implements _LiveVirusConflict {
   }
 }
 
-abstract class _LiveVirusConflict implements LiveVirusConflict {
+abstract class _LiveVirusConflict extends LiveVirusConflict {
   factory _LiveVirusConflict(
       {Vaccine? previous,
       Vaccine? current,
       String? conflictBeginInterval,
       String? minConflictEndInterval,
       String? conflictEndInterval}) = _$_LiveVirusConflict;
+  _LiveVirusConflict._() : super._();
 
   factory _LiveVirusConflict.fromJson(Map<String, dynamic> json) =
       _$_LiveVirusConflict.fromJson;

@@ -118,8 +118,8 @@ class __$ExclusionCopyWithImpl<$Res> extends _$ExclusionCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Exclusion implements _Exclusion {
-  _$_Exclusion({this.exclusionCode, this.exclusionTitle});
+class _$_Exclusion extends _Exclusion {
+  _$_Exclusion({this.exclusionCode, this.exclusionTitle}) : super._();
 
   factory _$_Exclusion.fromJson(Map<String, dynamic> json) =>
       _$$_ExclusionFromJson(json);
@@ -163,9 +163,10 @@ class _$_Exclusion implements _Exclusion {
   }
 }
 
-abstract class _Exclusion implements Exclusion {
+abstract class _Exclusion extends Exclusion {
   factory _Exclusion({Obs? exclusionCode, String? exclusionTitle}) =
       _$_Exclusion;
+  _Exclusion._() : super._();
 
   factory _Exclusion.fromJson(Map<String, dynamic> json) =
       _$_Exclusion.fromJson;

@@ -146,13 +146,6 @@ final yellowFever = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 months",
-                            "minAge": "9 months",
-                            "earliestRecAge": "9 months"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Yellow Fever",

@@ -379,13 +379,6 @@ final influenza = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 months - 4 days",
-                            "minAge": "6 months",
-                            "earliestRecAge": "6 months"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Influenza, live, intranasal, quadrivalent",
@@ -624,9 +617,6 @@ final influenza = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

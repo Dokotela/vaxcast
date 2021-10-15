@@ -7,6 +7,7 @@ part 'observation_code.g.dart';
 
 @freezed
 class ObservationCode with _$ObservationCode {
+  ObservationCode._();
   factory ObservationCode({
     String? text,
     Obs? code,

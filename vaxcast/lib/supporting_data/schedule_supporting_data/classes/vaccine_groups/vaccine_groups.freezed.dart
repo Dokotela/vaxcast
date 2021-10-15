@@ -111,8 +111,8 @@ class __$VaccineGroupsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaccineGroups implements _VaccineGroups {
-  _$_VaccineGroups({this.vaccineGroup});
+class _$_VaccineGroups extends _VaccineGroups {
+  _$_VaccineGroups({this.vaccineGroup}) : super._();
 
   factory _$_VaccineGroups.fromJson(Map<String, dynamic> json) =>
       _$$_VaccineGroupsFromJson(json);
@@ -149,8 +149,9 @@ class _$_VaccineGroups implements _VaccineGroups {
   }
 }
 
-abstract class _VaccineGroups implements VaccineGroups {
+abstract class _VaccineGroups extends VaccineGroups {
   factory _VaccineGroups({List<VaccineGroup>? vaccineGroup}) = _$_VaccineGroups;
+  _VaccineGroups._() : super._();
 
   factory _VaccineGroups.fromJson(Map<String, dynamic> json) =
       _$_VaccineGroups.fromJson;
@@ -272,8 +273,8 @@ class __$VaccineGroupCopyWithImpl<$Res> extends _$VaccineGroupCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaccineGroup implements _VaccineGroup {
-  _$_VaccineGroup({this.name, this.administerFullVaccineGroup});
+class _$_VaccineGroup extends _VaccineGroup {
+  _$_VaccineGroup({this.name, this.administerFullVaccineGroup}) : super._();
 
   factory _$_VaccineGroup.fromJson(Map<String, dynamic> json) =>
       _$$_VaccineGroupFromJson(json);
@@ -318,10 +319,11 @@ class _$_VaccineGroup implements _VaccineGroup {
   }
 }
 
-abstract class _VaccineGroup implements VaccineGroup {
+abstract class _VaccineGroup extends VaccineGroup {
   factory _VaccineGroup(
       {VaccineGroupName? name,
       Binary? administerFullVaccineGroup}) = _$_VaccineGroup;
+  _VaccineGroup._() : super._();
 
   factory _VaccineGroup.fromJson(Map<String, dynamic> json) =
       _$_VaccineGroup.fromJson;

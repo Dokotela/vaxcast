@@ -118,9 +118,8 @@ class __$VaccineGroupContraindicationsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaccineGroupContraindications
-    implements _VaccineGroupContraindications {
-  _$_VaccineGroupContraindications({this.contraindication});
+class _$_VaccineGroupContraindications extends _VaccineGroupContraindications {
+  _$_VaccineGroupContraindications({this.contraindication}) : super._();
 
   factory _$_VaccineGroupContraindications.fromJson(
           Map<String, dynamic> json) =>
@@ -161,10 +160,11 @@ class _$_VaccineGroupContraindications
 }
 
 abstract class _VaccineGroupContraindications
-    implements VaccineGroupContraindications {
+    extends VaccineGroupContraindications {
   factory _VaccineGroupContraindications(
           {List<GroupContraindication>? contraindication}) =
       _$_VaccineGroupContraindications;
+  _VaccineGroupContraindications._() : super._();
 
   factory _VaccineGroupContraindications.fromJson(Map<String, dynamic> json) =
       _$_VaccineGroupContraindications.fromJson;
@@ -355,14 +355,15 @@ class __$GroupContraindicationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_GroupContraindication implements _GroupContraindication {
+class _$_GroupContraindication extends _GroupContraindication {
   _$_GroupContraindication(
       {this.observationCode,
       this.observationTitle,
       this.contraindicationText,
       this.contraindicationGuidance,
       this.beginAge,
-      this.endAge});
+      this.endAge})
+      : super._();
 
   factory _$_GroupContraindication.fromJson(Map<String, dynamic> json) =>
       _$$_GroupContraindicationFromJson(json);
@@ -432,7 +433,7 @@ class _$_GroupContraindication implements _GroupContraindication {
   }
 }
 
-abstract class _GroupContraindication implements GroupContraindication {
+abstract class _GroupContraindication extends GroupContraindication {
   factory _GroupContraindication(
       {Obs? observationCode,
       String? observationTitle,
@@ -440,6 +441,7 @@ abstract class _GroupContraindication implements GroupContraindication {
       String? contraindicationGuidance,
       String? beginAge,
       String? endAge}) = _$_GroupContraindication;
+  _GroupContraindication._() : super._();
 
   factory _GroupContraindication.fromJson(Map<String, dynamic> json) =
       _$_GroupContraindication.fromJson;

@@ -11,6 +11,7 @@ part 'select_series.g.dart';
 
 @freezed
 class SelectSeries with _$SelectSeries {
+  SelectSeries._();
   factory SelectSeries({
     Binary? defaultSeries,
     Binary? productPath,

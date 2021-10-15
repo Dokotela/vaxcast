@@ -5,6 +5,7 @@ part 'vax_age.g.dart';
 
 @freezed
 class VaxAge with _$VaxAge {
+  VaxAge._();
   factory VaxAge({
     String? absMinAge,
     String? minAge,

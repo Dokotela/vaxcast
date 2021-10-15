@@ -7,6 +7,7 @@ part 'cvx_to_antigen_map.g.dart';
 
 @freezed
 class CvxToAntigenMap with _$CvxToAntigenMap {
+  CvxToAntigenMap._();
   factory CvxToAntigenMap({
     List<CvxMap>? cvxMap,
   }) = _CvxToAntigenMap;
@@ -17,6 +18,7 @@ class CvxToAntigenMap with _$CvxToAntigenMap {
 
 @freezed
 class CvxMap with _$CvxMap {
+  CvxMap._();
   factory CvxMap({
     Cvx? cvx,
     String? shortDescription,
@@ -28,6 +30,7 @@ class CvxMap with _$CvxMap {
 
 @freezed
 class Association with _$Association {
+  Association._();
   factory Association({
     TargetDisease? antigen,
     String? associationBeginAge,

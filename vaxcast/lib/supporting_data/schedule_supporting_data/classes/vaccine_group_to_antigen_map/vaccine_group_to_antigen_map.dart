@@ -7,6 +7,7 @@ part 'vaccine_group_to_antigen_map.g.dart';
 
 @freezed
 class VaccineGroupToAntigenMap with _$VaccineGroupToAntigenMap {
+  VaccineGroupToAntigenMap._();
   factory VaccineGroupToAntigenMap({
     List<VaccineGroupMap>? vaccineGroupMap,
   }) = _VaccineGroupToAntigenMap;
@@ -17,6 +18,7 @@ class VaccineGroupToAntigenMap with _$VaccineGroupToAntigenMap {
 
 @freezed
 class VaccineGroupMap with _$VaccineGroupMap {
+  VaccineGroupMap._();
   factory VaccineGroupMap({
     VaccineGroupName? name,
     List<TargetDisease>? antigen,

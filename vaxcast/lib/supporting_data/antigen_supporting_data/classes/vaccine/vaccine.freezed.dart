@@ -212,7 +212,7 @@ class __$VaccineCopyWithImpl<$Res> extends _$VaccineCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Vaccine implements _Vaccine {
+class _$_Vaccine extends _Vaccine {
   _$_Vaccine(
       {this.vaccineType,
       this.cvx,
@@ -221,7 +221,8 @@ class _$_Vaccine implements _Vaccine {
       this.tradeName,
       this.mvx,
       this.volume,
-      this.forecastVaccineType});
+      this.forecastVaccineType})
+      : super._();
 
   factory _$_Vaccine.fromJson(Map<String, dynamic> json) =>
       _$$_VaccineFromJson(json);
@@ -297,7 +298,7 @@ class _$_Vaccine implements _Vaccine {
   }
 }
 
-abstract class _Vaccine implements Vaccine {
+abstract class _Vaccine extends Vaccine {
   factory _Vaccine(
       {String? vaccineType,
       Cvx? cvx,
@@ -307,6 +308,7 @@ abstract class _Vaccine implements Vaccine {
       String? mvx,
       String? volume,
       String? forecastVaccineType}) = _$_Vaccine;
+  _Vaccine._() : super._();
 
   factory _Vaccine.fromJson(Map<String, dynamic> json) = _$_Vaccine.fromJson;
 

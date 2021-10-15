@@ -181,14 +181,6 @@ final measles = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months",
-                            "latestRecAge": "16 months + 4 weeks"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "MMR",
@@ -232,14 +224,6 @@ final measles = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "13 months - 4 days",
-                            "minAge": "13 months",
-                            "earliestRecAge": "4 years",
-                            "latestRecAge": "7 years + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -342,15 +326,6 @@ final measles = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 months - 4 days",
-                            "minAge": "6 months",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "12 months",
-                            "maxAge": "12 months"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "MMR",
@@ -443,13 +418,6 @@ final measles = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "MMR",
@@ -485,9 +453,6 @@ final measles = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -555,13 +520,6 @@ final measles = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -607,9 +565,6 @@ final measles = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

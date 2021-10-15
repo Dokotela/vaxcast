@@ -7,6 +7,7 @@ part 'observations.g.dart';
 
 @freezed
 class Observations with _$Observations {
+  Observations._();
   factory Observations({
     List<Observation>? observation,
   }) = _Observations;
@@ -17,6 +18,7 @@ class Observations with _$Observations {
 
 @freezed
 class Observation with _$Observation {
+  Observation._();
   factory Observation({
     Obs? observationCode,
     String? observationTitle,
@@ -33,6 +35,7 @@ class Observation with _$Observation {
 
 @freezed
 class CodedValues with _$CodedValues {
+  CodedValues._();
   factory CodedValues({
     List<CodedValue>? codedValue,
   }) = _CodedValues;
@@ -43,6 +46,7 @@ class CodedValues with _$CodedValues {
 
 @freezed
 class CodedValue with _$CodedValue {
+  CodedValue._();
   factory CodedValue({
     String? code,
     String? codeSystem,

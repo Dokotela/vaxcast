@@ -108,15 +108,6 @@ final hib = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PRP-T",
@@ -228,15 +219,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -393,15 +375,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "14 weeks - 4 days",
-                            "minAge": "14 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "7 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -580,15 +553,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months",
-                            "latestRecAge": "16 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -724,13 +688,6 @@ final hib = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "7 months - 4 days",
-                            "minAge": "7 months",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PRP-T",
@@ -842,11 +799,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1025,15 +977,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months",
-                            "latestRecAge": "16 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1169,13 +1112,6 @@ final hib = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PRP-T",
@@ -1292,11 +1228,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1431,13 +1362,6 @@ final hib = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "15 months - 4 days",
-                            "minAge": "15 months",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PRP-T",
@@ -1563,15 +1487,6 @@ final hib = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PRP-OMP",
@@ -1598,15 +1513,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1640,15 +1546,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months",
-                            "latestRecAge": "16 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1810,12 +1707,6 @@ final hib = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1948,9 +1839,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2141,13 +2029,6 @@ final hib = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "15 months - 4 days",
-                            "minAge": "15 months",
-                            "earliestRecAge": "15 months"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PRP-T",
@@ -2267,12 +2148,6 @@ final hib = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2325,9 +2200,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2378,9 +2250,6 @@ final hib = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

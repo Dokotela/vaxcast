@@ -7,6 +7,7 @@ part 'vax_set.g.dart';
 
 @freezed
 class VaxSet with _$VaxSet {
+  VaxSet._();
   factory VaxSet({
     String? setID,
     String? setDescription,

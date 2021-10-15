@@ -7,6 +7,7 @@ part 'vaccine_group_contraindications.g.dart';
 
 @freezed
 class VaccineGroupContraindications with _$VaccineGroupContraindications {
+  VaccineGroupContraindications._();
   factory VaccineGroupContraindications({
     List<GroupContraindication>? contraindication,
   }) = _VaccineGroupContraindications;
@@ -17,6 +18,7 @@ class VaccineGroupContraindications with _$VaccineGroupContraindications {
 
 @freezed
 class GroupContraindication with _$GroupContraindication {
+  GroupContraindication._();
   factory GroupContraindication({
     Obs? observationCode,
     String? observationTitle,

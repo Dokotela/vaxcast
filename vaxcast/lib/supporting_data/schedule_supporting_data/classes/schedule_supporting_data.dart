@@ -6,6 +6,7 @@ part 'schedule_supporting_data.g.dart';
 
 @freezed
 class ScheduleSupportingData with _$ScheduleSupportingData {
+  ScheduleSupportingData._();
   factory ScheduleSupportingData({
     LiveVirusConflicts? liveVirusConflicts,
     VaccineGroups? vaccineGroups,

@@ -182,14 +182,15 @@ class __$VaxSetCopyWithImpl<$Res> extends _$VaxSetCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaxSet implements _VaxSet {
+class _$_VaxSet extends _VaxSet {
   _$_VaxSet(
       {this.setID,
       this.setDescription,
       this.effectiveDate,
       this.cessationDate,
       this.conditionLogic,
-      this.condition});
+      this.condition})
+      : super._();
 
   factory _$_VaxSet.fromJson(Map<String, dynamic> json) =>
       _$$_VaxSetFromJson(json);
@@ -256,7 +257,7 @@ class _$_VaxSet implements _VaxSet {
   }
 }
 
-abstract class _VaxSet implements VaxSet {
+abstract class _VaxSet extends VaxSet {
   factory _VaxSet(
       {String? setID,
       String? setDescription,
@@ -264,6 +265,7 @@ abstract class _VaxSet implements VaxSet {
       String? cessationDate,
       String? conditionLogic,
       List<Condition>? condition}) = _$_VaxSet;
+  _VaxSet._() : super._();
 
   factory _VaxSet.fromJson(Map<String, dynamic> json) = _$_VaxSet.fromJson;
 

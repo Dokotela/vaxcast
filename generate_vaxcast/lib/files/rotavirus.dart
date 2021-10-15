@@ -59,14 +59,6 @@ final rotavirus = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "maxAge": "15 weeks"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Rotavirus, pentavalent",
@@ -111,15 +103,6 @@ final rotavirus = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "8 months + 1 day"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -173,15 +156,6 @@ final rotavirus = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "14 weeks - 4 days",
-                            "minAge": "14 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "7 months + 4 weeks",
-                            "maxAge": "8 months + 1 day"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -255,13 +229,6 @@ final rotavirus = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "15 weeks",
-                            "minAge": "15 weeks",
-                            "maxAge": "8 months + 1 day"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Rotavirus, pentavalent",
@@ -306,13 +273,6 @@ final rotavirus = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "8 months + 1 day"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -366,13 +326,6 @@ final rotavirus = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "7 months + 4 weeks",
-                            "maxAge": "8 months + 1 day"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -445,14 +398,6 @@ final rotavirus = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "maxAge": "15 weeks"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Rotavirus, monovalent",
@@ -474,15 +419,6 @@ final rotavirus = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "8 months + 1 day"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -533,13 +469,6 @@ final rotavirus = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "15 weeks",
-                            "minAge": "15 weeks",
-                            "maxAge": "8 months + 1 day"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Rotavirus, monovalent",
@@ -561,13 +490,6 @@ final rotavirus = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "8 months + 1 day"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

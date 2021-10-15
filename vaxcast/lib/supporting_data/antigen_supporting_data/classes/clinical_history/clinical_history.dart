@@ -7,6 +7,7 @@ part 'clinical_history.g.dart';
 
 @freezed
 class ClinicalHistory with _$ClinicalHistory {
+  ClinicalHistory._();
   factory ClinicalHistory({
     Obs? guidelineCode,
     String? guidelineTitle,

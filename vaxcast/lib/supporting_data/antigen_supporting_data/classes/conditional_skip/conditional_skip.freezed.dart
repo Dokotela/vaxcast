@@ -23,7 +23,7 @@ class _$ConditionalSkipTearOff {
 
   _ConditionalSkip call(
       {SkipContext? context,
-      String? setLogic,
+      SetLogic? setLogic,
       @JsonKey(name: 'set') List<VaxSet>? set_}) {
     return _ConditionalSkip(
       context: context,
@@ -43,7 +43,7 @@ const $ConditionalSkip = _$ConditionalSkipTearOff();
 /// @nodoc
 mixin _$ConditionalSkip {
   SkipContext? get context => throw _privateConstructorUsedError;
-  String? get setLogic => throw _privateConstructorUsedError;
+  SetLogic? get setLogic => throw _privateConstructorUsedError;
   @JsonKey(name: 'set')
   List<VaxSet>? get set_ => throw _privateConstructorUsedError;
 
@@ -60,7 +60,7 @@ abstract class $ConditionalSkipCopyWith<$Res> {
       _$ConditionalSkipCopyWithImpl<$Res>;
   $Res call(
       {SkipContext? context,
-      String? setLogic,
+      SetLogic? setLogic,
       @JsonKey(name: 'set') List<VaxSet>? set_});
 }
 
@@ -87,7 +87,7 @@ class _$ConditionalSkipCopyWithImpl<$Res>
       setLogic: setLogic == freezed
           ? _value.setLogic
           : setLogic // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as SetLogic?,
       set_: set_ == freezed
           ? _value.set_
           : set_ // ignore: cast_nullable_to_non_nullable
@@ -105,7 +105,7 @@ abstract class _$ConditionalSkipCopyWith<$Res>
   @override
   $Res call(
       {SkipContext? context,
-      String? setLogic,
+      SetLogic? setLogic,
       @JsonKey(name: 'set') List<VaxSet>? set_});
 }
 
@@ -134,7 +134,7 @@ class __$ConditionalSkipCopyWithImpl<$Res>
       setLogic: setLogic == freezed
           ? _value.setLogic
           : setLogic // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as SetLogic?,
       set_: set_ == freezed
           ? _value.set_
           : set_ // ignore: cast_nullable_to_non_nullable
@@ -145,9 +145,10 @@ class __$ConditionalSkipCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ConditionalSkip implements _ConditionalSkip {
+class _$_ConditionalSkip extends _ConditionalSkip {
   _$_ConditionalSkip(
-      {this.context, this.setLogic, @JsonKey(name: 'set') this.set_});
+      {this.context, this.setLogic, @JsonKey(name: 'set') this.set_})
+      : super._();
 
   factory _$_ConditionalSkip.fromJson(Map<String, dynamic> json) =>
       _$$_ConditionalSkipFromJson(json);
@@ -155,7 +156,7 @@ class _$_ConditionalSkip implements _ConditionalSkip {
   @override
   final SkipContext? context;
   @override
-  final String? setLogic;
+  final SetLogic? setLogic;
   @override
   @JsonKey(name: 'set')
   final List<VaxSet>? set_;
@@ -197,11 +198,12 @@ class _$_ConditionalSkip implements _ConditionalSkip {
   }
 }
 
-abstract class _ConditionalSkip implements ConditionalSkip {
+abstract class _ConditionalSkip extends ConditionalSkip {
   factory _ConditionalSkip(
       {SkipContext? context,
-      String? setLogic,
+      SetLogic? setLogic,
       @JsonKey(name: 'set') List<VaxSet>? set_}) = _$_ConditionalSkip;
+  _ConditionalSkip._() : super._();
 
   factory _ConditionalSkip.fromJson(Map<String, dynamic> json) =
       _$_ConditionalSkip.fromJson;
@@ -209,7 +211,7 @@ abstract class _ConditionalSkip implements ConditionalSkip {
   @override
   SkipContext? get context => throw _privateConstructorUsedError;
   @override
-  String? get setLogic => throw _privateConstructorUsedError;
+  SetLogic? get setLogic => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: 'set')
   List<VaxSet>? get set_ => throw _privateConstructorUsedError;

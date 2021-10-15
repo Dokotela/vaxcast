@@ -274,7 +274,7 @@ class __$IntervalCopyWithImpl<$Res> extends _$IntervalCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Interval implements _Interval {
+class _$_Interval extends _Interval {
   _$_Interval(
       {this.fromPrevious,
       this.fromTargetDose,
@@ -286,7 +286,8 @@ class _$_Interval implements _Interval {
       this.latestRecInt,
       this.intervalPriority,
       this.effectiveDate,
-      this.cessationDate});
+      this.cessationDate})
+      : super._();
 
   factory _$_Interval.fromJson(Map<String, dynamic> json) =>
       _$$_IntervalFromJson(json);
@@ -383,7 +384,7 @@ class _$_Interval implements _Interval {
   }
 }
 
-abstract class _Interval implements Interval {
+abstract class _Interval extends Interval {
   factory _Interval(
       {FromPrevious? fromPrevious,
       FromTarget? fromTargetDose,
@@ -396,6 +397,7 @@ abstract class _Interval implements Interval {
       String? intervalPriority,
       String? effectiveDate,
       String? cessationDate}) = _$_Interval;
+  _Interval._() : super._();
 
   factory _Interval.fromJson(Map<String, dynamic> json) = _$_Interval.fromJson;
 

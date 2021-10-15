@@ -123,8 +123,8 @@ class __$ObservationCodeCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ObservationCode implements _ObservationCode {
-  _$_ObservationCode({this.text, this.code});
+class _$_ObservationCode extends _ObservationCode {
+  _$_ObservationCode({this.text, this.code}) : super._();
 
   factory _$_ObservationCode.fromJson(Map<String, dynamic> json) =>
       _$$_ObservationCodeFromJson(json);
@@ -166,8 +166,9 @@ class _$_ObservationCode implements _ObservationCode {
   }
 }
 
-abstract class _ObservationCode implements ObservationCode {
+abstract class _ObservationCode extends ObservationCode {
   factory _ObservationCode({String? text, Obs? code}) = _$_ObservationCode;
+  _ObservationCode._() : super._();
 
   factory _ObservationCode.fromJson(Map<String, dynamic> json) =
       _$_ObservationCode.fromJson;

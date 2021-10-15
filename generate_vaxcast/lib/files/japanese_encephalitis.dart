@@ -68,13 +68,6 @@ final japaneseEncephalitis = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 months - 4 days",
-                            "minAge": "2 months",
-                            "earliestRecAge": "2 months"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Japanese Encephalitis, VC",
@@ -103,9 +96,6 @@ final japaneseEncephalitis = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -142,9 +132,6 @@ final japaneseEncephalitis = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -231,13 +218,6 @@ final japaneseEncephalitis = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Japanese Encephalitis, VC",
@@ -258,11 +238,6 @@ final japaneseEncephalitis = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -292,9 +267,6 @@ final japaneseEncephalitis = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

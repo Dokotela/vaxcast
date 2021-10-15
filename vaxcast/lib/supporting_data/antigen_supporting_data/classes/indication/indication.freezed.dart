@@ -187,13 +187,14 @@ class __$IndicationCopyWithImpl<$Res> extends _$IndicationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Indication implements _Indication {
+class _$_Indication extends _Indication {
   _$_Indication(
       {this.observationCode,
       this.description,
       this.beginAge,
       this.endAge,
-      this.guidance});
+      this.guidance})
+      : super._();
 
   factory _$_Indication.fromJson(Map<String, dynamic> json) =>
       _$$_IndicationFromJson(json);
@@ -254,13 +255,14 @@ class _$_Indication implements _Indication {
   }
 }
 
-abstract class _Indication implements Indication {
+abstract class _Indication extends Indication {
   factory _Indication(
       {ObservationCode? observationCode,
       String? description,
       String? beginAge,
       String? endAge,
       String? guidance}) = _$_Indication;
+  _Indication._() : super._();
 
   factory _Indication.fromJson(Map<String, dynamic> json) =
       _$_Indication.fromJson;

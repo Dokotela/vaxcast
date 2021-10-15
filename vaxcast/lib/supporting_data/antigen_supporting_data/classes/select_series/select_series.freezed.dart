@@ -217,7 +217,7 @@ class __$SelectSeriesCopyWithImpl<$Res> extends _$SelectSeriesCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SelectSeries implements _SelectSeries {
+class _$_SelectSeries extends _SelectSeries {
   _$_SelectSeries(
       {this.defaultSeries,
       this.productPath,
@@ -226,7 +226,8 @@ class _$_SelectSeries implements _SelectSeries {
       this.seriesPriority,
       this.seriesPreference,
       this.minAgeToStart,
-      this.maxAgeToStart});
+      this.maxAgeToStart})
+      : super._();
 
   factory _$_SelectSeries.fromJson(Map<String, dynamic> json) =>
       _$$_SelectSeriesFromJson(json);
@@ -306,7 +307,7 @@ class _$_SelectSeries implements _SelectSeries {
   }
 }
 
-abstract class _SelectSeries implements SelectSeries {
+abstract class _SelectSeries extends SelectSeries {
   factory _SelectSeries(
       {Binary? defaultSeries,
       Binary? productPath,
@@ -316,6 +317,7 @@ abstract class _SelectSeries implements SelectSeries {
       SeriesPreference? seriesPreference,
       String? minAgeToStart,
       String? maxAgeToStart}) = _$_SelectSeries;
+  _SelectSeries._() : super._();
 
   factory _SelectSeries.fromJson(Map<String, dynamic> json) =
       _$_SelectSeries.fromJson;

@@ -7,6 +7,7 @@ part 'indication.g.dart';
 
 @freezed
 class Indication with _$Indication {
+  Indication._();
   factory Indication({
     ObservationCode? observationCode,
     String? description,

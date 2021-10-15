@@ -62,13 +62,6 @@ final ebola = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Ebola Zaire vaccine, live",

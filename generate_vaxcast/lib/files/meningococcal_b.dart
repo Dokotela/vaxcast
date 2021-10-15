@@ -55,13 +55,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "10 years - 4 days",
-                            "minAge": "10 years",
-                            "earliestRecAge": "10 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "meningococcal B, OMV",
@@ -84,13 +77,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 years - 4 days",
-                            "minAge": "16 years",
-                            "earliestRecAge": "16 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -174,13 +160,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "10 years - 4 days",
-                            "minAge": "10 years",
-                            "earliestRecAge": "10 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "meningococcal B, recombinant",
@@ -203,13 +182,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 years - 4 days",
-                            "minAge": "16 years",
-                            "earliestRecAge": "16 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -306,13 +278,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "10 years - 4 days",
-                            "minAge": "10 years",
-                            "earliestRecAge": "10 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "meningococcal B, OMV",
@@ -335,9 +300,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -381,9 +343,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -417,9 +376,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -508,13 +464,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "10 years - 4 days",
-                            "minAge": "10 years",
-                            "earliestRecAge": "10 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "meningococcal B, recombinant",
@@ -537,9 +486,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -599,9 +545,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -652,9 +595,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -688,9 +628,6 @@ final meningococcalB = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 5",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

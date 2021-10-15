@@ -6,6 +6,7 @@ part 'antigen_supporting_data.g.dart';
 
 @freezed
 class AntigenSupportingData with _$AntigenSupportingData {
+  AntigenSupportingData._();
   factory AntigenSupportingData({
     TargetDisease? targetDisease,
     VaccineGroupName? vaccineGroup,

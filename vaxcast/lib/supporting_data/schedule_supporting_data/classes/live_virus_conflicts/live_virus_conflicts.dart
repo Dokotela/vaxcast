@@ -7,6 +7,7 @@ part 'live_virus_conflicts.g.dart';
 
 @freezed
 class LiveVirusConflicts with _$LiveVirusConflicts {
+  LiveVirusConflicts._();
   factory LiveVirusConflicts({
     List<LiveVirusConflict>? liveVirusConflict,
   }) = _LiveVirusConflicts;
@@ -17,6 +18,7 @@ class LiveVirusConflicts with _$LiveVirusConflicts {
 
 @freezed
 class LiveVirusConflict with _$LiveVirusConflict {
+  LiveVirusConflict._();
   factory LiveVirusConflict({
     Vaccine? previous,
     Vaccine? current,

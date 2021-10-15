@@ -49,15 +49,6 @@ final hpv = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "9 years - 4 days",
-                            "minAge": "9 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": "13 years + 4 weeks",
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "9vHPV",
@@ -94,11 +85,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -200,11 +186,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -279,24 +260,6 @@ final hpv = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "9 years - 4 days",
-                            "minAge": "9 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": "13 years + 4 weeks",
-                            "maxAge": "27 years",
-                            "cessationDate": "42719"
-                        },
-                        {
-                            "absMinAge": "15 years",
-                            "minAge": "15 years",
-                            "earliestRecAge": "15 years",
-                            "latestRecAge": "15 years",
-                            "maxAge": "27 years",
-                            "effectiveDate": "42720"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "9vHPV",
@@ -333,11 +296,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -383,11 +341,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -472,15 +425,6 @@ final hpv = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "9 years - 4 days",
-                            "minAge": "9 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": "13 years + 4 weeks",
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "9vHPV",
@@ -518,11 +462,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -625,11 +564,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -703,24 +637,6 @@ final hpv = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "9 years - 4 days",
-                            "minAge": "9 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": "13 years + 4 weeks",
-                            "maxAge": "27 years",
-                            "cessationDate": "42719"
-                        },
-                        {
-                            "absMinAge": "15 years",
-                            "minAge": "15 years",
-                            "earliestRecAge": "15 years",
-                            "latestRecAge": "15 years",
-                            "maxAge": "27 years",
-                            "effectiveDate": "42720"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "9vHPV",
@@ -758,11 +674,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -809,11 +720,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -912,15 +818,6 @@ final hpv = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "9 years - 4 days",
-                            "minAge": "9 years",
-                            "earliestRecAge": "9 years",
-                            "latestRecAge": "11 years",
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "9vHPV",
@@ -957,11 +854,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1063,11 +955,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1151,15 +1038,6 @@ final hpv = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "9 years - 4 days",
-                            "minAge": "9 years",
-                            "earliestRecAge": "9 years",
-                            "latestRecAge": "11 years",
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "9vHPV",
@@ -1197,11 +1075,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1304,11 +1177,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1474,15 +1342,6 @@ final hpv = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "9 years - 4 days",
-                            "minAge": "9 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": "13 years + 4 weeks",
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "9vHPV",
@@ -1519,11 +1378,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1569,11 +1423,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1748,15 +1597,6 @@ final hpv = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "9 years - 4 days",
-                            "minAge": "9 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": "13 years + 4 weeks",
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "9vHPV",
@@ -1794,11 +1634,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1845,11 +1680,6 @@ final hpv = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "27 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",

@@ -8,6 +8,7 @@ part 'contraindications.g.dart';
 
 @freezed
 class Contraindications with _$Contraindications {
+  Contraindications._();
   factory Contraindications({
     VaccineGroupContraindications? vaccineGroup,
     VaccineContraindications? vaccine,

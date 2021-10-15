@@ -7,6 +7,7 @@ part 'exclusion.g.dart';
 
 @freezed
 class Exclusion with _$Exclusion {
+  Exclusion._();
   factory Exclusion({
     Obs? exclusionCode,
     String? exclusionTitle,

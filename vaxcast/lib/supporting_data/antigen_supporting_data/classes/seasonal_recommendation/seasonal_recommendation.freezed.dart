@@ -124,8 +124,8 @@ class __$SeasonalRecommendationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SeasonalRecommendation implements _SeasonalRecommendation {
-  _$_SeasonalRecommendation({this.startDate, this.endDate});
+class _$_SeasonalRecommendation extends _SeasonalRecommendation {
+  _$_SeasonalRecommendation({this.startDate, this.endDate}) : super._();
 
   factory _$_SeasonalRecommendation.fromJson(Map<String, dynamic> json) =>
       _$$_SeasonalRecommendationFromJson(json);
@@ -169,9 +169,10 @@ class _$_SeasonalRecommendation implements _SeasonalRecommendation {
   }
 }
 
-abstract class _SeasonalRecommendation implements SeasonalRecommendation {
+abstract class _SeasonalRecommendation extends SeasonalRecommendation {
   factory _SeasonalRecommendation({String? startDate, String? endDate}) =
       _$_SeasonalRecommendation;
+  _SeasonalRecommendation._() : super._();
 
   factory _SeasonalRecommendation.fromJson(Map<String, dynamic> json) =
       _$_SeasonalRecommendation.fromJson;

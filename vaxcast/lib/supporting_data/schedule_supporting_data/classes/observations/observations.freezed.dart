@@ -109,8 +109,8 @@ class __$ObservationsCopyWithImpl<$Res> extends _$ObservationsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Observations implements _Observations {
-  _$_Observations({this.observation});
+class _$_Observations extends _Observations {
+  _$_Observations({this.observation}) : super._();
 
   factory _$_Observations.fromJson(Map<String, dynamic> json) =>
       _$$_ObservationsFromJson(json);
@@ -147,8 +147,9 @@ class _$_Observations implements _Observations {
   }
 }
 
-abstract class _Observations implements Observations {
+abstract class _Observations extends Observations {
   factory _Observations({List<Observation>? observation}) = _$_Observations;
+  _Observations._() : super._();
 
   factory _Observations.fromJson(Map<String, dynamic> json) =
       _$_Observations.fromJson;
@@ -366,7 +367,7 @@ class __$ObservationCopyWithImpl<$Res> extends _$ObservationCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Observation implements _Observation {
+class _$_Observation extends _Observation {
   _$_Observation(
       {this.observationCode,
       this.observationTitle,
@@ -374,7 +375,8 @@ class _$_Observation implements _Observation {
       this.indicationText,
       this.contraindicationText,
       this.clarifyingText,
-      this.codedValues});
+      this.codedValues})
+      : super._();
 
   factory _$_Observation.fromJson(Map<String, dynamic> json) =>
       _$$_ObservationFromJson(json);
@@ -447,7 +449,7 @@ class _$_Observation implements _Observation {
   }
 }
 
-abstract class _Observation implements Observation {
+abstract class _Observation extends Observation {
   factory _Observation(
       {Obs? observationCode,
       String? observationTitle,
@@ -456,6 +458,7 @@ abstract class _Observation implements Observation {
       String? contraindicationText,
       String? clarifyingText,
       CodedValues? codedValues}) = _$_Observation;
+  _Observation._() : super._();
 
   factory _Observation.fromJson(Map<String, dynamic> json) =
       _$_Observation.fromJson;
@@ -576,8 +579,8 @@ class __$CodedValuesCopyWithImpl<$Res> extends _$CodedValuesCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CodedValues implements _CodedValues {
-  _$_CodedValues({this.codedValue});
+class _$_CodedValues extends _CodedValues {
+  _$_CodedValues({this.codedValue}) : super._();
 
   factory _$_CodedValues.fromJson(Map<String, dynamic> json) =>
       _$$_CodedValuesFromJson(json);
@@ -614,8 +617,9 @@ class _$_CodedValues implements _CodedValues {
   }
 }
 
-abstract class _CodedValues implements CodedValues {
+abstract class _CodedValues extends CodedValues {
   factory _CodedValues({List<CodedValue>? codedValue}) = _$_CodedValues;
+  _CodedValues._() : super._();
 
   factory _CodedValues.fromJson(Map<String, dynamic> json) =
       _$_CodedValues.fromJson;
@@ -747,8 +751,8 @@ class __$CodedValueCopyWithImpl<$Res> extends _$CodedValueCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CodedValue implements _CodedValue {
-  _$_CodedValue({this.code, this.codeSystem, this.text});
+class _$_CodedValue extends _CodedValue {
+  _$_CodedValue({this.code, this.codeSystem, this.text}) : super._();
 
   factory _$_CodedValue.fromJson(Map<String, dynamic> json) =>
       _$$_CodedValueFromJson(json);
@@ -796,9 +800,10 @@ class _$_CodedValue implements _CodedValue {
   }
 }
 
-abstract class _CodedValue implements CodedValue {
+abstract class _CodedValue extends CodedValue {
   factory _CodedValue({String? code, String? codeSystem, String? text}) =
       _$_CodedValue;
+  _CodedValue._() : super._();
 
   factory _CodedValue.fromJson(Map<String, dynamic> json) =
       _$_CodedValue.fromJson;

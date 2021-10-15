@@ -142,8 +142,9 @@ class __$DateOfBirthCopyWithImpl<$Res> extends _$DateOfBirthCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_DateOfBirth implements _DateOfBirth {
-  _$_DateOfBirth({this.immunityBirthDate, this.birthCountry, this.exclusion});
+class _$_DateOfBirth extends _DateOfBirth {
+  _$_DateOfBirth({this.immunityBirthDate, this.birthCountry, this.exclusion})
+      : super._();
 
   factory _$_DateOfBirth.fromJson(Map<String, dynamic> json) =>
       _$$_DateOfBirthFromJson(json);
@@ -193,11 +194,12 @@ class _$_DateOfBirth implements _DateOfBirth {
   }
 }
 
-abstract class _DateOfBirth implements DateOfBirth {
+abstract class _DateOfBirth extends DateOfBirth {
   factory _DateOfBirth(
       {String? immunityBirthDate,
       String? birthCountry,
       List<Exclusion>? exclusion}) = _$_DateOfBirth;
+  _DateOfBirth._() : super._();
 
   factory _DateOfBirth.fromJson(Map<String, dynamic> json) =
       _$_DateOfBirth.fromJson;

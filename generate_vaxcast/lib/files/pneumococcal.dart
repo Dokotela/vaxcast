@@ -50,15 +50,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PCV13",
@@ -106,15 +97,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -207,15 +189,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "14 weeks - 4 days",
-                            "minAge": "14 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "7 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -325,15 +298,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months",
-                            "latestRecAge": "16 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -390,11 +354,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 5",
-                    "age": [
-                        {
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -472,15 +431,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PCV13",
@@ -528,15 +478,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -612,15 +553,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "14 weeks - 4 days",
-                            "minAge": "14 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "7 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -677,15 +609,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months",
-                            "latestRecAge": "16 months + 4 weeks",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -742,11 +665,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 5",
-                    "age": [
-                        {
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -824,15 +742,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months",
-                            "latestRecAge": "12 months",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PCV13",
@@ -880,11 +789,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -941,11 +845,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1022,15 +921,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "24 months - 4 days",
-                            "minAge": "24 months",
-                            "earliestRecAge": "24 months",
-                            "latestRecAge": "24 months",
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PCV13",
@@ -1078,11 +968,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "5 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1212,13 +1097,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years",
-                            "minAge": "2 years",
-                            "earliestRecAge": "2 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1300,9 +1178,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1383,9 +1258,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1565,13 +1437,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years",
-                            "minAge": "2 years",
-                            "earliestRecAge": "2 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1653,9 +1518,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1736,9 +1598,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1783,9 +1642,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1899,13 +1755,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years - 4 days",
-                            "minAge": "6 years",
-                            "earliestRecAge": "6 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1954,13 +1803,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2045,13 +1887,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 years - 4 days",
-                            "minAge": "6 years",
-                            "earliestRecAge": "6 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PCV13",
@@ -2095,9 +1930,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2119,13 +1951,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2213,13 +2038,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years - 4 days",
-                            "minAge": "6 years",
-                            "earliestRecAge": "6 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PPSV23",
@@ -2240,9 +2058,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2287,13 +2102,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2377,13 +2185,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PPSV23",
@@ -2404,9 +2205,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2451,13 +2249,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -2656,13 +2447,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 years - 4 days",
-                            "minAge": "6 years",
-                            "earliestRecAge": "6 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PCV13",
@@ -2706,9 +2490,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2737,9 +2518,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2790,13 +2568,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3014,14 +2785,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years - 4 days",
-                            "minAge": "6 years",
-                            "earliestRecAge": "6 years",
-                            "latestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PPSV23",
@@ -3042,9 +2805,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3096,9 +2856,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -3134,13 +2891,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3339,13 +3089,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PPSV23",
@@ -3366,9 +3109,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3420,9 +3160,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -3480,13 +3217,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3704,14 +3434,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years - 4 days",
-                            "minAge": "6 years",
-                            "earliestRecAge": "6 years",
-                            "latestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PPSV23",
@@ -3732,9 +3454,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3763,9 +3482,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3817,13 +3533,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -4022,13 +3731,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "2 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "PPSV23",
@@ -4049,9 +3751,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -4102,9 +3801,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -4156,13 +3852,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -4231,13 +3920,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -4285,13 +3967,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "19 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -4321,12 +3996,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -4382,13 +4051,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "65 years",
-                            "minAge": "65 years",
-                            "earliestRecAge": "65 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -4418,9 +4080,6 @@ final pneumococcal = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

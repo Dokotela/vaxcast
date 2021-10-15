@@ -161,8 +161,8 @@ class __$ContraindicationsCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Contraindications implements _Contraindications {
-  _$_Contraindications({this.vaccineGroup, this.vaccine});
+class _$_Contraindications extends _Contraindications {
+  _$_Contraindications({this.vaccineGroup, this.vaccine}) : super._();
 
   factory _$_Contraindications.fromJson(Map<String, dynamic> json) =>
       _$$_ContraindicationsFromJson(json);
@@ -205,10 +205,11 @@ class _$_Contraindications implements _Contraindications {
   }
 }
 
-abstract class _Contraindications implements Contraindications {
+abstract class _Contraindications extends Contraindications {
   factory _Contraindications(
       {VaccineGroupContraindications? vaccineGroup,
       VaccineContraindications? vaccine}) = _$_Contraindications;
+  _Contraindications._() : super._();
 
   factory _Contraindications.fromJson(Map<String, dynamic> json) =
       _$_Contraindications.fromJson;

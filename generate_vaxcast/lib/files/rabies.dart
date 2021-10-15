@@ -47,13 +47,6 @@ final rabies = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "0 days",
-                            "earliestRecAge": "0 days"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Rabies - IM Diploid cell culture",
@@ -96,9 +89,6 @@ final rabies = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -149,9 +139,6 @@ final rabies = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -203,9 +190,6 @@ final rabies = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -306,13 +290,6 @@ final rabies = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "0 days",
-                            "earliestRecAge": "0 days"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Rabies - IM Diploid cell culture",
@@ -355,9 +332,6 @@ final rabies = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -408,9 +382,6 @@ final rabies = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -462,9 +433,6 @@ final rabies = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

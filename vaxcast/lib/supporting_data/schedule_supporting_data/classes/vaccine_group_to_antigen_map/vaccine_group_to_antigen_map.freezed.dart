@@ -114,8 +114,8 @@ class __$VaccineGroupToAntigenMapCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaccineGroupToAntigenMap implements _VaccineGroupToAntigenMap {
-  _$_VaccineGroupToAntigenMap({this.vaccineGroupMap});
+class _$_VaccineGroupToAntigenMap extends _VaccineGroupToAntigenMap {
+  _$_VaccineGroupToAntigenMap({this.vaccineGroupMap}) : super._();
 
   factory _$_VaccineGroupToAntigenMap.fromJson(Map<String, dynamic> json) =>
       _$$_VaccineGroupToAntigenMapFromJson(json);
@@ -154,9 +154,10 @@ class _$_VaccineGroupToAntigenMap implements _VaccineGroupToAntigenMap {
   }
 }
 
-abstract class _VaccineGroupToAntigenMap implements VaccineGroupToAntigenMap {
+abstract class _VaccineGroupToAntigenMap extends VaccineGroupToAntigenMap {
   factory _VaccineGroupToAntigenMap({List<VaccineGroupMap>? vaccineGroupMap}) =
       _$_VaccineGroupToAntigenMap;
+  _VaccineGroupToAntigenMap._() : super._();
 
   factory _VaccineGroupToAntigenMap.fromJson(Map<String, dynamic> json) =
       _$_VaccineGroupToAntigenMap.fromJson;
@@ -281,8 +282,8 @@ class __$VaccineGroupMapCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_VaccineGroupMap implements _VaccineGroupMap {
-  _$_VaccineGroupMap({this.name, this.antigen});
+class _$_VaccineGroupMap extends _VaccineGroupMap {
+  _$_VaccineGroupMap({this.name, this.antigen}) : super._();
 
   factory _$_VaccineGroupMap.fromJson(Map<String, dynamic> json) =>
       _$$_VaccineGroupMapFromJson(json);
@@ -324,10 +325,11 @@ class _$_VaccineGroupMap implements _VaccineGroupMap {
   }
 }
 
-abstract class _VaccineGroupMap implements VaccineGroupMap {
+abstract class _VaccineGroupMap extends VaccineGroupMap {
   factory _VaccineGroupMap(
       {VaccineGroupName? name,
       List<TargetDisease>? antigen}) = _$_VaccineGroupMap;
+  _VaccineGroupMap._() : super._();
 
   factory _VaccineGroupMap.fromJson(Map<String, dynamic> json) =
       _$_VaccineGroupMap.fromJson;

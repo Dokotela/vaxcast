@@ -113,15 +113,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "0 days",
-                            "earliestRecAge": "0 days",
-                            "latestRecAge": "4 weeks",
-                            "maxAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Hep B, Adol/peds",
@@ -241,14 +232,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "4 weeks - 4 days",
-                            "minAge": "4 weeks",
-                            "earliestRecAge": "1 month",
-                            "latestRecAge": "3 months + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -377,14 +360,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "24 weeks - 4 days",
-                            "minAge": "24 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "19 months + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -537,15 +512,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "0 days",
-                            "earliestRecAge": "0 days",
-                            "latestRecAge": "4 weeks",
-                            "maxAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Hep B, Adol/peds",
@@ -651,14 +617,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "4 weeks - 4 days",
-                            "minAge": "4 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -773,9 +731,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -889,14 +844,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "24 weeks - 4 days",
-                            "minAge": "24 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "19 months + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1034,13 +981,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "11 years - 4 days",
-                            "minAge": "11 years",
-                            "earliestRecAge": "11 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Hep B, Adult",
@@ -1055,11 +995,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "maxAge": "16 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1102,14 +1037,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years",
-                            "maxAge": "19 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1137,9 +1064,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1192,12 +1116,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "0 days"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Hep B, Adol/peds",
@@ -1297,14 +1215,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years",
-                            "maxAge": "19 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1332,9 +1242,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1453,9 +1360,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -1536,14 +1440,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years",
-                            "maxAge": "19 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1571,9 +1467,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1680,9 +1573,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1801,9 +1691,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2003,13 +1890,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Hep B, Adol/peds",
@@ -2099,9 +1979,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2199,9 +2076,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2448,13 +2322,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "HepB-CpG",
@@ -2475,9 +2342,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2654,13 +2518,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "0 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Hep B, Adol/peds",
@@ -2760,13 +2617,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2794,9 +2644,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2915,9 +2762,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -3122,13 +2966,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3156,9 +2993,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3265,9 +3099,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3386,9 +3217,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3588,13 +3416,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "19 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "HepA-HepB",
@@ -3608,9 +3429,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3644,9 +3462,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3829,13 +3644,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "19 years - 4 days",
-                            "minAge": "19 years",
-                            "earliestRecAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "HepA-HepB",
@@ -3849,9 +3657,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3873,9 +3678,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3898,9 +3700,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "N",
@@ -3949,12 +3748,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "19 years - 4 days",
-                            "minAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Hep B, Dialysis",
@@ -3975,9 +3768,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -4006,9 +3796,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -4063,12 +3850,6 @@ final hepb = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "19 years- 4 days",
-                            "minAge": "19 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Hep B, Adult",
@@ -4084,9 +3865,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -4110,9 +3888,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -4143,9 +3918,6 @@ final hepb = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

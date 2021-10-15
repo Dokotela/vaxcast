@@ -163,14 +163,6 @@ final diphtheria = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "DTaP",
@@ -384,14 +376,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -614,14 +598,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "14 weeks - 4 days",
-                            "minAge": "14 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "7 months + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -844,14 +820,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "15 months",
-                            "earliestRecAge": "15 months",
-                            "latestRecAge": "19 months + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1066,14 +1034,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 5",
-                    "age": [
-                        {
-                            "absMinAge": "4 years - 4 days",
-                            "minAge": "4 years",
-                            "earliestRecAge": "4 years",
-                            "latestRecAge": "7 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1284,14 +1244,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 6",
-                    "age": [
-                        {
-                            "absMinAge": "7 years",
-                            "minAge": "7 years",
-                            "earliestRecAge": "7 years",
-                            "latestRecAge": "7 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1510,14 +1462,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 7",
-                    "age": [
-                        {
-                            "absMinAge": "7 years",
-                            "minAge": "7 years",
-                            "earliestRecAge": "7 years",
-                            "latestRecAge": "7 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1688,14 +1632,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 8",
-                    "age": [
-                        {
-                            "absMinAge": "7 years",
-                            "minAge": "7 years",
-                            "earliestRecAge": "7 years",
-                            "latestRecAge": "7 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1866,14 +1802,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 9",
-                    "age": [
-                        {
-                            "absMinAge": "10 years",
-                            "minAge": "11 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": "13 years + 4 weeks"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Td - Adult Adsorbed",
@@ -2035,9 +1963,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 10",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2202,12 +2127,6 @@ final diphtheria = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "DTaP",
@@ -2421,9 +2340,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2646,9 +2562,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -2871,14 +2784,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "15 months",
-                            "earliestRecAge": "15 months",
-                            "latestRecAge": "19 months + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3093,14 +2998,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 5",
-                    "age": [
-                        {
-                            "absMinAge": "4 years - 4 days",
-                            "minAge": "4 years",
-                            "earliestRecAge": "4 years",
-                            "latestRecAge": "7 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3311,14 +3208,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 6",
-                    "age": [
-                        {
-                            "absMinAge": "7 years",
-                            "minAge": "7 years",
-                            "earliestRecAge": "7 years",
-                            "latestRecAge": "7 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3603,14 +3492,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 7",
-                    "age": [
-                        {
-                            "absMinAge": "7 years",
-                            "minAge": "7 years",
-                            "earliestRecAge": "7 years",
-                            "latestRecAge": "7 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3781,14 +3662,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 8",
-                    "age": [
-                        {
-                            "absMinAge": "7 years",
-                            "minAge": "7 years",
-                            "earliestRecAge": "7 years",
-                            "latestRecAge": "7 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -3959,14 +3832,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 9",
-                    "age": [
-                        {
-                            "absMinAge": "10 years",
-                            "minAge": "11 years",
-                            "earliestRecAge": "11 years",
-                            "latestRecAge": "13 years + 4 weeks"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Td - Adult Adsorbed",
@@ -4128,9 +3993,6 @@ final diphtheria = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 10",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

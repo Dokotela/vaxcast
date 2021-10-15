@@ -77,15 +77,6 @@ final polio = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks",
-                            "maxAge": "18 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "IPV",
@@ -189,15 +180,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -310,15 +292,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "14 weeks - 4 days",
-                            "minAge": "14 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "19 months + 4 weeks",
-                            "maxAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -484,24 +457,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "absMinAge": "18 weeks - 4 days",
-                            "minAge": "18 weeks",
-                            "earliestRecAge": "4 years",
-                            "latestRecAge": "7 years + 4 weeks",
-                            "maxAge": "18 years",
-                            "cessationDate": "40031"
-                        },
-                        {
-                            "absMinAge": "4 years - 4 days",
-                            "minAge": "4 years",
-                            "earliestRecAge": "4 years",
-                            "latestRecAge": "7 years + 4 weeks",
-                            "maxAge": "18 years",
-                            "effectiveDate": "40032"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -639,15 +594,6 @@ final polio = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "6 weeks - 4 days",
-                            "minAge": "6 weeks",
-                            "earliestRecAge": "2 months",
-                            "latestRecAge": "3 months + 4 weeks",
-                            "maxAge": "18 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "IPV",
@@ -751,15 +697,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "10 weeks - 4 days",
-                            "minAge": "10 weeks",
-                            "earliestRecAge": "4 months",
-                            "latestRecAge": "5 months + 4 weeks",
-                            "maxAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -872,15 +809,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "14 weeks - 4 days",
-                            "minAge": "14 weeks",
-                            "earliestRecAge": "6 months",
-                            "latestRecAge": "19 months + 4 weeks",
-                            "maxAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1050,11 +978,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 4",
-                    "age": [
-                        {
-                            "maxAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1174,15 +1097,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 5",
-                    "age": [
-                        {
-                            "absMinAge": "4 years - 4 days",
-                            "minAge": "4 years",
-                            "earliestRecAge": "4 years",
-                            "latestRecAge": "7 years + 4 weeks",
-                            "maxAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1329,13 +1243,6 @@ final polio = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "IPV",
@@ -1424,13 +1331,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -1528,13 +1428,6 @@ final polio = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 3",
-                    "age": [
-                        {
-                            "absMinAge": "18 years - 4 days",
-                            "minAge": "18 years",
-                            "earliestRecAge": "18 years"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

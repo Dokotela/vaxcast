@@ -7,6 +7,7 @@ part 'vaccine.g.dart';
 
 @freezed
 class Vaccine with _$Vaccine {
+  Vaccine._();
   factory Vaccine({
     String? vaccineType,
     Cvx? cvx,

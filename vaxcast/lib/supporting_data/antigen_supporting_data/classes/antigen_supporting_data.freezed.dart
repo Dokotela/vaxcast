@@ -206,13 +206,14 @@ class __$AntigenSupportingDataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AntigenSupportingData implements _AntigenSupportingData {
+class _$_AntigenSupportingData extends _AntigenSupportingData {
   _$_AntigenSupportingData(
       {this.targetDisease,
       this.vaccineGroup,
       this.immunity,
       this.contraindications,
-      this.series});
+      this.series})
+      : super._();
 
   factory _$_AntigenSupportingData.fromJson(Map<String, dynamic> json) =>
       _$$_AntigenSupportingDataFromJson(json);
@@ -274,13 +275,14 @@ class _$_AntigenSupportingData implements _AntigenSupportingData {
   }
 }
 
-abstract class _AntigenSupportingData implements AntigenSupportingData {
+abstract class _AntigenSupportingData extends AntigenSupportingData {
   factory _AntigenSupportingData(
       {TargetDisease? targetDisease,
       VaccineGroupName? vaccineGroup,
       Immunity? immunity,
       Contraindications? contraindications,
       List<Series>? series}) = _$_AntigenSupportingData;
+  _AntigenSupportingData._() : super._();
 
   factory _AntigenSupportingData.fromJson(Map<String, dynamic> json) =
       _$_AntigenSupportingData.fromJson;

@@ -195,14 +195,6 @@ final varicella = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "12 months - 4 days",
-                            "minAge": "12 months",
-                            "earliestRecAge": "12 months",
-                            "latestRecAge": "16 months + 4 weeks"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Varicella",
@@ -242,14 +234,6 @@ final varicella = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {
-                            "absMinAge": "13 months",
-                            "minAge": "15 months",
-                            "earliestRecAge": "4 years",
-                            "latestRecAge": "7 years + 4 weeks"
-                        }
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",
@@ -322,14 +306,6 @@ final varicella = AntigenSupportingData.fromJson({
             "seriesDose": [
                 {
                     "doseNumber": "Dose 1",
-                    "age": [
-                        {
-                            "absMinAge": "13 years",
-                            "minAge": "13 years",
-                            "earliestRecAge": "13 years",
-                            "latestRecAge": "13 years"
-                        }
-                    ],
                     "preferableVaccine": [
                         {
                             "vaccineType": "Varicella",
@@ -361,9 +337,6 @@ final varicella = AntigenSupportingData.fromJson({
                 },
                 {
                     "doseNumber": "Dose 2",
-                    "age": [
-                        {}
-                    ],
                     "interval": [
                         {
                             "fromPrevious": "Y",

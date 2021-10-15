@@ -7,6 +7,7 @@ part 'vaccine_groups.g.dart';
 
 @freezed
 class VaccineGroups with _$VaccineGroups {
+  VaccineGroups._();
   factory VaccineGroups({
     List<VaccineGroup>? vaccineGroup,
   }) = _VaccineGroups;
@@ -17,6 +18,7 @@ class VaccineGroups with _$VaccineGroups {
 
 @freezed
 class VaccineGroup with _$VaccineGroup {
+  VaccineGroup._();
   factory VaccineGroup({
     VaccineGroupName? name,
     Binary? administerFullVaccineGroup,

@@ -9,6 +9,7 @@ part 'interval.g.dart';
 
 @freezed
 class Interval with _$Interval {
+  Interval._();
   factory Interval({
     FromPrevious? fromPrevious,
     FromTarget? fromTargetDose,

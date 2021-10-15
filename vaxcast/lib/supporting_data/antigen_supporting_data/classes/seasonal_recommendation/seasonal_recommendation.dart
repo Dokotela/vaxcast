@@ -5,6 +5,7 @@ part 'seasonal_recommendation.g.dart';
 
 @freezed
 class SeasonalRecommendation with _$SeasonalRecommendation {
+  SeasonalRecommendation._();
   factory SeasonalRecommendation({
     String? startDate,
     String? endDate,
