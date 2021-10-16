@@ -1,0 +1,38 @@
+# Introduction to Immunization Forecasting
+
+## Terminology
+1. Target dose - this is a term that makes some intrinsic sense, and then has been used in confusing ways, at least I thought so. When evaluating doses that have already been received, they are all viewed within the context of the target dose. As stated in the introduction, the target dose is the next dose in a series. In my code, I've defined the TargetDose as the index in the series as opposed to the actual TargetDose number. 
+
+It is generally used to mean the next dose in a series that has not yet been completed/satisfied.
+## 1.1 Target Dose
+#### When evaluating doses that have already been received, they are all
+
+
+#### A TargetDose is said to be 'unsatisfied' until a dose matches all of its required criteria. At that time, the TargetDose is incremented by one. Below is a basic example from the CDC. 
+![Figure 3-1](images/3-1%20How%20a%20Vaccine%20Dose%20Administered%20Satisfies%20a%20Target%20Dose)
+#### *As a side note, anytime you see the term 'Vaccine Dose Administered' replace it with 'Dose Given', and it makes much more sense.
+
+#### Evaluation Statuses
+
+
+2. Most of the logic is at the level of the antigen, and most vaccines are broken down into their antigenic components and the logic is applied using them
+3. The basic gist of immunization logic runs like this:
+    * Create list of antigens that the patient should be immunized against
+    * Multiple options exist for immunity, some through infection (e.g. varicella), others through completing a vaccine series
+    * There are multiple series that are valid for inducing immunity, and may be appropriate given certain conditions, allergies, age, etc
+    * Each dose that has already been received is compared against the doses in every series, to see if they match required ages, intervals, etc
+    * When a historical vaccine satisies a dose in a series, the next recommended dose for each series is calculated
+    * After all historical vaccines are applied to each series, the series are scored according to factors such as how many valid doses they contain, how quickly they can be completed, or if they are the default series
+    * These scores are used to determine the preferred series for that particular antigen
+    * The series are then grouped together in Vaccine groups (MMR, DTAP, etc) to provide final recommendations for vaccines
+    * While not supplied in the official logic, these Vaccine groups should then be combined to actual Vaccines, with CVX/MVX codes and names, although this is somewhat more challenging as it usually has to do with which vaccines are available, rather than true preferences or recommendations
+
+## Date Rules
+
+## 3. Data Models
+1. I've struggled over this for a while, trying to decide the best way to do it, both for efficiency, maintainability, and for understandability. I've certainly included more fields than was absolutely necessary. So if you're asking why I've included so many, it's because it was helping me to understand the vaccine logic as I worked through it.
+2. I begin by instantiating all of the supporting vaccine data. This will include all antigen supporting data (which is per disease), and schedule supporting data (which includes live virus conflicts, series vaccine groups, series vaccine group to antigen map, cxv to antigen map, and observations). This is a singleton, since it shouldn't change during the course of evaluations.
+3. Initially the patient was also a singleton, but I'd like to be able to run this in docker eventually, and thought it would be easier to just pass the patient information as necessary, so that's what I've done now.
+4. I've written conversion functions when a patient is created. To make them as generic as possible, they receive a bundle for patient, Immunization, ImmunizationRecommendation and conditions. These are all FHIR resources. In later versions, I'm going to try and include stu3 and dstu2 translators as well.
+5. The benefit of using the data model created by the CDC is at least two-fold. The first is that I don't have to maintain it. The second is that anyone else can input their vaccine schedule, as long as it's in the same format, and the logic still works.
+6. I am going to be working on creating a vaccine schedule in the same format as the CDC but using the WHO recommendations. So if anyone is interested in helping me create these, let me know.

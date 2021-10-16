@@ -116,7 +116,7 @@ class VaxDate extends DateTime {
   }
 }
 
-VaxDate LatestOf(List<VaxDate> dates) {
+VaxDate latestOf(List<VaxDate> dates) {
   var latest;
   for (final date in dates) {
     latest == null
@@ -128,7 +128,7 @@ VaxDate LatestOf(List<VaxDate> dates) {
   return latest;
 }
 
-VaxDate EarliestOf(List<VaxDate> dates) {
+VaxDate earliestOf(List<VaxDate> dates) {
   var earliest;
   for (final date in dates) {
     if (earliest == null) {
