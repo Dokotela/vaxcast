@@ -1,6 +1,8 @@
+import 'package:vaxcast/vaxcast.dart';
+
 class AgByCvx {
   final String shortDescription;
-  final List<String> antigens;
+  final List<TargetDisease> antigens;
 
   AgByCvx(this.shortDescription, this.antigens);
 }
@@ -8,534 +10,598 @@ class AgByCvx {
 final Map<String, AgByCvx> simpleCvxMap = {
   '01': AgByCvx(
     'DTP',
-    ['Diphtheria', 'Tetanus', 'Pertussis'],
+    [TargetDisease.diptheria, TargetDisease.tetanus, TargetDisease.pertussis],
   ),
   '02': AgByCvx(
     'OPV',
-    ['Polio'],
+    [TargetDisease.polio],
   ),
   '03': AgByCvx(
     'MMR',
-    ['Measles', 'Mumps', 'Rubella'],
+    [TargetDisease.measles, TargetDisease.mumps, TargetDisease.rubella],
   ),
   '04': AgByCvx(
     'M/R',
-    ['Measles', 'Rubella'],
+    [TargetDisease.measles, TargetDisease.rubella],
   ),
   '05': AgByCvx(
     'measles',
-    ['Measles'],
+    [TargetDisease.measles],
   ),
   '06': AgByCvx(
     'rubella',
-    ['Rubella'],
+    [TargetDisease.rubella],
   ),
   '07': AgByCvx(
     'mumps',
-    ['Mumps'],
+    [TargetDisease.mumps],
   ),
   '08': AgByCvx(
     'Hep B, adolescent or pediatric',
-    ['HepB'],
+    [TargetDisease.hepB],
   ),
   '09': AgByCvx(
     'Td (adult), adsorbed',
-    ['Tetanus', 'Diphtheria'],
+    [TargetDisease.tetanus, TargetDisease.diptheria],
   ),
   '10': AgByCvx(
     'IPV',
-    ['Polio'],
+    [TargetDisease.polio],
   ),
   '11': AgByCvx(
     'pertussis',
-    ['Pertussis'],
+    [TargetDisease.pertussis],
   ),
   '15': AgByCvx(
     'influenza, split (incl. purified surface antigen)',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '16': AgByCvx(
     'influenza, whole',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '17': AgByCvx(
     'Hib, unspecified formulation',
-    ['Hib'],
+    [TargetDisease.hib],
   ),
   '18': AgByCvx(
     'Rabies, intramuscular injection',
-    ['Rabies'],
+    [TargetDisease.rabies],
   ),
   '19': AgByCvx(
     'Bacillus Calmette-Guerin vaccine',
-    ['Tuberculosis'],
+    [TargetDisease.tuberculosis],
   ),
   '20': AgByCvx(
     'DTaP',
-    ['Diphtheria', 'Tetanus', 'Pertussis'],
+    [TargetDisease.diptheria, TargetDisease.tetanus, TargetDisease.pertussis],
   ),
   '21': AgByCvx(
     'varicella',
-    ['Varicella'],
+    [TargetDisease.varicella],
   ),
   '22': AgByCvx(
     'DTP-Hib',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'Hib'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.hib
+    ],
   ),
   '25': AgByCvx(
     'Typhoid oral, live, attenuated',
-    ['Typhoid'],
+    [TargetDisease.typhoid],
   ),
   '26': AgByCvx(
     'cholera, unspecified formulation',
-    ['Cholera'],
+    [TargetDisease.cholera],
   ),
   '28': AgByCvx(
     'DT (pediatric)',
-    ['Diphtheria', 'Tetanus'],
+    [TargetDisease.diptheria, TargetDisease.tetanus],
   ),
   '31': AgByCvx(
     'Hep A, pediatric, unspecified formulation',
-    ['HepA'],
+    [TargetDisease.hepA],
   ),
   '32': AgByCvx(
     'meningococcal MPSV4',
-    ['Meningococcal'],
+    [TargetDisease.meningococcal],
   ),
   '33': AgByCvx(
     'pneumococcal polysaccharide PPV23',
-    ['Pneumococcal'],
+    [TargetDisease.pneumococcal],
   ),
   '35': AgByCvx(
     'tetanus toxoid, adsorbed',
-    ['Tetanus'],
+    [TargetDisease.tetanus],
   ),
   '37': AgByCvx(
     'Yellow Fever',
-    ['Yellow Fever'],
+    [TargetDisease.yellowFever],
   ),
   '38': AgByCvx(
     'rubella/mumps',
-    ['Rubella', 'Mumps'],
+    [TargetDisease.rubella, TargetDisease.mumps],
   ),
   '39': AgByCvx(
     'Japanese encephalitis SC',
-    ['Japanese Encephalitis'],
+    [TargetDisease.japaneseEncephalitis],
   ),
   '40': AgByCvx(
     'rabies, intradermal injection',
-    ['Rabies'],
+    [TargetDisease.rabies],
   ),
   '41': AgByCvx(
     'typhoid, parenteral',
-    ['Typhoid'],
+    [TargetDisease.typhoid],
   ),
   '42': AgByCvx(
     'Hep B, adolescent/high risk infant',
-    ['HepB'],
+    [TargetDisease.hepB],
   ),
   '43': AgByCvx(
     'Hep B, adult',
-    ['HepB'],
+    [TargetDisease.hepB],
   ),
   '44': AgByCvx(
     'Hep B, dialysis',
-    ['HepB'],
+    [TargetDisease.hepB],
   ),
   '45': AgByCvx(
     'Hep B, unspecified formulation',
-    ['HepB'],
+    [TargetDisease.hepB],
   ),
   '46': AgByCvx(
     'Hib (PRP-D)',
-    ['Hib'],
+    [TargetDisease.hib],
   ),
   '47': AgByCvx(
     'Hib (HbOC)',
-    ['Hib'],
+    [TargetDisease.hib],
   ),
   '48': AgByCvx(
     'Hib (PRP-T)',
-    ['Hib'],
+    [TargetDisease.hib],
   ),
   '49': AgByCvx(
     'Hib (PRP-OMP)',
-    ['Hib'],
+    [TargetDisease.hib],
   ),
   '50': AgByCvx(
     'DTaP-Hib',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'Hib'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.hib
+    ],
   ),
   '51': AgByCvx(
     'Hib-Hep B',
-    ['Hib', 'HepB'],
+    [TargetDisease.hib, TargetDisease.hepB],
   ),
   '53': AgByCvx(
     'typhoid, parenteral, AKD (U.S. military)',
-    ['Typhoid'],
+    [TargetDisease.typhoid],
   ),
   '52': AgByCvx(
     'Hep A, adult',
-    ['HepA'],
+    [TargetDisease.hepA],
   ),
   '62': AgByCvx(
     'HPV, quadrivalent',
-    ['HPV'],
+    [TargetDisease.hpv],
   ),
   '74': AgByCvx(
     'rotavirus, tetravalent',
-    ['Rotavirus'],
+    [TargetDisease.rotavirus],
   ),
   '83': AgByCvx(
     'Hep A, ped/adol, 2 dose',
-    ['HepA'],
+    [TargetDisease.hepA],
   ),
   '84': AgByCvx(
     'Hep A, ped/adol, 3 dose',
-    ['HepA'],
+    [TargetDisease.hepA],
   ),
   '85': AgByCvx(
     'Hep A, unspecified formulation',
-    ['HepA'],
+    [TargetDisease.hepA],
   ),
   '88': AgByCvx(
     'influenza, unspecified formulation',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '89': AgByCvx(
     'polio, unspecified formulation',
-    ['Polio'],
+    [TargetDisease.polio],
   ),
   '90': AgByCvx(
     'Rabies, unspecified formulation',
-    ['Rabies'],
+    [TargetDisease.rabies],
   ),
   '91': AgByCvx(
     'typhoid, unspecified formulation',
-    ['Typhoid'],
+    [TargetDisease.typhoid],
   ),
   '94': AgByCvx(
     'MMRV',
-    ['Measles', 'Mumps', 'Rubella', 'Varicella'],
+    [
+      TargetDisease.measles,
+      TargetDisease.mumps,
+      TargetDisease.rubella,
+      TargetDisease.varicella
+    ],
   ),
   '100': AgByCvx(
     'pneumococcal conjugate PCV 7',
-    ['Pneumococcal'],
+    [TargetDisease.pneumococcal],
   ),
   '101': AgByCvx(
     'Typhoid capsular polysaccharide',
-    ['Typhoid'],
+    [TargetDisease.typhoid],
   ),
   '102': AgByCvx(
     'DTP-Hib-Hep B',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'Hib', 'HepB'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.hib,
+      TargetDisease.hepB
+    ],
   ),
   '103': AgByCvx(
     'meningococcal C conjugate',
-    ['Meningococcal'],
+    [TargetDisease.meningococcal],
   ),
   '104': AgByCvx(
     'Hep A-Hep B',
-    ['HepA', 'HepB'],
+    [TargetDisease.hepA, TargetDisease.hepB],
   ),
   '106': AgByCvx(
     'DTaP, 5 pertussis antigens',
-    ['Diphtheria', 'Tetanus', 'Pertussis'],
+    [TargetDisease.diptheria, TargetDisease.tetanus, TargetDisease.pertussis],
   ),
   '107': AgByCvx(
     'DTaP, unspecified formulation',
-    ['Diphtheria', 'Tetanus', 'Pertussis'],
+    [TargetDisease.diptheria, TargetDisease.tetanus, TargetDisease.pertussis],
   ),
   '108': AgByCvx(
     'meningococcal, unspecified formulation',
-    ['Meningococcal'],
+    [TargetDisease.meningococcal],
   ),
   '109': AgByCvx(
     'pneumococcal, unspecified formulation',
-    ['Pneumococcal'],
+    [TargetDisease.pneumococcal],
   ),
   '110': AgByCvx(
     'DTaP-Hep B-IPV',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'HepB', 'Polio'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.hepB,
+      TargetDisease.polio
+    ],
   ),
   '111': AgByCvx(
     'influenza, live, intranasal',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '112': AgByCvx(
     'tetanus toxoid, unspecified formulation',
-    ['Tetanus'],
+    [TargetDisease.tetanus],
   ),
   '113': AgByCvx(
     'Td (adult) preservative free',
-    ['Tetanus', 'Diphtheria'],
+    [TargetDisease.tetanus, TargetDisease.diptheria],
   ),
   '114': AgByCvx(
     'meningococcal MCV4P',
-    ['Meningococcal'],
+    [TargetDisease.meningococcal],
   ),
   '115': AgByCvx(
     'Tdap',
-    ['Tetanus', 'Diphtheria', 'Pertussis'],
+    [TargetDisease.tetanus, TargetDisease.diptheria, TargetDisease.pertussis],
   ),
   '116': AgByCvx(
     'rotavirus, pentavalent',
-    ['Rotavirus'],
+    [TargetDisease.rotavirus],
   ),
   '118': AgByCvx(
     'HPV, bivalent',
-    ['HPV'],
+    [TargetDisease.hpv],
   ),
   '119': AgByCvx(
     'rotavirus, monovalent',
-    ['Rotavirus'],
+    [TargetDisease.rotavirus],
   ),
   '120': AgByCvx(
     'DTaP-Hib-IPV',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'Hib', 'Polio'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.hib,
+      TargetDisease.polio
+    ],
   ),
   '121': AgByCvx(
     'Zoster live',
-    ['Varicella', 'Zoster'],
+    [TargetDisease.varicella, TargetDisease.zoster],
   ),
   '122': AgByCvx(
     'rotavirus, unspecified formulation',
-    ['Rotavirus'],
+    [TargetDisease.rotavirus],
   ),
   '129': AgByCvx(
     'Japanese Encephalitis, unspecified formulation',
-    ['Japanese Encephalitis'],
+    [TargetDisease.japaneseEncephalitis],
   ),
   '130': AgByCvx(
     'DTaP-IPV',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'Polio'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.polio
+    ],
   ),
   '132': AgByCvx(
     'DTaP-IPV-HIB-HEP B, historical',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'Polio', 'Hib', 'HepB'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.polio,
+      TargetDisease.hib,
+      TargetDisease.hepB
+    ],
   ),
   '133': AgByCvx(
     'Pneumococcal conjugate PCV 13',
-    ['Pneumococcal'],
+    [TargetDisease.pneumococcal],
   ),
   '134': AgByCvx(
     'Japanese Encephalitis, VC',
-    ['Japanese Encephalitis'],
+    [TargetDisease.japaneseEncephalitis],
   ),
   '135': AgByCvx(
     'Influenza, high dose seasonal',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '136': AgByCvx(
     'Meningococcal MCV4O',
-    ['Meningococcal'],
+    [TargetDisease.meningococcal],
   ),
   '137': AgByCvx(
     'HPV, unspecified formulation',
-    ['HPV'],
+    [TargetDisease.hpv],
   ),
   '138': AgByCvx(
     'Td (adult)',
-    ['Tetanus', 'Diphtheria'],
+    [TargetDisease.tetanus, TargetDisease.diptheria],
   ),
   '139': AgByCvx(
     'Td(adult) unspecified formulation',
-    ['Tetanus', 'Diphtheria'],
+    [TargetDisease.tetanus, TargetDisease.diptheria],
   ),
   '140': AgByCvx(
     'Influenza, seasonal, injectable, preservative free',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '141': AgByCvx(
     'Influenza, seasonal, injectable',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '142': AgByCvx(
     'tetanus toxoid, not adsorbed',
-    ['Tetanus'],
+    [TargetDisease.tetanus],
   ),
   '144': AgByCvx(
     'influenza, seasonal, intradermal, preservative free',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '146': AgByCvx(
     'DTaP,IPV,Hib,HepB',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'Polio', 'Hib', 'HepB'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.polio,
+      TargetDisease.hib,
+      TargetDisease.hepB
+    ],
   ),
   '147': AgByCvx(
     'meningococcal MCV4, unspecified formulation',
-    ['Meningococcal'],
+    [TargetDisease.meningococcal],
   ),
   '148': AgByCvx(
     'Meningococcal C/Y-HIB PRP',
-    ['Meningococcal', 'Hib'],
+    [TargetDisease.meningococcal, TargetDisease.hib],
   ),
   '149': AgByCvx(
     'influenza, live, intranasal, quadrivalent',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '150': AgByCvx(
     'influenza, injectable, quadrivalent, preservative free',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '151': AgByCvx(
     'influenza, nasal, unspecified formulation',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '152': AgByCvx(
     'Pneumococcal Conjugate, unspecified formulation',
-    ['Pneumococcal'],
+    [TargetDisease.pneumococcal],
   ),
   '153': AgByCvx(
     'Influenza, injectable, Madin Darby Canine Kidney, preservative free',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '155': AgByCvx(
     'influenza, recombinant, injectable, preservative free',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '158': AgByCvx(
     'influenza, injectable, quadrivalent',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '161': AgByCvx(
     'Influenza, injectable,quadrivalent, preservative free, pediatric',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '162': AgByCvx(
     'Meningococcal B, recombinant',
-    ['Meningococcal B'],
+    [TargetDisease.meningococcalB],
   ),
   '163': AgByCvx(
     'Meningococcal B, OMV',
-    ['Meningococcal B'],
+    [TargetDisease.meningococcalB],
   ),
   '164': AgByCvx(
     'meningococcal B, unspecified',
-    ['Meningococcal B'],
+    [TargetDisease.meningococcalB],
   ),
   '165': AgByCvx(
     'HPV9',
-    ['HPV'],
+    [TargetDisease.hpv],
   ),
   '166': AgByCvx(
     'influenza, intradermal, quadrivalent, preservative free',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '167': AgByCvx(
     'meningococcal, unknown serogroups',
-    ['Meningococcal', 'Meningococcal B'],
+    [TargetDisease.meningococcal, TargetDisease.meningococcalB],
   ),
   '168': AgByCvx(
     'influenza, trivalent, adjuvanted',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '169': AgByCvx(
     'Hep A, live attenuated',
-    ['HepA'],
+    [TargetDisease.hepA],
   ),
   '170': AgByCvx(
     'DTAP/IPV/HIB - non-US',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'Polio', 'Hib'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.polio,
+      TargetDisease.hib
+    ],
   ),
   '171': AgByCvx(
     'Influenza, injectable, MDCK, preservative free, quadrivalent',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '172': AgByCvx(
     'cholera, WC-rBS',
-    ['Cholera'],
+    [TargetDisease.cholera],
   ),
   '173': AgByCvx(
     'cholera, BivWC',
-    ['Cholera'],
+    [TargetDisease.cholera],
   ),
   '174': AgByCvx(
     'cholera, live attenuated',
-    ['Cholera'],
+    [TargetDisease.cholera],
   ),
   '175': AgByCvx(
     'Rabies - IM Diploid cell culture',
-    ['Rabies'],
+    [TargetDisease.rabies],
   ),
   '176': AgByCvx(
     'Rabies - IM fibroblast culture',
-    ['Rabies'],
+    [TargetDisease.rabies],
   ),
   '177': AgByCvx(
     'pneumococcal conjugate PCV10',
-    ['Pneumococcal'],
+    [TargetDisease.pneumococcal],
   ),
   '178': AgByCvx(
     'OPV bivalent',
-    ['Polio'],
+    [TargetDisease.polio],
   ),
   '179': AgByCvx(
     'OPV ,monovalent, unspecified',
-    ['Polio'],
+    [TargetDisease.polio],
   ),
   '182': AgByCvx(
     'OPV, Unspecified',
-    ['Polio'],
+    [TargetDisease.polio],
   ),
   '183': AgByCvx(
     'Yellow fever vaccine - alt',
-    ['Yellow Fever'],
+    [TargetDisease.yellowFever],
   ),
   '184': AgByCvx(
     'Yellow fever, unspecified formulation',
-    ['Yellow Fever'],
+    [TargetDisease.yellowFever],
   ),
   '185': AgByCvx(
     'influenza, recombinant, quadrivalent,injectable, preservative free',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '186': AgByCvx(
     'Influenza, injectable, MDCK, preservative, quadrivalent',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '187': AgByCvx(
     'zoster recombinant',
-    ['Zoster'],
+    [TargetDisease.zoster],
   ),
   '188': AgByCvx(
     'zoster, unspecified formulation',
-    ['Zoster'],
+    [TargetDisease.zoster],
   ),
   '189': AgByCvx(
     'Hep B, adjuvanted',
-    ['HepB'],
+    [TargetDisease.hepB],
   ),
   '190': AgByCvx(
     'Typhoid conjugate vaccine (TCV)',
-    ['Typhoid'],
+    [TargetDisease.typhoid],
   ),
   '191': AgByCvx(
     'meningococcal A polysaccharide',
-    ['Meningococcal'],
+    [TargetDisease.meningococcal],
   ),
   '192': AgByCvx(
     'meningococcal AC polysaccharide',
-    ['Meningococcal'],
+    [TargetDisease.meningococcal],
   ),
   '193': AgByCvx(
     'Hep A-Hep B, pediatric/adolescent',
-    ['HepA', 'HepB'],
+    [TargetDisease.hepA, TargetDisease.hepB],
   ),
   '194': AgByCvx(
     'Influenza, Southern Hemisphere, unspecified formulation',
-    ['Influenza'],
+    [TargetDisease.influenza],
   ),
   '195': AgByCvx(
     'DT, IPV adsorbed',
-    ['Diphtheria', 'Tetanus', 'Polio'],
+    [TargetDisease.diptheria, TargetDisease.tetanus, TargetDisease.polio],
   ),
   '196': AgByCvx(
     'Td, adsorbed, preservative free, adult use, Lf unspecified',
-    ['Tetanus', 'Diphtheria'],
+    [TargetDisease.tetanus, TargetDisease.diptheria],
   ),
   '198': AgByCvx(
     'DTP-hepB-Hib Pentavalent Non-US',
-    ['Diphtheria', 'Tetanus', 'Pertussis', 'HepB', 'Hib'],
+    [
+      TargetDisease.diptheria,
+      TargetDisease.tetanus,
+      TargetDisease.pertussis,
+      TargetDisease.hepB,
+      TargetDisease.hib
+    ],
   ),
 };

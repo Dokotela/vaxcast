@@ -1,19 +1,16 @@
-# Chapter 2 - Processing Model
+# 4 - Processing Model
 ## 2.1
-#### As stated in the intro, this chapter starts to talk about the actual steps of applying the immunization logic. 
-TABLE 4-1 LOGIC SPECIFICATION PROCESSING STEPS
-| Activity  | Goal |
-|---        |:---  |
-| Gather Necessary Data | Gather all important information (immunization history, allergies, other conditions, etc) |
-| Organize Immunization History | Break vaccines down to their antigen components and order them chronologically |
-| Create Relevant Patient Series | Create a list of all series for each antigen that could be pertinent to this patient |
-| Evaluate and Forecast All Patient Series | Evaluate each dose administered to see if it meets all required criteria for each appropriate series, and then forecast the next required dose for the series |
-| Select Patient Series | Select the patient series by antigen to recommend for the patient |
-| Identify and Evaluate Vaccine Group | Merge Antigen Recommendations into Vaccine Recommendations |
+#### The actual steps involved in forecasting vaccinations
+1. Evaluate All Patient Series
+2. Evaluate each dose administered to see if it meets all required criteria for each appropriate series, and then forecast the next required dose for the series
+3. Select Patient Series
+4. Select the patient series by antigen to recommend for the patient
+5. Identify and Evaluate Vaccine Group
+6. Merge Antigen Recommendations into Vaccine Recommendations
 
 Many of the diagrams from the CDC manual I didn't think made sense when I first when through them, and are still not terribly helpful to understanding the process, at least for me, so I'm going to leave them out. Although this one isn't bad:
 
-![Figure ](documentation/images/4-2%20Refinement%20of%20Patient%20Series)
+![Figure ](images/4-2%20Refinement%20of%20Patient%20Series)
 
 ## 2.2 Organize Immunization History
 #### This is pretty self explanatory. After obtaining all of the immunization a patient has received, break them down into their [antigenic components](lib/features/immunizationForecast/data/datasources/scheduleSupportingData/cvxToAntigenMap.json). 
