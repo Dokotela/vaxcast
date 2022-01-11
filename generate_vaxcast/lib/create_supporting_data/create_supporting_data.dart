@@ -54,6 +54,8 @@ Future<void> createSupportingData(
           'AntigenSupportingData.fromJson(${jsonEncoder.convert(antigenSupportingData)});';
 
       await File('lib/files/$fileName.dart').writeAsString(dataString);
+      await File('lib/files/$fileName.json')
+          .writeAsString(jsonEncoder.convert(antigenSupportingData));
     } else {
       switch ((supportString as ScheduleSupportingStrings).type) {
         case SupportingType.codedObservations:

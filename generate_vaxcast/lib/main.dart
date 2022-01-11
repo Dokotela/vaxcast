@@ -23,8 +23,7 @@ Future<void> main() async {
               '../vaxcast/lib/supporting_data/${file.replaceAll("lib/", "")}')
           .create();
     }
-    await File(
-            '../vaxcast/lib/supporting_data/${file.replaceAll("lib/", "")}')
+    await File('../vaxcast/lib/supporting_data/${file.replaceAll("lib/", "")}')
         .writeAsString(newFile);
   }
 }

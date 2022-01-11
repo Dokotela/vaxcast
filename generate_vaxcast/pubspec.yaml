@@ -3,10 +3,10 @@ description: Pulling the data from the cloud to make supporting data fro VaxCast
 publish_to: "none"
 
 environment:
-  sdk: '>=2.14.0 <3.0.0'
+  sdk: '>=2.15.0 <3.0.0'
   
 dependencies:
-  csv: ^5.0.0
+  csv: ^5.0.1
   gsheets: ^0.3.2
   vaxcast: 
     path: ../vaxcast

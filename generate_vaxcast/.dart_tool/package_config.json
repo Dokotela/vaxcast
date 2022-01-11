@@ -39,7 +39,7 @@
     },
     {
       "name": "csv",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/csv-5.0.0",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/csv-5.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -167,10 +167,10 @@
       "name": "generate_vaxcast",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.15"
     }
   ],
-  "generated": "2021-10-15T19:13:59.115197Z",
+  "generated": "2022-01-11T14:16:48.343008Z",
   "generator": "pub",
-  "generatorVersion": "2.15.0-181.0.dev"
+  "generatorVersion": "2.15.1"
 }
