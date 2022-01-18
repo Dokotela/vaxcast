@@ -51,21 +51,21 @@
     },
     {
       "name": "fhir",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir-0.5.0-3",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir-0.5.0-12",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.15"
     },
     {
       "name": "fhir_yaml",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir_yaml-0.5.1",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/fhir_yaml-0.5.2",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.15"
     },
     {
       "name": "freezed_annotation",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/freezed_annotation-0.14.3",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/freezed_annotation-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.14"
     },
     {
       "name": "googleapis",
@@ -105,9 +105,9 @@
     },
     {
       "name": "json_annotation",
-      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.1.0",
+      "rootUri": "file:///home/grey/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.4.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.14"
     },
     {
       "name": "meta",
@@ -155,7 +155,7 @@
       "name": "vaxcast",
       "rootUri": "../../vaxcast",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.15"
     },
     {
       "name": "yaml",
@@ -170,7 +170,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-01-11T14:16:48.343008Z",
+  "generated": "2022-01-18T04:45:34.586307Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }
